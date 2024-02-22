@@ -8,4 +8,4 @@ function Advantage() {
     )
 }
 
-export default Advantage
+export default Advantage;
