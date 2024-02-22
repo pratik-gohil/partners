@@ -24,8 +24,7 @@
 
 .tab-run-business-img { 
     background: url("https://www.miraeassetpartners.com/asset/images/mobile-left-bg.png") center center/cover no-repeat; 
-    width: 350px; 
-    height: 350px; 
+     
     text-align: center 
 }
 
@@ -117,4 +116,10 @@
     content: ""; 
     border: 9px solid; 
     border-color: transparent #ff7518 transparent transparent 
+}
+@media all and (max-width:980px) { 
+.technolbar-ta .nav-tabs .nav-link{font-size: 15px; 
+    padding: 3px 15px; 
+    line-height: 20px;}
+    .technolbar-ta .nav-tabs{padding: 0 0px 0 110px;}
 }

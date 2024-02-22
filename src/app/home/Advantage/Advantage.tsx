@@ -19,18 +19,8 @@ function Advantage() {
                         <h3 className="advantages-head">
                             <span>1</span> <b>Customise pricing for your clients</b>
                         </h3>
-                        <p className="advantages-prag">
-                            Create customised brokerage plans as a one-time activity, for all future onboarding of your clients. Choose from <span>
-                                Discount, Traditional
-                            </span>
-                            or<span>
-                                Hybrid
-                            </span> models. Customise<span>
-                                interest rates, DP charges
-                            </span>
-                            and more, for your clients&apos; varied needs and maximise your earnings.
-                        </p>
-
+                        <p className="advantages-prag">Create customised brokerage plans as a one-time activity, for all future onboarding of your clients. Choose from <span> Discount, Traditional </span> or<span> Hybrid </span> models. Customise<span> interest rates, DP charges </span>
+                            and more, for your clients&apos; varied needs and maximise your earnings.</p> 
                         <h3 className="advantages-head"><span>2</span> <b>Run your business through interactive dashboard</b></h3>
                         <div className="advantage-tabmain">
                             <ul className="nav nav-tabs" id="myTab" role="tablist">

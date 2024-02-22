@@ -251,4 +251,11 @@
 
 
 
-@media all and (max-width:980px) {}
+@media all and (max-width:980px) {
+
+    .revenueSharingSec .secTitle {span{font-size: 16px;
+        line-height: 26px;}}
+}
+@media all and (max-width:980px) {
+    .revenueSharingSec{padding-top: 30px; padding-bottom: 30px}
+}

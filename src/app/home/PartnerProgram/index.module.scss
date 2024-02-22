@@ -233,7 +233,7 @@
 }
 
 .x-amount-unnique-benefit-block .light-blue {
-    color: #0856a6
+    color: #0856a6;margin-left: 4px;
 }
 
 .tablebar-planB table th {
@@ -394,3 +394,11 @@
 .all-this-can-block img {
     margin-left: 5px
 }
+.all-this-can-block a {
+    color: #FF7518;
+}
+.all-this-can-block  svg{display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    left: 3px;}
