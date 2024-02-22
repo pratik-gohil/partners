@@ -1,21 +1,23 @@
-import Advantage from "./home/Advantage/Advantage";
-import ClientFeature from "./home/ClientFeature/ClientFeature";
-import HeroSection from "./home/HeroSection";
+import HeroSection from "./home/HeroSection/HeroSection";
+import RevenueSharing from "./home/RevenueSharing/RevenueSharing";
 import OtherBenifits from "./home/OtherBenifits";
 import PartnerProgram from "./home/PartnerProgram";
-import RevenueSharing from "./home/RevenueSharing";
+import Advantage from "./home/Advantage/Advantage";
+import ClientFeature from "./home/ClientFeature/ClientFeature";
 import T2Month from "./home/T2month/T2Month";
+import FaqsSec from "./home/FaqsSec/FaqsSec";
 
 export default function Home() {
   return (
-    <section>
+    <>
       <HeroSection />
       <RevenueSharing />
       <PartnerProgram />
       <OtherBenifits />
       <Advantage />
       <ClientFeature />
-      <T2Month/>
-    </section>
+      <T2Month />
+      <FaqsSec />
+    </>
   );
 }
