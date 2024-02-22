@@ -21,7 +21,7 @@ function PartnerProgram() {
                 <h2 className={styles["secTitle"]}>आपके बड़े सपनों को उड़ान दें,<span>Mirae Asset के साथ</span></h2>
                 <p className={styles["captionTxt"]}> Our Partner program offers <span className={styles["orangeTxt"]}> unbelievable pricing,</span> a <span className={styles["orangeTxt"]}> seamless tech platform</span> for an enhanced experience for you and your clients. It also <span className={styles["orangeTxt"]}>gives you full control</span> and ownership, reducing dependency on us. For detailed payout terms, <a aria-label="Income Sharing for Authorised Partners" className={styles["orangeTxt"]} href="asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank">click here</a>
                 </p>
-                <h4 className={styles["midheading-pl"]}>Let’s understand the payout opportunities with examples</h4>
+                <h4 className={styles["midheading-pl"]}>Let&apos;s understand the payout opportunities with examples</h4>
                 <ul className={styles["opptUlist"]}>
                     <li className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
@@ -68,7 +68,7 @@ function PartnerProgram() {
                             <div className={styles["x-amount-unnique-benefit-block"]}>
                                 <StarSVG />
 
-                                <b className={styles["light-blue"]}>Unique Benefit:</b> Choose either Discount, Traditional or Hybrid model, customise rates based on your clients’ needs
+                                <b className={styles["light-blue"]}>Unique Benefit:</b> Choose either Discount, Traditional or Hybrid model, customise rates based on your clients&apos; needs
                             </div>
                         </div>
                     </li>
@@ -344,7 +344,7 @@ function PartnerProgram() {
                 </ul >
 
                 <div className={styles["partner-offer-ac-block"]}>
-                    <h3 className={styles["title"]}>That’s not all, you can benefit from various other charges too</h3>
+                    <h3 className={styles["title"]}>That&apos;s not all, you can benefit from various other charges too</h3>
                     <div className={styles["partner-ul-block"]}>
                         <ul>
                             <li>
