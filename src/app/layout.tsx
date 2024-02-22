@@ -13,15 +13,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  return ( 
     <html lang="en" className={styles.maPartnersPage}>
       <body>  
         <Header />
-        <main>
+        <main className={styles.main}>
         {children} 
         </main>
         <Footer />
       </body>
-    </html>
+    </html> 
   );
 }
