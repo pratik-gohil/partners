@@ -29,7 +29,7 @@ function RevenueSharing() {
                         </ul>
                     </div>
                 </div>
-                <div className={styles["un2024MidText"]}>That’s not all! Create recurring income with highest interest revenue sharing across,</div>
+                <div className={styles["un2024MidText"]}>That&apos;s not all! Create recurring income with highest interest revenue sharing across,</div>
                 <div className={styles["mtfPledge24"]}>
                     <ul>
                         <li>
