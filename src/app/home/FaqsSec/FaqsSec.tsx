@@ -20,14 +20,57 @@ const FaqsSec = () => {
 
                     <div className={`${styles.accordionHolder}`}>
                         {accordionData.map((v, i) => {
-
-
                             return (<div className={styles["accCard"]} key={i}>
                                 <div className={`${styles["accTitle"]} ${(expanded === i && styles["active"])}`} onClick={() => handleChange(i)}>
                                     <h3 className={`${styles.queryTxt}`}>{v.query}</h3>
                                 </div>
                                 <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}>
                                     {v.answer}
+                                {
+                                    v.bulletPoints && (
+                                        <ul>
+                                            {v.bulletPoints.map((p, i) => {
+                                                return <li key={i}> {p} </li>
+                                            })}
+                                        </ul>
+                                    )
+                                    }
+
+                                    {
+                                        v.tableData && (
+                                            <div className="tablemain-data" style={{ border: '1px solid #C4C4C4' }}>
+                                            <table width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <th colSpan={6}>AP registration charges</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Exchange</td>
+                                                        <td>Segment</td>
+                                                        <td>Fee (₹)</td>
+                                                        <td>GST rate</td>
+                                                        <td>GST amount</td>
+                                                        <td>Total charges (₹)</td>
+                                                    </tr>
+                                                    {v.tableData.map((row, index) => (
+                                                        <tr key={index}>
+                                                            <td>{row.exchange}</td>
+                                                            <td>{row.segment}</td>
+                                                            <td>{row.fee}</td>
+                                                            <td>{row.gstRate}</td>
+                                                            <td>{row.gstAmount}</td>
+                                                            <td>{row.totalCharges}</td>
+                                                        </tr>
+                                                    ))}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        )
+                                    }
+                                    
+
+                                    
+
                                 </div>
                             </div>);
 
