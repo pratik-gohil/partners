@@ -43,5 +43,11 @@
     padding: 10px 20px;
     text-align: center;
     border-bottom: 1px solid #C4C4C4;
+} 
+  @media all and (max-width:768px) { 
+    .faqsSec{ padding-top: 20px;}
+    .accCard { margin-bottom: 5px;   
+        .accTitle { padding: 10px 40px 15px 0; padding-right: 30px; font-size: 14px;line-height: 20px; .queryTxt{font-size: 14px;line-height: 20px;}}
+    }
+    .accCard .accTitle::after{top: 10px;}
 }
-  

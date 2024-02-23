@@ -136,7 +136,7 @@
 }
 
 @media all and (max-width:768px) { 
-    .technolbar-ta { 
+    .technolbar-ta { margin-top:  0px;
         padding-left: 0px;
     }
 
@@ -154,6 +154,10 @@
         max-width: 90%; 
         text-align: center; 
         margin: 0 auto; 
-        padding: 30px 15px 15px 15px;
+        padding: 15px 15px 20px 15px;
+    }
+
+    .tab-run-business-img{width: 100%; background-size: 100%;
+        img{width: 130px;}
     }
 }
