@@ -19,7 +19,7 @@ const faqsData = [
         query: `5. 5. If a company or partnership firm is already registered as an Authorised Person (AP), can one of its directors or partners also register individually as another Authorised Person?`,
         answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`,
         bulletPoints: [
-            'list1', 'list2', 'list3'
+            `<b>list1: </b>`, 'list2', 'list3'
         ],
         tableData: [
             { exchange: 'NSE', segment: 'Capital Market', fee: 5000, gstRate: '18%', gstAmount: 900, totalCharges: 5900 },
@@ -31,9 +31,43 @@ const faqsData = [
         ]
     },
     {
-        query: `5. Who can be appointed as an Authorised Person?`,
+        query: `5. Who can b as an Authorised Person?`,
         answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
 
+    },
+    {
+        query: `6. Who is a Person?`,
+        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
+    },
+    {
+        query: `7. Who is an  Person?`,
+        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
+    },
+    {
+        query: `3. Who can be as an Authorised Person?`,
+        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
+    }, {
+        query: `1. Who is an Authorised Person?`,
+        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
+    },
+    {
+        query: `2. Wis an Authorised ?`,
+        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
+    },
+    {
+        query: `3. Who can be  as an Authorised Person?`,
+        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
+    }, {
+        query: `1. Who is an Authorised Person?`,
+        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
+    },
+    {
+        query: `2. Whos an Authorised Peon?`,
+        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
+    },
+    {
+        query: `3. Wo can be apnted as an Authorised ?`,
+        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them.`
     },
 ];
 
