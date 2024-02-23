@@ -30,7 +30,7 @@ const FaqsSec = () => {
                                     v.bulletPoints && (
                                         <ul>
                                             {v.bulletPoints.map((p, i) => {
-                                                return <li key={i}> {p} </li>
+                                                return <li key={i}> <b>First Name :</b>  {p} </li>
                                             })}
                                         </ul>
                                     )
