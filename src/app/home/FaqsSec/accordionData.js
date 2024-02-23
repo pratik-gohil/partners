@@ -21,14 +21,9 @@ const faqsData = [
         bulletPoints: [
             `<b>list1: </b>`, `<b>uhsuj</b>`, `<b>kokok</b>`, 'normal'
         ],
-        tableData: [
-            { exchange: 'NSE', segment: 'Capital Market', fee: 5000, gstRate: '18%', gstAmount: 900, totalCharges: 5900 },
-            { exchange: 'NSE', segment: 'F&O', fee: 5000, gstRate: '18%', gstAmount: 900, totalCharges: 5900 },
-            { exchange: 'NSE', segment: 'Currency Derivatives', fee: 5000, gstRate: '18%', gstAmount: 900, totalCharges: 5900 },
-            { exchange: 'BSE', segment: 'Capital Market', fee: 4000, gstRate: '18%', gstAmount: 720, totalCharges: 4720 },
-            { exchange: 'MCX', segment: 'Commodities', fee: '-', gstRate: '18%', gstAmount: '-', totalCharges: '-' },
-            { exchange: 'Total Registration charges', segment: 'All Segments', fee: 19000, gstRate: '18%', gstAmount: 3420, totalCharges: 22420 }
-        ]
+        table: `
+        <table width="100%"><tbody><tr><th colspan="6">AP registration charges</th></tr><tr><td>Exchange</td><td>Segment</td><td>Fee (₹)</td><td>GST rate</td><td>GST amount</td><td>Total charges (₹)</td></tr><tr><td>NSE</td><td>Capital Market</td><td>5000</td><td>18%</td><td>900</td><td>5900</td></tr><tr><td>NSE</td><td>F&amp;O</td><td>5000</td><td>18%</td><td>900</td><td>5900</td></tr><tr><td>NSE</td><td>Currency Derivatives</td><td>5000</td><td>18%</td><td>900</td><td>5900</td></tr><tr><td>BSE</td><td>Capital Market</td><td>4000</td><td>18%</td><td>720</td><td>4720</td></tr><tr><td>MCX</td><td>Commodities</td><td>-</td><td>18%</td><td>-</td><td>-</td></tr><tr><td>Total Registration charges</td><td>All Segments</td><td>19000</td><td>18%</td><td>3420</td><td>22420</td></tr></tbody></table>
+        `
     },
     {
         query: `5. Who can b as an Authorised Person?`,

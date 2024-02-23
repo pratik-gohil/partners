@@ -36,33 +36,10 @@ const FaqsSec = () => {
                                     )
                                     }
                                     {
-                                        v.tableData && (
-                                            <div className="tablemain-data" style={{ border: '1px solid #C4C4C4' }}>
-                                            <table width="100%">
-                                                <tbody>
-                                                    <tr>
-                                                        <th colSpan={6}>AP registration charges</th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Exchange</td>
-                                                        <td>Segment</td>
-                                                        <td>Fee (₹)</td>
-                                                        <td>GST rate</td>
-                                                        <td>GST amount</td>
-                                                        <td>Total charges (₹)</td>
-                                                    </tr>
-                                                    {v.tableData.map((row, index) => (
-                                                        <tr key={index}>
-                                                            <td>{row.exchange}</td>
-                                                            <td>{row.segment}</td>
-                                                            <td>{row.fee}</td>
-                                                            <td>{row.gstRate}</td>
-                                                            <td>{row.gstAmount}</td>
-                                                            <td>{row.totalCharges}</td>
-                                                        </tr>
-                                                    ))}
-                                                </tbody>
-                                            </table>
+                                        v.table && (
+                                            <div className="tablemain-data" dangerouslySetInnerHTML={{
+                                                __html:v.table
+                                            }} style={{ border: '1px solid #C4C4C4' }}>
                                         </div>
                                         )
                                     }

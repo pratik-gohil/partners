@@ -14,7 +14,10 @@
         .secTitle { margin-bottom: 15px;}
     }
     .un100BrokerageWrap{flex-wrap: wrap;}
-    .un100BrokBox{max-width: 90%; padding: 50px 15px;}
+    .un100BrokBox{max-width: 90%; padding: 30px 15px; margin-bottom: 20px;
+        .brokerageTitle{ font-size: 30px;}
+        .caption{font-size: 24px; line-height: 28px; margin-top: 10px;}
+    }
     .midRsDivider{display: none;}
     .mtfPledge24 {
         ul {
@@ -22,4 +25,15 @@
         }
         .midBro24{display: none;}
     }
+    .un100BrokKeyPoints { display: block; width: 100%;
+        .keyPointsTitle {  font-size: 22px; line-height: 22px;}
+        ul li{ font-size: 16px;}
+    }
+    .un2024MidText{ font-size: 16px; line-height: 22px; font-weight: 600; margin-top: 30px; margin-bottom: 30px;}
+    .mtfPledge24 ul li {
+        .marginTitle{font-size: 22px; margin-bottom: 10px;}
+        p{ font-size: 16px;}
+    }
+    
+
 }
