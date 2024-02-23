@@ -9,7 +9,7 @@ function Advantage() {
     ]
 
     return (
-        <div>
+        <>
             <section className="maAdvantageSec">
                 <div className="maContainer">
                     <h2 className="secTitle"><span>The &apos;Mirae Asset&apos;</span>advantage</h2>
@@ -151,7 +151,7 @@ function Advantage() {
                 </div>
             </section>
 
-        </div>
+        </>
     )
 }
 

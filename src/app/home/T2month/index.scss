@@ -6,5 +6,9 @@
 
 @media all and (max-width:980px) { 
   .in-16-month-ul-block li{padding: 0 10px;}
-}
- 
+} 
+@media all and (max-width:768px) { 
+  .in-16-month-ul-block li{width:100%;border:0;
+    svg{min-width: 45px; width: 45px;}
+  }
+} 

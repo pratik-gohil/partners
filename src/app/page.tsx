@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <HeroSection />
       <RevenueSharing />
-      <PartnerProgram /> 
+     {/*  <PartnerProgram />  */}
       <Advantage />
       <ClientFeature />
       <T2Month />
