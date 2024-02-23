@@ -19,14 +19,15 @@
 
 
 @media all and (max-width:768px) { 
-    .advantage-tabmain{flex-wrap: wrap; padding-left: 0px;
+    .maAdvantageSec{ padding-top: 20px;}
+    .advantage-tabmain{flex-wrap: wrap; padding-left: 0px; padding-top: 0px;
         .nav-tabs{padding:0px;width:100%; padding-left: 45px;}
         .nav:before {left: 16px;}
         .tab-content{max-width: 90%; text-align: center; margin: 0 auto; padding: 30px 15px 15px 15px;}
     } 
-    .advantage-onboad{padding:0;margin-top: 0;
+    .advantage-onboad{padding:0; margin-top: 15px; margin-bottom: 15px;
         ul{flex-wrap: wrap;padding:10px 0;
-            li{ padding: 5px 0 5px 15px; width: 100%;
+            li{ padding: 5px 0 5px 5px; width: 100%;
                 svg{ width: 30px; margin-right: 0;}
                 p{ padding-left: 15px;}
             }
@@ -35,6 +36,79 @@
     .listof-advant ul{flex-wrap: wrap;
         li{width: 100%;}
     } 
+    .advantages-head { margin-top: 10px; font-size: 16px; line-height: 22px; width: 100%;display:flex;column-gap: 10px; width: 100%;
+        span{width: 40px;display: block; margin-right: 0; margin-right: 0;}
+        b{width: calc(100% - 40px);}
+    }  
+    .advantages-prag { font-size: 14px; margin-left: 50px; margin-bottom: 20px; }
+
+    .advantage-tabmain .nav-tabs .nav-link {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .advantage-onboad ul li p b {
+        font-size: 16px;
+    }
+
+    .advantage-onboad ul li p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .advantage-onboad ul li p b {
+        margin-bottom: 5px;
+    }
+
+    .advantage-onboad ul li img {
+        margin-right: 10px;
+    }
+
+    .advantage-onboad {
+        padding: 10px 15px;
+    }
+
+    .advantage-tabmain .nav-tabs .nav-link img {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+
+    .advantage-tabmain .nav-tabs .nav-link.active span:after,
+    .advantage-tabmain .nav-tabs .nav-item.show .nav-link span:after {
+        top: 11px;
+    }
+
+    .advantage-tabmain .nav-tabs .nav-link.active span:before,
+    .advantage-tabmain .nav-tabs .nav-item.show .nav-link span:before {
+        top: 11px;
+    }
+
+    .advantage-tabmain .nav-tabs .nav-link:before {
+        left: -35px;
+        top: 15px;
+    }
+
+    .listof-advant {
+        margin-bottom: 10px;
+    }
+
+    .client-onbrd-active-ul center b {
+        font-size: 20px;
+    }
+
+    .client-radio-btn-block {
+        margin-top: 0;
+    }
+
+    .client-onbrd-active-ul > ul > li:last-child {
+        margin-top: 35px;
+    }
+
+    .onbod-clibar {
+        margin-top: 0;
+    }
+
+
+    
 }
 
 
