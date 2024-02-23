@@ -1,6 +1,50 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import './index.scss'
+import { defaultOverrides } from 'next/dist/server/require-hook'
+import Image from 'next/image'
 export default function ClientFeature() {
+    const [activeTab, setActiveTab] = useState(1)
+    const clientTabs = [
+        {
+            id:1,
+            name: 'Assurance of brand Mirae Assetdashboard',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/sidemenu.webp' 
+        },
+        {
+            id:2,
+            name: 'Range of products on a single platform',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/home_dashboard.webp' 
+        },
+        {
+            id:3,
+            name: `1-click order placement across products`,
+            imageURL:'https://www.miraeassetpartners.com/asset/images/mobile-left-img3.webp' 
+        },
+        {
+            id:4,
+            name: 'Stable platform for smooth processing',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/fund-transfer.webp' 
+        },
+        {
+            id:5,
+            name: 'Fundamental data & technical charts',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/mobile-left-img5.webp' 
+        },
+        {
+            id:6,
+            name: 'Single-view screen for complete portfolio',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/mobile-left-img6.webp' 
+        },
+        {
+            id:7,
+            name: 'Advanced order placement options',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/detail-order-form.webp' 
+        }
+    ]
+
+
+    
 
     return (
         <section className="whatsInitClientsSec">
@@ -11,60 +55,28 @@ export default function ClientFeature() {
                     <div className="tab-content">
                         <div id="technology1" className="tab-pane active">
                             <div className="tab-run-business-img">
-                                <img src="https://www.miraeassetpartners.com/asset/images/sidemenu.webp" alt="sidemenu" />
+                                <img src={clientTabs.find(tab=>tab.id===activeTab)!.imageURL} alt="sidemenu" />
                             </div>
                         </div>
                     </div>
+
                     <ul className="nav nav-tabs" role="tablist">
-                        <li className="nav-item" role="presentation">
-                            <a className="nav-link active" data-toggle="tab" href="#technology1">
-                                <i>1</i>
-                                <span role="presentation"></span>
-                                Assurance of brand Mirae Asset
-                            </a>
-                        </li>
-                        <li className="nav-item" role="presentation">
-                            <a className="nav-link" data-toggle="tab" href="#technology2">
-                                <i>2</i>
-                                <span role="presentation"></span>
-                                Range of products on a single platform
-                            </a>
-                        </li>
-                        <li className="nav-item" role="presentation">
-                            <a className="nav-link" data-toggle="tab" href="#technology3">
-                                <i>3</i>
-                                <span role="presentation"></span>
-                                1-click order placement across products
-                            </a>
-                        </li>
-                        <li className="nav-item" role="presentation">
-                            <a className="nav-link" data-toggle="tab" href="#technology4">
-                                <i>4</i>
-                                <span role="presentation"></span>
-                                Stable platform for smooth processing
-                            </a>
-                        </li>
-                        <li className="nav-item" role="presentation">
-                            <a className="nav-link" data-toggle="tab" href="#technology5">
-                                <i>5</i>
-                                <span role="presentation"></span>
-                                Fundamental data & technical charts
-                            </a>
-                        </li>
-                        <li className="nav-item" role="presentation">
-                            <a className="nav-link" data-toggle="tab" href="#technology6">
-                                <i>6</i>
-                                <span role="presentation"></span>
-                                Single-view screen for complete portfolio
-                            </a>
-                        </li>
-                        <li className="nav-item" role="presentation">
-                            <a className="nav-link" data-toggle="tab" href="#technology7">
-                                <i>7</i>
-                                <span role="presentation"></span>
-                                Advanced order placement options
-                            </a>
-                        </li>
+                        {
+                            clientTabs.map((tab, i) => {
+                                return (
+                                    <li key={i} className="nav-item" role="presentation" onClick={()=>setActiveTab(tab.id)}>
+                                        <a className={`nav-link ${tab.id ==activeTab?'active':''}`}
+                                    data-toggle="tab" >
+                                            <i>
+                                                {tab.id}
+                                        </i>
+                                        <span role="presentation"></span>
+                                        {tab.name}
+                                    </a>
+                                </li>
+                                )
+                            })
+                        }
                     </ul>
                 </div>
             </div>

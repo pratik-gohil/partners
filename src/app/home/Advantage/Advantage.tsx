@@ -1,12 +1,42 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import './index.scss'
+import Image from 'next/image'
 function Advantage() {
-
-    const image_tabs = [
-        // {
-        //     name: 
-        // }
+    const [activeTab, setActiveTab] = useState(1)
+    const interActiveTabs = [
+        {
+            id:1,
+            name: 'Single integrated dashboard',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/single-integrated-dashboard.webp' 
+        },
+        {
+            id:2,
+            name: 'Onboard your clients in a few clicks',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/onboard-in-few-clicks.webp' 
+        },
+        {
+            id:3,
+            name: `Customise brokerage plans as per guide client's trading behaviour`,
+            imageURL:'https://www.miraeassetpartners.com/asset/images/customize-plan-img.webp' 
+        },
+        {
+            id:4,
+            name: 'View & monitor client&apos;s portfolio and LIVE positions',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/view-portfolio-img.webp' 
+        },
+        {
+            id:5,
+            name: 'Access to smart reports',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/smart-reports.webp' 
+        },
+        {
+            id:6,
+            name: 'Dedicated BA excellence desk - online and offline support',
+            imageURL:'https://www.miraeassetpartners.com/asset/images/dedicated-BA.webp' 
+        }
     ]
+    
 
     return (
         <>
@@ -24,48 +54,24 @@ function Advantage() {
                         <h3 className="advantages-head"><span>2</span> <b>Run your business through interactive dashboard</b></h3>
                         <div className="advantage-tabmain">
                             <ul className="nav nav-tabs" id="myTab" role="tablist">
-                                <li className="nav-item" role="presentation">
-                                    <a className="nav-link active" id="advantage1" data-toggle="tab" href="#advantage-tab1"
+                                {
+                                    interActiveTabs.map((tab, i) => {
+                                        return (
+                                            <li key={i} className="nav-item" role="presentation" onClick={()=>setActiveTab(tab.id)}>
+                                    <a className={`nav-link ${activeTab===tab.id?'active':''}`} id="advantage1" data-toggle="tab" 
                                         role="tab" aria-controls="advantage-tab1" aria-selected="true" >
-                                        <span role="presentation"></span>Single integrated dashboard
+                                        <span role="presentation"></span>{tab.name}
                                     </a>
                                 </li>
-                                <li className="nav-item" role="presentation">
-                                    <a className="nav-link" id="advantage2" data-toggle="tab" href="#advantage-tab2"
-                                        role="tab" aria-controls="advantage-tab2" aria-selected="false">
-                                        <span role="presentation"></span>Onboard your clients in a few clicks
-                                    </a>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <a className="nav-link" id="advantage3" data-toggle="tab" href="#advantage-tab3"
-                                        role="tab" aria-controls="advantage-tab3" aria-selected="false">
-                                        <span role="presentation"></span>Customise brokerage plans as per clients&apos; trading behaviour
-                                    </a>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <a className="nav-link" id="advantage4" data-toggle="tab" href="#advantage-tab4"
-                                        role="tab" aria-controls="advantage-tab4" aria-selected="false">
-                                        <span role="presentation"></span>View & monitor client&apos;s portfolio and LIVE positions
-                                    </a>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <a className="nav-link" id="advantage5" data-toggle="tab" href="#advantage-tab5"
-                                        role="tab" aria-controls="advantage-tab5" aria-selected="false">
-                                        <span role="presentation"></span>Access to smart reports
-                                    </a>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <a className="nav-link" id="advantage6" data-toggle="tab" href="#advantage-tab6"
-                                        role="tab" aria-controls="advantage-tab6" aria-selected="false">
-                                        <span role="presentation"></span>Dedicated BA excellence desk - online and offline support
-                                    </a>
-                                </li>
+                                    )
+                                })
+                                }
                             </ul>
                             <div className="tab-content" id="myTabContent">
                                 <div className="tab-pane fade show active" id="advantage-tab1" role="tabpanel"
                                     aria-labelledby="advantage1">
                                     <div className="tab-run-business-img">
-                                        <img src="https://www.miraeassetpartners.com/asset/images/single-integrated-dashboard.webp" alt="" />
+                                        <img src={interActiveTabs.find(tab=>tab.id===activeTab)!.imageURL} alt="" />
                                     </div>
                                 </div>
                             </div>
