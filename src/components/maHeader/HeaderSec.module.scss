@@ -16,10 +16,14 @@
 @media all and (max-width:980px) {  
     .headerSec {min-height: 60px;
         .lhsWrap{width: 130px; height: 60px;svg{width: 100%;}}
+        .rhsWrap{width: calc(100% - 130px); }
     }
-    .becomePartnerBtn{font-size: 12px; line-height: 34px; min-width: 90px; padding: 0 5px;
+    .becomePartnerBtn{font-size: 13px; line-height: 34px; min-width: 90px;padding: 0 7px; margin-top: 0;
         span{display: none;}
     }
     .topMenuUlist li{display: none;}
     .topMenuUlist li:last-of-type{display: block;} 
 } 
+@media all and (max-width:768px) {  
+    .headerSec {min-height: 60px; } 
+}  

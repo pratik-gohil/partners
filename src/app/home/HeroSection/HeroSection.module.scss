@@ -6,27 +6,7 @@
     min-height: 500px;
     padding-bottom: 80px;
     text-align: center;
-    padding-top: 40px;
-
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 100%;
-        background: url(https://www.miraeassetpartners.com/asset/images/banner-bg.png) left bottom/100% no-repeat #fff;
-        min-height: 130px;
-        bottom: 0
-    }
-
-    &:after {
-        content: "";
-        position: absolute;
-        left: 0;
-        width: 40%;
-        background: url(https://www.miraeassetpartners.com/asset/images/backbg-img.png) -5px center/100% no-repeat;
-        min-height: 380px;
-        top: 30px
-    }
+    padding-top: 40px; 
 
     .maContainer {
         position: relative;
@@ -49,7 +29,7 @@
     .lhsWrap {
         width: 50%;
 
-        li {
+        li { text-align: left;
             color: $blue;
             font-size: 20px;
             line-height: 20px;
@@ -92,5 +72,52 @@
 }
 
 
+@media all and (min-width:980px) {
+    .topBannerSec { 
+    
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background: url(https://www.miraeassetpartners.com/asset/images/banner-bg.png) left bottom/100% no-repeat #fff;
+            min-height: 130px;
+            bottom: 0
+        }
+    
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 40%;
+            background: url(https://www.miraeassetpartners.com/asset/images/backbg-img.png) -5px center/100% no-repeat;
+            min-height: 380px;
+            top: 30px
+        }
+    }
 
-@media all and (max-width:980px) {}
+}
+@media all and (max-width:980px) {
+    .bannerInnerBox { width: 95%;}
+    .pageTitle{font-size: 22px; line-height: 32px;}
+
+}
+@media all and (max-width:768px) {
+    .topBannerSec{background-image: linear-gradient(180deg, #fff 10%, #FFD8BD); padding-bottom: 15px; padding-top: 20px;min-height: 475px;}
+    .bannerInnerBox { width: 100%; flex-wrap: wrap; } 
+    .topBannerSec .maContainer { padding-left: 20px;padding-right: 20px;}
+    .bannerInnerBox .lhsWrap{width: 100%;padding-left: 10px;
+        li { font-size: 16px; line-height: 20px; margin-top: 15px;
+            b{font-weight: 600;}
+            &:first-of-type{margin-top: 20px;}
+            svg{width: 32px; margin-right: 0;}
+            span{ display: inline-block; padding-left: 15px;}
+        }
+    }
+    .bannerInnerBox .rhsWrap{width: 100%;
+        img{display: none;}
+    } 
+    
+
+}
+ 

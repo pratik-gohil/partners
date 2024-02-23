@@ -22,6 +22,8 @@
 @media all and (max-width:980px) {  
 	.deskView{ display:none; }
 	.mobView{ display: block; }  
-	.secTitle{font-size: 16px; line-height: 20px; margin-bottom: 15px;}  
+	.secTitle{font-size: 22px; line-height: 28px; margin-bottom: 15px;}  
 }
-
+@media all and (max-width:768px) { 
+	.maOrangeBtn{ line-height: 32px; font-size: 14px; padding: 0 20px; border-radius: 4px;}
+}
