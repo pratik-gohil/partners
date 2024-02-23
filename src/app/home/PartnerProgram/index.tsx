@@ -12,7 +12,7 @@ function PartnerProgram() {
         const target = e.target as HTMLDivElement;
         const el = document.querySelector(`[data-section-table=${target.getAttribute("data-section-action")}]`) as HTMLDivElement;
 
-        el.style.height = el.style.height === '0px' ? "309px" : '0px'
+        el.style.height = el.style.height === '0px' ? "100%" : '0px'
     }
 
     return (
@@ -28,7 +28,7 @@ function PartnerProgram() {
                             <div className={styles["x-amount-left"]}>
                                 Brokerage
                             </div>
-                            <div className={`${styles["x-amount-right"]} ${styles["margiright75"]}`}>
+                            <div className={`${styles["x-amount-right"]} `}>
                                 Earn <b>1.5X</b> or more
                             </div>
                         </div>
@@ -375,9 +375,9 @@ function PartnerProgram() {
                                 </p>
                             </ li>
                         </ul>
+                        <div className={styles["all-this-can-block"]}> <b>All this can<br /> become yours.</b><br /> <a href="/pricing">See detailed revenue sharing plans <RightArrowSVG /> </a>
+                        </div>
                     </div >
-                    <div className={styles["all-this-can-block"]}> <b>All this can<br /> become yours.</b><br /> <a href="/pricing">See detailed revenue sharing plans <RightArrowSVG /> </a>
-                    </ div>
                 </div>
 
 
