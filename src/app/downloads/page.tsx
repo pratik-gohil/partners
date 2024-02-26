@@ -1,8 +1,12 @@
- 
-export default function Downloads() {
-    return (
-        <section>
-            downloads
-        </section>
-    );
+import Breadcrumb from "../../components/breadcrumb/BreadcrumbSec";
+import DownloadsLinksSec from "./DownloadsLinksSec/DownloadsLinksSec"; 
+
+
+export default function DownloadsPage() {
+  return (
+    <>
+      <Breadcrumb /> 
+      <DownloadsLinksSec />  
+    </>
+  );
 }
