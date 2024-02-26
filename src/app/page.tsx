@@ -1,6 +1,5 @@
 import HeroSection from "./home/HeroSection/HeroSection";
-import RevenueSharing from "./home/RevenueSharing/RevenueSharing";
-import OtherBenifits from "./home/OtherBenifits";
+import RevenueSharing from "./home/RevenueSharing/RevenueSharing"; 
 import PartnerProgram from "./home/PartnerProgram";
 import Advantage from "./home/Advantage/Advantage";
 import ClientFeature from "./home/ClientFeature/ClientFeature";
@@ -12,8 +11,7 @@ export default function Home() {
     <>
       <HeroSection />
       <RevenueSharing />
-      <PartnerProgram />
-      <OtherBenifits />
+      <PartnerProgram /> 
       <Advantage />
       <ClientFeature />
       <T2Month />

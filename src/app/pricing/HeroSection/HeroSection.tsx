@@ -9,7 +9,7 @@ function HeroSection() {
     return (
         <section className={styles["topBannerSec"]}>
             <div className={styles["maContainer"]}>
-                <h2 className={styles["pageTitle"]}>Launching India&apos;s largest business partner program</h2>
+                <h2 className={styles["secTitle"]}>Launching India&apos;s largest business partner program</h2>
                 <div className={styles["bannerInnerBox"]}>
                     <ul className={styles["lhsWrap"]}>
                         <li>
