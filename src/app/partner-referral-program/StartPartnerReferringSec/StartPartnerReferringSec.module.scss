@@ -42,3 +42,35 @@
         .btnparAddsub a svg {
             margin-right: 8px;
         }
+
+
+        .referrbarInpupat {
+            margin: 0 auto;
+            width: 70%;
+            padding: 20px 0 5px;
+        }
+            .referrbarInpupat .formFieldWrap  {align-items: center;column-gap: 20px;
+                position: relative;margin-bottom: 15px;padding-bottom: 15px;
+            }
+            .referrbarInpupat .formFieldWrap:first-child::before {
+                border-bottom: 1px dashed #f58220;
+                width: calc(100% - 30px);
+                height: 1px;
+                content: '';
+                bottom: 0;
+                left: 15px;
+                position: absolute;
+            }
+        
+            .referrbarInpupat .formFieldWrap:first-child {
+                margin-bottom: 15px;
+            }
+        
+            .referrbarInpupat .formControl {
+                border-color: #D2D2D2;
+                height: 48px;
+                border-radius: 4px;
+                font-size: 16px;
+                color: #000;
+            }
+
