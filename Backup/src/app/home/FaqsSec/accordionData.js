@@ -12,9 +12,10 @@ const faqsData = [
     {
         queryNumber: `3`,
         query: `3. Who can be appointed as an Authorised Person?`,
-        answer: `Individual: A resident of India, above 18 years of age.  
-        Partnership firm: A firm that is registered under Indian Partnership Act, 1932. 
-        LLP: A firm that is registered under the Indian Limited Liability Partnership Act, 2008. 
+        answer: `Individual: A resident of India, above 18 years of age.<br />
+
+        Partnership firm: A firm that is registered under Indian Partnership Act, 1932.<br />
+        LLP: A firm that is registered under the Indian Limited Liability Partnership Act, 2008.<br />
         Corporate: A firm that is registered under the Indian Companies Act, 1956.`,  
     },   
     {
@@ -29,7 +30,7 @@ const faqsData = [
     },   
     {
         queryNumber: `6`,
-        query: `66666666666666666666666666666666666- Data Issue. What is the eligiblility criteria to become an Authorised Person?`,
+        query: `66666666666666666666666666666666666-DataIssue. What is the eligiblility criteria to become an Authorised Person?`,
         answer: `The eligibility criteria for an individual to become an AP is listed below.`, 
         bulletPoints: [
             `Should be a citizen of India`,
@@ -38,11 +39,6 @@ const faqsData = [
             `Should not have been convicted for any offence involving fraud or dishonesty`,
             `An Authorised Person who was suspended for more than six consecutive months must wait three years before they can be reappointed.` 
         ], 
-        htmlContent: `
-        <br>Should be a citizen of India</br>,
-        <br>Should be a citizen of India</br>,
-        <br>Should be a citizen of India</br>,
-        `
     },   
     {
         queryNumber: `7`,

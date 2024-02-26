@@ -35,16 +35,18 @@ const FaqsSec = () => {
                                                 })}
                                             </ul>
                                         )
-                                    }  
-                                    {
-                                        v.htmlContent && (
-                                            <ul className={`${styles.bulletPointsList}`}>
-                                                
-                                                   <div  dangerouslySetInnerHTML={{ __html:v.htmlContent  }}/> 
-                                                
-                                            </ul>
-                                        )
-                                    }  
+                                    } 
+                                    
+
+
+
+
+
+
+
+
+
+
 
                                     {
                                         v.tablefield1 && (
