@@ -4,6 +4,7 @@ import TransparentPayoutSVG from '@/components/svgs/TransparentPayoutSVG'
 import EasySellSVG from '@/components/svgs/EasySellSVG'
 import HighRevenueSVG from '@/components/svgs/HighRevenueSVG'
 import GrowSVG from '@/components/svgs/GrowSVG'
+import Image from 'next/image'
 
 function HeroSection() {
     return (
@@ -24,7 +25,7 @@ function HeroSection() {
                             <span><b>Lowest client rates,</b> yet higher revenue</span></li>
                     </ul>
                     <div className={styles["rhsWrap"]}>
-                        <img src="https://www.miraeassetpartners.com/asset/images/hand-img.webp" width="" height="" alt="test" title="test" />
+                        <Image width={400} height={600} src="https://www.miraeassetpartners.com/asset/images/hand-img.webp" alt="test" title="test" />
                         <p className={styles["ctaUpText"]}>Opening for 1,000 partners on an invite-only basis</p>
                         <button className={`${styles["maOrangeBtn"]} ${styles["becomePartnerBtn"]}`} data-toggle="modal">Pre-Register Now</button>
                     </div>
