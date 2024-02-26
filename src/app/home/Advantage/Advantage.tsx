@@ -7,42 +7,42 @@ function Advantage() {
     const [activeTab, setActiveTab] = useState(1)
     const interActiveTabs = [
         {
-            id:1,
+            id: 1,
             name: 'Single integrated dashboard',
-            imageURL:'https://www.miraeassetpartners.com/asset/images/single-integrated-dashboard.webp' 
+            imageURL: 'https://www.miraeassetpartners.com/asset/images/single-integrated-dashboard.webp'
         },
         {
-            id:2,
+            id: 2,
             name: 'Onboard your clients in a few clicks',
-            imageURL:'https://www.miraeassetpartners.com/asset/images/onboard-in-few-clicks.webp' 
+            imageURL: 'https://www.miraeassetpartners.com/asset/images/onboard-in-few-clicks.webp'
         },
         {
-            id:3,
+            id: 3,
             name: `Customise brokerage plans as per guide client's trading behaviour`,
-            imageURL:'https://www.miraeassetpartners.com/asset/images/customize-plan-img.webp' 
+            imageURL: 'https://www.miraeassetpartners.com/asset/images/customize-plan-img.webp'
         },
         {
-            id:4,
+            id: 4,
             name: 'View & monitor client&apos;s portfolio and LIVE positions',
-            imageURL:'https://www.miraeassetpartners.com/asset/images/view-portfolio-img.webp' 
+            imageURL: 'https://www.miraeassetpartners.com/asset/images/view-portfolio-img.webp'
         },
         {
-            id:5,
+            id: 5,
             name: 'Access to smart reports',
-            imageURL:'https://www.miraeassetpartners.com/asset/images/smart-reports.webp' 
+            imageURL: 'https://www.miraeassetpartners.com/asset/images/smart-reports.webp'
         },
         {
-            id:6,
+            id: 6,
             name: 'Dedicated BA excellence desk - online and offline support',
-            imageURL:'https://www.miraeassetpartners.com/asset/images/dedicated-BA.webp' 
+            imageURL: 'https://www.miraeassetpartners.com/asset/images/dedicated-BA.webp'
         }
     ]
-    
+
 
     return (
         <>
             <section className="maAdvantageSec">
-            <div className="un2024MidText">That&apos;s not all! Create recurring income with highest interest revenue sharing across,</div>
+                <div className="un2024MidText">That&apos;s not all! Create recurring income with highest interest revenue sharing across,</div>
                 <div className="maContainer">
                     <h2 className="secTitle"><span>The &apos;Mirae Asset&apos;</span>advantage</h2>
                     <p className="captionTxt">Partnering with us has a lot of advantages for your business. See, what&apos;s in it for you. </p>
@@ -52,28 +52,28 @@ function Advantage() {
                             <span>1</span> <b>Customise pricing for your clients</b>
                         </h3>
                         <p className="advantages-prag">Create customised brokerage plans as a one-time activity, for all future onboarding of your clients. Choose from <span> Discount, Traditional </span> or<span> Hybrid </span> models. Customise<span> interest rates, DP charges </span>
-                            and more, for your clients&apos; varied needs and maximise your earnings.</p> 
+                            and more, for your clients&apos; varied needs and maximise your earnings.</p>
                         <h3 className="advantages-head"><span>2</span> <b>Run your business through interactive dashboard</b></h3>
                         <div className="advantage-tabmain">
                             <ul className="nav nav-tabs" id="myTab" role="tablist">
                                 {
                                     interActiveTabs.map((tab, i) => {
                                         return (
-                                            <li key={i} className="nav-item" role="presentation" onClick={()=>setActiveTab(tab.id)}>
-                                    <a className={`nav-link ${activeTab===tab.id?'active':''}`} id="advantage1" data-toggle="tab" 
-                                        role="tab" aria-controls="advantage-tab1" aria-selected="true" >
-                                        <span role="presentation"></span>{tab.name}
-                                    </a>
-                                </li>
-                                    )
-                                })
+                                            <li key={i} className="nav-item" role="presentation" onClick={() => setActiveTab(tab.id)}>
+                                                <a className={`nav-link ${activeTab === tab.id ? 'active' : ''}`} id="advantage1" data-toggle="tab"
+                                                    role="tab" aria-controls="advantage-tab1" aria-selected="true" >
+                                                    <span role="presentation"></span>{tab.name}
+                                                </a>
+                                            </li>
+                                        )
+                                    })
                                 }
                             </ul>
                             <div className="tab-content" id="myTabContent">
                                 <div className="tab-pane fade show active" id="advantage-tab1" role="tabpanel"
                                     aria-labelledby="advantage1">
                                     <div className="tab-run-business-img">
-                                        <img src={interActiveTabs.find(tab=>tab.id===activeTab)!.imageURL} alt="" />
+                                        <Image width={600} height={300} quality={100} src={interActiveTabs.find(tab => tab.id === activeTab)!.imageURL} alt="dashboard" />
                                     </div>
                                 </div>
                             </div>
