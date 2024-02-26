@@ -1,8 +1,10 @@
- 
+import HeroSection from "./HeroSection/HeroSection"; 
+import Breadcrumb from "../../components/breadcrumb/BreadcrumbSec";
 export default function Pricing() {
-    return (
-        <section>
-           pricing
-        </section>
-    );
+  return (
+    <>
+      <Breadcrumb /> 
+      <HeroSection /> 
+    </>
+  );
 }

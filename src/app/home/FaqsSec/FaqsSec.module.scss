@@ -1,0 +1,181 @@
+@import "../../../styles/_common.scss";
+
+.faqsSec {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    table th {
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        padding: 10px 20px;
+        text-align: center;
+        font-weight: 600;
+        background: #FFF5EE;
+        line-height: 22px;
+    }
+
+    table td {
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
+        padding: 10px 20px;
+        text-align: center;
+        border-bottom: 1px solid #C4C4C4;
+    }
+}
+
+.expanded {
+    max-height: 500px;
+    // margin-bottom: 12px;
+    // transition: margin-bottom 100ms ease-in !important;
+    // padding-top: 15px;
+}
+
+.collapsed {
+    max-height: 0;
+    // transition: max-height 1s ease-in !important;
+    // margin-bottom: 0px;
+    // transition: margin-bottom 500ms ease-out !important;
+}
+
+// .showAccordion {
+//     max-height: 100%;
+//     transition: max-height 1s ease-in !important;
+// }
+
+// .hideAccordion {
+//     max-height: 0;
+//     transition: max-height 1s ease-out !important;
+// }
+
+.accordionHolder {
+    position: relative;
+}
+
+.accCard {
+    margin-bottom: 5px;
+
+    .accTitle {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 600;
+        color: #000;
+        padding: 15px 40px 15px 0;
+        border-bottom: 1px solid #f1ece6;
+        cursor: pointer;
+        margin-bottom: 2px;
+        position: relative;
+
+        .queryTxt {
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        &::after {
+            content: "";
+            background: url(https://www.miraeassetpartners.com/asset/images/icon-down.svg) 0 0/cover;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            transition: .3s;
+        }
+
+        &.active:after {
+            transform: rotate(180deg);
+        }
+    }
+
+    .accPanel {
+        transition-property: all;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0;
+        transition-duration: 1s !important;
+        position: relative;
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 20px;
+        padding-right: 30px;
+        // transition: height .35s ease;
+
+        ul {
+            margin-top: 20px;
+
+            li {
+                font-size: 14px;
+                list-style-type: disc;
+                line-height: 20px;
+                color: #000;
+                padding-bottom: 5px;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.bulletPointsList {
+    padding-left: 20px;
+
+    li {
+        font-size: 14px;
+        margin-bottom: 5px
+    }
+}
+
+.tableTitle {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 10px 0 10px;
+}
+
+.tableMainData {
+    margin-bottom: 20px;
+
+    table tr:last-child td {
+        border-bottom: none;
+    }
+}
+
+.tablefield {
+    margin-bottom: 12px;
+}
+
+@media all and (max-width:768px) {
+    .faqsSec {
+        padding-top: 20px;
+    }
+
+    .accCard {
+        margin-bottom: 5px;
+
+        .accTitle {
+            padding-right: 30px;
+            font-size: 14px;
+            line-height: 20px;
+
+            .queryTxt {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+        .accPanel {
+            font-size: 12px;
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .accCard .accTitle::after {
+        top: 14px;
+    }
+}
