@@ -17,7 +17,7 @@ const FaqsSec = () => {
         <>
             <section className={`${styles.faqsSec}`}>
                 <div className={`${styles.maContainer}`}>
-                    <h2 className={`${styles.secTitle}`}>Frequently Asked Questions</h2>
+                    <h2 className={`${styles.secTitle}`}>Frequently Asked Questions on Partnership</h2>
                     <div className={`${styles.accordionHolder}`}>
                         {data.map((v, i) => {
                             return (<div className={styles["accCard"]} key={i}>
