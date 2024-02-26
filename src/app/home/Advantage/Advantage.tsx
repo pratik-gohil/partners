@@ -41,8 +41,7 @@ function Advantage() {
 
     return (
         <>
-            <section className="maAdvantageSec">
-                <div className="un2024MidText">That&apos;s not all! Create recurring income with highest interest revenue sharing across,</div>
+            <section className="maAdvantageSec"> 
                 <div className="maContainer">
                     <h2 className="secTitle"><span>The &apos;Mirae Asset&apos;</span>advantage</h2>
                     <p className="captionTxt">Partnering with us has a lot of advantages for your business. See, what&apos;s in it for you. </p>
