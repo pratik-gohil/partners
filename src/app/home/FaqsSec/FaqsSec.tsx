@@ -27,6 +27,11 @@ const FaqsSec = () => {
 
                                     {v.answer}
                                     {
+                                        v.component && (
+                                            v.component
+                                        )
+                                    }
+                                    {
                                         v.bulletPoints && (
                                             <ul className={`${styles.bulletPointsList}`}>
                                                 {v.bulletPoints.map((p, i) => {
