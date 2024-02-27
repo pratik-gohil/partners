@@ -59,7 +59,7 @@
 
             sup {
                 color: #FF7518;
-                top: 12px;
+                top: 8px;
                 right: -8px;
                 position: absolute;
             }
@@ -418,6 +418,13 @@ fieldset:disabled a.btn {
         &::-webkit-scrollbar-thumb {
             background-color: darkgrey;
             outline: 1px solid slategrey
+        }
+
+        li{
+            &:hover {
+                background-color: #fff5ee;
+                color: #ff7518
+            }
         }
     }
 
