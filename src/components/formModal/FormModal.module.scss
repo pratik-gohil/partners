@@ -454,3 +454,17 @@ fieldset:disabled a.btn {
 .formGroup {
     position: relative;
 }
+
+@media all and (max-width:980px) {  
+    .formWrap{width: 96%; max-width: 96%;}
+    .formContent {
+        li{
+            flex: 0 0 100%;
+        }
+    }
+    
+}
+
+@media all and (max-width:767px) {  
+    
+}
