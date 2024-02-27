@@ -1,42 +1,15 @@
 @import "../../../styles/_common.scss";
 
-.faqsSec {
-    padding-top: 40px;
-    padding-bottom: 30px;
+.faqsSec { padding-top: 40px; padding-bottom: 30px;
 
-    table th {
-        font-size: 14px;
-        line-height: 16px;
-        color: #000000;
-        padding: 10px 20px;
-        text-align: center;
-        font-weight: 600;
-        background: #FFF5EE;
-        line-height: 22px;
-    }
-
-    table td {
-        font-size: 14px;
-        line-height: 22px;
-        color: #000000;
-        padding: 10px 20px;
-        text-align: center;
-        border-bottom: 1px solid #C4C4C4;
-    }
+    table th { font-size: 14px; line-height: 16px; color: #000000; padding: 10px 20px; text-align: center; font-weight: 600; background: #FFF5EE; line-height: 22px; }  
+    table td { font-size: 14px; line-height: 22px; color: #000000; padding: 10px 20px; text-align: center; border-bottom: 1px solid #C4C4C4; } 
+    p { text-align: left; margin: 10px 0 10px; font-size: 14px; } 
 }
 
-.expanded {
-    max-height: 500px;
-    // margin-bottom: 12px;
-    // transition: margin-bottom 100ms ease-in !important;
-    // padding-top: 15px;
-}
-
-.collapsed {
-    max-height: 0;
-    // transition: max-height 1s ease-in !important;
-    // margin-bottom: 0px;
-    // transition: margin-bottom 500ms ease-out !important;
+.expanded { max-height: 500px; // margin-bottom: 12px; // transition: margin-bottom 100ms ease-in !important; // padding-top: 15px;
+} 
+.collapsed { max-height: 0; // transition: max-height 1s ease-in !important; // margin-bottom: 0px; // transition: margin-bottom 500ms ease-out !important; 
 }
 
 // .showAccordion {
@@ -99,19 +72,16 @@
         overflow: hidden;
         font-size: 14px;
         line-height: 20px;
-        padding-right: 30px;
+        padding: 5px 30px 5px 0;
         // transition: height .35s ease;
 
-        ul {
-            margin-top: 20px;
-
+        ul { list-style-type: disc; margin-top: 5px;padding-left: 20px; 
             li {
                 font-size: 14px;
                 list-style-type: disc;
                 line-height: 20px;
                 color: #000;
-                padding-bottom: 5px;
-
+                padding-bottom: 5px;margin-bottom: 7px; 
                 &:hover {
                     color: #000;
                 }
@@ -119,25 +89,14 @@
         }
     }
 }
-
-.bulletPointsList {
-    padding-left: 20px;
-
-    li {
-        font-size: 14px;
-        margin-bottom: 5px
-    }
-}
-
+ 
 .tableTitle {
     font-size: 14px;
     font-weight: 700;
     margin: 10px 0 10px;
-}
-
+} 
 .tableMainData {
-    margin-bottom: 20px;
-
+    margin-bottom: 20px; 
     table tr:last-child td {
         border-bottom: none;
     }
@@ -145,6 +104,9 @@
 
 .tablefield {
     margin-bottom: 12px;
+}
+.qSixData{position: relative;
+    ul {padding: 10px;}
 }
 
 @media all and (max-width:768px) {
@@ -179,3 +141,4 @@
         top: 14px;
     }
 }
+

@@ -1,10 +1,12 @@
 import Qsix from "./components/qsix";
-
+import QOne from "./components/qOne";
+import QThree from "./components/qThree";
 const faqsData = [
     {
         queryNumber: `1`,
         query: `1. Who is an Authorised Person?`,
         answer: ``,
+        component: <QOne />
     },
     {
         queryNumber: `2`,
@@ -15,6 +17,7 @@ const faqsData = [
         queryNumber: `3`,
         query: `3. Who can be appointed as an Authorised Person?`,
         answer: ``,
+        component: <QThree />
     },
     {
         queryNumber: `4`,
@@ -28,7 +31,7 @@ const faqsData = [
     },
     {
         queryNumber: `6`,
-        query: `. What is the eligiblility criteria to become an Authorised Person?`,
+        query: `6. What is the eligiblility criteria to become an Authorised Person?`,
         answer: ``,
         component: <Qsix />
     },
