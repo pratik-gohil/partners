@@ -4,7 +4,7 @@ const faqsData = [
     {
         queryNumber: `1`,
         query: `1. Who is an Authorised Person?`,
-        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them. An AP can be an individual, partnership firm, LLP, or a corporate entity.`,
+        answer: ``,
     },
     {
         queryNumber: `2`,
@@ -14,10 +14,7 @@ const faqsData = [
     {
         queryNumber: `3`,
         query: `3. Who can be appointed as an Authorised Person?`,
-        answer: `Individual: A resident of India, above 18 years of age.  
-        Partnership firm: A firm that is registered under Indian Partnership Act, 1932. 
-        LLP: A firm that is registered under the Indian Limited Liability Partnership Act, 2008. 
-        Corporate: A firm that is registered under the Indian Companies Act, 1956.`,
+        answer: ``,
     },
     {
         queryNumber: `4`,
@@ -31,8 +28,8 @@ const faqsData = [
     },
     {
         queryNumber: `6`,
-        query: `66666666666666666666666666666666666- Data Issue. What is the eligiblility criteria to become an Authorised Person?`,
-        answer: `The eligibility criteria for an individual to become an AP is listed below.`,
+        query: `. What is the eligiblility criteria to become an Authorised Person?`,
+        answer: ``,
         component: <Qsix />
     },
     {
@@ -88,12 +85,7 @@ const faqsData = [
     {
         queryNumber: `17`,
         query: `17. How can I become an authorised partner with Mirae Asset if I am already registered with another stockbroker?`,
-        answer: `If you are already registered as an AP with another stockbroker, then you have three ways to join Mirae Asset Partners:`,
-        bulletPoints: [
-            `Cancel your AP registration with your current stockbroker; or`,
-            `Apply under a new name that's not registered with the exchange as an AP; or`,
-            `If you can't cancel your registration or apply under a new name, you can still join our Affiliate Program.`
-        ],
+        answer: ``, 
     },
     {
         queryNumber: `18`,
