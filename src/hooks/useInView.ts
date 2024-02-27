@@ -21,7 +21,7 @@ export const useInView = (ref: React.RefObject<HTMLElement>) => {
         }
 
         return () => { ref.current && observer.unobserve(ref.current) }
-    }, [ref]);
+    }, [ref.current]);
 
     return inView
 }
