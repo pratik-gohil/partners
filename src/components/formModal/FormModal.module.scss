@@ -461,8 +461,12 @@ fieldset:disabled a.btn {
         li{
             flex: 0 0 100%;
         }
+        &.last{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
     }
-    
+    .switchField{margin-bottom: 0px;}
 }
 
 @media all and (max-width:767px) {  
