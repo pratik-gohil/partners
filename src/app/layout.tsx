@@ -3,6 +3,9 @@ import "./globals.css";
 import Header from "../components/maHeader/Header";
 import Footer from "../components/maFooter/Footer";
 import styles from "./maCommanStyle.module.scss";
+import { OpenSansRegular } from "@/styles/fonts";
+import { PreloadResources } from "./preload-resources";
+
 export const metadata: Metadata = {
   title: "Mirae Assets Partners",
   description: "Mirae Assets Partners",
@@ -13,15 +16,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return ( 
-    <html lang="en" className={styles.maPartnersPage}>
-      <body>  
+
+  return (
+    <html lang="en" className={`${styles.maPartnersPage}`}>
+      <PreloadResources />
+      <body className={OpenSansRegular.className}>
         <Header />
         <main className={styles.main}>
-        {children} 
+          {children}
         </main>
         <Footer />
       </body>
-    </html> 
+    </html>
   );
 }
