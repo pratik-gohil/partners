@@ -22,62 +22,15 @@ const FaqsSec = () => {
                                 <div className={`${styles["accTitle"]} ${(expanded === i && styles["active"])}`} onClick={() => handleChange(i)}>
                                     <h3 className={`${styles.queryTxt}`}>{v.query}</h3>
                                 </div>
-                                <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}>
-
-                                    {v.answer}
+                                <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}>  
                                     {
-                                        v.bulletPoints && (
-                                            <ul className={`${styles.bulletPointsList}`}>
-                                                {v.bulletPoints.map((p, i) => {
-                                                    return <li key={i} dangerouslySetInnerHTML={{ __html: p }} />
-                                                })}
-                                            </ul>
-                                        )
+                                        v.answer
                                     }
                                     {
-                                        v.htmlContent && (
-                                            <ul className={`${styles.bulletPointsList}`}>
-
-                                                <div dangerouslySetInnerHTML={{ __html: v.htmlContent }} />
-
-                                            </ul>
-                                        )
-                                    }
-
-                                    {
-                                        v.tablefield1 && (
-                                            <div className={`${styles.tablefield}`} dangerouslySetInnerHTML={{ __html: v.tablefield1 }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.tablefield2 && (
-                                            <div className={`${styles.tablefield}`} dangerouslySetInnerHTML={{ __html: v.tablefield2 }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.tableTitle1 && (
-                                            <div className={`${styles.tableTitle}`} dangerouslySetInnerHTML={{ __html: v.tableTitle1 }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.table1 && (
-                                            <div className={`${styles.tableMainData}`} dangerouslySetInnerHTML={{ __html: v.table1 }} style={{ border: '1px solid #C4C4C4' }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.tableTitle2 && (
-                                            <div className={`${styles.tableTitle}`} dangerouslySetInnerHTML={{ __html: v.tableTitle2 }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.table2 && (
-                                            <div className={`${styles.tableMainData}`} dangerouslySetInnerHTML={{ __html: v.table2 }} style={{ border: '1px solid #C4C4C4' }}></div>
-                                        )
-                                    }
+                                        v.component && ( v.component )
+                                    }  
                                 </div>
-                            </div>);
-
-
+                            </div>); 
                         })}
                     </div>
                     <div className={`${styles.viewAllBtnWrap}`}>

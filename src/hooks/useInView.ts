@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 export const useInView = (ref: React.RefObject<HTMLElement>) => {
     const [inView, setInView] = useState(false);
@@ -14,13 +14,14 @@ export const useInView = (ref: React.RefObject<HTMLElement>) => {
     };
 
     useEffect(() => {
+        const el = ref.current;
         const observer = new IntersectionObserver(callback);
 
-        if (ref.current) {
-            observer.observe(ref.current)
+        if (el) {
+            observer.observe(el)
         }
 
-        return () => { ref.current && observer.unobserve(ref.current) }
+        return () => { el && observer.unobserve(el) }
     }, [ref]);
 
     return inView

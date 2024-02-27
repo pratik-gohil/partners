@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from 'react'
-import './index.scss'
+import styles from './clientfeature.module.scss'
+
 import { DeferedImage } from '@/components/DeferImage'
 
 const clientTabs = [
@@ -45,39 +46,41 @@ export default function ClientFeature() {
     const [activeTab, setActiveTab] = useState(1)
 
     return (
-        <section className="whatsInitClientsSec">
-            <div className="maContainer">
-                <h2 className="secTitle"><span>What&apos;s in it</span>for your clients?</h2>
+        <>
+            <section className={styles["whatsInitClientsSec"]}>
+                <div className={styles["maContainer"]}>
+                    <h2 className={styles["secTitle"]}><span>What&apos;s in it</span>for your clients?</h2>
 
-                <div className="technolbar-ta">
-                    <div className="tab-content">
-                        <div id="technology1" className="tab-pane active">
-                            <div className="tab-run-business-img">
-                                <DeferedImage src={clientTabs.find(tab => tab.id === activeTab)!.imageURL} />
+                    <div className={styles["technolbar-ta"]}>
+                        <div className={styles["tab-content"]}>
+                            <div id="technology1" className={styles["tab-pane active"]}>
+                                <div className={styles["tab-run-business-img"]}>
+                                    <DeferedImage src={clientTabs.find(tab => tab.id === activeTab)!.imageURL} />
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <ul className="nav nav-tabs" role="tablist">
-                        {
-                            clientTabs.map((tab, i) => {
-                                return (
-                                    <li key={i} className="nav-item" role="presentation" onClick={() => setActiveTab(tab.id)}>
-                                        <a className={`nav-link ${tab.id == activeTab ? 'active' : ''}`}
-                                            data-toggle="tab" >
-                                            <i>
-                                                {tab.id}
-                                            </i>
-                                            <span role="presentation"></span>
-                                            {tab.name}
-                                        </a>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
+                        <ul className={`${styles["nav"]} ${styles["nav-tabs"]}`} role="tablist">
+                            {
+                                clientTabs.map((tab, i) => {
+                                    return (
+                                        <li key={i} className={styles["nav-item"]} role="presentation" onClick={() => setActiveTab(tab.id)}>
+                                            <a className={`${styles["nav-link"]} ${tab.id == activeTab ? `${styles['active']}` : ''}`}
+                                                data-toggle="tab" >
+                                                <i>
+                                                    {tab.id}
+                                                </i>
+                                                <span role="presentation"></span>
+                                                {tab.name}
+                                            </a>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
