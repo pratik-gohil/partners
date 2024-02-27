@@ -1,3 +1,82 @@
 @import '../../../styles/common';
 
-.partRefProBannerSec { position: relative; }
+.partRefProBannerSec { position: relative;padding: 100px 0;}
+
+.partRefProBannerSec {
+    width: 100%;
+    display: inline-block;
+    background: url('https://www.miraeassetpartners.com/asset/images/referrals/banner-bg-24.png') left top no-repeat;
+    padding: 0;
+    position: relative;
+}
+.lhsWrap{width: 50%;}
+.rhsWrap {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    top: 36px;
+} 
+.rhsWrap img {
+    width: 100%;
+}
+
+.partRefProBannerSec .bannerTitle {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    text-align: left;
+    line-height: 60px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+    .partRefProBannerSec .bannerTitle b {
+        font-size: 66px;
+        text-transform: uppercase;
+        color: #f58220;
+        font-weight: 700;
+        line-height: 56px;
+    }
+
+        .partRefProBannerSec .bannerTitle b span {
+            position: relative;
+            left: 13px;
+            top: -26px;
+        }
+
+.partRefProBannerSec p {
+    font-size: 26px;
+    color: #fff;
+    line-height: 36px;
+    margin-top: 5px;
+}
+
+.partRefProBannerSec .bannerTitle {
+    font-size: 36px;
+    color: #fff; 
+    text-align: left;
+    line-height: 48px;
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-weight: 300;
+}
+
+.partRefProBannerSec .bannerTitle b {
+    font-size: 62px;
+    text-transform: uppercase;
+    color: #fff;font-weight: 700;
+    line-height: 56px;
+}
+
+        .partRefProBannerSec .bannerTitle b span {
+            position: relative;
+            left: 13px;
+            top: -26px;
+        }
+
+.partRefProBannerSec p {
+    font-size: 26px;
+    color: #fff;
+    line-height: 36px;
+    margin-top: 5px;
+}
