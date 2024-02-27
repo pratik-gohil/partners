@@ -1,4 +1,4 @@
-// @import "../styles/_fonts.scss";
+/* @import "../styles/_fonts.scss"; */
 @import "../styles/_variables.scss";
 
 /* --- Page level style --- */
@@ -39,7 +39,7 @@
 	padding: 0 15px;
 	border-radius: 6px;
 	cursor: pointer;
-	min-width: 200px;
+	min-width: 170px;
 }
 
 .orangeTxt {
@@ -57,8 +57,7 @@
 		background: 0 0;
 		border: none;
 		color: #ff7518;
-		margin-top: 30px;
-
+		margin-top: 30px; 
 		svg {
 			display: inline-block;
 			margin-left: 5px;
