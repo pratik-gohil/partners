@@ -1,0 +1,41 @@
+.switchField {
+    display: flex;
+    margin: 0 0 15px;
+    overflow: hidden;
+}
+
+    .switchField input {
+        position: absolute !important;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        width: 1px;
+        border: 0;
+        overflow: hidden;
+    }
+
+    .switchField label {
+        background-color: #F3F3F3;
+        color: #999 !important;
+        line-height: 1;
+        text-align: center;
+        padding: 8px 16px;
+        margin-right: -1px;
+        border: 1px solid #D2D2D2;
+        transition: all 0.1s ease-in-out;
+        cursor: pointer;
+        margin-bottom: 0;
+    }
+
+        .switchField label:nth-child(2) {
+            border-radius: 16px 0 0 16px;
+        }
+
+        .switchField label:last-child {
+            border-radius: 0 16px 16px 0;
+        }
+
+    .switchField input:checked + label {
+        background-color: #FF7518;
+        color: #fff !important;
+        border: 1px solid #FF7518;
+    }
