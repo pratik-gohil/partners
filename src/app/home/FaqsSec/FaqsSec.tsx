@@ -1,9 +1,8 @@
 "use client";
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import styles from "./FaqsSec.module.scss";
 import accordionData from './accordionData.js';
 import DownCaretSVG from '@/components/svgs/DownCaretSVG';
-
 
 const FaqsSec = () => {
     const [expanded, setExpanded] = useState(0);

@@ -2,41 +2,43 @@
 import React, { useState } from 'react'
 // import './index.scss'
 import styles from './advantage.module.scss'
+import { DeferedImage } from '@/components/DeferImage'
+
+const interActiveTabs = [
+    {
+        id: 1,
+        name: 'Single integrated dashboard',
+        imageURL: 'https://www.miraeassetpartners.com/asset/images/single-integrated-dashboard.webp'
+    },
+    {
+        id: 2,
+        name: 'Onboard your clients in a few clicks',
+        imageURL: 'https://www.miraeassetpartners.com/asset/images/onboard-in-few-clicks.webp'
+    },
+    {
+        id: 3,
+        name: `Customise brokerage plans as per guide client's trading behaviour`,
+        imageURL: 'https://www.miraeassetpartners.com/asset/images/customize-plan-img.webp'
+    },
+    {
+        id: 4,
+        name: 'View & monitor client&apos;s portfolio and LIVE positions',
+        imageURL: 'https://www.miraeassetpartners.com/asset/images/view-portfolio-img.webp'
+    },
+    {
+        id: 5,
+        name: 'Access to smart reports',
+        imageURL: 'https://www.miraeassetpartners.com/asset/images/smart-reports.webp'
+    },
+    {
+        id: 6,
+        name: 'Dedicated BA excellence desk - online and offline support',
+        imageURL: 'https://www.miraeassetpartners.com/asset/images/dedicated-BA.webp'
+    }
+]
 
 function Advantage() {
     const [activeTab, setActiveTab] = useState(1)
-    const interActiveTabs = [
-        {
-            id: 1,
-            name: 'Single integrated dashboard',
-            imageURL: 'https://www.miraeassetpartners.com/asset/images/single-integrated-dashboard.webp'
-        },
-        {
-            id: 2,
-            name: 'Onboard your clients in a few clicks',
-            imageURL: 'https://www.miraeassetpartners.com/asset/images/onboard-in-few-clicks.webp'
-        },
-        {
-            id: 3,
-            name: `Customise brokerage plans as per guide client's trading behaviour`,
-            imageURL: 'https://www.miraeassetpartners.com/asset/images/customize-plan-img.webp'
-        },
-        {
-            id: 4,
-            name: 'View & monitor client&apos;s portfolio and LIVE positions',
-            imageURL: 'https://www.miraeassetpartners.com/asset/images/view-portfolio-img.webp'
-        },
-        {
-            id: 5,
-            name: 'Access to smart reports',
-            imageURL: 'https://www.miraeassetpartners.com/asset/images/smart-reports.webp'
-        },
-        {
-            id: 6,
-            name: 'Dedicated BA excellence desk - online and offline support',
-            imageURL: 'https://www.miraeassetpartners.com/asset/images/dedicated-BA.webp'
-        }
-    ]
 
 
     return (
@@ -72,7 +74,7 @@ function Advantage() {
                                 <div className={styles["tab-pane fade show active"]} id="advantage-tab1" role="tabpanel"
                                     aria-labelledby="advantage1">
                                     <div className={styles["tab-run-business-img"]}>
-                                        <img src={interActiveTabs.find(tab => tab.id === activeTab)!.imageURL} alt="" />
+                                        <DeferedImage src={interActiveTabs.find(tab => tab.id === activeTab)!.imageURL} alt="dashboard" />
                                     </div>
                                 </div>
                             </div>
