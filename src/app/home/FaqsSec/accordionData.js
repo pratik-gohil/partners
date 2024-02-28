@@ -1,6 +1,9 @@
 import Qsix from "./components/qsix";
 import QOne from "./components/qOne";
 import QThree from "./components/qThree";
+import QSeventeen from "./components/qSeventeen";
+import QNineteen from "./components/qNineteen";
+
 const faqsData = [
     {
         queryNumber: `1`,
@@ -89,6 +92,7 @@ const faqsData = [
         queryNumber: `17`,
         query: `17. How can I become an authorised partner with Mirae Asset if I am already registered with another stockbroker?`,
         answer: ``, 
+        component: <QSeventeen />
     },
     {
         queryNumber: `18`,
@@ -97,15 +101,8 @@ const faqsData = [
     },
     {
         queryNumber: `19`,
-        query: `5. If a company or partnership firm is already registered as an Authorised Person (AP), can one of its directors or partners also register individually as another Authorised Person?`,
-        tablefield1: [`<b>Security deposit:</b> ₹50,000 (Refundable)`],
-        tablefield2: [`<b>Document handling charges:</b> ₹1,500 (eFranking & eSign charges)`],
-
-        tableTitle1: `<div classs="tableTitle">One-time Exchange Registration Charges:</div>`,
-        table1: `<table width="100%"> <tbody><tr> <th colspan="6">AP registration charges</th> </tr> <tr> <td>Exchange</td> <td>Segment</td> <td>Fee (₹)</td> <td>GST rate</td> <td>GST amount</td> <td>Total charges (₹)</td> </tr> <tr> <td>NSE</td> <td>Capital Market</td> <td>5,000</td> <td>18%</td> <td>900</td> <td>5,900</td> </tr> <tr> <td>NSE</td> <td>F&amp;O</td> <td>5,000</td> <td>18%</td> <td>900</td> <td>5,900</td> </tr> <tr> <td>NSE</td> <td>Currency Derivatives</td> <td>5,000</td> <td>18%</td> <td>900</td> <td>5,900</td> </tr> <tr> <td>BSE</td> <td>Capital Market</td> <td>4,000</td> <td>18%</td> <td>720</td> <td>4,720</td> </tr> <tr> <td>MCX</td> <td>Commodities</td> <td>-</td> <td>18%</td> <td>-</td> <td>-</td> </tr> <tr> <td><b>Total Registration charges</b></td> <td><b>All Segments</b></td> <td><b>19,000</b></td> <td><b>18%</b></td> <td><b>3,420</b></td> <td><b>22,420</b></td> </tr> </tbody></table>`,
-
-        tableTitle2: `<div classs="tableTitle">AP Annual Maintenance Charges effective from April 2024:</div>`,
-        table2: `<table width="100%"> <tbody><tr> <td>NSE-AMC</td> <td>All Segments</td> <td>5,000</td> <td>18%</td> <td>900</td> <td>5,900</td> </tr> <tr> <td>BSE-AMC</td> <td>All Segments</td> <td>4,000</td> <td>18%</td> <td>720</td> <td>4,720</td> </tr> <tr> <td>Total AMC</td> <td>NSE&amp;BSE</td> <td>9,000</td> <td>18%</td> <td>1,620</td> <td>10,620</td> </tr> </tbody></table>`
+        query: `19. What are the various charges that one needs to pay to register and operate as an AP?`,
+        component: <QNineteen />
     },
 ];
 

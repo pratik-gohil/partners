@@ -22,13 +22,15 @@ const FaqsSec = () => {
                                 <div className={`${styles["accTitle"]} ${(expanded === i && styles["active"])}`} onClick={() => handleChange(i)}>
                                     <h3 className={`${styles.queryTxt}`}>{v.query}</h3>
                                 </div>
-                                <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}>  
-                                    {
-                                        v.answer
-                                    }
-                                    {
-                                        v.component && ( v.component )
-                                    }  
+                                <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}> 
+                                    <div className={`${styles.accPanelBox}`}> 
+                                        {
+                                            v.answer
+                                        }
+                                        {
+                                            v.component && ( v.component )
+                                        } 
+                                    </div>  
                                 </div>
                             </div>); 
                         })}
