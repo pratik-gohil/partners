@@ -1,2 +1,187 @@
 @import "./_common.scss";
-.staticSec{}
+
+.staticSec {
+    padding-top: 40px;
+}
+
+.secTitle {
+    margin-bottom: 10px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.title {
+    font-family: "Open Sans Semi Bold", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333;
+    margin-bottom: 14px;
+}
+
+.termsList {
+    margin-left: 15px;
+}
+
+.termsList li {
+    margin-top: 15px;
+    font-size: 14px;
+    list-style: decimal;
+}
+
+.mainworTc {
+    line-height: 26px;
+}
+
+.mainworTc p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.mainworTc p.dadnewpba {
+    line-height: 26px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.pb40 {
+    padding-bottom: 40px;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+.mainworTc a,
+.mainworTc a:hover {
+    color: #007bff;
+}
+
+.mainworTc h3 {
+    margin-bottom: 10px;
+}
+
+
+.listpayout {
+    padding-bottom: 30px;
+    padding-left: 15px;
+}
+
+.listpayout li {
+    list-style: none;
+    font-size: 14px;
+    padding: 5px 0;
+    list-style: decimal;
+}
+
+
+.insidebarulr {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.insidebarulr li {
+    list-style: none;
+    font-size: 14px;
+    padding: 5px 0;
+    list-style: disc;
+}
+
+
+.compliancetxt {
+    margin-left: 15px;
+}
+
+.compliancetxt li {
+    margin-bottom: 15px;
+    font-size: 14px;
+    list-style: disc;
+
+    ul li {
+        list-style: circle;
+    }
+}
+
+.downloadblock {
+    border: 1px solid #F1ECE6;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0 auto 60px;
+    display: block;
+    padding: 30px;
+}
+
+.blocktitle {
+    font-family: "Open Sans Semi Bold", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #333;
+    margin: 0 0 20px;
+}
+
+.downloadblock .title {
+    font-family: "Open Sans Semi Bold", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.downloadblock .download-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
+.downloadblock .downloadlist li {
+    position: relative;
+    width: 100%;
+    font-family: "Open Sans Regular", sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    color: #666;
+}
+
+.download-block .downloadlist li:before {
+    content: ">";
+    position: absolute;
+    font-family: "Open Sans Bold", sans-serif;
+    font-size: 14px;
+    line-height: 10px;
+    width: 10px;
+    height: 11px;
+    left: -15px;
+    top: 8px;
+}
+
+.download-block .downloadlist li a {
+    color: #666;
+}
+
+.mb3 {
+    margin-bottom: 1rem;
+}
+
+.pl3 {
+    padding-left: 1rem;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.mb0 {
+    margin-bottom: 0px;
+}
+
+.orangetxt {
+    color: #f58220;
+}
+
