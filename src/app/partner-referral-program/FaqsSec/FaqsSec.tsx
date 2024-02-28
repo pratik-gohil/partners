@@ -11,11 +11,6 @@ const FaqsSec = () => {
         setExpanded(expanded !== panel ? panel : 0);
     };
 
-<<<<<<< HEAD
-=======
-    const [data, setData] = useState(accordionData.slice(0, 5))
-
->>>>>>> c6735acb4fef71e32c0618015e322d2a4530dd12
     return (
         <>
             <section className={`${styles.faqsSec}`}>
@@ -27,17 +22,17 @@ const FaqsSec = () => {
                                 <div className={`${styles["accTitle"]} ${(expanded === i && styles["active"])}`} onClick={() => handleChange(i)}>
                                     <h3 className={`${styles.queryTxt}`}>{v.query}</h3>
                                 </div>
-                                <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}> 
-                                    <div className={`${styles.accPanelBox}`}> 
+                                <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}>
+                                    <div className={`${styles.accPanelBox}`}>
                                         {
                                             v.answer
                                         }
                                         {
-                                            v.component && ( v.component )
-                                        } 
-                                    </div>  
+                                            v.component && (v.component)
+                                        }
+                                    </div>
                                 </div>
-                            </div>); 
+                            </div>);
                         })}
                     </div>
                     <div className={`${styles.viewAllBtnWrap}`}>
