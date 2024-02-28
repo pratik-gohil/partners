@@ -37,7 +37,6 @@ const GrowthModal = ({ }) => {
                                                 className={`${styles.formControl}`}
                                                 id="referalName1"
                                                 placeholder="Reference Name"
-                                                onblur="BlurReferralName(1);"
                                             />
                                             <span id="referalName1-valid" className={`${styles.textDanger} ${styles.dNone}`}>
                                                 Referral Name cannot be blank.
@@ -52,7 +51,6 @@ const GrowthModal = ({ }) => {
                                                 id="referalMobile1"
                                                 maxLength={10}
                                                 placeholder="Reference Mobile No."
-                                                onblur="BlurReferralMobile(1);"
                                             />
                                             <span
                                                 id="referalMobile1-valid"
@@ -64,7 +62,7 @@ const GrowthModal = ({ }) => {
                                         </div>
                                     </li>
                                 </ul>
-                                <div className={`${styles.deletBad} ${styles.addBad}`} onclick="addInputRow()">
+                                <div className={`${styles.deletBad} ${styles.addBad}`}>
                                     <img src="https://www.miraeassetpartners.com/asset/images/add-icon.svg" className={`${styles.addiconadd}`} alt="" />
                                 </div>
                             </div> <div className={`${styles.onerownamenumBar}`}>
@@ -76,7 +74,6 @@ const GrowthModal = ({ }) => {
                                                 className={`${styles.formControl}`}
                                                 id="referalName1"
                                                 placeholder="Reference Name"
-                                                onblur="BlurReferralName(1);"
                                             />
                                             <span id="referalName1-valid" className={`${styles.textDanger} ${styles.dNone}`}>
                                                 Referral Name cannot be blank.
@@ -91,7 +88,6 @@ const GrowthModal = ({ }) => {
                                                 id="referalMobile1"
                                                 maxLength={10}
                                                 placeholder="Reference Mobile No."
-                                                onblur="BlurReferralMobile(1);"
                                             />
                                             <span
                                                 id="referalMobile1-valid"
@@ -103,7 +99,7 @@ const GrowthModal = ({ }) => {
                                         </div>
                                     </li>
                                 </ul>
-                                <div className={`${styles.deletBad} ${styles.addBad}`} onclick="addInputRow()">
+                                <div className={`${styles.deletBad} ${styles.addBad}`} >
                                     <img src="https://www.miraeassetpartners.com/asset/images/icon-delete.svg" className={`${styles.deleticonadd}`} alt="" />
                                 </div>
                             </div>
