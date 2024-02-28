@@ -6,6 +6,7 @@ import RightArrowSVG from '@/components/svgs/RightArrowSVG';
 import FeeSVG from '@/components/svgs/FeeSVG';
 import UserSVG from '@/components/svgs/UserSVG';
 import PledgeSVG from '@/components/svgs/PledgeSVG';
+import { nunito } from '@/styles/fonts';
 
 function PartnerProgram() {
     const handleKnowMore = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -21,11 +22,11 @@ function PartnerProgram() {
                 <h2 className={styles["secTitle"]}>आपके बड़े सपनों को उड़ान दें,<span>Mirae Asset के साथ</span></h2>
                 <p className={styles["captionTxt"]}> Our Partner program offers <span className={styles["orangeTxt"]}> unbelievable pricing,</span> a <span className={styles["orangeTxt"]}> seamless tech platform</span> for an enhanced experience for you and your clients. It also <span className={styles["orangeTxt"]}>gives you full control</span> and ownership, reducing dependency on us. For detailed payout terms, <a aria-label="Income Sharing for Authorised Partners" className={styles["orangeTxt"]} href="asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank">click here</a>
                 </p>
-                <h4 className={styles["midheading-pl"]}>Let&apos;s understand the payout opportunities with examples</h4>
+                <h4 className={`${styles["midheading-pl"]} ${nunito.className}`}>Let&apos;s understand the payout opportunities with examples</h4>
                 <div className={styles["opptUlist"]}>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
-                            <div className={styles["x-amount-left"]}>
+                            <div className={`${styles["x-amount-left"]} ${nunito.className}`}>
                                 Brokerage
                             </div>
                             <div className={`${styles["x-amount-right"]} `}>
@@ -74,7 +75,7 @@ function PartnerProgram() {
                     </div>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
-                            <div className={styles["x-amount-left"]}>
+                            <div className={`${styles["x-amount-left"]} ${nunito.className}`}>
                                 MTF (eMargin) Interest
                             </div>
                             <div className={styles["knowmore-ribar"]} data-section-action="mtf" onClick={e => handleKnowMore(e)}>Know How ?</div>
@@ -164,7 +165,7 @@ function PartnerProgram() {
                     </div>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
-                            <div className={styles["x-amount-left"]}>
+                            <div className={`${styles["x-amount-left"]} ${nunito.className}`}>
                                 Margin Pledge Interest
                             </div>
                             <div className={styles["knowmore-ribar"]} data-section-action="margin-pledge-intrest" onClick={e => handleKnowMore(e)}>Know How ?</div>
@@ -254,7 +255,7 @@ function PartnerProgram() {
                     </div>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
-                            <div className={styles["x-amount-left"]}>
+                            <div className={`${styles["x-amount-left"]} ${nunito.className}`}>
                                 DP Sell Transaction Charges
                             </div>
                             <div className={styles["knowmore-ribar"]} data-section-action="dp-sell" onClick={e => handleKnowMore(e)}>Know How ?</div>
@@ -344,7 +345,7 @@ function PartnerProgram() {
                 </div>
 
                 <div className={styles["partner-offer-ac-block"]}>
-                    <h3 className={styles["title"]}>That&apos;s not all, you can benefit from various other charges too</h3>
+                    <h3 className={`${styles["title"]} ${nunito.className}`}>That&apos;s not all, you can benefit from various other charges too</h3>
                     <div className={styles["partner-ul-block"]}>
                         <ul>
                             <li>
