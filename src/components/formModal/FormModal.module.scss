@@ -45,6 +45,7 @@
     gap: 30px;
     grid-row-gap: 20px;
     justify-content: space-between;
+
     >li {
         width: 31%;
         display: inline-block;
@@ -322,6 +323,7 @@
     &.selCity {
         max-height: 200px;
         overflow-y: auto;
+
         &::-webkit-scrollbar {
             width: 5px;
             height: 1px;
@@ -342,7 +344,7 @@
             //outline: 1px solid slategrey
         }
 
-        li{
+        li {
             &:hover {
                 background-color: #fff5ee;
                 color: #ff7518
@@ -377,20 +379,26 @@
     position: relative;
 }
 
-@media all and (max-width:980px) {  
-    .formWrap{width: 96%; max-width: 96%;}
+@media all and (max-width:980px) {
+    .formWrap {
+        width: 96%;
+        max-width: 96%;
+    }
+
     .formContent {
-        li{
+        li {
             flex: 0 0 100%;
         }
-        &.last{
+
+        &.last {
             padding-top: 20px;
             padding-bottom: 20px;
         }
     }
-    .switchField{margin-bottom: 0px;}
+
+    .switchField {
+        margin-bottom: 0px;
+    }
 }
 
-@media all and (max-width:767px) {  
-    
-}
+@media all and (max-width:767px) {}
