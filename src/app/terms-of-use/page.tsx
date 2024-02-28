@@ -10,7 +10,7 @@ export default function TermOfUse() {
       <Breadcrumb />
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <h2 className={`${styles.secTitle}`}>Our Policies</h2>
+          <h2 className={`${styles.secTitle} ${nunito.className}`}>Our Policies</h2>
           <p className={`${styles.textCenter} ${styles.font14}`}>We suggest you go through our policies carefully, and keep visiting for updates.</p>
           <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
@@ -52,7 +52,7 @@ export default function TermOfUse() {
                 pertaining to an account which is in force now, have been read by me/us and
                 I/We have understood the same and I agree to abide by and to be bound by the
                 rules as are in force from time to time for such account. You can
-                view/download the same by clicking 
+                view/download the same by clicking
                 <a href="https://bit.ly/3CPMZ5k" target="_blank">
                   https://bit.ly/3CPMZ5k
                 </a>

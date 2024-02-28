@@ -15,24 +15,24 @@ const FaqsSec = () => {
         <>
             <section className={`${styles.faqsSec}`}>
                 <div className={`${styles.maContainer}`}>
-                    <h2 className={`${styles.secTitle}`}>Frequently Asked Questions on Partnership</h2>
+                    <h2 className={`${styles.secTitle} ${nunito.className}`}>Frequently Asked Questions on Partnership</h2>
                     <div className={`${styles.accordionHolder}`}>
                         {accordionData.slice(0, showMore ? accordionData.length : 5).map((v, i) => {
                             return (<div className={styles["accCard"]} key={i}>
                                 <div className={`${styles["accTitle"]} ${(expanded === i && styles["active"])}`} onClick={() => handleChange(i)}>
                                     <h3 className={`${styles.queryTxt}`}>{v.query}</h3>
                                 </div>
-                                <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}> 
-                                    <div className={`${styles.accPanelBox}`}> 
+                                <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}>
+                                    <div className={`${styles.accPanelBox}`}>
                                         {
                                             v.answer
                                         }
                                         {
-                                            v.component && ( v.component )
-                                        } 
-                                    </div>  
+                                            v.component && (v.component)
+                                        }
+                                    </div>
                                 </div>
-                            </div>); 
+                            </div>);
                         })}
                     </div>
                     <div className={`${styles.viewAllBtnWrap}`}>

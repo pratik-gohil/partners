@@ -28,16 +28,6 @@
     }
 }
 
-.midheading-pl {
-    font-size: 24px;
-    color: #043b72;
-    line-height: 24px;
-    margin-top: 20px;
-    font-family: "Nunito", sans-serif;
-    text-transform: none;
-    margin-bottom: 30px;
-}
-
 .opptUlist {
     display: block;
     margin-bottom: 25px;
@@ -80,14 +70,7 @@
     float: left
 }
 
-.x-amount-left {
-    width: auto;
-    padding: 15px 15px 15px 0;
-    font-size: 30px;
-    color: #ff7518;
-    font-family: "Nunito", sans-serif;
-    float: left
-}
+
 
 .x-amount-txt-ul,
 .x-amount-ul-block {
@@ -327,14 +310,6 @@
     width: 100%;
     display: inline-block;
     margin-top: 10px
-}
-
-.partner-offer-ac-block .title {
-    font-size: 23px;
-    line-height: 29px;
-    color: #043b72;
-    text-align: center;
-    font-family: "Nunito", sans-serif;
 }
 
 .partner-ul-block {
@@ -693,7 +668,6 @@
     color: #043b72;
     line-height: 24px;
     margin-top: 20px;
-    font-family: var(--nunito);
     text-transform: none;
     margin-bottom: 30px;
 }
@@ -745,7 +719,6 @@
     padding: 15px 15px 15px 0;
     font-size: 30px;
     color: #ff7518;
-    font-family: var(--nunito);
     float: left
 }
 
@@ -994,7 +967,6 @@
     line-height: 29px;
     color: #043b72;
     text-align: center;
-    font-family: var(--nunito);
 }
 
 .partner-ul-block {
