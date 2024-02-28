@@ -12,7 +12,7 @@ export default function Disclaimer() {
         <div className={`${styles.maContainer}`}>
           <h2 className={`${styles.secTitle}`}>Our Policies</h2>
           <p className={`${styles.textCenter} ${styles.font14}`}>We suggest you go through our policies carefully, and keep visiting for updates.</p>
-          {/* <PolicyNavigation /> */}
+          <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Disclaimers</h1>
             <p>

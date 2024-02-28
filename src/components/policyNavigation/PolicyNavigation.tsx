@@ -1,17 +1,17 @@
 "use client";
 import React from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 
 import styles from "./PolicyNavigation.module.scss";
 
 const PolicyNavigation = () => {
 
-    const router = useRouter();
+    const pathname = usePathname();
 
-    const isActive = (path) => {
+    const isActive = (path: string) => {
         // Check if current path matches or starts with the provided path
-        return router.pathname === path || router.pathname.startsWith(path);
+        return pathname === path || pathname.startsWith(path);
     };
     return (
         <>
@@ -33,7 +33,7 @@ const PolicyNavigation = () => {
                         className={` ${isActive('/privacy-policy') ? styles.active : ''
                             }`}
                     >
-                        <Link href="/privacy-policy">Privacy</Link>
+                        <Link href="/privacy-policy">Privacy Policy</Link>
                     </li>
                     <li
                         className={` ${isActive('/disclaimer') ? styles.active : ''

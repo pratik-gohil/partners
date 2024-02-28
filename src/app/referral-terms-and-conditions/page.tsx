@@ -10,7 +10,7 @@ export default function ReferralTermsAndConditions() {
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
           <h2 className={`${styles.secTitle}`}>Our Policies</h2>
-          {/* <PolicyNavigation /> */}
+          <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Partner Referral T&amp;C</h1>
             <ul className={`${styles.listpayout}`}>
