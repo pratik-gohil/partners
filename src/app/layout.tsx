@@ -22,12 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${styles.maPartnersPage}`}>
       <PreloadResources />
-      <body className={`${openSans.className} ${nunito.variable}`}>
+      <body className={openSans.className}>
         <Header />
         <main className={styles.main}>
           {children}
         </main>
         <Footer />
+        <div id='modal-portal' />
       </body>
     </html>
   );

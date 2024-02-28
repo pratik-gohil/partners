@@ -1,82 +1,16 @@
 @import '../../../styles/common';
 
-.partRefProBannerSec { position: relative;padding: 100px 0;}
-
-.partRefProBannerSec {
-    width: 100%;
-    display: inline-block;
-    background: url('https://www.miraeassetpartners.com/asset/images/referrals/banner-bg-24.png') left top no-repeat;
-    padding: 0;
-    position: relative;
-}
-.lhsWrap{width: 50%;}
-.rhsWrap {
-    width: 50%;
-    height: 100%;
-    position: relative;
-    top: 36px;
+.partRefProBannerSec { position: relative;width: 100%; display: inline-block; background: url('https://www.miraeassetpartners.com/asset/images/referrals/banner-bg-24.png') center top no-repeat; background-color: #fa8412;
+    .maContainer{ align-items: flex-end;}
+    .lhsWrap{width: 50%;padding: 50px 0 15px 0;margin-bottom:50px; }
+    .rhsWrap { width: 50%; height: 100%; position: relative;
+        img { width: 100%; max-width: 540px; margin-left: 30px; }
+    } 
+    p { font-size: 26px; color: #fff; line-height: 36px; margin-top: 5px; }
+}  
+.bannerTitle { font-size: 36px; color: #fff; font-weight: 400; text-align: left; line-height: 48px; margin-bottom: 15px; 
+    small{display: block;width: 100%;}
+    b { font-size: 66px;line-height: 56px;font-weight: 700; color: #fff;text-transform: uppercase; img { position: relative; left: 13px; }}
+    .b2{display: flex; flex-wrap: nowrap; align-items: flex-end; position: relative; top: -20px;}
 } 
-.rhsWrap img {
-    width: 100%;
-}
-
-.partRefProBannerSec .bannerTitle {
-    font-size: 50px;
-    color: #fff;
-    font-weight: 600;
-    text-align: left;
-    line-height: 60px;
-    margin-bottom: 0;
-    margin-top: 15px;
-}
-
-    .partRefProBannerSec .bannerTitle b {
-        font-size: 66px;
-        text-transform: uppercase;
-        color: #f58220;
-        font-weight: 700;
-        line-height: 56px;
-    }
-
-        .partRefProBannerSec .bannerTitle b span {
-            position: relative;
-            left: 13px;
-            top: -26px;
-        }
-
-.partRefProBannerSec p {
-    font-size: 26px;
-    color: #fff;
-    line-height: 36px;
-    margin-top: 5px;
-}
-
-.partRefProBannerSec .bannerTitle {
-    font-size: 36px;
-    color: #fff; 
-    text-align: left;
-    line-height: 48px;
-    margin-bottom: 0;
-    margin-top: 50px;
-    font-weight: 300;
-}
-
-.partRefProBannerSec .bannerTitle b {
-    font-size: 62px;
-    text-transform: uppercase;
-    color: #fff;font-weight: 700;
-    line-height: 56px;
-}
-
-        .partRefProBannerSec .bannerTitle b span {
-            position: relative;
-            left: 13px;
-            top: -26px;
-        }
-
-.partRefProBannerSec p {
-    font-size: 26px;
-    color: #fff;
-    line-height: 36px;
-    margin-top: 5px;
-}
+.priceBandStrip{background: #fff; padding: 5px 20px; border-radius: 6px; color: #1A3967; font-size: 28px; line-height: 44px;font-weight: 700;}

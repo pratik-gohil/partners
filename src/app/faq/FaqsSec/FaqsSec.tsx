@@ -11,16 +11,11 @@ const FaqsSec = () => {
         setExpanded(expanded !== panel ? panel : 0);
     };
 
-<<<<<<< HEAD
-=======
-    const [data, setData] = useState(accordionData.slice(0, 5))
-
->>>>>>> c6735acb4fef71e32c0618015e322d2a4530dd12
     return (
         <>
             <section className={`${styles.faqsSec}`}>
                 <div className={`${styles.maContainer}`}>
-                    <h2 className={`${styles.secTitle}`}>Refer and Earn - Frequently Asked Questions</h2>
+                    <h2 className={`${styles.secTitle}`}>Frequently Asked Questions on Partnership</h2>
                     <div className={`${styles.accordionHolder}`}>
                         {accordionData.slice(0, showMore ? accordionData.length : 5).map((v, i) => {
                             return (<div className={styles["accCard"]} key={i}>
