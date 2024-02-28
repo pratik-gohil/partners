@@ -1,6 +1,7 @@
 @import "../../../styles/_common.scss";
 
-.faqsSec { padding-top: 40px; padding-bottom: 30px;
+.faqsSec { padding-top: 50px; padding-bottom: 30px;
+    .secTitle{margin-bottom: 30px;}
 
     table th { font-size: 14px; line-height: 16px; color: #000000; padding: 10px 20px; text-align: center; font-weight: 600; background: #FFF5EE; line-height: 22px; }  
     table td { font-size: 14px; line-height: 22px; color: #000000; padding: 10px 20px; text-align: center; border-bottom: 1px solid #C4C4C4; } 
@@ -9,27 +10,8 @@
 
 .expanded{ max-height: 900px; transition: max-height 1s ease;}
 .collapsed { max-height: 0; transition: none;}  
-/* .expanded{ max-height: 900px;  transition: all 0.5s ease-in-out !important; }
-.collapsed { max-height: 0; transition: all 0.5s ease-in-out !important; } */  
+.accordionHolder { position: relative; }
 
-/* .expanded { max-height: 900px; transition: max-height 1s ease-in !important; margin-bottom: 15px; transition: margin-bottom 100ms ease-in !important; padding-top: 15px;} 
-.collapsed { max-height: 0; transition: max-height 1s ease-out !important; margin-bottom: 0px; transition: margin-bottom 500ms ease-out !important;}
-
- */
-
-// .showAccordion {
-//     max-height: 100%;
-//     transition: max-height 1s ease-in !important;
-// }
-
-// .hideAccordion {
-//     max-height: 0;
-//     transition: max-height 1s ease-out !important;
-// }
-
-.accordionHolder {
-    position: relative;
-}
 
 .accCard { position: relative;
     .accTitle {
