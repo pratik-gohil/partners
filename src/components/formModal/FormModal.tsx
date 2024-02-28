@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import styles from "./FormModal.module.scss";
 
-const FormModal = ({ }) => {
+const FormModal = ({ onClose }: { onClose: () => void }) => {
     const [selectedOption, setSelectedOption] = useState("no");
 
     const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,7 +14,7 @@ const FormModal = ({ }) => {
             <div className={`${styles.formWrap}`}>
                 <div className={`${styles.modalHeader}`}>
                     <h2 className={`${styles.modaltitle}`}>Enter Details</h2>
-                    <button type="button" className={`${styles.closepp}`} aria-label="Close">
+                    <button type="button" className={`${styles.closepp}`} aria-label="Close" onClick={onClose}>
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
