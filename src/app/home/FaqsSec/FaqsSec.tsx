@@ -39,46 +39,9 @@ const FaqsSec = () => {
                                             </ul>
                                         )
                                     }
-                                    {
-                                        v.htmlContent && (
-                                            <ul className={`${styles.bulletPointsList}`}>
 
-                                                <div dangerouslySetInnerHTML={{ __html: v.htmlContent }} />
 
-                                            </ul>
-                                        )
-                                    }
 
-                                    {
-                                        v.tablefield1 && (
-                                            <div className={`${styles.tablefield}`} dangerouslySetInnerHTML={{ __html: v.tablefield1 }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.tablefield2 && (
-                                            <div className={`${styles.tablefield}`} dangerouslySetInnerHTML={{ __html: v.tablefield2 }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.tableTitle1 && (
-                                            <div className={`${styles.tableTitle}`} dangerouslySetInnerHTML={{ __html: v.tableTitle1 }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.table1 && (
-                                            <div className={`${styles.tableMainData}`} dangerouslySetInnerHTML={{ __html: v.table1 }} style={{ border: '1px solid #C4C4C4' }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.tableTitle2 && (
-                                            <div className={`${styles.tableTitle}`} dangerouslySetInnerHTML={{ __html: v.tableTitle2 }}></div>
-                                        )
-                                    }
-                                    {
-                                        v.table2 && (
-                                            <div className={`${styles.tableMainData}`} dangerouslySetInnerHTML={{ __html: v.table2 }} style={{ border: '1px solid #C4C4C4' }}></div>
-                                        )
-                                    }
                                 </div>
                             </div>);
 
