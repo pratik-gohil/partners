@@ -7,8 +7,8 @@
     p { text-align: left; margin: 0 0 10px; font-size: 14px; } 
 } 
 
-.expanded{ max-height: 900px;  }
-.collapsed { max-height: 0;  }  
+.expanded{ max-height: 900px; transition: max-height 1s ease;}
+.collapsed { max-height: 0; transition: none;}  
 /* .expanded{ max-height: 900px;  transition: all 0.5s ease-in-out !important; }
 .collapsed { max-height: 0; transition: all 0.5s ease-in-out !important; } */  
 
@@ -58,11 +58,7 @@
         }
     }
 
-    .accPanel { position: relative; overflow: hidden; font-size: 14px;line-height: 22px;-webkit-transition: max-height 1s; 
-        -moz-transition: max-height 1s; 
-        -ms-transition: max-height 1s; 
-        -o-transition: max-height 1s; 
-        transition: max-height 1s;
+    .accPanel { position: relative; overflow: hidden; font-size: 14px;line-height: 22px;
         .accPanelBox{padding: 15px;}
         ul { list-style-type: disc; margin-top: 5px;padding-left: 20px; 
             li {
