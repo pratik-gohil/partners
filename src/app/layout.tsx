@@ -4,7 +4,7 @@ import Header from "../components/maHeader/Header";
 // import Footer from "../components/maFooter/Footer";
 const Footer = dynamic(() => import('@/components/maFooter/Footer'))
 import styles from "./maCommanStyle.module.scss";
-import { openSans, nunito } from "@/styles/fonts";
+import { openSans } from "@/styles/fonts";
 import { PreloadResources } from "./preload-resources";
 import dynamic from "next/dynamic";
 
