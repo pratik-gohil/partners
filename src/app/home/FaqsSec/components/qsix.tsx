@@ -2,8 +2,7 @@ import React from 'react'
 import styles from '../FaqsSec.module.scss'
 function Qsix() {
     return (
-        <>
-            <div className={`${styles.qSixData}`}> 
+        <>  
                 <p><b>The eligibility criteria for an individual to become an AP is listed below.</b></p>
                 <ul>
                     <li>Should be a citizen of India</li>
@@ -16,8 +15,7 @@ function Qsix() {
                 <ul>
                     <li>All the partners or directors must comply with the eligibility criteria mentioned above for 'Individual' category</li>
                     <li>The partnership deed or the Memorandum of Association should have a clause permitting to deal in Shares & Securities business</li>
-                </ul>
-            </div>
+                </ul> 
         </>
     ) 
 }
