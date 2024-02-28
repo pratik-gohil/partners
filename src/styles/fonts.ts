@@ -14,7 +14,6 @@ const nunito = Nunito({
     subsets: ['latin'],
     display: 'swap',
     preload: true,
-    variable: '--nunito',
     adjustFontFallback: true,
     fallback: ["sans-serif"],
     style: "normal",
