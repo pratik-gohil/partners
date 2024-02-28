@@ -1,0 +1,147 @@
+@import '../../../styles/common';
+
+.pricingBannerSec {     background: url(https://www.miraeassetpartners.com/asset/images/pricing-banner-bg.png) center center no-repeat;
+    background-size: cover;
+    min-height: 380px;
+    padding-top: 20px;
+    position: relative; }
+    .pricingBannerBlock{width: 100%;
+        display: inline-block;
+        text-align: center;
+        color: #042B52;
+        font-size: 24px;
+        vertical-align: middle;font-weight: 600;
+        padding-top: 5px;}
+
+
+        .listbanner2Li {
+            width: 100%;
+            text-align: center;
+        }
+        
+            .listbanner2Li ul {
+                display: inline-block;
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.0) 15%, rgba(255, 164, 102, 0.5) 85%);
+                padding: 0 25px;
+                border-radius: 30px;
+                margin-bottom: 30px;
+            }
+        
+                .listbanner2Li ul li {
+                    padding: 15px;
+                    color: #003F7E;
+                    font-size: 24px;font-weight: 600;
+                    list-style: none;
+                    display: inline-block;
+                    position: relative;
+                }
+        
+                    .listbanner2Li ul li:first-child::before {
+                        position: absolute;
+                        right: -5px;
+                        width: 2px;
+                        height: 26px;
+                        background: #003F7E;
+                        content: '';
+                    }
+        
+   .pricingBannerBlock .becomepartnerBtn {
+            margin-top: 10px;
+        } 
+    
+        .pricingBannerBlock span {
+            color: #FF7518;font-weight: 700;
+        }
+    
+    .pricingBannerLeft-block {
+        max-width: 350px;
+        padding: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: right;
+    }
+    
+    .pricingBannerImgBlock {
+        max-width: 350px;
+        display: inline-block;
+    }
+    
+    .pricingBannerRightBlock {
+        max-width: 600px;
+        padding: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        font-size: 52px;
+        line-height: 60px;
+        margin-left: 30px;
+    }
+    
+    .brotextBr {
+        color: #FF7518;
+        font-size: 70px;font-weight: 700;
+        text-shadow: 3px 0 0 #003F7E;
+    }
+
+
+    
+
+.taglinePribann {
+    background: #fff;
+    border: 1px solid #FFC39B;
+    font-size: 18px;
+    color: #333;
+    display: 10px 15px;
+    border-radius: 27px;
+    line-height: 54px;
+    margin-top: 10px;
+}
+
+    .taglinePribann b {font-weight: 700;
+        color: #FF7518;
+    }
+
+.listbanner2Li {
+    width: 100%;
+    text-align: center;
+}
+
+    .listbanner2Li ul {
+        display: inline-block;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.0) 15%, rgba(255, 164, 102, 0.5) 85%);
+        padding: 0 25px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+    }
+
+        .listbanner2Li ul li {
+            padding: 15px;
+            color: #003F7E;
+            font-size: 24px;font-weight: 700;
+            list-style: none;
+            display: inline-block;
+            position: relative;
+        }
+
+            .listbanner2Li ul li:first-child::before {
+                position: absolute;
+                right: -5px;
+                width: 2px;
+                height: 26px;
+                background: #003F7E;
+                content: '';
+            }
+
+.pricingBannerBlock .becomepartnerBtn {
+    margin-top: 10px;
+}
+
+.aplinkSc {
+    padding-top: 10px;
+}
+.aplinkSc a {
+    color: #f58220;
+    font-size: 15px;
+    font-weight: 600;
+}
+.imgWrap{align-items: center;justify-content: center;}
