@@ -49,7 +49,11 @@
     color: #f58220;
 }
 
-@media all and (max-width:767px) {  
+@media all and (max-width:767px) {
+    .policyList {
+        margin-bottom: 15px;
+    }
+
     .policyList li {
         white-space: nowrap;
         padding: 0 15px;
