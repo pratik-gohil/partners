@@ -98,7 +98,7 @@ const FormModal = ({ }) => {
                                     maxLength={50}
                                     autoComplete="off"
                                 />
-                                <ul className={`${styles.selResults} ${styles.selCity}`} style={{ display: "none" }}>
+                                <ul className={`${styles.selResults} ${styles.selCity}`}>
                                     <li>Individual</li>
                                     <li>Partnership firm</li>
                                     <li>Partnership (LLP)</li>
