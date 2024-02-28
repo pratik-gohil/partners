@@ -60,13 +60,15 @@
     display: block
 }
 
-.opptUlist li:nth-child(2n) .x-amount-txt-containt {
+.opptUlist .opptBox:nth-child(2n) .x-amount-txt-containt {
     background: #fff5ee
 }
 
-.opptUlist li:nth-child(odd) .x-amount-txt-containt {
+.opptUlist .opptBox:nth-child(odd) .x-amount-txt-containt {
     background: #f6fbff
-}
+} 
+
+
 
 .mirae-x-amount-block {
     width: 100%;
@@ -428,6 +430,10 @@
     left: 3px;
 }
 
+
+
+
+
 @media only screen and (max-width:960px) {
     .x-amount-industry-block-1 {
         width: 23%
@@ -720,11 +726,11 @@
     display: block
 }
 
-.opptUlist li:nth-child(2n) .x-amount-txt-containt {
+.opptUlist .opptBox:nth-child(2n) .x-amount-txt-containt {
     background: #fff5ee
 }
 
-.opptUlist li:nth-child(odd) .x-amount-txt-containt {
+.opptUlist .opptBox:nth-child(odd) .x-amount-txt-containt {
     background: #f6fbff
 }
 
