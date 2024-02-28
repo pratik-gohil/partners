@@ -1,0 +1,66 @@
+.policyListBlock {
+    width: 100%;
+    overflow: auto;
+}
+
+.policyList {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 6px 0 33px;
+    width: auto;
+}
+
+.policyList li {
+    padding: 0 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.policyList li:after {
+    content: "";
+    position: absolute;
+    height: 21px;
+    width: 1px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 1;
+    background-color: #e7e7e7;
+}
+
+.policyList li:last-child::after {
+    display: none;
+}
+
+.policyList li:first-child {
+    padding-left: 0;
+}
+
+.policyList li a {
+    font-family: "Open Sans Semi Bold", sans-serif;
+    font-size: 16px;
+    line-height: 27px;
+    color: #333;
+}
+
+.policyList li.active a {
+    color: #f58220;
+}
+
+@media all and (max-width:767px) {
+    .policyList {
+        margin-bottom: 15px;
+    }
+
+    .policyList li {
+        white-space: nowrap;
+        padding: 0 15px;
+    }
+
+    .policyList li a {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
