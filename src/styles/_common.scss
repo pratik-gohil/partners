@@ -1,30 +1,194 @@
-@import "../styles/_fonts.scss";
 @import "../styles/_variables.scss";
- 
-/* --- Page level style --- */ 
-.mobView{ display:none; }
-.flex{display: flex;}
-.maContainer{ width: 100%; max-width: 1110px; margin: 0 auto;}  
-.secTitle{display: block; font:700 36px/42px 'Nunito', sans-serif; color: $blue;text-align: center;span{color: $orange; padding-left: 7px;padding-right: 7px;}}  
-.maOrangeBtn{font-size: 16px;line-height: 40px;font-weight: 600; color: $white;background: $orange; border: 1px solid $orange;padding: 0 15px; border-radius: 6px; cursor: pointer; min-width: 200px;}
-.orangeTxt{color: $orange;} 
- 
-.viewAllBtnWrap{display: block; text-align: center;
-	.viewAllBtn{font-size: 16px; line-height: 36px; cursor: pointer; background: 0 0; border: none; color: #ff7518; margin-top: 30px;svg{ display: inline-block; margin-left: 5px; vertical-align: middle; border-style: none;}}
+
+/* --- Page level style --- */
+.mobView {
+	display: none;
+}
+
+.flex {
+	display: flex;
+}
+
+.maContainer {
+	width: 100%;
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+.secTitle {
+	display: block;
+	font: 700 36px/42px var(--nunito);
+	color: $blue;
+	text-align: center;
+
+	span {
+		color: $orange;
+		padding-left: 7px;
+		padding-right: 7px;
+	}
+}
+
+.maOrangeBtn {
+	font-size: 16px;
+	line-height: 40px;
+	font-weight: 600;
+	color: $white;
+	background: $orange;
+	border: 1px solid $orange;
+	padding: 0 15px;
+	border-radius: 6px;
+	cursor: pointer;
+	min-width: 170px;
+}
+
+.orangeTxt {
+	color: $orange;
+}
+
+.viewAllBtnWrap {
+	display: block;
+	text-align: center;
+
+	.viewAllBtn {
+		font-size: 16px;
+		line-height: 36px;
+		cursor: pointer;
+		background: 0 0;
+		border: none;
+		color: #ff7518;
+		margin-top: 30px;
+
+		svg {
+			display: inline-block;
+			margin-left: 5px;
+			vertical-align: middle;
+			border-style: none;
+		}
+	}
 }
 
 
 
-@media all and (max-width:1316px) { 
-	.maContainer{ width: 100%; padding-left: 15px; padding-right: 15px;} 
+.textDanger {
+	color: #dc3545;
+	font-size: 11px;
 }
-  
-@media all and (max-width:980px) {  
-	.deskView{ display:none; }
-	.mobView{ display: block; }  
-	.secTitle{font-size: 22px; line-height: 28px; margin-bottom: 15px;}  
+
+.dNone {
+	display: none !important;
 }
-@media all and (max-width:768px) { 
-	.maOrangeBtn{ line-height: 32px; font-size: 14px; padding: 0 20px; border-radius: 4px;}
-	.viewAllBtnWrap .viewAllBtn{ margin-top: 15px;} 
+
+
+
+.dFlex {
+	display: flex;
+}
+
+.justifyCenter {
+	justify-content: center;
+}
+
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: .25rem;
+	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.btn:focus,
+.btn:hover {
+	text-decoration: none
+}
+
+.btn.focus,
+.btn:focus {
+	outline: 0;
+	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.btn.disabled,
+.btn:disabled {
+	opacity: .65
+}
+
+.btn:not(:disabled):not(.disabled) {
+	cursor: pointer
+}
+
+.btn:not(:disabled):not(.disabled).active,
+.btn:not(:disabled):not(.disabled):active {
+	background-image: none
+}
+
+a.btn.disabled,
+fieldset:disabled a.btn {
+	pointer-events: none
+}
+
+.sumbitbtnpop {
+	background: #FF7518;
+	font-size: 16px;
+	color: #FFF !important;
+	min-width: 200px;
+	height: 42px;
+	border: 1px solid #FF7518;
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+
+.sumbitbtnpop:hover {
+	background: #FF7518 !important;
+	color: #FFF !important;
+}
+
+
+
+
+@media all and (max-width:1316px) {
+	.maContainer {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media all and (max-width:980px) {
+	.deskView {
+		display: none;
+	}
+
+	.mobView {
+		display: block;
+	}
+
+	.secTitle {
+		font-size: 22px;
+		line-height: 28px;
+		margin-bottom: 15px;
+	}
+}
+
+@media all and (max-width:768px) {
+	.maOrangeBtn {
+		line-height: 32px;
+		font-size: 14px;
+		padding: 0 20px;
+		border-radius: 4px;
+	}
+
+	.viewAllBtnWrap .viewAllBtn {
+		margin-top: 15px;
+	}
 }
