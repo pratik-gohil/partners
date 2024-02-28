@@ -4,7 +4,7 @@ import Header from "../components/maHeader/Header";
 // import Footer from "../components/maFooter/Footer";
 const Footer = dynamic(() => import('@/components/maFooter/Footer'))
 import styles from "./maCommanStyle.module.scss";
-/* import { OpenSansRegular } from "@/styles/fonts"; */
+import { openSans, nunito } from "@/styles/fonts";
 import { PreloadResources } from "./preload-resources";
 import dynamic from "next/dynamic";
 
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${styles.maPartnersPage}`}>
       <PreloadResources />
-      <body>
+      <body className={`${openSans.className} ${nunito.variable}`}>
         <Header />
         <main className={styles.main}>
           {children}
