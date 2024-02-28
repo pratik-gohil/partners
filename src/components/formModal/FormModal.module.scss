@@ -32,7 +32,7 @@
         span {
             position: absolute;
             right: 10px;
-            top: 5px;
+            top: 7px;
             font-size: 32px;
             color: #666;
         }
@@ -44,6 +44,7 @@
     flex-wrap: wrap;
     gap: 30px;
     grid-row-gap: 20px;
+    justify-content: space-between;
     >li {
         width: 31%;
         display: inline-block;
