@@ -58,11 +58,7 @@
         }
     }
 
-    .accPanel { position: relative; overflow: hidden; font-size: 14px;line-height: 22px;-webkit-transition: max-height 1s; 
-        -moz-transition: max-height 1s; 
-        -ms-transition: max-height 1s; 
-        -o-transition: max-height 1s; 
-        transition: max-height 1s;
+    .accPanel { position: relative; overflow: hidden; font-size: 14px;line-height: 22px;
         .accPanelBox{padding: 15px;}
         ul { list-style-type: disc; margin-top: 5px;padding-left: 20px; 
             li {
