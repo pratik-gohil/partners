@@ -11,11 +11,8 @@ const FaqsSec = () => {
         setExpanded(expanded !== panel ? panel : 0);
     };
 
-<<<<<<< HEAD
-=======
     const [data, setData] = useState(accordionData.slice(0, 5))
 
->>>>>>> c6735acb4fef71e32c0618015e322d2a4530dd12
     return (
         <>
             <section className={`${styles.faqsSec}`}>
