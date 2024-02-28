@@ -5,8 +5,9 @@ import styles from "./FormModal.module.scss";
 const FormModal = ({ }) => {
     const [selectedOption, setSelectedOption] = useState("no");
 
-    const handleRadioChange = (event) => {
-        setSelectedOption(event.target.value);
+    const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const target = event.target as HTMLInputElement;
+        setSelectedOption(target.value);
     };
     return (
         <>

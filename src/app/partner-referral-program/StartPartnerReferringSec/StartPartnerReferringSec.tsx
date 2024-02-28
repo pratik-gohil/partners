@@ -20,6 +20,7 @@ function StartPartnerReferringSec() {
     const handleInputChange = (e: FormEvent, i: number) => {
         let { name, value } = e?.target as HTMLInputElement
         let refData = [...reference]
+        // @ts-ignore
         refData[i][name] = value
         setReference(refData)
     }
