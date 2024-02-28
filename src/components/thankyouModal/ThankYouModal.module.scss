@@ -1,0 +1,458 @@
+@import "../../styles/_common.scss";
+
+.formWrap {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0.3rem;
+    border: 0.1rem solid black;
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    font-family: var(--OpenSans);
+
+    &.thankpopupMan {
+        max-width: 650px;
+    }
+
+
+    .modalHeader {
+        padding: 10px;
+        padding-top: 5px;
+    }
+
+    .modaltitle {
+        text-align: center;
+        font-size: 20px;
+        color: #333;
+        font-family: "Open Sans Bold", sans-serif;
+        text-transform: none;
+        width: 100%;
+    }
+
+    .closepp {
+        cursor: pointer;
+
+        span {
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            font-size: 32px;
+            color: #666;
+        }
+    }
+}
+
+
+.formContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    grid-row-gap: 20px;
+    justify-content: center;
+
+    >li {
+        width: 31%;
+        display: inline-block;
+
+        label {
+            color: #333;
+            font-size: 14px;
+            font-weight: normal;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+
+            sup {
+                color: #FF7518;
+                top: 8px;
+                right: -8px;
+                position: absolute;
+            }
+        }
+    }
+}
+
+
+.formControl {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
+.formControl::-ms-expand {
+    background-color: transparent;
+    border: 0
+}
+
+.formControl:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+}
+
+.formControl::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.formControl::-moz-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.formControl:-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.formControl::-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.formControl::placeholder {
+    color: #6c757d;
+    opacity: 1
+}
+
+.formControl:disabled,
+.formControl[readonly] {
+    background-color: #e9ecef;
+    opacity: 1
+}
+
+.form-group {
+    margin-bottom: 1rem
+}
+
+.btnparAddsub {
+    text-align: center;
+    margin-bottom: 40px;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: #f58220 solid 1px;
+        font-weight: 600;
+        font-size: 16px;
+        height: 42px;
+        line-height: 40px;
+        color: #f58220;
+        border-radius: 4px;
+        padding: 0 15px;
+        margin-top: 20px;
+        vertical-align: top;
+        min-width: 145px;
+    }
+}
+
+.btnparAddsub a:last-child {
+    margin-left: 30px;
+    background: #f58220;
+    color: #fff;
+}
+
+.thankpopupMan .modalBody {
+    padding-top: 0;
+    text-align: center;
+}
+
+.thankinndiv {
+    padding: 0;
+}
+
+.thankinndiv h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 25px;
+    color: #1a3967;
+    font-weight: 700;
+}
+
+.thankinndiv a {
+    background: #fff;
+    border: 1px solid #2b943f;
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.thankinndiv img{display: inline-block;}
+
+.thankinndiv a img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.thankpopupMan .modal-header {
+    padding-bottom: 0;
+}
+
+.thankpopupMan h2 {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Open Sans Regular', sans-serif;
+    font-weight: normal;
+    line-height: 30px;
+    border-bottom: 1px solid #d2d2d2;
+    padding-bottom: 15px;
+}
+
+.thankpopupMan h2 strong {
+    color: #043B72;
+    font-family: 'Open Sans Semi Bold', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.thankpopupMan h2 span {
+    font-family: 'Open Sans Semi Bold', sans-serif;
+    font-weight: 600;
+    color: #f58220;
+}
+
+.thankpopupMan .modalBody p {
+    line-height: 26px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.thankpopupMan .modalBody h5 {
+    font-size: 22px;
+    color: #f58220;
+    font-family: 'Open Sans Semi Bold', sans-serif;
+    line-height: 30px;
+    margin-top: 25px;
+    text-transform: none;
+}
+
+.thankpopupMan .modalBody h5~p {
+    font-size: 14px;
+}
+
+.thankpopupMan .modalBody ul {
+    margin-bottom: 0;
+}
+
+.thankpopupMan .modalBody ul li {
+    display: inline-block;
+    list-style: none;
+    text-align: left;
+    width: calc(50% - 8px);
+    vertical-align: top;
+}
+
+.thankpopupMan .modalBody ul li:last-child {
+    margin-left: 10px;
+}
+
+.thankpopupMan .modalBody ul li input {
+    border-color: #D2D2D2;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #000;
+}
+
+.thankpopupMan .modalBody ul {
+    display: inline-block;
+    width: 90%;
+}
+
+.deletB-ad {
+    width: calc(10% - 16px);
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #d2d2d2;
+    height: 40px;
+    border-radius: 4px;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+.deletB-ad img {
+    margin-top: 6px;
+}
+
+.addicon-add {
+    width: 20px;
+}
+
+.deleticon-add {
+    width: 16px;
+}
+
+.thankpopupMan .modal-footer {
+    padding-top: 0;
+}
+
+.thankpopupMan .modal-footer .sumbitbtn-pop {
+    background: #FF7518;
+    color: #fff !important;
+    min-width: 200px;
+}
+
+.tandc-tablebar {
+    border: 1px solid #D2D2D2;
+    border-radius: 4px;
+    width: 60%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.tandc-tablebar table th {
+    background: #F1F1F1;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Open Sans Semi Bold', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    line-height: 22px;
+    padding: 10px 15px;
+}
+
+.tandc-tablebar table td {
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+    border-top: 1px solid #D2D2D2;
+    padding: 5px 15px;
+}
+
+.tandc-tablebar table th:first-child,
+.tandc-tablebar table td:first-child {
+    text-align: left;
+}
+
+.thanki-div h3 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-top: 25px;
+}
+
+.thankpopupMan .modalBody .thanki-div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.thanki-div a {
+    background: #fff;
+    border: 1px solid #2b943f;
+    display: inline-block;
+    padding: 7px 10px;
+    font-size: 14px;
+    color: #333;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.thanki-div a img {
+    width: 20px;
+    margin-left: 5px;
+}
+
+.onerownamenumBar {
+    position: relative;
+}
+
+.formGroup {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+
+.deletBad {
+    width: calc(10% - 16px);
+    display: inline-block;
+    margin-left: 10px;
+    border: 1px solid #d2d2d2;
+    height: 40px;
+    border-radius: 4px;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+.deletBad img {
+    margin-top: 8px;
+    display: inline-block;
+}
+
+.addiconadd {
+    width: 20px;
+}
+
+.deleticonadd {
+    width: 16px;
+}
+
+.dFlex{
+    margin-top: 10px;
+}
+
+@media all and (max-width:980px) {
+    .formWrap {
+        width: 96%;
+        max-width: 96%;
+
+        &.thankpopupMan {
+            width: 96%;
+            max-width: 96%;
+        }
+    }
+
+    .formContent {
+        li {
+            flex: 0 0 100%;
+        }
+
+        &.last {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .switchField {
+        margin-bottom: 0px;
+    }
+}
+
+@media all and (max-width:767px) {
+
+}
+
+@media all and (max-width:480px) {
+    .thankpopupMan .modalBody ul {
+        width: calc(100% - 45px);
+    }
+    .thankpopupMan .modalBody ul li {
+        width: calc(40% - 6px);
+        &:last-child{
+            margin-left: 5px;
+            width: calc(60% - 6px);
+        }
+    }
+    .deletBad {
+        width: 36px;
+        height: 36px;
+        vertical-align: top;
+        margin-left: 5px;
+    }
+}

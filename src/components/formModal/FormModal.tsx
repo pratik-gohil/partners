@@ -1,7 +1,13 @@
-import React from 'react'
+"use client";
+import React, { useState } from 'react'
 import styles from "./FormModal.module.scss";
 
-const FormModal = () => {
+const FormModal = ({ }) => {
+    const [selectedOption, setSelectedOption] = useState("no");
+
+    const handleRadioChange = (event) => {
+        setSelectedOption(event.target.value);
+    };
     return (
         <>
             <div className={`${styles.formWrap}`}>
@@ -36,7 +42,7 @@ const FormModal = () => {
                                 </label>
                                 <div className={`${styles.selDropMn}`} id='RegistrationType'>
                                     <div className={`${styles.selDrop} ${styles.active}`}>Individual <span className={`${styles.arrow}`}></span></div>
-                                    <ul className={`${styles.selResults}`}>
+                                    <ul className={`${styles.selResults}`} style={{ display: "none" }}>
                                         <li className={`${styles.selected} ${styles.selectable}`}>Individual</li>
                                         <li>Partnership firm</li>
                                         <li>Partnership (LLP)</li>
@@ -93,15 +99,15 @@ const FormModal = () => {
                                     autoComplete="off"
                                 />
                                 <ul className={`${styles.selResults} ${styles.selCity}`}>
-                                        <li>Individual</li>
-                                        <li>Partnership firm</li>
-                                        <li>Partnership (LLP)</li>
-                                        <li>Corporate</li>
-                                        <li>Partnership (LLP)</li>
-                                        <li>Corporate</li>
-                                        <li>Partnership (LLP)</li>
-                                        <li>Corporate</li>
-                                    </ul>
+                                    <li>Individual</li>
+                                    <li>Partnership firm</li>
+                                    <li>Partnership (LLP)</li>
+                                    <li>Corporate</li>
+                                    <li>Partnership (LLP)</li>
+                                    <li>Corporate</li>
+                                    <li>Partnership (LLP)</li>
+                                    <li>Corporate</li>
+                                </ul>
                                 <span className={`${styles.textDanger} ${styles.dNone}`} id="city-valid">
                                     City Cannot be blank
                                 </span>
@@ -131,46 +137,48 @@ const FormModal = () => {
                                         type="radio"
                                         id="personyes"
                                         name="authorised-person"
-                                        defaultValue="yes"
-                                        data-gtm-form-interact-field-id={0}
+                                        value="yes"
+                                        checked={selectedOption === "yes"}
+                                        onChange={handleRadioChange}
                                     />
                                     <label htmlFor="personyes">Yes</label>
                                     <input
                                         type="radio"
                                         id="personno"
                                         name="authorised-person"
-                                        defaultValue="no"
-                                        data-gtm-form-interact-field-id={1}
-                                        checked
+                                        value="no"
+                                        checked={selectedOption === "no"}
+                                        onChange={handleRadioChange}
                                     />
                                     <label htmlFor="personno">No</label>
                                 </div>
                             </div>
                         </li>
-                        <li
-                            className="existing-associationBlock associationyes"
-                            style={{ display: "none" }}
-                        >
-                            <div className={`${styles.formGroup}`}>
-                                <label htmlFor="existingAssociation">
-                                    Existing Association <sup>*</sup>
-                                </label>
-                                <input
-                                    type="text"
-                                    className={`${styles.formControl}`}
-                                    id="existingAssociation"
-                                    placeholder="Name of Existing Association"
-                                    maxLength={100}
-                                />
-                                <span id="existingAssociation-valid" className={`${styles.textDanger} ${styles.dNone}`}>
-                                    Association cannot be blank
-                                </span>
-                            </div>
-                        </li>
+                        {selectedOption === "yes" && (
+                            <li
+                                className="existing-associationBlock associationyes"
+                            >
+                                <div className={`${styles.formGroup}`}>
+                                    <label htmlFor="existingAssociation">
+                                        Existing Association <sup>*</sup>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        className={`${styles.formControl}`}
+                                        id="existingAssociation"
+                                        placeholder="Name of Existing Association"
+                                        maxLength={100}
+                                    />
+                                    <span id="existingAssociation-valid" className={`${styles.textDanger} ${styles.dNone}`}>
+                                        Association cannot be blank
+                                    </span>
+                                </div>
+                            </li>
+                        )}
                     </ul>
 
                     <div>
-                        <ul className={`${styles.formContent}`}>
+                        <ul className={`${styles.formContent} ${styles.last}`}>
                             <li>
                                 <div className={`${styles.formGroup}`}>
                                     <label>
@@ -184,14 +192,14 @@ const FormModal = () => {
                                             defaultValue="yes"
                                             data-gtm-form-interact-field-id={0}
                                         />
-                                        <label htmlFor="personyes">Yes</label>
+                                        <label htmlFor="GSTyes">Yes</label>
                                         <input
                                             type="radio"
                                             id="GSTno"
                                             name="ExistingGST-number"
                                             data-gtm-form-interact-field-id={1}
                                         />
-                                        <label htmlFor="personno">No</label>
+                                        <label htmlFor="GSTno">No</label>
                                     </div>
 
                                     <span id="existingGStalert-valid" className={`${styles.textDanger} ${styles.dNone}`}>
