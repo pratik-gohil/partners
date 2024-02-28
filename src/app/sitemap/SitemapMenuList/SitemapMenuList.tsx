@@ -26,14 +26,14 @@ function SitemapMenuList() {
 
                 <div className="test">
                         <ul><b>Total Pages List :</b><br /> 
-                            <li><a href="/">1. Home</a></li> 
-                            <li><a href="/pricing">2. pricing</a></li> 
-                            <li><a href="/partner-listing">3. partner-listing</a></li> 
-                            <li><a href="/partner-referral-program">4. partner-referral-program</a></li> 
+                            <li><a href="/">1. Home - Done</a></li> 
+                            <li><a href="/pricing">2. pricing - Working</a></li> 
+                            <li><a href="/partner-listing">3. partner-listing - Done</a></li> 
+                            <li><a href="/partner-referral-program">4. partner-referral-program - Done</a></li> 
                             <li><a href="/faqs">5. faqs</a></li> <br />
 
-                            <li><a href="/sitemap">6. sitemap</a></li> 
-                            <li><a href="/downloads">7. downloads</a></li> <br />
+                            <li><a href="/sitemap">6. sitemap - Done</a></li> 
+                            <li><a href="/downloads">7. downloads - Done</a></li> <br />
   
                             <li><a href="/terms-of-use">8. Terms of Use</a></li> 
                             <li><a href="/terms-and-conditions">9. Terms & Conditions</a></li>
