@@ -33,7 +33,7 @@ const PolicyNavigation = () => {
                         className={` ${isActive('/privacy-policy') ? styles.active : ''
                             }`}
                     >
-                        <Link href="/privacy-policy">Privacy Policy</Link>
+                        <Link href="/privacy-policy">Privacy</Link>
                     </li>
                     <li
                         className={` ${isActive('/disclaimer') ? styles.active : ''
