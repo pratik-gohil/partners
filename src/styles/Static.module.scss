@@ -21,11 +21,11 @@
 }
 
 .title {
-    font-family: "Open Sans Semi Bold", sans-serif;
     font-size: 20px;
     line-height: 20px;
     color: #333;
     margin-bottom: 14px;
+    font-weight: 600;
 }
 
 .termsList {
@@ -121,19 +121,19 @@
 }
 
 .blocktitle {
-    font-family: "Open Sans Semi Bold", sans-serif;
     font-size: 20px;
     line-height: 20px;
     color: #333;
     margin: 0 0 20px;
+    font-weight: 600;
 }
 
 .downloadblock .title {
-    font-family: "Open Sans Semi Bold", sans-serif;
     font-size: 14px;
     line-height: 16px;
     color: #333;
     margin: 0 0 10px;
+    font-weight: 600;
 }
 
 .downloadblock .download-list {
@@ -147,22 +147,22 @@
 .downloadblock .downloadlist li {
     position: relative;
     width: 100%;
-    font-family: "Open Sans Regular", sans-serif;
     font-size: 14px;
     line-height: 26px;
     color: #666;
+    font-weight: 400;
 }
 
 .download-block .downloadlist li:before {
     content: ">";
     position: absolute;
-    font-family: "Open Sans Bold", sans-serif;
     font-size: 14px;
     line-height: 10px;
     width: 10px;
     height: 11px;
     left: -15px;
     top: 8px;
+    font-weight: 700;
 }
 
 .download-block .downloadlist li a {
