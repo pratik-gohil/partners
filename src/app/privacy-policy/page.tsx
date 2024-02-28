@@ -1,4 +1,4 @@
-import Breadcrumb from "../../components/breadcrumb/BreadcrumbSec";
+import Breadcrumb from "@/components/breadcrumb/BreadcrumbSec";
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
 
