@@ -25,16 +25,23 @@ function SitemapMenuList() {
                 </div>
 
                 <div className="test">
-                        <ul><br /><br />
-                            <li><a href="/">http://localhost:3000/Home</a></li><br />
-                            <li><a href="/pricing">http://localhost:3000/pricing</a></li><br />
-                            <li><a href="/partner-listing">http://localhost:3000/partner-listing</a></li><br />
-                            <li><a href="/partner-referral-program">http://localhost:3000/partner-referral-program</a></li><br />
-
-                            <li><a href="/our-policies">http://localhost:3000/our-policies</a></li><br />
-                            <li><a href="/sitemap">http://localhost:3000/sitemap</a></li><br />
-                            <li><a href="/downloads">http://localhost:3000/downloads</a></li> <br />
+                        <ul><br /> 
+                            <li><a href="/">http://localhost:3000/Home</a></li> 
+                            <li><a href="/pricing">http://localhost:3000/pricing</a></li> 
+                            <li><a href="/partner-listing">http://localhost:3000/partner-listing</a></li> 
+                            <li><a href="/partner-referral-program">http://localhost:3000/partner-referral-program</a></li> 
                             <li><a href="/faqs">http://localhost:3000/faqs</a></li> <br />
+
+                            <li><a href="/sitemap">http://localhost:3000/sitemap</a></li> 
+                            <li><a href="/downloads">http://localhost:3000/downloads</a></li> <br />
+  
+                            <li><a href="/terms-of-use">http://localhost:3000/Terms of Use</a></li> 
+                            <li><a href="/terms-and-conditions">http://localhost:3000/Terms & Conditions</a></li>
+                            <li><a href="/privacy-policy">http://localhost:3000/Privacy Policy</a></li>
+                            <li><a href="/disclaimer">http://localhost:3000/Disclaimer</a></li>
+                            <li><a href="/advisory-for-investors">http://localhost:3000/Advisory for Investors</a></li>
+                            <li><a href="/referral-terms-and-conditions">http://localhost:3000/referral-terms-and-conditions</a></li> 
+                            <li><a href="/emargin-terms-and-conditions">http://localhost:3000/emargin-terms-and-conditions</a></li>  
                         </ul> 
                     </div>
                     
