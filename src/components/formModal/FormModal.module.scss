@@ -9,7 +9,6 @@
     margin: 0 auto;
     padding: 20px;
     position: relative;
-    font-family: var(--OpenSans);
 
 
     .modalHeader {
@@ -44,8 +43,7 @@
     flex-wrap: wrap;
     gap: 30px;
     grid-row-gap: 20px;
-    justify-content: space-between;
-
+  
     >li {
         width: 31%;
         display: inline-block;
