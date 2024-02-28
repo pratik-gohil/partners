@@ -1,3 +1,16 @@
 @import '../../../styles/common';
 
-.pricePayoutStructureSec { position: relative; }
+.pricePayoutStructureSec { position: relative;
+    p{margin-bottom: 20px;}
+}
+.tableStructureWrap{margin-bottom: 30px;} 
+.tableTitleWrap { align-items: center; column-gap: 15px; margin-bottom: 15px; padding-top: 10px;
+    .tableTitle { font-weight: 600; font-size: 22px; color: #1a3967; font-weight: 700;}
+}
+.pricingTableHolder { border: 1px solid #D2D2D2; border-radius: 4px; margin-bottom: 10px;}.pricingTableHolder table th { background: #F1F1F1; font-size: 14px; color: #000; font-weight: 600;font-weight: normal; text-align: center; line-height: 22px; }
+.pricingTableHolder table th, .pricingTableHolder table td { padding: 15px; border-left: 1px solid #D2D2D2; }
+.pricingTableHolder table th:first-child, .pricingTableHolder table td:first-child { border-left: none; }
+.pricingTableHolder table tr:last-child td{ border-bottom: none; } 
+.pricingTableHolder table td { font-size: 16px; color: #000; text-align: center; border-top: 1px solid #D2D2D2; }  
+.pricingTableHolder table td:first-child { text-align: left; }
+ 
