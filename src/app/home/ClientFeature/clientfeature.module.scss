@@ -4,8 +4,11 @@
 
 @media all and (max-width:980px) { 
     .technolbar-ta { flex-wrap: wrap; } .technolbar-ta .nav-tabs { padding: 0 0px 0 110px; width:100%; } .technolbar-ta .nav-tabs .nav-link { font-size: 15px; padding: 3px 15px; line-height: 20px; } .technolbar-ta .tab-content { width:100%; }
+    .tab-run-business-img{margin: 15px auto 15px auto;}
 }
 
 @media all and (max-width:768px) { 
     .technolbar-ta { margin-top:  0px; padding-left: 0px; } .technolbar-ta .nav-tabs { padding:0px; width:100%; padding-left: 45px; } .technolbar-ta .nav:before { left: 4px; } .technolbar-ta .tab-content { max-width: 90%; text-align: center; margin: 0 auto; padding: 15px 15px 20px 15px; } 
+    .tab-run-business-img{margin: 0px auto 0px auto;} 
+    .technolbar-ta .nav-tabs .nav-link { display: inline-block;}
 }
