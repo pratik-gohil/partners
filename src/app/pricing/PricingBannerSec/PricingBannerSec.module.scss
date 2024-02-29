@@ -1,10 +1,11 @@
 @import '../../../styles/common';
 
-.pricingBannerSec {     background: url(https://www.miraeassetpartners.com/asset/images/pricing-banner-bg.png) center center no-repeat;
+.pricingBannerSec { background: url(https://www.miraeassetpartners.com/asset/images/pricing-banner-bg.png) center center no-repeat;
     background-size: cover;
     min-height: 380px;
-    padding-top: 20px;
-    position: relative; }
+    padding-top: 20px;padding-bottom: 30px;
+    position: relative; 
+}
     .pricingBannerBlock{width: 100%;
         display: inline-block;
         text-align: center;
