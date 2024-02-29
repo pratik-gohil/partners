@@ -12,7 +12,7 @@ function Modal({ children, open, onClose }: ({ open: boolean, onClose: () => voi
         if (close) {
             onCloseHandler()
         }
-    }, [close])
+    }, [close, onCloseHandler])
 
     return (
         <ClientPortal selector='modal-portal' show={open}>
