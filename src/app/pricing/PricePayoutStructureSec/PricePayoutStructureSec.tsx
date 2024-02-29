@@ -1,11 +1,12 @@
 import React from 'react'
-import styles from './PricePayoutStructureSec.module.scss' 
+import styles from './PricePayoutStructureSec.module.scss'
 
 function PricePayoutStructureSec() {
     return (
         <section className={`${styles.pricePayoutStructureSec}`}>
             <div className={`${styles.maContainer}`}>
-                <h2 className={`${styles.secTitle}`}>Pricing and payout <span>structure</span></h2>
+
+                <h2 className={`${styles.secTitle} ${nunito.className}`}>Pricing and payout <span>structure</span></h2>
 
                 <div className={`${styles.tableStructureWrap}`}> <div className={`${styles.pricingTableHolder}`}> <table width="100%"> <tr> <th>Revenue source</th> <th>Payout to Partner</th> <th>Note</th> </tr> <tr> <td><b>Account opening fee</b></td> <td><b className={`${styles.orangeTxt}`}>100%</b> above ₹500</td> <td>Mirae Asset will debit a flat fee of ₹500 for every new client onboarded, regardless of the account opening fee chosen</td> </tr> <tr> <td><b>Brokerage</b></td> <td><b className={`${styles.orangeTxt}`}>100%</b> across all segments</td> <td>Select from our standard plans or create a customised plan for your clients</td> </tr> <tr> <td><b>MTF (eMargin) interest</b></td> <td><b className={`${styles.orangeTxt}`}>80%</b> interest sharing beyond 9.99%</td> <td>Customise MTF interest up to 24%</td> </tr> <tr> <td><b>Margin Pledge interest</b></td> <td><b className={`${styles.orangeTxt}`}>80%</b> interest sharing beyond 11.99%</td> <td>Customise Margin Pledge interest up to 24%</td> </tr> <tr> <td><b>Account Maintenance Charges (DP AMC)</b></td> <td><b className={`${styles.orangeTxt}`}>100%</b> revenue beyond ₹480</td> <td rowSpan={3}>Select from our standard DP plans or create a customised DP plan for your clients</td> </tr> <tr> <td><b>Pledge/Unpledge charges</b></td> <td>Customise and earn <b className={`${styles.orangeTxt}`}>100%</b></td> </tr> <tr> <td><b>DP sell transaction charges</b></td> <td>Customise and earn <b className={`${styles.orangeTxt}`}>100%</b></td> </tr> <tr> <td><b>Delayed Payment Charges (DPC)</b></td> <td><b className={`${styles.orangeTxt}`}>Flat 20%</b> sharing</td> <td>No customisation possible</td> </tr> <tr> <td><b>Operating charges</b></td> <td><b className={`${styles.orangeTxt}`}>Flat 20%</b> sharing</td> <td>No customisation possible</td> </tr> </table> </div> </div>
 
@@ -36,15 +37,9 @@ function PricePayoutStructureSec() {
 
                 <div className={`${styles.tableStructureWrap}`}> <div className={`${styles.tableTitleWrap} ${styles.flex}`}> <img src="https://www.miraeassetpartners.com/asset/images/payment-changes-icon.png" alt="icon" title="icon" /> <h3 className={`${styles.tableTitle}`}>Income from Delayed Payment Charges & Operating Charges</h3> </div> <p>Earn flat 20% income sharing from DPC interest earned on client’s negative ledger balance and on Operating Charges.</p> <div className={`${styles.pricingTableHolder}`}> <table width="100%"> <tr> <th>DPC On</th> <th>Interest Rate</th> <th>Payout to Partner </th> </tr> <tr> <td>Any negative ledger balance in client’s account </td> <td className={`${styles.textCenter}`}>18%</td> <td><b className={`${styles.orangeTxt}`}>Flat 20%</b> </td> </tr> </table> </div> </div>
                 
-
- 
-
-
-                
             </div>
         </section>
     )
 }
 
 export default PricePayoutStructureSec
- 

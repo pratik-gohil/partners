@@ -1,11 +1,11 @@
 import React from 'react'
-import styles from './SitemapMenuList.module.scss' 
+import styles from './SitemapMenuList.module.scss'
 
 function SitemapMenuList() {
     return (
         <section className={`${styles.sitemapMenuList}`}>
             <div className={`${styles.maContainer}`}>
-                <h1 className={`${styles.secTitle}`}>Sitemap</h1>
+                <h1 className={`${styles.secTitle} ${nunito.className}`}>Sitemap</h1>
                 <div className={`${styles.sitemapMenuHolder}`}>
                     <ul className={`${styles.sitemapmainUl}`}>
                         <li><a href="/">Home</a></li>
@@ -21,7 +21,7 @@ function SitemapMenuList() {
                         <li><a href="/advisory-for-investors">Advisory for Investors</a></li>
                         <li><a href="/asset/pdf/investor-charter.pdf" target="_blank">Investor Charter</a></li>
                         <li><a href="/downloads">Downloads</a></li>
-                    </ul>  
+                    </ul>
                 </div>
 
                 <div className="test">
@@ -44,12 +44,9 @@ function SitemapMenuList() {
                             <li><a href="/emargin-terms-and-conditions">14. emargin-terms-and-conditions - Done</a></li>  
                         </ul> 
                     </div>
-                    
-
             </div>
         </section>
     )
 }
 
 export default SitemapMenuList
- 
