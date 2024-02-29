@@ -46,7 +46,12 @@
 .orangeTxt {
 	color: $orange;
 }
-
+.orangeBgBox {
+	background-color: $orange !important;color: $white  !important;
+}
+.blueBgBox {
+	background-color: $blue !important;color: $white  !important;
+}
 .viewAllBtnWrap {
 	display: block;
 	text-align: center;
