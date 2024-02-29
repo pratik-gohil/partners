@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './TabContentLayoutSec.module.scss'
+import { nunito } from '@/styles/fonts'
 
 function TabContentLayoutSec() {
     return (

@@ -1,6 +1,7 @@
 'use client'
 import React, { FormEvent, useState } from 'react'
 import styles from './StartPartnerReferringSec.module.scss'
+import { nunito } from '@/styles/fonts'
 
 function StartPartnerReferringSec() {
 
