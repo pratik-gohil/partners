@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './AccountOfDisciplinaryReasonsSec.module.scss'
+import { nunito } from '@/styles/fonts'
 
 function AccountOfDisciplinaryReasonsSec() {
     return (

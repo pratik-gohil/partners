@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './EarnRewardsSec.module.scss'
+import { nunito } from '@/styles/fonts'
 
 function EarnRewardsSec() {
   return (
