@@ -1,12 +1,20 @@
 import React from 'react'
 import styles from '../FaqsSec.module.scss'
-function QTwo() {
+function Q1() {
     return (
         <>  
-            <p> Mirae Asset Partners referral program is extremely simple. If you are a partner, simply enter details of the business partner and once they get registered with us, you earn ₹6,000 as a referral reward.</p>
-            <p>In case, you are not registered, but your referred partner joins us, then you will get an Amazon voucher worth ₹2,000. Once you complete your registration as a partner, the balance ₹4,000 reward will be credited to your payout ledger.</p> 
+         
+                <ul>
+                    <li>Mirae Asset Partners is first in the industry to offer you the flexibility to choose your preferred pricing model, whether it's Discount Broking, Traditional Broking, or a Hybrid approach. This flexibility empowers you to manage your business efficiently and ensures that you never lose a client.</li>
+                    <li>Eight different revenue streams, providing various opportunities to grow your income.</li>
+                    <li>Customise each revenue stream to cater to your clients' specific needs.</li>
+                    <li>100% brokerage sharing.</li>
+                    <li>Trusted global brand with over 25 years of experience operating in 19 countries.</li>
+                </ul>
+                For an in-depth understanding of our payout terms, you can refer to our pricing page, <a href="/pricing">click here.</a>
+            
         </>
     ) 
 }
 
-export default QTwo
+export default Q1

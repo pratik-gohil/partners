@@ -1,6 +1,7 @@
 import Breadcrumb from "@/components/breadcrumb/BreadcrumbSec";
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { nunito } from "@/styles/fonts";
 
 
 export default function PrivacyPolicy() {
@@ -9,7 +10,7 @@ export default function PrivacyPolicy() {
       <Breadcrumb />
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <h2 className={`${styles.secTitle}`}>Our Policies</h2>
+          <h2 className={`${styles.secTitle} ${nunito.className}`}>Our Policies</h2>
           <p className={`${styles.textCenter} ${styles.font14}`}>We suggest you go through our policies carefully, and keep visiting for updates.</p>
           <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
@@ -29,7 +30,7 @@ export default function PrivacyPolicy() {
               content of such web sites.
             </p>
           </div>
-        </div>        
+        </div>
       </section>
     </>
   );
