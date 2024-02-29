@@ -44,8 +44,11 @@
 .orangeTxt {
 	color: $orange;
 }
-.orangeBg {
-	background-color: $orange;color: $white;
+.orangeBgBox {
+	background-color: $orange !important;color: $white  !important;
+}
+.blueBgBox {
+	background-color: $blue !important;color: $white  !important;
 }
 .viewAllBtnWrap {
 	display: block;

@@ -14,3 +14,9 @@
 .pricingTableHolder table td { font-size: 16px; color: #000; text-align: center; border-top: 1px solid #D2D2D2; }  
 .pricingTableHolder table td:first-child { text-align: left; }
  
+.leftColorBlk{text-align: left; color:black;}
+.textCenter { text-align: center !important; }
+.textLeft { text-align: left !important; }
+.fontSemiBold{font-weight: 600;} 
+ 
+.pricingTableHolder table td span { color: #FF7518;font-weight: 600; } .pricingTableHolder table td ul li { margin-left: 15px; margin-top: 15px; line-height: 22px; list-style: none; position: relative; } .pricingTableHolder table td ul li:before { position: absolute; left: -15px; top: 8px; content: ''; width: 4px; height: 4px; border-radius: 100%; background: #333; } .pricingTableHolder table td ul li small { font-size: 14px; }
