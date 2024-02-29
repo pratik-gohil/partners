@@ -1,53 +1,28 @@
-import localFont from 'next/font/local'
+import { Open_Sans, Nunito } from 'next/font/google'
 
-const OpenSansRegular = localFont({
-    src: '../fonts/OpenSans-Regular.woff2',
-    style: 'normal',
-    adjustFontFallback: 'Times New Roman',
-    fallback: ['sans-serif'],
+const openSans = Open_Sans({
+    subsets: ['latin'],
+    display: 'swap',
     preload: true,
-    weight: '400',
-    variable: '--OpenSansRegular'
+    adjustFontFallback: true,
+    fallback: ["sans-serif"],
+    style: "normal",
+    weight: ["400", "500", "600", "700"]
 })
 
-const OpenSansMedium = localFont({
-    src: '../fonts/OpenSans-Medium.woff2',
-    style: 'normal',
-    adjustFontFallback: 'Times New Roman',
-    fallback: ['sans-serif'],
+const nunito = Nunito({
+    subsets: ['latin'],
+    display: 'swap',
     preload: true,
-    weight: '500',
-    variable: '--OpenSansMedium'
+    adjustFontFallback: true,
+    fallback: ["sans-serif"],
+    style: "normal",
+    weight: '700'
 })
 
-const OpenSansSemiBold = localFont({
-    src: '../fonts/OpenSans-SemiBold.woff2',
-    style: 'normal',
-    adjustFontFallback: 'Times New Roman',
-    fallback: ['sans-serif'],
-    preload: true,
-    weight: '600',
-    variable: '--OpenSansSemiBold'
-})
 
-const OpenSansBold = localFont({
-    src: '../fonts/OpenSans-Bold.woff2',
-    style: 'normal',
-    adjustFontFallback: 'Times New Roman',
-    fallback: ['sans-serif'],
-    preload: true,
-    weight: '700',
-    variable: '--OpenSansBold'
-})
 
-const NunitoBold = localFont({
-    src: '../fonts/Nunito-Bold.woff2',
-    style: 'normal',
-    adjustFontFallback: 'Times New Roman',
-    fallback: ['sans-serif'],
-    preload: true,
-    weight: '700',
-    variable: '--NunitoBold'
-})
-
-export { OpenSansRegular, OpenSansMedium, OpenSansSemiBold, OpenSansBold, NunitoBold }
+export {
+    openSans,
+    nunito
+}

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 function RevenueSharing() {
     return (
-        <section className={styles["revenueSharingSec"]}> 
+        <section className={styles["revenueSharingSec"]}>
             <div className={styles["maContainer"]}>
                 <h2 className={styles["secTitle"]}>Unlimited, Unbelievable<span>Revenue Sharing</span></h2>
                 <div className={styles["un100BrokerageWrap"]}>

@@ -23,29 +23,16 @@ const FaqsSec = () => {
                                     <h3 className={`${styles.queryTxt}`}>{v.query}</h3>
                                 </div>
                                 <div className={`${styles["accPanel"]} ${(expanded === i ? styles["expanded"] : styles["collapsed"])}`}>
-
-                                    {v.answer}
-                                    {
-                                        v.component && (
-                                            v.component
-                                        )
-                                    }
-                                    {
-                                        v.bulletPoints && (
-                                            <ul className={`${styles.bulletPointsList}`}>
-                                                {v.bulletPoints.map((p, i) => {
-                                                    return <li key={i} dangerouslySetInnerHTML={{ __html: p }} />
-                                                })}
-                                            </ul>
-                                        )
-                                    }
-
-
-
+                                    <div className={`${styles.accPanelBox}`}>
+                                        {
+                                            v.answer
+                                        }
+                                        {
+                                            v.component && (v.component)
+                                        }
+                                    </div>
                                 </div>
                             </div>);
-
-
                         })}
                     </div>
                     <div className={`${styles.viewAllBtnWrap}`}>

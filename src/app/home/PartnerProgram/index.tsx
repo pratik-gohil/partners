@@ -22,8 +22,8 @@ function PartnerProgram() {
                 <p className={styles["captionTxt"]}> Our Partner program offers <span className={styles["orangeTxt"]}> unbelievable pricing,</span> a <span className={styles["orangeTxt"]}> seamless tech platform</span> for an enhanced experience for you and your clients. It also <span className={styles["orangeTxt"]}>gives you full control</span> and ownership, reducing dependency on us. For detailed payout terms, <a aria-label="Income Sharing for Authorised Partners" className={styles["orangeTxt"]} href="asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank">click here</a>
                 </p>
                 <h4 className={styles["midheading-pl"]}>Let&apos;s understand the payout opportunities with examples</h4>
-                <ul className={styles["opptUlist"]}>
-                    <li className={styles["opptBox"]}>
+                <div className={styles["opptUlist"]}>
+                    <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={styles["x-amount-left"]}>
                                 Brokerage
@@ -71,8 +71,8 @@ function PartnerProgram() {
                                 <b className={styles["light-blue"]}>Unique Benefit:</b> Choose either Discount, Traditional or Hybrid model, customise rates based on your clients&apos; needs
                             </div>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                    <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={styles["x-amount-left"]}>
                                 MTF (eMargin) Interest
@@ -161,8 +161,8 @@ function PartnerProgram() {
                                 <b className={styles["light-blue"]}>Unique Benefit:</b> Customise the MTF interest rate from <b className={styles["orangeTxt"]}>9.99%</b> to <b className={styles["orangeTxt"]}>24%.</b>
                             </div>
                         </div >
-                    </li >
-                    <li>
+                    </div>
+                    <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={styles["x-amount-left"]}>
                                 Margin Pledge Interest
@@ -251,8 +251,8 @@ function PartnerProgram() {
                                 </div >
                             </div >
                         </div >
-                    </li >
-                    <li>
+                    </div>
+                    <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={styles["x-amount-left"]}>
                                 DP Sell Transaction Charges
@@ -261,7 +261,7 @@ function PartnerProgram() {
                             <div className={styles["x-amount-right"]}>
                                 Earn <b>22X</b> or more
                             </div >
-                        </div >
+                        </div>
                         <div className={styles["x-amount-txt-containt"]}>
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
@@ -337,11 +337,11 @@ function PartnerProgram() {
                                     <StarSVG />
 
                                     <b className={styles["light-blue"]}>Unique Benefit:</b> Customise the DP sell transactions from < b className={styles["orangeTxt"]}>₹12</b> to < b className={styles["orangeTxt"]}>₹25.</b>
-                                </div >
-                            </div >
-                        </div >
-                    </li >
-                </ul >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <div className={styles["partner-offer-ac-block"]}>
                     <h3 className={styles["title"]}>That&apos;s not all, you can benefit from various other charges too</h3>

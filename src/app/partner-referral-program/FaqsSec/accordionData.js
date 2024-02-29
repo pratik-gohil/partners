@@ -1,49 +1,36 @@
-const faqsData = [  
+import QTwo from "./components/qTwo"; 
+
+const faqsData = [
     {
         queryNumber: `1`,
-        query: `1. Who is an Authorised Person?`,
-        answer: `Authorised persons (formerly known as sub-brokers) provide access to trading platforms and assistance for investments between stockbrokers and clients.  The APs are registered with the NSE and BSE and they work as agents of stockbroking houses to create an advanced business network for them. An AP can be an individual, partnership firm, LLP, or a corporate entity.`,  
-    },   
+        query: `1. What is Mirae Asset Partners referral program?`,
+        answer: `Mirae Asset Partners referral program gives you the opportunity to refer business partners and earn ₹6,000 as referral reward per successful registration.`, 
+    },
     {
         queryNumber: `2`,
-        query: `2. What is the role of an Authorised Person?`,
-        answer: `The primary responsibility of an Authorised Person is to register clients and assist them with their trading requirements. They provide support in buying, selling securities and have the authority to trade on behalf of the clients, with prior permission.`,  
-    },   
+        query: `2. How does Mirae Asset Partners referral program work?`, 
+        component: <QTwo />
+    }, 
     {
         queryNumber: `3`,
-        query: `3. Who can be appointed as an Authorised Person?`,
-        answer: `Individual: A resident of India, above 18 years of age.  
-        Partnership firm: A firm that is registered under Indian Partnership Act, 1932. 
-        LLP: A firm that is registered under the Indian Limited Liability Partnership Act, 2008. 
-        Corporate: A firm that is registered under the Indian Companies Act, 1956.`,  
-    },   
+        query: `3. Will my name be disclosed to my referral lead?`,
+        answer: `Yes, your name will be shared with your referred lead.`, 
+    }, 
     {
         queryNumber: `4`,
-        query: `4. Can Hindu Undivided Family (HUF) be appointed as an Authorised Person?`,
-        answer: `No, HUF can't get registered as an AP. In order to become an AP, one must be either an individual, a partnership firm, a LLP or a Corporate entity.`,  
-    },   
+        query: `4. How much time does it take for the referral rewards to be credited?`,
+        answer: `Once your referred partner completes their registration with us, you will receive the referral  reward within 30 working days.`, 
+    }, 
     {
         queryNumber: `5`,
-        query: `5. If a company or partnership firm is already registered as an Authorised Person (AP), can one of its directors or partners also register individually as another Authorised Person?`,
-        answer: `No, a Director or Partner of an existing AP registered firm cannot register as a new Authorised Person in any capacity.`,  
-    },   
+        query: `5. Is there any limit on the rewards or the number of partners that can be referred?`,
+        answer: `No, there is no limit on referral rewards. Share this opportunity with your business partner community and earn unlimited rewards. Simply enter business partner details, refer and earn big!`, 
+    }, 
     {
         queryNumber: `6`,
-        query: `66666666666666666666666666666666666- Data Issue. What is the eligiblility criteria to become an Authorised Person?`,
-        answer: `The eligibility criteria for an individual to become an AP is listed below.`, 
-        bulletPoints: [
-            `Should be a citizen of India`,
-            `Should be 18 years of age or above`,
-            `Should have passed 10th standard or equivalent examination recognised by Central or State government`,
-            `Should not have been convicted for any offence involving fraud or dishonesty`,
-            `An Authorised Person who was suspended for more than six consecutive months must wait three years before they can be reappointed.` 
-        ], 
-        htmlContent: `
-        <br>Should be a citizen of India</br>,
-        <br>Should be a citizen of India</br>,
-        <br>Should be a citizen of India</br>,
-        `
-    },    
+        query: `6. Will TDS be deducted on my referral rewards?`,
+        answer: `Since referral rewards will be added to your monthly payout, overall TDS of 5% will be applicable.`, 
+    },  
 ];
 
 export default faqsData;
