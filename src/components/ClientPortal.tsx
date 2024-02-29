@@ -16,11 +16,13 @@ const ClientPortal = ({ children, selector, show }: ClientPortalInterface) => {
     }, [selector]);
 
     useEffect(() => {
-        document.body.style.overflow = "hidden";
+        if (show) {
+            document.body.style.overflow = "hidden";
+        }
         return () => {
             document.body.style.overflow = "scroll"
         };
-    }, []);
+    }, [show]);
 
     return show && ref.current ? createPortal(children, ref.current) : null;
 };
