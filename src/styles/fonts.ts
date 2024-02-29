@@ -13,7 +13,7 @@ const openSans = Open_Sans({
 const nunito = Nunito({
     subsets: ['latin'],
     display: 'swap',
-    preload: true,
+    preload: false,
     adjustFontFallback: true,
     fallback: ["sans-serif"],
     style: "normal",
