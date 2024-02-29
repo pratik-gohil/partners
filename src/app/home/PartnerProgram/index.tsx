@@ -13,7 +13,7 @@ function PartnerProgram() {
         const target = e.target as HTMLDivElement;
         const el = document.querySelector(`[data-section-table=${target.getAttribute("data-section-action")}]`) as HTMLDivElement;
 
-        el.style.height = el.style.height === '0px' ? "323px" : '0px'
+        el.style.height = el.style.height === '0px' ? "337px" : '0px'
     }
 
     return (
