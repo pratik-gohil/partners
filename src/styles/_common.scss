@@ -44,7 +44,9 @@
 .orangeTxt {
 	color: $orange;
 }
-
+.orangeBg {
+	background-color: $orange;color: $white;
+}
 .viewAllBtnWrap {
 	display: block;
 	text-align: center;
