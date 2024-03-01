@@ -1,0 +1,143 @@
+@import '../../styles/common';
+
+.faqsSec {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    .secTitle {
+        margin-bottom: 30px;
+    }
+
+    table th {
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        padding: 10px 20px;
+        text-align: center;
+        font-weight: 600;
+        background: #FFF5EE;
+        line-height: 22px;
+    }
+
+    table td {
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
+        padding: 10px 20px;
+        text-align: center;
+        border-bottom: 1px solid #C4C4C4;
+    }
+
+    p {
+        text-align: left;
+        margin: 0 0 10px;
+        font-size: 14px;
+    }
+}
+
+@keyframes expand {
+    from {
+        max-height: 0px;
+    }
+
+    to {
+        max-height: 100vh;
+    }
+}
+
+@keyframes collapse {
+    from {
+        max-height: 100vh;
+    }
+
+    to {
+        max-height: 0px;
+    }
+}
+
+.expanded {
+    max-height: 100vh;
+    animation: expand //  duration timing-function delay iteration-count direction fill-mode
+    ;
+    animation-duration: 2s;
+}
+
+.collapsed {
+    max-height: 0px;
+    animation: collapse;
+    animation-duration: .5s;
+    animation-delay: 0ms;
+}
+
+.accordionHolder {
+    position: relative;
+}
+
+
+.accCard {
+    position: relative;
+
+    .accTitle {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 600;
+        color: #000;
+        border-bottom: 1px solid #f1ece6;
+        cursor: pointer;
+        background-color: #f7f7f7;
+        position: relative;
+        padding: 15px 35px 15px 10px;
+
+        .queryTxt {
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        &::after {
+            content: "";
+            background: url(https://www.miraeassetpartners.com/asset/images/icon-down.svg) 0 0/cover;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            width: 20px;
+            height: 20px;
+            transition: .3s;
+        }
+
+        &.active:after {
+            transform: rotate(180deg);
+        }
+    }
+
+    .accPanel {
+        position: relative;
+        overflow: hidden;
+        font-size: 14px;
+        line-height: 22px;
+
+        .accPanelBox {
+            padding: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-top: 5px;
+            padding-left: 20px;
+
+            li {
+                font-size: 14px;
+                list-style-type: disc;
+                line-height: 20px;
+                color: #333;
+                padding-bottom: 5px;
+                margin-bottom: 7px;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+}
