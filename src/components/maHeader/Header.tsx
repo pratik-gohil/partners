@@ -26,7 +26,7 @@ const Header = () => {
                         </ul>
                         <div className={`${styles.rhsActionBtnWrap}`}>
                             <div className={`${styles.hamburgerMenuBtn} ${styles.mobView} ${styles.active}`}><span className={`${styles.l1}`}></span><span className={`${styles.l2}`}></span><span className={`${styles.l3}`}></span></div>  
-                            <div className={`${styles.menuMobSidebarBox} ${styles.show} ${styles.mobView}`}> 
+                            {/* <div className={`${styles.menuMobSidebarBox} ${styles.show} ${styles.mobView}`}> 
                                 <ul>
                                     <li>
                                         <a href="/pricing">Revenue Sharing</a>
@@ -35,7 +35,7 @@ const Header = () => {
                                         <a href="/partner-referral-program">Refer a Partner</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
