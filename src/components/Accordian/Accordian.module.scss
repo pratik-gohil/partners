@@ -1,14 +1,72 @@
-@import "../../../styles/_common.scss";
+@import '../../styles/common';
 
+.faqsSec {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    .secTitle {
+        margin-bottom: 30px;
+    }
+
+    table th {
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        padding: 10px 20px;
+        text-align: center;
+        font-weight: 600;
+        background: #FFF5EE;
+        line-height: 22px;
+    }
+
+    table td {
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
+        padding: 10px 20px;
+        text-align: center;
+        border-bottom: 1px solid #C4C4C4;
+    }
+
+    p {
+        text-align: left;
+        margin: 0 0 10px;
+        font-size: 14px;
+    }
+}
+
+@keyframes expand {
+    from {
+        max-height: 0px;
+    }
+
+    to {
+        max-height: 100vh;
+    }
+}
+
+@keyframes collapse {
+    from {
+        max-height: 100vh;
+    }
+
+    to {
+        max-height: 0px;
+    }
+}
 
 .expanded {
-    max-height: 900px;
-    transition: max-height 1s ease;
+    max-height: 100vh;
+    animation: expand //  duration timing-function delay iteration-count direction fill-mode
+    ;
+    animation-duration: 2s;
 }
 
 .collapsed {
-    max-height: 0;
-    transition: none;
+    max-height: 0px;
+    animation: collapse;
+    animation-duration: .5s;
+    animation-delay: 0ms;
 }
 
 .accordionHolder {
@@ -81,61 +139,5 @@
                 }
             }
         }
-    }
-}
-
-.tableTitle {
-    font-size: 14px;
-    font-weight: 700;
-    margin: 10px 0 10px;
-}
-
-.tablefield {
-    margin-bottom: 12px;
-}
-
-.tableHolder {
-    width: 100%;
-    border: 1px solid #C4C4C4;
-    margin-top: 15px;
-    border-radius: 4px;
-    margin-bottom: 20px;
-
-    table tr:last-of-type td {
-        border-bottom: 0;
-    }
-
-}
-
-@media all and (max-width:768px) {
-    .faqsSec {
-        padding-top: 20px;
-    }
-
-    .accCard {
-        margin-bottom: 5px;
-
-        .accTitle {
-            padding-right: 30px;
-            font-size: 14px;
-            line-height: 20px;
-
-            .queryTxt {
-                font-size: 14px;
-                line-height: 20px;
-            }
-        }
-
-        .accPanel {
-            font-size: 12px;
-
-            p {
-                font-size: 12px;
-            }
-        }
-    }
-
-    .accCard .accTitle::after {
-        top: 14px;
     }
 }
