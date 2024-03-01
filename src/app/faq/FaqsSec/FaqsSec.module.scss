@@ -7,7 +7,7 @@
     p { text-align: left; margin: 0 0 10px; font-size: 14px; } 
 } 
 
-.expanded{ max-height: 900px; transition: max-height 1s ease;}
+/* .expanded{ max-height: 900px; transition: max-height 1s ease;}
 .collapsed { max-height: 0; transition: none;}   
 .accordionHolder { position: relative; }
 
@@ -53,7 +53,7 @@
             }
         }
     }
-}
+} */
  
 .tableTitle {
     font-size: 14px;
@@ -84,7 +84,7 @@
         padding-top: 20px;
     }
 
-    .accCard {
+    /* .accCard {
         margin-bottom: 5px;
 
         .accTitle {
@@ -109,6 +109,6 @@
 
     .accCard .accTitle::after {
         top: 14px;
-    }
+    } */
 }
 

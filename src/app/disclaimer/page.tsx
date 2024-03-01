@@ -1,5 +1,5 @@
 
-import Breadcrumb from "../../components/breadcrumb/BreadcrumbSec";
+
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
 import { nunito } from "@/styles/fonts";
@@ -8,7 +8,7 @@ import { nunito } from "@/styles/fonts";
 export default function Disclaimer() {
   return (
     <>
-      <Breadcrumb />
+
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
           <h2 className={`${styles.secTitle} ${nunito.className}`}>Our Policies</h2>
