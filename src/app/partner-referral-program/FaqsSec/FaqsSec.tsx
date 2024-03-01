@@ -31,4 +31,3 @@ const FaqsSec = () => {
 }
 
 export default FaqsSec;
-
