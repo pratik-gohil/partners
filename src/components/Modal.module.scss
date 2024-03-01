@@ -45,6 +45,12 @@
     animation-duration: .5s;
 }
 
+@media all and (max-width:1279px) {    
+    .modalInner{
+        width: 96%;
+    }
+}
+
 @media all and (max-width:980px) {    
     .modalInner{
         width: 98%;
