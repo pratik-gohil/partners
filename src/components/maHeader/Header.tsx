@@ -26,7 +26,7 @@ const Header = () => {
                         </ul>
                         <div className={`${styles.rhsActionBtnWrap}`}>
                             <div className={`${styles.hamburgerMenuBtn} ${styles.mobView} ${styles.active}`}><span className={`${styles.l1}`}></span><span className={`${styles.l2}`}></span><span className={`${styles.l3}`}></span></div>  
-                            <div className={`${styles.menuMobSidebarBox} ${styles.show}`}> 
+                            <div className={`${styles.menuMobSidebarBox} ${styles.show} ${styles.mobView}`}> 
                                 <ul>
                                     <li>
                                         <a href="/pricing">Revenue Sharing</a>
