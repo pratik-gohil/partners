@@ -1,8 +1,11 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import styles from "./HeaderSec.module.scss";
 import MiraeAssetsPartnersLogo from '../svgs/MiraeAssetsPartnersLogo';
 
 const Header = () => {
+    const [showSideBar, setShowSideBar] = useState(false);
+
     return (
         <>
             <header className={`${styles.headerSec}`}>
@@ -25,8 +28,12 @@ const Header = () => {
                             </li>
                         </ul>
                         <div className={`${styles.rhsActionBtnWrap}`}>
-                            <div className={`${styles.hamburgerMenuBtn} ${styles.mobView} ${styles.active}`}><span className={`${styles.l1}`}></span><span className={`${styles.l2}`}></span><span className={`${styles.l3}`}></span></div>  
-                            <div className={`${styles.menuMobSidebarBox} ${styles.show} ${styles.mobView}`}> 
+                            <div className={`${styles.hamburgerMenuBtn} ${styles.mobView} ${showSideBar && styles.active}`} onClick={() => setShowSideBar(!showSideBar)}><span className={`${styles.l1}`}></span><span className={`${styles.l2}`}></span><span className={`${styles.l3}`}></span></div>
+                            {
+                                showSideBar &&
+                                <div onClick={() => setShowSideBar(false)} className={`${styles.menuMobSidebarBoxOverlay}`}></div>
+                            }
+                            <div className={`${styles.menuMobSidebarBox} ${showSideBar && styles.show} ${styles.mobView}`}>
                                 <ul>
                                     <li>
                                         <a href="/pricing">Revenue Sharing</a>
