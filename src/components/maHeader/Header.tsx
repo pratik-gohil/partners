@@ -1,8 +1,11 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import styles from "./HeaderSec.module.scss";
 import MiraeAssetsPartnersLogo from '../svgs/MiraeAssetsPartnersLogo';
 
 const Header = () => {
+    const [showSideBar, setShowSideBar] = useState(false);
+
     return (
         <>
             <header className={`${styles.headerSec}`}>
