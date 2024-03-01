@@ -4,12 +4,13 @@
 .mobView {
 	display: none;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
 .flex {
 	display: flex;
 }
 
-.maContainer {
+.maContainer { 
 	width: 100%;
 	max-width: 1110px;
 	margin: 0 auto;
@@ -17,10 +18,12 @@
 
 .secTitle {
 	display: block;
-	font: 700 36px/42px var(--nunito);
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 700;
 	color: $blue;
 	text-align: center;
-
+	font-family: 'Nunito', sans-serif !important;
 	span {
 		color: $orange;
 		padding-left: 7px;
@@ -44,7 +47,12 @@
 .orangeTxt {
 	color: $orange;
 }
-
+.orangeBgBox {
+	background-color: $orange !important;color: $white  !important;
+}
+.blueBgBox {
+	background-color: $blue !important;color: $white  !important;
+}
 .viewAllBtnWrap {
 	display: block;
 	text-align: center;

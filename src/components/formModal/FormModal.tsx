@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import styles from "./FormModal.module.scss";
 
-const FormModal = ({ }) => {
+const FormModal = ({ onClose }: { onClose: () => void }) => {
     const [selectedOption, setSelectedOption] = useState("no");
 
     const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -14,7 +14,7 @@ const FormModal = ({ }) => {
             <div className={`${styles.formWrap}`}>
                 <div className={`${styles.modalHeader}`}>
                     <h2 className={`${styles.modaltitle}`}>Enter Details</h2>
-                    <button type="button" className={`${styles.closepp}`} aria-label="Close">
+                    <button type="button" className={`${styles.closepp}`} aria-label="Close" onClick={onClose}>
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -22,7 +22,7 @@ const FormModal = ({ }) => {
                     <ul className={`${styles.formContent}`}>
                         <li>
                             <div className={`${styles.formGroup}`}>
-                                <label htmlFor="partnerName">
+                                <label >
                                     Name <sup>*</sup>
                                 </label>
                                 <input
@@ -30,6 +30,7 @@ const FormModal = ({ }) => {
                                     id="partnerName"
                                     className={`${styles.formControl}`}
                                     maxLength={50}
+                                    autoFocus
                                 />
                                 <span className={`${styles.textDanger}`} id="partner-valid">
                                     Partner Name cannot be blank
@@ -38,10 +39,16 @@ const FormModal = ({ }) => {
                         </li>
                         <li>
                             <div className={`${styles.formGroup}`}>
-                                <label htmlFor="RegistrationType">
+                                <label >
                                     Registration type <sup>*</sup>
                                 </label>
-                                <div className={`${styles.selDropMn}`} id='RegistrationType'>
+                                <select className={`${styles.selDropMn} ${styles.selDrop} ${styles.active}`}>
+                                    <option className={`${styles.selected} ${styles.selectable}`}>Individual</option>
+                                    <option>Partnership firm</option>
+                                    <option>Partnership (LLP)</option>
+                                    <option>Corporate</option>
+                                </select>
+                                {/* <div className={`${styles.selDropMn}`} id='RegistrationType'>
                                     <div className={`${styles.selDrop} ${styles.active}`}>Individual <span className={`${styles.arrow}`}></span></div>
                                     <ul className={`${styles.selResults}`} style={{ display: "none" }}>
                                         <li className={`${styles.selected} ${styles.selectable}`}>Individual</li>
@@ -49,15 +56,12 @@ const FormModal = ({ }) => {
                                         <li>Partnership (LLP)</li>
                                         <li>Corporate</li>
                                     </ul>
-
-
-
-                                </div>
+                                </div> */}
                             </div>
                         </li>
                         <li>
                             <div className={`${styles.formGroup}`}>
-                                <label htmlFor="businessName">Your Business Name</label>
+                                <label >Your Business Name</label>
                                 <input
                                     type="text"
                                     className={`${styles.formControl}`}
@@ -71,7 +75,7 @@ const FormModal = ({ }) => {
                         </li>
                         <li>
                             <div className={`${styles.formGroup}`}>
-                                <label htmlFor="mobleNo">
+                                <label >
                                     Mobile no. <sup>*</sup>
                                 </label>
                                 <input type="text" className={`${styles.formControl}`} id="mobleNo" maxLength={10} />
@@ -80,7 +84,7 @@ const FormModal = ({ }) => {
                         </li>
                         <li>
                             <div className={`${styles.formGroup}`}>
-                                <label htmlFor="emailID">
+                                <label >
                                     Email id <sup>*</sup>
                                 </label>
                                 <input type="text" className={`${styles.formControl}`} id="emailID" maxLength={50} />
@@ -89,7 +93,7 @@ const FormModal = ({ }) => {
                         </li>
                         <li>
                             <div className={`${styles.formGroup}`}>
-                                <label htmlFor="city">
+                                <label >
                                     City <sup>*</sup>
                                 </label>
                                 <input
@@ -142,7 +146,7 @@ const FormModal = ({ }) => {
                                         checked={selectedOption === "yes"}
                                         onChange={handleRadioChange}
                                     />
-                                    <label htmlFor="personyes">Yes</label>
+                                    <label >Yes</label>
                                     <input
                                         type="radio"
                                         id="personno"
@@ -151,7 +155,7 @@ const FormModal = ({ }) => {
                                         checked={selectedOption === "no"}
                                         onChange={handleRadioChange}
                                     />
-                                    <label htmlFor="personno">No</label>
+                                    <label >No</label>
                                 </div>
                             </div>
                         </li>
@@ -160,7 +164,7 @@ const FormModal = ({ }) => {
                                 className="existing-associationBlock associationyes"
                             >
                                 <div className={`${styles.formGroup}`}>
-                                    <label htmlFor="existingAssociation">
+                                    <label >
                                         Existing Association <sup>*</sup>
                                     </label>
                                     <input
@@ -193,14 +197,14 @@ const FormModal = ({ }) => {
                                             defaultValue="yes"
                                             data-gtm-form-interact-field-id={0}
                                         />
-                                        <label htmlFor="GSTyes">Yes</label>
+                                        <label >Yes</label>
                                         <input
                                             type="radio"
                                             id="GSTno"
                                             name="ExistingGST-number"
                                             data-gtm-form-interact-field-id={1}
                                         />
-                                        <label htmlFor="GSTno">No</label>
+                                        <label >No</label>
                                     </div>
 
                                     <span id="existingGStalert-valid" className={`${styles.textDanger} ${styles.dNone}`}>

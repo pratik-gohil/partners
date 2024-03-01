@@ -1,18 +1,19 @@
 import React from 'react'
-import styles from './ListOfAuthorisedPersonsSec.module.scss' 
+import styles from './ListOfAuthorisedPersonsSec.module.scss'
+import { nunito } from '@/styles/fonts'
 
 function ListOfAuthorisedPersonsSec() {
     return (
         <section className={`${styles.listOfAuthorisedPersonsSec}`}>
             <div className={`${styles.maContainer}`}>
-                <h2 className={`${styles.secTitle}`}>List Of Authorised Persons (AP)</h2>
+                <h2 className={`${styles.secTitle} ${nunito.className}`}>List Of Authorised Persons (AP)</h2>
 
                 <div className={`${styles.tableWraper}`}>
                     <div className={`${styles.tableTopWrap}`}>
                         <div className={`${styles.showSelectEntriesWrap}`}>Show <select name="apDataTableLength"> <option value="10">10</option> <option value="25">25</option> <option value="50">50</option> <option value="100">100</option> </select> Entries</div>
                         <div className={`${styles.searchBoxWrap}`}>Search:<input type="search" className={`${styles.searchBox}`} placeholder="" /></div>
-                    </div> 
- 
+                    </div>
+
                     <div className={`${styles.tableHolder}`}>
                         <table className={`${styles.table}`} cellPadding={0} cellSpacing={0} width="100%">
                             <thead>
@@ -25,7 +26,7 @@ function ListOfAuthorisedPersonsSec() {
                                     <th>Status</th>
                                     <th>Address</th>
                                     <th>City</th>
-                                    <th>State</th> 
+                                    <th>State</th>
                                     <th>Pin&nbsp;Code</th>
                                     <th>Terminal&nbsp;Allotted (Y/N)</th>
                                     <th>No. of&nbsp;Terminals</th>
@@ -41,7 +42,7 @@ function ListOfAuthorisedPersonsSec() {
                                     <td></td>
                                     <td>Deshpande Garden society Flat No 302 Ganga building Narhe Road pune PUNE</td>
                                     <td>PUNE</td>
-                                    <td>Maharashtra</td> 
+                                    <td>Maharashtra</td>
                                     <td>411041</td>
                                     <td>N</td>
                                     <td>0</td>
@@ -54,8 +55,8 @@ function ListOfAuthorisedPersonsSec() {
                                     <td>Individual</td>
                                     <td></td>
                                     <td>a1, bLK-c malancha appartment 251 pulin avenue, airport 2.5 nO. gate, kolkata  NORTH 24 PARGANAS</td>
-                                        <td>NORTH 24 PARGANAS</td>
-                                    <td>West Bengal</td> 
+                                    <td>NORTH 24 PARGANAS</td>
+                                    <td>West Bengal</td>
                                     <td>700081</td>
                                     <td>N</td>
                                     <td>0</td>
@@ -68,15 +69,15 @@ function ListOfAuthorisedPersonsSec() {
                                     <td>Individual</td>
                                     <td></td>
                                     <td>F.N 03, DEOGHAR APPARTMENT AMRAVATI ROAD,NEAR HIMALAYA VALLEY HINDUSTAN COLONY,UNIVERSITY CAMPUS NAG</td>
-                                        <td>NAGPUR</td>
-                                    <td>Maharashtra</td> 
+                                    <td>NAGPUR</td>
+                                    <td>Maharashtra</td>
                                     <td>440033</td>
                                     <td>N</td>
                                     <td>0</td>
                                 </tr>
                             </tbody>
                         </table>
-                    </div>   
+                    </div>
 
                     <div className={`${styles.tableBtmWrap}`}>
                         <div className={`${styles.showingDataLbl}`}>Showing 1 to 3 of 3 entries</div>
@@ -86,8 +87,8 @@ function ListOfAuthorisedPersonsSec() {
                                 <a href="" className={`${styles.page}`}>1</a>
                                 <a href="" className={`${styles.page}`}>2</a>
                                 <a href="" className={`${styles.page} ${styles.active}`}>3</a>
-                                <a href="" className={`${styles.page}`}>4</a> 
-                                <a href="" className={`${styles.page}`}>5</a> 
+                                <a href="" className={`${styles.page}`}>4</a>
+                                <a href="" className={`${styles.page}`}>5</a>
                             </div>
                             <button className={`${styles.btn}`}>Next</button>
                         </div>
@@ -100,4 +101,3 @@ function ListOfAuthorisedPersonsSec() {
 }
 
 export default ListOfAuthorisedPersonsSec
- 

@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from "./FaqsSec.module.scss";
 import accordionData from './accordionData.js';
 import DownCaretSVG from '@/components/svgs/DownCaretSVG';
+import { nunito } from '@/styles/fonts';
 
 const FaqsSec = () => {
     const [expanded, setExpanded] = useState(0);
@@ -15,7 +16,7 @@ const FaqsSec = () => {
         <>
             <section className={`${styles.faqsSec}`}>
                 <div className={`${styles.maContainer}`}>
-                    <h2 className={`${styles.secTitle}`}>Frequently Asked Questions on Partnership</h2>
+                    <h2 className={`${styles.secTitle} ${nunito.className}`}>Refer and Earn - Frequently Asked Questions</h2>
                     <div className={`${styles.accordionHolder}`}>
                         {accordionData.slice(0, showMore ? accordionData.length : 5).map((v, i) => {
                             return (<div className={styles["accCard"]} key={i}>
