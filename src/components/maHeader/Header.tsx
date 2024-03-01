@@ -1,8 +1,11 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import styles from "./HeaderSec.module.scss";
 import MiraeAssetsPartnersLogo from '../svgs/MiraeAssetsPartnersLogo';
 
 const Header = () => {
+    const [showSideBar, setShowSideBar] = useState(false);
+
     return (
         <>
             <header className={`${styles.headerSec}`}>
@@ -25,7 +28,21 @@ const Header = () => {
                             </li>
                         </ul>
                         <div className={`${styles.rhsActionBtnWrap}`}>
-                            <div className={`${styles.hamburger} ${styles.mobView}`}>X</div>
+                            <div className={`${styles.hamburgerMenuBtn} ${styles.mobView} ${showSideBar && styles.active}`} onClick={() => setShowSideBar(!showSideBar)}><span className={`${styles.l1}`}></span><span className={`${styles.l2}`}></span><span className={`${styles.l3}`}></span></div>
+                            {
+                                showSideBar &&
+                                <div onClick={() => setShowSideBar(false)} className={`${styles.menuMobSidebarBoxOverlay}`}></div>
+                            }
+                            <div className={`${styles.menuMobSidebarBox} ${showSideBar && styles.show} ${styles.mobView}`}>
+                                <ul>
+                                    <li>
+                                        <a href="/pricing">Revenue Sharing</a>
+                                    </li>
+                                    <li>
+                                        <a href="/partner-referral-program">Refer a Partner</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
