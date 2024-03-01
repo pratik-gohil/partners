@@ -8,7 +8,18 @@
 }
 
 @media all and (max-width:768px) { 
-    .technolbar-ta { margin-top:  0px; padding-left: 0px; } .technolbar-ta .nav-tabs { padding:0px; width:100%; padding-left: 45px; } .technolbar-ta .nav:before { left: 4px; } .technolbar-ta .tab-content { max-width: 90%; text-align: center; margin: 0 auto; padding: 15px 15px 20px 15px; } 
-    .tab-run-business-img{margin: 0px auto 0px auto;} 
+    .technolbar-ta { margin-top:  0px; padding-left: 0px; } .technolbar-ta .nav-tabs { padding:0px; width:100%; padding-left: 45px; } .technolbar-ta .nav:before { left: 4px; } .technolbar-ta .tab-content { max-width: 100%; text-align: center; margin: 0 auto; padding: 0pxx; } 
+    .tab-run-business-img{margin: 0px auto 0px auto; width: 100%; background-size: 60%; background-position: center center; height: auto; img{
+        width: 130px;
+    }} 
     .technolbar-ta .nav-tabs .nav-link { display: inline-block;}
+    .technolbar-ta .nav-tabs {
+        width: 100%;
+        padding: 0 10px 0 60px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .technolbar-ta .nav-tabs:before {
+        left: 20px;
+    }
 }
