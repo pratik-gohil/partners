@@ -8,8 +8,6 @@ export default function DownloadsPage() {
     <>
       <Breadcrumb />
       <DownloadsLinksSec />
-      <GrowthModal />
-      <ThankYouModal />
     </>
   );
 }
