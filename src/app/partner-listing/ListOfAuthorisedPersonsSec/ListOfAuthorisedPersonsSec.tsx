@@ -6,11 +6,11 @@ function ListOfAuthorisedPersonsSec() {
     return (
         <section className={`${styles.listOfAuthorisedPersonsSec}`}>
             <div className={`${styles.maContainer}`}>
-                <h2 className={`${styles.secTitle} ${nunito.className}`}>List Of Authorised Persons (AP)</h2>
+                <h1 className={`${styles.secTitle} ${nunito.className}`}>List Of Authorised Persons (AP)</h1>
 
                 <div className={`${styles.tableWraper}`}>
                     <div className={`${styles.tableTopWrap}`}>
-                        <div className={`${styles.showSelectEntriesWrap}`}>Show <select name="apDataTableLength"> <option value="10">10</option> <option value="25">25</option> <option value="50">50</option> <option value="100">100</option> </select> Entries</div>
+                        <div className={`${styles.showSelectEntriesWrap}`}>Show<select name="apDataTableLength"> <option value="10">10</option> <option value="25">25</option> <option value="50">50</option> <option value="100">100</option> </select>Entries</div>
                         <div className={`${styles.searchBoxWrap}`}>Search:<input type="search" className={`${styles.searchBox}`} placeholder="" /></div>
                     </div>
 
