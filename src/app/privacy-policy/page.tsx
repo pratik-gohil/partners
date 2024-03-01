@@ -7,7 +7,7 @@ import { nunito } from "@/styles/fonts";
 export default function PrivacyPolicy() {
   return (
     <>
-      <Breadcrumb />
+
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
           <h2 className={`${styles.secTitle} ${nunito.className}`}>Our Policies</h2>
