@@ -31,7 +31,7 @@ function SitemapMenuList() {
                             <li><a href="/pricing">2. pricing - Done</a></li> 
                             <li><a href="/partner-listing">3. partner-listing - Done</a></li> 
                             <li><a href="/partner-referral-program">4. partner-referral-program - Done</a></li> 
-                            <li><a href="/faqs">5. faqs - Done</a></li> <br />
+                            <li><a href="/faq">5. faq page - Done</a></li> <br />
 
                             <li><a href="/sitemap">6. sitemap - Done</a></li> 
                             <li><a href="/downloads">7. downloads - Done</a></li> <br />
