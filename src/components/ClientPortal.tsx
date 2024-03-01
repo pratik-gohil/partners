@@ -1,4 +1,5 @@
 "use client"
+import useScrollBlock from "@/hooks/useScrollBlock";
 import { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 type ClientPortalInterface = {
@@ -8,7 +9,9 @@ type ClientPortalInterface = {
     selector: string;
 };
 
+
 const ClientPortal = ({ children, selector, show }: ClientPortalInterface) => {
+    const [blockScroll, allowScroll] = useScrollBlock()
     const ref = useRef<Element | null>(null);
 
     useEffect(() => {
@@ -17,10 +20,10 @@ const ClientPortal = ({ children, selector, show }: ClientPortalInterface) => {
 
     useEffect(() => {
         if (show) {
-            document.body.style.overflow = "hidden";
+            blockScroll()
         }
         return () => {
-            document.body.style.overflow = "auto"
+            allowScroll()
         };
     }, [show]);
 

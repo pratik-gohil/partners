@@ -12,7 +12,7 @@ const YesNoRadio = () => {
                     value="yes"
                     data-gtm-form-interact-field-id={0}
                 />
-                <label htmlFor="personyes">Yes</label>
+                <label >Yes</label>
                 <input
                     type="radio"
                     id="personno"
@@ -21,7 +21,7 @@ const YesNoRadio = () => {
                     data-gtm-form-interact-field-id={1}
                     checked
                 />
-                <label htmlFor="personno">No</label>
+                <label >No</label>
             </div>
         </>
     )
