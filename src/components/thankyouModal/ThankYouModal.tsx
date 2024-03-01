@@ -1,14 +1,14 @@
 "use client";
 import React, { useState } from 'react'
 import styles from "./ThankYouModal.module.scss";
-import {  nunito } from "@/styles/fonts";
+import { nunito } from "@/styles/fonts";
 
-const ThankYouModal = ({ }) => {
+const ThankYouModal = ({ onClose }: any) => {
     return (
         <>
             <div className={`${styles.formWrap} ${styles.thankpopupMan}`}>
                 <div className={`${styles.modalHeader}`}>
-                    <button type="button" className={`${styles.closepp}`} aria-label="Close">
+                    <button onClick={onClose} type="button" className={`${styles.closepp}`} aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
