@@ -1,6 +1,9 @@
 "use client";
 import React, { useState } from 'react'
 import styles from "./FormModal.module.scss";
+import { useForm, SubmitHandler, useFieldArray } from "react-hook-form"
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 const FormModal = ({ onClose }: { onClose: () => void }) => {
     const [selectedOption, setSelectedOption] = useState("no");
@@ -9,6 +12,50 @@ const FormModal = ({ onClose }: { onClose: () => void }) => {
         const target = event.target as HTMLInputElement;
         setSelectedOption(target.value);
     };
+
+    const phoneRegex = new RegExp(
+        /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
+    );
+    const emailRegexp = new RegExp(
+        /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
+    );
+
+
+
+    const schema = z.object({
+        name: z.string().nonempty('field is required').min(3, { message: 'must be atleast 3 characters' }),
+        number: z.string().nonempty('field is required').regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' }).nonempty(),
+        pin: z.string().nonempty('field is required').regex(phoneRegex, 'Invalid Number!').min(6, { message: 'must be a 6 digit number' }).max(6, { message: 'must be a 6 digit number' }).nonempty(),
+        gst: z.boolean().default(false),
+        registrationType: z.enum(['Individual', 'Partnership firm', 'Limited Liability Partnership (LLP)', 'Corporate']),
+        businessName: z.string().min(3, { message: 'must be atleast 3 characters' }),
+        email: z.string().nonempty().regex(emailRegexp),
+        subBroker: z.enum(['Yes', 'No']).default('No'),
+        association: z.string().min(3, { message: 'must be atleast 3 characters' }),
+        city: z.string().min(3, { message: 'must be valid city' }),
+    })
+
+    type FormData = z.infer<typeof schema>
+
+    const {
+        register,
+        handleSubmit,
+        watch, control,
+        formState: { errors },
+    } = useForm<FormData>({
+        resolver: zodResolver(schema),
+        defaultValues: {
+            registrationType: 'Individual'
+        }
+    })
+
+    const onSubmit: SubmitHandler<FormData> = async (data) => {
+        await new Promise((res, rej) => setTimeout(res, 1000))
+        console.log({
+            data, errors
+        })
+    }
+
     return (
         <>
             <div className={`${styles.formWrap}`}>
