@@ -1,4 +1,3 @@
-import Breadcrumb from "../../components/breadcrumb/BreadcrumbSec";
 import PartRefProBannerSec from "./PartRefProBannerSec/PartRefProBannerSec";
 import StartPartnerReferringSec from "./StartPartnerReferringSec/StartPartnerReferringSec";
 import BenefitsOfPartneringSec from "./BenefitsOfPartneringSec/BenefitsOfPartneringSec";
@@ -11,12 +10,8 @@ import StartPartnerReferringSecC from "./StartPartnerReferringSec/StartPartnerRe
 export default function PartnerReferralProgramPage() {
   return (
     <>
-      <Breadcrumb />
       <PartRefProBannerSec />
-      <StartPartnerReferringSecC />
       <StartPartnerReferringSec />
-
-
       <BenefitsOfPartneringSec />
       <EarnRewardsSec />
       <HowToReferSec />

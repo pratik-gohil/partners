@@ -2,12 +2,12 @@
 import React, { useState } from 'react'
 import styles from "./GrowthModal.module.scss";
 
-const GrowthModal = ({ }) => {
+const GrowthModal = ({ onClose, setIndex }: { onClose: any, setIndex: any }) => {
     return (
         <>
             <div className={`${styles.formWrap} ${styles.thankpopupMan}`}>
                 <div className={`${styles.modalHeader}`}>
-                    <button type="button" className={`${styles.closepp}`} aria-label="Close">
+                    <button onClick={onClose} type="button" className={`${styles.closepp}`} aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
@@ -107,14 +107,13 @@ const GrowthModal = ({ }) => {
                     </div>
                     <div
                         className={`${styles.dFlex} ${styles.justifyCenter}`}>
-                        <a
-                            aria-label="pre register button"
+                        <button
+                            type='button'
+                            onClick={() => setIndex(2)}
                             className={`${styles.btn} ${styles.sumbitbtnpop}`}
-                            id="btnSubmit"
-                            data-toggle="modal"
                         >
                             Submit
-                        </a>
+                        </button>
                     </div>
 
                 </div>
