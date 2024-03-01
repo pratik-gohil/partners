@@ -11,13 +11,13 @@ function StartPartnerReferringSecC() {
     );
 
     const refschema = z.object({
-        r_name: z.string().min(1, { message: 'name is req' }),
-        r_number: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' })
+        r_name: z.string().nonempty('field is required').min(3, { message: 'must be atleast 3 characters' }),
+        r_number: z.string().nonempty('field is required').regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' })
     });
 
     const schema = z.object({
-        name: z.string().min(3, { message: 'must be 3 letters' }),
-        number: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' }),
+        name: z.string().nonempty('field is required').min(3, { message: 'must be atleast 3 characters' }),
+        number: z.string().nonempty('field is required').regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' }).nonempty(),
         agree: z.boolean(),
         reference: z.array(refschema)
     })
@@ -61,9 +61,7 @@ function StartPartnerReferringSecC() {
                                 <input
                                     type="text"
                                     className={`${styles.formControl}`} placeholder="Your Name"
-                                    {...register('name', {
-                                        required: 'name is required'
-                                    })}
+                                    {...register('name')}
                                 />
                                 {
                                     errors.name && (
@@ -77,9 +75,7 @@ function StartPartnerReferringSecC() {
                                     type="number"
                                     className={`${styles.formControl} ${styles.inputBox}`}
                                     placeholder="Your Mobile No."
-                                    {...register('number', {
-                                        required: 'number is required'
-                                    })}
+                                    {...register('number')}
                                 />
                                 {
                                     errors.number && (
@@ -99,9 +95,7 @@ function StartPartnerReferringSecC() {
                                                 type="text"
                                                 className={styles.formControl}
                                                 placeholder="Reference Name"
-                                                {...register(`reference.${i}.r_name`, {
-                                                    required: 'name is required'
-                                                })}
+                                                {...register(`reference.${i}.r_name`)}
                                             />
                                             {
                                                 errors.reference && errors.reference[i] && errors.reference[i]?.r_name && (
@@ -117,9 +111,7 @@ function StartPartnerReferringSecC() {
                                                 type="number"
                                                 className={styles.formControl}
                                                 placeholder="Reference Number"
-                                                {...register(`reference.${i}.r_number`, {
-                                                    required: 'number is required'
-                                                })}
+                                                {...register(`reference.${i}.r_number`)}
                                             />
                                             {
                                                 errors.reference && errors.reference[i] && errors.reference[i]?.r_number && (
