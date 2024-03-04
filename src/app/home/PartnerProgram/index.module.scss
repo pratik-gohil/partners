@@ -1091,6 +1091,20 @@
     }
 }
 
+@media all and (max-width:980px) {
+    .dreamWithMaSec {
+        margin-bottom: 15px;
+
+        .captionTxt {
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 15px;
+        }
+    }
+    .x-amount-left{
+        font-size: 27px;
+    }
+}
 @media only screen and (max-width:767px) {
     .x-amount-unnique-benefit-block {
         margin-top: 30px;
@@ -1311,17 +1325,5 @@
 
     .all-this-can-block b br {
         display: none;
-    }
-}
-
-@media all and (max-width:980px) {
-    .dreamWithMaSec {
-        margin-bottom: 15px;
-
-        .captionTxt {
-            font-size: 14px;
-            line-height: 28px;
-            margin-bottom: 15px;
-        }
     }
 }

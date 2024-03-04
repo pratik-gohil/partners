@@ -46,11 +46,16 @@
             color: $blue;
         }
     }
-    .becomePartnerBtn{font-size: 12px; line-height: 32px; min-width: 90px;padding: 0 7px; margin-top: 0;
-        span{display: none;}
 
-    padding: 0 15px;
-}
+    .becomePartnerBtn {
+
+        /* font-size: 12px; line-height: 32px; min-width: 90px;padding: 0 7px; margin-top: 0; */
+        span {
+            display: none;
+        }
+
+        padding: 0 15px;
+    }
 }
 
 .rhsActionBtnWrap {
@@ -234,5 +239,31 @@
 @media all and (max-width:768px) {
     .headerSec {
         min-height: 60px;
+    }
+}
+
+@media all and (max-width:767px) {
+    .topMenuUlist {
+        .becomePartnerBtn {
+            min-width: auto;
+            font-size: 12px;
+            padding: 0px 6px;
+            line-height: 32px;
+        }
+    }
+
+    .headerSec {
+        .lhsWrap {
+            width: 100px;
+            height: 60px;
+
+            svg {
+                width: 100%;
+            }
+        }
+        .rhsWrap {
+            width: calc(100% - 100px);
+            column-gap: 10px;
+        }
     }
 }
