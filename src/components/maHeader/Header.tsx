@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import styles from "./HeaderSec.module.scss";
 import MiraeAssetsPartnersLogo from '../svgs/MiraeAssetsPartnersLogo';
+import LangguageDropdown from '../languageDropdown/LanguageDropdown';
 
 const Header = () => {
     const [showSideBar, setShowSideBar] = useState(false);
@@ -27,6 +28,7 @@ const Header = () => {
                                 <button className={`${styles.maOrangeBtn} ${styles.becomePartnerBtn}`} data-toggle="modal">Pre-Register <span>Now</span></button>
                             </li>
                         </ul>
+                        <LangguageDropdown />
                         <div className={`${styles.rhsActionBtnWrap}`}>
                             <div className={`${styles.hamburgerMenuBtn} ${styles.mobView} ${showSideBar && styles.active}`} onClick={() => setShowSideBar(!showSideBar)}><span className={`${styles.l1}`}></span><span className={`${styles.l2}`}></span><span className={`${styles.l3}`}></span></div>
                             {
