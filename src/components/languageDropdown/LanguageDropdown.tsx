@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from "./LanguageDropdown.module.scss";
 function LangguageDropdown() {
-    const handleClick = () => {
-        //setPage('hi-IN'); // Assuming 'setPage' is a function that handles setting the page
-      };
-    
+    const [showOptions, setShowOptions] = useState(false);
+
+    useEffect(() => {
+        const close = () => setShowOptions((e) => e = false)
+        setTimeout(() => {
+            if (showOptions) window.addEventListener('click', close)
+            else window.removeEventListener('click', close)
+        }, 0)
+
+        return () => { window.removeEventListener('click', close) }
+    }, [showOptions])
+
     return (
         <>
-            <div className={`${styles.languageUlBlock}`}>
+            <div className={`${styles.languageUlBlock}`} onClick={() => setShowOptions(true)}>
                 <span>Language</span>
                 <label id="lblCurLang" className={`${styles.languageSelectLabel}`}>
                     English
@@ -20,7 +28,7 @@ function LangguageDropdown() {
                     className={`${styles.arrowImgMargin}`}
                 />
                 <br />
-                <ul className={`${styles.listUstyled}`}>
+                {showOptions && <ul className={`${styles.listUstyled}`}>
                     <li style={{ display: "list-item" }}>
                         <label className="language-select-labell">&nbsp;&nbsp;Select</label>
                         <img
@@ -34,7 +42,6 @@ function LangguageDropdown() {
                     </li>
                     <li
                         id="liEn"
-                        onClick={handleClick}
                         style={{ backgroundColor: "white", display: "list-item" }}
                     >
                         <a
@@ -53,7 +60,6 @@ function LangguageDropdown() {
                     </li>
                     <li
                         id="liHi"
-                        onClick={handleClick}
                         style={{ backgroundColor: "white", display: "list-item" }}
                     >
                         <a
@@ -70,13 +76,7 @@ function LangguageDropdown() {
                             &nbsp;&nbsp;Hindi
                         </a>
                     </li>
-                    {/*<li id="liGu" onclick="setPage('gu-IN');" style=" background-color: white;">
-                      <a href="/gu" style="color: #333333;  text-align: left; margin-left: 1px; width:100%; display: block;">&nbsp;&nbsp;Gujarati</a>
-                  </li>
-                  <li id="liTa" onclick="setPage('ta-IN');" style=" background-color: white;">
-                      <a href="/ta" style="color: #333333; text-align: left; margin-left: 1px; width:100%; display: block;">&nbsp;&nbsp;Tamil</a>
-                  </li> */}
-                </ul>
+                </ul>}
             </div>
 
         </>
