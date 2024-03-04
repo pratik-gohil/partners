@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../FaqsSec.module.scss'
-function QSeventeen() {
-    return (
+function QNineteen() {
+    return ( 
         <>
             <p><b>Security deposit:</b> ₹50,000 (Refundable)</p>
             <p><b>Document handling charges:</b> ₹1,500 (eFranking &amp; eSign charges) </p>
@@ -25,4 +25,4 @@ function QSeventeen() {
     )
 }
 
-export default QSeventeen
+export default QNineteen

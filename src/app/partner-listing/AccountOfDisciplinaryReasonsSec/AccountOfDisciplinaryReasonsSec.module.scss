@@ -6,10 +6,12 @@
 .tableWraper{position: relative;margin-bottom: 20px;}
 
 .tableTopWrap{display: flex;align-items: center;justify-content: space-between;margin-bottom: 15px;}
-.showSelectEntriesWrap{font-size: 14px;line-height: 14px; select{ width: 70px; height: 34px; border-radius: 4px; border: 1px solid #D2D2D2; padding: 0 10px; margin: 0 10px; padding-left: 0; background-color: transparent;outline: 0;} }
-.searchBoxWrap{position: relative; input{width: 200px; height: 34px; border: 1px solid #D2D2D2; border-radius: 4px; padding: 5px;margin-left: 10px; padding-left: 0; background-color: transparent; outline: 0;} }
-
-
+.showSelectEntriesWrap{font-size: 14px;line-height: 14px;display: flex; align-items: center; flex-wrap: nowrap;
+    select{ width: 70px; height: 34px; border-radius: 4px; border: 1px solid #D2D2D2;padding: 0 10px; margin: 0 10px 0 10px; padding-left: 2px; background-color: transparent; outline: 0;}
+}
+.searchBoxWrap{position: relative;display: flex; align-items: center; flex-wrap: nowrap;justify-content: flex-end;
+     input{width: 100%;max-width: 200px;height: 34px; border: 1px solid #D2D2D2; border-radius: 4px; padding: 5px;margin-left: 10px; padding-left: 5px; background-color: transparent; outline: 0;}
+} 
 .tableHolder{border: 1px solid #C4C4C4; border-radius: 4px;margin-bottom: 15px;overflow-x: auto;}
 .table { border-collapse: collapse; width: 100%;
     thead{ border-bottom: 1px solid #C4C4C4;}
@@ -23,36 +25,22 @@
 .paginationStrip { display: flex; align-items: center; justify-content: center; gap: 10px; 
     a{text-decoration: none !important;outline: 0 !important;} 
     .pages { display: flex; flex-direction: row; gap: 2px; .page { font-size: 14px;line-height: 14px; background-color: #f5f5f5;color: #666;font-weight: bold; cursor: pointer;width: 26px;height: 26px; display: flex; align-items: center; justify-content: center; gap: 10px; border-radius: 2px; &:hover { background-color: #FF7518; color: #fff; } &.active { background-color: #FF7518; color: #fff; } } } .btn {width: 70px;height: 26px; cursor: pointer; display: flex; align-items: center; justify-content: center;background-color: transparent; padding: 0; border: 0;color: #666; }  
-}
-/* .tableWraper{position: relative; margin-bottom: 20px;}
-
-.tableTopWrap{display: flex;align-items: center;justify-content: space-between;margin-bottom: 15px;}
-.showSelectEntriesWrap{font-size: 14px;line-height: 14px; select{ width: 70px; height: 34px; border-radius: 4px; border: 1px solid #D2D2D2; padding: 0 10px; margin: 0 10px; padding-left: 0; background-color: transparent;outline: 0;} }
-.searchBoxWrap{position: relative; input{width: 200px; height: 34px; border: 1px solid #D2D2D2; border-radius: 4px; padding: 5px;margin-left: 10px; padding-left: 0; background-color: transparent; outline: 0;} }
-.paginationStrip { display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 30px;
-    a{text-decoration: none !important;outline: 0 !important;} 
-    .pages { display: flex; flex-direction: row; gap: 2px; .page { font-size: 14px;line-height: 14px; background-color: #f5f5f5;color: #666;font-weight: bold; cursor: pointer;width: 26px;height: 26px; display: flex; align-items: center; justify-content: center; gap: 10px; border-radius: 2px; &:hover { background-color: #FF7518; color: #fff; } &.active { background-color: #FF7518; color: #fff; } } } .btn {width: 70px;height: 26px; cursor: pointer; display: flex; align-items: center; justify-content: center;background-color: transparent; padding: 0; border: 0;color: #666; }  
-}
-
-.tableHolder{border: 1px solid #C4C4C4; border-radius: 4px;margin-bottom: 15px;overflow-x: auto;}
-.table { border-collapse: collapse; width: 100%;
-    thead{ border-bottom: 1px solid #C4C4C4;}
-    th { background: #FFF5EE; padding: 13px 14px;font-size: 14px;line-height: 20px;}
-    td {font-size: 14px;line-height: 20px;border-bottom: 1px solid #C4C4C4; padding: 10px 15px 10px 15px;text-align: center;}   
-    tr:last-of-type td{border-bottom:0;}
 } 
 
-.tableBtmWrap{display: flex;align-items: center;justify-content: space-between;}
-.showingDataLbl{font-size: 14px;line-height: 14px;}
-.paginationStrip { display: flex; align-items: center; justify-content: center; gap:10px; margin-bottom: 30px;
-    a{text-decoration: none !important;outline: 0 !important;} 
-    .pages { display: flex; flex-direction: row; gap: 2px;
-        .page { font-size: 14px;line-height: 14px; background-color: #f5f5f5;color: #666;font-weight: bold; cursor: pointer;width: 26px;height: 26px; display: flex; align-items: center; justify-content: center; gap: 10px; border-radius: 2px;
-            &:hover { background-color: #FF7518; color: #fff; } 
-            &.active { background-color: #FF7518; color: #fff; }
-        } 
+@media all and (max-width:980px) { 
+    .accountOfDisciplinaryReasonsSec{padding-bottom:10px;margin-bottom: 15px;
+        .secTitle{margin-bottom: 15px;} 
+
+    }    
+    .showSelectEntriesWrap {font-size: 13px; width: 150px;
+        select{margin: 0 7px 0 7px; width: 60px; }
     }
-    .btn {width: 70px;height: 26px; cursor: pointer; display: flex; align-items: center; justify-content: center;background-color: transparent; padding: 0; border: 0;color: #666;
-        
-    }  
-} */ 
+    .searchBoxWrap{font-size: 13px; width: calc(100% - 150px);}
+    .table { width: 1100px;
+        th { padding: 10px 14px;font-size: 13px;line-height: 18px;}
+        td {font-size: 12px;line-height: 18px; padding: 10px 14px 10px 14px;}   
+    }
+    .tableBtmWrap{flex-wrap: wrap;text-align: center;}
+    .showingDataLbl{width: 100%;margin-bottom: 15px;}
+    .paginationStrip {width: 100%;}
+} 

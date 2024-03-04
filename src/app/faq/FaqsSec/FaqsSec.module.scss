@@ -79,36 +79,14 @@
 .pricingTableHolder table td { font-size: 16px; color: #000; text-align: center; border-top: 1px solid #D2D2D2; } 
  
 
+@media all and (max-width:980px) { 
+    .tableHolder,.pricingTableHolder{overflow-x:auto;white-space: nowrap;}
+} 
+
+
 @media all and (max-width:768px) {
-    .faqsSec {
-        padding-top: 20px;
-    }
-
-    /* .accCard {
-        margin-bottom: 5px;
-
-        .accTitle {
-            padding-right: 30px;
-            font-size: 14px;
-            line-height: 20px;
-
-            .queryTxt {
-                font-size: 14px;
-                line-height: 20px;
-            }
-        }
-
-        .accPanel {
-            font-size: 12px;
-
-            p {
-                font-size: 12px;
-            }
-        }
-    }
-
-    .accCard .accTitle::after {
-        top: 14px;
-    } */
+    .faqsSec { padding-top: 20px;
+        .secTitle{ margin-bottom: 15px; }
+    } 
 }
 
