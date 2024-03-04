@@ -1,0 +1,225 @@
+@import "../../styles/_common.scss";
+/* languageUlBlock-start */
+.languageUlBlock {
+    width: 150px;
+    height: 30px;
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+    font-size: 11px;
+    color: #666666;
+}
+
+    .languageUlBlock span {
+        width: 70px;
+        display: inline-block;
+        background: #F5F5F5;
+        padding-left: 10px;
+        border-radius: 5px 0px 0 5px;
+        height: 28px;
+        line-height: 28px;
+    }
+
+    .languageUlBlock ul {
+        margin: 0;
+        padding: 0;
+        width: 75px;
+        height: 30px;
+        position: absolute;
+        display: inline-block;
+        top: 0px;
+        margin-left: 72px;
+    }
+
+        .languageUlBlock ul li {
+            z-index: 2;
+            font-size: 12px;
+            list-style: none;
+        }
+
+            .languageUlBlock ul li:not(.init) {
+                float: left;
+                width: 80px;
+                display: none;
+                background: #fff;
+                border: solid 1px #ccc;
+                cursor: pointer;
+                text-align: left;
+                height: 27px;
+                right: 2px;
+                border-radius: 1px;
+            }
+
+                .languageUlBlock ul li:not(.init) + li {
+                    border-top: none;
+                }
+
+                .languageUlBlock ul li:not(.init):hover,
+                ul li.selected:not(.init) {
+                    background: #FFF5EE;
+                    color: #FF7518;
+                }
+
+    .languageUlBlock li.init {
+        cursor: pointer;
+    }
+
+a#submit {
+    z-index: 1;
+}
+
+.languageUlBlock ul li.init::after {
+    /*background: url(../images/down-arrow.png) no-repeat;*/
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    content: "";
+}
+
+.languageUlBlock ul li.selectedArrow::after {
+    /*background: url(../images/down-arrow.png) no-repeat;*/
+    rotate: 180deg;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    content: "";
+}
+
+/*.languageSelectLabel {
+	font-size: 11px;
+	margin-left: 10px;
+	width: 39px;
+}*/
+
+
+.languageSelectLabel {
+    font-size: 11px;
+    margin-left: 10px;
+    width: 39px;
+    margin-top: 0px;
+}
+
+.listUstyled{
+    list-style: none;
+}
+
+
+.arrowImgMargin {
+    margin-left: 8px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 1024px) {
+    .languageUlBlock {
+        margin-top: 5px;
+    }
+
+        .languageUlBlock ul {
+            top: 0px;
+        }
+
+            .languageUlBlock ul li.init::after {
+                top: 7px;
+            }
+
+            .languageUlBlock ul li.selectedArrow::after {
+                top: 0;
+            }
+
+            .languageUlBlock ul li:not(.init) {
+                top: -24px;
+            }
+}
+
+@media only screen and (max-width: 767px) {
+    .languageUlBlock span {
+        display: none;
+    }
+
+    .languageUlBlock {
+        width: 80px;
+        margin-top: 2px;
+    }
+}
+
+/* languageUlBlock-end */
+
+@media only screen and (max-width: 768px) {
+    .languageUlBlock ul {
+        margin-left: 0px;
+        height: 25px !important;
+    }
+
+        .languageUlBlock ul li:not(.init) {
+            width: 80px;
+            border-radius: 1px;
+            right: 1px;
+            top: -26px;
+        }
+
+        .languageUlBlock ul li {
+            padding: 5px;
+            /*position: relative;*/
+        }
+
+    .languageSelectLabel {
+        font-size: 11px;
+        margin-left: 10px;
+        width: 39px;
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 26px;
+    }
+
+    .arrowImgMargin {
+        margin-left: 3px;
+    }
+
+    .languageSelectLabell {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .languageUlBlock ul {
+        margin-left: 70px;
+        height: 25px !important;
+    }
+
+        .languageUlBlock ul li:not(.init) {
+            width: 80px;
+            border-radius: 1px;
+            right: 1px;
+            top: -26px;
+        }
+
+        .languageUlBlock ul li {
+            /*position: relative;*/
+            padding: 5px;
+        }
+
+    .languageSelectLabel {
+        font-size: 11px;
+        margin-left: 10px;
+        width: 39px;
+        margin-top: 4px;
+    }
+
+    .languageSelectLabell {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .arrowImgMargin {
+        margin-left: 3px;
+    }
+}
