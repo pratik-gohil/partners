@@ -29,7 +29,7 @@ function PartnerProgram() {
                             <div className={`${styles["x-amount-left"]} ${nunito.className}`}>
                                 Brokerage
                             </div>
-                            <div className={`${styles["x-amount-right"]} `}>
+                            <div className={`${styles["x-amount-right"]} ${styles["margiright75"]}`}>
                                 Earn <b>1.5X</b> or more
                             </div>
                         </div>
