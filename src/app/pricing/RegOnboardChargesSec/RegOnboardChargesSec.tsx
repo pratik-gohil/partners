@@ -31,7 +31,7 @@ function RegOnboardChargesSec() {
                         </div>
                     </div>    
                     <div className={`${styles.accBodyBox}`}>  
-                    <div className={`${styles.pricingtableDiv}`}>
+                    <div className={`${styles.pricingTableHolder}`}>
                             <table width="100%"> 
                                 <tr>
                                     <th>Exchange</th>
@@ -112,7 +112,7 @@ function RegOnboardChargesSec() {
                         </div>
                     </div>    
                     <div className={`${styles.accBodyBox}`}>  
-                        <div className={`${styles.pricingtableDiv}`}>
+                        <div className={`${styles.pricingTableHolder}`}>
                             <table width="100%"> 
                                 <tr>
                                     <th>Exchange</th>

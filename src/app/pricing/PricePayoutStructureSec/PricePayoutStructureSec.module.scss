@@ -1,26 +1,28 @@
 @import '../../../styles/common';
 
-.pricePayoutStructureSec { position: relative;padding-top: 40px;margin-bottom: 30px;
-    .secTitle{padding-bottom: 20px;}
+.pricePayoutStructureSec { position: relative;padding-top: 50px;margin-bottom: 40px;
+    .secTitle{padding-bottom: 30px;}
     p{margin-bottom: 20px;}
 }
 .tableStructureWrap{margin-bottom: 30px;} 
 .tableTitleWrap { align-items: center; column-gap: 15px; margin-bottom: 15px; padding-top: 10px;
     .tableTitle { font-weight: 600; font-size: 22px; color: #1a3967; font-weight: 600;}
 }
-.pricingTableHolder { border: 1px solid #D2D2D2; border-radius: 4px; margin-bottom: 10px;}.pricingTableHolder table th { background: #F1F1F1; font-size: 14px; color: #000; font-weight: 600;font-weight: normal; text-align: center; line-height: 22px; }
+.pricingTableHolder { border: 1px solid #D2D2D2; border-radius: 4px; margin-bottom: 10px;}
+.pricingTableHolder table th { background: #F1F1F1; font-size: 14px; color: #000; font-weight: 600;  text-align: center; line-height: 22px; }
 .pricingTableHolder table th, .pricingTableHolder table td { padding: 15px; border-left: 1px solid #D2D2D2; }
 .pricingTableHolder table th:first-child, .pricingTableHolder table td:first-child { border-left: none; }
 .pricingTableHolder table tr:last-child td{ border-bottom: none; } 
 .pricingTableHolder table td { font-size: 16px; color: #000; text-align: center; border-top: 1px solid #D2D2D2; }  
-.pricingTableHolder table td:first-child { text-align: left; }
- 
+.pricingTableHolder table td:first-child { text-align: left; } 
+.pricingTableHolder table td span { color: #FF7518;font-weight: 600; }
+.pricingTableHolder table td ul li { margin-left: 15px; margin-top: 15px; line-height: 22px; list-style: none; position: relative; }
+.pricingTableHolder table td ul li small { font-size: 14px; }
+.pricingTableHolder table td ul li:before { position: absolute; left: -15px; top: 8px; content: ''; width: 4px; height: 4px; border-radius: 100%; background: #333; }
 .leftColorBlk{text-align: left; color:black;}
 .textCenter { text-align: center !important; }
 .textLeft { text-align: left !important; }
 .fontSemiBold{font-weight: 600;} 
- 
-.pricingTableHolder table td span { color: #FF7518;font-weight: 600; } .pricingTableHolder table td ul li { margin-left: 15px; margin-top: 15px; line-height: 22px; list-style: none; position: relative; } .pricingTableHolder table td ul li:before { position: absolute; left: -15px; top: 8px; content: ''; width: 4px; height: 4px; border-radius: 100%; background: #333; } .pricingTableHolder table td ul li small { font-size: 14px; }
 
 @media only screen and (max-width: 980px) {
     .pricePayoutStructureSec{ padding-top: 30px;
@@ -28,9 +30,10 @@
         .tableTitleWrap{display: flex; align-items: start; vertical-align: top;
             img{ width: 30px;}
             .tableTitle{ display: flex; align-items: start; vertical-align: top; line-height: 24px; font-size: 18px;}
-        }
-        .pricingTableHolder{ overflow-x: scroll;
-            table th,table td { font-size: 13px; min-width: 170px; }
+        } 
+        .pricingTableHolder { overflow-x: scroll; width: 100%;display: block; 
+            table th,
+            table td { font-size: 14px; min-width: 170px; }
         }
     } 
 }
