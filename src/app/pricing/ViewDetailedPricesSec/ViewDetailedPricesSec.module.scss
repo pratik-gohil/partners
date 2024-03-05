@@ -28,13 +28,24 @@
 }  
             
 
-@media only screen and (max-width: 767px) {  
-    /* .accBodyBox {
-        overflow: hidden;
-        display: block;
-    } */ 
+@media only screen and (max-width: 767px) {   
+    .viewDetailedPricesSec{ margin-bottom: 15px;
+        .secTitle{ line-height: 26px; padding-bottom: 5px; margin-bottom: 5px;}
+    }
     .accBodyBox {
         overflow-x: scroll;
         width: 100%;display: block;
     }  
+    .accHeadBox { align-items: flex-start;
+        .title { font-size: 16px;line-height: 22px; }
+        .accordingBtn{ width: 50px; position: relative;top:5px;
+            span{display: none;}
+        }
+    } 
+    .docsLinkBox{flex-wrap: wrap;padding: 15px 15px; padding-left: 15px;
+        .halfWrapAlink{width: 100%;
+            img{ width: 30px;}
+            &:first-of-type{ margin-bottom: 15px;}
+        }
+    }
 }
