@@ -45,13 +45,13 @@
         .maContainer{padding: 0;}
         .secTitle { padding-bottom: 0px;}
     }
-    .formInputsContainer{width: 100%;padding: 5px 35px 5px 35px;}
-    .deletB-ad {height: 30px; width: 30px;right: -35px;svg { width: 12px; }}
+    .formInputsContainer{width: 100%;padding: 5px 25px 5px 25px;}
+    .deletB-ad {height: 30px; width: 30px;right: -26px; border: 0;svg { width: 12px; }}
     .formInputsContainer .formControl { height: 42px; font-size: 14px;}
     .formInputsContainer .formFieldWrap { column-gap: 14px;}
     .error{font-size: 12px;}
     .tncCheckBoxWrap{font-size: 12px;} 
-    .btnparAddsub { column-gap: 15px; margin-top: 15px; 
+    .btnparAddsub { column-gap: 15px; margin-top: 15px; margin-bottom: 25px;
         a{ height: 38px; line-height: 38px; font-size: 14px;min-width: 130px;} 
         a svg { width: 15px; height: 15px; margin-right: 5px; } 
     }

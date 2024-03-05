@@ -14,7 +14,7 @@ const FaqsSec = () => {
         <>
             <section className={`${styles.faqsSec}`}>
                 <div className={`${styles.maContainer}`}>
-                    <h2 className={`${styles.secTitle} ${nunito.className}`}>Frequently Asked Questions</h2>
+                    <h2 className={`${styles.secTitle} ${nunito.className}`}>Refer and Earn - Frequently Asked Questions</h2>
                     <Accordian items={accordionData.slice(0, showMore ? accordionData.length : 6)} active={expanded} setActive={setExpanded} />
                     {/* <div className={`${styles.viewAllBtnWrap}`}>
                         <button className={`${styles.viewAllBtn}`} onClick={() => {

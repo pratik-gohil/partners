@@ -12,5 +12,8 @@
     } 
 } 
 @media all and (max-width: 980px) {
-    .reBenefitUlistBox{ padding: 15px 15px 15px 15px; width: 100%; }
+    .benefitsOfPartneringSec{ margin-bottom: 20px;}
+    .reBenefitUlistBox{ padding: 15px 15px 15px 15px; width: 100%;
+        li{ padding-left: 15px; font-size: 14px;}
+    }
 }

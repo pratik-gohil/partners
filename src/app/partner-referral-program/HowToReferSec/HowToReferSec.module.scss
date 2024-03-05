@@ -75,7 +75,10 @@
 @media only screen and (max-width: 960px) { 
 .howToReferSec{ padding-top: 25px;
     padding-bottom: 20px; 
-    margin-top: 0px;text-align: left}
+    margin-top: 0px;text-align: left;
+    .maContainer{    padding-left: 30px;
+        padding-right: 30px;}
+}
 
     .howToReferSec ul li {
         width: 100%;
