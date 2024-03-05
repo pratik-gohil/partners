@@ -4,7 +4,7 @@ import BenefitsOfPartneringSec from "./BenefitsOfPartneringSec/BenefitsOfPartner
 import EarnRewardsSec from "./EarnRewardsSec/EarnRewardsSec";
 import HowToReferSec from "./HowToReferSec/HowToReferSec";
 import FaqsSec from "./FaqsSec/FaqsSec";
-import StartPartnerReferringSecC from "./StartPartnerReferringSec/StartPartnerReferringSecC";
+/* import StartPartnerReferringSecC from "./StartPartnerReferringSec/StartPartnerReferringSecC"; */
 
 
 export default function PartnerReferralProgramPage() {
