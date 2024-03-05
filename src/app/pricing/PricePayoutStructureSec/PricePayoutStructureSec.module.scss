@@ -6,7 +6,7 @@
 }
 .tableStructureWrap{margin-bottom: 30px;} 
 .tableTitleWrap { align-items: center; column-gap: 15px; margin-bottom: 15px; padding-top: 10px;
-    .tableTitle { font-weight: 600; font-size: 22px; color: #1a3967; font-weight: 700;}
+    .tableTitle { font-weight: 600; font-size: 22px; color: #1a3967; font-weight: 600;}
 }
 .pricingTableHolder { border: 1px solid #D2D2D2; border-radius: 4px; margin-bottom: 10px;}.pricingTableHolder table th { background: #F1F1F1; font-size: 14px; color: #000; font-weight: 600;font-weight: normal; text-align: center; line-height: 22px; }
 .pricingTableHolder table th, .pricingTableHolder table td { padding: 15px; border-left: 1px solid #D2D2D2; }
@@ -21,3 +21,17 @@
 .fontSemiBold{font-weight: 600;} 
  
 .pricingTableHolder table td span { color: #FF7518;font-weight: 600; } .pricingTableHolder table td ul li { margin-left: 15px; margin-top: 15px; line-height: 22px; list-style: none; position: relative; } .pricingTableHolder table td ul li:before { position: absolute; left: -15px; top: 8px; content: ''; width: 4px; height: 4px; border-radius: 100%; background: #333; } .pricingTableHolder table td ul li small { font-size: 14px; }
+
+@media only screen and (max-width: 980px) {
+    .pricePayoutStructureSec{ padding-top: 30px;
+        .secTitle{font-size: 28px; line-height: 33px; padding-bottom: 10px;margin-bottom: 10px;span{display: block;}}
+        .tableTitleWrap{display: flex; align-items: start; vertical-align: top;
+            img{ width: 30px;}
+            .tableTitle{ display: flex; align-items: start; vertical-align: top; line-height: 24px; font-size: 18px;}
+        }
+        .pricingTableHolder{ overflow-x: scroll;
+            table th,table td { font-size: 13px; min-width: 170px; }
+        }
+    } 
+}
+
