@@ -26,8 +26,10 @@
 
 @media only screen and (max-width: 980px) {
     .pricePayoutStructureSec{ padding-top: 30px;
+        b{ font-weight: 600;}
         .secTitle{font-size: 28px; line-height: 33px; padding-bottom: 10px;margin-bottom: 10px;span{display: block;}}
-        .tableTitleWrap{display: flex; align-items: start; vertical-align: top;
+        p{margin-bottom: 15px;}
+        .tableTitleWrap{display: flex; align-items: center; vertical-align: top;
             img{ width: 30px;}
             .tableTitle{ display: flex; align-items: start; vertical-align: top; line-height: 24px; font-size: 18px;}
         } 
@@ -36,5 +38,7 @@
             table td { font-size: 14px; min-width: 170px; }
         }
     } 
+    .tableStructureWrap{margin-bottom: 20px;} 
+    .tableTitleWrap { margin-bottom: 10px;column-gap: 10px;}
 }
 
