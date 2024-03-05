@@ -3,15 +3,17 @@ import React, { useState } from 'react'
 import styles from "./FormModal.module.scss";
 import GrowthModal from '../growthModal/GrowthModal';
 import ThankYouModal from '../thankyouModal/ThankYouModal';
+import SelectMenu from '../SelectMenu/SelectMenu';
 
 const FormModal = ({ onClose }: { onClose: () => void }) => {
     const [index, setIndex] = useState(0);
-    const [selectedOption, setSelectedOption] = useState("no");
+    const [registerdSubBroker, setRegisterdSubBroker] = useState(false);
 
     const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const target = event.target as HTMLInputElement;
-        setSelectedOption(target.value);
+        setRegisterdSubBroker(Boolean(Number(target.value)));
     };
+
     return (
         <>
             {index === 0 && (
@@ -46,12 +48,11 @@ const FormModal = ({ onClose }: { onClose: () => void }) => {
                                     <label >
                                         Registration type <sup>*</sup>
                                     </label>
-                                    <select className={`${styles.selDropMn} ${styles.selDrop} ${styles.active}`}>
-                                        <option className={`${styles.selected} ${styles.selectable}`}>Individual</option>
-                                        <option>Partnership firm</option>
-                                        <option>Partnership (LLP)</option>
-                                        <option>Corporate</option>
-                                    </select>
+                                    <SelectMenu options={["Individual",
+                                        "Partnership firm",
+                                        "Limited Liability Partnership (LLP)",
+                                        "Corporate"
+                                    ]} />
                                     {/* <div className={`${styles.selDropMn}`} id='RegistrationType'>
                                     <div className={`${styles.selDrop} ${styles.active}`}>Individual <span className={`${styles.arrow}`}></span></div>
                                     <ul className={`${styles.selResults}`} style={{ display: "none" }}>
@@ -107,16 +108,6 @@ const FormModal = ({ onClose }: { onClose: () => void }) => {
                                         maxLength={50}
                                         autoComplete="off"
                                     />
-                                    <ul className={`${styles.selResults} ${styles.selCity}`}>
-                                        <li>Individual</li>
-                                        <li>Partnership firm</li>
-                                        <li>Partnership (LLP)</li>
-                                        <li>Corporate</li>
-                                        <li>Partnership (LLP)</li>
-                                        <li>Corporate</li>
-                                        <li>Partnership (LLP)</li>
-                                        <li>Corporate</li>
-                                    </ul>
                                     <span className={`${styles.textDanger} ${styles.dNone}`} id="city-valid">
                                         City Cannot be blank
                                     </span>
@@ -125,7 +116,7 @@ const FormModal = ({ onClose }: { onClose: () => void }) => {
                             </li>
                             <li>
                                 <div className={`${styles.formGroup}`}>
-                                    <label htmlFor="pincode-valid">
+                                    <label>
                                         Pincode <sup>*</sup>
                                     </label>
                                     <input type="text" className={`${styles.formControl}`} id="pincode" maxLength={6} />
@@ -146,24 +137,24 @@ const FormModal = ({ onClose }: { onClose: () => void }) => {
                                             type="radio"
                                             id="personyes"
                                             name="authorised-person"
-                                            value="yes"
-                                            checked={selectedOption === "yes"}
+                                            value={1}
+                                            checked={registerdSubBroker === true}
                                             onChange={handleRadioChange}
                                         />
-                                        <label >Yes</label>
+                                        <label htmlFor="personyes">Yes</label>
                                         <input
                                             type="radio"
                                             id="personno"
                                             name="authorised-person"
-                                            value="no"
-                                            checked={selectedOption === "no"}
+                                            value={0}
+                                            checked={registerdSubBroker === false}
                                             onChange={handleRadioChange}
                                         />
-                                        <label >No</label>
+                                        <label htmlFor='personno'>No</label>
                                     </div>
                                 </div>
                             </li>
-                            {selectedOption === "yes" && (
+                            {registerdSubBroker && (
                                 <li
                                     className="existing-associationBlock associationyes"
                                 >
@@ -201,14 +192,14 @@ const FormModal = ({ onClose }: { onClose: () => void }) => {
                                                 defaultValue="yes"
                                                 data-gtm-form-interact-field-id={0}
                                             />
-                                            <label >Yes</label>
+                                            <label htmlFor='GSTyes'>Yes</label>
                                             <input
                                                 type="radio"
                                                 id="GSTno"
                                                 name="ExistingGST-number"
                                                 data-gtm-form-interact-field-id={1}
                                             />
-                                            <label >No</label>
+                                            <label htmlFor='GSTno'>No</label>
                                         </div>
 
                                         <span id="existingGStalert-valid" className={`${styles.textDanger} ${styles.dNone}`}>
