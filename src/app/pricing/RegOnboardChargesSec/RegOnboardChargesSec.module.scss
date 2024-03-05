@@ -19,18 +19,17 @@
 
 .authorisedPartneUlBlock { width: 100%; display: inline-block; margin-top: 30px; color: #043B72;margin-bottom: 20px; } .pricingNoteBlock { width: 100%; display: inline-block; margin-top: 30px;margin-bottom: 20px; } .authorisedPartneUlBlock ul li, .pricingNoteBlock ul li { list-style: none; position: relative; padding-left: 15px;font-size: 16px; line-height: 26px; } .authorisedPartneUlBlock ul li::before, .pricingNoteBlock ul li::before { width: 4px; height: 4px; background: #333; position: absolute; left: 0; top: 10px; content: ""; border-radius: 50%; } 
 
-.pricingtableDiv table th, .pricingtableDiv table td { padding: 15px; border-left: 1px solid #D2D2D2; }
-.pricingtableDiv table td:first-child { text-align: center; } 
-.pricingtableDiv table th:first-child,
-.pricingtableDiv table td:first-child { border-left: none; }
-.pricingtableDiv table th { background: #F1F1F1; font-size: 14px; color: #000;font-weight: 600;  text-align: center; line-height: 22px; }
-.pricingtableDiv table td { font-size: 16px; color: #000; text-align: center; border-top: 1px solid #D2D2D2; }
-.pricingtableDiv table td small { font-size: 14px; line-height: 20px; }
-.pricingtableDiv table td span { color: #FF7518;font-weight: 600; }
-
-.pricingtableDiv table td ul li { margin-left: 15px; margin-top: 15px; line-height: 22px; list-style: none; position: relative; }
-.pricingtableDiv table td ul li small { font-size: 14px; } 
-.pricingtableDiv table td ul li:before { position: absolute; left: -15px; top: 8px; content: ''; width: 4px; height: 4px; border-radius: 100%; background: #333; }
+.pricingTableHolder table th, .pricingTableHolder table td { padding: 15px; border-left: 1px solid #D2D2D2; }
+.pricingTableHolder table td:first-child { text-align: center; } 
+.pricingTableHolder table th:first-child,
+.pricingTableHolder table td:first-child { border-left: none; }
+.pricingTableHolder table th { background: #F1F1F1; font-size: 14px; color: #000;font-weight: 600;  text-align: center; line-height: 22px; }
+.pricingTableHolder table td { font-size: 16px; color: #000; text-align: center; border-top: 1px solid #D2D2D2; }
+.pricingTableHolder table td small { font-size: 14px; line-height: 20px; } 
+.pricingTableHolder table td span { color: #FF7518;font-weight: 600; } 
+.pricingTableHolder table td ul li { margin-left: 15px; margin-top: 15px; line-height: 22px; list-style: none; position: relative; }
+.pricingTableHolder table td ul li small { font-size: 14px; } 
+.pricingTableHolder table td ul li:before { position: absolute; left: -15px; top: 8px; content: ''; width: 4px; height: 4px; border-radius: 100%; background: #333; }
 
 @media only screen and (max-width: 767px) { 
     .accHeadBox { align-items: flex-start;
@@ -39,7 +38,7 @@
             span{display: none;}
         }
     }   
-    .pricingtableDiv { overflow-x: scroll; width: 100%;display: block; 
+    .pricingTableHolder { overflow-x: scroll; width: 100%;display: block; 
         table th,
         table td { font-size: 14px; min-width: 170px; }
     }  
