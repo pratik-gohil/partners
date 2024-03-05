@@ -15,15 +15,19 @@ const FaqsSec = () => {
             <section className={`${styles.faqsSec}`}>
                 <div className={`${styles.maContainer}`}>
                     <h2 className={`${styles.secTitle} ${nunito.className}`}>Frequently Asked Questions</h2>
-                    <Accordian items={accordionData.slice(0, showMore ? accordionData.length : 5)} active={expanded} setActive={setExpanded} />
-                    <div className={`${styles.viewAllBtnWrap}`}>
+                    <Accordian items={accordionData.slice(0, showMore ? accordionData.length : 6)} active={expanded} setActive={setExpanded} />
+                    {/* <div className={`${styles.viewAllBtnWrap}`}>
                         <button className={`${styles.viewAllBtn}`} onClick={() => {
                             setShowMore(!showMore)
                         }} >View {showMore ? "Less" : "All"} <div style={{
                             display: 'inline-block',
                             ...(showMore && { transform: 'rotate(180deg)' })
                         }}><DownCaretSVG /></div> </button>
+                    </div> */}
+                    <div className={`${styles.tcFaqendLine}`}>
+                        <sup>*</sup>&nbsp;Click here to view detailed <a href="/referral-terms-and-conditions#partnerReferralTC">Terms and Conditions</a>
                     </div>
+
                 </div>
             </section>
         </>
