@@ -15,7 +15,9 @@ const data = {
     "/privacy-policy": "Privacy Policy",
     "/terms-and-conditions": "Terms and Conditions",
     "/advisory-for-investors": "Advisory For Investors",
-    "/disclaimer": "Disclaimer"
+    "/disclaimer": "Disclaimer",
+    "/referral-terms-and-conditions": "Referral Terms and Conditions",
+    "/emargin-terms-and-conditions": "Emargin Terms and Conditions"
 }
 
 const BreadcrumbSec = () => {
