@@ -12,9 +12,10 @@ const data = {
     "/sitemap": "Sitemap",
     "/downloads": "Downloads",
     "/terms-of-use": "Terms of Use",
-    "privacy-policy": "Privacy Policy",
-    "terms-and-conditions": "Terms and Conditions",
-    "advisory-for-investors": "Advisory For Investors"
+    "/privacy-policy": "Privacy Policy",
+    "/terms-and-conditions": "Terms and Conditions",
+    "/advisory-for-investors": "Advisory For Investors",
+    "/disclaimer": "Disclaimer"
 }
 
 const BreadcrumbSec = () => {
