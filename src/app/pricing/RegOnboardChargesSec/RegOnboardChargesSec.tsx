@@ -5,10 +5,14 @@ import { nunito } from '@/styles/fonts'
 
 function RegOnboardChargesSec() {
 
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible1, setIsVisible1] = useState(false);
+    const [isVisible2, setIsVisible2] = useState(false);
  
-    const toggleVisibility = () => {
-        setIsVisible(!isVisible);
+    const toggleVisibility1 = () => {
+        setIsVisible1(!isVisible1);
+    };
+    const toggleVisibility2 = () => {
+        setIsVisible2(!isVisible2);
     };
 
     return (
@@ -34,15 +38,15 @@ function RegOnboardChargesSec() {
                         <div className={`${styles.lhsWrap}`}>
                             <div className={`${styles.title}`}>AP registration charges</div>   
                         </div>
-                        <div className={`${styles.accordingBtn} ${isVisible ? styles["active"] : styles[""]}`}  onClick={toggleVisibility}>
-                            {isVisible ? (
+                        <div className={`${styles.accordingBtn} ${isVisible1 ? styles["active"] : styles[""]}`}  onClick={toggleVisibility1}>
+                            {isVisible1 ? (
                                 <><span>View Less</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
                             ) : (
                                 <><span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
                             )} 
                         </div>
                     </div>    
-                    <div className={`${styles.accBodyBox} ${isVisible ? styles["active"] : styles[""]}`}> 
+                    <div className={`${styles.accBodyBox} ${isVisible1 ? styles["active"] : styles[""]}`}> 
                         <div className={`${styles.pricingTableHolder}`}>
                             <table width="100%"> 
                                 <tr>
@@ -119,15 +123,15 @@ function RegOnboardChargesSec() {
                         <div className={`${styles.lhsWrap}`}>
                             <div className={`${styles.title}`}>AP Annual Maintenance Charges effective from April 2024</div>   
                         </div>
-                        <div className={`${styles.accordingBtn} ${isVisible ? styles["active"] : styles[""]}`}  onClick={toggleVisibility}>
-                            {isVisible ? (
+                        <div className={`${styles.accordingBtn} ${isVisible2 ? styles["active"] : styles[""]}`}  onClick={toggleVisibility2}>
+                            {isVisible2 ? (
                                 <><span>View Less</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
                             ) : (
                                 <><span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
                             )} 
                         </div>
                     </div>    
-                    <div className={`${styles.accBodyBox} ${isVisible ? styles["active"] : styles[""]}`}> 
+                    <div className={`${styles.accBodyBox} ${isVisible2 ? styles["active"] : styles[""]}`}> 
                         <div className={`${styles.pricingTableHolder}`}>
                             <table width="100%"> 
                                 <tr>
