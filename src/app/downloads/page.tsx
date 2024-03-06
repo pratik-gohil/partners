@@ -7,8 +7,6 @@ export default function DownloadsPage() {
     <>
 
       <DownloadsLinksSec />
-      <OtpModal />
-      <ThankYouOtpModal/>
     </>
   );
 }

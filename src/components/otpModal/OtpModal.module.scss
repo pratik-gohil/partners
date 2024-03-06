@@ -42,7 +42,7 @@
     }
 }
 
-.dFlex{
+.dFlex {
     margin-top: 10px;
 }
 
@@ -51,12 +51,16 @@
     text-align: center;
     padding: 20px 15px 0;
 }
-.setpinPopuparea{
-    p{
+
+.setpinPopuparea {
+    p {
         margin-bottom: 20px;
     }
 }
-.setpinPopuparea img{display: inline-block;}
+
+.setpinPopuparea img {
+    display: inline-block;
+}
 
 .setpinPopuparea h4 {
     font-size: 20px;
@@ -70,22 +74,22 @@
 
 .setpinPopuparea label {
     font-size: 16px;
-    font-family: 'Open Sans Regular',sans-serif;
+    font-family: 'Open Sans Regular', sans-serif;
     font-weight: normal;
     margin-bottom: 10px;
 }
 
-    .setpinPopuparea label img {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 10px;
-        cursor: pointer;
-    }
+.setpinPopuparea label img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    cursor: pointer;
+}
 
 .otpboxInput {
-display: inline-block;
-margin-top: 10px;
-margin-bottom: 15px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .otpboxInput input {
@@ -99,38 +103,38 @@ margin-bottom: 15px;
     margin-left: 8px;
 }
 
-    .otpboxInput input:first-child {
-        margin-left: 0;
-    }
+.otpboxInput input:first-child {
+    margin-left: 0;
+}
 
 .otppopup-block p {
-text-align: center;
-font-size: 14px;
-color: #333;
-margin-bottom: 0;
-margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0;
+    margin-top: 10px;
 }
 
 .setpinPopuparea button {
-border-radius: 4px;
-background: #FF7518;
-border: 1px solid transparent;
-color: #fff;
-font-family: 'Open Sans Semi Bold', sans-serif;
-min-width: 160px;
-height: 42px;
-line-height: 42px;
-padding: 0;
-text-align: center;
-cursor: pointer;
-margin-bottom: 15px;
+    border-radius: 4px;
+    background: #FF7518;
+    border: 1px solid transparent;
+    color: #fff;
+    font-family: 'Open Sans Semi Bold', sans-serif;
+    min-width: 160px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
 
 .resetpopupBl p a {
-display: inline-block;
-color: #FF7518;
-font-size: 14px;
-font-weight: 600;
+    display: inline-block;
+    color: #FF7518;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 @media all and (max-width:980px) {
@@ -160,25 +164,32 @@ font-weight: 600;
     }
 }
 
-@media all and (max-width:767px) {
-
-}
+@media all and (max-width:767px) {}
 
 @media all and (max-width:480px) {
     .thankpopupMan .modalBody ul {
         width: calc(100% - 45px);
     }
+
     .thankpopupMan .modalBody ul li {
         width: calc(40% - 6px);
-        &:last-child{
+
+        &:last-child {
             margin-left: 5px;
             width: calc(60% - 6px);
         }
     }
+
     .deletBad {
         width: 36px;
         height: 36px;
         vertical-align: top;
         margin-left: 5px;
     }
+}
+
+.error {
+    color: red;
+    padding-left: 4px;
+    font-size: 12px;
 }
