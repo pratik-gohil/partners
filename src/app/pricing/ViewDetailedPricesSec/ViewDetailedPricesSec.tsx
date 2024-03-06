@@ -1,8 +1,17 @@
+"use client";
 import React from 'react'
 import styles from './ViewDetailedPricesSec.module.scss'
 import { nunito } from '@/styles/fonts'
 
 function ViewDetailedPricesSec() {
+
+    const handleKnowMore = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        const target = e.target as HTMLDivElement;
+        const el = document.querySelector(`[data-section-table=${target.getAttribute("data-section-action")}]`) as HTMLDivElement;
+
+        el.style.height = el.style.height === '0px' ? "auto" : '0px'
+    }
+
     return (
         <section className={`${styles.viewDetailedPricesSec}`}>
             <div className={`${styles.maContainer}`}>
@@ -21,11 +30,11 @@ function ViewDetailedPricesSec() {
                             <div className={`${styles.title}`}>Other charges applicable to your client</div>  
                             <span>These are standard charges and can't be modified.</span>
                         </div>
-                        <div className={`${styles.accordingBtn} ${styles.active}`}>
+                        <div className={`${styles.accordingBtn} ${styles.active}`} onClick={e => handleKnowMore(e)} data-section-action="mtf">
                             <span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" />
                         </div>
                     </div>    
-                    <div className={`${styles.accBodyBox}`}>  
+                    <div className={`${styles.accBodyBox}`} data-section-table="mtf" style={{ height: '0px' }}>  
                         <ul>
                             <li>
                                 <b>Quarterly operating charges:</b> <br/>
