@@ -42,7 +42,7 @@
     flex-wrap: wrap;
     gap: 30px;
     grid-row-gap: 20px;
-  
+
     >li {
         width: 31%;
         display: inline-block;
@@ -263,6 +263,7 @@
     color: #000;
     padding-right: 35px;
     padding-left: 12px;
+    width: 100%;
 }
 
 .arrow {

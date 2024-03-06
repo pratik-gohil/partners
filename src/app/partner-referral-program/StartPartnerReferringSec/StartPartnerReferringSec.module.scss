@@ -1,195 +1,60 @@
 @import '../../../styles/common';
 
-.startPartnerReferringSec {
-    position: relative;
-    padding-top: 50px;
+.startPartnerReferringSec { position: relative; padding-top: 50px;
+    .secTitle { padding-bottom: 15px; }
+}
 
-    .secTitle {
-        padding-bottom: 15px;
+.formHolder { position: relative; } .formControl { display: block; width: 100%; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; border-radius: .25rem; transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out } .formControl::-ms-expand { background-color: transparent; border: 0 } .formControl:focus { color: #495057; background-color: #fff; border-color: #80bdff; outline: 0; box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25) } .formControl::-webkit-input-placeholder { color: #6c757d; opacity: 1 } .formControl::-moz-placeholder { color: #6c757d; opacity: 1 } .formControl:-ms-input-placeholder { color: #6c757d; opacity: 1 } .formControl::-ms-input-placeholder { color: #6c757d; opacity: 1 } .formControl::placeholder { color: #6c757d; opacity: 1 } .formControl:disabled, .formControl[readonly] { background-color: #e9ecef; opacity: 1 } .form-group { margin-bottom: 1rem }
+
+.btnparAddsub { text-align: center; margin-bottom: 40px;display: flex; align-items: center; justify-content: center;column-gap: 30px; margin-top: 20px; 
+    a { display: inline-flex; align-items: center; justify-content: center; background: #fff; border: #f58220 solid 1px; font-weight: 600; font-size: 16px; height: 42px; line-height: 40px; color: #f58220; border-radius: 4px; padding: 0 15px;vertical-align: top; min-width: 145px;cursor: pointer; }
+    .referBtn{ background: #f58220; color: #fff; }
+    a svg { width: 20px; height: 20px; margin-right: 8px; }
+    .addBtn{position: relative;}
+}
+ 
+
+.formInputsContainer { margin: 0 auto; width: 70%; padding: 20px 0 5px; } .formInputsContainer .formFieldWrap { position: relative; align-items: flex-start; column-gap: 20px; position: relative; margin-bottom: 0px; padding-bottom: 15px; .formGroup { width: 50%; } } .formInputsContainer .formFieldWrap:first-child::before { border-bottom: 1px dashed #f58220; width: 100%; height: 1px; content: ''; bottom: 0; left: 0; position: absolute; } .formInputsContainer .formFieldWrap:first-child { margin-bottom: 15px; } .formInputsContainer .formFieldWrap:last-child { padding-bottom: 0px; } .formInputsContainer .formControl { border-color: #D2D2D2; height: 48px; border-radius: 4px; font-size: 16px; color: #000; }
+
+.deletB-ad { height: 34px; width: 34px; background: none; position: absolute; right: -50px; top: 7px; border-radius: 100%; text-align: center; display: inline-block; border: 1px solid #f58220; cursor: pointer; display: flex; align-items: center; justify-content: center; svg { width: 16px;fill: #f58220; display: block; height: auto; } }
+
+.error{ color: red; font-size: 13px; text-align: left; padding-left: 4px; text-transform: capitalize;padding-top: 4px; }
+/* .redmsg-err2 { color: red; font-size: 13px; text-align: left; margin-bottom: 0; margin-left: 20px;padding-top: 4px; } 
+.greenmsg-err { color: forestgreen; font-size: 14px; text-align: left; margin-bottom: 0;padding-top: 4px; } */
+
+.tncCheckBoxWrap { display: block; color: #333; font-size: 14px;line-height: 18px;  position: relative; width: auto; margin: 20px auto 10px auto; text-align: center;
+    label{ display: block; cursor: pointer;margin-bottom: 10px;}
+    label:hover{text-decoration:none;}
+    .errorCkBxLine{color: red; display: block; font-size: 11px;}
+    input { opacity: 0; } a{color: #f58220;}
+    input[type="checkbox"]{ margin: 0; }
+    .iconCheck { display: inline-block; border: 1px solid #d2d2d2; width: 18px; height: 18px;position: relative; top: 3px; margin-right: 10px;}
+    input:checked ~ .iconCheck{border: 1px solid #f58220;}
+    input:checked ~ .iconCheck:after { display: block; }
+    .iconCheck:after {  content: ""; position: absolute;left: 6px; top: 2px; width: 5px; height: 10px; border: solid #f58220; border-width: 0 2px 2px 0;-webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg);display: none; }
+}
+
+@media all and (max-width: 980px) {
+    .startPartnerReferringSec { padding-top: 30px;
+        .secTitle { padding-bottom: 10px;font-size: 28px; line-height: 33px;}
     }
+    .formInputsContainer{width: 90%;padding: 20px 25px 5px 25px;}
 }
-
-.formHolder {
-    position: relative;
-}
-
-.formControl {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
-}
-
-.formControl::-ms-expand {
-    background-color: transparent;
-    border: 0
-}
-
-.formControl:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
-}
-
-.formControl::-webkit-input-placeholder {
-    color: #6c757d;
-    opacity: 1
-}
-
-.formControl::-moz-placeholder {
-    color: #6c757d;
-    opacity: 1
-}
-
-.formControl:-ms-input-placeholder {
-    color: #6c757d;
-    opacity: 1
-}
-
-.formControl::-ms-input-placeholder {
-    color: #6c757d;
-    opacity: 1
-}
-
-.formControl::placeholder {
-    color: #6c757d;
-    opacity: 1
-}
-
-.formControl:disabled,
-.formControl[readonly] {
-    background-color: #e9ecef;
-    opacity: 1
-}
-
-.form-group {
-    margin-bottom: 1rem
-}
-
-.btnparAddsub {
-    text-align: center;
-    margin-bottom: 40px;
-
-    a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background: #fff;
-        border: #f58220 solid 1px;
-        font-weight: 600;
-        font-size: 16px;
-        height: 42px;
-        line-height: 40px;
-        color: #f58220;
-        border-radius: 4px;
-        padding: 0 15px;
-        margin-top: 20px;
-        vertical-align: top;
-        min-width: 145px;
+@media all and (max-width: 568px) {
+    .startPartnerReferringSec {
+        .maContainer{padding: 0;}
+        .secTitle { padding-bottom: 0px;}
     }
-}
-
-.btnparAddsub a:last-child {
-    margin-left: 30px;
-    background: #f58220;
-    color: #fff;
-}
-
-.btnparAddsub a svg {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-}
-
-.referrbarInpupat {
-    margin: 0 auto;
-    width: 70%;
-    padding: 20px 0 5px;
-}
-
-.referrbarInpupat .formFieldWrap {
-    position: relative;
-    align-items: center;
-    column-gap: 20px;
-    position: relative;
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-
-    .formGroup {
-        width: 50%;
+    .formInputsContainer{width: 100%;padding: 5px 25px 5px 25px;}
+    .deletB-ad {height: 30px; width: 30px;right: -26px; border: 0;svg { width: 12px; }}
+    .formInputsContainer .formControl { height: 42px; font-size: 14px;}
+    .formInputsContainer .formFieldWrap { column-gap: 14px;}
+    .error{font-size: 12px;}
+    .tncCheckBoxWrap{font-size: 12px;} 
+    .btnparAddsub { column-gap: 15px; margin-top: 15px; margin-bottom: 25px;
+        a{ height: 38px; line-height: 38px; font-size: 14px;min-width: 130px;} 
+        a svg { width: 15px; height: 15px; margin-right: 5px; } 
     }
-}
 
-.referrbarInpupat .formFieldWrap:first-child::before {
-    border-bottom: 1px dashed #f58220;
-    width: 100%;
-    height: 1px;
-    content: '';
-    bottom: 0;
-    left: 0;
-    position: absolute;
-}
 
-.referrbarInpupat .formFieldWrap:first-child {
-    margin-bottom: 15px;
-}
-
-.referrbarInpupat .formFieldWrap:last-child {
-    padding-bottom: 0px;
-}
-
-.referrbarInpupat .formControl {
-    border-color: #D2D2D2;
-    height: 48px;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #000;
-}
-
-.deletB-ad {
-    height: 34px;
-    width: 34px;
-    background: none;
-    position: absolute;
-    right: -50px;
-    top: 7px;
-    border-radius: 100%;
-    text-align: center;
-    display: inline-block;
-    margin-left: 10px;
-    border: 1px solid #f58220;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    svg {
-        width: 16px;
-        display: block;
-        height: auto;
-    }
-}
-
-.redmsg-err2 {
-    color: red;
-    font-size: 13px;
-    text-align: left;
-    margin-bottom: 0;
-    margin-left: 20px;
-}
-
-.greenmsg-err {
-    color: forestgreen;
-    font-size: 14px;
-    text-align: left;
-    margin-bottom: 0;
-}
+} 

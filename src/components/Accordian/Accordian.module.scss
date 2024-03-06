@@ -56,9 +56,8 @@
 }
 
 .expanded {
-    max-height: 100vh;
-    animation: expand;//  duration timing-function delay iteration-count direction fill-mode
-    
+     max-height: auto; 
+    animation: expand;//  duration timing-function delay iteration-count direction fill-mode    
     animation-duration: 2s;
 }
 
@@ -140,3 +139,12 @@
         }
     }
 }
+
+@media all and (max-width:980px) {
+    .accCard .accTitle .queryTxt{ font-size: 14px; line-height: 20px; }
+    .accCard .accPanel {font-size: 12px;line-height: 18px;
+        ul li,p { font-size: 12px;line-height: 18px; }
+    } 
+    .tableHolder,.pricingTableHolder{overflow-x:auto;white-space: nowrap;}
+} 
+

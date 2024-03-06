@@ -7,6 +7,7 @@ import styles from "./maCommanStyle.module.scss";
 import { openSans } from "@/styles/fonts";
 import { PreloadResources } from "./preload-resources";
 import dynamic from "next/dynamic";
+import BreadcrumbSec from "@/components/breadcrumb/BreadcrumbSec";
 
 export const metadata: Metadata = {
   title: "Mirae Assets Partners",
@@ -25,6 +26,7 @@ export default function RootLayout({
       <body className={openSans.className}>
         <Header />
         <main className={styles.main}>
+          <BreadcrumbSec />
           {children}
         </main>
         <Footer />

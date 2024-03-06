@@ -9,8 +9,29 @@
     p { font-size: 26px; color: #fff; line-height: 36px; margin-top: 5px; }
 }  
 .bannerTitle { font-size: 36px; color: #fff; font-weight: 400; text-align: left; line-height: 48px; margin-bottom: 15px; 
-    small{display: block;width: 100%;}
-    b { font-size: 66px;line-height: 56px;font-weight: 700; color: #fff;text-transform: uppercase; img { position: relative; left: 13px; }}
+    span{display: block;width: 100%; white-space: nowrap;&:first-of-type{margin-bottom: 5px;}}
+    b{ font-size: 66px;line-height: 56px;font-weight: 700; color: #fff;text-transform: uppercase; img { position: relative; left: 13px; }}
+    .b1{ position: relative; }
     .b2{display: flex; flex-wrap: nowrap; align-items: flex-end; position: relative; top: -20px;}
 } 
-.priceBandStrip{background: #fff; padding: 5px 20px; border-radius: 6px; color: #1A3967; font-size: 28px; line-height: 44px;font-weight: 700;}
+.priceBandStrip{background: #fff; padding: 5px 20px; border-radius: 6px; color: #1A3967; font-size: 28px; line-height: 44px;font-weight: 700; width: auto; display: inline-block;}
+
+@media all and (max-width: 1168px) {
+    .bannerTitle { font-size: 32px; line-height: 46px;  
+        b{ font-size: 54px;line-height: 50px;img{width: 30px;}}  
+    }
+    .priceBandStrip{padding: 4px 14px; font-size: 24px; line-height: 38px;} 
+}
+
+@media all and (max-width: 980px) {
+    .partRefProBannerSec { 
+        .lhsWrap{width: 100%; padding: 20px 0 25px 0; margin-bottom: 0;}
+        .rhsWrap{display: none;}
+    }
+    .bannerTitle { font-size: 24px; line-height: 36px;  
+        b{ font-size: 40px;line-height: 40px;img{width: 25px; left: 6px;}}  
+        .b2{ top: -7px;}
+    }
+    .priceBandStrip{padding: 4px 10px; font-size: 20px; line-height: 26px;}
+}
+
