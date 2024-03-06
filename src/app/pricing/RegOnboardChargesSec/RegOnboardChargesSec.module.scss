@@ -12,10 +12,12 @@
     .title { font-size: 18px;font-weight: 600;} 
     .lhsWrap{position: relative;}
     .accordingBtn{ width: 150px; display: flex; color: #FF7518; vertical-align: top; text-align: right; padding-right: 10px; cursor: pointer;align-items: center; column-gap: 10px;justify-content: flex-end;
+        span,img{ pointer-events: none;}
         &.active img{transform: rotate(180deg);}
     } 
 }     
-.accBodyBox { width: 100%; display: block;padding: 0 15px;  overflow: hidden;
+.accBodyBox { width: 100%; display: block;padding: 0 15px;  overflow: hidden;height:0;transition: height 0.5s;
+    &.active{height:auto;}
     .pricingTableHolder{padding: 15px 0;}
 } 
 

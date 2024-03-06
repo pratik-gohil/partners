@@ -15,11 +15,12 @@
 .accHeadBox {width: 100%; display: flex; padding: 15px 15px 15px 15px; align-items: center; justify-content: space-between;
     .title { font-size: 20px; color: #043B72;font-weight: 700;margin-bottom: 5px;} span { color: #FF7518; }strong { font-weight: 600; }
     .lhsWrap{position: relative;}
-    .accordingBtn{ width: 150px; display: flex; color: #FF7518; vertical-align: top; text-align: right; padding-right: 10px; cursor: pointer;align-items: center; column-gap: 10px;justify-content: flex-end;
+    .accordingBtn{ width: 150px; display: flex; color: #FF7518; vertical-align: top; text-align: right; padding-right: 10px; cursor: pointer;align-items: center; column-gap: 10px;justify-content: flex-end;  
         &.active img{transform: rotate(180deg);}
     } 
 }     
-.accBodyBox { width: 100%; display: block;padding: 0 15px;  overflow: hidden;
+.accBodyBox { width: 100%; display: block;padding: 0 15px;  overflow: hidden;height:0;transition: height 0.5s;
+    &.active{height:auto;}
     ul { margin: 0;padding: 15px 0;  } 
     ul li { list-style: none; position: relative; margin-bottom: 30px;&:last-of-type{ margin-bottom: 0;}} 
     ul li::before { width: 4px; height: 4px; background: #333; position: absolute; left: 0; top: 10px; content: ""; border-radius: 50%; } 
