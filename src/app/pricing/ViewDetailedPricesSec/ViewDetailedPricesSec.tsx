@@ -5,10 +5,9 @@ import { nunito } from '@/styles/fonts'
 
 function ViewDetailedPricesSec() {
 
-    const handleKnowMore = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    const handleExpandadbleKnowMore = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const target = e.target as HTMLDivElement;
-        const el = document.querySelector(`[data-section-table=${target.getAttribute("data-section-action")}]`) as HTMLDivElement;
-
+        const el = document.querySelector(`[data-expandadble-body=${target.getAttribute("data-expandadble-head")}]`) as HTMLDivElement; 
         el.style.height = el.style.height === '0px' ? "auto" : '0px'
     }
 
@@ -30,11 +29,11 @@ function ViewDetailedPricesSec() {
                             <div className={`${styles.title}`}>Other charges applicable to your client</div>  
                             <span>These are standard charges and can't be modified.</span>
                         </div>
-                        <div className={`${styles.accordingBtn} ${styles.active}`} onClick={e => handleKnowMore(e)} data-section-action="mtf">
+                        <div className={`${styles.accordingBtn} ${styles.active}`} onClick={e => handleExpandadbleKnowMore(e)} data-expandadble-head="expandadbleData1">
                             <span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" />
                         </div>
                     </div>    
-                    <div className={`${styles.accBodyBox}`} data-section-table="mtf" style={{ height: '0px' }}>  
+                    <div className={`${styles.accBodyBox}`} data-expandadble-body="expandadbleData1" style={{ height: '0px' }}>  
                         <ul>
                             <li>
                                 <b>Quarterly operating charges:</b> <br/>

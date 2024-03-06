@@ -1,8 +1,16 @@
+"use client";
 import React from 'react'
 import styles from './RegOnboardChargesSec.module.scss'
 import { nunito } from '@/styles/fonts'
 
 function RegOnboardChargesSec() {
+
+    const handleExpandadbleKnowMore = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+        const target = e.target as HTMLDivElement;
+        const el = document.querySelector(`[data-expandadble-body=${target.getAttribute("data-expandadble-head")}]`) as HTMLDivElement; 
+        el.style.height = el.style.height === '0px' ? "auto" : '0px'
+    }
+
     return (
         <section className={`${styles.regOnboardChargesSec}`}>
             <div className={`${styles.maContainer}`}>
@@ -26,12 +34,12 @@ function RegOnboardChargesSec() {
                         <div className={`${styles.lhsWrap}`}>
                             <div className={`${styles.title}`}>AP registration charges</div>   
                         </div>
-                        <div className={`${styles.accordingBtn} ${styles.active}`}>
+                        <div className={`${styles.accordingBtn} ${styles.active}`} data-expandadble-head="expandadbleData1" onClick={e => handleExpandadbleKnowMore(e)}>
                             <span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" />
                         </div>
                     </div>    
-                    <div className={`${styles.accBodyBox}`}>  
-                    <div className={`${styles.pricingTableHolder}`}>
+                    <div className={`${styles.accBodyBox}`} data-expandadble-body="expandadbleData1" style={{ height: '0px' }}>  
+                        <div className={`${styles.pricingTableHolder}`}>
                             <table width="100%"> 
                                 <tr>
                                     <th>Exchange</th>
@@ -107,11 +115,11 @@ function RegOnboardChargesSec() {
                         <div className={`${styles.lhsWrap}`}>
                             <div className={`${styles.title}`}>AP Annual Maintenance Charges effective from April 2024</div>   
                         </div>
-                        <div className={`${styles.accordingBtn} ${styles.active}`}>
+                        <div className={`${styles.accordingBtn} ${styles.active}`} data-expandadble-head="expandadbleData2" onClick={e => handleExpandadbleKnowMore(e)}>
                             <span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" />
                         </div>
                     </div>    
-                    <div className={`${styles.accBodyBox}`}>  
+                    <div className={`${styles.accBodyBox}`} data-expandadble-body="expandadbleData2" style={{ height: '0px' }}>  
                         <div className={`${styles.pricingTableHolder}`}>
                             <table width="100%"> 
                                 <tr>

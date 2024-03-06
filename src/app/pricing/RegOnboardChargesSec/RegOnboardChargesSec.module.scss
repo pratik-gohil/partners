@@ -15,7 +15,9 @@
         &.active img{transform: rotate(180deg);}
     } 
 }     
-.accBodyBox { width: 100%; display: inline-block; padding: 15px;} 
+.accBodyBox { width: 100%; display: block;padding: 0 15px;  overflow: hidden;
+    .pricingTableHolder{padding: 15px 0;}
+} 
 
 .authorisedPartneUlBlock { width: 100%; display: inline-block; margin-top: 30px; color: #043B72;margin-bottom: 20px; } .pricingNoteBlock { width: 100%; display: inline-block; margin-top: 30px;margin-bottom: 20px; } .authorisedPartneUlBlock ul li, .pricingNoteBlock ul li { list-style: none; position: relative; padding-left: 15px;font-size: 16px; line-height: 26px; } .authorisedPartneUlBlock ul li::before, .pricingNoteBlock ul li::before { width: 4px; height: 4px; background: #333; position: absolute; left: 0; top: 10px; content: ""; border-radius: 50%; } 
 
