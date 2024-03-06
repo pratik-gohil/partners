@@ -32,14 +32,13 @@
 
     .closepp {
         cursor: pointer;
-
-        span {
-            position: absolute;
-            right: 10px;
-            top: 7px;
-            font-size: 32px;
-            color: #666;
-        }
+        position: absolute;
+        right: 10px;
+        top: 7px;
+        font-size: 32px;
+        color: #666;
+        background-color: transparent;
+        border: 0px;
     }
 }
 
