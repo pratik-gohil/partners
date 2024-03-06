@@ -9,6 +9,11 @@
     li{ font-size: 15px; line-height: 22px; position: relative;padding-left: 25px; padding-bottom: 15px;
         &:before { content: ""; position: absolute; left: 0; top: 5px; width: 0; height: 0; border-top: 4px solid transparent; border-right: 8px solid #f58220; border-bottom: 4px solid transparent; transform: rotate(177deg);}
         b{ color: #f58220;}
-    }
-    
+    } 
 } 
+@media all and (max-width: 980px) {
+    .benefitsOfPartneringSec{ margin-bottom: 20px;}
+    .reBenefitUlistBox{ padding: 15px 15px 15px 15px; width: 100%;
+        li{ padding-left: 15px; font-size: 14px;}
+    }
+}

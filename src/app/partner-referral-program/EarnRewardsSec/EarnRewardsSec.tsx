@@ -6,10 +6,10 @@ function EarnRewardsSec() {
   return (
     <section className={`${styles.earnRewardsSec}`}>
       <div className={`${styles.maContainer} ${styles.flex}`}>
-        <div className="lhsWrap">
+        <div className={`${styles.lhsWrap}`}>
           <img src="https://www.miraeassetpartners.com/asset/images/referrals/reward-box-new.webp" alt="rewards" title="rewards" />
         </div>
-        <div className="rhsWrap">
+        <div className={`${styles.rhsWrap}`}>
           <h2 className={`${styles.secTitle} ${nunito.className}`}>Share opportunity. Grow community.<span>Earn rewards!</span></h2>
           <ul className={`${styles.rewardsPlansBox}`}>
             <li>Refer <span>1</span> = Earn <span>₹6,000</span></li>

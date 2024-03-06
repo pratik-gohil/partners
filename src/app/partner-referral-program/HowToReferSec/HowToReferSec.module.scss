@@ -8,6 +8,7 @@
     margin-top: 50px;
 }
 
+
 .howToReferSec ul {
     position: relative
 }
@@ -71,16 +72,20 @@
     margin-left: 10%;
 }
 
-@media only screen and (max-width: 960px) {
-    .howToReferSec {
-        text-align: left
-    }
+@media only screen and (max-width: 960px) { 
+.howToReferSec{ padding-top: 25px;
+    padding-bottom: 20px; 
+    margin-top: 0px;text-align: left;
+    .maContainer{    padding-left: 30px;
+        padding-right: 30px;}
+}
 
     .howToReferSec ul li {
         width: 100%;
         margin-left: 0;
-        text-align: left
+        text-align: left;
     }
+    .howToReferSec ul li:first-of-type {margin-top: 0;}
 
     .howToReferSec ul li span {
         text-align: center;
