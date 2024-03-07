@@ -1,17 +1,15 @@
 import PartRefProBannerSec from "./PartRefProBannerSec/PartRefProBannerSec";
-import StartPartnerReferringSec from "./StartPartnerReferringSec/StartPartnerReferringSec";
+import StartPartnerReferringSecC from "./StartPartnerReferringSec/StartPartnerReferringSecC";
 import BenefitsOfPartneringSec from "./BenefitsOfPartneringSec/BenefitsOfPartneringSec";
 import EarnRewardsSec from "./EarnRewardsSec/EarnRewardsSec";
 import HowToReferSec from "./HowToReferSec/HowToReferSec";
 import FaqsSec from "./FaqsSec/FaqsSec";
-/* import StartPartnerReferringSecC from "./StartPartnerReferringSec/StartPartnerReferringSecC"; */
-
 
 export default function PartnerReferralProgramPage() {
   return (
     <>
       <PartRefProBannerSec />
-      <StartPartnerReferringSec />
+      <StartPartnerReferringSecC />
       <BenefitsOfPartneringSec />
       <EarnRewardsSec />
       <HowToReferSec />

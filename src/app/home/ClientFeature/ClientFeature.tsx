@@ -64,13 +64,13 @@ export default function ClientFeature() {
                             {
                                 clientTabs.map((tab, i) => {
                                     return (
-                                        <li key={i} className={styles["nav-item"]} role="presentation" onClick={() => setActiveTab(tab.id)}>
+                                        <li key={i} className={styles["nav-item"]} role="tab" onClick={() => setActiveTab(tab.id)}>
                                             <a className={`${styles["nav-link"]} ${tab.id == activeTab ? `${styles['active']}` : ''}`}
                                                 data-toggle="tab" >
                                                 <i>
                                                     {tab.id}
                                                 </i>
-                                                <span role="presentation"></span>
+                                                <span></span>
                                                 {tab.name}
                                             </a>
                                         </li>

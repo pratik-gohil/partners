@@ -22,7 +22,7 @@ function PartnerProgram() {
                 <h2 className={styles["secTitle"]}>आपके बड़े सपनों को उड़ान दें,<span>Mirae Asset के साथ</span></h2>
                 <p className={styles["captionTxt"]}> Our Partner program offers <span className={styles["orangeTxt"]}> unbelievable pricing,</span> a <span className={styles["orangeTxt"]}> seamless tech platform</span> for an enhanced experience for you and your clients. It also <span className={styles["orangeTxt"]}>gives you full control</span> and ownership, reducing dependency on us. For detailed payout terms, <a aria-label="Income Sharing for Authorised Partners" className={styles["orangeTxt"]} href="asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank">click here</a>
                 </p>
-                <h4 className={`${styles["midheading-pl"]} ${nunito.className}`}>Let&apos;s understand the payout opportunities with examples</h4>
+                <div className={`${styles["midheading-pl"]} ${nunito.className}`}>Let&apos;s understand the payout opportunities with examples</div>
                 <div className={styles["opptUlist"]}>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>

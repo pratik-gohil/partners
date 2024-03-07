@@ -61,7 +61,7 @@ function Advantage() {
                                     interActiveTabs.map((tab, i) => {
                                         return (
                                             <li key={i} className={styles["nav-item"]} role="presentation" onClick={() => setActiveTab(tab.id)}>
-                                                <a className={`${styles['nav-link']} ${activeTab === tab.id ? styles['active'] : ''}`} id="advantage1" data-toggle="tab"
+                                                <a className={`${styles['nav-link']} ${activeTab === tab.id ? styles['active'] : ''}`} data-toggle="tab"
                                                     role="tab" aria-controls="advantage-tab1" aria-selected="true" >
                                                     <span role="presentation"></span>{tab.name}
                                                 </a>
