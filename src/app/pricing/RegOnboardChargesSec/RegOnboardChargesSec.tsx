@@ -48,7 +48,7 @@ function RegOnboardChargesSec() {
                     </div>    
                     <div className={`${styles.accBodyBox} ${isVisible1 ? styles["active"] : styles[""]}`}> 
                         <div className={`${styles.pricingTableHolder}`}>
-                            <table width="100%"> 
+                            <table width="100%"> <tbody>
                                 <tr>
                                     <th>Exchange</th>
                                     <th>Segment</th>
@@ -106,7 +106,7 @@ function RegOnboardChargesSec() {
                                     <td><b>₹3,420</b></td>
                                     <td><b>₹22,420</b></td>
                                 </tr> 
-                            </table>
+                            </tbody></table>
                         </div>
                     </div> 
                 </div>
@@ -133,7 +133,7 @@ function RegOnboardChargesSec() {
                     </div>    
                     <div className={`${styles.accBodyBox} ${isVisible2 ? styles["active"] : styles[""]}`}> 
                         <div className={`${styles.pricingTableHolder}`}>
-                            <table width="100%"> 
+                            <table width="100%"> <tbody>
                                 <tr>
                                     <th>Exchange</th>
                                     <th>Segment</th>
@@ -166,7 +166,7 @@ function RegOnboardChargesSec() {
                                     <td><b>₹1,620</b></td>
                                     <td><b>₹10,620</b></td>
                                 </tr> 
-                            </table>
+                            </tbody></table>
                         </div>
                     </div> 
                 </div>
