@@ -2,8 +2,8 @@
 
 .topBannerSec {
     position: relative;
-    background-image: linear-gradient(180deg, #fff -35%, #ffd8bd);
-    min-height: 500px;
+    background-image: linear-gradient(180deg, #fff -35%, #ffd3b5);
+    min-height: 530px;
     padding-bottom: 80px;
     text-align: center;
     padding-top: 40px; 
@@ -73,8 +73,10 @@
 
 
 @media all and (min-width:980px) {
-    .topBannerSec { 
-    
+
+    .fImg{ position: absolute; left: 0;right:0; width: 100%; bottom:0; min-height: 130px; bottom: 0; z-index: 0; background-color: #fff; img{width: 100%; height: 100%;}} 
+    .sImg{ position: absolute; left:-5px; width: 38%; min-height: 380px; bottom: 100px; z-index: 0; img{width: 100%; } }
+    /* .topBannerSec {  
         &:before {
             content: "";
             position: absolute;
@@ -94,12 +96,16 @@
             min-height: 380px;
             top: 30px
         }
-    }
+    } */
 
 }
 @media all and (max-width:980px) {
     .bannerInnerBox { width: 95%;}
     .pageTitle{font-size: 22px; line-height: 32px;}
+
+    .topBannerSec{ min-height: auto;
+        padding-bottom: 30px; 
+        padding-top: 40px;}
 
 }
 @media all and (max-width:768px) {
