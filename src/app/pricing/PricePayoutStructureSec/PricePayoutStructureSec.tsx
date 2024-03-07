@@ -200,9 +200,8 @@ function PricePayoutStructureSec() {
             ‘Zero brokerage account’, since you won’t earn any brokerage income
             from them. The partner service fee will be equal to the account
             opening fee that you charge your client and 100% of that will be
-            yours. <br /> <br /> <b className={`${styles.orangeTxt}`}>
-              Note:
-            </b>
+            yours. <br />
+            <br /> <b className={`${styles.orangeTxt}`}> Note: </b>
             Mirae Asset will debit a flat fee of ₹500 for every new client
             onboarded, regardless of the account opening fee chosen
           </p>
@@ -220,8 +219,8 @@ function PricePayoutStructureSec() {
             <h3 className={`${styles.tableTitle}`}>Income from Brokerage</h3>
           </div>
           <p>
-            You can either select from our <b>standard plans</b> or
-            <b>create a customised plan</b> for your clients based on their
+            You can either select from our <b> standard plans </b> or
+            <b> create a customised plan </b> for your clients based on their
             differentiated needs and trading behaviour.
           </p>
           <div className={`${styles.pricingTableHolder}`}>
@@ -370,10 +369,9 @@ function PricePayoutStructureSec() {
           </p>
           <div className={`${styles.pricingTableHolder}`}>
             
-            <table width="100%"><tbody>
-              
-              <tr>
-                
+            <table width="100%">
+              <tbody> 
+              <tr> 
                 <th>Margin Pledge Funding Value</th> <th>Base Interest Rate</th>
                 <th>
                   Payout to Partner <br />
