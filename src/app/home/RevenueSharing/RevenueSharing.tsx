@@ -35,11 +35,11 @@ function RevenueSharing() {
                 <div className={styles["mtfPledge24"]}>
                     <ul>
                         <li>
-                            <h6 className={styles["marginTitle"]}>MTF (eMargin)</h6>
+                            <h4 className={styles["marginTitle"]}>MTF (eMargin)</h4>
                             <p><b>80%</b> sharing over 9.99%</p>
                         </li>
                         <li>
-                            <h6 className={styles["marginTitle"]}>Margin Pledge</h6>
+                            <h4 className={styles["marginTitle"]}>Margin Pledge</h4>
                             <p><b>80%</b> sharing over 11.99% </p>
                         </li>
                     </ul>

@@ -1,10 +1,12 @@
 @import '../../../styles/common';
 
 .startPartnerReferringSec { position: relative; padding-top: 50px;
-    .secTitle { padding-bottom: 15px; }
+    .secTitle {padding-bottom: 15px;}
 }
 
-.formHolder { position: relative; } .formControl { display: block; width: 100%; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; border-radius: .25rem; transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out } .formControl::-ms-expand { background-color: transparent; border: 0 } .formControl:focus { color: #495057; background-color: #fff; border-color: #80bdff; outline: 0; box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25) } .formControl::-webkit-input-placeholder { color: #6c757d; opacity: 1 } .formControl::-moz-placeholder { color: #6c757d; opacity: 1 } .formControl:-ms-input-placeholder { color: #6c757d; opacity: 1 } .formControl::-ms-input-placeholder { color: #6c757d; opacity: 1 } .formControl::placeholder { color: #6c757d; opacity: 1 } .formControl:disabled, .formControl[readonly] { background-color: #e9ecef; opacity: 1 } .form-group { margin-bottom: 1rem }
+.formHolder { position: relative; }
+
+.formControl { display: block; width: 100%; padding: .375rem .75rem; font-size: 14px; line-height: 26px; color: #495057; background-color: #fff; background-clip: padding-box; border: 1px solid #ced4da; border-radius: .25rem; transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out } .formControl::-ms-expand { background-color: transparent; border: 0 } .formControl:focus { color: #495057; background-color: #fff; border-color: #80bdff; outline: 0; box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25) } .formControl::-webkit-input-placeholder { color: #6c757d; opacity: 1 } .formControl::-moz-placeholder { color: #6c757d; opacity: 1 } .formControl:-ms-input-placeholder { color: #6c757d; opacity: 1 } .formControl::-ms-input-placeholder { color: #6c757d; opacity: 1 } .formControl::placeholder { color: #6c757d; opacity: 1 } .formControl:disabled, .formControl[readonly] { background-color: #e9ecef; opacity: 1 } 
 
 .btnparAddsub { text-align: center; margin-bottom: 40px;display: flex; align-items: center; justify-content: center;column-gap: 30px; margin-top: 20px; 
     a { display: inline-flex; align-items: center; justify-content: center; background: #fff; border: #f58220 solid 1px; font-weight: 600; font-size: 16px; height: 42px; line-height: 40px; color: #f58220; border-radius: 4px; padding: 0 15px;vertical-align: top; min-width: 145px;cursor: pointer; }
