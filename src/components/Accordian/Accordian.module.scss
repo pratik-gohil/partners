@@ -58,13 +58,13 @@
 .expanded {
      max-height: auto; 
     animation: expand;//  duration timing-function delay iteration-count direction fill-mode    
-    animation-duration: 2s;
+    animation-duration: .8s;
 }
 
 .collapsed {
     max-height: 0px;
     animation: collapse;
-    animation-duration: .5s;
+    animation-duration: .8s;
     animation-delay: 0ms;
 }
 
