@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from './SelectMenu.module.scss';
 
-function SelectMenu({ options }: any) {
+function SelectMenu({ options, onChange }: any) {
     const [showOptions, setShowOptions] = useState(false)
     const [selectedOption, setSelectedOption] = useState(0);
 
@@ -24,6 +24,10 @@ function SelectMenu({ options }: any) {
 
         return () => { window.removeEventListener('click', close); window.removeEventListener("keydown", switchOption) }
     }, [showOptions])
+
+    useEffect(() => {
+        onChange(options[selectedOption])
+    }, [selectedOption])
 
     return (
         <>
