@@ -1,4 +1,5 @@
 "use client"
+
 import React, { useState } from 'react'
 import styles from './HeroSection.module.scss'
 import TransparentPayoutSVG from '@/components/svgs/TransparentPayoutSVG'
@@ -11,9 +12,13 @@ import FormModal from '@/components/formModal/FormModal'
 
 import BannerBgImg from "../../../../public/bannerBgImg.png";
 import BackBgLeftImg from "../../../../public/backBgLeftImg.png";
+import useUserAgent from '@/lib/hooks/useUserAgent'
 
 function HeroSection() {
     const [modalOpen, setModalOpen] = useState(false)
+    const currentDevice = useUserAgent()
+
+    const flag = !currentDevice.isSSR() && currentDevice.isDesktop()
 
     return (
         <>
@@ -40,8 +45,11 @@ function HeroSection() {
                         </div>
                     </div>
                 </div>
-                <div className={`${styles.fImg} ${styles.deskView}`}><img src={`${BannerBgImg.src}`} alt="" /></div>
-                <div className={`${styles.sImg} ${styles.deskView}`}><img src={`${BackBgLeftImg.src}`} alt="" /></div>
+
+                <div className={`${styles.fImg} ${styles.deskView}`}><img src={flag ? BannerBgImg.src : ""} alt="" /></div>
+                <div className={`${styles.sImg} ${styles.deskView}`}><img src={flag ? BackBgLeftImg.src : ""} alt="" /></div>
+
+
             </section>
 
             <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
