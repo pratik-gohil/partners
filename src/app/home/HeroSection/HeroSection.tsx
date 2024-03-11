@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './HeroSection.module.scss'
 import TransparentPayoutSVG from '@/components/svgs/TransparentPayoutSVG'
 import EasySellSVG from '@/components/svgs/EasySellSVG'
@@ -9,16 +9,12 @@ import GrowSVG from '@/components/svgs/GrowSVG'
 import Image from 'next/image'
 import Modal from '@/components/Modal'
 import FormModal from '@/components/formModal/FormModal'
+import dynamic from 'next/dynamic'
 
-import BannerBgImg from "../../../../public/bannerBgImg.png";
-import BackBgLeftImg from "../../../../public/backBgLeftImg.png";
-import useUserAgent from '@/lib/hooks/useUserAgent'
+const Test = dynamic(() => import('./DesktopImages'), { ssr: false })
 
 function HeroSection() {
     const [modalOpen, setModalOpen] = useState(false)
-    const currentDevice = useUserAgent()
-
-    const flag = !currentDevice.isSSR() && currentDevice.isDesktop()
 
     return (
         <>
@@ -46,9 +42,7 @@ function HeroSection() {
                     </div>
                 </div>
 
-                <div className={`${styles.fImg} ${styles.deskView}`}><img src={flag ? BannerBgImg.src : ""} alt="" /></div>
-                <div className={`${styles.sImg} ${styles.deskView}`}><img src={flag ? BackBgLeftImg.src : ""} alt="" /></div>
-
+                <Test styles={styles} />
 
             </section>
 
