@@ -2,8 +2,8 @@
 
 import useUserAgent from '@/lib/hooks/useUserAgent'
 import React, { useEffect, useState } from 'react'
-import BannerBgImg from "../../../../public/bannerBgImg.png";
-import BackBgLeftImg from "../../../../public/backBgLeftImg.png";
+import BannerBgImg from "../../../../public/bannerBgImg.webp";
+import BackBgLeftImg from "../../../../public/backBgLeftImg.webp";
 
 function DesktopImages({ styles }: any) {
     const currentDevice = useUserAgent()
