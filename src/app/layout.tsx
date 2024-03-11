@@ -23,7 +23,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${styles.maPartnersPage}`}>
       <PreloadResources />
-      <body className={openSans.className}>
+      <body
+      // className={openSans.className}
+      >
         <Header />
         <main className={styles.main}>
           <BreadcrumbSec />

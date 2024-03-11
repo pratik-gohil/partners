@@ -12,10 +12,9 @@ import FormModal from '@/components/formModal/FormModal'
 import BannerBgImg from "../../../../public/bannerBgImg.png";
 import BackBgLeftImg from "../../../../public/backBgLeftImg.png";
 
-
-
 function HeroSection() {
     const [modalOpen, setModalOpen] = useState(false)
+
     return (
         <>
             <section className={styles["topBannerSec"]}>
@@ -42,7 +41,7 @@ function HeroSection() {
                     </div>
                 </div>
                 <div className={`${styles.fImg} ${styles.deskView}`}><img src={`${BannerBgImg.src}`} alt="" /></div>
-                <div className={`${styles.sImg} ${styles.deskView}`}><img src={`${BackBgLeftImg.src}`} alt="" /></div> 
+                <div className={`${styles.sImg} ${styles.deskView}`}><img src={`${BackBgLeftImg.src}`} alt="" /></div>
             </section>
 
             <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
