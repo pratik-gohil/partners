@@ -77,7 +77,6 @@ function StartPartnerReferringSecC() {
 
                     <form className={`${styles.formHolder}`}
                         onSubmit={handleSubmit(onSubmit)}
-
                     >
                         <div className={`${styles.referrbarInpupat}`} id="inputsContainer">
                             <div className={`${styles.flex} ${styles.formFieldWrap}`}>

@@ -1,8 +1,9 @@
 "use client"
 import React, { useState } from 'react'
-import styles from "./HeaderSec.module.scss"; 
+import styles from "./HeaderSec.module.scss";
 import MiraeAssetsPartnersLogo from "../../../public/maPartnersLogo.svg";
 import LangguageDropdown from '../languageDropdown/LanguageDropdown';
+import Image from 'next/image';
 
 const Header = () => {
     const [showSideBar, setShowSideBar] = useState(false);
@@ -14,7 +15,7 @@ const Header = () => {
                     <div className={`${styles.lhsWrap} ${styles.flex}`}>
                         <a href="/" title="Mirae Asset Partners">
                             {/* <MiraeAssetsPartnersLogo /> */}
-                            <img src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} /> 
+                            <Image priority src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
                         </a>
                     </div>
                     <div className={`${styles.rhsWrap} ${styles.flex}`}>

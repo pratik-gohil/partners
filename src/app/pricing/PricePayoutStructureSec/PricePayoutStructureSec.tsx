@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "./PricePayoutStructureSec.module.scss";
-import { nunito } from "@/styles/fonts";
 
 function PricePayoutStructureSec() {
   return (
     <section className={`${styles.pricePayoutStructureSec}`}>
       <div className={`${styles.maContainer}`}>
-        <h2 className={`${styles.secTitle} ${nunito.className}`}>
+        <h2 className={`${styles.secTitle} `}>
           <span>Pricing and payout </span>structure
         </h2>
 
@@ -117,9 +116,9 @@ function PricePayoutStructureSec() {
         </div>
 
         <div className={`${styles.tableStructureWrap}`}>
-          
+
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
-            
+
             <img
               src="https://www.miraeassetpartners.com/asset/images/rs-icon-1.png"
               alt="icon"
@@ -134,11 +133,11 @@ function PricePayoutStructureSec() {
             100% payout on anything beyond ₹500.
           </p>
           <div className={`${styles.pricingTableHolder}`}>
-            
+
             <table width="100%"><tbody>
-              
+
               <tr>
-                
+
                 <th>Type of Account</th>
                 <th>What Partner can charge clients?</th>
                 <th>Payout to Partner</th>
@@ -148,7 +147,7 @@ function PricePayoutStructureSec() {
                 </th>
               </tr>
               <tr>
-                
+
                 <td>
                   Standard Plan 1: <br />
                   <b className={`${styles.orangeTxt}`}>
@@ -160,13 +159,13 @@ function PricePayoutStructureSec() {
                   <b className={`${styles.orangeTxt}`}>100% above ₹500</b>
                 </td>
                 <td>
-                  
+
                   100% payout
                   <br /> (₹999 to ₹9,999)
                 </td>
               </tr>
               <tr>
-                
+
                 <td>
                   Standard Plan 2: <br />
                   <b className={`${styles.orangeTxt}`}>Free Delivery Account</b>
@@ -178,9 +177,9 @@ function PricePayoutStructureSec() {
                 <td>NA</td>
               </tr>
               <tr>
-                
+
                 <td>
-                  
+
                   <b className={`${styles.orangeTxt}`}>
                     Customised
                   </b> <br /> Brokerage Plan
@@ -194,7 +193,7 @@ function PricePayoutStructureSec() {
             </tbody></table>
           </div>
           <p>
-            
+
             *It’s an annual recurring fee (applicable from second year onwards),
             which you can charge to those clients whom you are offering the
             ‘Zero brokerage account’, since you won’t earn any brokerage income
@@ -208,9 +207,9 @@ function PricePayoutStructureSec() {
         </div>
 
         <div className={`${styles.tableStructureWrap}`}>
-          
+
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
-            
+
             <img
               src="https://www.miraeassetpartners.com/asset/images/incom-from-icon.png"
               alt="icon"
@@ -224,16 +223,16 @@ function PricePayoutStructureSec() {
             differentiated needs and trading behaviour.
           </p>
           <div className={`${styles.pricingTableHolder}`}>
-            
+
             <table width="100%"><tbody>
-              
+
               <tr>
-                
+
                 <th>Type of Account</th> <th>Applicable Brokerage</th>
                 <th>Payout to Partner</th>
               </tr>
               <tr>
-                
+
                 <td>
                   Standard Plan 1: <br />
                   <b className={`${styles.orangeTxt}`}>
@@ -246,7 +245,7 @@ function PricePayoutStructureSec() {
                 <td className={`${styles.textCenter}`}>NA</td>
               </tr>
               <tr>
-                
+
                 <td>
                   Standard Plan 2: <br />
                   <b className={`${styles.orangeTxt}`}>Free Delivery Account</b>
@@ -261,15 +260,15 @@ function PricePayoutStructureSec() {
               </tr>
               <tr>
                 <td>
-                  
+
                   <b className={`${styles.orangeTxt}`}>Customised Plan</b>
                 </td>
                 <td className={`${styles.textLeft}`}>
                   Choose from the below models <br />
                   <ul>
-                    
+
                     <li>
-                      
+
                       <b className={`${styles.fontSemiBold}`}>Discount</b>
                       <small>(fixed-per-order)</small>
                     </li>
@@ -291,9 +290,9 @@ function PricePayoutStructureSec() {
         </div>
 
         <div className={`${styles.tableStructureWrap}`}>
-          
+
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
-            
+
             <img
               src="https://www.miraeassetpartners.com/asset/images/intrest-percent-icon.png"
               alt="icon"
@@ -309,11 +308,11 @@ function PricePayoutStructureSec() {
             to the client.
           </p>
           <div className={`${styles.pricingTableHolder}`}>
-            
+
             <table width="100%"><tbody>
-              
+
               <tr>
-                
+
                 <th>Base Interest Rate</th>
                 <th>
                   Payout to Partner <br />
@@ -329,7 +328,7 @@ function PricePayoutStructureSec() {
                 </th>
               </tr>
               <tr>
-                
+
                 <td className={`${styles.textCenter}`}>9.99%</td>
                 <td className={`${styles.textCenter}`}>
                   <b className={`${styles.orangeTxt}`}>5%</b>
@@ -350,9 +349,9 @@ function PricePayoutStructureSec() {
         </div>
 
         <div className={`${styles.tableStructureWrap}`}>
-          
+
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
-            
+
             <img
               src="https://www.miraeassetpartners.com/asset/images/doc-icon.png"
               alt="icon"
@@ -368,43 +367,43 @@ function PricePayoutStructureSec() {
             to the client.
           </p>
           <div className={`${styles.pricingTableHolder}`}>
-            
+
             <table width="100%">
-              <tbody> 
-              <tr> 
-                <th>Margin Pledge Funding Value</th> <th>Base Interest Rate</th>
-                <th>
-                  Payout to Partner <br />
-                  (up to base rate)
-                </th>
-                <th>
-                  Customised interest rate <br />
-                  (maximum limit)
-                </th>
-                <th>
-                  Payout to Partner <br />
-                  (above base rate)
-                </th>
-              </tr>
-              <tr>
-                
-                <td>Up to 80% of pledged stocks value</td> <td>11.99%</td>
-                <td className={`${styles.textCenter}`}>
-                  <b className={`${styles.orangeTxt}`}>5%</b>
-                </td>
-                <td>24%</td>
-                <td className={`${styles.textCenter}`}>
-                  <b className={`${styles.orangeTxt}`}>80%</b>
-                </td>
-              </tr>
-            </tbody></table>
+              <tbody>
+                <tr>
+                  <th>Margin Pledge Funding Value</th> <th>Base Interest Rate</th>
+                  <th>
+                    Payout to Partner <br />
+                    (up to base rate)
+                  </th>
+                  <th>
+                    Customised interest rate <br />
+                    (maximum limit)
+                  </th>
+                  <th>
+                    Payout to Partner <br />
+                    (above base rate)
+                  </th>
+                </tr>
+                <tr>
+
+                  <td>Up to 80% of pledged stocks value</td> <td>11.99%</td>
+                  <td className={`${styles.textCenter}`}>
+                    <b className={`${styles.orangeTxt}`}>5%</b>
+                  </td>
+                  <td>24%</td>
+                  <td className={`${styles.textCenter}`}>
+                    <b className={`${styles.orangeTxt}`}>80%</b>
+                  </td>
+                </tr>
+              </tbody></table>
           </div>
         </div>
 
         <div className={`${styles.tableStructureWrap}`}>
-          
+
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
-            
+
             <img
               src="https://www.miraeassetpartners.com/asset/images/amc-pricing-icon.png"
               alt="icon"
@@ -419,12 +418,12 @@ function PricePayoutStructureSec() {
             client’s DP AMC charges.
           </p>
           <div className={`${styles.pricingTableHolder}`}>
-            
+
             <table width="100%">
               <thead>
-                
+
                 <tr>
-                  
+
                   <th colSpan={3} className={`${styles.orangeBgBox}`}>
                     <span>Standard AMC Plans</span>
                   </th>
@@ -433,54 +432,54 @@ function PricePayoutStructureSec() {
                   </th>
                 </tr>
               </thead>
-                <tbody>
-              
-              <tr>
-                
-                <th style={{ width: "20%" }}>
-                  Standard Plan 1 <br />
-                  (one-time AMC)
-                </th>
-                <th style={{ width: "20%" }}>
-                  Standard Plan 2 <br />
-                  (Quarterly AMC)
-                </th>
-                <th style={{ width: "13%" }}>Payout to Partner</th>
-                <th style={{ width: "13%" }}>One-time AMC</th>
-                <th style={{ width: "13%" }}>Quarterly AMC</th>
-                <th style={{ width: "21%" }}>Payout to Partner</th>
-              </tr>
-              <tr>
-                
-                <td>₹999 (Lifetime free AMC with a one-time fee)</td>
-                <td>₹480 (Annual fee, charged every quarter @₹120)</td>
-                <td>20%</td> <td>₹1,299 to ₹4,999</td> <td>₹600 to ₹1,000</td>
-                <td className={`${styles.orangeTxt} ${styles.textLeft}`}>
-                  
-                  <b className={`${styles.orangeTxt}`}>
-                    100% payout above
-                  </b>
-                  <ul>
-                    
-                    <li className={`${styles.leftColorBlk}`}>
-                      ₹999 <br />
-                      (one-time AMC)
-                    </li>
-                    <li className={`${styles.leftColorBlk}`}>
-                      ₹480 <br />
-                      (quarterly AMC)
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody></table>
+              <tbody>
+
+                <tr>
+
+                  <th style={{ width: "20%" }}>
+                    Standard Plan 1 <br />
+                    (one-time AMC)
+                  </th>
+                  <th style={{ width: "20%" }}>
+                    Standard Plan 2 <br />
+                    (Quarterly AMC)
+                  </th>
+                  <th style={{ width: "13%" }}>Payout to Partner</th>
+                  <th style={{ width: "13%" }}>One-time AMC</th>
+                  <th style={{ width: "13%" }}>Quarterly AMC</th>
+                  <th style={{ width: "21%" }}>Payout to Partner</th>
+                </tr>
+                <tr>
+
+                  <td>₹999 (Lifetime free AMC with a one-time fee)</td>
+                  <td>₹480 (Annual fee, charged every quarter @₹120)</td>
+                  <td>20%</td> <td>₹1,299 to ₹4,999</td> <td>₹600 to ₹1,000</td>
+                  <td className={`${styles.orangeTxt} ${styles.textLeft}`}>
+
+                    <b className={`${styles.orangeTxt}`}>
+                      100% payout above
+                    </b>
+                    <ul>
+
+                      <li className={`${styles.leftColorBlk}`}>
+                        ₹999 <br />
+                        (one-time AMC)
+                      </li>
+                      <li className={`${styles.leftColorBlk}`}>
+                        ₹480 <br />
+                        (quarterly AMC)
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody></table>
           </div>
         </div>
 
         <div className={`${styles.tableStructureWrap}`}>
-          
+
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
-            
+
             <img
               src="https://www.miraeassetpartners.com/asset/images/Unpledged-charges-icon.png"
               alt="icon"
@@ -496,13 +495,13 @@ function PricePayoutStructureSec() {
             rates, i.e., ₹25 to ₹35
           </p>
           <div className={`${styles.pricingTableHolder}`}>
-            
+
             <table width="100%">
-                
+
               <thead>
-                
+
                 <tr>
-                  
+
                   <th colSpan={2} className={`${styles.orangeBgBox}`}>
                     <span>Standard AMC Plans</span>
                   </th>
@@ -511,43 +510,43 @@ function PricePayoutStructureSec() {
                   </th>
                 </tr>
               </thead>
-                <tbody>
-              
-              <tr>
-                
-                <th>Pledge / Unpledge Charges</th> <th>Payout to Partner </th>
-                <th>Pledge / Unpledge Charges</th> <th>Payout to Partner </th>
-              </tr>
-              <tr>
-                
-                <td className={`${styles.textCenter}`}>₹25 / ₹32</td>
-                <td className={`${styles.textCenter}`}>
-                  <b className={`${styles.orangeTxt}`}>20%</b>
-                </td>
-                <td className={`${styles.textCenter}`}>₹25 to ₹35</td>
-                <td className={`${styles.textLeft}`}>
-                  <b className={`${styles.orangeTxt}`}>100% payout above</b>
-                  <ul>
-                    
-                    <li>
-                      ₹25 <br />
-                      (one-time AMC)
-                    </li>
-                    <li>
-                      ₹32 <br />
-                      (quarterly AMC)
-                    </li>
-                  </ul>
-                </td>
-              </tr>
-            </tbody></table>
+              <tbody>
+
+                <tr>
+
+                  <th>Pledge / Unpledge Charges</th> <th>Payout to Partner </th>
+                  <th>Pledge / Unpledge Charges</th> <th>Payout to Partner </th>
+                </tr>
+                <tr>
+
+                  <td className={`${styles.textCenter}`}>₹25 / ₹32</td>
+                  <td className={`${styles.textCenter}`}>
+                    <b className={`${styles.orangeTxt}`}>20%</b>
+                  </td>
+                  <td className={`${styles.textCenter}`}>₹25 to ₹35</td>
+                  <td className={`${styles.textLeft}`}>
+                    <b className={`${styles.orangeTxt}`}>100% payout above</b>
+                    <ul>
+
+                      <li>
+                        ₹25 <br />
+                        (one-time AMC)
+                      </li>
+                      <li>
+                        ₹32 <br />
+                        (quarterly AMC)
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody></table>
           </div>
         </div>
 
         <div className={`${styles.tableStructureWrap}`}>
-          
+
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
-            
+
             <img
               src="https://www.miraeassetpartners.com/asset/images/dp-sell-icon.png"
               alt="icon"
@@ -563,12 +562,12 @@ function PricePayoutStructureSec() {
             from ₹12 to ₹25 and earn 100% payout.
           </p>
           <div className={`${styles.pricingTableHolder}`}>
-            
+
             <table width="100%">
               <thead>
-                
+
                 <tr>
-                  
+
                   <th colSpan={2} className={`${styles.orangeBgBox}`}>
                     <span>Standard DP Plan</span>
                   </th>
@@ -577,32 +576,32 @@ function PricePayoutStructureSec() {
                   </th>
                 </tr>
               </thead>
-                <tbody>
-              
-              <tr>
-                
-                <th>DP Sell Transaction Charges</th> <th>Payout to Partner </th>
-                <th>DP Sell Transaction Charges</th> <th>Payout to Partner </th>
-              </tr>
-              <tr>
-                
-                <td className={`${styles.textCenter}`}>₹12</td>
-                <td className={`${styles.textCenter}`}>
-                  <b className={`${styles.orangeTxt}`}>5%</b>
-                </td>
-                <td className={`${styles.textCenter}`}>₹12 to ₹25</td>
-                <td className={`${styles.textLeft}`}>
-                  <b className={`${styles.orangeTxt}`}>100% payout above ₹12</b>
-                </td>
-              </tr>
-            </tbody></table>
+              <tbody>
+
+                <tr>
+
+                  <th>DP Sell Transaction Charges</th> <th>Payout to Partner </th>
+                  <th>DP Sell Transaction Charges</th> <th>Payout to Partner </th>
+                </tr>
+                <tr>
+
+                  <td className={`${styles.textCenter}`}>₹12</td>
+                  <td className={`${styles.textCenter}`}>
+                    <b className={`${styles.orangeTxt}`}>5%</b>
+                  </td>
+                  <td className={`${styles.textCenter}`}>₹12 to ₹25</td>
+                  <td className={`${styles.textLeft}`}>
+                    <b className={`${styles.orangeTxt}`}>100% payout above ₹12</b>
+                  </td>
+                </tr>
+              </tbody></table>
           </div>
         </div>
 
         <div className={`${styles.tableStructureWrap}`}>
-          
+
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
-            
+
             <img
               src="https://www.miraeassetpartners.com/asset/images/payment-changes-icon.png"
               alt="icon"
@@ -617,16 +616,16 @@ function PricePayoutStructureSec() {
             negative ledger balance and on Operating Charges.
           </p>
           <div className={`${styles.pricingTableHolder}`}>
-            
+
             <table width="100%"><tbody>
-              
+
               <tr>
-                
+
                 <th>DPC On</th> <th>Interest Rate</th>
                 <th>Payout to Partner </th>
               </tr>
               <tr>
-                
+
                 <td>Any negative ledger balance in client’s account </td>
                 <td className={`${styles.textCenter}`}>18%</td>
                 <td>
