@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import styles from './ListOfAuthorisedPersonsSec.module.scss'
-import { nunito } from '@/styles/fonts'
 import AuthorisedPersonsTable from './AutorisedPersonsTable';
 import getPartnerList from '@/lib/http/getPartnerList';
 
@@ -25,7 +24,7 @@ function ListOfAuthorisedPersonsSec() {
     return (
         <section className={`${styles.listOfAuthorisedPersonsSec} `}>
             <div className={`${styles.maContainer} `}>
-                <h1 className={`${styles.secTitle} ${nunito.className} `}>List Of Authorised Persons (AP)</h1>
+                <h1 className={`${styles.secTitle}  `}>List Of Authorised Persons (AP)</h1>
 
                 <div className={`${styles.tableWraper} `}>
                     <div className={`${styles.tableTopWrap} `}>

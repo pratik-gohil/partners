@@ -1,5 +1,6 @@
 "use client"
-import React, { useState } from 'react'
+
+import React, { useEffect, useState } from 'react'
 import styles from './HeroSection.module.scss'
 import TransparentPayoutSVG from '@/components/svgs/TransparentPayoutSVG'
 import EasySellSVG from '@/components/svgs/EasySellSVG'
@@ -8,9 +9,13 @@ import GrowSVG from '@/components/svgs/GrowSVG'
 import Image from 'next/image'
 import Modal from '@/components/Modal'
 import FormModal from '@/components/formModal/FormModal'
+import dynamic from 'next/dynamic'
+
+const Test = dynamic(() => import('./DesktopImages'), { ssr: false })
 
 function HeroSection() {
     const [modalOpen, setModalOpen] = useState(false)
+
     return (
         <>
             <section className={styles["topBannerSec"]}>
@@ -36,6 +41,9 @@ function HeroSection() {
                         </div>
                     </div>
                 </div>
+
+                <Test styles={styles} />
+
             </section>
 
             <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
