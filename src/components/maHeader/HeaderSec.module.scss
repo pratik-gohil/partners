@@ -18,22 +18,8 @@
         justify-content: space-between;
     }
 
-    .lhsWrap {
-        width: 280px;
-        height: 80px;
-        align-items: center;
-
-        a {
-            display: block;
-        }
-    }
-
-    .rhsWrap {
-        width: calc(100% - 280px);
-        align-items: center;
-        column-gap: 15px;
-        justify-content: flex-end;
-    }
+    .lhsWrap { width: 280px; height: 80px; align-items: center; a { display: block;img{ position: relative; top: -5px;} } } 
+    .rhsWrap { width: calc(100% - 280px); align-items: center; column-gap: 15px; justify-content: flex-end; }
 }
 
 .topMenuUlist {
@@ -257,9 +243,7 @@
 
     .headerSec {
         .lhsWrap {
-            width: 100px;
-            height: 60px;
-
+            width: 100px;  
             svg {
                 width: 100%;
             }
