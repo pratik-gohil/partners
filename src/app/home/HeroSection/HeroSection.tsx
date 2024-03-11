@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import styles from './HeroSection.module.scss'
 import TransparentPayoutSVG from '@/components/svgs/TransparentPayoutSVG'
 import EasySellSVG from '@/components/svgs/EasySellSVG'
@@ -8,10 +8,10 @@ import HighRevenueSVG from '@/components/svgs/HighRevenueSVG'
 import GrowSVG from '@/components/svgs/GrowSVG'
 import Image from 'next/image'
 import Modal from '@/components/Modal'
-import FormModal from '@/components/formModal/FormModal'
 import dynamic from 'next/dynamic'
 
-const Test = dynamic(() => import('./DesktopImages'), { ssr: false })
+const DesktopImages = dynamic(() => import('./DesktopImages'), { ssr: false })
+const FormModal = dynamic(() => import('@/components/formModal/FormModal'), { ssr: false })
 
 function HeroSection() {
     const [modalOpen, setModalOpen] = useState(false)
@@ -20,7 +20,11 @@ function HeroSection() {
         <>
             <section className={styles["topBannerSec"]}>
                 <div className={styles["maContainer"]}>
-                    <h2 className={styles["pageTitle"]}>Launching India&apos;s largest business partner program</h2>
+                    <h1 style={{
+                        fontFamily: 'Open Sans',
+                        fontWeight: "600",
+                        color: "#043b72"
+                    }} className={styles["pageTitle"]}>Launching India&apos;s largest business partner program</h1>
                     <div className={styles["bannerInnerBox"]}>
                         <ul className={styles["lhsWrap"]}>
                             <li>
@@ -42,7 +46,7 @@ function HeroSection() {
                     </div>
                 </div>
 
-                <Test styles={styles} />
+                <DesktopImages styles={styles} />
 
             </section>
 
