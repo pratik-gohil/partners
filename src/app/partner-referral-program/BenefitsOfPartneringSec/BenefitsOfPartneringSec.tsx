@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from './BenefitsOfPartneringSec.module.scss'
-import { nunito } from '@/styles/fonts'
 
 function BenefitsOfPartneringSec() {
     return (
         <section className={`${styles.benefitsOfPartneringSec}`}>
             <div className={`${styles.maContainer}`}>
-                <h2 className={`${styles.secTitle} ${nunito.className}`}>Benefits Of<span>partnering with us</span></h2>
+                <h2 className={`${styles.secTitle} `}>Benefits Of<span>partnering with us</span></h2>
                 <ul className={`${styles.reBenefitUlistBox}`}>
                     <li>India's first partner program with <b>100% brokerage sharing</b></li>
                     <li>Not 1 or 2 … earn from <b>9 revenue streams</b></li>

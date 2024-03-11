@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from './AccountOfDisciplinaryReasonsSec.module.scss'
-import { nunito } from '@/styles/fonts'
 
 function AccountOfDisciplinaryReasonsSec() {
     return (
         <section className={`${styles.accountOfDisciplinaryReasonsSec}`}>
             <div className={`${styles.maContainer}`}>
-                <h2 className={`${styles.secTitle} ${nunito.className}`}>Account of Disciplinary Reasons</h2>
+                <h2 className={`${styles.secTitle} `}>Account of Disciplinary Reasons</h2>
 
                 <div className={`${styles.tableWraper}`}>
                     <div className={`${styles.tableTopWrap}`}>

@@ -7,8 +7,7 @@ export function PreloadResources() {
     ReactDOM.prefetchDNS('https://www.miraeassetpartners.com')
 
     ReactDOM.preload("/OpenSans.woff2", {
-        as: "font",
-        fetchPriority: "high"
+        as: "font"
     })
 
     return null
