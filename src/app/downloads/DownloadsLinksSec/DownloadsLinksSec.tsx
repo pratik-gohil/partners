@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from './DownloadsLinksSec.module.scss'
-import { nunito } from '@/styles/fonts'
 
 function DownloadsLinksSec() {
     return (
         <section className={`${styles.downloadsLinksSec}`}>
             <div className={`${styles.maContainer}`}>
-                <h1 className={`${styles.secTitle} ${nunito.className}`}>Downloads</h1>
+                <h1 className={`${styles.secTitle} `}>Downloads</h1>
                 <div className={`${styles.downloadsLinksHolder}`}>
                     <div className={`${styles.titleLbl}`}>Others Forms</div>
                     <ul className={`${styles.downloadList}`}>

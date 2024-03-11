@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from 'react'
+import React from 'react'
 import styles from "./ThankYouModal.module.scss";
-import { nunito } from "@/styles/fonts";
 
 const ThankYouModal = ({ onClose }: any) => {
     return (
@@ -22,7 +21,7 @@ const ThankYouModal = ({ onClose }: any) => {
                             data-ll-status="loaded"
                             src="https://www.miraeassetpartners.com/asset/images/succesfull-icon.png"
                         />
-                        <h3 className={nunito.className}>Thank you sharing this growth opportunity with your friends!</h3>
+                        <h3 >Thank you sharing this growth opportunity with your friends!</h3>
                         <h5>The more the merrier!</h5>
                         <a
                             href="https://api.whatsapp.com/send?text=https://www.miraeassetpartners.com/"
