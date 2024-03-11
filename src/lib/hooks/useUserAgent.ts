@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useLayoutEffect, useState } from 'react'
 
 const getUserAgentDetect = (userAgent: NavigatorID['userAgent']) => {
     const isAndroid = () => Boolean(userAgent.match(/Android/i))
@@ -16,9 +16,19 @@ const getUserAgentDetect = (userAgent: NavigatorID['userAgent']) => {
         isSSR,
     }
 }
+
 const useUserAgent = () => {
-    useEffect(() => { }, [])
-    const userAgent = typeof navigator === 'undefined' ? 'SSR' : navigator.userAgent
+    const [userAgent, setUserAgent] = useState(typeof navigator === 'undefined' ? 'SSR' : navigator.userAgent)
+
+    useLayoutEffect(() => {
+        function updateSize() {
+            setUserAgent(typeof navigator === 'undefined' ? 'SSR' : navigator.userAgent);
+        }
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+    }, []);
+
     return getUserAgentDetect(userAgent)
 }
 
