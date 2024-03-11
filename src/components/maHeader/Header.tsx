@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
-import styles from "./HeaderSec.module.scss";
-import MiraeAssetsPartnersLogo from '../svgs/MiraeAssetsPartnersLogo';
+import styles from "./HeaderSec.module.scss"; 
+import MiraeAssetsPartnersLogo from "../../../public/maPartnersLogo.svg";
 import LangguageDropdown from '../languageDropdown/LanguageDropdown';
 
 const Header = () => {
@@ -13,7 +13,8 @@ const Header = () => {
                 <div className={`${styles.maContainer} ${styles.flex}`}>
                     <div className={`${styles.lhsWrap} ${styles.flex}`}>
                         <a href="/" title="Mirae Asset Partners">
-                            <MiraeAssetsPartnersLogo />
+                            {/* <MiraeAssetsPartnersLogo /> */}
+                            <img src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} /> 
                         </a>
                     </div>
                     <div className={`${styles.rhsWrap} ${styles.flex}`}>
