@@ -7,7 +7,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import http from '@/lib/http/http';
 import { phoneRegex } from '@/lib/constants/phoneReg';
 
-
 function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
     const verifyContact = async (data: any) => {
         if (data.mobile || data.email) {
@@ -98,7 +97,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
     }
 
     const subBroker = watch("subBroker")
-    const GSTY = getValues("GSTYN")
+    const GSTYN = getValues("GSTYN")
 
     return (
         <div className={`${styles.formWrap}`}>
@@ -284,7 +283,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                         {...register("GSTYN", {
                                             required: true
                                         })}
-                                        defaultChecked={!!GSTY}
+                                        defaultChecked={!!GSTYN}
                                         tabIndex={-1}
                                     />
                                     <label tabIndex={0} htmlFor='GSTyes'>Yes</label>
@@ -295,7 +294,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                         {...register("GSTYN", {
                                             required: true
                                         })}
-                                        defaultChecked={!!!GSTY}
+                                        defaultChecked={!!!GSTYN}
                                         tabIndex={-1}
                                     />
                                     <label tabIndex={0} htmlFor='GSTno'>No</label>

@@ -40,7 +40,7 @@ function ListOfAuthorisedPersonsSec() {
                             <button className={`${styles.btn} ${styles.disabled} `}>Previous</button>
                             <div className={`${styles.pages} `}>
                                 {Array.from({ length: Math.ceil(data?.[0].length / entries) }, (_, i) => i + 1).map(i =>
-                                    <span onClick={() => setPage(i)} className={`${styles.page} ${i === page && styles.active}`}>{i}</span>
+                                    <span key={i} onClick={() => setPage(i)} className={`${styles.page} ${i === page && styles.active}`}>{i}</span>
                                 )
                                 }
                             </div>

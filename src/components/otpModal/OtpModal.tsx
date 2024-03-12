@@ -12,7 +12,7 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
         (async () => {
             // @ts-ignore
             if (OTP[0] && OTP[1] && OTP[2] && OTP[3]) {
-                const res = await http('https://marktech.mirae-asset.co.in/macm_lt_service/api/v1/partners/verifyOTP', {
+                const res = await http('/partners/verifyOTP', {
                     method: "POST",
                     body: JSON.stringify({
                         "mobile": vals.number,
