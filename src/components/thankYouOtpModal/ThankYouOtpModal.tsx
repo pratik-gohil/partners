@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react'
+import React from 'react'
 import styles from "./ThankYouOtpModal.module.scss";
 
 const ThankYouOtpModal = ({ onClose }: any) => {
@@ -13,7 +13,7 @@ const ThankYouOtpModal = ({ onClose }: any) => {
                 </div>
                 <div className={`${styles.modalBody}`}>
                     <div className={`${styles.thankyoupat}`}>
-                        <img src="https://www.miraeassetpartners.com/asset/images/payment-succesfull.gif" alt="Succesfull icon" />
+                        <img src="/payment-succesfull.gif" alt="Succesfull icon" />
                         <h2>Thank You!</h2>
                         <p>
                             Your referral lead has been submitted successfully! Rewards will be credited

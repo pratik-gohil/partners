@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from '../FaqsSec.module.scss'
+
 function Q2() {
     return (
-        <>  
+        <>
             <p>
                 m.Stock offers two types of brokerage accounts to their clients:<br /><br />
                 <b>Zero Brokerage Account:</b> Clients can trade at zero brokerage for life across Delivery, Intraday, F&O, IPO, and Currency. The account opening fee (one-time) is ₹999.<br /><br />
@@ -14,7 +14,7 @@ function Q2() {
                 For other charges, <a href="https://www.mstock.com/pricing" target="_blank">click here.</a> <br />
             </p>
         </>
-    ) 
+    )
 }
 
 export default Q2

@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from '../FaqsSec.module.scss'
+
 function QNineteen() {
-    return ( 
+    return (
         <>
             <p><b>Security deposit:</b> ₹50,000 (Refundable)</p>
             <p><b>Document handling charges:</b> ₹1,500 (eFranking &amp; eSign charges) </p>
-            {/* <p><b>One-time Exchange Registration Charges:</b></p> */}
 
             <div className={`${styles.tableTitle}`}>One-time Exchange Registration Charges:</div>
             <div className={`${styles.tableHolder}`}>

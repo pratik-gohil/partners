@@ -28,7 +28,7 @@ const BreadcrumbSec = () => {
         innerPage && (<div className={`${styles.breadcrumbSec}`}>
             <div className={`${styles.maContainer}`}>
                 <ul>
-                    <li><a href="/" title="home"><img src="https://www.miraeassetpartners.com/asset/images/icon-home.svg" width="15" height="15" alt="home" title="home" /></a></li>
+                    <li><a href="/" title="home"><img src="/icon-home.svg" width="15" height="15" alt="home" title="home" /></a></li>
                     <li>{innerPage}</li>
                 </ul>
             </div>

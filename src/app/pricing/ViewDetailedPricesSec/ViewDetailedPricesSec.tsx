@@ -19,8 +19,8 @@ function ViewDetailedPricesSec() {
                 <h2 className={`${styles.secTitle} `}>View detailed pricing and payout details</h2>
 
                 <div className={`${styles.docsLinkBox}`}>
-                    <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><img src="https://www.miraeassetpartners.com/asset/images/pdf-icon.png" alt="" /> <span>Download complete partner income sharing details</span></a>
-                    <a href="/terms-and-conditions" className={`${styles.halfWrapAlink}`}><img src="https://www.miraeassetpartners.com/asset/images/terms-and-conditions-icon.png" alt="" /> <span>Payout Terms and Conditions</span></a>
+                    <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><img src="/pdf-icon.webp" alt="" /> <span>Download complete partner income sharing details</span></a>
+                    <a href="/terms-and-conditions" className={`${styles.halfWrapAlink}`}><img src="/terms-and-conditions-icon.webp" alt="" /> <span>Payout Terms and Conditions</span></a>
                 </div>
 
 
@@ -32,9 +32,9 @@ function ViewDetailedPricesSec() {
                         </div>
                         <div className={`${styles.accordingBtn} ${isVisible ? styles["active"] : styles[""]}`} onClick={toggleVisibility}>
                             {isVisible ? (
-                                <><span>View Less</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
+                                <><span>View Less</span> <img src="/down-arrow2.webp" /></>
                             ) : (
-                                <><span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
+                                <><span>View More</span> <img src="/down-arrow2.webp" /></>
                             )}
                         </div>
                     </div>
