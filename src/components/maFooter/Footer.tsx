@@ -54,9 +54,9 @@ const Footer = () => {
                 </div>
                 <div className={`${styles.midWrap}`}>
                     <div className={`${styles.maContainer}`}>
-                        <a title="Mirae Asset Partners">
+                        <a href="/" title="Mirae Asset Partners">
                             {/* <MiraeAssetsPartnersLogo /> */}
-                            <img src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} /> 
+                            <img src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
                         </a>
                         <span>Where <b>YOU</b> come first</span>
                     </div>

@@ -8,20 +8,17 @@ import http from '@/lib/http/http'
 import Modal from '@/components/Modal'
 import OtpModal from '@/components/otpModal/OtpModal'
 import ThankYouOtpModal from '@/components/thankYouOtpModal/ThankYouOtpModal'
+import { phoneRegex } from '@/lib/constants/phoneReg'
 
 function StartPartnerReferringSecC() {
-    const phoneRegex = new RegExp(
-        /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/
-    );
-
     const refschema = z.object({
-        r_name: z.string().nonempty('field is required').min(3, { message: 'must be atleast 3 characters' }),
-        r_number: z.string().nonempty('field is required').regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' })
+        r_name: z.string().min(1),
+        r_number: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' })
     });
 
     const schema = z.object({
-        name: z.string().nonempty('field is required').min(3, { message: 'must be atleast 3 characters' }),
-        number: z.string().nonempty('field is required').regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' }).nonempty(),
+        name: z.string().min(1),
+        number: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' }).nonempty(),
         agree: z.boolean(),
         reference: z.array(refschema)
     })
@@ -51,7 +48,6 @@ function StartPartnerReferringSecC() {
         control
     })
     const onSubmit: SubmitHandler<FormData> = async (data) => {
-        // await new Promise((res, rej) => setTimeout(res, 1000))
         const res = await http('/partners/getOTP', {
             method: 'POST',
             body: JSON.stringify({
@@ -69,6 +65,7 @@ function StartPartnerReferringSecC() {
             setShowOTPModal(true);
         }
     }
+
     return (
         <>
             <section className={`${styles.startPartnerReferringSec}`}>
@@ -108,11 +105,10 @@ function StartPartnerReferringSecC() {
                                 </div>
                             </div>
 
-
                             {
                                 fields.map((p, i) => {
                                     return (
-                                        <div key={i} className={`${styles.flex} ${styles.formFieldWrap}`}>
+                                        <div key={i + 1} className={`${styles.flex} ${styles.formFieldWrap}`}>
                                             <div className={`${styles.formGroup}`}>
                                                 <input
                                                     type="text"
@@ -180,10 +176,7 @@ function StartPartnerReferringSecC() {
                                     </span>
                                 )
                             }
-
                         </div>
-
-
 
                         <div className={`${styles.btnparAddsub}`}>
                             {
