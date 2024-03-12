@@ -8,9 +8,6 @@ import Accordian from '@/components/Accordian/Accordian';
 const FaqsSec = () => {
     const [expanded, setExpanded] = useState<number | null>(0);
     const [showMore, setShowMore] = useState(false);
-    const handleChange = (panel: number) => {
-        setExpanded(expanded !== panel ? panel : 0);
-    };
 
     return (
         <>

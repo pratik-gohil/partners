@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react'
+import React from 'react'
 import styles from "./ThankYouOtpModal.module.scss";
 
 const ThankYouOtpModal = ({ onClose }: any) => {
