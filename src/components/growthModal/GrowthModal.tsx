@@ -63,7 +63,7 @@ const GrowthModal = ({ onClose, setIndex }: { onClose: any, setIndex: any }) => 
                                     </li>
                                 </ul>
                                 <div className={`${styles.deletBad} ${styles.addBad}`}>
-                                    <img src="https://www.miraeassetpartners.com/asset/images/add-icon.svg" className={`${styles.addiconadd}`} alt="" />
+                                    <img src="/add-icon.svg" className={`${styles.addiconadd}`} alt="" />
                                 </div>
                             </div> <div className={`${styles.onerownamenumBar}`}>
                                 <ul>
@@ -100,7 +100,7 @@ const GrowthModal = ({ onClose, setIndex }: { onClose: any, setIndex: any }) => 
                                     </li>
                                 </ul>
                                 <div className={`${styles.deletBad} ${styles.addBad}`} >
-                                    <img src="https://www.miraeassetpartners.com/asset/images/icon-delete.svg" className={`${styles.deleticonadd}`} alt="" />
+                                    <img src="/icon-delete.svg" className={`${styles.deleticonadd}`} alt="" />
                                 </div>
                             </div>
                         </div>

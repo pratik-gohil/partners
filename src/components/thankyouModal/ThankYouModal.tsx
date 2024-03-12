@@ -16,10 +16,10 @@ const ThankYouModal = ({ onClose }: any) => {
                     <div className={`${styles.thankinndiv}`}>
                         <img
                             className="lazy lz-entered lz-loaded"
-                            data-src="https://www.miraeassetpartners.com/asset/images/succesfull-icon.png"
+                            data-src="/succesfull-icon.png"
                             alt=""
                             data-ll-status="loaded"
-                            src="https://www.miraeassetpartners.com/asset/images/succesfull-icon.png"
+                            src="/succesfull-icon.png"
                         />
                         <h3 >Thank you sharing this growth opportunity with your friends!</h3>
                         <h5>The more the merrier!</h5>
@@ -32,10 +32,10 @@ const ThankYouModal = ({ onClose }: any) => {
                             Click to share via{" "}
                             <img
                                 className="lazy lz-entered lz-loaded"
-                                data-src="https://www.miraeassetpartners.com/asset/images/whatsapp-icon.png"
+                                data-src="/whatsapp-icon.png"
                                 alt=""
                                 data-ll-status="loaded"
-                                src="https://www.miraeassetpartners.com/asset/images/whatsapp-icon.png"
+                                src="/whatsapp-icon.png"
                             />
                         </a>
                     </div>

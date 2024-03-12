@@ -35,7 +35,7 @@ function HeroSection() {
                                 <span><b>Lowest client rates,</b> yet higher revenue</span></li>
                         </ul>
                         <div className={styles["rhsWrap"]}>
-                            <Image priority={true} width={400} height={600} src="https://www.miraeassetpartners.com/asset/images/hand-img.webp" alt="hand-img" title="hand-img" />
+                            <Image priority={true} width={400} height={600} src="/hand-img.webp" alt="hand-img" title="hand-img" />
                             <p className={styles["ctaUpText"]}>Opening for 1,000 partners on an invite-only basis</p>
                             <button className={`${styles["maOrangeBtn"]} ${styles["becomePartnerBtn"]}`} onClick={() => setModalOpen(true)}>Pre-Register Now</button>
                         </div>

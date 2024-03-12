@@ -7,7 +7,7 @@
     p { text-align: left; margin: 0 0 10px; font-size: 14px; } 
 } 
 
-/* .expanded{ max-height: 900px; transition: max-height 1s ease;}
+ .expanded{ max-height: 900px; transition: max-height 1s ease;}
 .collapsed { max-height: 0; transition: none;}   
 .accordionHolder { position: relative; }
 
@@ -25,7 +25,7 @@
 
         &::after {
             content: "";
-            background: url(https://www.miraeassetpartners.com/asset/images/icon-down.svg) 0 0/cover;
+            background: url(/icon-down.svg) 0 0/cover;
             position: absolute;
             top: 15px;
             right: 10px;
@@ -53,7 +53,7 @@
             }
         }
     }
-} */
+} 
  
 .tableTitle {
     font-size: 14px;
