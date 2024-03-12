@@ -1,12 +1,9 @@
-import Breadcrumb from "@/components/breadcrumb/BreadcrumbSec";
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
-
 
 export default function PrivacyPolicy() {
   return (
     <>
-
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
           <h2 className={`${styles.secTitle} `}>Our Policies</h2>

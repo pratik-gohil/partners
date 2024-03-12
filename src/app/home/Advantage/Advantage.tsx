@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from 'react'
-// import './index.scss'
 import styles from './advantage.module.scss'
 import { DeferedImage } from '@/components/DeferImage'
 
