@@ -31,7 +31,7 @@
         p{margin-bottom: 15px;}
         .tableTitleWrap{display: flex; align-items: center; vertical-align: top;
             img{ width: 30px;}
-            .tableTitle{ display: flex; align-items: start; vertical-align: top; line-height: 24px; font-size: 18px;}
+            .tableTitle{ display: flex; align-items: flex-start; vertical-align: top; line-height: 24px; font-size: 18px;}
         } 
         .pricingTableHolder { overflow-x: scroll; width: 100%;display: block; 
             table th,

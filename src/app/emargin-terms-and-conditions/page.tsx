@@ -2,7 +2,6 @@
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
 
-
 export default function EmarginTermsAndConditions() {
   return (
     <>
