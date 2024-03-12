@@ -68,10 +68,10 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
                 </div>
                 <div className={`${styles.modalBody}`}>
                     <div className={`${styles.setpinPopuparea} ${styles.resetpopupBl}`}>
-                        <img src="https://www.miraeassetpartners.com/asset/images/set-pin-icon.png" alt="setpin-icon" />
+                        <img src="/set-pin-icon.png" alt="setpin-icon" />
                         <h4>
                             <span id="otpMessage" /> +91 {vals.number}
-                            <img src="https://www.miraeassetpartners.com/asset/images/edit-icon.svg" onClick={onClose} aria-label="Close" alt="Icon" />
+                            <img src="/edit-icon.svg" onClick={onClose} aria-label="Close" alt="Icon" />
                         </h4>
                         <p>Rewards will be credited to this mobile number only.</p>
                         <div className={`${styles.otpboxInput}`}>

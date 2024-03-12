@@ -10,12 +10,12 @@ function PartRefProBannerSec() {
                         <span>Refer a partner & share this</span>
                         <b className={`${styles.b1}`}>unbeatable</b>
                         <span>business</span>
-                        <b className={`${styles.b2}`}>opport<img src="https://www.miraeassetpartners.com/asset/images/referrals/text-U-img.png" />&nbsp;nity…</b>
+                        <b className={`${styles.b2}`}>opport<img src="/referrals/text-U-img.png" />&nbsp;nity…</b>
                     </h2>
                     <div className={`${styles.priceBandStrip}`}>₹6,000 per successful registration!</div>
                 </div> 
                 <div className={`${styles.rhsWrap}`}>
-                    <img src="https://www.miraeassetpartners.com/asset/images/referrals/banner-img.png" />
+                    <img src="/referrals/banner-img.png" />
                 </div> 
             </div>
         </section>

@@ -15,7 +15,7 @@ function PricingBannerSec() {
                     </div>
                     <div className={`${styles.flex} ${styles.imgWrap}`}>
                         <div className={`${styles.pricingBannerImgBlock}`}>
-                            <img src="https://www.miraeassetpartners.com/asset/images/pricing-banner-100-perce-img.png" alt="" />
+                            <img src="/pricing-banner-100-perce-img.webp" alt="" />
                         </div>
                         <div className={`${styles.pricingBannerRightBlock}`}>
                             <div className={`${styles.brotextBr}`}>Brokerage</div>

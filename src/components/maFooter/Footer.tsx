@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./FooterSec.module.scss";
-import MiraeAssetsPartnersLogo from '../svgs/MiraeAssetsPartnersLogo';
+import MiraeAssetsPartnersLogo from "../../../public/maPartnersLogo.svg";
+/* import MiraeAssetsPartnersLogo from '../svgs/MiraeAssetsPartnersLogo'; */
 import FacebookLogo from '../svgs/FacebookLogo';
 import InstagramLogo from '../svgs/InstagramLogo';
 import LinkedinLogo from '../svgs/LinkedinLogo';
@@ -53,8 +54,9 @@ const Footer = () => {
                 </div>
                 <div className={`${styles.midWrap}`}>
                     <div className={`${styles.maContainer}`}>
-                        <a title="Mirae Asset Partners">
-                            <MiraeAssetsPartnersLogo />
+                        <a href="/" title="Mirae Asset Partners">
+                            {/* <MiraeAssetsPartnersLogo /> */}
+                            <img src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
                         </a>
                         <span>Where <b>YOU</b> come first</span>
                     </div>

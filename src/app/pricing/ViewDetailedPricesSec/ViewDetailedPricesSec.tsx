@@ -1,12 +1,11 @@
 "use client";
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import styles from './ViewDetailedPricesSec.module.scss'
-import { nunito } from '@/styles/fonts'
 
 function ViewDetailedPricesSec() {
 
     const [isVisible, setIsVisible] = useState(false);
- 
+
     const toggleVisibility = () => {
         setIsVisible(!isVisible);
     };
@@ -15,34 +14,34 @@ function ViewDetailedPricesSec() {
         <section className={`${styles.viewDetailedPricesSec}`}>
             <div className={`${styles.maContainer}`}>
 
-            
-
-                <h2 className={`${styles.secTitle} ${nunito.className}`}>View detailed pricing and payout details</h2>
-
-                <div className={`${styles.docsLinkBox}`}>  
-                    <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><img src="https://www.miraeassetpartners.com/asset/images/pdf-icon.png" alt="" /> <span>Download complete partner income sharing details</span></a> 
-                    <a href="/terms-and-conditions" className={`${styles.halfWrapAlink}`}><img src="https://www.miraeassetpartners.com/asset/images/terms-and-conditions-icon.png" alt="" /> <span>Payout Terms and Conditions</span></a> 
-                </div> 
 
 
-                <div className={`${styles.otherChargeAccBox}`}>  
-                    <div className={`${styles.accHeadBox}`}>  
+                <h2 className={`${styles.secTitle} `}>View detailed pricing and payout details</h2>
+
+                <div className={`${styles.docsLinkBox}`}>
+                    <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><img src="/pdf-icon.webp" alt="" /> <span>Download complete partner income sharing details</span></a>
+                    <a href="/terms-and-conditions" className={`${styles.halfWrapAlink}`}><img src="/terms-and-conditions-icon.webp" alt="" /> <span>Payout Terms and Conditions</span></a>
+                </div>
+
+
+                <div className={`${styles.otherChargeAccBox}`}>
+                    <div className={`${styles.accHeadBox}`}>
                         <div className={`${styles.lhsWrap}`}>
-                            <div className={`${styles.title}`}>Other charges applicable to your client</div>  
+                            <div className={`${styles.title}`}>Other charges applicable to your client</div>
                             <span>These are standard charges and can't be modified.</span>
                         </div>
-                        <div className={`${styles.accordingBtn} ${isVisible ? styles["active"] : styles[""]}`}  onClick={toggleVisibility}>
+                        <div className={`${styles.accordingBtn} ${isVisible ? styles["active"] : styles[""]}`} onClick={toggleVisibility}>
                             {isVisible ? (
-                                <><span>View Less</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
+                                <><span>View Less</span> <img src="/down-arrow2.webp" /></>
                             ) : (
-                                <><span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
-                            )} 
+                                <><span>View More</span> <img src="/down-arrow2.webp" /></>
+                            )}
                         </div>
-                    </div>    
-                    <div className={`${styles.accBodyBox} ${isVisible ? styles["active"] : styles[""]}`}>  
+                    </div>
+                    <div className={`${styles.accBodyBox} ${isVisible ? styles["active"] : styles[""]}`}>
                         <ul>
                             <li>
-                                <b>Quarterly operating charges:</b> <br/>
+                                <b>Quarterly operating charges:</b> <br />
                                 <p>₹99 + 18% GST per quarter to be charged to clients who have been onboarded under the standard and customised quarterly AMC plan.</p>
                                 <p>No operating charge will be applicable for clients under the standard lifetime free AMC plan and the customised one-time AMC plans.</p>
                             </li>
@@ -109,12 +108,12 @@ function ViewDetailedPricesSec() {
                                 <p>Auction if unable to deliver a stock (not in demat): As per actual penalty by exchange</p>
                             </li>
                         </ul>
-                    </div> 
-                </div>  
+                    </div>
+                </div>
 
 
 
- 
+
             </div>
         </section>
     )
