@@ -71,6 +71,14 @@ a#submit {
     z-index: 1;
 }
 
+
+
+.languageUlBlock{
+    &:after{ content: ""; position: absolute; top: 7px; right: 12px; width: 8px; height: 8px; border: solid #ff7518; border-width: 0 1px 1px 0; padding: 3px; transform: rotate(45deg); -webkit-transform: rotate(45deg); }
+    &.active:after{transform: rotate(223deg);top: 11px;}
+}
+
+
 .languageUlBlock ul li.init::after {
     /*background: url(../images/down-arrow.png) no-repeat;*/
     width: 15px;
@@ -111,11 +119,11 @@ a#submit {
 }
 
 
-.arrowImgMargin {
+/* .arrowImgMargin {
     margin-left: 8px;
     display: inline-block;
     vertical-align: middle;
-}
+} */
 
 @media only screen and (max-width: 1024px) {
     .languageUlBlock {
@@ -179,9 +187,9 @@ a#submit {
         line-height: 26px;
     }
 
-    .arrowImgMargin {
+    /* .arrowImgMargin {
         margin-left: 3px;
-    }
+    } */
 
     .languageSelectLabell {
         margin-top: 0px;
@@ -219,7 +227,7 @@ a#submit {
         margin-left: 0px;
     }
 
-    .arrowImgMargin {
+    /* .arrowImgMargin {
         margin-left: 3px;
-    }
+    } */
 }

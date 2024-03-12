@@ -1,13 +1,12 @@
 import React from 'react'
 import styles from './HowToReferSec.module.scss'
-import { nunito } from '@/styles/fonts'
 
 function HowToReferSec() {
     return (
         <section className={`${styles.howToReferSec}`}>
             <div className={`${styles.maContainer}`}>
-                {/* <h2 className={`${styles.secTitle} ${nunito.className}`}>How to <span>Refer a Partner?</span></h2> */}
-                <h2 className={`${styles.secTitle} ${nunito.className}`}>How to <span>Refer a Partner?</span></h2>
+                {/* <h2 className={`${styles.secTitle} `}>How to <span>Refer a Partner?</span></h2> */}
+                <h2 className={`${styles.secTitle} `}>How to <span>Refer a Partner?</span></h2>
                 <ul>
                     <li>
                         <span>1</span>

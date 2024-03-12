@@ -1,7 +1,6 @@
 'use client'
 import React, { FormEvent, useState } from 'react'
 import styles from './StartPartnerReferringSec.module.scss'
-import { nunito } from '@/styles/fonts'
 
 function StartPartnerReferringSec() {
     const [pErr, setPerr] = useState({
@@ -136,7 +135,7 @@ function StartPartnerReferringSec() {
     return (
         <section className={`${styles.startPartnerReferringSec}`}>
             <div className={`${styles.maContainer}`}>
-                <h1 className={`${styles.secTitle} ${nunito.className}`}>Start Partner<span>Referring</span></h1>
+                <h1 className={`${styles.secTitle} `}>Start Partner<span>Referring</span></h1>
 
                 <form className={`${styles.formHolder}`}
                     onSubmit={handleFormSubmit}
