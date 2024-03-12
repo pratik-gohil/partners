@@ -75,6 +75,7 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
                             them a chance to be part of first 1000 partners.
                         </p>
                         <div id="inputsContainerForm">
+
                             {fields.map((r, i) => (
                                 <div key={i} className={`${styles.onerownamenumBar}`}>
                                     <ul>
@@ -126,6 +127,7 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
                                     </div>)}
                                 </div>
                             ))}
+                          
                         </div>
                     </div>
                     <div

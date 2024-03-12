@@ -21,7 +21,7 @@ function LangguageDropdown() {
                     English
                 </label>
                 {/* <img
-                    src="https://www.miraeassetpartners.com/asset/images/down-arrow.png"
+                    src="/down-arrow.png"
                     alt="mstock"
                     width={12}
                     height={6}
@@ -32,7 +32,7 @@ function LangguageDropdown() {
                     <li style={{ display: "list-item" }}>
                         <label className="language-select-labell">&nbsp;&nbsp;Select</label>
                         {/* <img
-                            src="https://www.miraeassetpartners.com/asset/images/down-arrow.png"
+                            src="/down-arrow.png"
                             alt="mstock"
                             width={12}
                             height={6}

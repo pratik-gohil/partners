@@ -39,9 +39,9 @@ function RegOnboardChargesSec() {
                         </div>
                         <div className={`${styles.accordingBtn} ${isVisible1 ? styles["active"] : styles[""]}`} onClick={toggleVisibility1}>
                             {isVisible1 ? (
-                                <><span>View Less</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
+                                <><span>View Less</span> <img src="/down-arrow2.webp" /></>
                             ) : (
-                                <><span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
+                                <><span>View More</span> <img src="/down-arrow2.webp" /></>
                             )}
                         </div>
                     </div>
@@ -124,9 +124,9 @@ function RegOnboardChargesSec() {
                         </div>
                         <div className={`${styles.accordingBtn} ${isVisible2 ? styles["active"] : styles[""]}`} onClick={toggleVisibility2}>
                             {isVisible2 ? (
-                                <><span>View Less</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
+                                <><span>View Less</span> <img src="/down-arrow2.webp" /></>
                             ) : (
-                                <><span>View More</span> <img src="https://www.miraeassetpartners.com/asset/images/down-arrow2.png" /></>
+                                <><span>View More</span> <img src="/down-arrow2.webp" /></>
                             )}
                         </div>
                     </div>

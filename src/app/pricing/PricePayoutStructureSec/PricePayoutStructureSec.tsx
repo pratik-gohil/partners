@@ -120,7 +120,7 @@ function PricePayoutStructureSec() {
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
             <img
-              src="https://www.miraeassetpartners.com/asset/images/rs-icon-1.png"
+              src="/rs-icon-1.webp"
               alt="icon"
               title="icon"
             />
@@ -211,7 +211,7 @@ function PricePayoutStructureSec() {
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
             <img
-              src="https://www.miraeassetpartners.com/asset/images/incom-from-icon.png"
+              src="/incom-from-icon.webp"
               alt="icon"
               title="icon"
             />
@@ -294,7 +294,7 @@ function PricePayoutStructureSec() {
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
             <img
-              src="https://www.miraeassetpartners.com/asset/images/intrest-percent-icon.png"
+              src="/intrest-percent-icon.webp"
               alt="icon"
               title="icon"
             />
@@ -353,7 +353,7 @@ function PricePayoutStructureSec() {
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
             <img
-              src="https://www.miraeassetpartners.com/asset/images/doc-icon.png"
+              src="/doc-icon.webp"
               alt="icon"
               title="icon"
             />
@@ -405,7 +405,7 @@ function PricePayoutStructureSec() {
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
             <img
-              src="https://www.miraeassetpartners.com/asset/images/amc-pricing-icon.png"
+              src="/amc-pricing-icon.webp"
               alt="icon"
               title="icon"
             />
@@ -481,7 +481,7 @@ function PricePayoutStructureSec() {
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
             <img
-              src="https://www.miraeassetpartners.com/asset/images/Unpledged-charges-icon.png"
+              src="/Unpledged-charges-icon.webp"
               alt="icon"
               title="icon"
             />
@@ -548,7 +548,7 @@ function PricePayoutStructureSec() {
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
             <img
-              src="https://www.miraeassetpartners.com/asset/images/dp-sell-icon.png"
+              src="/dp-sell-icon.webp"
               alt="icon"
               title="icon"
             />
@@ -603,7 +603,7 @@ function PricePayoutStructureSec() {
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
             <img
-              src="https://www.miraeassetpartners.com/asset/images/payment-changes-icon.png"
+              src="/payment-changes-icon.webp"
               alt="icon"
               title="icon"
             />

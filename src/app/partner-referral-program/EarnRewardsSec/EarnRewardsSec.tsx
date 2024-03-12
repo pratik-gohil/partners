@@ -6,7 +6,7 @@ function EarnRewardsSec() {
     <section className={`${styles.earnRewardsSec}`}>
       <div className={`${styles.maContainer} ${styles.flex}`}>
         <div className={`${styles.lhsWrap}`}>
-          <img src="https://www.miraeassetpartners.com/asset/images/referrals/reward-box-new.webp" alt="rewards" title="rewards" />
+          <img src="/referrals/reward-box-new.webp" alt="rewards" title="rewards" />
         </div>
         <div className={`${styles.rhsWrap}`}>
           <h2 className={`${styles.secTitle} `}>Share opportunity. Grow community.<span>Earn rewards!</span></h2>
