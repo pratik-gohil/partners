@@ -7,9 +7,7 @@ export async function generateMetadata() {
     title: 'Privacy Policy for Authorized Partners',
     description: 'Privacy policy for authorized partners - We are dedicated to protecting your privacy. If we ask for personal details from you, we will do it in accordance with this privacy statement.',
     keywords: ['']
-  });
-  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/privacy-policy"
-  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/privacy-policy"
+  }, "privacy-policy");
 
   return commonMetadata;
 }

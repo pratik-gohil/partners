@@ -7,9 +7,7 @@ export async function generateMetadata() {
     title: 'FAQs on Sub Broker Program',
     description: 'Learn about the sub-broker program by Mirae Asset. Get answers to FAQs related to the partner program, revenue sharing on broekrage and interests, payouts and much more.',
     keywords: ['sub broker faqs', 'partner faq', 'partnership faq', 'partnership frequently asked questions']
-  });
-  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/faq"
-  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/faq"
+  }, "faq");
 
   return commonMetadata;
 }

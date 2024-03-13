@@ -6,9 +6,7 @@ export async function generateMetadata() {
     title: 'Download Forms',
     description: 'Now you can easily download all documents related to authorized partner program on Mirae Asset Partners. Visit for more information.',
     keywords: ['authorized partner list', 'authorized partners']
-  });
-  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/downloads"
-  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/downloads"
+  }, "downloads");
 
   return commonMetadata;
 }

@@ -8,9 +8,7 @@ export async function generateMetadata() {
     title: 'Trading Terms and Conditions',
     description: 'Mirae Asset Partners terms and conditions - Read the entire set of T&C online. More information on terms & conditions can be found on our page.',
     keywords: ['']
-  });
-  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/terms-and-conditions"
-  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/terms-and-conditions"
+  }, "terms-and-conditions");
 
   return commonMetadata;
 }

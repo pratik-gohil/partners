@@ -8,9 +8,7 @@ export async function generateMetadata() {
     title: 'MTF (eMargin) Terms and Conditions',
     description: 'Mirae Asset Partners MTF terms and conditions - Read the entire set of MTF (eMargin) T&C online.  Visit for more information.',
     keywords: ['authorized partner list', 'authorized partners']
-  });
-  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/emargin-terms-and-conditions"
-  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/emargin-terms-and-conditions"
+  }, "emargin-terms-and-conditions");
 
   return commonMetadata;
 }

@@ -30,17 +30,25 @@ export let commonMetadata = {
   },
   alternates: {
     canonical: 'https://www.miraeassetpartners.com',
-    languages: {
-      'en-in': 'https://www.miraeassetpartners.com',
-      'hi-in': 'https://www.miraeassetpartners.com/hi',
-      'gu-in': 'https://www.miraeassetpartners.com/gu',
-      'ta-in': 'https://www.miraeassetpartners.com/ta',
-    },
+    languages: {},
   },
 }
 
-export const getMetaData = (data: any) => {
+export const getMetaData = (data: any, path: string = "") => {
   const commonMetadataCopy = JSON.parse(JSON.stringify(commonMetadata))
+  commonMetadataCopy.openGraph.url = "https://www.miraeassetpartners.com/" + path
+  commonMetadataCopy.alternates.canonical = "https://www.miraeassetpartners.com/" + path
+
+  const langs = ["hi", "gu", "ta", "en"]
+
+  langs.forEach(lang => {
+    // @ts-ignore
+    commonMetadataCopy.alternates.languages[lang + "-in"] = "https://www.miraeassetpartners.com/"
+      + lang
+      + "/"
+      + path
+  })
+
   return {
     ...commonMetadataCopy, ...data, other: {
       title: data.title + " | Mirae Asset Partners",
