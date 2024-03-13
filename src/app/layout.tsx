@@ -34,7 +34,7 @@ export let commonMetadata = {
   },
 }
 
-export const getMetaData = (data: any, path: string) => {
+export const getMetaData = (data: any, path: string = "") => {
   const commonMetadataCopy = JSON.parse(JSON.stringify(commonMetadata))
   commonMetadataCopy.openGraph.url = "https://www.miraeassetpartners.com/" + path
   commonMetadataCopy.alternates.canonical = "https://www.miraeassetpartners.com/" + path
