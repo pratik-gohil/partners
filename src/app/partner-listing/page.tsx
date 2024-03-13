@@ -16,7 +16,6 @@ export async function generateMetadata() {
 export default function PartnerListingPage() {
   return (
     <>
-
       <ListOfAuthorisedPersonsSec />
       <AccountOfDisciplinaryReasonsSec />
     </>
