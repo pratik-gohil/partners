@@ -26,7 +26,7 @@ function ViewDetailedPricesSec() {
 
                 <div className={`${styles.otherChargeAccBox}`}>
                     <div className={`${styles.accHeadBox}`}>
-                        <div className={`${styles.lhsWrap}`}>
+                        <div className={`${styles.lhsWrap}`}id="partnerRegistration">
                             <div className={`${styles.title}`}>Other charges applicable to your client</div>
                             <span>These are standard charges and can't be modified.</span>
                         </div>
