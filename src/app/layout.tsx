@@ -25,12 +25,17 @@ export let commonMetadata = {
     images: ['https://www.miraeassetpartners.com/asset/images/mirae-logo.svg'], // Must be an absolute URL
   },
   icons: {
-    icon: 'asset/images/favicon.png',
-    shortcut: 'asset/images/favicon.png',
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
   },
   alternates: {
     canonical: 'https://www.miraeassetpartners.com',
-    languages: {},
+    languages: {
+      'en-in': 'https://www.miraeassetpartners.com',
+      'hi-in': 'https://www.miraeassetpartners.com/hi',
+      'gu-in': 'https://www.miraeassetpartners.com/gu',
+      'ta-in': 'https://www.miraeassetpartners.com/ta',
+    },
   },
 }
 
