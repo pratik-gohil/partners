@@ -11,6 +11,7 @@ jobs:
     uses: macmrepo/Reusable-workflows/.github/workflows/ecr-build-push.yml@main
     with:
       AWS_REGION: ${{ vars.AWS_REGION_DEV }}
+      BACKEND_URL_DEV: "https://marktech.mirae-asset.co.in/macm_lt_service/api/v1"
     secrets:
       AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID_DEV}}
       AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY_DEV}}
