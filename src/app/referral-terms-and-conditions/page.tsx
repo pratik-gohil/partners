@@ -1,6 +1,17 @@
 
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { getMetaData } from "../layout";
+
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Partner Referral Terms and Conditions',
+    description: 'Mirae Asset Partners referral program terms and conditions - Read the entire set of Partner Referral Prrogram T&C online.  Visit for more information.',
+    keywords: ['']
+  }, "referral-terms-and-conditions");
+
+  return commonMetadata;
+}
 
 
 export default function ReferralTermsAndConditions() {
