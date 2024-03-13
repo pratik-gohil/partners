@@ -1,6 +1,19 @@
 
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { getMetaData } from "../layout";
+
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Terms of Use',
+    description: 'Mirae Asset Partners terms of use - Read the entire set of terms of use online. Visit our website for more information and go through our policies carefully!',
+    keywords: ['']
+  });
+  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/terms-of-use"
+  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/terms-of-use"
+
+  return commonMetadata;
+}
 
 
 export default function TermOfUse() {

@@ -1,7 +1,19 @@
 
 import ListOfAuthorisedPersonsSec from "./ListOfAuthorisedPersonsSec/ListOfAuthorisedPersonsSec";
 import AccountOfDisciplinaryReasonsSec from "./AccountOfDisciplinaryReasonsSec/AccountOfDisciplinaryReasonsSec";
+import { getMetaData } from "../layout";
 
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Our Authorized Partner Listing',
+    description: 'Get the latest information about our authorized partners listing details at Mirae Asset Partners. Visit us to stay updated and invest wisely!',
+    keywords: ['authorized partner list', ' authorized partners']
+  });
+  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/partner-listing"
+  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/partner-listing"
+
+  return commonMetadata;
+}
 
 export default function PartnerListingPage() {
   return (

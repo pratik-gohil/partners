@@ -1,29 +1,13 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import Header from "../components/maHeader/Header";
-// import Footer from "../components/maFooter/Footer";
 const Footer = dynamic(() => import('@/components/maFooter/Footer'))
 import styles from "./maCommanStyle.module.scss";
 import { PreloadResources } from "./preload-resources";
 import dynamic from "next/dynamic";
 import BreadcrumbSec from "@/components/breadcrumb/BreadcrumbSec";
 
-/* export const metadata: Metadata = {
-  title: "Become A Sub Broker - Partner With Us | Mirae Asset Partners",
-  description: "Become a sub broker or authorized partner with Mirae Asset. Earn 100% revenue sharing, high pay-outs, easy dashboard & more. Join Mirae Asset partner program today!",
-  keywords:"become a sub broker, partner with us, become an authorized partner"
-};
- */
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Mirae Asset Partners',
-    default: 'Become A Sub Broker - Partner With Us | Mirae Asset Partners', // a default is required when creating a template
-  },  
-  description: 'Become a sub broker or authorized partner with Mirae Asset. Earn 100% revenue sharing, high pay-outs, easy dashboard & more. Join Mirae Asset partner program today!',
-  keywords: ['become a sub broker', 'partner with us', 'become an authorized partner'],
+export let commonMetadata = {
   openGraph: {
-    title: 'Become A Sub Broker - Partner With Us',
-    description: 'Become a sub broker or authorized partner with Mirae Asset. Earn 100% revenue sharing, high pay-outs, easy dashboard & more. Join Mirae Asset partner program today!',
     url: 'https://www.miraeassetpartners.com',
     siteName: 'Mirae Asset Partners',
     images: [
@@ -33,11 +17,10 @@ export const metadata: Metadata = {
     ],
     type: 'website',
   },
+
   twitter: {
-    site: "",
+    site: "Mirae Asset Partners",
     card: 'summary',
-    title: 'Become A Sub Broker - Partner With Us | Mirae Asset Partners',
-    description: 'Become a sub broker or authorized partner with Mirae Asset. Earn 100% revenue sharing, high pay-outs, easy dashboard & more. Join Mirae Asset partner program today!',
     images: ['https://www.miraeassetpartners.com/asset/images/mirae-logo.svg'], // Must be an absolute URL
   },
   icons: {
@@ -53,9 +36,29 @@ export const metadata: Metadata = {
       'ta-in': 'https://www.miraeassetpartners.com/ta',
     },
   },
-  metadataBase: new URL('http://localhost:3000'),
 }
 
+export const getMetaData = (data: any) => {
+  const commonMetadataCopy = JSON.parse(JSON.stringify(commonMetadata))
+  return {
+    ...commonMetadataCopy, ...data, other: {
+      title: data.title + " | Mirae Asset Partners",
+    },
+  };
+}
+
+export async function generateMetadata() {
+  return {
+    title: {
+      template: '%s | Mirae Asset Partners',
+      default: 'Become A Sub Broker - Partner With Us | Mirae Asset Partners', // a default is required when creating a template
+    },
+    description: 'Become a sub broker or authorized partner with Mirae Asset. Earn 100% revenue sharing, high pay-outs, easy dashboard & more. Join Mirae Asset partner program today!',
+    keywords: ['become a sub broker', 'partner with us', 'become an authorized partner'],
+    metadataBase: new URL('http://localhost:3000'),
+    ...commonMetadata
+  }
+}
 
 export default function RootLayout({
   children,

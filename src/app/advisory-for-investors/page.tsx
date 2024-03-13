@@ -1,6 +1,19 @@
 
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { getMetaData } from "../layout";
+
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Advisory for Investors',
+    description: 'Read the advisory for investors with Mirae Asset Partners, KYC compliance, and demat account holders carefully. For more information read the complete advisory on our page.',
+    keywords: ['']
+  });
+  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/advisory-for-investors"
+  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/advisory-for-investors"
+
+  return commonMetadata;
+}
 
 
 export default function AdvisoryForInvestors() {
