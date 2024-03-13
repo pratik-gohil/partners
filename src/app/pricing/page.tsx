@@ -9,9 +9,7 @@ export async function generateMetadata() {
     title: 'Sub Broker Commission Structure - Sub Brokers Income',
     description: 'Interested in becoming a sub-broker or authorized partner? Explore the commission structure for sub-brokers at Mirae Asset Partners.',
     keywords: ['sub broker income', ' sub broker commission structure', 'sub broker earnings']
-  });
-  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/pricing"
-  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/pricing"
+  }, "pricing");
 
   return commonMetadata;
 }

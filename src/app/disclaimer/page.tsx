@@ -9,9 +9,7 @@ export async function generateMetadata() {
     title: 'Disclaimer & Risk Document for Market Information',
     description: 'It is essential to read the disclaimer & risk document carefully before becoming an authorized partner with Mirae Asset.',
     keywords: ['']
-  });
-  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/disclaimer"
-  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/disclaimer"
+  }, "disclaimer");
 
   return commonMetadata;
 }

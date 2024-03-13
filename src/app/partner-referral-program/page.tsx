@@ -11,9 +11,7 @@ export async function generateMetadata() {
     title: 'Refer a partner & earn ₹6,000',
     description: 'Refer and Earn ₹6000 instant rewards for each sub-broker referred to Mirae Asset Partners. Refer an Authorized Partner now & start earning!',
     keywords: ['partner refer and earn', 'partner referral', 'partner referral program']
-  });
-  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/partner-referral-program"
-  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/partner-referral-program"
+  }, "partner-referral-program");
 
   return commonMetadata;
 }

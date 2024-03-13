@@ -8,9 +8,7 @@ export async function generateMetadata() {
     title: 'Terms of Use',
     description: 'Mirae Asset Partners terms of use - Read the entire set of terms of use online. Visit our website for more information and go through our policies carefully!',
     keywords: ['']
-  });
-  commonMetadata.openGraph.url = "https://www.miraeassetpartners.com/terms-of-use"
-  commonMetadata.alternates.canonical = "https://www.miraeassetpartners.com/terms-of-use"
+  }, "terms-of-use");
 
   return commonMetadata;
 }
