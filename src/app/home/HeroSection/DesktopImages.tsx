@@ -2,7 +2,7 @@
 
 import useUserAgent from '@/lib/hooks/useUserAgent'
 import React, { useEffect, useState } from 'react'
-import BannerBgImg from "../../../../public/bannerBgImg.webp";
+/* import BannerBgImg from "../../../../public/bannerBgImg.webp"; */
 import BackBgLeftImg from "../../../../public/backBgLeftImg.webp";
 
 function DesktopImages({ styles }: any) {
@@ -15,9 +15,8 @@ function DesktopImages({ styles }: any) {
     }, [currentDevice])
 
     return (
-        flag && <>
-            <div className={`${styles.fImg} ${styles.deskView}`}><img src={BannerBgImg.src} alt="" /></div>
-            <div className={`${styles.sImg} ${styles.deskView}`}><img src={BackBgLeftImg.src} alt="" /></div>
+        flag && <> 
+            <div className={`${styles.sImg} ${styles.deskView}`}><img src={BackBgLeftImg.src} alt="" /></div> 
         </>
     )
 }
