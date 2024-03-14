@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import styles from "./ThankYouModal.module.scss";
+import Image from 'next/image';
 
 const ThankYouModal = ({ onClose }: any) => {
     return (
@@ -14,12 +15,11 @@ const ThankYouModal = ({ onClose }: any) => {
                 <div className={`${styles.modalBody}`}>
 
                     <div className={`${styles.thankinndiv}`}>
-                        <img
-                            className="lazy lz-entered lz-loaded"
-                            data-src="/succesfull-icon.png"
-                            alt=""
-                            data-ll-status="loaded"
-                            src="/succesfull-icon.png"
+                        <Image
+                            width={200}
+                            height={200}
+                            alt="success"
+                            src="/payment-succesfull.gif"
                         />
                         <h3 >Thank you sharing this growth opportunity with your friends!</h3>
                         <h5>The more the merrier!</h5>
@@ -30,12 +30,12 @@ const ThankYouModal = ({ onClose }: any) => {
                             target="_blank"
                         >
                             Click to share via{" "}
-                            <img
-                                className="lazy lz-entered lz-loaded"
-                                data-src="/whatsapp-icon.png"
-                                alt=""
+                            <Image
+                                width={10}
+                                height={10}
+                                alt="whatsapp"
                                 data-ll-status="loaded"
-                                src="/whatsapp-icon.png"
+                                src="/whatsapp-icon.webp"
                             />
                         </a>
                     </div>

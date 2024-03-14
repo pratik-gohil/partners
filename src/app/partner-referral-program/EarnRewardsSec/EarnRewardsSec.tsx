@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from './EarnRewardsSec.module.scss'
+import Image from 'next/image'
 
 function EarnRewardsSec() {
   return (
     <section className={`${styles.earnRewardsSec}`}>
       <div className={`${styles.maContainer} ${styles.flex}`}>
         <div className={`${styles.lhsWrap}`}>
-          <img src="/referrals/reward-box-new.webp" alt="rewards" title="rewards" />
+          <Image width={250} height={250} src="/referrals/reward-box-new.webp" alt="rewards" title="rewards" />
         </div>
         <div className={`${styles.rhsWrap}`}>
           <h2 className={`${styles.secTitle} `}>Share opportunity. Grow community.<span>Earn rewards!</span></h2>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./LanguageDropdown.module.scss";
+import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
 function LangguageDropdown() {
     const [showOptions, setShowOptions] = useState(false);
 
@@ -20,61 +21,30 @@ function LangguageDropdown() {
                 <label id="lblCurLang" className={`${styles.languageSelectLabel}`}>
                     English
                 </label>
-                {/* <img
-                    src="/down-arrow.png"
-                    alt="mstock"
-                    width={12}
-                    height={6}
-                    className={`${styles.arrowImgMargin}`}
-                /> */}
                 <br />
                 {showOptions && <ul className={`${styles.listUstyled}`}>
                     <li style={{ display: "list-item" }}>
                         <label className="language-select-labell">&nbsp;&nbsp;Select</label>
-                        {/* <img
-                            src="/down-arrow.png"
-                            alt="mstock"
-                            width={12}
-                            height={6}
-                            style={{ transform: "rotate(180deg)" }}
-                            className={`${styles.arrowImgMargin}`}
-                        /> */}
                     </li>
                     <li
                         id="liEn"
                         style={{ backgroundColor: "white", display: "list-item" }}
                     >
-                        <a
+                        <RetainQueryLink
                             href="/"
-                            style={{
-                                color: "#333333",
-                                textAlign: "left",
-                                marginLeft: 1,
-                                width: "100%",
-                                display: "block"
-                            }}
                         >
-                            {" "}
                             &nbsp;&nbsp;English
-                        </a>
+                        </RetainQueryLink>
                     </li>
                     <li
                         id="liHi"
                         style={{ backgroundColor: "white", display: "list-item" }}
                     >
-                        <a
+                        <RetainQueryLink
                             href="/hi"
-                            style={{
-                                color: "#333333",
-                                textAlign: "left",
-                                marginLeft: 1,
-                                width: "100%",
-                                display: "block"
-                            }}
                         >
-                            {" "}
                             &nbsp;&nbsp;Hindi
-                        </a>
+                        </RetainQueryLink>
                     </li>
                 </ul>}
             </div>
