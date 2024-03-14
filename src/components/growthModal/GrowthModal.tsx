@@ -121,13 +121,13 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
                                         name: '', mobile: ''
                                     }])}
                                         className={`${styles.deletBad} ${styles.addBad}`}>
-                                        <img src="https://www.miraeassetpartners.com/asset/images/add-icon.svg" className={`${styles.addiconadd}`} alt="" />
+                                        <img src="https://www.miraeassetpartners.com/asset/images/add-icon.svg" className={`${styles.addiconadd}`} alt="add" />
                                     </div>) : (<div onClick={() => { remove(i) }} className={`${styles.deletBad} ${styles.addBad}`} >
-                                        <img src="https://www.miraeassetpartners.com/asset/images/icon-delete.svg" className={`${styles.deleticonadd}`} alt="" />
+                                        <img src="https://www.miraeassetpartners.com/asset/images/icon-delete.svg" className={`${styles.deleticonadd}`} alt="delete" />
                                     </div>)}
                                 </div>
                             ))}
-                          
+
                         </div>
                     </div>
                     <div

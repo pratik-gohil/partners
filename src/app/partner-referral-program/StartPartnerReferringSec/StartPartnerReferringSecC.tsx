@@ -144,7 +144,7 @@ function StartPartnerReferringSecC() {
                                             {
                                                 i !== 0 && (
                                                     <div className={styles["deletB-ad"]} onClick={() => remove(i)} >
-                                                        <img src="/icon-delete.svg" alt="" style={{ width: '20px' }} />
+                                                        <img src="/icon-delete.svg" alt="delete" style={{ width: '20px' }} />
                                                     </div>
                                                 )
                                             }

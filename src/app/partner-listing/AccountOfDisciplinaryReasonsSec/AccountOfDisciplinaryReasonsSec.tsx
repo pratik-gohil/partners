@@ -28,13 +28,6 @@ function AccountOfDisciplinaryReasonsSec() {
                                 <tr>
                                     <td colSpan={5}>Partner Details not available</td>
                                 </tr>
-                                {/* <tr>
-                                    <td>12345</td>
-                                    <td>12345</td>
-                                    <td>12345</td>
-                                    <td>12345</td>
-                                    <td>12345</td>
-                                </tr> */}
                             </tbody>
                         </table>
                     </div>

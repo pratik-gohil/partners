@@ -14,7 +14,7 @@ function SitemapMenuList() {
                         <li><a href="/faq">Partner FAQs</a></li>
                     </ul>
                     <ul className={`${styles.sitemapmainUl} ${styles.policybarLi}`}>
-                        <li><a href="/our-policies">Terms of Use</a></li>
+                        <li><a href="/terms-of-use">Terms of Use</a></li>
                         <li><a href="/disclaimer">Disclaimer</a></li>
                         <li><a href="/privacy-policy">Privacy Policy</a></li>
                         <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
@@ -24,7 +24,7 @@ function SitemapMenuList() {
                     </ul>
                 </div>
 
-                <div className="test">
+                {/* <div className="test">
                     <ul><b>Total Pages List :</b><br />
                         <li><a href="/">1. Home - Done</a></li>
                         <li><a href="/pricing">2. pricing - Done</a></li>
@@ -43,7 +43,7 @@ function SitemapMenuList() {
                         <li><a href="/referral-terms-and-conditions">13. referral-terms-and-conditions - Done</a></li>
                         <li><a href="/emargin-terms-and-conditions">14. emargin-terms-and-conditions - Done</a></li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </section>
     )

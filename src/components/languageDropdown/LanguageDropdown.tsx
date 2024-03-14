@@ -20,25 +20,10 @@ function LangguageDropdown() {
                 <label id="lblCurLang" className={`${styles.languageSelectLabel}`}>
                     English
                 </label>
-                {/* <img
-                    src="/down-arrow.png"
-                    alt="mstock"
-                    width={12}
-                    height={6}
-                    className={`${styles.arrowImgMargin}`}
-                /> */}
                 <br />
                 {showOptions && <ul className={`${styles.listUstyled}`}>
                     <li style={{ display: "list-item" }}>
                         <label className="language-select-labell">&nbsp;&nbsp;Select</label>
-                        {/* <img
-                            src="/down-arrow.png"
-                            alt="mstock"
-                            width={12}
-                            height={6}
-                            style={{ transform: "rotate(180deg)" }}
-                            className={`${styles.arrowImgMargin}`}
-                        /> */}
                     </li>
                     <li
                         id="liEn"

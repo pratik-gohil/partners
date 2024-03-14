@@ -5,7 +5,7 @@ import ThankYouModal from '../thankyouModal/ThankYouModal';
 import PreRegisterMoad from '../PreRegisterModal/PreRegisterMoad';
 
 const FormModal = ({ onClose }: { onClose: () => void }) => {
-    const [index, setIndex] = useState(0);
+    const [index, setIndex] = useState(2);
     const [growthModalState, setGrowthModalState] = useState();
     return (
         <>
