@@ -38,12 +38,12 @@
 
 .modalInner {
   animation-name: in;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 
 .modal.out > div {
   animation-name: out;
-  animation-duration: 0.5s;
+  animation-duration: 1s;
 }
 
 @media all and (max-width: 980px) {
