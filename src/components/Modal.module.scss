@@ -19,7 +19,7 @@
 }
 
 .modal > div {
-    width: 100%;
+    width: max-content;
 }
 
 .modal>div {
@@ -30,4 +30,11 @@
 .modal.out>div {
     animation-name: out;
     animation-duration: .5s;
+}
+
+
+@media all and (max-width:980px) {
+    .modal > div {
+        width: 100%;
+    }
 }
