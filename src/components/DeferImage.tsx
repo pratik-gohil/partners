@@ -1,4 +1,4 @@
-import { useInView } from '@/hooks/useInView';
+import { useInView } from '@/lib/hooks/useInView';
 import React, { ComponentProps, useRef } from 'react'
 
 export const DeferedImage = (props: ComponentProps<"img">) => {

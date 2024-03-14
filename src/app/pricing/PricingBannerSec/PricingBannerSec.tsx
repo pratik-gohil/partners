@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './PricingBannerSec.module.scss'
+import Image from 'next/image'
 
 function PricingBannerSec() {
     return (
@@ -15,7 +16,7 @@ function PricingBannerSec() {
                     </div>
                     <div className={`${styles.flex} ${styles.imgWrap}`}>
                         <div className={`${styles.pricingBannerImgBlock}`}>
-                            <img src="/pricing-banner-100-perce-img.webp" alt="" />
+                            <Image width={500} height={500} src="/pricing-banner-100-perce-img.webp" alt="pricing" />
                         </div>
                         <div className={`${styles.pricingBannerRightBlock}`}>
                             <div className={`${styles.brotextBr}`}>Brokerage</div>

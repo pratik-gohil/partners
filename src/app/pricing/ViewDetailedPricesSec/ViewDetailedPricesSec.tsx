@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from 'react'
 import styles from './ViewDetailedPricesSec.module.scss'
+import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
+import Image from 'next/image';
 
 function ViewDetailedPricesSec() {
-
     const [isVisible, setIsVisible] = useState(false);
 
     const toggleVisibility = () => {
@@ -13,16 +14,15 @@ function ViewDetailedPricesSec() {
     return (
         <section className={`${styles.viewDetailedPricesSec}`}>
             <div className={`${styles.maContainer}`}>
-
-
-
                 <h2 className={`${styles.secTitle} `}>View detailed pricing and payout details</h2>
-
                 <div className={`${styles.docsLinkBox}`} id='partnerRegistration'>
-                    <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><img src="/pdf-icon.webp" alt="" /> <span>Download complete partner income sharing details</span></a>
-                    <a href="/terms-and-conditions" className={`${styles.halfWrapAlink}`}><img src="/terms-and-conditions-icon.webp" alt="" /> <span>Payout Terms and Conditions</span></a>
+                    <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><Image width={50} height={50} src="/pdf-icon.webp" alt="pdf" /> <span>Download complete partner income sharing details</span></a>
+                    <RetainQueryLink href="/terms-and-conditions">
+                        <div className={`${styles.halfWrapAlink}`}>
+                            <Image width={50} height={50} src="/terms-and-conditions-icon.webp" alt="terms&conditions" /> <span>Payout Terms and Conditions</span>
+                        </div>
+                    </RetainQueryLink>
                 </div>
-
 
                 <div className={`${styles.otherChargeAccBox}`}>
                     <div className={`${styles.accHeadBox}`}>
@@ -32,9 +32,9 @@ function ViewDetailedPricesSec() {
                         </div>
                         <div className={`${styles.accordingBtn} ${isVisible ? styles["active"] : styles[""]}`} onClick={toggleVisibility}>
                             {isVisible ? (
-                                <><span>View Less</span> <img src="/down-arrow2.webp" alt='View Less' width={21} height={12} /></>
+                                <><span>View Less</span> <Image src="/down-arrow2.webp" alt='View Less' width={15} height={15} /></>
                             ) : (
-                                <><span>View More</span> <img src="/down-arrow2.webp" alt='View More' width={21} height={12} /></>
+                                <><span>View More</span> <Image src="/down-arrow2.webp" alt='View More' width={15} height={15} /></>
                             )}
                         </div>
                     </div>
@@ -110,10 +110,6 @@ function ViewDetailedPricesSec() {
                         </ul>
                     </div>
                 </div>
-
-
-
-
             </div>
         </section>
     )

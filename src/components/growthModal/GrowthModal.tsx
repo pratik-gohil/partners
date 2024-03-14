@@ -6,6 +6,7 @@ import { phoneRegex } from '@/lib/constants/phoneReg';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { SubmitHandler, useFieldArray, useForm } from 'react-hook-form';
 import http from '@/lib/http/http';
+import Image from 'next/image';
 
 const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
     const refschema = z.object({
@@ -48,7 +49,6 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
         if (resdata.status === 0) {
             setIndex(2)
         }
-
     }
 
     return (
@@ -117,17 +117,23 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
                                             </div>
                                         </li>
                                     </ul>
-                                    {i === 0 ? (<div onClick={() => append([{
-                                        name: '', mobile: ''
-                                    }])}
-                                        className={`${styles.deletBad} ${styles.addBad}`}>
-                                        <img src="https://www.miraeassetpartners.com/asset/images/add-icon.svg" className={`${styles.addiconadd}`} alt="" />
-                                    </div>) : (<div onClick={() => { remove(i) }} className={`${styles.deletBad} ${styles.addBad}`} >
-                                        <img src="https://www.miraeassetpartners.com/asset/images/icon-delete.svg" className={`${styles.deleticonadd}`} alt="" />
+                                    {i === 0 ? fields.length <= 4 ? (
+                                        <div onClick={() => append([{
+                                            name: '', mobile: ''
+                                        }])}
+                                            className={`${styles.deletBad} ${styles.addBad}`}>
+                                            <Image width={10} height={10} src="/icon-add.svg" className={`${styles.addiconadd}`} alt="add" />
+                                        </div>
+                                    ) : <div style={{
+                                        width: "80px",
+                                        height: 0,
+                                        display: "inline-block"
+                                    }}></div> : (<div onClick={() => { remove(i) }} className={`${styles.deletBad} ${styles.addBad}`} >
+                                        <Image width={10} height={10} src="/icon-delete.svg" className={`${styles.deleticonadd}`} alt="delete" />
                                     </div>)}
                                 </div>
                             ))}
-                          
+
                         </div>
                     </div>
                     <div

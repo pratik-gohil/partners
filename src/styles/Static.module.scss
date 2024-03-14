@@ -4,6 +4,10 @@
     padding-top: 40px;
 }
 
+.staticSec a {
+    word-wrap: break-word;
+}
+
 .staticSec p {
     margin-bottom: 20px;
 }
@@ -188,6 +192,9 @@
 .orangetxt {
     color: #f58220;
 }
+
 @media all and (max-width:767px) {
-.mainworTc{margin-top: 15px;}
+    .mainworTc {
+        margin-top: 15px;
+    }
 }

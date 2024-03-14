@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './PartRefProBannerSec.module.scss'
+import Image from 'next/image'
 
 function PartRefProBannerSec() {
     return (
@@ -10,12 +11,12 @@ function PartRefProBannerSec() {
                         <span>Refer a partner & share this</span>
                         <b className={`${styles.b1}`}>unbeatable</b>
                         <span>business</span>
-                        <b className={`${styles.b2}`}>opport<img src="/referrals/text-U-img.png" alt='opportunity…' />&nbsp;nity…</b>
+                        <b className={`${styles.b2}`}>opport<Image src="/referrals/text-U-img.webp" alt='opportunity…' width={45} height={45} quality={100} />&nbsp;nity…</b>
                     </h2>
                     <div className={`${styles.priceBandStrip}`}>₹6,000 per successful registration!</div>
                 </div>
                 <div className={`${styles.rhsWrap}`}>
-                    <img src="/referrals/banner-img.png" alt='Refer a partner & share this UNBEATABLE business OPPORTUNITY…' />
+                    <Image src="/referrals/banner-img.webp" alt='Refer a partner & share this UNBEATABLE business OPPORTUNITY…' width={500} height={500} quality={100} />
                 </div>
             </div>
         </section>
