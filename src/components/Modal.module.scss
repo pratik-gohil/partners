@@ -1,4 +1,4 @@
-/* @keyframes in {
+@keyframes in {
     from {
         bottom: 150%;
     }
@@ -16,23 +16,10 @@
     to {
         bottom: 150%;
     }
-} */
-
-.modal {
-    // height: '100vh', width: '100vw', zIndex: 10, position: 'fixed', inset: 0, background: 'rgba(0,0,0,.5)', overflow: 'auto'
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    background-color: rgba($color: #000000, $alpha: 0.5);
-    overflow: auto;
-    left: 0;
-    top: 0;
-
 }
 
-.modalInner {
-    top: 0%;
+.modal > div {
+    width: 100%;
 }
 
 .modal>div {
@@ -43,22 +30,4 @@
 .modal.out>div {
     animation-name: out;
     animation-duration: .5s;
-}
-
-@media all and (max-width:1279px) {
-    .modalInner {
-        width: 96%;
-    }
-}
-
-@media all and (max-width:980px) {
-    .modalInner {
-        width: 98%;
-        top: 3%;        
-        transform: translateX(-50%) !important;
-        min-height: calc(100% - (0.5rem* 2));
-        display: flex;
-        align-items: center;
-        position: relative !important;
-    }
 }
