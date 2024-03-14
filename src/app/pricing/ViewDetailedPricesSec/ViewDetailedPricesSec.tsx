@@ -18,7 +18,7 @@ function ViewDetailedPricesSec() {
 
                 <h2 className={`${styles.secTitle} `}>View detailed pricing and payout details</h2>
 
-                <div className={`${styles.docsLinkBox}`}>
+                <div className={`${styles.docsLinkBox}`} id='partnerRegistration'>
                     <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><img src="/pdf-icon.webp" alt="" /> <span>Download complete partner income sharing details</span></a>
                     <a href="/terms-and-conditions" className={`${styles.halfWrapAlink}`}><img src="/terms-and-conditions-icon.webp" alt="" /> <span>Payout Terms and Conditions</span></a>
                 </div>
@@ -32,9 +32,9 @@ function ViewDetailedPricesSec() {
                         </div>
                         <div className={`${styles.accordingBtn} ${isVisible ? styles["active"] : styles[""]}`} onClick={toggleVisibility}>
                             {isVisible ? (
-                                <><span>View Less</span> <img src="/down-arrow2.webp" /></>
+                                <><span>View Less</span> <img src="/down-arrow2.webp" alt='View Less' width={21} height={12} /></>
                             ) : (
-                                <><span>View More</span> <img src="/down-arrow2.webp" /></>
+                                <><span>View More</span> <img src="/down-arrow2.webp" alt='View More' width={21} height={12} /></>
                             )}
                         </div>
                     </div>

@@ -29,8 +29,8 @@ function ListOfAuthorisedPersonsSec() {
 
                 <div className={`${styles.tableWraper}`}>
                     <div className={`${styles.tableTopWrap}`}>
-                        <div className={`${styles.showSelectEntriesWrap}`}>Show<select value={entries} onChange={(e) => setEntries(Number(e.target.value))} name="apDataTableLength" > <option value={10}>10</option> <option value={25}>25</option> <option value={50}>50</option> <option value={100}>100</option> </select>Entries</div>
-                        <div className={`${styles.searchBoxWrap}`}>Search:<input type="search" className={`${styles.searchBox}`} placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} /></div>
+                        <div className={`${styles.showSelectEntriesWrap}`}><label htmlFor="showList">Show</label><select id="showList" value={entries} onChange={(e) => setEntries(Number(e.target.value))} name="apDataTableLength" > <option value={10}>10</option> <option value={25}>25</option> <option value={50}>50</option> <option value={100}>100</option> </select>Entries</div>
+                        <div className={`${styles.searchBoxWrap}`}><label htmlFor="Search">Search:</label><input id="Search" type="search" className={`${styles.searchBox}`} placeholder="Search..." value={search} onChange={(e) => setSearch(e.target.value)} aria-label="Search" /></div>
                     </div>
 
                     <AuthorisedPersonsTable entries={entries} setPage={setPage} page={page} data={data?.filter(d => d.name.includes(search))} />
