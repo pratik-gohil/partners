@@ -1,5 +1,5 @@
 "use client"
-import useScrollBlock from "@/hooks/useScrollBlock";
+import useScrollBlock from "@/lib/hooks/useScrollBlock";
 import { useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 type ClientPortalInterface = {
