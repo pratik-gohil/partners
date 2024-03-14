@@ -19,13 +19,15 @@ function StartPartnerReferringSecC() {
 
     const schema = z.object({
         name: z.string().min(1),
-        number: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' }).nonempty(),
+        mobile: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' }).nonempty(),
         agree: z.boolean(),
         reference: z.array(refschema)
     })
 
     const [showOTPModal, setShowOTPModal] = useState(false)
     const [showThankYouModal, setShowThankYouModal] = useState(false)
+
+    const [timer, setTimer] = useState(0);
 
     type FormData = z.infer<typeof schema>
 
@@ -39,7 +41,7 @@ function StartPartnerReferringSecC() {
         resolver: zodResolver(schema),
         defaultValues: {
             name: "",
-            number: '',
+            mobile: '',
             reference: [{ name: '', mobile: '' }]
         }
     })
@@ -48,11 +50,12 @@ function StartPartnerReferringSecC() {
         name: 'reference',
         control
     })
+
     const onSubmit: SubmitHandler<FormData> = async (data) => {
         const res = await http('/partners/getOTP', {
             method: 'POST',
             body: JSON.stringify({
-                mobile: data.number,
+                mobile: data.mobile,
                 name: data.name
             }),
             headers: {
@@ -64,6 +67,30 @@ function StartPartnerReferringSecC() {
         // @ts-ignore
         if (redData.status === 0) {
             setShowOTPModal(true);
+        }
+    }
+
+    const resendOTP = async ({ mobile, name }: { mobile: string, name: string }) => {
+        const res = await http('/partners/resendOTP', {
+            method: 'POST',
+            body: JSON.stringify({
+                mobile,
+                name
+            }),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+        })
+
+        const resData = await res.json()
+
+        if (resData.status === 0) {
+            setTimer(60);
+
+            setInterval(() => {
+                setTimer(t => t - 1)
+            }, 1000)
         }
     }
 
@@ -86,7 +113,7 @@ function StartPartnerReferringSecC() {
                                     />
                                     {
                                         errors.name && (
-                                            <p className={styles.error}> {errors.name.message}</p>
+                                            <p className={styles.error}>{errors.name.message}</p>
                                         )
                                     }
 
@@ -96,11 +123,11 @@ function StartPartnerReferringSecC() {
                                         type="tel"
                                         className={`${styles.formControl} ${styles.inputBox}`}
                                         placeholder="Your Mobile No."
-                                        {...register('number')}
+                                        {...register('mobile')}
                                     />
                                     {
-                                        errors.number && (
-                                            <p className={styles.error}> {errors.number.message}</p>
+                                        errors.mobile && (
+                                            <p className={styles.error}>{errors.mobile.message}</p>
                                         )
                                     }
                                 </div>
@@ -194,7 +221,7 @@ function StartPartnerReferringSecC() {
             </section >
             <Modal open={showOTPModal} onClose={() => { setShowOTPModal(false) }}>
                 {onClose =>
-                    <OtpModal onClose={onClose} onOTPVerified={() => setShowThankYouModal(true)} getValues={getValues} />
+                    <OtpModal resendOTP={resendOTP} timer={timer} onClose={onClose} onOTPVerified={() => setShowThankYouModal(true)} getValues={getValues} />
                 }
             </Modal>
             <Modal open={showThankYouModal} onClose={() => { setShowThankYouModal(false) }}>

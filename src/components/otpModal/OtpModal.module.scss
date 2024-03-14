@@ -1,5 +1,17 @@
 @import "../../styles/_common.scss";
 
+// Chrome, Safari, Edge, Opera
+.modalBody input::-webkit-outer-spin-button,
+.modalBody input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Firefox
+.modalBody input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 .formWrap {
   &.thankpopupMan {
     max-width: 500px;
@@ -50,6 +62,8 @@
 
 .setpinPopuparea img {
   display: inline-block;
+  margin-left: 0.5rem;
+  line-height: 1rem;
 }
 
 .setpinPopuparea h4 {
@@ -120,7 +134,8 @@
   margin-bottom: 15px;
 }
 
-.resetpopupBl p a {
+.resend {
+  cursor: pointer;
   display: inline-block;
   color: #ff7518;
   font-size: 14px;
