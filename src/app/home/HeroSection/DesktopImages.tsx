@@ -16,8 +16,8 @@ function DesktopImages({ styles }: any) {
 
     return (
         flag && <>
-            <div className={`${styles.fImg} ${styles.deskView}`}><img src={BannerBgImg.src} alt="" /></div>
-            <div className={`${styles.sImg} ${styles.deskView}`}><img src={BackBgLeftImg.src} alt="" /></div>
+            <div className={`${styles.fImg} ${styles.deskView}`}><img src={BannerBgImg.src} alt="Banner" /></div>
+            <div className={`${styles.sImg} ${styles.deskView}`}><img src={BackBgLeftImg.src} alt="Stars" /></div>
         </>
     )
 }

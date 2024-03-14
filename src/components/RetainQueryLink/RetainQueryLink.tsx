@@ -1,7 +1,7 @@
 "use client"
 import Link, { LinkProps } from "next/link";
 import { useSearchParams } from "next/navigation";
-import { PropsWithChildren } from "react";
+import { PropsWithChildren, Suspense } from "react";
 
 const RetainQueryLink = ({ href, ...props }: LinkProps & PropsWithChildren) => {
     // 1. use useRouter hook to get access to the current query params
@@ -31,4 +31,11 @@ const RetainQueryLink = ({ href, ...props }: LinkProps & PropsWithChildren) => {
         />
     );
 };
-export default RetainQueryLink;
+
+const RetainQueryLinkWithSuspense = ({ href, ...props }: LinkProps & PropsWithChildren) => {
+    return <Suspense>
+        <RetainQueryLink href={href} {...props} />
+    </Suspense>
+}
+
+export default RetainQueryLinkWithSuspense;
