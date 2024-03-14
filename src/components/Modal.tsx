@@ -21,12 +21,6 @@ function Modal({ children, open, onClose }: ({ open: boolean, onClose: () => voi
                     {children(() => setClose(true))}
                 </div>
             </div>
-
-            {/* <div className={`${styles.modal} ${close && styles.out}`} onClick={(e) => { let target = e.target as Node; if (!modalRef.current?.contains(target)) { setClose(true) }; }}>
-                <div className={`${styles.modalInner}`} ref={modalRef}>
-                    {children(() => setClose(true))}
-                </div>
-            </div> */}
         </ClientPortal>
     )
 }
