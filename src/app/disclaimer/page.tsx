@@ -2,6 +2,17 @@
 
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { getMetaData } from "../layout";
+
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Disclaimer & Risk Document for Market Information',
+    description: 'It is essential to read the disclaimer & risk document carefully before becoming an authorized partner with Mirae Asset.',
+    keywords: ['']
+  }, "disclaimer");
+
+  return commonMetadata;
+}
 
 
 export default function Disclaimer() {

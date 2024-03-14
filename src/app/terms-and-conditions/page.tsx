@@ -1,6 +1,17 @@
 
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { getMetaData } from "../layout";
+
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Trading Terms and Conditions',
+    description: 'Mirae Asset Partners terms and conditions - Read the entire set of T&C online. More information on terms & conditions can be found on our page.',
+    keywords: ['']
+  }, "terms-and-conditions");
+
+  return commonMetadata;
+}
 
 
 export default function TermsAndConditions() {
