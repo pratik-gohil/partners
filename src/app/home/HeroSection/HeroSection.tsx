@@ -19,40 +19,45 @@ function HeroSection() {
     return (
         <>
             <section className={styles["topBannerSec"]}>
-                <div className={styles["maContainer"]}>
-                    <h1 style={{
-                        fontFamily: 'Open Sans',
-                        fontWeight: "600",
-                        color: "#043b72"
-                    }} className={styles["pageTitle"]}>Launching India&apos;s largest business partner program</h1>
-                    <div className={styles["bannerInnerBox"]}>
-                        <ul className={styles["lhsWrap"]}>
-                            <li>
-                                <GrowSVG />
-                                <span>Grow your <b>income by 5X</b></span></li>
-                            <li><TransparentPayoutSVG /><span><b>Transparent payouts.</b> No conditions</span></li>
-                            <li>
-                                <EasySellSVG />
-                                <span>Global brand, <b>easy to sell</b></span></li>
-                            <li>
-                                <HighRevenueSVG />
-                                <span><b>Lowest client rates,</b> yet higher revenue</span></li>
-                        </ul>
-                        <div className={styles["rhsWrap"]}>
-                            <Image priority={true} width={400} height={600} src="/hand-img.webp" alt="hand-img" title="hand-img" />
-                            <p className={styles["ctaUpText"]}>Opening for 1,000 partners on an invite-only basis</p>
-                            <button className={`${styles["maOrangeBtn"]} ${styles["becomePartnerBtn"]}`} onClick={() => setModalOpen(true)}>Pre-Register Now</button>
+                <div className={`${styles.bannerTopWrap}`}>
+                    <div className={styles["maContainer"]}>
+                        <h1 style={{
+                            fontFamily: 'Open Sans',
+                            fontWeight: "600",
+                            color: "#043b72"
+                        }} className={styles["pageTitle"]}>Launching India&apos;s largest business partner program</h1>
+                        <div className={styles["bannerInnerBox"]}>
+                            <ul className={styles["lhsWrap"]}>
+                                <li>
+                                    <GrowSVG />
+                                    <span>Grow your <b>income by 5X</b></span></li>
+                                <li><TransparentPayoutSVG /><span><b>Transparent payouts.</b> No conditions</span></li>
+                                <li>
+                                    <EasySellSVG />
+                                    <span>Global brand, <b>easy to sell</b></span></li>
+                                <li>
+                                    <HighRevenueSVG />
+                                    <span><b>Lowest client rates,</b> yet higher revenue</span></li>
+                            </ul>
+                            <div className={styles["rhsWrap"]}>
+                                <Image priority={true} width={400} height={600} src="/hand-img.webp" alt="hand-img" title="hand-img" />
+                                <p className={styles["ctaUpText"]}>Opening for 1,000 partners on an invite-only basis</p>
+                                <button className={`${styles["maOrangeBtn"]} ${styles["becomePartnerBtn"]}`} onClick={() => setModalOpen(true)}>Pre-Register Now</button>
+                            </div>
                         </div>
                     </div>
+                </div> 
+                <DesktopImages styles={styles} />   
+                <div className={`${styles.bottomWaveWrap}`}>
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" className={`${styles.bottomWave}`}>
+                        <path d="M-27.36,-42.91 C90.57,178.13 323.64,-53.77 508.17,19.25 L500.00,0.00 L26.80,-18.23 Z"></path>
+                    </svg>
                 </div>
-
-                <DesktopImages styles={styles} />
-
             </section>
 
             <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
                 {(onClose) => (<FormModal onClose={onClose} />)}
-            </Modal>
+            </Modal> 
         </>
     )
 }

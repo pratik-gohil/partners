@@ -25,7 +25,7 @@ function SitemapMenuList() {
                     </ul>
                 </div>
 
-                <div className="test">
+                {/* <div className="test">
                     <ul><b>Total Pages List :</b><br />
                         <li><RetainQueryLink href="/">1. Home - Done</RetainQueryLink></li>
                         <li><RetainQueryLink href="/pricing">2. pricing - Done</RetainQueryLink></li>
@@ -44,7 +44,7 @@ function SitemapMenuList() {
                         <li><RetainQueryLink href="/referral-terms-and-conditions">13. referral-terms-and-conditions - Done</RetainQueryLink></li>
                         <li><RetainQueryLink href="/emargin-terms-and-conditions">14. emargin-terms-and-conditions - Done</RetainQueryLink></li>
                     </ul>
-                </div>
+                </div> */}
             </div>
         </section>
     )
