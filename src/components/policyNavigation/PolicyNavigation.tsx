@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import Link from 'next/link';
+import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
 import { usePathname } from 'next/navigation';
 
 import styles from "./PolicyNavigation.module.scss";
@@ -21,45 +21,44 @@ const PolicyNavigation = () => {
                         className={`${isActive('/terms-of-use') ? styles.active : ''
                             }`}
                     >
-                        <Link href="/terms-of-use">Terms of Use</Link>
+                        <RetainQueryLink href="/terms-of-use">Terms of Use</RetainQueryLink>
                     </li>
                     <li
                         className={` ${isActive('/terms-and-conditions') ? styles.active : ''
                             }`}
                     >
-                        <Link href="/terms-and-conditions">Terms & Conditions</Link>
+                        <RetainQueryLink href="/terms-and-conditions">Terms & Conditions</RetainQueryLink>
                     </li>
                     <li
                         className={` ${isActive('/privacy-policy') ? styles.active : ''
                             }`}
                     >
-                        <Link href="/privacy-policy">Privacy</Link>
+                        <RetainQueryLink href="/privacy-policy">Privacy</RetainQueryLink>
                     </li>
                     <li
                         className={` ${isActive('/disclaimer') ? styles.active : ''
                             }`}
                     >
-                        <Link href="/disclaimer">Disclaimer</Link>
+                        <RetainQueryLink href="/disclaimer">Disclaimer</RetainQueryLink>
                     </li>
                     <li
                         className={` ${isActive('/advisory-for-investors') ? styles.active : ''
                             }`}
                     >
-                        <Link href="/advisory-for-investors">Advisory for Investors</Link>
+                        <RetainQueryLink href="/advisory-for-investors">Advisory for Investors</RetainQueryLink>
                     </li>
                     <li
                         className={` ${isActive('/referral-terms-and-conditions') ? styles.active : ''
                             }`}
                     >
-                        <Link href="/referral-terms-and-conditions">Referrals T&C</Link>
+                        <RetainQueryLink href="/referral-terms-and-conditions">Referrals T&C</RetainQueryLink>
                     </li>
                     <li
                         className={` ${isActive('/emargin-terms-and-conditions') ? styles.active : ''
                             }`}
                     >
-                        <Link href="/emargin-terms-and-conditions">MTF (eMargin) T&C</Link>
+                        <RetainQueryLink href="/emargin-terms-and-conditions">MTF (eMargin) T&C</RetainQueryLink>
                     </li>
-                    {/* Add additional navigation links here */}
                 </ul>
             </nav>
         </>

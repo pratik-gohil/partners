@@ -15,7 +15,7 @@ function PricingBannerSec() {
                     </div>
                     <div className={`${styles.flex} ${styles.imgWrap}`}>
                         <div className={`${styles.pricingBannerImgBlock}`}>
-                            <img src="/pricing-banner-100-perce-img.webp" alt="" />
+                            <img src="/pricing-banner-100-perce-img.webp" alt="pricing" />
                         </div>
                         <div className={`${styles.pricingBannerRightBlock}`}>
                             <div className={`${styles.brotextBr}`}>Brokerage</div>
