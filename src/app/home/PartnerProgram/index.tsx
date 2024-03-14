@@ -5,7 +5,8 @@ import StarSVG from '@/components/svgs/StarSVG';
 import RightArrowSVG from '@/components/svgs/RightArrowSVG';
 import FeeSVG from '@/components/svgs/FeeSVG';
 import UserSVG from '@/components/svgs/UserSVG';
-import PledgeSVG from '@/components/svgs/PledgeSVG';;
+import PledgeSVG from '@/components/svgs/PledgeSVG'; import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
+;
 
 function PartnerProgram() {
     const handleKnowMore = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
@@ -375,7 +376,7 @@ function PartnerProgram() {
                                 </p>
                             </ li>
                         </ul>
-                        <div className={styles["all-this-can-block"]}> <b>All this can<br /> become yours.</b><br /> <a href="/pricing">See detailed revenue sharing plans <RightArrowSVG /> </a>
+                        <div className={styles["all-this-can-block"]}> <b>All this can<br /> become yours.</b><br /> <RetainQueryLink href="/pricing">See detailed revenue sharing plans <RightArrowSVG /> </RetainQueryLink>
                         </div>
                     </div >
                 </div>

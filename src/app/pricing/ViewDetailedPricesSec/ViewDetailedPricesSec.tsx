@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import styles from './ViewDetailedPricesSec.module.scss'
+import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 
 function ViewDetailedPricesSec() {
 
@@ -20,7 +21,12 @@ function ViewDetailedPricesSec() {
 
                 <div className={`${styles.docsLinkBox}`} id='partnerRegistration'>
                     <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><img src="/pdf-icon.webp" alt="pdf" /> <span>Download complete partner income sharing details</span></a>
-                    <a href="/terms-and-conditions" className={`${styles.halfWrapAlink}`}><img src="/terms-and-conditions-icon.webp" alt="terms&conditions" /> <span>Payout Terms and Conditions</span></a>
+                    <RetainQueryLink href="/terms-and-conditions">
+                        <div className={`${styles.halfWrapAlink}`}>
+                            <img src="/terms-and-conditions-icon.webp" alt="terms&conditions" /> <span>Payout Terms and Conditions</span>
+                        </div>
+
+                    </RetainQueryLink>
                 </div>
 
 
