@@ -1,33 +1,75 @@
 @keyframes in {
-    from {
-        bottom: 150%;
-    }
+  from {
+    bottom: 150%;
+  }
 
-    to {
-        bottom: 50%;
-    }
+  to {
+    bottom: 50%;
+  }
 }
 
 @keyframes out {
+  from {
+    bottom: 50%;
+  }
+
+  to {
+    bottom: 150%;
+  }
+}
+
+.modal {
+  height: 100vh;
+  width: 100vw;
+  z-index: 10;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  overflow: auto;
+}
+
+.modalInner {
+  width: max-content;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+}
+
+.modalInner {
+  animation-name: in;
+  animation-duration: 0.5s;
+}
+
+.modal.out > div {
+  animation-name: out;
+  animation-duration: 0.5s;
+}
+
+@media all and (max-width: 980px) {
+  @keyframes in {
     from {
-        bottom: 50%;
+      top: -150%;
     }
 
     to {
-        bottom: 150%;
+      top: 0%;
     }
-}
+  }
 
-.modal > div {
-    width: 100%;
-}
+  @keyframes out {
+    from {
+      top: 0%;
+    }
 
-.modal>div {
-    animation-name: in;
-    animation-duration: .5s;
-}
+    to {
+      top: -150%;
+    }
+  }
 
-.modal.out>div {
-    animation-name: out;
-    animation-duration: .5s;
+  .modalInner {
+    inset: 20px;
+    width: calc(100% - 40px);
+    transform: none;
+  }
 }
