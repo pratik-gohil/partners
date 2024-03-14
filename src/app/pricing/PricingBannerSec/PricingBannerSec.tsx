@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from './PricingBannerSec.module.scss' 
+import styles from './PricingBannerSec.module.scss'
 
 function PricingBannerSec() {
     return (
         <section className={`${styles.pricingBannerSec}`}>
-            <div className={`${styles.maContainer}`}> 
+            <div className={`${styles.maContainer}`}>
 
                 <div className={`${styles.pricingBannerBlock}`}>
                     <div className={`${styles.listbanner2Li}`}>
@@ -27,15 +27,14 @@ function PricingBannerSec() {
                     </div>
                     <br />
                     <button className={`${styles.maOrangeBtn}`} data-toggle="modal" >Pre-Register Now</button>
-                    <p className={`${styles.aplinkSc}`}><a>View AP registration & onboarding charges</a></p>
+                    <p className={`${styles.aplinkSc}`}><a href='#partnerRegistration'>View AP registration & onboarding charges</a></p>
                 </div>
-        
+
             </div>
-        </section> 
+        </section>
 
 
     )
 }
 
 export default PricingBannerSec
- 

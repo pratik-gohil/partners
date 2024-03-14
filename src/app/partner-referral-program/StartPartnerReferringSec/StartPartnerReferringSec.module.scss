@@ -84,7 +84,7 @@
     column-gap: 30px;
     margin-top: 20px;
 
-    a {
+    /*  a {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -100,11 +100,12 @@
         vertical-align: top;
         min-width: 145px;
         cursor: pointer;
-    }
+    } */
 
     .referBtn {
         background: #f58220;
         color: #fff;
+        margin-left: 0px !important;
     }
 
     a svg {
