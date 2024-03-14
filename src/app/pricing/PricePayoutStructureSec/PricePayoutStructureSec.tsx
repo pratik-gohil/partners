@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./PricePayoutStructureSec.module.scss";
+import Image from "next/image";
 
 function PricePayoutStructureSec() {
   return (
@@ -119,7 +120,9 @@ function PricePayoutStructureSec() {
 
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/rs-icon-1.webp"
               alt="icon"
               title="icon"
@@ -210,7 +213,9 @@ function PricePayoutStructureSec() {
 
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/incom-from-icon.webp"
               alt="icon"
               title="icon"
@@ -293,7 +298,9 @@ function PricePayoutStructureSec() {
 
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/intrest-percent-icon.webp"
               alt="icon"
               title="icon"
@@ -352,7 +359,9 @@ function PricePayoutStructureSec() {
 
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/doc-icon.webp"
               alt="icon"
               title="icon"
@@ -404,7 +413,9 @@ function PricePayoutStructureSec() {
 
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/amc-pricing-icon.webp"
               alt="icon"
               title="icon"
@@ -480,7 +491,9 @@ function PricePayoutStructureSec() {
 
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/Unpledged-charges-icon.webp"
               alt="icon"
               title="icon"
@@ -547,7 +560,9 @@ function PricePayoutStructureSec() {
 
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/dp-sell-icon.webp"
               alt="icon"
               title="icon"
@@ -602,7 +617,9 @@ function PricePayoutStructureSec() {
 
           <div className={`${styles.tableTitleWrap} ${styles.flex}`}>
 
-            <img
+            <Image
+              width={40}
+              height={40}
               src="/payment-changes-icon.webp"
               alt="icon"
               title="icon"

@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from 'react'
 import styles from './RegOnboardChargesSec.module.scss'
+import Image from 'next/image';
 
 function RegOnboardChargesSec() {
-
     const [isVisible1, setIsVisible1] = useState(false);
     const [isVisible2, setIsVisible2] = useState(false);
 
@@ -22,7 +22,6 @@ function RegOnboardChargesSec() {
                     <p>There are certain charges applicable to get registered as an Authorised Partner.</p>
                     <p>You can refer the following table for these charges.</p>
                 </div>
-
                 <div className={`${styles.authorisedPartneUlBlock}`}>
                     <ul>
                         <li>Security deposit: ₹50,000 (Refundable)</li>
@@ -30,8 +29,6 @@ function RegOnboardChargesSec() {
                         <li>One-time Exchange Registration Charges: ₹ 22,420</li>
                     </ul>
                 </div>
-
-
                 <div className={`${styles.otherChargeAccBox}`}>
                     <div className={`${styles.accHeadBox}`}>
                         <div className={`${styles.lhsWrap}`}>
@@ -39,9 +36,9 @@ function RegOnboardChargesSec() {
                         </div>
                         <div className={`${styles.accordingBtn} ${isVisible1 ? styles["active"] : styles[""]}`} onClick={toggleVisibility1}>
                             {isVisible1 ? (
-                                <><span>View Less</span> <img src="/down-arrow2.webp" alt='View Less' width={21} height={12} /></>
+                                <><span>View Less</span> <Image width={15} height={15} src="/down-arrow2.webp" alt='View Less' /></>
                             ) : (
-                                <><span>View More</span> <img src="/down-arrow2.webp" alt='View More' width={21} height={12} /></>
+                                <><span>View More</span> <Image width={15} height={15} src="/down-arrow2.webp" alt='View More' /></>
                             )}
                         </div>
                     </div>
@@ -109,8 +106,6 @@ function RegOnboardChargesSec() {
                         </div>
                     </div>
                 </div>
-
-
                 <div className={`${styles.authorisedPartneUlBlock}`}>
                     <ul>
                         <li>AP Annual Maintenance Charges effective from April 2024: ₹10,620</li>
@@ -124,9 +119,9 @@ function RegOnboardChargesSec() {
                         </div>
                         <div className={`${styles.accordingBtn} ${isVisible2 ? styles["active"] : styles[""]}`} onClick={toggleVisibility2}>
                             {isVisible2 ? (
-                                <><span>View Less</span> <img src="/down-arrow2.webp" alt='View Less' /></>
+                                <><span>View Less</span> <Image width={15} height={15} src="/down-arrow2.webp" alt='View Less' /></>
                             ) : (
-                                <><span>View More</span> <img src="/down-arrow2.webp" alt='View More' /></>
+                                <><span>View More</span> <Image width={15} height={15} src="/down-arrow2.webp" alt='View More' /></>
                             )}
                         </div>
                     </div>
@@ -169,10 +164,6 @@ function RegOnboardChargesSec() {
                         </div>
                     </div>
                 </div>
-
-
-
-
                 <div className={`${styles.pricingNoteBlock}`}>
                     <b>Note: With regards to the security deposit</b>
                     <ul>
@@ -180,11 +171,6 @@ function RegOnboardChargesSec() {
                         <li>It is refundable and interest-free</li>
                     </ul>
                 </div>
-
-
-
-
-
             </div>
         </section>
     )

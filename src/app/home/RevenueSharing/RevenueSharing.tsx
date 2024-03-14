@@ -15,7 +15,7 @@ function RevenueSharing() {
                     </div>
                     <div className={styles["midRsDivider"]}>
                         <span className={styles["dot1"]}></span>
-                        <Image width={100} height={100} alt="Revenue Sharing" src="/revenueSharing-midd.webp" />
+                        <Image width={500} height={500} alt="Revenue Sharing" src="/revenueSharing-midd.webp" />
                         <span className={styles["dot2"]}></span>
                     </div>
                     <div className={styles["un100BrokKeyPoints"]}>

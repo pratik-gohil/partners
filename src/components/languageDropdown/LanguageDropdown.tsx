@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./LanguageDropdown.module.scss";
+import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
 function LangguageDropdown() {
     const [showOptions, setShowOptions] = useState(false);
 
@@ -29,37 +30,21 @@ function LangguageDropdown() {
                         id="liEn"
                         style={{ backgroundColor: "white", display: "list-item" }}
                     >
-                        <a
+                        <RetainQueryLink
                             href="/"
-                            style={{
-                                color: "#333333",
-                                textAlign: "left",
-                                marginLeft: 1,
-                                width: "100%",
-                                display: "block"
-                            }}
                         >
-                            {" "}
                             &nbsp;&nbsp;English
-                        </a>
+                        </RetainQueryLink>
                     </li>
                     <li
                         id="liHi"
                         style={{ backgroundColor: "white", display: "list-item" }}
                     >
-                        <a
+                        <RetainQueryLink
                             href="/hi"
-                            style={{
-                                color: "#333333",
-                                textAlign: "left",
-                                marginLeft: 1,
-                                width: "100%",
-                                display: "block"
-                            }}
                         >
-                            {" "}
                             &nbsp;&nbsp;Hindi
-                        </a>
+                        </RetainQueryLink>
                     </li>
                 </ul>}
             </div>
