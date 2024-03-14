@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import styles from "./ThankYouOtpModal.module.scss";
+import Image from 'next/image';
 
 const ThankYouOtpModal = ({ onClose }: any) => {
     return (
@@ -13,7 +14,7 @@ const ThankYouOtpModal = ({ onClose }: any) => {
                 </div>
                 <div className={`${styles.modalBody}`}>
                     <div className={`${styles.thankyoupat}`}>
-                        <img src="/payment-succesfull.gif" alt="Succesfull icon" />
+                        <Image width={100} height={100} src="/payment-succesfull.gif" alt="Succesfull icon" />
                         <h2>Thank You!</h2>
                         <p>
                             Your referral lead has been submitted successfully! Rewards will be credited

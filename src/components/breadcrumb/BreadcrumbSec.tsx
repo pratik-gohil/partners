@@ -4,6 +4,7 @@ import React from 'react'
 import styles from "./BreadcrumbSec.module.scss";
 import { usePathname } from 'next/navigation';
 import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
+import Image from 'next/image';
 
 const data = {
     "/pricing": "Pricing",
@@ -26,14 +27,15 @@ const BreadcrumbSec = () => {
     // @ts-ignore
     const innerPage = data[pathname]
     return (
-        innerPage && (<div className={`${styles.breadcrumbSec}`}>
-            <div className={`${styles.maContainer}`}>
-                <ul>
-                    <li><RetainQueryLink href="/"><img src="/icon-home.svg" width="15" height="15" alt="home" title="home" /></RetainQueryLink></li>
-                    <li>{innerPage}</li>
-                </ul>
-            </div>
-        </div>)
+        innerPage && (
+            <div className={`${styles.breadcrumbSec}`}>
+                <div className={`${styles.maContainer}`}>
+                    <ul>
+                        <li><RetainQueryLink href="/"><Image src="/icon-home.svg" width={15} height={15} alt="home" title="home" /></RetainQueryLink></li>
+                        <li>{innerPage}</li>
+                    </ul>
+                </div>
+            </div>)
     )
 }
 

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./OtpModal.module.scss";
 import http from '@/lib/http/http';
+import Image from 'next/image';
 
 const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
     const [OTP, setOTP] = useState({})
@@ -30,18 +31,9 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
                     const submit = await http('/partners/addPartnerReferral', {
                         method: "POST",
                         body: JSON.stringify({
-                            referrerName: 'Riva',
-                            referrerMobile: '778899767',
-                            refrees: [
-                                {
-                                    name: 'DFGDFGd',
-                                    mobile: '8899685576'
-                                },
-                                {
-                                    name: 'FDHJGF',
-                                    mobile: '7799685576'
-                                }
-                            ]
+                            referrerName: vals.name,
+                            referrerMobile: vals.number,
+                            referees: vals.reference
                         }),
                         headers: {
                             "Content-Type": "application/json"
@@ -68,10 +60,10 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
                 </div>
                 <div className={`${styles.modalBody}`}>
                     <div className={`${styles.setpinPopuparea} ${styles.resetpopupBl}`}>
-                        <img src="/set-pin-icon.webp" alt="setpin-icon" />
+                        <Image width={50} height={50} src="/set-pin-icon.webp" alt="setpin-icon" />
                         <h4>
                             <span id="otpMessage" /> +91 {vals.number}
-                            <img src="/edit-icon.svg" onClick={onClose} aria-label="Close" alt="Icon" />
+                            <Image width={20} height={20} src="/edit-icon.svg" onClick={onClose} aria-label="Close" alt="Icon" />
                         </h4>
                         <p>Rewards will be credited to this mobile number only.</p>
                         <div className={`${styles.otpboxInput}`}>

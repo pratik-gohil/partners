@@ -7,6 +7,7 @@ import LinkedinLogo from '../svgs/LinkedinLogo';
 import TwitterLogo from '../svgs/TwitterLogo';
 import YoutubeLogo from '../svgs/YoutubeLogo';
 import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -55,7 +56,7 @@ const Footer = () => {
                 <div className={`${styles.midWrap}`}>
                     <div className={`${styles.maContainer}`}>
                         <RetainQueryLink href="/">
-                            <img src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
+                            <Image src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={70} />
                         </RetainQueryLink>
                         <span>Where <b>YOU</b> come first</span>
                     </div>
