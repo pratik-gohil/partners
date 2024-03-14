@@ -16,8 +16,8 @@ function Modal({ children, open, onClose }: ({ open: boolean, onClose: () => voi
 
     return (
         <ClientPortal selector='modal-portal' show={open}>
-            <div className={`${styles.modal} ${close && styles.out}`} onClick={(e) => { let target = e.target as Node; if (!modalRef.current?.contains(target)) { setClose(true) }; }} style={{ height: '100vh', width: '100vw', zIndex: 10, position: 'fixed', inset: 0, background: 'rgba(0,0,0,.5)', overflow: 'auto' }}>
-                <div className={`${styles.modalInner}`} ref={modalRef} style={{ position: 'absolute', bottom: '50%', left: '50%', transform: 'translateX(-50%) translateY(50%)' }}>
+            <div className={`${styles.modal} ${close && styles.out}`} onClick={(e) => { let target = e.target as Node; if (!modalRef.current?.contains(target)) { setClose(true) }; }}>
+                <div className={`${styles.modalInner}`} ref={modalRef}>
                     {children(() => setClose(true))}
                 </div>
             </div>
