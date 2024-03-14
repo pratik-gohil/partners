@@ -16,12 +16,9 @@ export async function generateMetadata() {
 
 export default function AdvisoryForInvestors() {
   return (
-    <>z
-
+    <>
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <h2 className={`${styles.secTitle} `}>Our Policies</h2>
-          <p className={`${styles.textCenter} ${styles.font14}`}>We suggest you go through our policies carefully, and keep visiting for updates.</p>
           <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Advisory - For Investors</h1>
@@ -324,7 +321,7 @@ export default function AdvisoryForInvestors() {
               </li>
             </ul>
             <div className={`${styles.title}`}>Advisory To Demat Account Holders</div>
-            <h3 style={{ fontSize: 15 }}>Do’s</h3>
+            <h2 style={{ fontSize: 15 }}>Do’s</h2>
             <ul className={`${styles.compliancetxt}`}>
               <li>
                 Register your email ID in your demat account by approaching your
@@ -416,7 +413,7 @@ export default function AdvisoryForInvestors() {
                 the password at regular intervals.{" "}
               </li>
             </ul>
-            <h3 style={{ fontSize: 15 }}>Dont’s</h3>
+            <h2 style={{ fontSize: 15 }}>Dont’s</h2>
             <ul className={`${styles.compliancetxt}`}>
               <li>Do not leave your DIS book with anyone else. </li>
               <li>Do not sign blank DIS as it is equivalent to a bearer cheque. </li>
