@@ -28,13 +28,13 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
     }
 
     const schema = z.object({
-        name: z.string().min(3, { message: 'must be atleast 3 characters' }),
+        name: z.string().min(1),
         registrationType: z.enum(["Individual",
             "Partnership firm",
             "Limited Liability Partnership (LLP)",
             "Corporate"
         ]),
-        businessName: z.string().min(3, { message: 'must be atleast 3 characters' }),
+        businessName: z.string().min(1),
         mobile: z.string().regex(phoneRegex, "Invalid mobile number").refine((val) => verifyContact({ mobile: val }), { message: "Mobile number already exists" }),
         email: z.string()
             .min(1)
