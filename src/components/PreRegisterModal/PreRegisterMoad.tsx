@@ -4,27 +4,9 @@ import SelectMenu from '../SelectMenu/SelectMenu';
 import { useForm } from 'react-hook-form';
 import http from '@/lib/http/http';
 import { validateEmail, validateName, validatePhone } from '@/lib/constants/common';
+import { verifyContact } from '@/lib/utils/verifyContact';
 
 function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
-    const verifyContact = async (data: any, message: string) => {
-        if (data.mobile || data.email) {
-            const res = await http('/partners/validateInput?source=preRegister', {
-                method: "POST",
-                body: JSON.stringify(data),
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-            })
-
-            const resdata = await res.json()
-
-            return !resdata.data.isExists || message;
-        }
-
-        return false
-    }
-
     type FormData = {
         name: string,
         registrationType: string,
@@ -195,8 +177,12 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                 Pincode <sup>*</sup>
                             </label>
                             <input {...register("pincode", {
-                                required: "Pincode cannot be blank"
-                            })} type="text" className={`${styles.formControl}`} id="pincode" maxLength={6} />
+                                required: "Pincode cannot be blank",
+                                pattern: {
+                                    value: /^[0-9]{6}$/,
+                                    message: "Pincode is Invalid."
+                                }
+                            })} maxLength={6} type="text" className={`${styles.formControl}`} id="pincode" />
                             {errors.pincode && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.pincode.message}
                             </span>}
