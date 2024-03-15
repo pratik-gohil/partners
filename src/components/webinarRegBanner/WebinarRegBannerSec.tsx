@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./WebinarRegBannerSec.module.scss";
 import useUserAgent from '@/lib/hooks/useUserAgent';
+import Image from 'next/image';
 
 import BannerBgImgDesk from "../../../public/horizonatlbanners/horibanner_desktop.webp";
 import BannerBgImgMob from "../../../public/horizonatlbanners/horibanner_mobile.webp";
@@ -24,19 +25,39 @@ const WebinarRegBannerSec = () => {
 
     return (
         <>
-
-            <div className={`${styles.webinarRegBannerSec}`} style={{ backgroundImage: `url('${isDesktop ? BannerBgImgDesk.src : BannerBgImgMob.src}')` }}>
-                <div>
-                    <p className={`${styles.bannerTitle}`}>Join the webinar to discover <span>Mirae Asset Partners Program</span></p>
-                    <div className={`${styles.textCenter}`}>
-                        <div className={`${styles.timerWrap}`}><img src={`${BannerDateIcon.src}`} />Friday, 15th March, 2024  <img src={`${BannerTimeIcon.src}`} className={`${styles.timeicon}`} />4:30 to 6:00 pm</div>
+            {isDesktop ?
+                <div className={`${styles.webinarRegBannerSec}`}>
+                    <Image priority={true} fill src={`${BannerBgImgDesk.src}`} className={`${styles.bannerBgImgDesk}`} alt="webinar" title="webinar" />
+                    <div className={`${styles.webinarInnerBox}`}>
+                        <div>
+                            <p className={`${styles.bannerTitle}`}>Join the webinar to discover <span>Mirae Asset Partners Program</span></p>
+                            <div className={`${styles.textCenter}`}>
+                                <div className={`${styles.timerWrap}`}><img src={`${BannerDateIcon.src}`} />Friday, 15th March, 2024  <img src={`${BannerTimeIcon.src}`} className={`${styles.timeicon}`} />4:30 to 6:00 pm</div>
+                            </div>
+                        </div>
+                        <div>
+                            {/* <a href="https://events.teams.microsoft.com/event/8c5f96c9-b625-41c1-89e7-230df7ee9093@8525e18d-2cce-43ce-8106-64d085abd87a" target="_blank" className={`${styles.btnBanner}`}>Register for Webinar Now</a> */}
+                            <button className={`${styles.btnBanner}`} onClick={() => setModalOpen(true)}>Register for Webinar Now</button>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    {/* <a href="https://events.teams.microsoft.com/event/8c5f96c9-b625-41c1-89e7-230df7ee9093@8525e18d-2cce-43ce-8106-64d085abd87a" target="_blank" className={`${styles.btnBanner}`}>Register for Webinar Now</a> */}
-                    <button className={`${styles.btnBanner}`} onClick={() => setModalOpen(true)}>Register for Webinar Now</button>
+                :
+                <div className={`${styles.webinarRegBannerSec}`}>
+                    <Image priority={true} fill src={`${BannerBgImgMob.src}`} className={`${styles.bannerBgImgMob}`} alt="webinar" title="webinar" />
+                    <div className={`${styles.webinarInnerBox}`}>
+                        <div>
+                            <p className={`${styles.bannerTitle}`}>Join the webinar to discover <span>Mirae Asset Partners Program</span></p>
+                            <div className={`${styles.textCenter}`}>
+                                <div className={`${styles.timerWrap}`}><img src={`${BannerDateIcon.src}`} />Friday, 15th March, 2024  <img src={`${BannerTimeIcon.src}`} className={`${styles.timeicon}`} />4:30 to 6:00 pm</div>
+                            </div>
+                        </div>
+                        <div>
+                            {/* <a href="https://events.teams.microsoft.com/event/8c5f96c9-b625-41c1-89e7-230df7ee9093@8525e18d-2cce-43ce-8106-64d085abd87a" target="_blank" className={`${styles.btnBanner}`}>Register for Webinar Now</a> */}
+                            <button className={`${styles.btnBanner}`} onClick={() => setModalOpen(true)}>Register for Webinar Now</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            }
 
             <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
                 {(onClose) => (<WebinarRegModal />)}
