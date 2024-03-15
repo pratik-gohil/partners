@@ -3,7 +3,7 @@ import React from 'react'
 import WebinarRegFormModal from '../webinarRegFormModal/WebinarRegFormModal';
 /* import ThankYouWebinarRegModal from '../thankYouWebinarRegModal/ThankYouWebinarRegModal'; */
 
-const WebinarModalBox = () => {
+const WebinarModalBox = ({ onClose }: any) => {
     //const [index, setIndex] = useState(1);
     return (
         <>
@@ -13,7 +13,7 @@ const WebinarModalBox = () => {
             {/* {index === 0 && (
                 <ThankYouWebinarRegModal onClose={onClose} />
             )} */}
-            <WebinarRegFormModal />
+            <WebinarRegFormModal onClose={onClose} />
             {/* <ThankYouWebinarRegModal /> */}
         </>
     )
