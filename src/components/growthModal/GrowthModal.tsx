@@ -1,32 +1,26 @@
 "use client";
 import React from 'react'
 import styles from "./GrowthModal.module.scss";
-import { z } from 'zod';
-import { phoneRegex } from '@/lib/constants/phoneReg';
-import { zodResolver } from '@hookform/resolvers/zod';
 import { SubmitHandler, useFieldArray, useForm } from 'react-hook-form';
 import http from '@/lib/http/http';
 import Image from 'next/image';
+import { validateName, validatePhone } from '@/lib/constants/common';
+import { verifyContact } from '@/lib/utils/verifyContact';
 
 const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
-    const refschema = z.object({
-        name: z.string().min(1),
-        mobile: z.string().regex(phoneRegex, "Invalid mobile number").min(10).max(10)
-    });
-
-    const schema = z.object({
-        reference: z.array(refschema)
-    })
-
-    type FormData = z.infer<typeof schema>
+    type FormData = {
+        name: string,
+        mobile: string,
+        reference: { name: string, mobile: string }[]
+    }
 
     const {
+        watch,
         register,
         handleSubmit,
         control,
         formState: { errors, },
     } = useForm<FormData>({
-        resolver: zodResolver(schema),
         defaultValues: {
             reference: [{ name: '', mobile: '' }]
         }
@@ -50,6 +44,9 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
             setIndex(2)
         }
     }
+
+    const reference = watch("reference")
+    const mobile = watch("mobile")
 
     return (
         <>
@@ -86,7 +83,7 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
                                                     className={`${styles.formControl}`}
                                                     id="referalName1"
                                                     placeholder="Reference Name"
-                                                    {...register(`reference.${i}.name`)}
+                                                    {...register(`reference.${i}.name`, validateName)}
                                                 />
                                                 {
                                                     errors.reference && errors.reference[i] && errors.reference[i]?.name && (
@@ -105,7 +102,17 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
                                                     id="referalMobile1"
                                                     maxLength={10}
                                                     placeholder="Reference Mobile No."
-                                                    {...register(`reference.${i}.mobile`)}
+                                                    {...register(`reference.${i}.mobile`, {
+                                                        ...validatePhone, validate: reference_mobile => {
+                                                            if (mobile === reference_mobile) return "Your Number and Reference Number should be unique"
+                                                            // @ts-ignore
+                                                            const mobiles = reference.reduce((a, f, j) => (i !== j ? [...a, f.mobile] : a), [])
+
+                                                            // @ts-ignore
+                                                            return mobiles.includes(reference_mobile) ? "Number already added" : verifyContact({ mobile: reference_mobile }, "Mobile number already exist's.")
+                                                        }
+
+                                                    })}
                                                 />
                                                 {
                                                     errors.reference && errors.reference[i] && errors.reference[i]?.mobile && (

@@ -25,8 +25,8 @@ export let commonMetadata = {
     images: ['https://www.miraeassetpartners.com/asset/images/mirae-logo.svg'], // Must be an absolute URL
   },
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
   },
   alternates: {
     canonical: 'https://www.miraeassetpartners.com',
