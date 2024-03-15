@@ -6,7 +6,7 @@ import http from '@/lib/http/http';
 import { validateEmail, validateName, validatePhone } from '@/lib/constants/common';
 
 function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
-    const verifyContact = async (data: any) => {
+    const verifyContact = async (data: any, message: string) => {
         if (data.mobile || data.email) {
             const res = await http('/partners/validateInput?source=preRegister', {
                 method: "POST",
@@ -19,7 +19,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
 
             const resdata = await res.json()
 
-            return resdata.data || data.message;
+            return !resdata.data.isExists || message;
         }
 
         return false
@@ -56,7 +56,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
         const res = await http('/partners/preRegisterPartner', {
             method: 'POST',
             body: JSON.stringify({
-                partnerDetails: { ...data, GSTYN: !!data.GSTYN, GSTNumber: "" },
+                partnerDetails: { ...data, GSTYN: !!Number(GSTYN), GSTNumber: "", registrationAuthorized: false },
                 leadSquaredDetails: {
                     pref: '', //check where it is comming
                     prefsrc: '', //check where it is comming    
@@ -152,7 +152,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label >
                                 Mobile no. <sup>*</sup>
                             </label>
-                            <input {...register("mobile", { ...validatePhone, validate: mobile => verifyContact({ mobile, message: "Mobile number already exist's." }) })} type="text" className={`${styles.formControl}`} />
+                            <input {...register("mobile", { ...validatePhone, validate: mobile => verifyContact({ mobile }, "Mobile number already exist's.") })} type="text" className={`${styles.formControl}`} maxLength={10} />
                             {errors.mobile && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.mobile.message}
                             </span>}
@@ -163,7 +163,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label >
                                 Email id <sup>*</sup>
                             </label>
-                            <input {...register("email", { ...validateEmail, validate: email => verifyContact({ email, message: "Email already exist's." }) })} type="text" className={`${styles.formControl}`} />
+                            <input {...register("email", { ...validateEmail, validate: email => verifyContact({ email }, "Email already exist's.") })} type="text" className={`${styles.formControl}`} />
                             {errors.email && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.email.message}
                             </span>}
