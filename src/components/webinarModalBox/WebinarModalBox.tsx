@@ -1,20 +1,20 @@
 "use client";
-import React from 'react'
+import React, { useState } from 'react'
 import WebinarRegFormModal from '../webinarRegFormModal/WebinarRegFormModal';
-/* import ThankYouWebinarRegModal from '../thankYouWebinarRegModal/ThankYouWebinarRegModal'; */
+import ThankYouWebinarRegModal from '../thankYouWebinarRegModal/ThankYouWebinarRegModal';
 
-const WebinarModalBox = () => {
-    //const [index, setIndex] = useState(1);
+const WebinarModalBox = ({ onClose }: { onClose: () => void }) => {
+    const [index, setIndex] = useState(0);
     return (
         <>
-            {/* {index === 0 && (
-                <WebinarRegFormModal />
-            )} */}
-            {/* {index === 0 && (
-                <ThankYouWebinarRegModal onClose={onClose} />
-            )} */}
-            <WebinarRegFormModal />
-            {/* <ThankYouWebinarRegModal /> */}
+
+            {index === 0 && (
+                <WebinarRegFormModal onClose={onClose} setIndex={setIndex} />
+            )}
+
+            {index === 1 && (
+                <ThankYouWebinarRegModal onClose={onClose} setIndex={setIndex} />
+            )}
         </>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./WebinarRegFormModal.module.scss";
 
-function WebinarRegFormModal({ onClose, setGrowthModalState }: any) {
+function WebinarRegFormModal({ onClose }: any) {
 
     //const [index, setIndex] = useState(2);
     return (

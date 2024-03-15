@@ -2,12 +2,12 @@
 import React from 'react'
 import styles from "./ThankYouWebinarRegModal.module.scss";
 
-const ThankYouWebinarRegModal = () => {
+const ThankYouWebinarRegModal = ({ onClose }: any) => {
 
     return (
         <div className={`${styles.formWrap}`}>
             <div className={`${styles.modalHeader}`}>
-                <button type="button" className={`${styles.closepp}`} aria-label="Close" >
+                <button type="button" className={`${styles.closepp}`} aria-label="Close" onClick={onClose}>
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
