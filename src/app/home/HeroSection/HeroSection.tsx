@@ -6,11 +6,11 @@ import TransparentPayoutSVG from '@/components/svgs/TransparentPayoutSVG'
 import EasySellSVG from '@/components/svgs/EasySellSVG'
 import HighRevenueSVG from '@/components/svgs/HighRevenueSVG'
 import GrowSVG from '@/components/svgs/GrowSVG'
-import Image from 'next/image'
 import Modal from '@/components/Modal'
 import dynamic from 'next/dynamic'
 
 const DesktopImages = dynamic(() => import('./DesktopImages'), { ssr: false })
+const HandImage = dynamic(() => import('./HandImage'), { ssr: false })
 const FormModal = dynamic(() => import('@/components/formModal/FormModal'), { ssr: false })
 
 function HeroSection() {
@@ -40,7 +40,7 @@ function HeroSection() {
                                     <span><b>Lowest client rates,</b> yet higher revenue</span></li>
                             </ul>
                             <div className={styles["rhsWrap"]}>
-                                <Image priority={true} width={466} height={210} src="/hand-img.webp" alt="hand-img" title="hand-img" />
+                                <HandImage />
                                 <p className={styles["ctaUpText"]}>Opening for 1,000 partners on an invite-only basis</p>
                                 <button className={`${styles["maOrangeBtn"]} ${styles["becomePartnerBtn"]}`} onClick={() => setModalOpen(true)}>Pre-Register Now</button>
                             </div>
