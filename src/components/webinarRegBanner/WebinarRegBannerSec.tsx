@@ -7,6 +7,7 @@ import BannerBgImgDesk from "../../../public/horizonatlbanners/horibanner_deskto
 import BannerBgImgMob from "../../../public/horizonatlbanners/horibanner_mobile.webp";
 import BannerDateIcon from "../../../public/horizonatlbanners/calicon.webp";
 import BannerTimeIcon from "../../../public/horizonatlbanners/timeicon.webp";
+import Image from 'next/image'
 
 import dynamic from 'next/dynamic';
 import Modal from '@/components/Modal';
@@ -29,7 +30,9 @@ const WebinarRegBannerSec = () => {
                 <div>
                     <p className={`${styles.bannerTitle}`}>Join the webinar to discover <span>Mirae Asset Partners Program</span></p>
                     <div className={`${styles.textCenter}`}>
-                        <div className={`${styles.timerWrap}`}><img src={`${BannerDateIcon.src}`} />Friday, 15th March, 2024  <img src={`${BannerTimeIcon.src}`} className={`${styles.timeicon}`} />4:30 to 6:00 pm</div>
+                        <div className={`${styles.timerWrap}`}>
+                            <Image priority={true} width={20} height={21} src={`${BannerDateIcon.src}`} alt="Friday, 15th March, 2024" title="Friday, 15th March, 2024" />
+                            Friday, 15th March, 2024  <Image priority={true} width={20} height={21} src={`${BannerTimeIcon.src}`} alt="4:30 to 6:00 pm" title="4:30 to 6:00 pm" /> 4:30 to 6:00 pm</div>
                     </div>
                 </div>
                 <div>

@@ -40,14 +40,14 @@ function HeroSection() {
                                     <span><b>Lowest client rates,</b> yet higher revenue</span></li>
                             </ul>
                             <div className={styles["rhsWrap"]}>
-                                <Image priority={true} width={400} height={600} src="/hand-img.webp" alt="hand-img" title="hand-img" />
+                                <Image priority={true} width={466} height={210} src="/hand-img.webp" alt="hand-img" title="hand-img" />
                                 <p className={styles["ctaUpText"]}>Opening for 1,000 partners on an invite-only basis</p>
                                 <button className={`${styles["maOrangeBtn"]} ${styles["becomePartnerBtn"]}`} onClick={() => setModalOpen(true)}>Pre-Register Now</button>
                             </div>
                         </div>
                     </div>
-                </div> 
-                <DesktopImages styles={styles} />   
+                </div>
+                <DesktopImages styles={styles} />
                 <div className={`${styles.bottomWaveWrap}`}>
                     <svg viewBox="0 0 500 150" preserveAspectRatio="none" className={`${styles.bottomWave}`}>
                         <path d="M-27.36,-42.91 C90.57,178.13 323.64,-53.77 508.17,19.25 L500.00,0.00 L26.80,-18.23 Z"></path>
@@ -57,7 +57,7 @@ function HeroSection() {
 
             <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
                 {(onClose) => (<FormModal onClose={onClose} />)}
-            </Modal> 
+            </Modal>
         </>
     )
 }

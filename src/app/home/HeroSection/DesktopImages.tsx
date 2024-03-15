@@ -15,8 +15,8 @@ function DesktopImages({ styles }: any) {
     }, [currentDevice])
 
     return (
-        flag && <> 
-             <div className={`${styles.sImg} ${styles.deskView}`}><Image fill src={BackBgLeftImg.src} alt="Stars" /></div>
+        flag && <>
+            <div className={`${styles.sImg} ${styles.deskView}`}><Image priority={true} width={738} height={511} src={BackBgLeftImg.src} alt="Stars" /></div>
         </>
     )
 }
