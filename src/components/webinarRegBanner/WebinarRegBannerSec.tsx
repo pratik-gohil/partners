@@ -32,7 +32,10 @@ const WebinarRegBannerSec = () => {
                         <div>
                             <p className={`${styles.bannerTitle}`}>Join the webinar to discover <span>Mirae Asset Partners Program</span></p>
                             <div className={`${styles.textCenter}`}>
-                                <div className={`${styles.timerWrap}`}><img src={`${BannerDateIcon.src}`} />Friday, 15th March, 2024  <img src={`${BannerTimeIcon.src}`} className={`${styles.timeicon}`} />4:30 to 6:00 pm</div>
+                                <div className={`${styles.timerWrap}`}>
+                                    <img src={`${BannerDateIcon.src}`} alt="Friday, 15th March, 2024" title="Friday, 15th March, 2024" />Friday, 15th March, 2024
+                                    <img src={`${BannerTimeIcon.src}`} alt="4:30 to 6:00 pm" title="4:30 to 6:00 pm" className={`${styles.timeicon}`} />4:30 to 6:00 pm
+                                </div>
                             </div>
                         </div>
                         <div>
@@ -48,7 +51,10 @@ const WebinarRegBannerSec = () => {
                         <div>
                             <p className={`${styles.bannerTitle}`}>Join the webinar to discover <span>Mirae Asset Partners Program</span></p>
                             <div className={`${styles.textCenter}`}>
-                                <div className={`${styles.timerWrap}`}><img src={`${BannerDateIcon.src}`} />Friday, 15th March, 2024  <img src={`${BannerTimeIcon.src}`} className={`${styles.timeicon}`} />4:30 to 6:00 pm</div>
+                                <div className={`${styles.timerWrap}`}>
+                                    <img src={`${BannerDateIcon.src}`} alt="Friday, 15th March, 2024" title="Friday, 15th March, 2024" />Friday, 15th March, 2024
+                                    <img src={`${BannerTimeIcon.src}`} alt="4:30 to 6:00 pm" title="4:30 to 6:00 pm" className={`${styles.timeicon}`} />4:30 to 6:00 pm
+                                </div>
                             </div>
                         </div>
                         <div>
