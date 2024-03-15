@@ -175,7 +175,11 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
             type="text" className={`${styles.formControl}`} id="mobileNo" maxLength={10}
             onInput={handleInputNumberChange}
             onBlur={handleMobileNumberValidation}
+            
         />
+        {errors.mobile && <span className={`${styles.textDanger}`} id="mobile-error">
+                                {errors.mobile.message}
+        </span>}
         <span className={`${styles.textDanger}`} id="mobile-error"></span>
     </div>
 </li>
