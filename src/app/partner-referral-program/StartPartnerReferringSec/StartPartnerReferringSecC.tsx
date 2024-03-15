@@ -2,34 +2,25 @@
 import React, { useState } from 'react'
 import styles from './StartPartnerReferringSec.module.scss'
 import { useForm, SubmitHandler, useFieldArray } from "react-hook-form"
-import { z } from 'zod'
-import { zodResolver } from '@hookform/resolvers/zod'
 import http from '@/lib/http/http'
 import Modal from '@/components/Modal'
 import OtpModal from '@/components/otpModal/OtpModal'
 import ThankYouOtpModal from '@/components/thankYouOtpModal/ThankYouOtpModal'
-import { phoneRegex } from '@/lib/constants/phoneReg'
 import Image from 'next/image'
+import { validateName, validatePhone } from '@/lib/constants/common'
 
 function StartPartnerReferringSecC() {
-    const refschema = z.object({
-        name: z.string().min(1),
-        mobile: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' })
-    });
-
-    const schema = z.object({
-        name: z.string().min(1),
-        mobile: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' }).nonempty(),
-        agree: z.boolean(),
-        reference: z.array(refschema)
-    })
-
     const [showOTPModal, setShowOTPModal] = useState(false)
     const [showThankYouModal, setShowThankYouModal] = useState(false)
 
     const [timer, setTimer] = useState(0);
 
-    type FormData = z.infer<typeof schema>
+    type FormData = {
+        name: string,
+        mobile: string,
+        reference: { name: string, mobile: string }[],
+        agree: boolean
+    }
 
     const {
         register,
@@ -38,7 +29,7 @@ function StartPartnerReferringSecC() {
         getValues,
         formState: { errors, },
     } = useForm<FormData>({
-        resolver: zodResolver(schema),
+        mode: 'all',
         defaultValues: {
             name: "",
             mobile: '',
@@ -109,7 +100,7 @@ function StartPartnerReferringSecC() {
                                     <input
                                         type="text"
                                         className={`${styles.formControl}`} placeholder="Your Name"
-                                        {...register('name')}
+                                        {...register('name', validateName)}
                                     />
                                     {
                                         errors.name && (
@@ -120,10 +111,10 @@ function StartPartnerReferringSecC() {
                                 </div>
                                 <div className={`${styles.formGroup}`}>
                                     <input
-                                        type="tel"
+                                        type="text"
                                         className={`${styles.formControl} ${styles.inputBox}`}
                                         placeholder="Your Mobile No."
-                                        {...register('mobile')}
+                                        {...register('mobile', validatePhone)}
                                     />
                                     {
                                         errors.mobile && (
@@ -142,7 +133,7 @@ function StartPartnerReferringSecC() {
                                                     type="text"
                                                     className={styles.formControl}
                                                     placeholder="Reference Name"
-                                                    {...register(`reference.${i}.name`)}
+                                                    {...register(`reference.${i}.name`, validateName)}
                                                 />
                                                 {
                                                     errors.reference && errors.reference[i] && errors.reference[i]?.name && (
@@ -158,7 +149,7 @@ function StartPartnerReferringSecC() {
                                                     type="tel"
                                                     className={styles.formControl}
                                                     placeholder="Reference Number"
-                                                    {...register(`reference.${i}.mobile`)}
+                                                    {...register(`reference.${i}.mobile`, validatePhone)}
                                                 />
                                                 {
                                                     errors.reference && errors.reference[i] && errors.reference[i]?.mobile && (
