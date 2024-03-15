@@ -195,8 +195,12 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                 Pincode <sup>*</sup>
                             </label>
                             <input {...register("pincode", {
-                                required: "Pincode cannot be blank"
-                            })} type="text" className={`${styles.formControl}`} id="pincode" maxLength={6} />
+                                required: "Pincode cannot be blank",
+                                pattern: {
+                                    value: /^[0-9]{6}$/,
+                                    message: "Pincode is Invalid."
+                                }
+                            })} maxLength={6} type="text" className={`${styles.formControl}`} id="pincode" />
                             {errors.pincode && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.pincode.message}
                             </span>}
