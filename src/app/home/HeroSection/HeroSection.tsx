@@ -1,6 +1,6 @@
 "use client"
-
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import useUserAgent from '@/lib/hooks/useUserAgent';
 import styles from './HeroSection.module.scss'
 import TransparentPayoutSVG from '@/components/svgs/TransparentPayoutSVG'
 import EasySellSVG from '@/components/svgs/EasySellSVG'
@@ -8,13 +8,23 @@ import HighRevenueSVG from '@/components/svgs/HighRevenueSVG'
 import GrowSVG from '@/components/svgs/GrowSVG'
 import Modal from '@/components/Modal'
 import dynamic from 'next/dynamic'
+import BackBgLeftImg from "../../../../public/backBgLeftImg.webp";
+import Image from 'next/image';
 
-const DesktopImages = dynamic(() => import('./DesktopImages'), { ssr: false })
+//const DesktopImages = dynamic(() => import('./DesktopImages'), { ssr: false })
 const HandImage = dynamic(() => import('./HandImage'), { ssr: false })
 const FormModal = dynamic(() => import('@/components/formModal/FormModal'), { ssr: false })
 
 function HeroSection() {
     const [modalOpen, setModalOpen] = useState(false)
+
+    const currentDevice = useUserAgent()
+
+    const [isDesktop, setIsDesktop] = useState(false)
+
+    useEffect(() => {
+        setIsDesktop(currentDevice.isDesktop())
+    }, [currentDevice])
 
     return (
         <>
@@ -46,8 +56,13 @@ function HeroSection() {
                             </div>
                         </div>
                     </div>
-                </div>
-                <DesktopImages styles={styles} />
+                </div>{/* 
+                <DesktopImages styles={styles} /> */}
+
+                {isDesktop ?
+                    <div className={`${styles.sImg} ${styles.deskView}`}><Image priority={true} width={738} height={511} src={BackBgLeftImg.src} alt="Stars" /></div>
+                    : ''
+                }
                 <div className={`${styles.bottomWaveWrap}`}>
                     <svg viewBox="0 0 500 150" preserveAspectRatio="none" className={`${styles.bottomWave}`}>
                         <path d="M-27.36,-42.91 C90.57,178.13 323.64,-53.77 508.17,19.25 L500.00,0.00 L26.80,-18.23 Z"></path>
