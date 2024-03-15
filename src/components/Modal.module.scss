@@ -31,6 +31,9 @@
 .modalInner {
   width: max-content;
   height: fit-content;
+  /* 
+  width: max-content;
+  height: fit-content; */
   position: absolute;
   bottom: 50%;
   left: 50%;
@@ -41,18 +44,19 @@
   animation-name: in;
   animation-duration: 1s;
 }
-.modalInner > * {
+
+.modalInner>* {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border-radius: 0.3rem;
   border: 0.1rem solid black;
-  max-width: 1020px;
+  width: 1020px;
   margin: 0 auto;
   padding: 20px;
   position: relative;
 }
 
-.modal.out > div {
+.modal.out>div {
   animation-name: out;
   animation-duration: 1s;
 }
@@ -83,4 +87,9 @@
     width: calc(100% - 40px);
     transform: none;
   }
+
+  .modalInner>* {
+    width: 100%;
+  }
+
 }

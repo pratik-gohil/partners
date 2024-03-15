@@ -16,7 +16,7 @@ function LangguageDropdown() {
 
     return (
         <>
-            <div className={`${styles.languageUlBlock} ${styles.active}`} onClick={() => setShowOptions(true)}>
+            <div className={`${styles.languageUlBlock}  ${showOptions === true ? styles['active'] : ''}`} onClick={() => setShowOptions(true)}>
                 <span>Language</span>
                 <label id="lblCurLang" className={`${styles.languageSelectLabel}`}>
                     English

@@ -125,9 +125,7 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
                                             <Image width={10} height={10} src="/icon-add.svg" className={`${styles.addiconadd}`} alt="add" />
                                         </div>
                                     ) : <div style={{
-                                        width: "80px",
-                                        height: 0,
-                                        display: "inline-block"
+                                        width: "60px"
                                     }}></div> : (<div onClick={() => { remove(i) }} className={`${styles.deletBad} ${styles.addBad}`} >
                                         <Image width={10} height={10} src="/icon-delete.svg" className={`${styles.deleticonadd}`} alt="delete" />
                                     </div>)}
