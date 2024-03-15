@@ -68,9 +68,10 @@
     line-height: 24px;
     display: block;
     cursor: pointer;
+    transition: 0.3s all;
 }
 
-.technolbar-ta .nav-tabs .nav-item a i {
+.technolbar-ta .nav-tabs .nav-item .nav-link i {
     width: 25px;
     height: 25px;
     position: absolute;

@@ -6,6 +6,7 @@ import LangguageDropdown from '../languageDropdown/LanguageDropdown';
 import Image from 'next/image';
 import Modal from '@/components/Modal'
 import dynamic from 'next/dynamic'
+import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
 
 const Header = () => {
     const [showSideBar, setShowSideBar] = useState(false);
@@ -13,23 +14,22 @@ const Header = () => {
     const [modalOpen, setModalOpen] = useState(false)
 
     return (
-        
+
         <>
             <header className={`${styles.headerSec}`}>
                 <div className={`${styles.maContainer} ${styles.flex}`}>
                     <div className={`${styles.lhsWrap} ${styles.flex}`}>
-                        <a href="/" title="Mirae Asset Partners">
-                            {/* <MiraeAssetsPartnersLogo /> */}
+                        <RetainQueryLink href="/">
                             <Image priority src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
-                        </a>
+                        </RetainQueryLink>
                     </div>
                     <div className={`${styles.rhsWrap} ${styles.flex}`}>
                         <ul className={`${styles.topMenuUlist}`}>
                             <li>
-                                <a href="/pricing">Revenue Sharing</a>
+                                <RetainQueryLink href={"/pricing"}>Revenue Sharing</RetainQueryLink>
                             </li>
                             <li>
-                                <a href="/partner-referral-program">Refer a Partner</a>
+                                <RetainQueryLink href="/partner-referral-program">Refer a Partner</RetainQueryLink>
                             </li>
                             <li>
                                 <button className={`${styles.maOrangeBtn} ${styles.becomePartnerBtn}`} data-toggle="modal" onClick={() => setModalOpen(true)}>Pre-Register <span>Now</span></button>
@@ -45,10 +45,10 @@ const Header = () => {
                             <div className={`${styles.menuMobSidebarBox} ${showSideBar && styles.show} ${styles.mobView}`}>
                                 <ul>
                                     <li>
-                                        <a href="/pricing">Revenue Sharing</a>
+                                        <RetainQueryLink href="/pricing">Revenue Sharing</RetainQueryLink>
                                     </li>
                                     <li>
-                                        <a href="/partner-referral-program">Refer a Partner</a>
+                                        <RetainQueryLink href="/partner-referral-program">Refer a Partner</RetainQueryLink>
                                     </li>
                                 </ul>
                             </div>

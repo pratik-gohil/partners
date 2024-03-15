@@ -1,13 +1,22 @@
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { getMetaData } from "../layout";
+
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Privacy Policy for Authorized Partners',
+    description: 'Privacy policy for authorized partners - We are dedicated to protecting your privacy. If we ask for personal details from you, we will do it in accordance with this privacy statement.',
+    keywords: ['']
+  }, "privacy-policy");
+
+  return commonMetadata;
+}
 
 export default function PrivacyPolicy() {
   return (
     <>
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <h2 className={`${styles.secTitle} `}>Our Policies</h2>
-          <p className={`${styles.textCenter} ${styles.font14}`}>We suggest you go through our policies carefully, and keep visiting for updates.</p>
           <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Privacy Policy</h1>

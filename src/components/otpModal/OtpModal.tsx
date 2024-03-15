@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./OtpModal.module.scss";
 import http from '@/lib/http/http';
+import Image from 'next/image';
 
-const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
+const OtpModal = ({ onClose, onOTPVerified, getValues, resendOTP, timer }: any) => {
     const [OTP, setOTP] = useState({})
     const [error, setError] = useState("")
     const vals = getValues();
@@ -12,10 +13,10 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
         (async () => {
             // @ts-ignore
             if (OTP[0] && OTP[1] && OTP[2] && OTP[3]) {
-                const res = await http('https://marktech.mirae-asset.co.in/macm_lt_service/api/v1/partners/verifyOTP', {
+                const res = await http('/partners/verifyOTP', {
                     method: "POST",
                     body: JSON.stringify({
-                        "mobile": vals.number,
+                        "mobile": vals.mobile,
                         "otp": Number(Object.values(OTP).join(''))
                     }),
                     headers: {
@@ -30,18 +31,9 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
                     const submit = await http('/partners/addPartnerReferral', {
                         method: "POST",
                         body: JSON.stringify({
-                            referrerName: 'Riva',
-                            referrerMobile: '778899767',
-                            refrees: [
-                                {
-                                    name: 'DFGDFGd',
-                                    mobile: '8899685576'
-                                },
-                                {
-                                    name: 'FDHJGF',
-                                    mobile: '7799685576'
-                                }
-                            ]
+                            referrerName: vals.name,
+                            referrerMobile: vals.mobile,
+                            referees: vals.reference
                         }),
                         headers: {
                             "Content-Type": "application/json"
@@ -58,6 +50,16 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
         })()
     }, [OTP])
 
+    const inputhandler = (e: any) => {
+        const target = e.target as HTMLInputElement;
+        const nextSibling = target.nextSibling as HTMLInputElement;
+        if (target.value) {
+            if (nextSibling !== null) {
+                nextSibling.focus()
+            }
+        }
+    }
+
     return (
         <>
             <div className={`${styles.formWrap} ${styles.thankpopupMan}`}>
@@ -68,28 +70,40 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
                 </div>
                 <div className={`${styles.modalBody}`}>
                     <div className={`${styles.setpinPopuparea} ${styles.resetpopupBl}`}>
-                        <img src="/set-pin-icon.png" alt="setpin-icon" />
+                        <Image width={50} height={50} src="/set-pin-icon.webp" alt="setpin-icon" />
                         <h4>
-                            <span id="otpMessage" /> +91 {vals.number}
-                            <img src="/edit-icon.svg" onClick={onClose} aria-label="Close" alt="Icon" />
+                            Enter OTP (Sent on +91 {vals.mobile})
+                            <Image width={30} height={30} src="/edit-icon.svg" onClick={onClose} aria-label="Close" alt="Icon" />
                         </h4>
                         <p>Rewards will be credited to this mobile number only.</p>
                         <div className={`${styles.otpboxInput}`}>
-                            {/* <p>Enter PIN</p> */}
                             <input
-                                type="text"
+                                type="text" pattern="\d*"
                                 id="OTP1"
                                 name="OTP1"
-                                /* onkeypress="allowOnlyNumbers(event)" */
                                 maxLength={1}
                                 inputMode="numeric"
-                                onChange={e => setOTP({
-                                    ...OTP,
-                                    0: e.target.value
-                                })}
+                                onChange={e =>
+                                    setOTP({
+                                        ...OTP,
+                                        0: e.target.value
+                                    })
+                                }
+                                onInput={inputhandler}
+                                onKeyDown={e => {
+                                    const target = e.target as HTMLInputElement;
+                                    const previousSibling = target.previousSibling as HTMLInputElement
+                                    const key = e.key;
+                                    if (key === "Backspace" && target.value === "") {
+                                        if (previousSibling) {
+                                            previousSibling.focus()
+                                        }
+                                    }
+                                }}
+                                autoFocus
                             />
                             <input
-                                type="text"
+                                type="text" pattern="\d*"
                                 id="OTP2"
                                 name="OTP2"
                                 maxLength={1}
@@ -98,9 +112,20 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
                                     ...OTP,
                                     1: e.target.value
                                 })}
+                                onInput={inputhandler}
+                                onKeyDown={e => {
+                                    const target = e.target as HTMLInputElement;
+                                    const previousSibling = target.previousSibling as HTMLInputElement
+                                    const key = e.key;
+                                    if (key === "Backspace" && target.value === "") {
+                                        if (previousSibling !== null) {
+                                            previousSibling.focus()
+                                        }
+                                    }
+                                }}
                             />
                             <input
-                                type="text"
+                                type="text" pattern="\d*"
                                 id="OTP3"
                                 name="OTP3"
                                 maxLength={1}
@@ -109,9 +134,20 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
                                     ...OTP,
                                     2: e.target.value
                                 })}
+                                onInput={inputhandler}
+                                onKeyDown={e => {
+                                    const target = e.target as HTMLInputElement;
+                                    const previousSibling = target.previousSibling as HTMLInputElement
+                                    const key = e.key;
+                                    if (key === "Backspace" && target.value === "") {
+                                        if (previousSibling) {
+                                            previousSibling.focus()
+                                        }
+                                    }
+                                }}
                             />
                             <input
-                                type="text"
+                                type="text" pattern="\d*"
                                 id="OTP4"
                                 name="OTP4"
                                 maxLength={1}
@@ -120,19 +156,28 @@ const OtpModal = ({ onClose, onOTPVerified, getValues }: any) => {
                                     ...OTP,
                                     3: e.target.value
                                 })}
+                                onInput={inputhandler}
+                                onKeyDown={e => {
+                                    const target = e.target as HTMLInputElement;
+                                    const previousSibling = target.previousSibling as HTMLInputElement
+                                    const key = e.key;
+                                    if (key === "Backspace" && target.value === "") {
+                                        if (previousSibling) {
+                                            previousSibling.focus()
+                                        }
+                                    }
+                                }}
                             />
                         </div>
                         <br />
-                        <p id="otpStatusMessage" style={{ display: "none", color: "red" }}>
+                        <p style={{ display: "none", color: "red" }}>
                             OTP is invalid. Please try again.
                         </p>
                         {error && <p className={styles.error}> {error}</p>}
-                        <div id="countdownTimer" />
-                        <p>
-                            <a id="resendOTPLink" href="#" data-info={1}>
-                                Resend OTP
-                            </a>
-                        </p>
+                        <div />
+                        {timer > 0 ? timer + " seconds remaining to resend OTP" : <p className={styles.resend} onClick={() => resendOTP({ mobile: vals.mobile, name: vals.name })}>
+                            Resend OTP
+                        </p>}
                     </div>
 
 

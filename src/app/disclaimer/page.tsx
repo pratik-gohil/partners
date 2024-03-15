@@ -2,6 +2,17 @@
 
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { getMetaData } from "../layout";
+
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Disclaimer & Risk Document for Market Information',
+    description: 'It is essential to read the disclaimer & risk document carefully before becoming an authorized partner with Mirae Asset.',
+    keywords: ['']
+  }, "disclaimer");
+
+  return commonMetadata;
+}
 
 
 export default function Disclaimer() {
@@ -10,8 +21,6 @@ export default function Disclaimer() {
 
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <h2 className={`${styles.secTitle} `}>Our Policies</h2>
-          <p className={`${styles.textCenter} ${styles.font14}`}>We suggest you go through our policies carefully, and keep visiting for updates.</p>
           <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Disclaimers</h1>

@@ -1,6 +1,17 @@
 
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { getMetaData } from "../layout";
+
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Partner Referral Terms and Conditions',
+    description: 'Mirae Asset Partners referral program terms and conditions - Read the entire set of Partner Referral Prrogram T&C online.  Visit for more information.',
+    keywords: ['']
+  }, "referral-terms-and-conditions");
+
+  return commonMetadata;
+}
 
 
 export default function ReferralTermsAndConditions() {
@@ -9,8 +20,6 @@ export default function ReferralTermsAndConditions() {
 
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <h2 className={`${styles.secTitle} `}>Our Policies</h2>
-          <p className={`${styles.textCenter} ${styles.font14}`}>We suggest you go through our policies carefully, and keep visiting for updates.</p>
           <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Partner Referral T&amp;C</h1>

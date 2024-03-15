@@ -1,58 +1,52 @@
 import React from 'react'
 import styles from "./FormModal.module.scss";
 import SelectMenu from '../SelectMenu/SelectMenu';
-import { z } from 'zod';
 import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
 import http from '@/lib/http/http';
-import { phoneRegex } from '@/lib/constants/phoneReg';
-import {handleInputNameChange} from '@/lib/constants/nameValidation';
-import {handleInputNumberChange} from '@/lib/constants/nameValidation';
-import {handleMobileNumberValidation } from '@/lib/constants/nameValidation';
+// import { phoneRegex } from '@/lib/constants/phoneReg';
+import { handleInputNameChange } from '@/lib/constants/nameValidation';
+import { handleInputNumberChange } from '@/lib/constants/nameValidation';
+import { handleMobileNumberValidation } from '@/lib/constants/nameValidation';
+
 function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
 
 
-    const verifyContact = async (data: any) => {
-        if (data.mobile || data.email) {
-            const res = await http('/partners/validateInput?source=preRegister', {
-                method: "POST",
-                body: JSON.stringify(data),
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json'
-                },
-            })
+    // const verifyContact = async (data: any) => {
+    //     if (data.mobile || data.email) {
+    //         const res = await http('/partners/validateInput?source=preRegister', {
+    //             method: "POST",
+    //             body: JSON.stringify(data),
+    //             headers: {
+    //                 'Accept': 'application/json',
+    //                 'Content-Type': 'application/json'
+    //             },
+    //         })
 
-            const resdata = await res.json()
+    //         const resdata = await res.json()
 
-            return !resdata.data;
-        }
+    //         return !resdata.data;
+    //     }
 
-        return false
+    //     return false
+    // }
+
+    type FormData = {
+        name: string,
+        registrationType: string,
+        // ["Individual",
+        //     "Partnership firm",
+        //     "Limited Liability Partnership (LLP)",
+        //     "Corporate"
+        // ],
+        businessName: string,
+        email: string,
+        mobile: string,
+        city: string,
+        pincode: string,
+        GSTYN: string,
+        subBroker: string,
+        existingAssociation: string
     }
-
-    const schema = z.object({
-        name: z.string().min(1, { message: 'Partner Name cannot be blank' }),
-        registrationType: z.enum(["Individual",
-            "Partnership firm",
-            "Limited Liability Partnership (LLP)",
-            "Corporate"
-        ]),
-        businessName: z.string().min(0, { message: 'must be atleast 3 characters' }),
-        mobile: z.string().min(1, { message: "Mobile number cannot be blank" }).regex(phoneRegex, "Invalid mobile number").refine((val) => verifyContact({ mobile: val }),
-         { message: "Mobile number already exists" }),
-        email: z.string()
-            .min(1)
-            .email()
-            .refine(val => verifyContact({ email: val }), { message: "Email already exists" }),
-        city: z.string().min(1, { message: 'City Cannot be blank' }),
-        pincode:  z.number().max(6) .min(1, { message: 'Pincode cannot be blank.'}),
-        GSTYN: z.string(),
-        subBroker: z.string(),
-        existingAssociation: z.string()
-    })
-
-    type FormData = z.infer<typeof schema>
 
     const {
         register,
@@ -62,7 +56,6 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
         setValue,
         formState: { errors },
     } = useForm<FormData>({
-        resolver: zodResolver(schema),
         defaultValues: {
             subBroker: "0"
         }
@@ -102,7 +95,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
     }
 
     const subBroker = watch("subBroker")
-    const GSTY = getValues("GSTYN")
+    const GSTYN = getValues("GSTYN")
 
     return (
         <div className={`${styles.formWrap}`}>
@@ -166,23 +159,23 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                         </div>
                     </li>
                     <li>
-    <div className={`${styles.formGroup}`}>
-        <label>
-            Mobile no. <sup>*</sup>
-        </label>
-        <input
-            {...register("mobile")}
-            type="text" className={`${styles.formControl}`} id="mobileNo" maxLength={10}
-            onInput={handleInputNumberChange}
-            onBlur={handleMobileNumberValidation}
-            
-        />
-        {errors.mobile && <span className={`${styles.textDanger}`} id="mobile-error">
+                        <div className={`${styles.formGroup}`}>
+                            <label>
+                                Mobile no. <sup>*</sup>
+                            </label>
+                            <input
+                                {...register("mobile")}
+                                type="text" className={`${styles.formControl}`} id="mobileNo" maxLength={10}
+                                onInput={handleInputNumberChange}
+                                onBlur={handleMobileNumberValidation}
+
+                            />
+                            {errors.mobile && <span className={`${styles.textDanger}`} id="mobile-error">
                                 {errors.mobile.message}
-        </span>}
-        <span className={`${styles.textDanger}`} id="mobile-error"></span>
-    </div>
-</li>
+                            </span>}
+                            <span className={`${styles.textDanger}`} id="mobile-error"></span>
+                        </div>
+                    </li>
                     <li>
                         <div className={`${styles.formGroup}`}>
                             <label >
@@ -218,8 +211,8 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label>
                                 Pincode <sup>*</sup>
                             </label>
-                            <input {...register("pincode")} type="text" className={`${styles.formControl}`} id="pincode" maxLength={6} 
-                             onInput={handleInputNumberChange}
+                            <input {...register("pincode")} type="text" className={`${styles.formControl}`} id="pincode" maxLength={6}
+                                onInput={handleInputNumberChange}
                             />
                             {errors.pincode && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.pincode.message}
@@ -299,7 +292,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                         {...register("GSTYN", {
                                             required: true
                                         })}
-                                        defaultChecked={!!GSTY}
+                                        defaultChecked={!!GSTYN}
                                         tabIndex={-1}
                                     />
                                     <label tabIndex={0} htmlFor='GSTyes'>Yes</label>
@@ -310,7 +303,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                         {...register("GSTYN", {
                                             required: true
                                         })}
-                                        defaultChecked={!!!GSTY}
+                                        defaultChecked={!!!GSTYN}
                                         tabIndex={-1}
                                     />
                                     <label tabIndex={0} htmlFor='GSTno'>No</label>

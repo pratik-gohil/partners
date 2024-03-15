@@ -1,3 +1,4 @@
+import WebinarRegBannerSec from "@/components/webinarRegBanner/WebinarRegBannerSec";
 import HeroSection from "./home/HeroSection/HeroSection";
 import dynamic from "next/dynamic";
 const RevenueSharing = dynamic(() => import('@/app/home/RevenueSharing/RevenueSharing'))
@@ -11,6 +12,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <WebinarRegBannerSec />
       <RevenueSharing />
       <PartnerProgram />
       <Advantage />

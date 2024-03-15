@@ -1,3 +1,4 @@
+import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink'
 import React from 'react'
 
 function Q1() {
@@ -11,7 +12,7 @@ function Q1() {
                 <li>100% brokerage sharing.</li>
                 <li>Trusted global brand with over 25 years of experience operating in 19 countries.</li>
             </ul>
-            For an in-depth understanding of our payout terms, you can refer to our pricing page, <a href="/pricing">click here.</a>
+            For an in-depth understanding of our payout terms, you can refer to our pricing page, <RetainQueryLink href="/pricing">click here.</RetainQueryLink>
         </>
     )
 }

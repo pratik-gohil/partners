@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from "./FooterSec.module.scss";
 import MiraeAssetsPartnersLogo from "../../../public/maPartnersLogo.svg";
-/* import MiraeAssetsPartnersLogo from '../svgs/MiraeAssetsPartnersLogo'; */
 import FacebookLogo from '../svgs/FacebookLogo';
 import InstagramLogo from '../svgs/InstagramLogo';
 import LinkedinLogo from '../svgs/LinkedinLogo';
 import TwitterLogo from '../svgs/TwitterLogo';
 import YoutubeLogo from '../svgs/YoutubeLogo';
+import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -17,10 +18,10 @@ const Footer = () => {
                         <div className={`${styles.quickLinkBar} ${styles.flex}`}>
                             <span>Quick Links :</span>
                             <ul>
-                                <li><a href="/pricing">Revenue Sharing</a></li>
-                                <li><a href="/partner-listing">Partner Listing</a></li>
-                                <li><a href="/partner-referral-program">Refer a Partner</a></li>
-                                <li id="quicklinkbar1"><a href="/faq">Partner FAQs</a></li>
+                                <li><RetainQueryLink href="/pricing">Revenue Sharing</RetainQueryLink></li>
+                                <li><RetainQueryLink href="/partner-listing">Partner Listing</RetainQueryLink></li>
+                                <li><RetainQueryLink href="/partner-referral-program">Refer a Partner</RetainQueryLink></li>
+                                <li id="quicklinkbar1"><RetainQueryLink href="/faq">Partner FAQs</RetainQueryLink></li>
                                 <li><a href="https://cm.miraeasset.co.in/" target="_blank">Mirae Asset Capital Market</a></li>
                                 <li><a href="https://www.mstock.com/" target="_blank">m.Stock</a></li>
                             </ul>
@@ -54,10 +55,9 @@ const Footer = () => {
                 </div>
                 <div className={`${styles.midWrap}`}>
                     <div className={`${styles.maContainer}`}>
-                        <a href="/" title="Mirae Asset Partners">
-                            {/* <MiraeAssetsPartnersLogo /> */}
-                            <img src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
-                        </a>
+                        <RetainQueryLink href="/">
+                            <Image src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={70} />
+                        </RetainQueryLink>
                         <span>Where <b>YOU</b> come first</span>
                     </div>
                 </div>
@@ -72,13 +72,13 @@ const Footer = () => {
                             <p>Mirae Asset Capital Markets (India) Private Limited (“MACM”) offer its online retail stock broking  services under brand m.Stock <br /> Registration Details: SEBI Stock Broker Registration No.: INZ000163138 – Membership in BSE – Cash Segment (Clearing Member ID: 6681), BSE Star MF Segment (Membership No : 53975) and in NSE – Cash, F&amp;O and CD Segments (Member ID: 90144), Membership in MCX – (Member ID: 56980),  SEBI Merchant Banking Registration No.: MB/INM000012485, SEBI Research Analyst Registration No.: INH000007526, SEBI DP Registration No: IN-DP-589-2021, CDSL DP ID: 12092900, CIN: U65990MH2017FTC300493. AMFI Registered Mutual Funds Distributor: ARN-188742.Tele No: 18002100819. In case of any grievances, please write to <a href="mailto:support@miraeassetpartners.com">support@miraeassetpartners.com</a> <br /> </p>
                         </div>
                         <ul className={`${styles.ftLinkWrap}`}>
-                            <li><a href="/terms-of-use">Terms of Use</a></li>
-                            <li><a href="/disclaimer">Disclaimer</a></li>
-                            <li><a href="/privacy-policy">Privacy Policy</a></li>
-                            <li><a href="/terms-and-conditions">Terms & Conditions</a></li>
-                            <li><a href="/advisory-for-investors">Advisory for Investors</a></li>
+                            <li><RetainQueryLink href="/terms-of-use">Terms of Use</RetainQueryLink></li>
+                            <li><RetainQueryLink href="/disclaimer">Disclaimer</RetainQueryLink></li>
+                            <li><RetainQueryLink href="/privacy-policy">Privacy Policy</RetainQueryLink></li>
+                            <li><RetainQueryLink href="/terms-and-conditions">Terms & Conditions</RetainQueryLink></li>
+                            <li><RetainQueryLink href="/advisory-for-investors">Advisory for Investors</RetainQueryLink></li>
                             <li><a href="/asset/pdf/investor-charter.pdf" target="_blank">Investor Charter</a></li>
-                            <li><a href="/downloads">downloads</a></li>
+                            <li><RetainQueryLink href="/downloads">downloads</RetainQueryLink></li>
                             <li> <a href="https://www.bseindia.com/" target="_blank" rel="nofollow">BSE</a></li>
                             <li> <a href="https://www.nseindia.com/" target="_blank" rel="nofollow">NSE</a></li>
                             <li> <a href="https://www.sebi.gov.in/" target="_blank" rel="nofollow">SEBI</a></li>
@@ -89,7 +89,7 @@ const Footer = () => {
                             <li> <a href="https://play.google.com/store/apps/details?id=com.ionicframework.sebi236330&hl=en_IN&gl=US" target="_blank" rel="nofollow"> SCORES - Android</a></li>
                             <li><a href="https://apps.apple.com/in/app/sebiscores/id1493257302" target="_blank" rel="nofollow"> SCORES - iOS</a> </li>
                             <li><a href="https://www.evotingindia.com/homepage.jsp" target="_blank" rel="nofollow">E-voting by CDSL Depository</a> </li>
-                            <li><a href="/sitemap" >Sitemap</a></li>
+                            <li><RetainQueryLink href="/sitemap" >Sitemap</RetainQueryLink></li>
                         </ul>
                         <div className={`${styles.copyrightTxt}`}>
                             Built with ❤️ in India | Copyright © 2022 - 2023, Mirae Asset Capital Markets (India) Pvt Ltd

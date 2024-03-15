@@ -1,17 +1,24 @@
 
 import PolicyNavigation from "@/components/policyNavigation/PolicyNavigation";
 import styles from "../../styles/Static.module.scss";
+import { getMetaData } from "../layout";
+
+export async function generateMetadata() {
+  const commonMetadata = getMetaData({
+    title: 'Terms of Use',
+    description: 'Mirae Asset Partners terms of use - Read the entire set of terms of use online. Visit our website for more information and go through our policies carefully!',
+    keywords: ['']
+  }, "terms-of-use");
+
+  return commonMetadata;
+}
 
 
 export default function TermOfUse() {
   return (
     <>
-
-
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <h2 className={`${styles.secTitle} `}>Our Policies</h2>
-          <p className={`${styles.textCenter} ${styles.font14}`}>We suggest you go through our policies carefully, and keep visiting for updates.</p>
           <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Terms of Use</h1>

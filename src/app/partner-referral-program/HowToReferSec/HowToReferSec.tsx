@@ -5,7 +5,6 @@ function HowToReferSec() {
     return (
         <section className={`${styles.howToReferSec}`}>
             <div className={`${styles.maContainer}`}>
-                {/* <h2 className={`${styles.secTitle} `}>How to <span>Refer a Partner?</span></h2> */}
                 <h2 className={`${styles.secTitle} `}>How to <span>Refer a Partner?</span></h2>
                 <ul>
                     <li>

@@ -1,6 +1,20 @@
+@import "../../styles/common";
+
 .policyListBlock {
     width: 100%;
     overflow: auto;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.secTitle {
+    margin-bottom: 10px;
 }
 
 .policyList {
@@ -48,22 +62,23 @@
 .policyList li.active a {
     color: #f58220;
 }
+
 @media all and (max-width:1024px) {
-    .policyList li{
+    .policyList li {
         padding: 0px 12px;
     }
 }
- 
+
 @media all and (max-width:980px) {
     .policyList {
         margin-bottom: 15px;
     }
- 
+
     .policyList li {
         white-space: nowrap;
         padding: 0 15px;
     }
- 
+
     .policyList li a {
         font-size: 14px;
         line-height: 24px;
