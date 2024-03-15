@@ -49,7 +49,7 @@ const WebinarRegBannerSec = () => {
             </div>
 
             <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
-                {(onClose) => (<WebinarRegModal />)}
+                {(onClose) => (<WebinarRegModal onClose={onClose} />)}
             </Modal>
         </>
     )
