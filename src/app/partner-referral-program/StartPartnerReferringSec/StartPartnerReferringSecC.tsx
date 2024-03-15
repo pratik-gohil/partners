@@ -9,16 +9,18 @@ import Modal from '@/components/Modal'
 import OtpModal from '@/components/otpModal/OtpModal'
 import ThankYouOtpModal from '@/components/thankYouOtpModal/ThankYouOtpModal'
 import { phoneRegex } from '@/lib/constants/phoneReg'
+import {handleInputNameChange} from '@/lib/constants/nameValidation';
+import {handleInputNumberChange} from '@/lib/constants/nameValidation';
 
 function StartPartnerReferringSecC() {
     const refschema = z.object({
-        r_name: z.string().min(1),
-        r_number: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' })
+        r_name: z.string().min(1, { message: 'This field is required' }),
+        r_number: z.string().regex(phoneRegex, 'This field is required').min(10, { message: 'Not a valid phone number' }).max(10, { message: 'Not a valid phone number' }),
     });
 
     const schema = z.object({
-        name: z.string().min(1),
-        number: z.string().regex(phoneRegex, 'Invalid Number!').min(10, { message: 'must be a 10 digit number' }).max(10, { message: 'must be a 10 digit number' }).nonempty(),
+        name: z.string().min(1, { message: 'This field is required' }),
+        number: z.string().regex(phoneRegex, 'This field is required').min(10, { message: 'Not a valid phone number' }).max(10, { message: 'Not a valid phone number' }),
         agree: z.boolean(),
         reference: z.array(refschema)
     })
@@ -82,6 +84,7 @@ function StartPartnerReferringSecC() {
                                         type="text"
                                         className={`${styles.formControl}`} placeholder="Your Name"
                                         {...register('name')}
+                                        onChange={handleInputNameChange}
                                     />
                                     {
                                         errors.name && (
@@ -93,9 +96,10 @@ function StartPartnerReferringSecC() {
                                 <div className={`${styles.formGroup}`}>
                                     <input
                                         type="tel"
-                                        className={`${styles.formControl} ${styles.inputBox}`}
+                                        className={`${styles.formControl} ${styles.inputBox}`}maxLength={10} 
                                         placeholder="Your Mobile No."
                                         {...register('number')}
+                                        onChange={handleInputNumberChange}
                                     />
                                     {
                                         errors.number && (
@@ -115,6 +119,7 @@ function StartPartnerReferringSecC() {
                                                     className={styles.formControl}
                                                     placeholder="Reference Name"
                                                     {...register(`reference.${i}.r_name`)}
+                                                    onChange={handleInputNameChange}
                                                 />
                                                 {
                                                     errors.reference && errors.reference[i] && errors.reference[i]?.r_name && (
@@ -128,9 +133,10 @@ function StartPartnerReferringSecC() {
                                             <div className={`${styles.formGroup}`}>
                                                 <input
                                                     type="tel"
-                                                    className={styles.formControl}
+                                                    className={styles.formControl}maxLength={10} 
                                                     placeholder="Reference Number"
                                                     {...register(`reference.${i}.r_number`)}
+                                                    onChange={handleInputNumberChange}
                                                 />
                                                 {
                                                     errors.reference && errors.reference[i] && errors.reference[i]?.r_number && (

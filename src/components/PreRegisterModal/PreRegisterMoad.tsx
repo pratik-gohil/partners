@@ -6,9 +6,12 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import http from '@/lib/http/http';
 import { phoneRegex } from '@/lib/constants/phoneReg';
-
-
+import {handleInputNameChange} from '@/lib/constants/nameValidation';
+import {handleInputNumberChange} from '@/lib/constants/nameValidation';
+import {handleMobileNumberValidation } from '@/lib/constants/nameValidation';
 function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
+
+
     const verifyContact = async (data: any) => {
         if (data.mobile || data.email) {
             const res = await http('/partners/validateInput?source=preRegister', {
@@ -29,20 +32,21 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
     }
 
     const schema = z.object({
-        name: z.string().min(3, { message: 'must be atleast 3 characters' }),
+        name: z.string().min(1, { message: 'Partner Name cannot be blank' }),
         registrationType: z.enum(["Individual",
             "Partnership firm",
             "Limited Liability Partnership (LLP)",
             "Corporate"
         ]),
-        businessName: z.string().min(3, { message: 'must be atleast 3 characters' }),
-        mobile: z.string().regex(phoneRegex, "Invalid mobile number").refine((val) => verifyContact({ mobile: val }), { message: "Mobile number already exists" }),
+        businessName: z.string().min(0, { message: 'must be atleast 3 characters' }),
+        mobile: z.string().min(1, { message: "Mobile number cannot be blank" }).regex(phoneRegex, "Invalid mobile number").refine((val) => verifyContact({ mobile: val }),
+         { message: "Mobile number already exists" }),
         email: z.string()
             .min(1)
             .email()
             .refine(val => verifyContact({ email: val }), { message: "Email already exists" }),
-        city: z.string().min(1),
-        pincode: z.string().min(5).max(5),
+        city: z.string().min(1, { message: 'City Cannot be blank' }),
+        pincode:  z.number().max(6) .min(1, { message: 'Pincode cannot be blank.'}),
         GSTYN: z.string(),
         subBroker: z.string(),
         existingAssociation: z.string()
@@ -122,6 +126,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                 maxLength={50}
                                 autoFocus
                                 {...register('name')}
+                                onInput={handleInputNameChange}
                             />
                             {errors.name && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.name.message}
@@ -161,16 +166,19 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                         </div>
                     </li>
                     <li>
-                        <div className={`${styles.formGroup}`}>
-                            <label >
-                                Mobile no. <sup>*</sup>
-                            </label>
-                            <input {...register("mobile")} type="text" className={`${styles.formControl}`} id="mobleNo" maxLength={10} />
-                            {errors.mobile && <span className={`${styles.textDanger}`} id="partner-valid">
-                                {errors.mobile.message}
-                            </span>}
-                        </div>
-                    </li>
+    <div className={`${styles.formGroup}`}>
+        <label>
+            Mobile no. <sup>*</sup>
+        </label>
+        <input
+            {...register("mobile")}
+            type="text" className={`${styles.formControl}`} id="mobileNo" maxLength={10}
+            onInput={handleInputNumberChange}
+            onBlur={handleMobileNumberValidation}
+        />
+        <span className={`${styles.textDanger}`} id="mobile-error"></span>
+    </div>
+</li>
                     <li>
                         <div className={`${styles.formGroup}`}>
                             <label >
@@ -194,6 +202,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                 maxLength={50}
                                 autoComplete="off"
                                 {...register("city")}
+                                onInput={handleInputNameChange}
                             />
                             {errors.city && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.city.message}
@@ -205,7 +214,9 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label>
                                 Pincode <sup>*</sup>
                             </label>
-                            <input {...register("pincode")} type="text" className={`${styles.formControl}`} id="pincode" maxLength={6} />
+                            <input {...register("pincode")} type="text" className={`${styles.formControl}`} id="pincode" maxLength={6} 
+                             onInput={handleInputNumberChange}
+                            />
                             {errors.pincode && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.pincode.message}
                             </span>}
