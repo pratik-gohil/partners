@@ -1,7 +1,8 @@
-
 import ListOfAuthorisedPersonsSec from "./ListOfAuthorisedPersonsSec/ListOfAuthorisedPersonsSec";
 import AccountOfDisciplinaryReasonsSec from "./AccountOfDisciplinaryReasonsSec/AccountOfDisciplinaryReasonsSec";
 import { getMetaData } from "../layout";
+
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata() {
   const commonMetadata = getMetaData({
