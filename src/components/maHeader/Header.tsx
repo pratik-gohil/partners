@@ -5,9 +5,12 @@ import MiraeAssetsPartnersLogo from "../../../public/maPartnersLogo.svg";
 import LangguageDropdown from '../languageDropdown/LanguageDropdown';
 import Image from 'next/image';
 import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
+import Modal from '../Modal';
+import FormModal from '../formModal/FormModal';
 
 const Header = () => {
     const [showSideBar, setShowSideBar] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false)
 
     return (
         <>
@@ -27,7 +30,7 @@ const Header = () => {
                                 <RetainQueryLink href="/partner-referral-program">Refer a Partner</RetainQueryLink>
                             </li>
                             <li>
-                                <button className={`${styles.maOrangeBtn} ${styles.becomePartnerBtn}`} data-toggle="modal">Pre-Register <span>Now</span></button>
+                                <button className={`${styles.maOrangeBtn} ${styles.becomePartnerBtn}`} onClick={() => setModalOpen(true)}>Pre-Register <span>Now</span></button>
                             </li>
                         </ul>
                         <LangguageDropdown />
@@ -51,6 +54,9 @@ const Header = () => {
                     </div>
                 </div>
             </header>
+            <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
+                {(onClose) => (<FormModal onClose={onClose} />)}
+            </Modal>
         </>
     )
 }
