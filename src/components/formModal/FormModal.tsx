@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from 'react'
-import GrowthModal from '../growthModal/GrowthModal';
-import ThankYouModal from '../thankyouModal/ThankYouModal';
-import PreRegisterMoad from '../PreRegisterModal/PreRegisterMoad';
+import GrowthModal from '@/components/growthModal/GrowthModal';
+import ThankYouModal from '@/components/thankyouModal/ThankYouModal';
+import PreRegisterMoad from '@/components/PreRegisterModal/PreRegisterMoad';
 
 const FormModal = ({ onClose }: { onClose: () => void }) => {
     const [index, setIndex] = useState(0);

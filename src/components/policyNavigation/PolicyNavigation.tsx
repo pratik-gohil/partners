@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
+import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 import { usePathname } from 'next/navigation';
 
 import styles from "./PolicyNavigation.module.scss";

@@ -1,0 +1,101 @@
+@import "@/styles/_common.scss";
+
+.faqsSec {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  .secTitle {
+    margin-bottom: 30px;
+  }
+  table th {
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 600;
+    background: #fff5ee;
+    line-height: 22px;
+  }
+  table td {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid #c4c4c4;
+  }
+  p {
+    text-align: left;
+    margin: 0 0 10px;
+    font-size: 14px;
+  }
+}
+
+.tableTitle {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 10px 0 10px;
+}
+.tablefield {
+  margin-bottom: 12px;
+}
+.tableHolder {
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  margin-top: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  table tr:last-of-type td {
+    border-bottom: 0;
+  }
+}
+
+.pricingTableHolder {
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.pricingTableHolder table th {
+  background: #f1f1f1;
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  font-weight: normal;
+  text-align: center;
+  line-height: 22px;
+}
+.pricingTableHolder table th,
+.pricingTableHolder table td {
+  padding: 15px;
+  border-left: 1px solid #d2d2d2;
+}
+.pricingTableHolder table th:first-child,
+.pricingTableHolder table td:first-child {
+  border-left: none;
+}
+.pricingTableHolder table tr:last-child td {
+  border-bottom: none;
+}
+.pricingTableHolder table td {
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  border-top: 1px solid #d2d2d2;
+}
+
+@media all and (max-width: 980px) {
+  .tableHolder,
+  .pricingTableHolder {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .faqsSec {
+    padding-top: 20px;
+    .secTitle {
+      margin-bottom: 15px;
+    }
+  }
+}

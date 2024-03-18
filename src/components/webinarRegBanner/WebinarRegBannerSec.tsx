@@ -4,10 +4,10 @@ import styles from "./WebinarRegBannerSec.module.scss";
 import useUserAgent from '@/lib/hooks/useUserAgent';
 import Image from 'next/image';
 
-import BannerBgImgDesk from "../../../public/horizonatlbanners/horibanner_desktop.webp";
-import BannerBgImgMob from "../../../public/horizonatlbanners/horibanner_mobile.webp";
-import BannerDateIcon from "../../../public/horizonatlbanners/calicon.webp";
-import BannerTimeIcon from "../../../public/horizonatlbanners/timeicon.webp";
+import BannerBgImgDesk from "@/public/horizonatlbanners/horibanner_desktop.webp";
+import BannerBgImgMob from "@/public/horizonatlbanners/horibanner_mobile.webp";
+import BannerDateIcon from "@/public/horizonatlbanners/calicon.webp";
+import BannerTimeIcon from "@/public/horizonatlbanners/timeicon.webp";
 
 import dynamic from 'next/dynamic';
 import Modal from '@/components/Modal';

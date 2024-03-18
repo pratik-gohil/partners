@@ -1,12 +1,12 @@
 "use client"
 import React, { useState } from 'react'
 import styles from "./HeaderSec.module.scss";
-import MiraeAssetsPartnersLogo from "../../../public/maPartnersLogo.svg";
-import LangguageDropdown from '../languageDropdown/LanguageDropdown';
+import MiraeAssetsPartnersLogo from "@/public/maPartnersLogo.svg";
+import LangguageDropdown from '@/components/languageDropdown/LanguageDropdown';
 import Image from 'next/image';
-import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
-import Modal from '../Modal';
-import FormModal from '../formModal/FormModal';
+import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
+import Modal from '@/components/Modal';
+import FormModal from '@/components/formModal/FormModal';
 
 const Header = () => {
     const [showSideBar, setShowSideBar] = useState(false);

@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import styles from "./LanguageDropdown.module.scss";
-import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
+import { usePathname, useRouter } from 'next/navigation';
+import hasLocale from '@/lib/utils/hasLocale';
+
 function LangguageDropdown() {
+    const pathname = usePathname()
+    const router = useRouter()
+
+    const path = hasLocale(pathname) ? pathname.slice(3) : pathname
+
     const [showOptions, setShowOptions] = useState(false);
 
     useEffect(() => {
@@ -27,24 +34,18 @@ function LangguageDropdown() {
                         <label className="language-select-labell">&nbsp;&nbsp;Select</label>
                     </li>
                     <li
+                        onClick={() => router.push('/en' + path)}
                         id="liEn"
                         style={{ backgroundColor: "white", display: "list-item" }}
                     >
-                        <RetainQueryLink
-                            href="/"
-                        >
-                            &nbsp;&nbsp;English
-                        </RetainQueryLink>
+                        &nbsp;&nbsp;English
                     </li>
                     <li
+                        onClick={() => router.push('/hi' + path)}
                         id="liHi"
                         style={{ backgroundColor: "white", display: "list-item" }}
                     >
-                        <RetainQueryLink
-                            href="/hi"
-                        >
-                            &nbsp;&nbsp;Hindi
-                        </RetainQueryLink>
+                        &nbsp;&nbsp;Hindi
                     </li>
                 </ul>}
             </div>
