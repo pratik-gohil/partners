@@ -1,8 +1,8 @@
 import http from "../http/http";
 
-export const verifyContact = async (data: any, message: string) => {
+export const verifyContact = async (data: any, message: string, source: string) => {
     if (data.mobile || data.email) {
-        const res = await http('/partners/validateInput?source=preRegister', {
+        const res = await http(`/partners/validateInput?source=${source}`, {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
