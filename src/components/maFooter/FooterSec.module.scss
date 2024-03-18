@@ -345,9 +345,11 @@
 }
 
 @media all and (max-width:767px) {
-    .footerhq {
-        img {
-            width: 170px;
+    .footerSec {
+        .footerhq {
+            img {
+                width: 170px;
+            }
         }
     }
 }
