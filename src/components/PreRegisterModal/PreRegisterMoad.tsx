@@ -134,7 +134,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label >
                                 Mobile no. <sup>*</sup>
                             </label>
-                            <input {...register("mobile", { ...validatePhone, validate: mobile => verifyContact({ mobile }, "Mobile number already exist's.") })} type="text" className={`${styles.formControl}`} maxLength={10} />
+                            <input {...register("mobile", { ...validatePhone, validate: mobile => verifyContact({ mobile }, "Mobile number already exist's.", "preRegister") })} type="text" className={`${styles.formControl}`} maxLength={10} />
                             {errors.mobile && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.mobile.message}
                             </span>}
@@ -145,7 +145,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label >
                                 Email id <sup>*</sup>
                             </label>
-                            <input {...register("email", { ...validateEmail, validate: email => verifyContact({ email }, "Email already exist's.") })} type="text" className={`${styles.formControl}`} />
+                            <input {...register("email", { ...validateEmail, validate: email => verifyContact({ email }, "Email already exist's.", "preRegister") })} type="text" className={`${styles.formControl}`} />
                             {errors.email && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.email.message}
                             </span>}
