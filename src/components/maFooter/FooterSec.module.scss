@@ -10,6 +10,12 @@
         padding: 30px 0;
     }
 
+    .footerhq {
+        img {
+            width: 250px;
+        }
+    }
+
     .midWrap {
         background: $white3;
 
@@ -336,4 +342,12 @@
     }
 
 
+}
+
+@media all and (max-width:767px) {
+    .footerhq {
+        img {
+            width: 170px;
+        }
+    }
 }
