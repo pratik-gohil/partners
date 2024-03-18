@@ -8,6 +8,7 @@ import OtpModal from '@/components/otpModal/OtpModal'
 import ThankYouOtpModal from '@/components/thankYouOtpModal/ThankYouOtpModal'
 import Image from 'next/image'
 import { validateName, validatePhone } from '@/lib/constants/common'
+import { verifyContact } from '@/lib/utils/verifyContact'
 
 function StartPartnerReferringSecC() {
     const [showOTPModal, setShowOTPModal] = useState(false)
@@ -23,6 +24,7 @@ function StartPartnerReferringSecC() {
     }
 
     const {
+        reset,
         register,
         handleSubmit,
         watch, control,
@@ -37,6 +39,8 @@ function StartPartnerReferringSecC() {
         }
     })
     const watchAgree = watch("agree", true)
+    const reference = watch("reference")
+    const mobile = watch("mobile")
     const { fields, append, remove } = useFieldArray({
         name: 'reference',
         control
@@ -149,7 +153,16 @@ function StartPartnerReferringSecC() {
                                                     type="tel"
                                                     className={styles.formControl}
                                                     placeholder="Reference Number"
-                                                    {...register(`reference.${i}.mobile`, validatePhone)}
+                                                    {...register(`reference.${i}.mobile`, {
+                                                        ...validatePhone, validate: reference_mobile => {
+                                                            if (mobile === reference_mobile) return "Your Number and Reference Number should be unique"
+                                                            // @ts-ignore
+                                                            const mobiles = reference.reduce((a, f, j) => (i !== j ? [...a, f.mobile] : a), [])
+
+                                                            // @ts-ignore
+                                                            return mobiles.includes(reference_mobile) ? "Number already added" : verifyContact({ mobile: reference_mobile }, "Mobile number already exist's.")
+                                                        }
+                                                    })}
                                                 />
                                                 {
                                                     errors.reference && errors.reference[i] && errors.reference[i]?.mobile && (
@@ -212,7 +225,7 @@ function StartPartnerReferringSecC() {
             </section >
             <Modal open={showOTPModal} onClose={() => { setShowOTPModal(false) }}>
                 {onClose =>
-                    <OtpModal resendOTP={resendOTP} timer={timer} onClose={onClose} onOTPVerified={() => setShowThankYouModal(true)} getValues={getValues} />
+                    <OtpModal resendOTP={resendOTP} timer={timer} onClose={onClose} onOTPVerified={() => { reset(); setShowThankYouModal(true) }} getValues={getValues} />
                 }
             </Modal>
             <Modal open={showThankYouModal} onClose={() => { setShowThankYouModal(false) }}>
