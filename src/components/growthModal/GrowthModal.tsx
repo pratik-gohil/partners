@@ -109,7 +109,7 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
                                                             const mobiles = reference.reduce((a, f, j) => (i !== j ? [...a, f.mobile] : a), [])
 
                                                             // @ts-ignore
-                                                            return mobiles.includes(reference_mobile) ? "Number already added" : verifyContact({ mobile: reference_mobile }, "Mobile number already exist's.")
+                                                            return mobiles.includes(reference_mobile) ? "Number already added" : verifyContact({ mobile: reference_mobile }, "Mobile number already exist's.", "preRegisterReferPartner")
                                                         }
 
                                                     })}
