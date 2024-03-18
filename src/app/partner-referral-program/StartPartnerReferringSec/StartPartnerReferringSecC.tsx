@@ -152,7 +152,7 @@ function StartPartnerReferringSecC() {
                                                 <input
                                                     type="tel"
                                                     className={styles.formControl}
-                                                    placeholder="Reference Number"
+                                                    placeholder="Reference Mobile No."
                                                     {...register(`reference.${i}.mobile`, {
                                                         ...validatePhone, validate: reference_mobile => {
                                                             if (mobile === reference_mobile) return "Your Number and Reference Number should be unique"
