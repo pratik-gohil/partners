@@ -7,11 +7,7 @@ export async function generateMetadata() {
   const commonMetadata = getMetaData({
     title: 'Trading Terms and Conditions',
     description: 'Mirae Asset Partners terms and conditions - Read the entire set of T&C online. More information on terms & conditions can be found on our page.',
-    keywords: [''],
-    robots: {
-      index: false,
-      follow: false,
-    }
+    keywords: ['']
   }, "terms-and-conditions");
 
   return commonMetadata;

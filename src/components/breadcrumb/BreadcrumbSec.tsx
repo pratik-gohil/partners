@@ -13,12 +13,12 @@ const data = {
     "/faq": "Partner FAQs",
     "/sitemap": "Sitemap",
     "/downloads": "Downloads",
-    "/terms-of-use": "Terms of Use",
-    "/privacy-policy": "Privacy Policy",
-    "/terms-and-conditions": "Terms and Conditions",
-    "/advisory-for-investors": "Advisory For Investors",
-    "/disclaimer": "Disclaimer",
-    "/referral-terms-and-conditions": "Referral Terms and Conditions",
+    "/partnership-terms-of-use": "Terms of Use",
+    "/privacy": "Privacy Policy",
+    "/partnership-terms-and-conditions": "Terms and Conditions",
+    "/investor-advisory": "Advisory For Investors",
+    "/risk-disclaimer": "Disclaimer",
+    "/refer-and-earn-terms-and-conditions": "Referral Terms and Conditions",
     "/emargin-terms-and-conditions": "Emargin Terms and Conditions"
 }
 

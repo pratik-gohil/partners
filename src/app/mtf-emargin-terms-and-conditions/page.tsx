@@ -7,11 +7,7 @@ export async function generateMetadata() {
   const commonMetadata = getMetaData({
     title: 'MTF (eMargin) Terms and Conditions',
     description: 'Mirae Asset Partners MTF terms and conditions - Read the entire set of MTF (eMargin) T&C online.  Visit for more information.',
-    keywords: ['authorized partner list', 'authorized partners'],
-    robots: {
-      index: false,
-      follow: false,
-    }
+    keywords: ['authorized partner list', 'authorized partners']
   }, "emargin-terms-and-conditions");
 
   return commonMetadata;

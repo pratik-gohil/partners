@@ -6,7 +6,6 @@ import { PreloadResources } from "./preload-resources";
 import dynamic from "next/dynamic";
 import BreadcrumbSec from "@/components/breadcrumb/BreadcrumbSec";
 import Script from "next/script";
-// import { GoogleAnalytics } from "@next/third-parties/google";
 
 export let commonMetadata = {
   openGraph: {
@@ -93,8 +92,19 @@ export default function RootLayout({
         <Footer />
         <div id='modal-portal' />
       </body>
-      {/* <GoogleAnalytics gaId="GTM-NTX7SZZG" /> */}
-      <Script src="https://www.googletagmanager.com/gtag/js?id=GTM-NTX7SZZG" strategy="beforeInteractive" />
+      <Script
+        id="gtm-script"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer', "GTM-NTX7SZZG");
+          `,
+        }}
+      />
     </html>
   );
 }

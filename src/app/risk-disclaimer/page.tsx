@@ -8,11 +8,7 @@ export async function generateMetadata() {
   const commonMetadata = getMetaData({
     title: 'Disclaimer & Risk Document for Market Information',
     description: 'It is essential to read the disclaimer & risk document carefully before becoming an authorized partner with Mirae Asset.',
-    keywords: [''],
-    robots: {
-      index: false,
-      follow: false,
-    }
+    keywords: ['']
   }, "disclaimer");
 
   return commonMetadata;
