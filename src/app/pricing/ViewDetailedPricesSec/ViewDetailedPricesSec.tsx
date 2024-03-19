@@ -15,7 +15,7 @@ function ViewDetailedPricesSec() {
         <section className={`${styles.viewDetailedPricesSec}`}>
             <div className={`${styles.maContainer}`}>
                 <h2 className={`${styles.secTitle} `}>View detailed pricing and payout details</h2>
-                <div className={`${styles.docsLinkBox}`} id='partnerRegistration'>
+                <div className={`${styles.docsLinkBox}`}>
                     <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><Image width={50} height={50} src="/pdf-icon.webp" alt="pdf" /> <span>Download complete partner income sharing details</span></a>
                     <RetainQueryLink href="/terms-and-conditions">
                         <div className={`${styles.halfWrapAlink}`}>

@@ -17,7 +17,7 @@ function RegOnboardChargesSec() {
     return (
         <section className={`${styles.regOnboardChargesSec}`}>
             <div className={`${styles.maContainer}`}>
-                <h2 className={`${styles.secTitle} `}><span>Authorised Partner registration</span> and onboarding charges</h2>
+                <h2 className={`${styles.secTitle} `} id='partnerRegistration'><span>Authorised Partner registration</span> and onboarding charges</h2>
                 <div className={`${styles.captionWrap}`}>
                     <p>There are certain charges applicable to get registered as an Authorised Partner.</p>
                     <p>You can refer the following table for these charges.</p>

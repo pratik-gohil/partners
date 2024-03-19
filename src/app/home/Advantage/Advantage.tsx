@@ -21,7 +21,7 @@ const interActiveTabs = [
     },
     {
         id: 4,
-        name: 'View & monitor client&apos;s portfolio and LIVE positions',
+        name: "View & monitor client's portfolio and LIVE positions",
         imageURL: '/view-portfolio-img.webp'
     },
     {
