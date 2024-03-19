@@ -1,19 +1,35 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import styles from './SelectMenu.module.scss';
 
-function SelectMenu({ options, onChange }: any) {
+function SelectMenu({ options, onChange, contentEditable = false, register, name, required = true }: {
+    options: string[],
+    onChange: any,
+    contentEditable: boolean,
+    register: any,
+    name: string,
+    required: boolean | string
+}) {
     const [showOptions, setShowOptions] = useState(false)
-    const [selectedOption, setSelectedOption] = useState(0);
+    const [selectedOption, setSelectedOption] = useState<null | number>(null)
+    const [value, setValue] = useState(contentEditable ? "" : options[0]);
+    const filteredOptions = useMemo(() => {
+        return contentEditable ? options.filter((option: string) => option.toLowerCase().includes(value.toLowerCase())) : options
+    }, [contentEditable, value])
+    const [flag, setFlag] = useState(false)
 
     useEffect(() => {
         const switchOption = (e: KeyboardEvent) => {
             if (e.key === "ArrowUp") {
-                selectedOption > 0 && setSelectedOption(selectedOption => selectedOption - 1)
+                setSelectedOption(selectedOption => selectedOption !== null ? ((selectedOption > 0) ? selectedOption - 1 : selectedOption || 0) : 0)
             } else if (e.key === "ArrowDown") {
-                selectedOption <= (3) && setSelectedOption(selectedOption => selectedOption + 1)
+                setSelectedOption(selectedOption => selectedOption !== null ? ((selectedOption < (filteredOptions.length - 1)) ? selectedOption + 1 : selectedOption) : 0)
             }
 
+            if (e.key === "Enter") {
+                setValue(selectedOption !== null ? filteredOptions[selectedOption] : value)
+            }
         }
+
         window.addEventListener('keydown', switchOption)
 
         const close = () => setShowOptions((e) => e = false)
@@ -23,40 +39,64 @@ function SelectMenu({ options, onChange }: any) {
         }, 0)
 
         return () => { window.removeEventListener('click', close); window.removeEventListener("keydown", switchOption) }
-    }, [showOptions])
+    }, [showOptions, filteredOptions])
 
     useEffect(() => {
-        onChange(options[selectedOption])
-    }, [selectedOption])
+        setSelectedOption(0)
+        if (!flag && contentEditable) {
+            setFlag(true)
+        }
+
+        if (!contentEditable || (contentEditable && flag)) onChange(value)
+    }, [value])
+
+    useEffect(() => {
+        register(name, {
+            required: typeof required === "string" ? required : "Required"
+        })
+    }, [register, name, options])
 
     return (
         <>
-            <div
-                onKeyDown={(e) => e.key === "Enter" && setShowOptions(!showOptions)}
-                onClick={() => setShowOptions(true)}
-                className={`${styles.formControl}`}
-                id="city"
-                tabIndex={0}
-            >
-                {options[selectedOption]}
-            </div>
+            {contentEditable ?
+                <input
+                    onChange={(e) => setValue(e.target.value)}
+                    onKeyDown={(e) => e.key === "Enter" && setShowOptions(!showOptions)}
+                    onClick={e => { e.preventDefault(); e.stopPropagation() }}
+                    onFocus={() => setShowOptions(true)}
+                    className={`${styles.formControl}`}
+                    tabIndex={0}
+                    value={value}
+                />
+                :
+                <div
+                    style={{ whiteSpace: 'nowrap' }}
+                    onKeyDown={(e) => e.key === "Enter" && setShowOptions(!showOptions)}
+                    onClick={e => { e.preventDefault(); e.stopPropagation() }}
+                    onFocus={() => setShowOptions(true)}
+                    className={`${styles.formControl}`}
+                    tabIndex={0}
+                >
+                    {value}
+                </div>
+            }
             {showOptions && <ul className={`${styles.selResults} ${styles.selCity}`}>
-                <li autoFocus={true} className={selectedOption === 0 ? styles.selected : ""} tabIndex={0}
-                    onKeyDown={(e) => e.key === "Enter" && setSelectedOption(0)}
-                    onClick={(e) => { setSelectedOption(0) }}
-                >{options[0]}</li>
-                <li className={selectedOption === 1 ? styles.selected : ""} tabIndex={0}
-                    onKeyDown={(e) => e.key === "Enter" && setSelectedOption(1)}
-                    onClick={(e) => { setSelectedOption(1) }}
-                >{options[1]}</li>
-                <li className={selectedOption === 2 ? styles.selected : ""} tabIndex={0}
-                    onKeyDown={(e) => e.key === "Enter" && setSelectedOption(2)}
-                    onClick={(e) => { setSelectedOption(2) }}
-                >{options[2]}</li>
-                <li className={selectedOption === 3 ? styles.selected : ""} tabIndex={0}
-                    onKeyDown={(e) => e.key === "Enter" && setSelectedOption(3)}
-                    onClick={(e) => { setSelectedOption(3) }}
-                >{options[3]}</li>
+                {
+                    filteredOptions.map((option: string, i: number) => (
+                        <li
+                            key={option}
+                            className={selectedOption === i ? styles.selected : ""}
+                            tabIndex={0}
+                            onClick={() => setValue(option)}
+                            onKeyDown={(e) => {
+                                e.stopPropagation();
+                                if (e.key === "Enter") { setValue(option); setShowOptions(false) }
+                            }}
+                        >
+                            {option}
+                        </li>
+                    ))
+                }
             </ul >}
         </>
     )

@@ -3,10 +3,12 @@ import styles from "./FormModal.module.scss";
 import SelectMenu from '../SelectMenu/SelectMenu';
 import { useForm } from 'react-hook-form';
 import http from '@/lib/http/http';
-import { validateEmail, validateName, validatePhone } from '@/lib/constants/common';
+import { numericOnly, validateEmail, validateName, validatePhone } from '@/lib/constants/common';
 import { verifyContact } from '@/lib/utils/verifyContact';
+import cities from "@/json/cities.json"
 
 function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
+
     type FormData = {
         name: string,
         registrationType: string,
@@ -30,8 +32,8 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
     } = useForm<FormData>({
         mode: "all",
         defaultValues: {
-            subBroker: "0"
-        }
+            subBroker: "1"
+        },
     })
 
     const onSubmit = async (data: any) => {
@@ -102,11 +104,14 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label >
                                 Registration type <sup>*</sup>
                             </label>
-                            <SelectMenu options={["Individual",
+                            <SelectMenu contentEditable={false} options={["Individual",
                                 "Partnership firm",
                                 "Limited Liability Partnership (LLP)",
                                 "Corporate"
                             ]}
+                                required
+                                register={register}
+                                name='registrationType'
                                 onChange={(val: any) => setValue("registrationType", val)}
                             />
                             {errors.registrationType && <span className={`${styles.textDanger}`} id="partner-valid">
@@ -134,7 +139,9 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label >
                                 Mobile no. <sup>*</sup>
                             </label>
-                            <input {...register("mobile", { ...validatePhone, validate: mobile => verifyContact({ mobile }, "Mobile number already exist's.", "preRegister") })} type="text" className={`${styles.formControl}`} maxLength={10} />
+                            <input
+                                onKeyDown={numericOnly}
+                                {...register("mobile", { ...validatePhone, validate: mobile => verifyContact({ mobile }, "Mobile number already exist's.", "preRegister") })} type="text" className={`${styles.formControl}`} maxLength={10} />
                             {errors.mobile && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.mobile.message}
                             </span>}
@@ -156,15 +163,12 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label >
                                 City <sup>*</sup>
                             </label>
-                            <input
-                                type="text"
-                                className={`${styles.formControl} ${styles.uiautocompleteinput}`}
-                                id="city"
-                                maxLength={50}
-                                autoComplete="off"
-                                {...register("city", {
-                                    required: "City cannot be blank"
-                                })}
+                            <SelectMenu
+                                options={cities} contentEditable
+                                register={register}
+                                name='city'
+                                onChange={(val: any) => setValue("city", val, { shouldValidate: true })}
+                                required="City cannot be blank"
                             />
                             {errors.city && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.city.message}
@@ -176,20 +180,22 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label>
                                 Pincode <sup>*</sup>
                             </label>
-                            <input {...register("pincode", {
-                                required: "Pincode cannot be blank",
-                                pattern: {
-                                    value: /^[0-9]{6}$/,
-                                    message: "Pincode is Invalid."
-                                }
-                            })} maxLength={6} type="text" className={`${styles.formControl}`} id="pincode" />
+                            <input
+                                onKeyDown={numericOnly}
+                                {...register("pincode", {
+                                    required: "Pincode cannot be blank",
+                                    pattern: {
+                                        value: /^[0-9]{6}$/,
+                                        message: "Pincode is Invalid."
+                                    }
+                                })}
+                                maxLength={6}
+                                type="text"
+                                className={`${styles.formControl}`}
+                            />
                             {errors.pincode && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.pincode.message}
                             </span>}
-                            <span>
-                                <input type="hidden" id="hdnDuplicateMobile" defaultValue={0} />
-                                <input type="hidden" id="hdnDuplicateEMail" defaultValue={0} />
-                            </span>
                         </div>
                     </li>
                     <li>
@@ -232,16 +238,16 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                 placeholder="Name of Existing Association"
                                 maxLength={100}
                                 {...register("existingAssociation", {
-                                    required:
-                                        subBroker === "1",
-                                    min: 10
+                                    required: subBroker === "1" ? "Association cannot be blank" : false
                                 },
                                 )}
                                 autoFocus
                             />
-                            {errors.existingAssociation && <span className={`${styles.textDanger}`} id="partner-valid">
-                                {errors.existingAssociation.message}
-                            </span>}
+                            {
+                                errors.existingAssociation && <span className={`${styles.textDanger}`} id="partner-valid">
+                                    {errors.existingAssociation.message}
+                                </span>
+                            }
                         </div>
                     </li>
                 </ul>
