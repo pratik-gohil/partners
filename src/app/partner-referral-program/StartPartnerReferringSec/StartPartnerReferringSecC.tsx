@@ -9,6 +9,7 @@ import ThankYouOtpModal from '@/components/thankYouOtpModal/ThankYouOtpModal'
 import Image from 'next/image'
 import { validateName, validatePhone } from '@/lib/constants/common'
 import { verifyContact } from '@/lib/utils/verifyContact'
+import RetainQueryLink from '../../../components/RetainQueryLink/RetainQueryLink';
 
 function StartPartnerReferringSecC() {
     const [showOTPModal, setShowOTPModal] = useState(false)
@@ -197,7 +198,7 @@ function StartPartnerReferringSecC() {
                                 })}
                             />
                                 <span className={`${styles.iconCheck}`} >
-                                </span>By proceeding, I agree with <a href="">T&C</a></label>
+                                </span>By proceeding, I agree with {/* <a href="">T&C</a> */}<RetainQueryLink href="/referral-terms-and-conditions">T&C</RetainQueryLink></label>
 
                             {
                                 !watchAgree && (
