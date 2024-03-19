@@ -5,8 +5,10 @@ import { useForm } from 'react-hook-form';
 import http from '@/lib/http/http';
 import { validateEmail, validateName, validatePhone } from '@/lib/constants/common';
 import { verifyContact } from '@/lib/utils/verifyContact';
+import cities from "@/json/cities.json"
 
 function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
+
     type FormData = {
         name: string,
         registrationType: string,
@@ -102,7 +104,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label >
                                 Registration type <sup>*</sup>
                             </label>
-                            <SelectMenu options={["Individual",
+                            <SelectMenu contentEditable={false} options={["Individual",
                                 "Partnership firm",
                                 "Limited Liability Partnership (LLP)",
                                 "Corporate"
@@ -156,15 +158,8 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                             <label >
                                 City <sup>*</sup>
                             </label>
-                            <input
-                                type="text"
-                                className={`${styles.formControl} ${styles.uiautocompleteinput}`}
-                                id="city"
-                                maxLength={50}
-                                autoComplete="off"
-                                {...register("city", {
-                                    required: "City cannot be blank"
-                                })}
+                            <SelectMenu options={cities} contentEditable
+                                onChange={(val: any) => setValue("city", val)}
                             />
                             {errors.city && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.city.message}
