@@ -6,12 +6,8 @@ export async function generateMetadata() {
   const commonMetadata = getMetaData({
     title: 'Privacy Policy for Authorized Partners',
     description: 'Privacy policy for authorized partners - We are dedicated to protecting your privacy. If we ask for personal details from you, we will do it in accordance with this privacy statement.',
-    keywords: [''],
-    robots: {
-      index: false,
-      follow: false,
-    }
-  }, "privacy-policy")
+    keywords: ['']
+  }, "privacy-policy");
 
   return commonMetadata;
 }
@@ -23,7 +19,7 @@ export default function PrivacyPolicy() {
         <div className={`${styles.maContainer}`}>
           <PolicyNavigation />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
-            <h1 className={`${styles.title}`}>Privacy Policy no header</h1>
+            <h1 className={`${styles.title}`}>Privacy Policy</h1>
             <p>
               We at Mirae Asset Capital Markets (India) Private Limited, recognize the
               importance of protecting your personal and financial information. We assure
