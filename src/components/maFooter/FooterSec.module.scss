@@ -350,3 +350,10 @@
         }
     }
 }
+
+@media all and (max-width:567px) {
+    .footerSec .midWrap a{width: 170px;}
+    .footerhq{height: 48px;
+        img{position: relative; top: -2px;}
+    }
+}
