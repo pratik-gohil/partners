@@ -17,6 +17,53 @@ const PolicyNavigation = () => {
         <>
             <h2 className={`${styles.secTitle} `}>Our Policies</h2>
             <p className={`${styles.textCenter} ${styles.font14}`}>We suggest you go through our policies carefully, and keep visiting for updates.</p>
+            {/* <nav className={`${styles.policyListBlock}`}>
+                <ul className={`${styles.policyList}`}>
+                    <li
+                        className={`${isActive('/partnership-terms-of-use') ? styles.active : ''
+                            }`}
+                    >
+                        <RetainQueryLink href="/partnership-terms-of-use">Terms of Use</RetainQueryLink>
+                    </li>
+                    <li
+                        className={` ${isActive('/partnership-terms-and-conditions') ? styles.active : ''
+                            }`}
+                    >
+                        <RetainQueryLink href="/partnership-terms-and-conditions">Terms & Conditions</RetainQueryLink>
+                    </li>
+                    <li
+                        className={` ${isActive('/privacy') ? styles.active : ''
+                            }`}
+                    >
+                        <RetainQueryLink href="/privacy">Privacy</RetainQueryLink>
+                    </li>
+                    <li
+                        className={` ${isActive('/risk-disclaimer') ? styles.active : ''
+                            }`}
+                    >
+                        <RetainQueryLink href="/risk-disclaimer">Disclaimer</RetainQueryLink>
+                    </li>
+                    <li
+                        className={` ${isActive('/investor-advisory') ? styles.active : ''
+                            }`}
+                    >
+                        <RetainQueryLink href="/investor-advisory">Advisory for Investors</RetainQueryLink>
+                    </li>
+                    <li
+                        className={` ${isActive('/refer-and-earn-terms-and-conditions') ? styles.active : ''
+                            }`}
+                    >
+                        <RetainQueryLink href="/refer-and-earn-terms-and-conditions">Referrals T&C</RetainQueryLink>
+                    </li>
+                    <li
+                        className={` ${isActive('/mtf-emargin-terms-and-conditions') ? styles.active : ''
+                            }`}
+                    >
+                        <RetainQueryLink href="/mtf-emargin-terms-and-conditions">MTF (eMargin) T&C</RetainQueryLink>
+                    </li>
+                </ul>
+            </nav> */}
+
             <nav className={`${styles.policyListBlock}`}>
                 <ul className={`${styles.policyList}`}>
                     <li
@@ -38,31 +85,34 @@ const PolicyNavigation = () => {
                         <RetainQueryLink href="/privacy-policy">Privacy</RetainQueryLink>
                     </li>
                     <li
-                        className={` ${isActive('/disclaimer') ? styles.active : ''
+                        className={` ${isActive('/risk-disclaimer') ? styles.active : ''
                             }`}
                     >
-                        <RetainQueryLink href="/disclaimer">Disclaimer</RetainQueryLink>
+                        <RetainQueryLink href="/risk-disclaimer">Disclaimer</RetainQueryLink>
                     </li>
                     <li
-                        className={` ${isActive('/advisory-for-investors') ? styles.active : ''
+                        className={` ${isActive('/investor-advisory') ? styles.active : ''
                             }`}
                     >
-                        <RetainQueryLink href="/advisory-for-investors">Advisory for Investors</RetainQueryLink>
+                        <RetainQueryLink href="/investor-advisory">Advisory for Investors</RetainQueryLink>
                     </li>
                     <li
-                        className={` ${isActive('/referral-terms-and-conditions') ? styles.active : ''
+                        className={` ${isActive('/refer-and-earn-terms-and-conditions') ? styles.active : ''
                             }`}
                     >
-                        <RetainQueryLink href="/referral-terms-and-conditions">Referrals T&C</RetainQueryLink>
+                        <RetainQueryLink href="/refer-and-earn-terms-and-conditions">Referrals T&C</RetainQueryLink>
                     </li>
                     <li
-                        className={` ${isActive('/emargin-terms-and-conditions') ? styles.active : ''
+                        className={` ${isActive('/mtf-emargin-terms-and-conditions') ? styles.active : ''
                             }`}
                     >
-                        <RetainQueryLink href="/emargin-terms-and-conditions">MTF (eMargin) T&C</RetainQueryLink>
+                        <RetainQueryLink href="/mtf-emargin-terms-and-conditions">MTF (eMargin) T&C</RetainQueryLink>
                     </li>
                 </ul>
             </nav>
+
+
+
         </>
     )
 }
