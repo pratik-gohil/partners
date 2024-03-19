@@ -94,7 +94,7 @@ export default function RootLayout({
         <div id='modal-portal' />
       </body>
       {/* <GoogleAnalytics gaId="GTM-NTX7SZZG" /> */}
-      <Script src="https://www.googletagmanager.com/gtag/js?id=GTM-NTX7SZZG" strategy="lazyOnload" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=GTM-NTX7SZZG" strategy="beforeInteractive" />
     </html>
   );
 }
