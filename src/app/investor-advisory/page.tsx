@@ -7,11 +7,7 @@ export async function generateMetadata() {
   const commonMetadata = getMetaData({
     title: 'Advisory for Investors',
     description: 'Read the advisory for investors with Mirae Asset Partners, KYC compliance, and demat account holders carefully. For more information read the complete advisory on our page.',
-    keywords: [''],
-    robots: {
-      index: false,
-      follow: false,
-    }
+    keywords: ['']
   }, "advisory-for-investors");
 
   return commonMetadata;

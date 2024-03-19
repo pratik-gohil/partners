@@ -7,11 +7,7 @@ export async function generateMetadata() {
   const commonMetadata = getMetaData({
     title: 'Terms of Use',
     description: 'Mirae Asset Partners terms of use - Read the entire set of terms of use online. Visit our website for more information and go through our policies carefully!',
-    keywords: [''],
-    robots: {
-      index: false,
-      follow: false,
-    }
+    keywords: ['']
   }, "terms-of-use");
 
   return commonMetadata;
