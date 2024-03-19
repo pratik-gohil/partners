@@ -93,7 +93,7 @@ export default function RootLayout({
         <div id='modal-portal' />
       </body>
       <Script src="https://www.googletagmanager.com/gtag/js?id=GTM-NTX7SZZG"
-        strategy="beforeInteractive"
+        strategy="lazyOnload"
       />
       <Script
         id="gtm-script"
