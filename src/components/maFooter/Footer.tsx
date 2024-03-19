@@ -54,7 +54,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className={`${styles.midWrap}`}>
-                    <div className={`${styles.maContainer}`}>
+                    <div className={`${styles.maContainer} ${styles.footerhq}`}>
                         <RetainQueryLink href="/">
                             <Image src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={70} />
                         </RetainQueryLink>
