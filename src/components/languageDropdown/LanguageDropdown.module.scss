@@ -1,4 +1,5 @@
 @import "../../styles/_common.scss";
+
 /* languageUlBlock-start */
 .languageUlBlock {
   width: 150px;
@@ -11,6 +12,7 @@
   text-align: left;
   font-size: 11px;
   color: #666666;
+  cursor: pointer;
 }
 
 .languageUlBlock span {
@@ -53,7 +55,7 @@
   border-radius: 1px;
 }
 
-.languageUlBlock ul li:not(.init) + li {
+.languageUlBlock ul li:not(.init)+li {
   border-top: none;
 }
 
@@ -85,6 +87,7 @@ a#submit {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
+
   &.active:after {
     transform: rotate(223deg);
     top: 11px;
@@ -115,6 +118,7 @@ a#submit {
   margin-left: 10px;
   width: 39px;
   margin-top: 0px;
+  cursor: pointer;
 }
 
 .listUstyled {

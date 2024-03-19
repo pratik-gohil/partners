@@ -33,7 +33,7 @@
   margin-bottom: 25px;
 }
 
-.opptUlist > li {
+.opptUlist>li {
   list-style: none;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -668,6 +668,8 @@
   margin-top: 20px;
   text-transform: none;
   margin-bottom: 30px;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
 }
 
 .opptUlist {
@@ -675,7 +677,7 @@
   margin-bottom: 25px;
 }
 
-.opptUlist > li {
+.opptUlist>li {
   list-style: none;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -718,6 +720,8 @@
   font-size: 30px;
   color: #ff7518;
   float: left;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
 }
 
 .x-amount-txt-ul,
@@ -1318,6 +1322,7 @@
   .x-amount-right.margiright75 {
     margin-right: 65px;
   }
+
   .partner-ul-block ul li p {
     width: calc(100% - 75px);
     display: inline-block;

@@ -42,6 +42,18 @@
 .accCard {
   position: relative;
 
+  p {
+    margin-bottom: 25px;
+    text-align: left;
+    margin: 10px 0 30px;
+    font-size: 14px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+  }
+
   .accTitle {
     font-size: 20px;
     line-height: 26px;
@@ -107,20 +119,27 @@
   }
 }
 
+.mb10 {
+  margin-bottom: 10px !important;
+}
+
 @media all and (max-width: 980px) {
   .accCard .accTitle .queryTxt {
     font-size: 14px;
     line-height: 20px;
   }
+
   .accCard .accPanel {
     font-size: 12px;
     line-height: 18px;
+
     ul li,
     p {
       font-size: 12px;
       line-height: 18px;
     }
   }
+
   .tableHolder,
   .pricingTableHolder {
     overflow-x: auto;

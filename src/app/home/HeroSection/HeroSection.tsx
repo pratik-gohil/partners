@@ -40,7 +40,7 @@ function HeroSection() {
                             <ul className={styles["lhsWrap"]}>
                                 <li>
                                     <GrowSVG />
-                                    <span>Grow your <b>income by 5X</b></span></li>
+                                    <span>Earn from <b>9 revenue streams</b></span></li>
                                 <li><TransparentPayoutSVG /><span><b>Transparent payouts.</b> No conditions</span></li>
                                 <li>
                                     <EasySellSVG />
