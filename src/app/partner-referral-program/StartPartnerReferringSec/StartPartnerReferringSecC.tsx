@@ -7,7 +7,7 @@ import Modal from '@/components/Modal'
 import OtpModal from '@/components/otpModal/OtpModal'
 import ThankYouOtpModal from '@/components/thankYouOtpModal/ThankYouOtpModal'
 import Image from 'next/image'
-import { validateName, validatePhone } from '@/lib/constants/common'
+import { numericOnly, validateName, validatePhone } from '@/lib/constants/common'
 import { verifyContact } from '@/lib/utils/verifyContact'
 import RetainQueryLink from '../../../components/RetainQueryLink/RetainQueryLink';
 
@@ -116,10 +116,12 @@ function StartPartnerReferringSecC() {
                                 </div>
                                 <div className={`${styles.formGroup}`}>
                                     <input
+                                        onKeyDown={numericOnly}
                                         type="text"
                                         className={`${styles.formControl} ${styles.inputBox}`}
                                         placeholder="Your Mobile No."
                                         {...register('mobile', validatePhone)}
+                                        maxLength={10}
                                     />
                                     {
                                         errors.mobile && (
@@ -151,6 +153,7 @@ function StartPartnerReferringSecC() {
 
                                             <div className={`${styles.formGroup}`}>
                                                 <input
+                                                    onKeyDown={numericOnly}
                                                     type="tel"
                                                     className={styles.formControl}
                                                     placeholder="Reference Mobile No."
@@ -164,6 +167,7 @@ function StartPartnerReferringSecC() {
                                                             return mobiles.includes(reference_mobile) ? "Number already added" : verifyContact({ mobile: reference_mobile }, "Mobile number already exist's.", "referPartner")
                                                         }
                                                     })}
+                                                    maxLength={10}
                                                 />
                                                 {
                                                     errors.reference && errors.reference[i] && errors.reference[i]?.mobile && (

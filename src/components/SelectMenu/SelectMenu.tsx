@@ -1,10 +1,13 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import styles from './SelectMenu.module.scss';
 
-function SelectMenu({ options, onChange, contentEditable = false }: {
+function SelectMenu({ options, onChange, contentEditable = false, register, name, required = true }: {
     options: string[],
     onChange: any,
-    contentEditable: boolean
+    contentEditable: boolean,
+    register: any,
+    name: string,
+    required: boolean | string
 }) {
     const [showOptions, setShowOptions] = useState(false)
     const [selectedOption, setSelectedOption] = useState<null | number>(null)
@@ -12,6 +15,7 @@ function SelectMenu({ options, onChange, contentEditable = false }: {
     const filteredOptions = useMemo(() => {
         return contentEditable ? options.filter((option: string) => option.toLowerCase().includes(value.toLowerCase())) : options
     }, [contentEditable, value])
+    const [flag, setFlag] = useState(false)
 
     useEffect(() => {
         const switchOption = (e: KeyboardEvent) => {
@@ -39,8 +43,18 @@ function SelectMenu({ options, onChange, contentEditable = false }: {
 
     useEffect(() => {
         setSelectedOption(0)
-        onChange(value)
+        if (!flag && contentEditable) {
+            setFlag(true)
+        }
+
+        if (!contentEditable || (contentEditable && flag)) onChange(value)
     }, [value])
+
+    useEffect(() => {
+        register(name, {
+            required: typeof required === "string" ? required : "Required"
+        })
+    }, [register, name, options])
 
     return (
         <>
@@ -53,7 +67,6 @@ function SelectMenu({ options, onChange, contentEditable = false }: {
                     className={`${styles.formControl}`}
                     tabIndex={0}
                     value={value}
-
                 />
                 :
                 <div
