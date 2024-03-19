@@ -15,7 +15,7 @@ import Image from 'next/image';
 const HandImage = dynamic(() => import('./HandImage'), { ssr: false })
 const FormModal = dynamic(() => import('@/components/formModal/FormModal'), { ssr: false })
 
-function HeroSection() {
+function HeroSection({dictionary}: any) {
     const [modalOpen, setModalOpen] = useState(false)
 
     const currentDevice = useUserAgent()
@@ -35,7 +35,9 @@ function HeroSection() {
                             fontFamily: 'Open Sans',
                             fontWeight: "600",
                             color: "#043b72"
-                        }} className={styles["pageTitle"]}>Launching India&apos;s largest business partner program</h1>
+                        }} className={styles["pageTitle"]}>{
+                            dictionary["pageTitle"]
+                        }</h1>
                         <div className={styles["bannerInnerBox"]}>
                             <ul className={styles["lhsWrap"]}>
                                 <li>
