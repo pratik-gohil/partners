@@ -9,6 +9,7 @@ import ThankYouOtpModal from '@/components/thankYouOtpModal/ThankYouOtpModal'
 import Image from 'next/image'
 import { validateName, validatePhone } from '@/lib/constants/common'
 import { verifyContact } from '@/lib/utils/verifyContact'
+import RetainQueryLink from '../../../components/RetainQueryLink/RetainQueryLink';
 
 function StartPartnerReferringSecC() {
     const [showOTPModal, setShowOTPModal] = useState(false)
@@ -152,7 +153,7 @@ function StartPartnerReferringSecC() {
                                                 <input
                                                     type="tel"
                                                     className={styles.formControl}
-                                                    placeholder="Reference Number"
+                                                    placeholder="Reference Mobile No."
                                                     {...register(`reference.${i}.mobile`, {
                                                         ...validatePhone, validate: reference_mobile => {
                                                             if (mobile === reference_mobile) return "Your Number and Reference Number should be unique"
@@ -197,7 +198,7 @@ function StartPartnerReferringSecC() {
                                 })}
                             />
                                 <span className={`${styles.iconCheck}`} >
-                                </span>By proceeding, I agree with <a href="">T&C</a></label>
+                                </span>By proceeding, I agree with {/* <a href="">T&C</a> */}<RetainQueryLink href="/referral-terms-and-conditions">T&C</RetainQueryLink></label>
 
                             {
                                 !watchAgree && (
