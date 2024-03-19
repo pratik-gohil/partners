@@ -327,20 +327,16 @@
             width: 100%; 
         }
 
-        .contactWrap {
-            width: 100%;
-            .telMailLine {
-                flex-wrap: wrap;
-
-                li { 
-
+        .contactWrap { width: 100%;
+            .telMailLine { flex-wrap: wrap; 
+                li { width: 100%; 
                     a {
                         /* 
                         padding-left: 0; */
                         padding: 7px 10px;
                         display: inline-block;
                         border: 0;
-                    }
+                    } 
 
                     &:last-of-type a {
                         padding-left: 0;
