@@ -25,7 +25,7 @@ export default function Disclaimer() {
 
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <PolicyNavigation />
+          <PolicyNavigation showPolicyNav={false} />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Disclaimers</h1>
             <p>
