@@ -327,20 +327,16 @@
             width: 100%; 
         }
 
-        .contactWrap {
-            width: 100%;
-            .telMailLine {
-                flex-wrap: wrap;
-
-                li { 
-
+        .contactWrap { width: 100%;
+            .telMailLine { flex-wrap: wrap; 
+                li { width: 100%; 
                     a {
                         /* 
                         padding-left: 0; */
                         padding: 7px 10px;
                         display: inline-block;
                         border: 0;
-                    }
+                    } 
 
                     &:last-of-type a {
                         padding-left: 0;
@@ -348,5 +344,12 @@
                 }
             }
         }
+    }
+}
+
+@media all and (max-width:567px) {
+    .footerSec .midWrap a{width: 170px;}
+    .footerhq{height: 48px;
+        img{position: relative; top: -2px;}
     }
 }
