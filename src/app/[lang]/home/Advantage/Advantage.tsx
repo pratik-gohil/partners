@@ -3,57 +3,61 @@ import React, { useState } from 'react'
 import styles from './advantage.module.scss'
 import { DeferedImage } from '@/components/DeferImage'
 
-const interActiveTabs = [
-    {
-        id: 1,
-        name: 'Single integrated dashboard',
-        imageURL: '/single-integrated-dashboard.webp'
-    },
-    {
-        id: 2,
-        name: 'Onboard your clients in a few clicks',
-        imageURL: '/onboard-in-few-clicks.webp'
-    },
-    {
-        id: 3,
-        name: `Customise brokerage plans as per guide client's trading behaviour`,
-        imageURL: '/customize-plan-img.webp'
-    },
-    {
-        id: 4,
-        name: 'View & monitor client&apos;s portfolio and LIVE positions',
-        imageURL: '/view-portfolio-img.webp'
-    },
-    {
-        id: 5,
-        name: 'Access to smart reports',
-        imageURL: '/smart-reports.webp'
-    },
-    {
-        id: 6,
-        name: 'Dedicated BA excellence desk - online and offline support',
-        imageURL: '/dedicated-BA.webp'
-    }
-]
 
-function Advantage() {
+
+function Advantage({dictionary}: any) {
     const [activeTab, setActiveTab] = useState(1)
 
+    const interActiveTabs = [
+        {
+            id: 1,
+            name: dictionary["advantageH2_1"],
+            imageURL: '/single-integrated-dashboard.webp'
+        },
+        {
+            id: 2,
+            name: dictionary["advantageH2_2"],
+            imageURL: '/onboard-in-few-clicks.webp'
+        },
+        {
+            id: 3,
+            name: dictionary["advantageH2_3"],
+            imageURL: '/customize-plan-img.webp'
+        },
+        {
+            id: 4,
+            name: dictionary["advantageH2_4"],
+            imageURL: '/view-portfolio-img.webp'
+        },
+        {
+            id: 5,
+            name: dictionary["advantageH2_5"],
+            imageURL: '/smart-reports.webp'
+        },
+        {
+            id: 6,
+            name: dictionary["advantageH2_6"],
+            imageURL: '/dedicated-BA.webp'
+        }
+    ]
 
     return (
         <>
             <section className={styles["maAdvantageSec"]}>
                 <div className={styles["maContainer"]}>
-                    <h2 className={styles["secTitle"]}><span>The &apos;Mirae Asset&apos;</span>advantage</h2>
-                    <p className={styles["captionTxt"]}>Partnering with us has a lot of advantages for your business. See, what&apos;s in it for you. </p>
+                    <h2 className={styles["secTitle"]} dangerouslySetInnerHTML={
+                                       { __html: dictionary["advantageTitle"]}
+                                    }></h2>
+                    <p className={styles["captionTxt"]}>{dictionary["advantageSubHeading"]} </p>
 
                     <div className={styles["advantages-numbar"]}>
                         <h3 className={styles["advantages-head"]}>
-                            <span>1</span> <b>Customise pricing for your clients</b>
+                            <span>1</span> <b>{dictionary["advantageH1"]}</b>
                         </h3>
-                        <p className={styles["advantages-prag"]}>Create customised brokerage plans as a one-time activity, for all future onboarding of your clients. Choose from <span> Discount, Traditional </span> or<span> Hybrid </span> models. Customise<span> interest rates, DP charges </span>
-                            and more, for your clients&apos; varied needs and maximise your earnings.</p>
-                        <h3 className={styles["advantages-head"]}><span>2</span> <b>Run your business through interactive dashboard</b></h3>
+                        <p className={styles["advantages-prag"]} dangerouslySetInnerHTML={
+                                       { __html: dictionary["advantageH1_1"]}
+                                    }></p>
+                        <h3 className={styles["advantages-head"]}><span>2</span> <b>{dictionary["advantageH2"]}</b></h3>
                         <div className={styles["advantage-tabmain"]}>
                             <ul className={`${styles["nav"]} ${styles["nav-tabs"]}`} id="myTab" role="tablist">
                                 {
@@ -79,14 +83,14 @@ function Advantage() {
                             </div>
                         </div>
 
-                        <h3 className={styles["advantages-head"]}><span>3</span> <b>Onboard your clients in minutes</b></h3>
+                        <h3 className={styles["advantages-head"]}><span>3</span> <b>{dictionary["advantageH3"]}</b></h3>
                         <div className={styles["advantage-onboad"]}>
                             <ul>
                                 <li>
                                     <svg width="55" height="40" viewBox="0 0 55 40" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clipPath="url(#clip0_0_1)"> <mask id="mask0_0_1"> <path d="M15 3.8147e-06H55V40H15V3.8147e-06Z" fill="white" /> </mask> <g mask="url(#mask0_0_1)"> <path d="M50.7031 38.8281H19.2969C17.571 38.8281 16.1719 37.4291 16.1719 35.7031V16.9531C16.1719 15.2272 17.571 13.8281 19.2969 13.8281H50.7031C52.429 13.8281 53.8281 15.2272 53.8281 16.9531V35.7031C53.8281 37.4291 52.429 38.8281 50.7031 38.8281Z" stroke="#FF7518" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" /> <path d="M37.3438 3.51562C37.3438 4.81 36.2944 5.85938 35 5.85938C33.7056 5.85938 32.6562 4.81 32.6562 3.51562C32.6562 2.22125 33.7056 1.17188 35 1.17188C36.2944 1.17188 37.3438 2.22125 37.3438 3.51562Z" stroke="#FF7518" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" /> <path d="M24.0625 21.6503V30.8633" stroke="#FF7518" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" /> <path d="M30.5036 26.3281C30.5036 28.9112 29.0699 30.9553 26.7954 30.9949C26.0383 31.0082 24.0815 31.0156 24.0815 31.0156C24.0815 31.0156 24.0693 27.6198 24.0693 26.3178C24.0693 25.2484 24.0625 21.6406 24.0625 21.6406H26.7177C29.2125 21.6406 30.5036 23.745 30.5036 26.3281Z" stroke="#FF7518" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" /> <path d="M39.9727 21.6404L42.9673 26.2266L45.9372 21.6641" stroke="#FF7518" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" /> <path d="M42.957 31.0156L42.9688 26.2268" stroke="#FF7518" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" /> <path d="M35 21.6406V31.0156" stroke="#FF7518" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" /> <path d="M33.1892 4.98688L22.5 13.8281" stroke="#FF7518" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" /> <path d="M47.5 13.8281L36.8108 4.98688" stroke="#FF7518" strokeWidth="2" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" /> </g> </g> <path d="M11.0234 18.7812C11.0234 19.5547 10.8672 20.2266 10.5547 20.7969C10.2422 21.3672 9.8125 21.8359 9.26562 22.2031C8.72656 22.5625 8.10156 22.8203 7.39062 22.9766V23.0586C8.75781 23.2305 9.78906 23.6602 10.4844 24.3477C11.1875 25.0352 11.5391 25.9453 11.5391 27.0781C11.5391 28.0703 11.3008 28.957 10.8242 29.7383C10.3477 30.5117 9.61719 31.1211 8.63281 31.5664C7.64844 32.0117 6.38281 32.2344 4.83594 32.2344C3.90625 32.2344 3.04297 32.1602 2.24609 32.0117C1.45703 31.8633 0.707031 31.625 -0.00390625 31.2969V28.8477C0.722656 29.207 1.49609 29.4844 2.31641 29.6797C3.13672 29.875 3.91406 29.9727 4.64844 29.9727C6.07812 29.9727 7.09766 29.707 7.70703 29.1758C8.31641 28.6367 8.62109 27.8945 8.62109 26.9492C8.62109 26.3398 8.46094 25.8398 8.14062 25.4492C7.82812 25.0586 7.33984 24.7656 6.67578 24.5703C6.01953 24.375 5.17188 24.2773 4.13281 24.2773H2.62109V22.0625H4.14453C5.13672 22.0625 5.93359 21.9453 6.53516 21.7109C7.13672 21.4688 7.57031 21.1367 7.83594 20.7148C8.10938 20.293 8.24609 19.8008 8.24609 19.2383C8.24609 18.5039 8.00781 17.9336 7.53125 17.5273C7.05469 17.1133 6.34766 16.9062 5.41016 16.9062C4.83203 16.9062 4.30469 16.9727 3.82812 17.1055C3.35938 17.2383 2.92578 17.4062 2.52734 17.6094C2.12891 17.8125 1.75 18.0312 1.39062 18.2656L0.0664062 16.3555C0.714844 15.8711 1.48828 15.4609 2.38672 15.125C3.28516 14.7891 4.33203 14.6211 5.52734 14.6211C7.28516 14.6211 8.64062 15 9.59375 15.7578C10.5469 16.5078 11.0234 17.5156 11.0234 18.7812Z" fill="#FF7518" /> <defs> <clipPath id="clip0_0_1"> <rect width="40" height="40" fill="white" transform="translate(15)" /> </clipPath> </defs> </svg>
                                     <p>
-                                        <b>Do it for your client</b>
-                                        <span>on their behalf and share link with<br /> them only for documentation</span>
+                                        <b>{dictionary["advantageH3_1"]}</b>
+                                        <span>{dictionary["advantageH3_2"]}</span>
                                     </p>
                                 </li>
                                 <li>
@@ -95,8 +99,10 @@ function Advantage() {
                                     </svg>
 
                                     <p>
-                                        <b>Share joining link</b>
-                                        <span>with your clients and let <br />them do it themselves</span>
+                                        <b>{dictionary["advantageH3_3"]}</b>
+                                        <span dangerouslySetInnerHTML={
+                                       { __html: dictionary["advantageH3_4"]}
+                                    }></span>
                                     </p>
                                 </li>
                                 <li>
@@ -114,8 +120,10 @@ function Advantage() {
                                     </svg>
 
                                     <p>
-                                        <b>Upload list for bulk onboarding</b>
-                                        <span>and get multiple clients onboarded <br />in one go</span>
+                                        <b>{dictionary["advantageH3_5"]}</b>
+                                        <span dangerouslySetInnerHTML={
+                                       { __html: dictionary["advantageH3_6"]}
+                                    }></span>
                                     </p>
                                 </li>
                             </ul>

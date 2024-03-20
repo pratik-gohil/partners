@@ -24,7 +24,7 @@ const dictionary = await getDictionary(dictionaries[lang])
       <WebinarRegBannerSec />
       <RevenueSharing />
       <PartnerProgram />
-      <Advantage />
+      <Advantage dictionary={dictionary}/>
       <ClientFeature />
       <T2Month />
       <FaqsSec />
