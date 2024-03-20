@@ -23,7 +23,7 @@ export default function AdvisoryForInvestors() {
     <>
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <PolicyNavigation />
+          <PolicyNavigation showPolicyNav={false} />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Advisory - For Investors</h1>
             <ul className={`${styles.compliancetxt}`}>
