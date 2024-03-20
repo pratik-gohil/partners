@@ -20,9 +20,13 @@ const Header = () => {
             <header className={`${styles.headerSec}`}>
                 <div className={`${styles.maContainer} ${styles.flex}`}>
                     <div className={`${styles.lhsWrap} ${styles.flex}`}>
-                        <RetainQueryLink href="/">
+                        {!removePart ? (
+                            <RetainQueryLink href="/">
+                                <Image priority src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
+                            </RetainQueryLink>
+                        ) : (
                             <Image priority src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
-                        </RetainQueryLink>
+                        )}
                     </div>
                     {!removePart ? (
                         <div className={`${styles.rhsWrap} ${styles.flex}`}>

@@ -64,24 +64,21 @@ const Footer = () => {
                 )}
                 <div className={`${styles.midWrap}`}>
                     <div className={`${styles.maContainer} ${styles.footerhq}`}>
-                        <RetainQueryLink href="/">
-                            <Image src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={70} />
-                        </RetainQueryLink>
+                        {!removePart ? (
+                            <RetainQueryLink href="/">
+                                <Image priority src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
+                            </RetainQueryLink>
+                        ) : (
+                            <Image priority src={`${MiraeAssetsPartnersLogo.src}`} alt="mstock" title="mstock" width={280} height={71} />
+                        )}
                         <span>Where <b>YOU</b> come first</span>
                     </div>
                 </div>
                 <div className={`${styles.btmWrap}`}>
                     <div className={`${styles.maContainer}`}>
 
-
                         {!removePart ? (
                             <>
-                                <style jsx>{`
-        .copyrightTxt {
-            padding-top: 0px;
-          margin-top: 0px;
-        }
-      `}</style>
                                 <div className={`${styles.offAddBox}`}>
                                     <p> <b>Registered Office &amp; Correspondence Address:</b>&nbsp; <br className={`${styles.mobView}`} /> 1st Floor, Tower 4, Equinox Business Park, LBS Marg, Off BKC, Kurla (W), Mumbai – 400 070&nbsp;&nbsp;&nbsp;<br className={`${styles.mobView}`} /> <b>CIN Number :</b> U65990MH2017FTC300493 </p>
                                 </div>
