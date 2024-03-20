@@ -19,7 +19,7 @@ const data = {
     "/investor-advisory": "Advisory For Investors",
     "/risk-disclaimer": "Disclaimer",
     "/refer-and-earn-terms-and-conditions": "Referral Terms and Conditions",
-    "/emargin-terms-and-conditions": "Emargin Terms and Conditions"
+    "/mtf-emargin-terms-and-conditions": "Emargin Terms and Conditions"
 }
 
 const BreadcrumbSec = () => {

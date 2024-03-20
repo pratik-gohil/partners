@@ -6,7 +6,6 @@
 
     h2 {
         margin-bottom: 15px;
-        line-height: 49px;
     }
 }
 
@@ -208,5 +207,9 @@
 @media all and (max-width:767px) {
     .mainworTc {
         margin-top: 15px;
+    }
+
+    .staticSec {
+        padding-top: 20px;
     }
 }
