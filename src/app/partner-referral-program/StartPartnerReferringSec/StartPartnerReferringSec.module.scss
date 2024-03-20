@@ -182,12 +182,12 @@
 }
 
 .tncCheckBoxWrap {
+  width: fit-content;
   display: block;
   color: #333;
   font-size: 14px;
   line-height: 18px;
   position: relative;
-  width: auto;
   margin: 20px auto 10px auto;
   text-align: center;
 
@@ -494,7 +494,7 @@
   font-size: 14px;
   line-height: 18px;
   position: relative;
-  width: auto;
+  width: fit-content;
   margin: 0 auto;
   margin-bottom: 10px;
   text-align: center;
