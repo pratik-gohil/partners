@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react'
 import { usePathname } from 'next/navigation'
 import styles from "./HeaderSec.module.scss";
@@ -58,8 +58,7 @@ const Header = () => {
                         </div>
                     ) : (
                         ''
-                    )
-                    }
+                    )}
                 </div>
             </header>
             <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
