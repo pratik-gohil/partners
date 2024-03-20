@@ -198,7 +198,7 @@ function StartPartnerReferringSecC() {
                                 })}
                             />
                                 <span className={`${styles.iconCheck}`} >
-                                </span>By proceeding, I agree with {/* <a href="">T&C</a> */}<RetainQueryLink href="/referral-terms-and-conditions">T&C</RetainQueryLink></label>
+                                </span>By proceeding, I agree with <RetainQueryLink href="/referral-terms-and-conditions">T&C</RetainQueryLink></label>
 
                             {
                                 !watchAgree && (
