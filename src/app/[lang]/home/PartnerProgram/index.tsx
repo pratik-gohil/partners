@@ -8,7 +8,7 @@ import UserSVG from '@/components/svgs/UserSVG';
 import PledgeSVG from '@/components/svgs/PledgeSVG'; import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 ;
 
-function PartnerProgram() {
+function PartnerProgram({dictionary}: any) {
     const handleKnowMore = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const target = e.target as HTMLDivElement;
         const el = document.querySelector(`[data-section-table=${target.getAttribute("data-section-action")}]`) as HTMLDivElement;
@@ -20,42 +20,46 @@ function PartnerProgram() {
         <section className={styles["dreamWithMaSec"]}>
             <div className={styles["maContainer"]}>
                 <h2 className={styles["secTitle"]}>आपके बड़े सपनों को उड़ान दें,<span>Mirae Asset के साथ</span></h2>
-                <p className={styles["captionTxt"]}> Our Partner program offers <span className={styles["orangeTxt"]}> unbelievable pricing,</span> a <span className={styles["orangeTxt"]}> seamless tech platform</span> for an enhanced experience for you and your clients. It also <span className={styles["orangeTxt"]}>gives you full control</span> and ownership, reducing dependency on us. For detailed payout terms, <a aria-label="Income Sharing for Authorised Partners" className={styles["orangeTxt"]} href="asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank">click here</a>
+                <p className={styles["captionTxt"]}> {dictionary["captionTxt"]} <span className={styles["orangeTxt"]}> {dictionary["captionTxt1"]}
+                </span> {dictionary["captionTxt2"]} <span className={styles["orangeTxt"]}> {dictionary["captionTxt3"]}</span> {dictionary["captionTxt4"]} 
+                <span className={styles["orangeTxt"]}> {dictionary["captionTxt5"]}</span> {dictionary["captionTxt6"]} 
+                <a aria-label="Income Sharing for Authorised Partners" className={styles["orangeTxt"]} href="asset/pdf/income-sharing-for-authorised-partners.pdf" 
+                target="_blank"> {dictionary["captionTxt7"]}</a>
                 </p>
-                <div className={`${styles["midheading-pl"]} `}>Let&apos;s understand the payout opportunities with examples</div>
+                <div className={`${styles["midheading-pl"]} `}>{dictionary["midheading-pl"]}</div>
                 <div className={styles["opptUlist"]}>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={`${styles["x-amount-left"]} `}>
-                                Brokerage
+                            {dictionary["x-amount-left"]}
                             </div>
                             <div className={`${styles["x-amount-right"]} ${styles["margiright75"]}`}>
-                                Earn <b>1.5X</b> or more
+                            {dictionary["margiright75"]} <b>{dictionary["margiright75_1"]}</b> {dictionary["margiright75_2"]}{dictionary["margiright75_3"]}
                             </div>
                         </div>
                         <div className={styles["x-amount-txt-containt"]}>
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
                                     <li>
-                                        Active clients <br />
+                                    {dictionary["x-amount-txt-ul"]} <br />
                                         <b>300</b>
                                     </li>
                                     <li>
-                                        Annual brokerage per client <br />
+                                    {dictionary["x-amount-txt-ul_1"]} <br />
                                         <b>₹12,000</b>
                                     </li>
                                     <li>
-                                        Total annual brokerage  <br />
+                                    {dictionary["x-amount-txt-ul_2"]}  <br />
                                         <b>₹36 lakh</b>
                                     </li>
                                 </ul>
                             </div>
                             <div className={styles["x-amount-industry-block"]}>
                                 <div className={styles["x-amount-industry-block-1"]}>
-                                    Annual Payout
+                                {dictionary["x-amount-industry-block-1"]}
                                 </div>
                                 <div className={styles["x-amount-industry-block-2"]}>
-                                    <span>Industry</span> <br />
+                                    <span>{dictionary["x-amount-industry-block-2"]}</span> <br />
                                     <b>₹25.20 lakh <small>(70%)</small></b>
                                 </div>
                                 <div className={styles["x-amount-industry-block-vs"]}>
@@ -69,34 +73,34 @@ function PartnerProgram() {
                             <div className={styles["x-amount-unnique-benefit-block"]}>
                                 <StarSVG />
 
-                                <b className={styles["light-blue"]}>Unique Benefit:</b> Choose either Discount, Traditional or Hybrid model, customise rates based on your clients&apos; needs
+                                <b className={styles["light-blue"]}>{dictionary["Unique_Benefit"]}</b> {dictionary["Unique_Benefit_1"]}
                             </div>
                         </div>
                     </div>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={`${styles["x-amount-left"]} `}>
-                                MTF (eMargin) Interest
+                                MTF {dictionary["MTF-amount-TITLE"]}
                             </div>
                             <div className={styles["knowmore-ribar"]} data-section-action="mtf" onClick={e => handleKnowMore(e)}>Know How ?</div>
                             <div className={styles["x-amount-right"]}>
-                                Earn <b>2X</b> or more
+                            {dictionary["x-amount-right"]} <b>{dictionary["x-amount-right_1"]}</b> {dictionary["x-amount-right_2"]}{dictionary["x-amount-right_3"]}
                             </div >
                         </div >
                         <div className={styles["x-amount-txt-containt"]}>
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
                                     <li>
-                                        MTF active clients <br />
+                                    {dictionary["MTF_active_clients"]} <br />
                                         <b>100</b>
                                     </li>
                                     <li>
-                                        MTF book <br />
+                                    {dictionary["MTF_active_book"]} <br />
                                         <b>₹3 crore</b> <br />
-                                        <small>(assuming ₹3 lakh per client)</small>
+                                        <small> {dictionary["MTF_active_book_line"]}</small>
                                     </li>
                                     <li>
-                                        Interest <br />
+                                    {dictionary["MTF_active_interest"]} <br />
                                         <b>18% p.a.</b>
                                     </li>
                                 </ul>
@@ -104,37 +108,41 @@ function PartnerProgram() {
                             <div className={styles["tablebar-planB"]} data-section-table="mtf" style={{ height: '0px' }}>
                                 <table cellPadding="0" cellSpacing="0" border={0} width="100%">
                                     <tbody><tr>
-                                        <th >Details</th>
-                                        <th><span>Industry</span></th>
+                                        <th >{dictionary["MTF_eMargin_details"]}</th>
+                                        <th><span>{dictionary["MTF_eMargin_industry"]}</span></th>
                                         <th><span className={styles["orngText"]}>Mirae Asset Partners</span></th>
                                     </tr>
                                         <tr>
-                                            <td >MTF active clients</td>
+                                            <td >{dictionary["MTF_eMargin_industry_clients"]}</td>
                                             <td>100</td>
                                             <td>100</td>
                                         </tr>
                                         <tr>
-                                            <td >Total MTF Book, <small>(assuming ₹3 lakh per client)</small></td>
+                                            <td dangerouslySetInnerHTML={
+                                       { __html: dictionary["MTF_eMargin_MTF_Book"]}
+                                    }></td>
                                             <td>₹3 crore</td>
                                             <td>₹3 crore</td>
                                         </tr>
                                         <tr>
-                                            <td >Average interest rate</td>
+                                            <td >{dictionary["MTF_eMargin_avg_intrest_rate"]}</td>
                                             <td>18%</td>
                                             <td>18%</td>
                                         </tr>
                                         <tr>
-                                            <td >Base rate <small>(retained by the broker)</small></td>
+                                            <td dangerouslySetInnerHTML={
+                                       { __html: dictionary["MTF_eMargin_retain_broker"]}
+                                    }></td>
                                             <td>12%</td>
                                             <td>9.99%</td>
                                         </tr>
                                         <tr>
-                                            <td >Interest sharing above base rate</td>
+                                            <td >{dictionary["MTF_eMargin_intrest_baserate"]}</td>
                                             <td>50%</td>
                                             <td>80%</td>
                                         </tr>
                                         <tr>
-                                            <td >Annual MTF interest payout</td>
+                                            <td >{dictionary["MTF_eMargin_intrest_payout"]}</td>
                                             <td>₹9 lakh (50%)</td>
                                             <td>₹19.22 lakh (80%)</td>
                                         </tr>
@@ -142,10 +150,10 @@ function PartnerProgram() {
                             </div>
                             <div className={styles["x-amount-industry-block"]}>
                                 <div className={styles["x-amount-industry-block-1"]}>
-                                    Annual Interest Payout
+                                {dictionary["MTF_eMargin_ann_intrest_payout"]}
                                 </div>
                                 <div className={styles["x-amount-industry-block-2"]}>
-                                    <span>Industry</span> <br />
+                                    <span> {dictionary["MTF_eMargin_industry"]}</span> <br />
                                     <b>₹9 lakh <small>(50%)</small></b>
                                 </div>
                                 <div className={styles["x-amount-industry-block-vs"]}>
@@ -156,10 +164,12 @@ function PartnerProgram() {
                                     <b>₹19.22 lakh <small>(80%)</small></b>
                                 </div>
                             </div>
-                            <div className={styles["x-amount-unnique-benefit-block"]}>
+                            <div className={styles["x-amount-unnique-benefit-block"]} >
                                 <StarSVG />
-
-                                <b className={styles["light-blue"]}>Unique Benefit:</b> Customise the MTF interest rate from <b className={styles["orangeTxt"]}>9.99%</b> to <b className={styles["orangeTxt"]}>24%.</b>
+                                <span dangerouslySetInnerHTML={
+                                       { __html: dictionary["MTF_eMargin_unique_benefit"]}
+                                    }/>
+                                
                             </div>
                         </div >
                     </div>

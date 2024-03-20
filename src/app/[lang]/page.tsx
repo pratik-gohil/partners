@@ -22,8 +22,8 @@ const dictionary = await getDictionary(dictionaries[lang])
     <>
       <HeroSection dictionary={dictionary}/>
       <WebinarRegBannerSec />
-      <RevenueSharing />
-      <PartnerProgram />
+      <RevenueSharing dictionary={dictionary}/>
+      <PartnerProgram dictionary={dictionary}/>
       <Advantage />
       <ClientFeature />
       <T2Month />

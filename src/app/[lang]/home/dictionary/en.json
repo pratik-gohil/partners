@@ -1,3 +1,94 @@
 {
-"pageTitle": "Launching India's largest business partner program"
+"pageTitle": "Launching India's largest business partner program",
+
+
+
+
+
+
+"secTitle": "Unlimited, Unbelievable",
+"secTitle1": "Revenue Sharing",
+"brokerageTitle": "Brokerage",
+
+"caption" :"100%",
+"caption1" : "sharing across all segments",
+
+"keyPointsTitle": "100% sharing across",
+
+"keyPoint1": "Account maintenance charges (AMC)",
+"keyPoint2": "Account opening fee",
+"keyPoint3": "DP sell transaction charges",
+"keyPoint4": "Pledge/unpledge charges",
+"keyPoint5": "Partner service fee (annual)",
+"keyPoint6": "Plan modification fee",
+
+"un2024MidText": "That's not all! Create recurring income with highest interest revenue sharing across,",
+
+"marginTitle1" : "(eMargin)",
+"marginTitle2": "80%",
+"marginTitle3": "sharing over 9.99%",
+"marginTitle4": "",
+
+"marginTitle5": "Margin Pledge",
+"marginTitle6": "80%",
+"marginTitle7": "sharing over 11.99%",
+"marginTitle8": "",
+
+
+
+"captionTxt": "Our Partner program offers",
+"captionTxt1": "unbelievable pricing,",
+"captionTxt2": "a",
+"captionTxt3": "seamless tech platform",
+"captionTxt4": "for an enhanced experience for you and your clients. It also",
+"captionTxt5": "gives you full control",
+"captionTxt6": "and ownership, reducing dependency on us. For detailed payout terms,",
+"captionTxt7": "click here",
+
+"midheading-pl":"Let's understand the payout opportunities with examples",
+
+"x-amount-left":"Brokerage",
+"margiright75":"Earn",
+"margiright75_1":"1.5X",
+"margiright75_2":"or more",
+"margiright75_3":"",
+
+"x-amount-txt-ul":"Active clients",
+"x-amount-txt-ul_1":"Annual brokerage per client",
+"x-amount-txt-ul_2":"Total annual brokerage",
+
+"x-amount-industry-block-1":"Annual Payout",
+"x-amount-industry-block-2":"Industry",
+
+"Unique_Benefit":"Unique Benefit:",
+"Unique_Benefit_1":"Choose either Discount, Traditional or Hybrid model, customise rates based on your client's needs",
+
+"MTF-amount-TITLE":"(eMargin) Interest",
+"x-amount-right":"Earn",
+"x-amount-right_1":"2X",
+"x-amount-right_2":"or more",
+"x-amount-right_3":"",
+
+"MTF_active_clients":"MTF active clients",
+"MTF_active_book":"MTF book",
+"MTF_active_book_line":"(assuming ₹3 lakh per client)",
+"MTF_active_interest":"Interest",
+
+"MTF_eMargin_details":"Details",
+"MTF_eMargin_industry":"Industry",
+
+"MTF_eMargin_industry_clients":"MTF active clients",
+"MTF_eMargin_MTF_Book":"Total MTF Book, <small>(assuming ₹3 lakh per client)</small>",
+"MTF_eMargin_avg_intrest_rate":"Average interest rate",
+"MTF_eMargin_retain_broker":"Base rate <small>(retained by the broker)</small>",
+"MTF_eMargin_intrest_baserate":"Interest sharing above base rate",
+"MTF_eMargin_intrest_payout":"Annual MTF interest payout",
+
+"MTF_eMargin_ann_intrest_payout":"Annual Interest Payout",
+"MTF_eMargin_unique_benefit":"<b Name=\"light-blue\">Unique Benefit:</b> Customise the MTF interest rate from <a Name=\"orangeTxt\">9.99%</a> to <a Name=\"orangeTxt\">24%.</a>"
+
+
+
+
+
 }

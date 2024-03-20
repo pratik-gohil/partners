@@ -7,6 +7,8 @@
     color: $orange;
   }
 
+  
+
   .secTitle {
     margin-bottom: 20px;
   }
@@ -225,11 +227,16 @@
   display: inline-block;
 }
 
-.x-amount-unnique-benefit-block .light-blue {
+.x-amount-unnique-benefit-block span >b {
   color: #0856a6;
   margin-left: 4px;
 }
 
+.x-amount-unnique-benefit-block span > a {
+  color: $orange;
+  font-weight: bolder;
+}
+ 
 .tablebar-planB table th {
   background: #f1f1f1;
   padding: 0 20px 13px;
@@ -668,6 +675,8 @@
   margin-top: 20px;
   text-transform: none;
   margin-bottom: 30px;
+  font-family: Nunito, sans-serif;
+  font-weight: 700;
 }
 
 .opptUlist {
