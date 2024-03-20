@@ -8,6 +8,7 @@ import Image from 'next/image';
 
 const data = {
     "/pricing": "Pricing",
+    "/pricing-cta": "Revenue Sharing",
     "/partner-listing": "Partner Listing",
     "/partner-referral-program": "Partner Refer & Earn",
     "/faq": "Partner FAQs",
@@ -19,7 +20,7 @@ const data = {
     "/investor-advisory": "Advisory For Investors",
     "/risk-disclaimer": "Disclaimer",
     "/refer-and-earn-terms-and-conditions": "Referral Terms and Conditions",
-    "/emargin-terms-and-conditions": "Emargin Terms and Conditions"
+    "/mtf-emargin-terms-and-conditions": "Emargin Terms and Conditions"
 }
 
 const BreadcrumbSec = () => {

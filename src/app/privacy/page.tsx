@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
     <>
       <section className={`${styles.staticSec}`}>
         <div className={`${styles.maContainer}`}>
-          <PolicyNavigation />
+          <PolicyNavigation showPolicyNav={true} />
           <div className={`${styles.mainworTc} ${styles.pb40}`}>
             <h1 className={`${styles.title}`}>Privacy Policy</h1>
             <p>
@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
               you.
               <br />
               <br />
-              This site contains links to other web sites,Mirae Asset Capital Markets
+              This site contains links to other web sites, Mirae Asset Capital Markets
               (India) Private Limited is not responsible for the privacy practices or the
               content of such web sites.
             </p>

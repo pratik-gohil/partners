@@ -2,6 +2,11 @@
 
 .staticSec {
     padding-top: 40px;
+    line-height: 20px;
+
+    h2 {
+        margin-bottom: 15px;
+    }
 }
 
 .staticSec a {
@@ -43,12 +48,19 @@
 }
 
 .mainworTc {
-    line-height: 26px;
+    line-height: 20px;
+    min-height: 505px;
 }
+
+.staticSec {
+    line-height: 20px;
+}
+
 
 .mainworTc p {
     font-size: 14px;
     margin-bottom: 20px;
+    line-height: 20px;
 }
 
 .mainworTc p.dadnewpba {
@@ -196,5 +208,9 @@
 @media all and (max-width:767px) {
     .mainworTc {
         margin-top: 15px;
+    }
+
+    .staticSec {
+        padding-top: 20px;
     }
 }

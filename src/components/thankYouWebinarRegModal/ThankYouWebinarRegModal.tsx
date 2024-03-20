@@ -1,6 +1,7 @@
 "use client";
 import React from 'react'
 import styles from "./ThankYouWebinarRegModal.module.scss";
+import Image from 'next/image';
 
 const ThankYouWebinarRegModal = ({ onClose }: any) => {
 
@@ -13,11 +14,12 @@ const ThankYouWebinarRegModal = ({ onClose }: any) => {
             </div>
             <div className={`${styles.modelBody}`}>
                 <div className={`${styles.thankinndiv}`}>
-                    <img
-                        data-src="/succesfull-icon.webp"
+                    <Image
+                        width={300}
+                        height={300}
                         alt="success"
                         data-ll-status="loaded"
-                        src="/succesfull-icon.webp"
+                        src="/payment-succesfull.gif"
                     />
                     <p>
                         Thank you for registering for the first webinar of <span className={`${styles.orangeTxt}`}><b>Mirae Asset Partners.</b></span><br />
