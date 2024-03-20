@@ -8,6 +8,7 @@ import Image from 'next/image';
 
 const data = {
     "/pricing": "Pricing",
+    "/pricing-cta": "Revenue Sharing",
     "/partner-listing": "Partner Listing",
     "/partner-referral-program": "Partner Refer & Earn",
     "/faq": "Partner FAQs",
