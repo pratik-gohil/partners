@@ -27,9 +27,9 @@ const WebinarRegBannerSec = () => {
         <>
             <div className={`${styles.webinarRegBannerSec}`}>
                 {isDesktop ?
-                    <Image priority={true} fill src={`${BannerBgImgDesk.src}`} className={`${styles.bannerBgImgDesk}`} alt="webinar" title="webinar" />
+                    <Image priority={false} fill src={`${BannerBgImgDesk.src}`} className={`${styles.bannerBgImgDesk}`} alt="webinar" title="webinar" />
                     :
-                    <Image priority={true} fill src={`${BannerBgImgMob.src}`} className={`${styles.bannerBgImgMob}`} alt="webinar" title="webinar" />
+                    <Image priority={false} fill src={`${BannerBgImgMob.src}`} className={`${styles.bannerBgImgMob}`} alt="webinar" title="webinar" />
                 }
                 <div className={`${styles.webinarInnerBox}`}>
                     <div>
