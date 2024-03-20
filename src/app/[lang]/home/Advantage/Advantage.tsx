@@ -132,34 +132,34 @@ function Advantage({dictionary}: any) {
                         <div className={styles["listof-advant"]}>
                             <ul>
                                 <li>
-                                    <h3 className={styles["advantages-head"]}><span>4</span> <b>Global trusted brand</b></h3>
-                                    <p className={styles["advantages-prag"]}>with 25+ years of experience across 19 countries</p>
+                                    <h3 className={styles["advantages-head"]}><span>4</span> <b>{dictionary["advantageH4"]}</b></h3>
+                                    <p className={styles["advantages-prag"]}>{dictionary["advantageH4_1"]}</p>
                                 </li>
                                 <li>
-                                    <h3 className={styles["advantages-head"]}><span>5</span> <b>Disruptive Business Model</b></h3>
-                                    <p className={styles["advantages-prag"]}>with best brokerages and interest rate plans</p>
+                                    <h3 className={styles["advantages-head"]}><span>5</span> <b>{dictionary["advantageH5"]}</b></h3>
+                                    <p className={styles["advantages-prag"]}>{dictionary["advantageH5_1"]}</p>
                                 </li>
                                 <li>
-                                    <h3 className={styles["advantages-head"]}><span>6</span> <b>Transparent Model</b></h3>
+                                    <h3 className={styles["advantages-head"]}><span>6</span> <b>{dictionary["advantageH6"]}</b></h3>
                                     <p className={styles["advantages-prag"]}>
-                                        with zero disparity irrespective of your business size
+                                    {dictionary["advantageH6_1"]}
                                     </p>
                                 </li>
                                 <li>
-                                    <h3 className={styles["advantages-head"]}><span>7</span> <b>High payouts</b></h3>
-                                    <p className={styles["advantages-prag"]}>across 9 income generating streams</p>
+                                    <h3 className={styles["advantages-head"]}><span>7</span> <b>{dictionary["advantageH7"]}</b></h3>
+                                    <p className={styles["advantages-prag"]}>{dictionary["advantageH7_1"]}</p>
                                 </li>
                                 <li>
-                                    <h3 className={styles["advantages-head"]}><span>8</span> <b>Establish your brand</b></h3>
-                                    <p className={styles["advantages-prag"]}>with visibility on clients app and web trading platforms</p>
+                                    <h3 className={styles["advantages-head"]}><span>8</span> <b>{dictionary["advantageH8"]}</b></h3>
+                                    <p className={styles["advantages-prag"]}>{dictionary["advantageH8_1"]}</p>
                                 </li>
                                 <li>
-                                    <h3 className={styles["advantages-head"]}><span>9</span> <b>Dedicated service desk</b></h3>
-                                    <p className={styles["advantages-prag"]}>for you</p>
+                                    <h3 className={styles["advantages-head"]}><span>9</span> <b>{dictionary["advantageH9"]}</b></h3>
+                                    <p className={styles["advantages-prag"]}>{dictionary["advantageH9_1"]}</p>
                                 </li>
                                 <li>
-                                    <h3 className={styles["advantages-head"]}><span>10</span> <b>Stable platforms</b></h3>
-                                    <p className={styles["advantages-prag"]}>clocking 25 lakh+ trades per day</p>
+                                    <h3 className={styles["advantages-head"]}><span>10</span> <b>{dictionary["advantageH10"]}</b></h3>
+                                    <p className={styles["advantages-prag"]}>{dictionary["advantageH10_1"]}</p>
                                 </li>
                             </ul>
                         </div>

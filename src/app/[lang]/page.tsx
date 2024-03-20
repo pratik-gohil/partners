@@ -25,8 +25,8 @@ const dictionary = await getDictionary(dictionaries[lang])
       <RevenueSharing />
       <PartnerProgram />
       <Advantage dictionary={dictionary}/>
-      <ClientFeature />
-      <T2Month />
+      <ClientFeature dictionary={dictionary}/>
+      <T2Month dictionary={dictionary}/>
       <FaqsSec />
     </>
   );

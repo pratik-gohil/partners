@@ -4,52 +4,56 @@ import styles from './clientfeature.module.scss'
 
 import { DeferedImage } from '@/components/DeferImage'
 
-const clientTabs = [
-    {
-        id: 1,
-        name: 'Assurance of brand Mirae Assetdashboard',
-        imageURL: '/sidemenu.webp'
-    },
-    {
-        id: 2,
-        name: 'Range of products on a single platform',
-        imageURL: '/home_dashboard.webp'
-    },
-    {
-        id: 3,
-        name: `1-click order placement across products`,
-        imageURL: '/mobile-left-img3.webp'
-    },
-    {
-        id: 4,
-        name: 'Stable platform for smooth processing',
-        imageURL: '/fund-transfer.webp'
-    },
-    {
-        id: 5,
-        name: 'Fundamental data & technical charts',
-        imageURL: '/mobile-left-img5.webp'
-    },
-    {
-        id: 6,
-        name: 'Single-view screen for complete portfolio',
-        imageURL: '/mobile-left-img6.webp'
-    },
-    {
-        id: 7,
-        name: 'Advanced order placement options',
-        imageURL: '/detail-order-form.webp'
-    }
-]
 
-export default function ClientFeature() {
+
+export default function ClientFeature({dictionary}: any) {
     const [activeTab, setActiveTab] = useState(1)
+
+    const clientTabs = [
+        {
+            id: 1,
+            name: dictionary["clientTitle1"],
+            imageURL: '/sidemenu.webp'
+        },
+        {
+            id: 2,
+            name: dictionary["clientTitle2"],
+            imageURL: '/home_dashboard.webp'
+        },
+        {
+            id: 3,
+            name: dictionary["clientTitle3"],
+            imageURL: '/mobile-left-img3.webp'
+        },
+        {
+            id: 4,
+            name: dictionary["clientTitle4"],
+            imageURL: '/fund-transfer.webp'
+        },
+        {
+            id: 5,
+            name: dictionary["clientTitle5"],
+            imageURL: '/mobile-left-img5.webp'
+        },
+        {
+            id: 6,
+            name: dictionary["clientTitle6"],
+            imageURL: '/mobile-left-img6.webp'
+        },
+        {
+            id: 7,
+            name: dictionary["clientTitle7"],
+            imageURL: '/detail-order-form.webp'
+        }
+    ]
 
     return (
         <>
             <section className={styles["whatsInitClientsSec"]}>
                 <div className={styles["maContainer"]}>
-                    <h2 className={styles["secTitle"]}><span>What&apos;s in it</span>for your clients?</h2>
+                    <h2 className={styles["secTitle"]} dangerouslySetInnerHTML={
+                                       { __html: dictionary["clientTitle"]}
+                                    }></h2>
 
                     <div className={styles["technolbar-ta"]}>
                         <div className={styles["tab-content"]}>
