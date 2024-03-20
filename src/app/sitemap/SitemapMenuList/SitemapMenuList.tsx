@@ -15,11 +15,11 @@ function SitemapMenuList() {
                         <li><RetainQueryLink href="/faq">Partner FAQs</RetainQueryLink></li>
                     </ul>
                     <ul className={`${styles.sitemapmainUl} ${styles.policybarLi}`}>
-                        <li><RetainQueryLink href="/our-policies">Terms of Use</RetainQueryLink></li>
-                        <li><RetainQueryLink href="/disclaimer">Disclaimer</RetainQueryLink></li>
-                        <li><RetainQueryLink href="/privacy-policy">Privacy Policy</RetainQueryLink></li>
-                        <li><RetainQueryLink href="/terms-and-conditions">Terms & Conditions</RetainQueryLink></li>
-                        <li><RetainQueryLink href="/advisory-for-investors">Advisory for Investors</RetainQueryLink></li>
+                        <li><RetainQueryLink href="/partnership-terms-of-use">Terms of Use</RetainQueryLink></li>
+                        <li><RetainQueryLink href="/risk-disclaimer">Disclaimer</RetainQueryLink></li>
+                        <li><RetainQueryLink href="/privacy">Privacy Policy</RetainQueryLink></li>
+                        <li><RetainQueryLink href="/partnership-terms-and-conditions">Terms & Conditions</RetainQueryLink></li>
+                        <li><RetainQueryLink href="/investor-advisory">Advisory for Investors</RetainQueryLink></li>
                         <li><a href="/asset/pdf/investor-charter.pdf" target="_blank">Investor Charter</a></li>
                         <li><RetainQueryLink href="/downloads">Downloads</RetainQueryLink></li>
                     </ul>
