@@ -27,7 +27,7 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
       <Advantage dictionary={dictionary}/>
       <ClientFeature dictionary={dictionary}/>
       <T2Month dictionary={dictionary}/>
-      <FaqsSec />
+      <FaqsSec dictionary={dictionary}/>
     </>
   );
 }

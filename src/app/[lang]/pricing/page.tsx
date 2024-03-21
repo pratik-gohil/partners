@@ -3,6 +3,7 @@ import PricePayoutStructureSec from "./PricePayoutStructureSec/PricePayoutStruct
 import ViewDetailedPricesSec from "./ViewDetailedPricesSec/ViewDetailedPricesSec";
 import RegOnboardChargesSec from "./RegOnboardChargesSec/RegOnboardChargesSec";
 import { getMetaData } from "@/app/[lang]/layout";
+import { getDictionary } from "@/lib/utils/dictionaries";
 
 export async function generateMetadata() {
   const commonMetadata = getMetaData({
@@ -14,12 +15,20 @@ export async function generateMetadata() {
   return commonMetadata;
 }
 
-export default function PricingPage() {
+export default async function PricingPage({ params: { lang } }: { params: { lang: string } }) {
+  const dictionaries = {
+    en: () => import('../home/dictionary/en.json').then((module) => module.default),
+    hi: () => import('../home/dictionary/hi.json').then((module) => module.default),
+  }
+
+  // @ts-ignore
+  const dictionary = await getDictionary(dictionaries[lang])
+
   return (
     <>
-      <PricingBannerSec />
+      <PricingBannerSec dictionary={dictionary}/>
       <PricePayoutStructureSec />
-      <ViewDetailedPricesSec />
+      <ViewDetailedPricesSec dictionary={dictionary}/>
       <RegOnboardChargesSec />
     </>
   );

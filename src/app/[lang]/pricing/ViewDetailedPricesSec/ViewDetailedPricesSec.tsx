@@ -4,7 +4,7 @@ import styles from './ViewDetailedPricesSec.module.scss'
 import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 import Image from 'next/image';
 
-function ViewDetailedPricesSec() {
+function ViewDetailedPricesSec({ dictionary }: any) {
     const [isVisible, setIsVisible] = useState(false);
 
     const toggleVisibility = () => {
@@ -14,12 +14,12 @@ function ViewDetailedPricesSec() {
     return (
         <section className={`${styles.viewDetailedPricesSec}`}>
             <div className={`${styles.maContainer}`}>
-                <h2 className={`${styles.secTitle} `}>View detailed pricing and payout details</h2>
+                <h2 className={`${styles.secTitle} `}>{dictionary["viewDetailedTitle"]}</h2>
                 <div className={`${styles.docsLinkBox}`}>
-                    <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><Image width={50} height={50} src="/pdf-icon.webp" alt="pdf" /> <span>Download complete partner income sharing details</span></a>
+                    <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><Image width={50} height={50} src="/pdf-icon.webp" alt="pdf" /> <span>{dictionary["incomeSharingPdf"]}</span></a>
                     <RetainQueryLink href="/terms-and-conditions">
                         <div className={`${styles.halfWrapAlink}`}>
-                            <Image width={50} height={50} src="/terms-and-conditions-icon.webp" alt="terms&conditions" /> <span>Payout Terms and Conditions</span>
+                            <Image width={50} height={50} src="/terms-and-conditions-icon.webp" alt="terms&conditions" /> <span>{dictionary["payoutTCPdf"]}</span>
                         </div>
                     </RetainQueryLink>
                 </div>
