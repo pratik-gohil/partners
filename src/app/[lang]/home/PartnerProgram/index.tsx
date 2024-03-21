@@ -364,38 +364,40 @@ function PartnerProgram({dictionary}: any) {
                 </div>
 
                 <div className={styles["partner-offer-ac-block"]}>
-                    <h3 className={`${styles["title"]} `}>That&apos;s not all, you can benefit from various other charges too</h3>
+                    <h3 className={`${styles["title"]} `}> {dictionary["partner_offer_block"]}</h3>
                     <div className={styles["partner-ul-block"]}>
                         <ul>
                             <li>
                                 <span>
                                     <FeeSVG />
                                 </span>
-                                <p>
-                                    <b>Account Opening Fee</b>
-                                    Opportunity to charge up to ₹9,999<br /> Anything above ₹500 is <u className={styles["orangeTxt"]}>100% yours!</u>
-                                </p>
+                                <p dangerouslySetInnerHTML={
+                                       { __html: dictionary["partner_offer_acc_openfee"]}
+                                    }>
+                                   </p>
                             </li>
                             <li>
                                 <span>
                                     <UserSVG />
                                 </span>
-                                <p>
-                                    <b>Account Maintenance Charges <i>(DP AMC)</i></b>
-                                    Charge up to ₹4,999 - <u className={styles["orangeTxt"]}>Earn 100% </u>
+                                <p dangerouslySetInnerHTML={
+                                       { __html: dictionary["partner_offer_acc_maintenance_charges"]}
+                                    }>
                                 </p>
                             </li>
                             <li>
                                 <span>
                                     <PledgeSVG />
                                 </span>
-                                <p>
-                                    <b>Pledge, unpledge charges <i>(MTF, Margin Pledge)</i></b>
-                                    Choose from our standard plans – Earn 20% <br />Or customise and <u className={styles["orangeTxt"]}>Earn 100%</u>
-                                </p>
+                                <p  dangerouslySetInnerHTML={
+                                       { __html: dictionary["partner_offer_pledge_unpledge_charges"]}
+                                    }>
+                                 </p>
                             </ li>
                         </ul>
-                        <div className={styles["all-this-can-block"]}> <b>All this can<br /> become yours.</b><br /> <RetainQueryLink href="/pricing">See detailed revenue sharing plans <RightArrowSVG /> </RetainQueryLink>
+                        <div className={styles["all-this-can-block"]}> <b dangerouslySetInnerHTML={
+                                       { __html: dictionary["all_this_can_block"]}
+                                    }></b><br /> <RetainQueryLink href="/pricing">{dictionary["RetainQueryLink"]} <RightArrowSVG /> </RetainQueryLink>
                         </div>
                     </div >
                 </div>

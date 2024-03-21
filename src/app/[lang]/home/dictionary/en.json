@@ -121,6 +121,17 @@
 "DP_Sell_Transaction_Charges_ann_payoutrate": "Annual Payout above base rate",
 "DP_Sell_Transaction_Charges_annpayout": "Annual Payout",
 
-"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the DP sell transactions from <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a>"
+"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the DP sell transactions from <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a>",
+
+"partner_offer_block": "That's not all, you can benefit from various other charges too",
+"partner_offer_acc_openfee":"<b>Account Opening Fee</b>Opportunity to charge up to ₹9,999<br/> Anything above ₹500 is <u Name=\"orangeTxt\">100% yours!</u>",
+
+
+"partner_offer_acc_maintenance_charges":"<b>Account Maintenance Charges <i>(DP AMC)</i></b>Charge up to ₹4,999 - <u Name=\"orangeTxt\">Earn 100% </u>",
+
+"partner_offer_pledge_unpledge_charges":"<b>Pledge, unpledge charges <i>(MTF, Margin Pledge)</i></b>Choose from our standard plans – Earn 20% <br/>Or customise and <u Name=\"orangeTxt\">Earn 100%</u>",
+"all_this_can_block": "All this can<br /> become yours.",
+"RetainQueryLink":"See detailed revenue sharing plans"
+
 
 }

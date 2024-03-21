@@ -127,6 +127,15 @@
 
 
 
-"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a> तक DP सेल ट्रांजेक्शन कस्टमाइज करें"
+"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a> तक DP सेल ट्रांजेक्शन कस्टमाइज करें",
+
+"partner_offer_block": "इतना ही नहीं, आपको विभिन्न अन्य चार्जेज से भी फायदा मिल सकता है।",
+"partner_offer_acc_openfee":"<b>अकाउंट ओपनिंग फीस</b>₹9,999 तक चार्ज करने का मौका<br/> ₹500 से ऊपर कुछ भी <u Name=\"orangeTxt\">100% आपका!</u>",
+"partner_offer_acc_maintenance_charges":"<b>अकाउंट मेंटेनेंस चार्ज <i>(DP AMC)</i></b>₹4,999 तक चार्ज करें - <u Name=\"orangeTxt\">100% कमाएं </u>",
+
+"partner_offer_pledge_unpledge_charges":"<b>प्लेज, अनप्लेज चार्ज <i>(MTF, मार्जिन प्लेज)</i></b>स्टैंडर्ड प्लान में से चुनें - 20% कमाएं  <br/>या कस्टमाइज करें और <u Name=\"orangeTxt\">100% कमाएं</u>",
+
+"all_this_can_block": "यह सब आपका<br/> हो सकता है।",
+"RetainQueryLink":"रेवेनुए शेयरिंग का विस्तृत प्लान देखें।"
 
 }
