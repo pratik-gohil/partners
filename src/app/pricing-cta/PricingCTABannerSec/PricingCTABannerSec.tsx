@@ -12,7 +12,6 @@ function PricingCTABannerSec() {
         mobile: string,
         agree: boolean
     }
-
     const {
         register,
         //handleSubmit,
