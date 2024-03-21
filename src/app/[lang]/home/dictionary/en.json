@@ -76,5 +76,26 @@
 "gst": "<b>18% GST</b> <p>On Brokerage, DP charges, Exchange Transaction charges, SEBI charges and Auto Square-Off charges</p>",
 "physicalDelivery": "<b>Physical delivery of derivatives</b> <p>Nominal brokerage 0.05% of the contract value will be charged when physical delivery happens.</p>",
 "transactionCharges": "<b>Transaction/turnover charges</b> <p>BSE transaction charges on securities traded in X, XT and Z group is 0.10% per crore & for 'P', 'ZP', 'SS' and 'ST' group, it is 1% per crore on the gross turnover value </p>",
-"otherCharge": "<b>Other Charges</b> <p>RMS square-off charges for open intraday positions by system: ₹60 per position</p> <p>Auction if unable to deliver a stock (not in demat): As per actual penalty by exchange</p>"
+"otherCharge": "<b>Other Charges</b> <p>RMS square-off charges for open intraday positions by system: ₹60 per position</p> <p>Auction if unable to deliver a stock (not in demat): As per actual penalty by exchange</p>",
+"apRegistration": "<span>Authorised Partner registration</span> and onboarding charges",
+"captionWrap": "<p>There are certain charges applicable to get registered as an Authorised Partner.</p> <p>You can refer the following table for these charges.</p>",
+"authorisedPartneUlBlock": "<ul><li>Security deposit: ₹50,000 (Refundable)</li> <li>Document handling charges: ₹1,500 (eFranking & eSign charges)</li><li>One-time Exchange Registration Charges: ₹ 22,420</li></ul>",
+"apRegistrationTitle": "AP registration charges",
+"apTableHeading": "<th>Exchange</th><th>Segment</th><th>Fee (₹)</th><th>GST Rate</th><th>GST Amount</th><th>Total Charges (₹)</th>",
+"apTable1": "<td>NSE</td><td>Capital Market</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
+"apTable2": "<td>NSE</td><td>F&O</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
+"apTable3": " <td>NSE</td><td>Currency Derivatives</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
+"apTable4": " <td>BSE</td><td>Capital Market</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
+"apTable5": "<td>MCX</td><td>Commodities</td><td>-</td><td>18%</td><td>NA</td><td>NA</td>",
+"apTable6": "<td><b>Total Registration charges</b></td><td><b>All Segments</b></td><td><b>₹19,000</b></td><td><b>18%</b></td><td><b>₹3,420</b></td><td><b>₹22,420</b></td>",
+"authorisedPartneUlBlock1": "AP Annual Maintenance Charges effective from April 2024: ₹10,620",
+"apAnnual": "AP Annual Maintenance Charges effective from April 2024",
+"pricingTableHeading": "<th>Exchange</th><th>Segment</th><th>Fee (₹)</th><th>GST Rate</th><th>GST Amount</th><th>Total Charges (₹)</th>",
+"pricingT1": "<td>NSE-AMC</td><td>All Segments</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
+"pricingT2": "<td>BSE-AMC</td><td>All Segments</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
+"pricingT3": "<td><b>Total-AMC</b></td><td><b>NSE & BSE</b></td><td><b>₹9,000 </b></td><td><b>18%</b></td><td><b>₹1,620</b></td><td><b>₹10,620</b></td>",
+"pricingNoteBlock": "Note: With regards to the security deposit",
+"pricingNoteList": "<li>No stocks or collateral will be accepted</li> <li>It is refundable and interest-free</li>"
+
+
 }

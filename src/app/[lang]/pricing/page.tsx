@@ -29,7 +29,7 @@ export default async function PricingPage({ params: { lang } }: { params: { lang
       <PricingBannerSec dictionary={dictionary}/>
       <PricePayoutStructureSec />
       <ViewDetailedPricesSec dictionary={dictionary}/>
-      <RegOnboardChargesSec />
+      <RegOnboardChargesSec dictionary={dictionary}/>
     </>
   );
 }
