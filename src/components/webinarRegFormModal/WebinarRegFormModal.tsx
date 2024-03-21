@@ -1,15 +1,11 @@
-import React ,{useState} from "react";
+import React  from "react";
 import styles from "./WebinarRegFormModal.module.scss";
 import { useForm } from "react-hook-form";
-import {
-  validateEmail,
-  validateName,
-  validatePhone,
-} from "@/lib/constants/common";
-import { verifyContact } from "@/lib/utils/verifyContact";
+import {validateEmail,validateName,validatePhone} from "@/lib/constants/common";
 import http from "@/lib/http/http";
 
-function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any) {
+function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any) 
+{
   type FormData = {
     name: string;
     mobile: string;
@@ -24,29 +20,26 @@ function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any) {
 
 
 
-  const onSubmit = async (data: any) => {
-    console.log(data);
-    const res = await http("/partners/registerWebinar", {
+  const onSubmit = async (data: any) => 
+  {
+    const res = await http("/partners/registerWebinar", 
+    {
       method: "POST",
-      body: JSON.stringify(data), // Pass the data variable here
+      body: JSON.stringify(data), 
       headers: { "Content-Type": "application/json" },
     });
     const datares = await res.json();
-    console.log(datares,"fhf");
-    if(datares.message === 'Success')
+    if(datares.status === 0)
     {
       setIndex(1)
-        console.log('true');
-        
+      console.log('true');        
     }
-    else{
-        console.log('false');
-        
-        
-    }
-    
-    
+    else
+    {
+      console.log('false');        
+    }    
   };
+  
   return (
     <div className={`${styles.formWrap}`}>
       <div className={`${styles.modalHeader}`}>

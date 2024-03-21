@@ -34,7 +34,6 @@ const WebinarRegBannerSec = () => {
   }, []);
 
   const fetchData = async () => {
-    console.log("func called");
      try {
        const res = await http("/partners/getWebinarEvent", {
           method: "GET",
@@ -45,12 +44,10 @@ const WebinarRegBannerSec = () => {
         // const data = {"message": "Success","status": 0,"data": {"id": 7,"title": "Join the webinar to discover <b>Mirae Asset Partners </b>Program","button": "Register for Webinar Now",
         // "date": "Friday, 15th March, 2024",
         // "time": "4:30 to 6:00 pm",
-        // "url": "",
+        // "url": null,
         // "isActive": true}}
-    
 
-       const data = await res.json();
-      console.log("44", data);
+      const data = await res.json();
       if(data.data.isActive==true)
       {
         setwebinarBanner(true);
@@ -66,10 +63,10 @@ const WebinarRegBannerSec = () => {
       else
       {
         setwebinarBanner(false);
-      }
-      
+      }      
 
-    } catch (error) {
+    } catch (error) 
+    {
       console.log("Error mssg is", error);
     }
   };
