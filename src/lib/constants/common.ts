@@ -1,6 +1,12 @@
 import { emailRegex } from "./emailReg";
 import { phoneRegex } from "./phoneReg";
 
+export const translatePages = [
+    "/",
+    "/pricing",
+    "/faq"
+]
+
 export const validatePhone = {
     required: "Phone cannot be blank",
     pattern: {

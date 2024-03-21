@@ -13,14 +13,14 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
   const dictionaries = {
     en: () => import('./home/dictionary/en.json').then((module) => module.default),
     hi: () => import('./home/dictionary/hi.json').then((module) => module.default),
-}
+  }
 
-// @ts-ignore
-const dictionary = await getDictionary(dictionaries[lang])
+  // @ts-ignore
+  const dictionary = await getDictionary(dictionaries[lang])
 
   return (
     <>
-      <HeroSection dictionary={dictionary}/>
+      <HeroSection dictionary={dictionary} />
       <WebinarRegBannerSec />
       <RevenueSharing dictionary={dictionary}/>
       <PartnerProgram dictionary={dictionary}/>
