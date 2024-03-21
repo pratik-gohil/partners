@@ -91,11 +91,42 @@
 "MTF_eMargin_intrest_payout":"सालाना MTF इंटरेस्ट पेआउट",
  
 "MTF_eMargin_ann_intrest_payout":"सालाना इंटरेस्ट पेआउट",
-"MTF_eMargin_unique_benefit":"<b class=\"light-blue\" >खास फायदे :</b> <a Name=\"orangeTxt\">9.99%</a> से <a Name=\"orangeTxt\">24% </a>के बीच MTF इंटरेस्ट रेट कस्टमाइज करें."
+"MTF_eMargin_unique_benefit":"<b class=\"light-blue\" >खास फायदे :</b> <a Name=\"orangeTxt\">9.99%</a> से <a Name=\"orangeTxt\">24% </a>के बीच MTF इंटरेस्ट रेट कस्टमाइज करें.",
+
+"Margin_Pledge_Interest": "मार्जिन प्लेज इंटरेस्ट",
+"Margin_Pledge_Interest_rate": " <b>1.5X</b> और ज्यादा कमाएं",
+"Margin_Pledge_Interest_active_cli": "मार्जिन प्लेज एक्टिव क्लाइंट",
+"Margin_Pledge_Interest_book": "कुल मार्जिन प्लेज बुक",
+"Margin_Pledge_Interest_per_cli": "(प्रति क्लाइंट का ₹2 लाख मानते हुए)",
+"Margin_Pledge_Interest_avg_intrest": "एवरेज इंटरेस्ट रेट",
+
+"Margin_Pledge_Interest_Assumptions": "अनुमान",
+"Margin_Pledge_active_cli": "मार्जिन प्लेज एक्टिव क्लाइंट",
+"Margin_Pledge_total_book": "कुल मार्जिन प्लेज बुक,",
+"Margin_Pledge_per_cli": "(₹3 लाख को एवरेज बुक साइज मानते हुए)",
+
+"Margin_Pledge_annual_payout": "सालाना मार्जिन प्लेज इंटरेस्ट पेआउट",
+
+"Margin_Pledge_annual_int_payout": "सालाना इंटरेस्ट पेआउट",
+
+"Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <a Name=\"orangeTxt\">11.99%</a> से <a Name=\"orangeTxt\">24% </a>तक मार्जिन प्लेज इंटरेस्ट कस्टमाइज करें।",
+"DP_Sell_Transaction_Charges": "DP सेल ट्रांजेक्शन चार्ज",
+"DP_Sell_Transaction_Charges_rate": "<b>22X</b> या ज्यादा कमाएं",
+"DP_Sell_Transaction_Charges_perday": "दिन के कितने स्क्रिप्स बेचें",
+"DP_Sell_Transaction_Charges_title": "चार्जेज",
+"DP_Sell_Transaction_Charges_ann_charges": "सालाना चार्जेज",
+"DP_Sell_Transaction_Charges_tran_char": "एवरेज डीपी ट्रांजेक्शन चार्ज",
+"DP_Sell_Transaction_Charges_dp_tran_char": "कस्टमाइज किए हुए डीपी ट्रांजेक्शन चार्ज",
+"DP_Sell_Transaction_Charges_ann_dp_char": "सालाना डीपी ट्रांजेक्शन चार्ज",
+"DP_Sell_Transaction_Charges_Payout_rate": "पेआउट रेट",
+"DP_Sell_Transaction_Charges_base": "(बेस रेट पर)",
+"DP_Sell_Transaction_Charges_abovebase": "(बेस रेट के ऊपर)",
+
+"DP_Sell_Transaction_Charges_ann_payoutrate": "बेस रेट के ऊपर का सालाना पेआउट",
+"DP_Sell_Transaction_Charges_annpayout": "सालाना पेआउट",
 
 
 
-
-
+"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a> तक DP सेल ट्रांजेक्शन कस्टमाइज करें"
 
 }

@@ -85,10 +85,42 @@
 "MTF_eMargin_intrest_payout":"Annual MTF interest payout",
 
 "MTF_eMargin_ann_intrest_payout":"Annual Interest Payout",
-"MTF_eMargin_unique_benefit":"<b Name=\"light-blue\">Unique Benefit:</b> Customise the MTF interest rate from <a Name=\"orangeTxt\">9.99%</a> to <a Name=\"orangeTxt\">24%.</a>"
+"MTF_eMargin_unique_benefit":"<b Name=\"light-blue\">Unique Benefit:</b> Customise the MTF interest rate from <a Name=\"orangeTxt\">9.99%</a> to <a Name=\"orangeTxt\">24%.</a>",
+
+"Margin_Pledge_Interest": "Margin Pledge Interest",
+"Margin_Pledge_Interest_rate": " Earn <b>1.5X</b> or more",
+"Margin_Pledge_Interest_active_cli": "Margin Pledge active clients",
+"Margin_Pledge_Interest_book": "Margin Pledge book",
+"Margin_Pledge_Interest_per_cli": "(assuming ₹2 lakh per client)",
+"Margin_Pledge_Interest_avg_intrest": "Average interest rate",
+
+"Margin_Pledge_Interest_Assumptions": "Assumptions",
+"Margin_Pledge_active_cli": "Margin Pledge active clients",
+"Margin_Pledge_total_book": "Total Margin Pledge Book",
+"Margin_Pledge_per_cli": "(assuming ₹2 lakh per client)",
+
+"Margin_Pledge_annual_payout": "Annual Margin Pledge interest payout",
+"Margin_Pledge_annual_int_payout": "Annual Interest Payout",
+"Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the Margin Pledge interest rate from <a Name=\"orangeTxt\"> 11.99 %</a> to <a Name=\"orangeTxt\"> 24 %.</a>",
+
+"DP_Sell_Transaction_Charges": "DP Sell Transaction Charges",
+"DP_Sell_Transaction_Charges_rate": "Earn <b>22X</b> or more",
+"DP_Sell_Transaction_Charges_perday": "No of scrips sold per day",
+"DP_Sell_Transaction_Charges_title": "Charges",
+"DP_Sell_Transaction_Charges_ann_charges": "Annual Charges",
+
+"DP_Sell_Transaction_Charges_tran_char": "Average DP transaction charges",
+"DP_Sell_Transaction_Charges_dp_tran_char": "Customised DP transaction charges",
+"DP_Sell_Transaction_Charges_ann_dp_char": "Annual DP transaction charges",
+"DP_Sell_Transaction_Charges_Payout_rate": "Payout rate",
+"DP_Sell_Transaction_Charges_base": "(On Base)",
+"DP_Sell_Transaction_Charges_abovebase": "(Above Base)",
 
 
 
+"DP_Sell_Transaction_Charges_ann_payoutrate": "Annual Payout above base rate",
+"DP_Sell_Transaction_Charges_annpayout": "Annual Payout",
 
+"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the DP sell transactions from <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a>"
 
 }

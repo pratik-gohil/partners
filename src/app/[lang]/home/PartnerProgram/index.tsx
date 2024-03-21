@@ -176,27 +176,29 @@ function PartnerProgram({dictionary}: any) {
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={`${styles["x-amount-left"]} `}>
-                                Margin Pledge Interest
+                            {dictionary["Margin_Pledge_Interest"]}
                             </div>
                             <div className={styles["knowmore-ribar"]} data-section-action="margin-pledge-intrest" onClick={e => handleKnowMore(e)}>Know How ?</div>
-                            <div className={styles["x-amount-right"]}>
-                                Earn <b>1.5X</b> or more
+                            <div className={styles["x-amount-right"]}dangerouslySetInnerHTML={
+                                       { __html: dictionary["Margin_Pledge_Interest_rate"]}
+                                    }>
+                                
                             </div >
                         </div >
                         <div className={styles["x-amount-txt-containt"]}>
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
                                     <li>
-                                        Margin Pledge active clients <br />
+                                    {dictionary["Margin_Pledge_Interest_active_cli"]} <br />
                                         <b>100</b>
                                     </li>
                                     <li>
-                                        Margin Pledge book <br />
+                                    {dictionary["Margin_Pledge_Interest_book"]} <br />
                                         <b>₹2 crore</b> <br />
-                                        <small>(assuming ₹2 lakh per client)</small>
+                                        <small>{dictionary["Margin_Pledge_Interest_per_cli"]}</small>
                                     </li>
                                     <li>
-                                        Average interest rate <br />
+                                    {dictionary["Margin_Pledge_Interest_avg_intrest"]} <br />
                                         <b>18% p.a.</b>
                                     </li>
                                 </ul>
@@ -204,37 +206,39 @@ function PartnerProgram({dictionary}: any) {
                             <div className={styles["tablebar-planB"]} data-section-table="margin-pledge-intrest" style={{ height: '0px' }}>
                                 <table cellPadding="0" cellSpacing="0" border={0} width="100%">
                                     <tbody><tr>
-                                        <th >Assumptions</th>
-                                        <th><span>Industry</span></th>
+                                        <th >{dictionary["Margin_Pledge_Interest_Assumptions"]}</th>
+                                        <th><span>{dictionary["MTF_eMargin_industry"]}</span></th>
                                         <th><span className={styles["orngText"]}>Mirae Asset Partners</span></th>
                                     </tr>
                                         <tr>
-                                            <td >Margin Pledge active clients</td>
+                                            <td >{dictionary["Margin_Pledge_active_cli"]}</td>
                                             <td>100</td>
                                             <td>100</td>
                                         </tr>
                                         <tr>
-                                            <td >Total Margin Pledge Book <small>(assuming ₹2 lakh per client)</small></td>
+                                            <td >{dictionary["Margin_Pledge_total_book"]} <small>{dictionary["Margin_Pledge_per_cli"]}</small></td>
                                             <td>₹2 crore</td>
                                             <td><b>₹2 crore</b></td>
                                         </tr>
                                         <tr>
-                                            <td >Average interest rate</td>
+                                            <td >{dictionary["MTF_eMargin_avg_intrest_rate"]}</td>
                                             <td>18%</td>
                                             <td>18%</td>
                                         </tr>
                                         <tr>
-                                            <td >Base rate <small>(retained by the broker)</small></td>
+                                            <td dangerouslySetInnerHTML={
+                                       { __html: dictionary["MTF_eMargin_retain_broker"]}
+                                    }></td>
                                             <td>12%</td>
                                             <td>11.99%</td>
                                         </tr>
                                         <tr>
-                                            <td >Interest sharing above base rate</td>
+                                            <td >{dictionary["MTF_eMargin_intrest_baserate"]}</td>
                                             <td>50%</td>
                                             <td>80%</td>
                                         </tr>
                                         <tr>
-                                            <td ><b>Annual Margin Pledge interest payout</b></td>
+                                            <td ><b>{dictionary["Margin_Pledge_annual_payout"]}</b></td>
                                             <td>₹6 lakh (50%)</td>
                                             <td>₹9.61 lakh (80%)</td>
                                         </tr>
@@ -242,10 +246,10 @@ function PartnerProgram({dictionary}: any) {
                             </div>
                             <div className={styles["x-amount-industry-block"]}>
                                 <div className={styles["x-amount-industry-block-1"]}>
-                                    Annual Interest Payout
+                                {dictionary["Margin_Pledge_annual_int_payout"]}
                                 </div>
                                 <div className={styles["x-amount-industry-block-2"]}>
-                                    <span>Industry</span> <br />
+                                    <span>{dictionary["MTF_eMargin_industry"]}</span> <br />
                                     <b>₹6 lakh <small>(50%)</small></b>
                                 </div>
                                 <div className={styles["x-amount-industry-block-vs"]}>
@@ -258,34 +262,38 @@ function PartnerProgram({dictionary}: any) {
                                 <div className={styles["x-amount-unnique-benefit-block"]}>
                                     <StarSVG />
 
-                                    <b className={styles["light-blue"]}>Unique Benefit:</b> Customise the Margin Pledge interest rate from < b className={styles["orangeTxt"]}> 11.99 %</b> to < b className={styles["orangeTxt"]}> 24 %.</b>
-                                </div >
+                                    <span dangerouslySetInnerHTML={
+                                       { __html: dictionary["Margin_Pledge_annual_benifit"]}
+                                    }/>                                
+                                    </div >
                             </div >
                         </div >
                     </div>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={`${styles["x-amount-left"]} `}>
-                                DP Sell Transaction Charges
+                            {dictionary["DP_Sell_Transaction_Charges"]}
                             </div>
                             <div className={styles["knowmore-ribar"]} data-section-action="dp-sell" onClick={e => handleKnowMore(e)}>Know How ?</div>
-                            <div className={styles["x-amount-right"]}>
-                                Earn <b>22X</b> or more
+                            <div className={styles["x-amount-right"]} dangerouslySetInnerHTML={
+                                       { __html: dictionary["DP_Sell_Transaction_Charges_rate"]}
+                                    }>
+                            
                             </div >
                         </div>
                         <div className={styles["x-amount-txt-containt"]}>
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
                                     <li>
-                                        No of scrips sold per day <br />
+                                    {dictionary["DP_Sell_Transaction_Charges_perday"]} <br />
                                         <b>25</b>
                                     </li>
                                     <li>
-                                        Charges <br />
+                                    {dictionary["DP_Sell_Transaction_Charges_title"]} <br />
                                         <b>₹12 - ₹25</b>
                                     </li>
                                     <li>
-                                        Annual Charges <br />
+                                    {dictionary["DP_Sell_Transaction_Charges_ann_charges"]} <br />
                                         <b>₹72,000 - ₹1,50,000</b>
                                     </li>
                                 </ul>
@@ -294,36 +302,36 @@ function PartnerProgram({dictionary}: any) {
                                 <table cellPadding="0" cellSpacing="0" border={0} width="100%">
                                     <tbody><tr>
                                         <th >&nbsp;</th>
-                                        <th><span>Industry</span></th>
+                                        <th><span>{dictionary["MTF_eMargin_industry"]}</span></th>
                                         <th><span className={styles["orngText"]}>Mirae Asset Partners</span></th>
                                     </tr>
                                         <tr>
-                                            <td >No of scrips sold per day</td>
+                                            <td >{dictionary["DP_Sell_Transaction_Charges_perday"]}</td>
                                             <td>25</td>
                                             <td>25</td>
                                         </tr>
                                         <tr>
-                                            <td >Average DP transaction charges</td>
+                                            <td >{dictionary["DP_Sell_Transaction_Charges_tran_char"]}</td>
                                             <td>₹12</td>
                                             <td>₹12</td>
                                         </tr>
                                         <tr>
-                                            <td >Customised DP transaction charges</td>
+                                            <td >{dictionary["DP_Sell_Transaction_Charges_dp_tran_char"]}</td>
                                             <td><b>NA</b></td>
                                             <td><b>₹25</b></td>
                                         </tr>
                                         <tr>
-                                            <td >Annual DP transaction charges</td>
+                                            <td >{dictionary["DP_Sell_Transaction_Charges_ann_dp_char"]}</td>
                                             <td>₹72,000</td>
                                             <td>₹1,50,000</td>
                                         </tr>
                                         <tr>
-                                            <td >Payout rate</td>
-                                            <td>5% (On Base)</td>
-                                            <td>100% (Above Base)</td>
+                                            <td >{dictionary["DP_Sell_Transaction_Charges_Payout_rate"]}</td>
+                                            <td>5% {dictionary["DP_Sell_Transaction_Charges_base"]}</td>
+                                            <td>100% {dictionary["DP_Sell_Transaction_Charges_abovebase"]}</td>
                                         </tr>
                                         <tr>
-                                            <td >Annual Payout above base rate</td>
+                                            <td >{dictionary["DP_Sell_Transaction_Charges_ann_payoutrate"]}</td>
                                             <td>₹3,600</td>
                                             <td>₹78,000</td>
                                         </tr>
@@ -331,10 +339,10 @@ function PartnerProgram({dictionary}: any) {
                             </div>
                             <div className={styles["x-amount-industry-block"]}>
                                 <div className={styles["x-amount-industry-block-1"]}>
-                                    Annual Payout
+                                {dictionary["DP_Sell_Transaction_Charges_annpayout"]}
                                 </div>
                                 <div className={styles["x-amount-industry-block-2"]}>
-                                    <span>Industry</span> <br />
+                                    <span>{dictionary["MTF_eMargin_industry"]}</span> <br />
                                     <b>₹3,600 <small>(5%)</small></b>
                                 </div>
                                 <div className={styles["x-amount-industry-block-vs"]}>
@@ -346,8 +354,9 @@ function PartnerProgram({dictionary}: any) {
                                 </div>
                                 <div className={styles["x-amount-unnique-benefit-block"]}>
                                     <StarSVG />
-
-                                    <b className={styles["light-blue"]}>Unique Benefit:</b> Customise the DP sell transactions from < b className={styles["orangeTxt"]}>₹12</b> to < b className={styles["orangeTxt"]}>₹25.</b>
+                                    <span dangerouslySetInnerHTML={
+                                       { __html: dictionary["DP_Sell_Transaction_Charges_benifit"]}
+                                    }/>
                                 </div>
                             </div>
                         </div>
