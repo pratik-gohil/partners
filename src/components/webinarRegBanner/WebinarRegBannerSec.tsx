@@ -47,7 +47,7 @@ const WebinarRegBannerSec = () => {
         // "url": null,
         // "isActive": true}}
 
-      const data = await res.json();
+       const data = await res.json();
       if(data.data.isActive==true)
       {
         setwebinarBanner(true);

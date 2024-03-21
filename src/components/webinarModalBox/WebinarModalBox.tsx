@@ -5,7 +5,6 @@ import ThankYouWebinarRegModal from '../thankYouWebinarRegModal/ThankYouWebinarR
 
 const WebinarModalBox = ({ onClose }: { onClose: () => void }) => {
     const [index, setIndex] = useState(0);
-    console.log("INDD",index)
     return (
         <>
 
