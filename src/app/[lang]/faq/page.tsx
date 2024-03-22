@@ -1,6 +1,7 @@
 
 import FaqsSec from "./FaqsSec/FaqsSec";
 import { getMetaData } from "@/app/[lang]/layout";
+import { getDictionary } from "@/lib/utils/dictionaries";
 
 export async function generateMetadata() {
   const commonMetadata = getMetaData({
@@ -12,10 +13,19 @@ export async function generateMetadata() {
   return commonMetadata;
 }
 
-export default function FaqsPage() {
+
+export default async function FaqsPage({ params: { lang } }: { params: { lang: string } }) {
+  const dictionaries = {
+    en: () => import('../home/dictionary/en.json').then((module) => module.default),
+    hi: () => import('../home/dictionary/hi.json').then((module) => module.default),
+  }
+
+ // @ts-ignore
+ const dictionary = await getDictionary(dictionaries[lang])
+
   return (
     <>
-      <FaqsSec />
+      <FaqsSec dictionary={dictionary} lang={lang}/>
     </>
   );
 }
