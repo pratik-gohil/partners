@@ -88,11 +88,11 @@ const Footer = () => {
                                     <p>Mirae Asset Capital Markets (India) Private Limited (“MACM”) offer its online retail stock broking  services under brand m.Stock <br /> Registration Details: SEBI Stock Broker Registration No.: INZ000163138 – Membership in BSE – Cash Segment (Clearing Member ID: 6681), BSE Star MF Segment (Membership No : 53975) and in NSE – Cash, F&amp;O and CD Segments (Member ID: 90144), Membership in MCX – (Member ID: 56980),  SEBI Merchant Banking Registration No.: MB/INM000012485, SEBI Research Analyst Registration No.: INH000007526, SEBI DP Registration No: IN-DP-589-2021, CDSL DP ID: 12092900, CIN: U65990MH2017FTC300493. AMFI Registered Mutual Funds Distributor: ARN-188742.Tele No: 18002100819. In case of any grievances, please write to <a href="mailto:support@miraeassetpartners.com">support@miraeassetpartners.com</a> <br /> </p>
                                 </div>
                                 <ul className={`${styles.ftLinkWrap}`}>
-                                    <li><RetainQueryLink href="/terms-of-use">Terms of Use</RetainQueryLink></li>
-                                    <li><RetainQueryLink href="/disclaimer">Disclaimer</RetainQueryLink></li>
-                                    <li><RetainQueryLink href="/privacy-policy">Privacy Policy</RetainQueryLink></li>
-                                    <li><RetainQueryLink href="/terms-and-conditions">Terms & Conditions</RetainQueryLink></li>
-                                    <li><RetainQueryLink href="/advisory-for-investors">Advisory for Investors</RetainQueryLink></li>
+                                    <li><RetainQueryLink href="/partnership-terms-of-use">Terms of Use</RetainQueryLink></li>
+                                    <li><RetainQueryLink href="/risk-disclaimer">Disclaimer</RetainQueryLink></li>
+                                    <li><RetainQueryLink href="/privacy">Privacy Policy</RetainQueryLink></li>
+                                    <li><RetainQueryLink href="/partnership-terms-and-conditions">Terms & Conditions</RetainQueryLink></li>
+                                    <li><RetainQueryLink href="/investor-advisory">Advisory for Investors</RetainQueryLink></li>
                                     <li><a href="/asset/pdf/investor-charter.pdf" target="_blank">Investor Charter</a></li>
                                     <li><RetainQueryLink href="/downloads">downloads</RetainQueryLink></li>
                                     <li> <a href="https://www.bseindia.com/" target="_blank" rel="nofollow">BSE</a></li>
