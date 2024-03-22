@@ -27,7 +27,7 @@ export default async function PricingPage({ params: { lang } }: { params: { lang
   return (
     <>
       <PricingBannerSec dictionary={dictionary}/>
-      <PricePayoutStructureSec />
+      <PricePayoutStructureSec dictionary={dictionary}/>
       <ViewDetailedPricesSec dictionary={dictionary}/>
       <RegOnboardChargesSec dictionary={dictionary}/>
     </>

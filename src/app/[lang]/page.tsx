@@ -22,8 +22,8 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
     <>
       <HeroSection dictionary={dictionary} />
       <WebinarRegBannerSec />
-      <RevenueSharing />
-      <PartnerProgram />
+      <RevenueSharing dictionary={dictionary}/>
+      <PartnerProgram dictionary={dictionary}/>
       <Advantage dictionary={dictionary}/>
       <ClientFeature dictionary={dictionary}/>
       <T2Month dictionary={dictionary}/>
