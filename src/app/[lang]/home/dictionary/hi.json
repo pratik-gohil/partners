@@ -1,20 +1,12 @@
 {
 "pageTitle": "पेश करते है भारत के सबसे बड़े बिज़नेस पार्टनर प्रोग्राम",
 
-
-
-
-
 "secTitle": "असीमित, अविश्वसनीय",
 "secTitle1": "रेवेन्यू शेयरिंग",
 "brokerageTitle": "ब्रोकरेज",
 
-
 "caption1" : "हर सेगमेंट में 100% शेयरिंग",
-
 "keyPointsTitle": "100% शेयरिंग",
-
-
 "keyPoint1": "अकाउंट मेंटेनेंस चार्ज (AMC)",
 "keyPoint2": "अकाउंट ओपनिंग फीस",
 "keyPoint3": "DP ट्रांजेक्शन चार्ज",
@@ -26,7 +18,6 @@
 
 "marginTitle1" : "(ईमार्जिन)",
 
-
 "marginTitle2": "",
 "marginTitle3": "9.99% से ज्यादा पर",
 "marginTitle4": "80% शेयरिंग",
@@ -35,9 +26,6 @@
 "marginTitle6": "",
 "marginTitle7": "11.99% से ज्यादा पर",
 "marginTitle8": "80% शेयरिंग",
-
-
-
 
 "captionTxt": "हमारा पार्टनर प्रोग्राम आप और आपके क्लाइंट के लिए",
 "captionTxt1": "अविश्वसनीय रूप से किफ़ायती कीमत",
@@ -82,7 +70,6 @@
 "MTF_eMargin_details":"विवरण",
 "MTF_eMargin_industry":"इंडस्ट्री",
 
-
 "MTF_eMargin_industry_clients":"MTF एक्टिव क्लाइंट",
 "MTF_eMargin_MTF_Book":"कुल MTF बुक, <small>(₹3 लाख को एवरेज बुक साइज मानते हुए)</small>",
 "MTF_eMargin_avg_intrest_rate":"एवरेज इंटरेस्ट रेट",
@@ -124,8 +111,6 @@
 
 "DP_Sell_Transaction_Charges_ann_payoutrate": "बेस रेट के ऊपर का सालाना पेआउट",
 "DP_Sell_Transaction_Charges_annpayout": "सालाना पेआउट",
-
-
 
 "DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a> तक DP सेल ट्रांजेक्शन कस्टमाइज करें",
 
@@ -195,6 +180,106 @@
 "pRegistration": "AP रजिस्ट्रेशन और ऑनबोर्डिंग चार्जेज देखें",
 "viewDetailedTitle": "विस्तृत कीमत निर्धारण और भुगतान विवरण देखें",
 "incomeSharingPdf": "अधिकृत साझेदारों (AP) के लिए आय हिस्सेदारी पीडीएफ़ डाउनलोड करें",
-"payoutTCPdf": " भुगतान नियम और शर्तें देखें"
+"payoutTCPdf": " भुगतान नियम और शर्तें देखें",
+
+
+
+"pricePayoutStructure_title":"<span>कीमत निर्धारण और भुगतान की </span> संरचना",
+
+"pricingTableHolder_revenu_src":"<th>आमदनी का स्रोत</th><th>पार्टनर को किया गया भुगतान</th><th>नोट</th>",
+
+"pricingTableHolder_acc_openfee":"<b>खाता खोलने का चार्ज</b>",
+
+"pricingTableHolder_acc_openfee_1":"से ज़्यादा पर 100%",
+
+"pricingTableHolder_acc_openfee_2":"Mirae Asset हर नए ग्राहक से ₹500 का एक तयशुदा चार्ज लेगा, भले ही खाता खोलने का चार्ज कुछ भी चुना गया हो",
+
+"pricingTableHolder_acc_Brokerage_sec":"<td><b>ब्रोकरेज</b></td><td>सभी सेगमेंट में <a Name=\"orangeTxt\">100%</a> </td><td>अपने ग्राहकों के लिए हमारे स्टैंडर्ड प्लान में से चुनें या एक कस्टमाइज़्ड प्लान बनाएं</td>",
+
+
+"pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) इंटरेस्ट</b></td><td> 9.99% से ज़्यादा पर <a Name=\"orangeTxt\">80%</a> शेयरिंग</td><td>24% तक का कस्टमाइज़ MTF चार्ज</td>",
+
+"pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>मार्जिन प्लेज इंटरेस्ट</b></td><td> 11.99% से ज़्यादा पर <a Name=\"orangeTxt\">80%</a> शेयरिंग</td><td>24% तक कस्टमाइज़ मार्जिन प्लेज चार्ज</td>",
+
+"pricingTableHolder_acc_dpamc":"अकाउंट मेंटेनेंस चार्ज (DP AMC)",
+"pricingTableHolder_acc_dpamc_1":"₹480 से ज़्यादा पर <a Name=Name=\"orangeTxt\">100%</a> आमदनी",
+"pricingTableHolder_acc_dpamc_2":"अपने ग्राहकों के लिए हमारे स्टैंडर्ड DP प्लान में से चुनें या एक कस्टमाइज़्ड DP प्लान बनाएं",
+
+
+"pricingTableHolder_pledge_unp_char":"प्लेज/अनप्लेज चार्ज",
+"pricingTableHolder_pledge_unp_ rate":"कस्टमाइज़ करें और <a Name=\"orangeTxt\">100%</a> कमाएं",
+"pricingTableHolder_dp_sell_rate":"DP सेल ट्रांजेक्शन चार्ज",
+
+"pricingTableHolder_dp_sell_rate_1":"कस्टमाइज़ करें और <a Name=\"orangeTxt\">100%</a> कमाएं",
+"pricingTableHolder_dp_payment_chr":"विलंबित भुगतान चार्ज (DPC) और ऑपरेटिंग चार्जेज से इनकम",
+
+
+"pricingTableHolder_dp_payment_chr_1":" फ्लैट <a Name=\"orangeTxt\">Flat 20%</a> हिस्सेदारी",
+
+"pricingTableHolder_dp_no_customisation":"कोई कस्टमाइज़ेशन संभव नहीं",
+
+"pricingTableHolder_dp_op_charges":"ऑपरेटिंग चार्जेस",
+"pricingTable_Income_Acc_Op_Fee":"अकाउंट ओपनिंग फी इनकम:",
+"pricingTable_Income_Acc_para":"अपने ग्राहक के लिए अकाउंट ओपनिंग फी एक रेंज से चुनिए और ₹500 से अधिक किसी भी चीज़ पर 100% भुगतान प्राप्त करें।",
+"pricingTable_Income_Acc_heading":"<th>खाते का प्रकार</th><th>पार्टनर क्लाइंट्स को कितना चार्ज कर सकते है?</th><th>पार्टनर को भुगतान</th><th>अतिरिक्त आइनकम <br/>  <small>पार्टनर सेवा फी^ (सालाना आवर्ती)</small></th>",
+"pricingTable_Income_Acc_std_plan_1":"<td>स्टैंडर्ड प्लान 1: <br/><a Name=\"orangeTxt\">  ज़ीरो ब्रोकरेज अकाउंट</a></td><td>₹999 to ₹9,999</td><td><a Name=\"orangeTxt\">500 से ज़्यादा पर 100%</a></td><td>100% भुगतान<br /> (₹999 to ₹9,999)</td>",
+"pricingTable_Income_Acc_std_plan_2":"<td>स्टैंडर्ड प्लान 2: <br/><a Name=\"orangeTxt\">  फ्री डिलीवरी खाता</a></td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">500 से ज़्यादा पर 100%</a><td>लागू नहीं</td>",
+"pricingTable_Income_Acc_std_plan_3":"<td><a Name=\"orangeTxt\">  कस्टमाइज़्ड</a> <br/> ब्रोकरेज प्लान</td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">500 से ज़्यादा पर 100%</a></td><td>लागू नहीं</td>",
+"pricingTable_Income_Acc_note":"यह एक सालाना आवर्ती फी है (दूसरे साल से लागू), जिसे आप उन ग्राहकों से ले सकते हैं जि न्हें आप 'ज़ीरो ब्रोकरेज अकाउंट' की पेशकश कर रहे हैं। ऐसा इसलिए, क्योंकि आपको उनसे कोई ब्रोकरेज इनकम नहीं मिलेगी। पार्टनर सेवा फी उस खाता खोलने के चार्ज के बराबर होगा जो आप अपने ग्राहक से लेते हैं और उसका 100% आपका होगा। <br /><br /> <a Name=\"orangeTxt\"> नोट: </a> Mirae Asset आपसे हर नए ग्राहक का ₹500 का 1-टाइम चार्ज लेगा, भले ही खाता खोलने का चार्ज कुछ भी हो।", 
+"pricingTable_Income_Brokerage":"ब्रोकरेज से इनकम:",
+"pricingTable_Income_Brokerage_disc":"आप या तो हमारे <b> स्टैंडर्ड प्लान </b> में से चुन सकते हैं या अपने ग्राहकों के लिए उनकी खास जरूरतों और व्यापारिक व्यवहार के आधार पर <b> एक कस्टमाइज़्ड प्लान </b> बना सकते हैं।",
+"pricingTable_Income_Brokerage_heading":"<th>ब्रोकरेज प्लान का प्रकार</th> <th>ग्राहकों के लिए लागू ब्रोकरेज</th><th>पार्टनर को भुगतान</th>", 
+"pricingTable_Income_std_plan1":"<td>स्टैंडर्ड प्लान 1: <br/><a Name=\"orangeTxt\">  ज़ीरो ब्रोकरेज अकाउंट</a></td><td class=\"textLeft\">सभी सेगमेंट में ज़िंदगी भर के लिए ₹0 ब्रोकरेज</td><td Name=\"textCenter\">लागू नहीं</td>",
+"pricingTable_Income_std_plan2":"<td>स्टैंडर्ड प्लान 2: <br /><a Name=\"orangeTxt\">फ्री डिलीवरी खाता</a></td><td class=\"textLeft\">सिर्फ़ डिलीवरी पर ₹0 ब्रोकरेज <br/> दूसरे सभी सेगमेंट पर प्रति ऑर्डर ₹20 ब्रोकरेज</td><td Name=\"textCenter\"><a Name=\"orangeTxt\">100%</a></td>",
+"pricingTable_Income_std_plan3":"<td><a Name=\"orangeTxt\">कस्टमाइज़्ड प्लान</a></td><td class=\"textLeft\">नीचे दिए गए मॉडलों में से चुनें <br/><ul><li><b class=\"fontSemiBold\">डिस्कॉउंट </b><small>(ब्रोकरेज पर आर्डर)</small></li><li><b class=\"fontSemiBold\">ट्रेडिशनल </b><small>(% के अनुसार)</small></li><li><b class=\"fontSemiBold\">हाइब्रिड</b></li></ul></td><td class=\"textCenter\"><a class\"orangeTxt\">100%</a></td>",
+"pricingTable_Income_Income_MTF_Int":"MTF (eMargin) इंटरेस्ट से इनकम",
+"pricingTable_Income_Income_MTF_Int_disc":"आप या तो हमारी स्टैंडर्ड चार्ज दर, यानी आधार चार्ज दर चुन सकते हैं या ग्राहक के लिए लागू चार्ज दरों को कस्टमाइज़ कर सकते हैं।",
+"pricingTable_Income_Income_MTF_Int_heading":"<th>आधार चार्ज दर</th><th>  पार्टनर को भुगतान <br/>  (आधार दर तक)</th><th>  कस्टमाइज़्ड चार्ज दर <br/>  (अधिकतम सीमा)</th><th>  पार्टनर को भुगतान  <br/>  (आधार दर से ज़्यादा पर)</th>",
+"pricingTable_Income_Income_MTF_Int_note":"<a Name=\"orangeTxt\">नोट:</a> आप अपने क्लाइंट को हमारे स्टैंडर्ड MTF इंटरेस्ट रेट चार्ज करके 5% कमा सकते हैं। हालांकि, अगर आप अपने क्लाइंट को 9.99% से कम और 6.99% p.a तक चार्ज करना चाहते हैं तो कोई शेयरिंग नहीं मिलेगी।",
+"pricingTable_Income_MP_intr":"मार्जिन प्लेज इंटरेस्ट से इनकम",
+"pricingTable_Income_MP_intr_ para":"आप या तो हमारे स्टैंडर्ड इंटरेस्ट रेट्स, यानी बेस रेट चुन सकते हैं या ग्राहक के लिए लागू इंटरेस्ट रेट्स को कस्टमाइज़ कर सकते हैं।",
+"pricingTable_Income_MP_intr_fund_value":"<th>मार्जिन प्लेज फ़ंड की कीमत</th> <th>बेस इंटरेस्ट रेट</th><th>पार्टनर को भुगतान <br/>  (बेस रेट तक)</th><th>  कस्टमाइज़्ड इंटरेस्ट रेट <br/>  (अधिकतम सीमा)</th><th>  पार्टनर को भुगतान <br/>  (आधार दर से ज़्यादा पर)</th>",
+"pricingTable_Income_MP_intr_fund_value_1":"प्लेज स्टॉक वैल्यू का 80% तक",
+"pricingTable_Income_acc_main_charges":"अकाउंट मेंटेनेंस चार्ज (AMC) से इनकम",
+"pricingTable_Income_acc_main_charges_dis":"आप या तो हमारे स्टैंडर्ड DP AMC प्लान में से चुन सकते हैं या ग्राहक के DP AMC चार्ज को कस्टमाइज़ कर सकते हैं।",
+
+"pricingTable_Income_acc_main_charges_stdchar":"स्टैंडर्ड AMC प्लान",
+
+"pricingTable_Income_acc_main_charges_AMCplan":"कस्टमाइज़्ड AMC प्लान",
+"pricingTable_Income_acc_main_charges_AMCplan_heading":"स्टैंडर्ड प्लान 1 <br/>(1-टाइम AMC)",
+"pricingTable_Income_acc_main_charges_AMCplan_heading_2":"स्टैंडर्ड प्लान 2 <br/>(क्वार्टर AMC)",
+"pricingTable_Income_acc_main_charges_ptp":"पार्टनर को भुगतान",
+"pricingTable_Income_acc_main_charges_ota":"1-टाइम AMC",
+"pricingTable_Income_acc_main_charges_qac":"क्वार्टर AMC",
+
+"pricingTable_Income_acc_main_onetime_fee":"(एकमुश्त चार्ज के साथ ज़िंदगी भर मुफ़्त AMC)",
+"pricingTable_Income_acc_main_quater_fee":"(सालाना चार्ज, हर क्वार्टर में ₹120 लिया जाता है)",
+"to":"से",
+"pricingTable_Income_payout_above":"से ज़्यादा पर 100% भुगतान",
+"pricingTable_Income_otf":"(1-टाइम AMC)",
+"pricingTable_Income_qamc":"(क्वार्टर AMC)",
+
+"pricingTable_Income_PledgeUnpledge_charges":"प्लेज और अनप्लेज चार्ज से इनकम",
+"pricingTable_Income_PledgeUnpledge_charges_disc":"आप या तो ₹25 या ₹32 की हमारी स्टैंडर्ड प्लेज/अनप्लेज दरों में से चुन सकते हैं या ग्राहक के प्लेज/अनप्लेज चार्ज को ₹25 से ₹35 तक की दर सीमा के अनुसार कस्टमाइज़ कर सकते हैं।",
+"pricingTable_Income_qamc_heading":"<th>प्लेज/अनप्लेज चार्ज</th> <th>पार्टनर को भुगतान </th><th>प्लेज/अनप्लेज चार्ज</th> <th>पार्टनर को भुगतान </th>",
+"pricingTable_Income_qamc_partnerfee":"से ज़्यादा पर 100% भुगतान",
+"pricingTable_Income_dp_tranchar":"DP ट्रांजेक्शन चार्ज से इनकम",
+"pricingTable_Income_dp_tranchar_disc":"आप या तो हमारे स्टैंडर्ड DP ट्रांजेक्शन चार्ज में से ₹12 प्रति ISIN चुन सकते हैं या ग्राहक के DP ट्रांजेक्शन चार्ज को ₹12 से ₹25 तक कस्टमाइज़ कर सकते हैं और 100% भुगतान अर्जित कर सकते हैं।",
+"pricingTable_Income_std_dpchar":"स्टैंडर्ड DP प्लान",
+"pricingTable_Income_cdp_dpchar":"कस्टमाइज़्ड DP प्लान",
+"pricingTable_DP_Sell_TraCharges":"DP बिक्री लेनदेन चार्ज",
+"pricingTable_DP_ptop":"पार्टनर को भुगतान",
+"pricingTable_DP_ptop_rates":"₹12 से ज़्यादा पर 100% भुगतान",
+
+"pricingTable_DP_incone_delaychar":"विलंबित भुगतान चार्ज (DPC) से इनकम",
+"pricingTable_DP_incone_delaychar_disc":"ग्राहक के नेगेटिव लज़्ज़ेर बैलेंस और ऑपरेटिंग चार्जेस पर 20% इनकम शेयरिंग कमाए।",
+"pricingTable_DP_incone_delaychar_heading":"<th>DPC पर</th> <th>इंटरेस्ट रेट</th><th>पार्टनर को भुगतान </th>",
+"pricingTable_DP_neg_leger":"ग्राहक के खाते में कोई नेगेटिव लज़्ज़ेर बैलेंस",
+
+"pricingTable_DP_flat":"फ्लैट 20%"
+
+
+
+
 
 }
