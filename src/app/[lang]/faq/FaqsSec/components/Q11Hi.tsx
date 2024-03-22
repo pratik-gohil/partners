@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@/app/[lang]/home/FaqsSec/FaqsSec.module.scss'
+import styles from '@/components/Accordian/Accordian.module.scss'
 
 function Q11Hi() {
     return (
