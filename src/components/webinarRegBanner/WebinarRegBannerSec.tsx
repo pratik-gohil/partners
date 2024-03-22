@@ -45,7 +45,7 @@ const WebinarRegBannerSec = () => {
         // "date": "Friday, 15th March, 2024",
         // "time": "4:30 to 6:00 pm",
         // "url": null,
-        // "isActive": true}}
+        // "isActive": false}}
 
        const data = await res.json();
       if(data.data.isActive==true)
