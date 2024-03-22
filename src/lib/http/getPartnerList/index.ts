@@ -1,10 +1,23 @@
-import http from "../http";
+import http from "@/lib/http/http";
 
-const getPartnerList = async () => {
-    const res = await http('/partners/getPartnerList', {}, {ssr: true});
-    const { data } = await res.json()
+const getPartnerList = async () => 
+{
+    console.log("func called");
+    
+       const res = await http("/partners/getPartnerList", {
+        method: "GET",
+        headers: 
+        {
+           "Content-Type": "application/json",
+         },
+       });
 
-    return data;
-}
+      const data = await res.json();
+      console.log("44", data);
+         return data 
+      
+  };
+
+
 
 export default getPartnerList;

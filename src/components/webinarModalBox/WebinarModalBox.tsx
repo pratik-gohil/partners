@@ -4,7 +4,7 @@ import WebinarRegFormModal from '../webinarRegFormModal/WebinarRegFormModal';
 import ThankYouWebinarRegModal from '../thankYouWebinarRegModal/ThankYouWebinarRegModal';
 
 const WebinarModalBox = ({ onClose }: { onClose: () => void }) => {
-    const [index, setIndex] = useState(1);
+    const [index, setIndex] = useState(0);
     return (
         <>
 
@@ -20,4 +20,5 @@ const WebinarModalBox = ({ onClose }: { onClose: () => void }) => {
 }
 
 export default WebinarModalBox;
+
 
