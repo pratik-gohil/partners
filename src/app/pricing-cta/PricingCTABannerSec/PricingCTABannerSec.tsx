@@ -64,7 +64,7 @@ function PricingCTABannerSec()
     //     "Content-Type": "application/json",
     //   },
     // });
-    const res = registerPartnerAPI("", window.location.href, "Pricing-cta");
+    const res = registerPartnerAPI(data, window.location.href, "Pricing-cta");
     console.log(res);
     // res = 
     // const datares = await res.json();
