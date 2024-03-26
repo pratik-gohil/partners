@@ -52,6 +52,13 @@ function LangguageDropdown() {
                 >
                     &nbsp;&nbsp;Hindi
                 </li>
+                <li
+                    onClick={() => switchLocale("gu")}
+                    id="liGu"
+                    style={{ backgroundColor: "white", display: "list-item" }}
+                >
+                    &nbsp;&nbsp;Gujarati
+                </li>
             </ul>}
         </div>
 
