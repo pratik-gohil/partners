@@ -1,54 +1,35 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import styles from "./PricingCTABannerSec.module.scss";
 import Image from "next/image";
 import RetainQueryLink from "../../../components/RetainQueryLink/RetainQueryLink";
 import { validatePhone, numericOnly } from "@/lib/constants/common";
 import { useForm } from "react-hook-form";
 import http from "@/lib/http/http";
-import { redirect } from "next/navigation";
+
 
 function PricingCTABannerSec() 
 { type FormData = { mobile: string; agree: boolean };
   const {register,handleSubmit,watch,formState: { errors },} = useForm<FormData>({ mode: "all" });
   const watchAgree = watch("agree", true);
-//   const[urlData,seturlData]=useState('');
-  
 
-  
-//   function decorateUrl(a: any) {
-//         var ga = window[window['GoogleAnalyticsObject']];
-//         var tracker;
-//         if (ga && typeof ga.getAll === 'function') {
-//             tracker = ga.getAll()[0]; // Uses the first tracker created on the page
-//             let urlString = (new window.gaplugins.Linker(tracker)).decorate(a);
-//             console.log(urlString);
-//             return urlString;
-//         } else {
-//             console.log('Google Analytics not available or properly initialized');
-//             return a; // Return the original URL as is if Google Analytics is not available
-//         }
-//     }
-    
   const onSubmit = async (data: any) => 
-  {
-    console.log(data, "jjj");
-     
+  {     
     const res = await http("/partners/registerPartner", {
       method: "POST",
       body: JSON.stringify({
         mobile: data.mobile,
         leadSquaredDetails: {
-          utmSource: "fdghdf",
-          utmMedium: "hfgh",
+          utmSource: "",
+          utmMedium: "",
           utmCampaign: "",
           utmAdgroup: "",
           utmTerm: "",
           utmContent: "",
           utmCreative: "",
           utmDevice: "",
-          fromPage: "dfgdf",
-          url: "fhfghg",
+          fromPage: "",
+          url: "",
         },
       }),
      
@@ -56,11 +37,9 @@ function PricingCTABannerSec()
         "Content-Type": "application/json",
       },
     });
- console.log(res, "sss");
+
     const datares = await res.json();
     const url = datares.data.url;
-    console.log(datares);
-    // seturlData(url)
       
     redirect(url);
     

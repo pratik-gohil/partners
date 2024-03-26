@@ -29,17 +29,13 @@ function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any)
       headers: { "Content-Type": "application/json" },
     });
     const datares = await res.json();
-    console.log(datares);
+
     
     if(datares.status === 0)
     {
       setIndex(1)
-      console.log('true');        
-    }
-    else
-    {
-      console.log('false');        
-    }    
+    
+    }   
   };
   
   return (
