@@ -2,7 +2,7 @@
 import React from "react";
 import styles from "./PricingCTABannerSec.module.scss";
 import Image from "next/image";
-import RetainQueryLink from "../../../../components/RetainQueryLink/RetainQueryLink";
+import RetainQueryLink from "@/components/RetainQueryLink/RetainQueryLink";
 import { validatePhone, numericOnly } from "@/lib/constants/common";
 import { useForm } from "react-hook-form";
 import { registerPartnerAPI } from "@/lib/utils/registerPartnerAPI";
