@@ -53,7 +53,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                     utmCreative: '',
                     utmDevice: '',
                     fromPage: '',
-                    url: 'fhfghg'
+                    url: ''
                 }
             }),
             headers: {
