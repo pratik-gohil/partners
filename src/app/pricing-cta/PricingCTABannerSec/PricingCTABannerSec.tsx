@@ -5,13 +5,19 @@ import Image from "next/image";
 import RetainQueryLink from "../../../components/RetainQueryLink/RetainQueryLink";
 import { validatePhone, numericOnly } from "@/lib/constants/common";
 import { useForm } from "react-hook-form";
+import { registerPartnerAPI } from "@/lib/utils/registerPartnerAPI";
 import http from "@/lib/http/http";
-import { redirect } from "next/navigation";
+
+
+
+
 
 function PricingCTABannerSec() 
-{ type FormData = { mobile: string; agree: boolean };
+{ 
+  type FormData = { mobile: string; agree: boolean };
   const {register,handleSubmit,watch,formState: { errors },} = useForm<FormData>({ mode: "all" });
   const watchAgree = watch("agree", true);
+  
 //   const[urlData,seturlData]=useState('');
   
 
@@ -32,37 +38,41 @@ function PricingCTABannerSec()
     
   const onSubmit = async (data: any) => 
   {
-    console.log(data, "jjj");
+
+    // console.log("Test" + window.location.href);
+    // const pageURL = new URL(window.location.href);
+    // console.log("UTM MEDIUM " + pageURL.searchParams.get("utm_medium"));
+    // const res = await http("/partners/registerPartner", {
+    //   method: "POST",
+    //   body: JSON.stringify({
+    //     mobile: data.mobile,
+    //     leadSquaredDetails: {
+    //       utmSource: pageURL.searchParams.get("utm_source"),
+    //       utmMedium: pageURL.searchParams.get("utm_medium"),
+    //       utmCampaign: pageURL.searchParams.get("utm_campaign"),
+    //       utmAdgroup: pageURL.searchParams.get("utm_adgroup"),
+    //       utmTerm: pageURL.searchParams.get("utm_term"),
+    //       utmContent: pageURL.searchParams.get("utm_content"),
+    //       utmCreative: pageURL.searchParams.get("utm_creative"),
+    //       utmDevice: pageURL.searchParams.get("utm_device"),
+    //       fromPage: pageURL.searchParams.get("utm_medium"),
+    //       url: pageURL.searchParams.get("utm_medium"),
+    //     },
+    //   }),
      
-    const res = await http("/partners/registerPartner", {
-      method: "POST",
-      body: JSON.stringify({
-        mobile: data.mobile,
-        leadSquaredDetails: {
-          utmSource: "fdghdf",
-          utmMedium: "hfgh",
-          utmCampaign: "",
-          utmAdgroup: "",
-          utmTerm: "",
-          utmContent: "",
-          utmCreative: "",
-          utmDevice: "",
-          fromPage: "dfgdf",
-          url: "fhfghg",
-        },
-      }),
-     
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
- console.log(res, "sss");
-    const datares = await res.json();
-    const url = datares.data.url;
-    console.log(datares);
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    // });
+    const res = registerPartnerAPI("", window.location.href, "Pricing-cta");
+    console.log(res);
+    // res = 
+    // const datares = await res.json();
+    // const url = datares.data.url;
+    // console.log(datares);
     // seturlData(url)
       
-    redirect(url);
+    // redirect(url);
     
    
   };
