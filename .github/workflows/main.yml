@@ -1,0 +1,60 @@
+name: Partner-website
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker:
+    uses: macmrepo/Reusable-workflows/.github/workflows/ecr-build-push.yml@main
+    with:
+      AWS_REGION: ${{ vars.AWS_REGION_DEV }}
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID_DEV}}
+      AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY_DEV}}
+      AWS_ACCOUNT_ID: ${{secrets.AWS_ACCOUNT_ID_DEV}}
+
+  dev:
+    uses: macmrepo/Reusable-workflows/.github/workflows/eks-deployment.yml@main
+    needs: docker
+    with:
+      AWS_REGION: ${{ vars.AWS_REGION_DEV }}
+      RUNNER_NAME: non-prod-runner
+      ENVIRONMENT: IHD-DEV
+      NAMESPACE: frontend-webservices
+      CLUSTER_NAME: ${{vars.CLUSTER_NAME_DEV}}
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID_DEV}}
+      AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY_DEV}}
+      AWS_ACCOUNT_ID: ${{secrets.AWS_ACCOUNT_ID_DEV}}
+  # dev_to_prod:
+  #   uses: macmrepo/Reusable-workflows/.github/workflows/promotion.yml@main
+  #   needs: dev
+  #   with:
+  #     RUNNER_NAME: prod-runner
+  #     NEXT_ENVIRONMENT: IHD-PROD
+  #     PREVIOUS_ENVIRONMENT: IHD-DEV
+  #     AWS_REGION: ${{ vars.AWS_REGION_PROD }}
+  #   secrets:
+  #     AWS_ACCESS_KEY_ID_PREVIOUS: ${{secrets.AWS_ACCESS_KEY_ID_DEV}}
+  #     AWS_SECRET_ACCESS_KEY_PREVIOUS: ${{secrets.AWS_SECRET_ACCESS_KEY_DEV}}
+  #     AWS_ACCOUNT_ID_PREVIOUS: ${{secrets.AWS_ACCOUNT_ID_DEV}}
+  #     AWS_ACCESS_KEY_ID_NEXT: ${{secrets.AWS_ACCESS_KEY_ID_PROD}}
+  #     AWS_SECRET_ACCESS_KEY_NEXT: ${{secrets.AWS_SECRET_ACCESS_KEY_PROD}}
+  #     AWS_ACCOUNT_ID_NEXT: ${{secrets.AWS_ACCOUNT_ID_PROD}}
+      
+  # prod:
+  #   uses: macmrepo/Reusable-workflows/.github/workflows/eks-deployment.yml@main
+  #   needs: dev_to_prod
+  #   with:
+  #     AWS_REGION: ${{ vars.AWS_REGION_PROD }}
+  #     ENVIRONMENT: IHD-PROD
+  #     NAMESPACE: frontend-webservices
+  #     CLUSTER_NAME: ${{vars.CLUSTER_NAME_PROD}}
+  #     RUNNER_NAME: prod-runner
+  #   secrets:
+  #     AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID_PROD}}
+  #     AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY_PROD}}
+  #     AWS_ACCOUNT_ID: ${{secrets.AWS_ACCOUNT_ID_PROD}}   
