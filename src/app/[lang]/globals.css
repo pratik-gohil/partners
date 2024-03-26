@@ -18,6 +18,14 @@
     padding: 0;
 }
 
+.textLeft {
+    text-align: left !important;
+  }
+  
+  .fontSemiBold {
+    font-weight: 600;
+  }
+
 *:before,
 *:after {
     -webkit-box-sizing: border-box;

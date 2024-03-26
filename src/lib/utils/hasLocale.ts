@@ -1,4 +1,4 @@
-export const locales = ['en', 'hi', 'tm']
+export const locales = ['en', 'hi', 'gu' ,'tm']
 
 const hasLocale = (pathname: string) => {
     return locales.find(

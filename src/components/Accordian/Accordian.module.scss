@@ -15,7 +15,7 @@
     padding: 10px 20px;
     text-align: center;
     font-weight: 600;
-    background: #fff5ee;
+    background: #000;
     line-height: 22px;
   }
 
@@ -34,6 +34,49 @@
     font-size: 14px;
   }
 }
+
+.pricingTableHolder {
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+.pricingTableHolder table th {
+  background: #f1f1f1;
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+  font-weight: normal;
+  text-align: center;
+  line-height: 22px;
+}
+.pricingTableHolder table th,
+.pricingTableHolder table td {
+  padding: 15px;
+  border-left: 1px solid #d2d2d2;
+}
+.pricingTableHolder table th:first-child,
+.pricingTableHolder table td:first-child {
+  border-left: none;
+}
+.pricingTableHolder table tr:last-child td {
+  border-bottom: none;
+}
+.pricingTableHolder table td {
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  border-top: 1px solid #d2d2d2;
+}
+
+@media all and (max-width: 980px) { 
+  .pricingTableHolder {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+
+
 
 .accordionHolder {
   position: relative;

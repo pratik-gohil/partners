@@ -42,18 +42,27 @@ function HeroSection({ dictionary }: any) {
                             <ul className={styles["lhsWrap"]}>
                                 <li>
                                     <GrowSVG />
-                                    <span>Grow your <b>income by 5X</b></span></li>
-                                <li><TransparentPayoutSVG /><span><b>Transparent payouts.</b> No conditions</span></li>
+                                    <span  dangerouslySetInnerHTML={
+                                       { __html: dictionary["heroPoint1"]}
+                                    } />
+                                </li>
+                                <li><TransparentPayoutSVG /><span dangerouslySetInnerHTML={
+                                       { __html: dictionary["heroPoint2"]}
+                                    }/></li>
                                 <li>
                                     <EasySellSVG />
-                                    <span>Global brand, <b>easy to sell</b></span></li>
+                                    <span dangerouslySetInnerHTML={
+                                       { __html: dictionary["heroPoint3"]}
+                                    }/></li>
                                 <li>
                                     <HighRevenueSVG />
-                                    <span><b>Lowest client rates,</b> yet higher revenue</span></li>
+                                    <span dangerouslySetInnerHTML={
+                                       { __html: dictionary["heroPoint4"]}
+                                    }/></li>
                             </ul>
                             <div className={styles["rhsWrap"]}>
                                 <HandImage />
-                                <p className={styles["ctaUpText"]}>Opening for 1,000 partners on an invite-only basis</p>
+                                <p className={styles["ctaUpText"]}>{dictionary["heroRightHeading"]}</p>
                                 <button className={`${styles["maOrangeBtn"]} ${styles["becomePartnerBtn"]}`} onClick={() => setModalOpen(true)}>Pre-Register Now</button>
                             </div>
                         </div>
