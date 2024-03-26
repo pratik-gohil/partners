@@ -13,6 +13,7 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
   const dictionaries = {
     en: () => import('./home/dictionary/en.json').then((module) => module.default),
     hi: () => import('./home/dictionary/hi.json').then((module) => module.default),
+    gu: () => import('./home/dictionary/gu.json').then((module) => module.default),
   }
 
   // @ts-ignore
@@ -22,12 +23,12 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
     <>
       <HeroSection dictionary={dictionary} />
       <WebinarRegBannerSec />
-      <RevenueSharing />
-      <PartnerProgram />
-      <Advantage />
-      <ClientFeature />
-      <T2Month />
-      <FaqsSec />
+      <RevenueSharing dictionary={dictionary}/>
+      <PartnerProgram dictionary={dictionary}/>
+      <Advantage dictionary={dictionary}/>
+      <ClientFeature dictionary={dictionary}/>
+      <T2Month dictionary={dictionary}/>
+      <FaqsSec dictionary={dictionary} lang={lang}/>
     </>
   );
 }

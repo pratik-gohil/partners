@@ -4,10 +4,23 @@ import { usePathname } from 'next/navigation';
 import { translatePages } from '@/lib/constants/common';
 import { removeLocale } from '@/lib/utils/removeLocale';
 import Link from 'next/link';
+import { language_locale } from '@/lib/utils/hasLocale';
+import { getCookieClient } from '@/lib/utils/getCookieClient';
+
+const switchLocale = (locale: string, path: string) => {
+    return translatePages.includes(path) ? ((locale === "en" ? "" : '/' + locale) + path) : (path)
+}
 
 function LangguageDropdown() {
     const pathname = usePathname()
     const path = removeLocale(pathname) || "/"
+    const locale = getCookieClient("locale") || "en"
+    const [language, setLanguage] = useState("English")
+
+    useEffect(() => {
+        // @ts-ignore
+        setLanguage(language_locale[locale])
+    }, [locale])
 
     const [showOptions, setShowOptions] = useState(false);
 
@@ -21,44 +34,35 @@ function LangguageDropdown() {
         return () => { window.removeEventListener('click', close) }
     }, [showOptions])
 
-    const switchLocale = (locale: string) => {
-        document.cookie = "locale=" + locale;
-        return translatePages.includes(path) ? ((locale === "en" ? "" : '/' + locale) + path) : (path)
-    }
-
-    return translatePages.includes(path) &&
-        <>
-            <div className={`${styles.languageUlBlock}  ${showOptions === true ? styles['active'] : ''}`} onClick={() => setShowOptions(true)}>
-                <span>Language</span>
-                <label id="lblCurLang" className={`${styles.languageSelectLabel}`}>
-                    English
-                </label>
-                <br />
-                {showOptions && <ul className={`${styles.listUstyled}`}>
-                    <li style={{ display: "list-item" }}>
-                        <label className="language-select-labell">&nbsp;&nbsp;Select</label>
-                    </li>
+    return translatePages.includes(path) && <>
+        <div className={`${styles.languageUlBlock}  ${showOptions === true ? styles['active'] : ''}`} onClick={(e) => { e.preventDefault(); setShowOptions(true) }}>
+            <span>Language</span>
+            <label className={`${styles.languageSelectLabel}`}>
+                {/* @ts-ignore */}
+                {language}
+            </label>
+            <br />
+            {showOptions && <ul className={`${styles.listUstyled}`}>
+                <li style={{ display: "list-item" }}>
+                    <label className="language-select-labell">&nbsp;&nbsp;Select</label>
+                </li>
+                {Object.keys(language_locale).map(locale => (
                     <Link
-                        href={switchLocale("en")}
+                        onClick={() => { document.cookie = "locale=" + locale; }}
+                        key={locale}
+                        href={switchLocale(locale, path)}
                     >
                         <li
                             style={{ backgroundColor: "white", display: "list-item" }}
                         >
-                            &nbsp;&nbsp;English
+                            {/* @ts-ignore */}
+                            &nbsp;&nbsp;{language_locale[locale]}
                         </li>
                     </Link>
-                    <Link
-                        href={switchLocale("hi")}
-                    >
-                        <li
-                            style={{ backgroundColor: "white", display: "list-item" }}
-                        >
-                            &nbsp;&nbsp;Hindi
-                        </li>
-                    </Link>
-                </ul>}
-            </div>
-        </>
+                ))}
+            </ul>}
+        </div>
+    </>
 }
 
 export default LangguageDropdown

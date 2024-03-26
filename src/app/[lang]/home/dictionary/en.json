@@ -1,3 +1,344 @@
 {
-"pageTitle": "Launching India's largest business partner program"
+"pageTitle": "Launching India's largest business partner program",
+
+"secTitle": "Unlimited, Unbelievable",
+"secTitle1": "Revenue Sharing",
+"brokerageTitle": "Brokerage",
+
+"caption" :"100%",
+"caption1" : "sharing across all segments",
+
+"keyPointsTitle": "100% sharing across",
+
+"keyPoint1": "Account maintenance charges (AMC)",
+"keyPoint2": "Account opening fee",
+"keyPoint3": "DP sell transaction charges",
+"keyPoint4": "Pledge/unpledge charges",
+"keyPoint5": "Partner service fee (annual)",
+"keyPoint6": "Plan modification fee",
+"know_how":"Know How ?",
+
+"un2024MidText": "That's not all! Create recurring income with highest interest revenue sharing across,",
+
+"marginTitle1" : "(eMargin)",
+"marginTitle2": "80%",
+"marginTitle3": "sharing over 9.99%",
+"marginTitle4": "",
+
+"marginTitle5": "Margin Pledge",
+"marginTitle6": "80%",
+"marginTitle7": "sharing over 11.99%",
+"marginTitle8": "",
+
+"captionTxt": "Our Partner program offers",
+"captionTxt1": "unbelievable pricing,",
+"captionTxt2": "a",
+"captionTxt3": "seamless tech platform",
+"captionTxt4": "for an enhanced experience for you and your clients. It also",
+"captionTxt5": "gives you full control",
+"captionTxt6": "and ownership, reducing dependency on us. For detailed payout terms,",
+"captionTxt7": "click here",
+
+"midheading-pl":"Let's understand the payout opportunities with examples",
+
+"x-amount-left":"Brokerage",
+"margiright75":"Earn",
+"margiright75_1":"1.5X",
+"margiright75_2":"or more",
+"margiright75_3":"",
+
+"x-amount-txt-ul":"Active clients",
+"x-amount-txt-ul_1":"Annual brokerage per client",
+"x-amount-txt-ul_2":"Total annual brokerage",
+
+"x-amount-industry-block-1":"Annual Payout",
+"x-amount-industry-block-2":"Industry",
+
+"Unique_Benefit":"Unique Benefit:",
+"Unique_Benefit_1":"Choose either Discount, Traditional or Hybrid model, customise rates based on your client's needs",
+
+"MTF-amount-TITLE":"(eMargin) Interest",
+"x-amount-right":"Earn",
+"x-amount-right_1":"2X",
+"x-amount-right_2":"or more",
+"x-amount-right_3":"",
+
+"MTF_active_clients":"MTF active clients",
+"MTF_active_book":"MTF book",
+"MTF_active_book_line":"(assuming ₹3 lakh per client)",
+"MTF_active_interest":"Interest",
+
+"MTF_eMargin_details":"Details",
+"MTF_eMargin_industry":"Industry",
+
+"MTF_eMargin_industry_clients":"MTF active clients",
+"MTF_eMargin_MTF_Book":"Total MTF Book, <small>(assuming ₹3 lakh per client)</small>",
+"MTF_eMargin_avg_intrest_rate":"Average interest rate",
+"MTF_eMargin_retain_broker":"Base rate <small>(retained by the broker)</small>",
+"MTF_eMargin_intrest_baserate":"Interest sharing above base rate",
+"MTF_eMargin_intrest_payout":"Annual MTF interest payout",
+
+"MTF_eMargin_ann_intrest_payout":"Annual Interest Payout",
+"MTF_eMargin_unique_benefit":"<b Name=\"light-blue\">Unique Benefit:</b> Customise the MTF interest rate from <a Name=\"orangeTxt\">9.99%</a> to <a Name=\"orangeTxt\">24%.</a>",
+
+"Margin_Pledge_Interest": "Margin Pledge Interest",
+"Margin_Pledge_Interest_rate": " Earn <b>1.5X</b> or more",
+"Margin_Pledge_Interest_active_cli": "Margin Pledge active clients",
+"Margin_Pledge_Interest_book": "Margin Pledge book",
+"Margin_Pledge_Interest_per_cli": "(assuming ₹2 lakh per client)",
+"Margin_Pledge_Interest_avg_intrest": "Average interest rate",
+
+"Margin_Pledge_Interest_Assumptions": "Assumptions",
+"Margin_Pledge_active_cli": "Margin Pledge active clients",
+"Margin_Pledge_total_book": "Total Margin Pledge Book",
+"Margin_Pledge_per_cli": "(assuming ₹2 lakh per client)",
+
+"Margin_Pledge_annual_payout": "Annual Margin Pledge interest payout",
+"Margin_Pledge_annual_int_payout": "Annual Interest Payout",
+"Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the Margin Pledge interest rate from <a Name=\"orangeTxt\"> 11.99 %</a> to <a Name=\"orangeTxt\"> 24 %.</a>",
+
+"DP_Sell_Transaction_Charges": "DP Sell Transaction Charges",
+"DP_Sell_Transaction_Charges_rate": "Earn <b>22X</b> or more",
+"DP_Sell_Transaction_Charges_perday": "No of scrips sold per day",
+"DP_Sell_Transaction_Charges_title": "Charges",
+"DP_Sell_Transaction_Charges_ann_charges": "Annual Charges",
+
+"DP_Sell_Transaction_Charges_tran_char": "Average DP transaction charges",
+"DP_Sell_Transaction_Charges_dp_tran_char": "Customised DP transaction charges",
+"DP_Sell_Transaction_Charges_ann_dp_char": "Annual DP transaction charges",
+"DP_Sell_Transaction_Charges_Payout_rate": "Payout rate",
+"DP_Sell_Transaction_Charges_base": "(On Base)",
+"DP_Sell_Transaction_Charges_abovebase": "(Above Base)",
+
+
+
+"DP_Sell_Transaction_Charges_ann_payoutrate": "Annual Payout above base rate",
+"DP_Sell_Transaction_Charges_annpayout": "Annual Payout",
+
+"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the DP sell transactions from <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a>",
+
+"partner_offer_block": "That's not all, you can benefit from various other charges too",
+"partner_offer_acc_openfee":"<b>Account Opening Fee</b>Opportunity to charge up to ₹9,999<br/> Anything above ₹500 is <u Name=\"orangeTxt\">100% yours!</u>",
+
+"partner_offer_acc_maintenance_charges":"<b>Account Maintenance Charges <i>(DP AMC)</i></b>Charge up to ₹4,999 - <u Name=\"orangeTxt\">Earn 100% </u>",
+"partner_offer_pledge_unpledge_charges":"<b>Pledge, unpledge charges <i>(MTF, Margin Pledge)</i></b>Choose from our standard plans – Earn 20% <br/>Or customise and <u Name=\"orangeTxt\">Earn 100%</u>",
+"all_this_can_block": "All this can<br /> become yours.",
+"RetainQueryLink":"See detailed revenue sharing plans",
+
+"heroPoint1": "Earn from <b>9 revenue streams</b></span>",
+"heroPoint2": "<b>Transparent payouts.</b> No conditions</span>",
+"heroPoint3": "Global brand, <b>easy to sell</b></span>",
+"heroPoint4": "<b>Lowest client rates,</b> yet higher revenue</span>",
+"heroRightHeading": "Opening for 1,000 partners on an invite-only basis",
+"advantageTitle": "<span>The &apos;Mirae Asset&apos;</span> advantage",
+"advantageSubHeading": "Partnering with us has a lot of advantages for your business. See, what&apos;s in it for you.",
+"advantageH1": "Customise pricing for your clients",
+"advantageH1_1": "Create customised brokerage plans as a one-time activity, for all future onboarding of your clients. Choose from <span> Discount, Traditional </span> or<span> Hybrid </span> models. Customise<span> interest rates, DP charges </span>and more, for your clients&apos; varied needs and maximise your earnings.",
+"advantageH2": "Run your business through interactive dashboard",
+"advantageH2_1": "Single integrated dashboard",
+"advantageH2_2": "Onboard your clients in a few clicks",
+"advantageH2_3": "Customise brokerage plans as per guide client's trading behaviour",
+"advantageH2_4": "View & monitor client&apos;s portfolio and LIVE positions",
+"advantageH2_5": "Access to smart reports",
+"advantageH2_6": "Dedicated BA excellence desk - online and offline support",
+"advantageH3": "Onboard your clients in minutes",
+"advantageH3_1": "Do it for your client",
+"advantageH3_2": "on their behalf and share link with them only for documentation",
+"advantageH3_3": "Share joining link",
+"advantageH3_4": "with your clients and let <br />them do it themselves",
+"advantageH3_5": "Upload list for bulk onboarding",
+"advantageH3_6": "and get multiple clients onboarded <br />in one go",
+"advantageH4": "Global trusted brand",
+"advantageH4_1": "with 25+ years of experience across 19 countries",
+"advantageH5": "Disruptive Business Model",
+"advantageH5_1": "with best brokerages and interest rate plans",
+"advantageH6": "Transparent Model",
+"advantageH6_1": "with zero disparity irrespective of your business size",
+"advantageH7": "High payouts",
+"advantageH7_1": "across 9 income generating streams",
+"advantageH8": "Establish your brand",
+"advantageH8_1": "with visibility on clients app and web trading platforms",
+"advantageH9": "Dedicated service desk",
+"advantageH9_1": "for you",
+"advantageH10": "Stable platforms",
+"advantageH10_1": "clocking 25 lakh+ trades per day",
+"clientTitle": "<span>What&apos;s in it</span> for your clients?",
+"clientTitle1": "Assurance of brand Mirae Asset",
+"clientTitle2": "Range of products on a single platform",
+"clientTitle3": "1-click order placement across products",
+"clientTitle4": "Stable platform for smooth processing",
+"clientTitle5": "Fundamental data & technical charts",
+"clientTitle6": "Single-view screen for complete portfolio",
+"clientTitle7": "Advanced order placement options",
+"monthTitle" : "<span>In 22</span>months...",
+"month1": "Earned trust of  <br /> <b>9 Lakh+</b> customers",
+"month2": "Facilitated <br/> <b>₹40 Crore+</b> trades",
+"month3": "Built MTF book of <br /> <b>₹1,000 Crore+ </b>",
+"faqTitle": "Frequently Asked Questions",
+"pricingLi1": "Unlimited",
+"pricingLi2": "Unbelievable",
+"pricingBannerRightBlock1": "Brokerage",
+"pricingBannerRightBlock2": "Sharing!",
+"tagline": "Also, get sharing across 8 more revenue streams including <b>Interest charges, DP charges, Account opening fee</b> and more.",
+"pRegistration": "View AP registration & onboarding charges",
+"viewDetailedTitle": "View detailed pricing and payout details",
+"incomeSharingPdf": "Download complete partner income sharing details",
+"payoutTCPdf": "Payout Terms and Conditions",
+"otherCharges": "Other charges applicable to your client",
+"otherCharges1": "These are standard charges and can't be modified.",
+"quarterlyCharges": "<b>Quarterly operating charges:</b> <br /> <p>₹99 + 18% GST per quarter to be charged to clients who have been onboarded under the standard and customised quarterly AMC plan.</p> <p>No operating charge will be applicable for clients under the standard lifetime free AMC plan and the customised one-time AMC plans.</p>",
+"offMarketCharges": "<b>Off-market transfer charges </b> <p>Transfer in: FREE</p> <p>Transfer out: ₹20 per transaction or 0.50% whichever is lower</p>",
+"corporateAction": "<b>Corporate action order charges </b> <p>Corporate action order charges will be same as the client’s applicable brokerage for delivery trades. </p>",
+"physicalCMR": "<b>Physical CMR request</b> <p>First CMR request is free. ₹20 + ₹100 (courier charge) + 18% GST for subsequent requests </p>",
+"paymentGateway": "<b>Payment gateway charges - Margin Fund Transfer</b> <p>UPI Transactions are Free and in case of Net banking, charges will vary between ₹7 to ₹11 + GST depending on the bank selected</p>",
+"physicalStatement": "<b>Physical statement courier charges</b> <p>₹100 per request + ₹100 per courier</p>",
+"dematCert": "<b>Demat per certificate</b> <p>A charge of ₹150 per certificate + ₹100 courier charges will be levied </p>",
+"rematCharges": "<b>Remat charges</b> <p>A charge of ₹150 per certificate + ₹100 courier charges + CDSL Charges will be levied </p>",
+"failedInstruction": "<b>Failed instruction charges</b> <p>A charge of ₹50 per instruction will be applied </p>",
+"reactivation": "<b>Reactivation Charges </b> <p>No charge will be applicable for account reactivation </p>",
+"modCharges": "<b>Modification charges</b> <p>A charge of ₹20 will be applicable per request</p>",
+"acClosure": "<b>Account closure charges</b> <p>No charge will be applicable for account closure</p>",
+"gst": "<b>18% GST</b> <p>On Brokerage, DP charges, Exchange Transaction charges, SEBI charges and Auto Square-Off charges</p>",
+"physicalDelivery": "<b>Physical delivery of derivatives</b> <p>Nominal brokerage 0.05% of the contract value will be charged when physical delivery happens.</p>",
+"transactionCharges": "<b>Transaction/turnover charges</b> <p>BSE transaction charges on securities traded in X, XT and Z group is 0.10% per crore & for 'P', 'ZP', 'SS' and 'ST' group, it is 1% per crore on the gross turnover value </p>",
+"otherCharge": "<b>Other Charges</b> <p>RMS square-off charges for open intraday positions by system: ₹60 per position</p> <p>Auction if unable to deliver a stock (not in demat): As per actual penalty by exchange</p>",
+"apRegistration": "<span>Authorised Partner registration</span> and onboarding charges",
+"captionWrap": "<p>There are certain charges applicable to get registered as an Authorised Partner.</p> <p>You can refer the following table for these charges.</p>",
+"authorisedPartneUlBlock": "<ul><li>Security deposit: ₹50,000 (Refundable)</li> <li>Document handling charges: ₹1,500 (eFranking & eSign charges)</li><li>One-time Exchange Registration Charges: ₹ 22,420</li></ul>",
+"apRegistrationTitle": "AP registration charges",
+"apTableHeading": "<th>Exchange</th><th>Segment</th><th>Fee (₹)</th><th>GST Rate</th><th>GST Amount</th><th>Total Charges (₹)</th>",
+"apTable1": "<td>NSE</td><td>Capital Market</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
+"apTable2": "<td>NSE</td><td>F&O</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
+"apTable3": " <td>NSE</td><td>Currency Derivatives</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
+"apTable4": " <td>BSE</td><td>Capital Market</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
+"apTable5": "<td>MCX</td><td>Commodities</td><td>-</td><td>18%</td><td>NA</td><td>NA</td>",
+"apTable6": "<td><b>Total Registration charges</b></td><td><b>All Segments</b></td><td><b>₹19,000</b></td><td><b>18%</b></td><td><b>₹3,420</b></td><td><b>₹22,420</b></td>",
+"authorisedPartneUlBlock1": "AP Annual Maintenance Charges effective from April 2024: ₹10,620",
+"apAnnual": "AP Annual Maintenance Charges effective from April 2024",
+"pricingTableHeading": "<th>Exchange</th><th>Segment</th><th>Fee (₹)</th><th>GST Rate</th><th>GST Amount</th><th>Total Charges (₹)</th>",
+"pricingT1": "<td>NSE-AMC</td><td>All Segments</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
+"pricingT2": "<td>BSE-AMC</td><td>All Segments</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
+"pricingT3": "<td><b>Total-AMC</b></td><td><b>NSE & BSE</b></td><td><b>₹9,000 </b></td><td><b>18%</b></td><td><b>₹1,620</b></td><td><b>₹10,620</b></td>",
+"pricingNoteBlock": "Note: With regards to the security deposit",
+"pricingNoteList": "<li>No stocks or collateral will be accepted</li> <li>It is refundable and interest-free</li>",
+
+
+
+
+"pricePayoutStructure_title":"<span>Pricing and payout </span> structure",
+
+
+"pricingTableHolder_revenu_src":"<th>Revenue source</th><th>Payout to Partner</th><th>Note</th>",
+
+"pricingTableHolder_acc_openfee":"<b>Account opening fee</b>",
+
+"pricingTableHolder_acc_openfee_1":"above ₹500",
+
+
+"pricingTableHolder_acc_openfee_2":"Mirae Asset will debit a flat fee of ₹500 for every new client onboarded, regardless of the account opening fee chosen",
+
+
+"pricingTableHolder_acc_Brokerage_sec":"<td><b>Brokerage</b></td><td><a Name=\"orangeTxt\">100%</a> across all segments</td><td>Select from our standard plans or create a customised plan for your clients</td>",
+
+
+"pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) interest</b></td><td><a Name=\"orangeTxt\">80%</a> interest sharing beyond 9.99%</td><td>Customise MTF interest up to 24%</td>",
+
+"pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>Margin Pledge interest</b></td><td><a Name=\"orangeTxt\">80%</a> interest sharing beyond 11.99%</td><td>Customise Margin Pledge interest up to 24%</td>",
+
+
+"pricingTableHolder_acc_dpamc":"Account Maintenance Charges (DP AMC)",
+
+
+"pricingTableHolder_acc_dpamc_1":"<a Name=\"orangeTxt\">100%</a> revenue beyond ₹480",
+
+"pricingTableHolder_acc_dpamc_2":"Select from our standard DP plans or create a customised DP plan for your clients",
+
+
+"pricingTableHolder_pledge_unp_char":"Pledge/Unpledge charges",
+
+"pricingTableHolder_pledge_unp_ rate":"Customise and earn  <a Name=\"orangeTxt\">100%</a>",
+"pricingTableHolder_dp_sell_rate":"DP sell transaction charges",
+
+
+"pricingTableHolder_dp_sell_rate_1":"Customise and earn <a Name=\"orangeTxt\">100%</b>",
+
+"pricingTableHolder_dp_payment_chr":"Delayed Payment Charges (DPC)",
+
+"pricingTableHolder_dp_payment_chr_1":"<a Name=\"orangeTxt\">Flat 20%</a> sharing",
+
+"pricingTableHolder_dp_no_customisation":"No customisation possible",
+
+"pricingTableHolder_dp_op_charges":"Operating charges",
+"pricingTable_Income_Acc_Op_Fee":"Income from Account Opening Fee",
+"pricingTable_Income_Acc_para":" Select from a range of account opening fee for your client and get 100% payout on anything beyond ₹500.",
+"pricingTable_Income_Acc_heading":"<th>Type of Account</th><th>What Partner can charge clients?</th><th>Payout to Partner</th><th>Additional Income <br/>  <small>Partner service fee* (annual recurring)</small></th>",
+"pricingTable_Income_Acc_std_plan_1":"<td>Standard Plan 1: <br/><a Name=\"orangeTxt\">  Zero Brokerage account</a></td><td>₹999 to ₹9,999</td><td><a Name=\"orangeTxt\">100% above ₹500</a></td><td>100% payout<br /> (₹999 to ₹9,999)</td>",
+"pricingTable_Income_Acc_std_plan_2":"<td>Standard Plan 2: <br/><a Name=\"orangeTxt\">  Zero Brokerage account</a></td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">100% above ₹500</a><td>NA</td>",
+"pricingTable_Income_Acc_std_plan_3":"<td><a Name=\"orangeTxt\">  Customised</a> <br/> Brokerage Plan</td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">100% above ₹500</a></td><td>NA</td>",
+
+"pricingTable_Income_Acc_note":"*It’s an annual recurring fee (applicable from second year onwards),which you can charge to those clients whom you are offering the ‘Zero brokerage account’, since you won’t earn any brokerage income from them. The partner service fee will be equal to the account opening fee that you charge your client and 100% of that will be yours. <br /><br /> <a Name=\"orangeTxt\"> Note: </a> Mirae Asset will debit a flat fee of ₹500 for every new client onboarded, regardless of the account opening fee chosen", 
+"pricingTable_Income_Brokerage":"Income from Brokerage",
+
+"pricingTable_Income_Brokerage_disc":"You can either select from our <b> standard plans </b> or <b> create a customised plan </b> for your clients based on their differentiated needs and trading behaviour.",
+"pricingTable_Income_Brokerage_heading":"<th>Type of Account</th> <th>Applicable Brokerage</th><th>Payout to Partner</th>", 
+
+"pricingTable_Income_std_plan1":"<td>Standard Plan 1: <br/><a Name=\"orangeTxt\">  Zero Brokerage Account</a></td><td class=\"textLeft\">₹0 brokerage for life across all segments</td><td Name=\"textCenter\">NA</td>",
+"pricingTable_Income_std_plan2":"<td>Standard Plan 2: <br /><a Name=\"orangeTxt\">Free Delivery Account</a></td><td class=\"textLeft\">₹0 brokerage only on delivery <br/> ₹20 brokerage per orderon all other segments</td><td Name=\"textCenter\"><a Name=\"orangeTxt\">100%</a></td>",
+"pricingTable_Income_std_plan3":"<td><a Name=\"orangeTxt\">Customised Plan</a></td><td class=\"textLeft\">Choose from the below models <br/><ul><li><b class=\"fontSemiBold\">Discount </b><small>(fixed-per-order)</small></li><li><b class=\"fontSemiBold\">Traditional </b><small>(variable)</small></li><li><b class=\"fontSemiBold\">Hybrid</b></li></ul></td><td class=\"textCenter\"><a class\"orangeTxt\">100%</a></td>",
+"pricingTable_Income_Income_MTF_Int":"Income from MTF (eMargin) Interests",
+"pricingTable_Income_Income_MTF_Int_disc":" You can either select our standard interest rates, i.e. base interest rates or choose to customise the interest rates applicable to the client.",
+"pricingTable_Income_Income_MTF_Int_heading":"<th>Base Interest Rate</th><th>  Payout to Partner <br/>  (up to base rate)</th><th>  Customised interest rate <br/>  (maximum limit)</th><th>  Payout to Partner <br/>  (above base rate)</th>",
+"pricingTable_Income_Income_MTF_Int_note":"<a Name=\"orangeTxt\">Note:</a> You can earn 5% by charging our standard MTF interest rates to your clients. However, if you want to charge your clients below 9.99% and up to 6.99% p.a there will be no sharing.",
+"pricingTable_Income_MP_intr":"Income from Margin Pledge Interests",
+"pricingTable_Income_MP_intr_ para":"You can either select our standard interest rates, i.e. base interest rates or choose to customise the interest rates applicable to the client.",
+"pricingTable_Income_MP_intr_fund_value":"<th>Margin Pledge Funding Value</th> <th>Base Interest Rate</th><th>Payout to Partner <br/>  (up to base rate)</th><th>  Customised interest rate <br/>  (maximum limit)</th><th>  Payout to Partner <br/>  (above base rate)</th>",
+"pricingTable_Income_MP_intr_fund_value_1":"Up to 80% of pledged stocks value",
+"pricingTable_Income_acc_main_charges":"Income from Account Maintenance Charges (DP AMC)",
+
+"pricingTable_Income_acc_main_charges_dis":"You can either select from our standard DP AMC plans or customise client’s DP AMC charges.",
+"pricingTable_Income_acc_main_charges_stdchar":"Standard AMC Plans",
+
+"pricingTable_Income_acc_main_charges_AMCplan":"Customised AMC Plans",
+"pricingTable_Income_acc_main_charges_AMCplan_heading":"Standard Plan 1 <br/>(one-time AMC)",
+"pricingTable_Income_acc_main_charges_AMCplan_heading_2":"Standard Plan 2 <br/>(Quarterly AMC)",
+"pricingTable_Income_acc_main_charges_ptp":"Payout to Partner",
+"pricingTable_Income_acc_main_charges_ota":"One-time AMC",
+"pricingTable_Income_acc_main_charges_qac":"Quarterly AMC",
+
+"pricingTable_Income_acc_main_onetime_fee":"(Lifetime free AMC with a one-time fee)",
+
+"pricingTable_Income_acc_main_quater_fee":"(Annual fee, charged every quarter @₹120)",
+"to":"to",
+"pricingTable_Income_payout_above":"100% payout above",
+"pricingTable_Income_otf":"(one-time AMC)",
+"pricingTable_Income_qamc":"(quarterly AMC)",
+
+"pricingTable_Income_PledgeUnpledge_charges":" Income from Pledge and Unpledge charges",
+"pricingTable_Income_PledgeUnpledge_charges_disc":"You can either select from our standard pledge/unpledge rates of ₹25 or ₹32 or customise client’s pledge/unpledge charges from a range of rates, i.e., ₹25 to ₹35",
+"pricingTable_Income_qamc_heading":"<th>Pledge / Unpledge Charges</th> <th>Payout to Partner </th><th>Pledge / Unpledge Charges</th> <th>Payout to Partner </th>",
+"pricingTable_Income_qamc_partnerfee":"100% payout above",
+"pricingTable_Income_dp_tranchar":"Income from DP Sell transaction charges",
+"pricingTable_Income_dp_tranchar_disc":"You can either select from our standard DP sell transaction charge of ₹12 per ISIN or customise client’s DP Sell transaction charges from ₹12 to ₹25 and earn 100% payout.",
+"pricingTable_Income_std_dpchar":"Standard DP Plan",
+"pricingTable_Income_cdp_dpchar":"Customised DP Plan",
+"pricingTable_DP_Sell_TraCharges":"DP Sell Transaction Charges",
+
+"pricingTable_DP_ptop":"Payout to Partner",
+"pricingTable_DP_ptop_rates":"100% payout above ₹12",
+"pricingTable_DP_incone_delaychar":"Income from Delayed Payment Charges & Operating Charges",
+"pricingTable_DP_incone_delaychar_disc":"Earn flat 20% income sharing from DPC interest earned on client’s negative ledger balance and on Operating Charges.",
+"pricingTable_DP_incone_delaychar_heading":"<th>DPC On</th> <th>Interest Rate</th><th>Payout to Partner </th>",
+"pricingTable_DP_neg_leger":"Any negative ledger balance in client’s account",
+
+"pricingTable_DP_flat":"Flat 20%"
+
+
+
+
+
+
+
+
+
+
 }

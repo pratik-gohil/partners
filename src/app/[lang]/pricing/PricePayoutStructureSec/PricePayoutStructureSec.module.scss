@@ -94,6 +94,18 @@
 .textLeft {
   text-align: left !important;
 }
+
+
+
+
+
+
+.pricingTableHolder > td {
+  text-align: left !important;
+}
+
+
+
 .fontSemiBold {
   font-weight: 600;
 }
@@ -149,4 +161,16 @@
     margin-bottom: 10px;
     column-gap: 10px;
   }
+}
+
+.pricingTableHolder tr >td> a {
+  color: $orange;
+  font-weight: bolder;
+ 
+}
+
+.tableStructureWrap p> a {
+  color: $orange;
+  font-weight: bolder;
+ 
 }
