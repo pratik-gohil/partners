@@ -24,7 +24,7 @@ const RetainQueryLink = ({ href, ...props }: LinkProps & PropsWithChildren) => {
         <Link
             {...props}
             href={{
-                pathname: (translatePages.includes(pathname) ? "/" + (locale || "en") : "") + pathname,
+                pathname: (translatePages.includes(pathname) ? (locale === "en" ? "" : ("/" + locale)) : "") + pathname,
                 // combine router.query and query props
                 query: {
                     ...searchParamsQuery,
