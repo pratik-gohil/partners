@@ -1,0 +1,172 @@
+@import "@/styles/common";
+
+.pricingBannerSec {
+  background: url(/pricing-banner-bg.webp) center center no-repeat;
+  background-size: cover;
+  min-height: 380px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.pricingBannerBlock {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  color: #042b52;
+  font-size: 24px;
+  vertical-align: middle;
+  font-weight: 600;
+  padding-top: 5px;
+  .becomepartnerBtn {
+    margin-top: 10px;
+  }
+  span {
+    color: #ff7518;
+    font-weight: 700;
+  }
+}
+.listbanner2Li {
+  width: 100%;
+  text-align: center;
+  ul {
+    display: inline-block;
+    white-space: nowrap;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 15%,
+      rgba(255, 164, 102, 0.5) 85%
+    );
+    padding: 0 25px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    li {
+      padding: 15px;
+      color: #003f7e;
+      font-size: 24px;
+      font-weight: 600;
+      list-style: none;
+      display: inline-block;
+      position: relative;
+    }
+    li:first-child::before {
+      position: absolute;
+      right: 0px;
+      width: 2px;
+      height: 26px;
+      background: #003f7e;
+      content: "";
+    }
+  }
+}
+.pricingBannerImgBlock {
+  max-width: 350px;
+  display: inline-block;
+  img {
+    width: auto;
+    max-width: fit-content;
+  }
+}
+.pricingBannerRightBlock {
+  max-width: 600px;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 52px;
+  line-height: 60px;
+  margin-left: 30px;
+}
+.brotextBr {
+  color: #ff7518;
+  font-size: 70px;
+  font-weight: 700;
+  text-shadow: 3px 0 0 #003f7e;
+}
+
+.taglinePribann {
+  background: #fff;
+  border: 1px solid #ffc39b;
+  font-size: 18px;
+  color: #333;
+  display: block;
+  border-radius: 27px;
+  line-height: 24px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  b {
+    font-weight: 700;
+    color: #ff7518;
+  }
+}
+.aplinkSc {
+  padding-top: 10px;
+}
+.aplinkSc a {
+  color: #f58220;
+  font-size: 15px;
+  font-weight: 600;
+}
+.imgWrap {
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 980px) {
+  .taglinePribann {
+    font-size: 14px;
+    line-height: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .pricingBannerImgBlock {
+    max-width: 230px;
+  }
+  .pricingBannerImgBlock img {
+    width: 100%;
+  }
+  .pricingBannerRightBlock {
+    max-width: 300px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 0;
+  }
+  .listbanner2Li {
+    ul {
+      padding: 0 15px;
+      li {
+        font-size: 16px;
+        padding: 10px;
+      }
+      li:first-child::before {
+        height: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .imgWrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pricingBannerImgBlock {
+    max-width: 230px;
+    display: block;
+  }
+  .pricingBannerRightBlock {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .brotextBr {
+    font-size: 44px;
+    line-height: 46px;
+  }
+  .pricingBannerSec {
+    padding-bottom: 40px;
+  }
+}

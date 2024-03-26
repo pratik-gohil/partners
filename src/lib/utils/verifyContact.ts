@@ -1,4 +1,4 @@
-import http from "../http/http";
+import http from "@/lib/http/http";
 
 export const verifyContact = async (data: any, message: string, source: string) => {
     if (data.mobile || data.email) {

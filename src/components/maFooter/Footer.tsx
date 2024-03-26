@@ -2,13 +2,13 @@
 import React from 'react'
 import { usePathname } from 'next/navigation'
 import styles from "./FooterSec.module.scss";
-import MiraeAssetsPartnersLogo from "../../../public/maPartnersLogo.svg";
-import FacebookLogo from '../svgs/FacebookLogo';
-import InstagramLogo from '../svgs/InstagramLogo';
-import LinkedinLogo from '../svgs/LinkedinLogo';
-import TwitterLogo from '../svgs/TwitterLogo';
-import YoutubeLogo from '../svgs/YoutubeLogo';
-import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
+import MiraeAssetsPartnersLogo from "@/public/maPartnersLogo.svg";
+import FacebookLogo from '@/components/svgs/FacebookLogo';
+import InstagramLogo from '@/components/svgs/InstagramLogo';
+import LinkedinLogo from '@/components/svgs/LinkedinLogo';
+import TwitterLogo from '@/components/svgs/TwitterLogo';
+import YoutubeLogo from '@/components/svgs/YoutubeLogo';
+import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 import Image from 'next/image';
 
 const Footer = () => {

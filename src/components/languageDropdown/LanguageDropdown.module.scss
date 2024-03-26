@@ -1,4 +1,4 @@
-@import "../../styles/_common.scss";
+@import "@/styles/_common.scss";
 
 /* languageUlBlock-start */
 .languageUlBlock {
@@ -55,7 +55,7 @@
   border-radius: 1px;
 }
 
-.languageUlBlock ul li:not(.init)+li {
+.languageUlBlock ul li:not(.init) + li {
   border-top: none;
 }
 
