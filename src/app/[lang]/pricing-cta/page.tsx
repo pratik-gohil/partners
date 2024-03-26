@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import PricingCTABannerSec from "./PricingCTABannerSec/PricingCTABannerSec";
 import { getMetaData } from "@/app/[lang]/layout";
 
@@ -13,8 +14,8 @@ export async function generateMetadata() {
 
 export default function PricingCTA() {
     return (
-        <>
+        <Suspense>
             <PricingCTABannerSec />
-        </>
+        </Suspense>
     );
 }
