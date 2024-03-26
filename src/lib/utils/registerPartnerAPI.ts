@@ -3,7 +3,7 @@ import http from "../http/http";
 export const registerPartnerAPI = async (data: any, urlString: string, fromPage: string) =>
 {
     const pageURL = new URL(urlString);
-    const res = await http("https://4108d5c386fd02b0a38bc49e5eda84e0.m.pipedream.net", {
+    const res = await http("/partners/registerPartner", {
         method: "POST",
         body: JSON.stringify({
           mobile: data.mobile,
@@ -26,6 +26,5 @@ export const registerPartnerAPI = async (data: any, urlString: string, fromPage:
           "Content-Type": "application/json",
         },
       });
-      console.log("API TEST:" + urlString);
       return res;
 }
