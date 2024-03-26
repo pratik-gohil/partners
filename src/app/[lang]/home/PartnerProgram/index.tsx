@@ -82,7 +82,7 @@ function PartnerProgram({dictionary}: any) {
                             <div className={`${styles["x-amount-left"]} `}>
                                 MTF {dictionary["MTF-amount-TITLE"]}
                             </div>
-                            <div className={styles["knowmore-ribar"]} data-section-action="mtf" onClick={e => handleKnowMore(e)}>Know How ?</div>
+                            <div className={styles["knowmore-ribar"]} data-section-action="mtf" onClick={e => handleKnowMore(e)}>{dictionary["know_how"]}</div>
                             <div className={styles["x-amount-right"]}>
                             {dictionary["x-amount-right"]} <b>{dictionary["x-amount-right_1"]}</b> {dictionary["x-amount-right_2"]}{dictionary["x-amount-right_3"]}
                             </div >
@@ -125,7 +125,7 @@ function PartnerProgram({dictionary}: any) {
                                             <td>₹3 crore</td>
                                         </tr>
                                         <tr>
-                                            <td >{dictionary["MTF_eMargin_avg_intrest_rate"]}</td>
+                                            <td >{dictionary["MTF_eMargin_avg_intrest_rate"]}{dictionary["MTF_eMargin_avg_intrest_rate1"]}</td>
                                             <td>18%</td>
                                             <td>18%</td>
                                         </tr>
@@ -178,7 +178,7 @@ function PartnerProgram({dictionary}: any) {
                             <div className={`${styles["x-amount-left"]} `}>
                             {dictionary["Margin_Pledge_Interest"]}
                             </div>
-                            <div className={styles["knowmore-ribar"]} data-section-action="margin-pledge-intrest" onClick={e => handleKnowMore(e)}>Know How ?</div>
+                            <div className={styles["knowmore-ribar"]} data-section-action="margin-pledge-intrest" onClick={e => handleKnowMore(e)}>{dictionary["know_how"]}</div>
                             <div className={styles["x-amount-right"]}dangerouslySetInnerHTML={
                                        { __html: dictionary["Margin_Pledge_Interest_rate"]}
                                     }>
@@ -221,7 +221,7 @@ function PartnerProgram({dictionary}: any) {
                                             <td><b>₹2 crore</b></td>
                                         </tr>
                                         <tr>
-                                            <td >{dictionary["MTF_eMargin_avg_intrest_rate"]}</td>
+                                            <td >{dictionary["MTF_eMargin_avg_intrest_rate"]}{dictionary["MTF_eMargin_avg_intrest_rate_gu"]}</td>
                                             <td>18%</td>
                                             <td>18%</td>
                                         </tr>
@@ -274,7 +274,7 @@ function PartnerProgram({dictionary}: any) {
                             <div className={`${styles["x-amount-left"]} `}>
                             {dictionary["DP_Sell_Transaction_Charges"]}
                             </div>
-                            <div className={styles["knowmore-ribar"]} data-section-action="dp-sell" onClick={e => handleKnowMore(e)}>Know How ?</div>
+                            <div className={styles["knowmore-ribar"]} data-section-action="dp-sell" onClick={e => handleKnowMore(e)}>{dictionary["know_how"]}</div>
                             <div className={styles["x-amount-right"]} dangerouslySetInnerHTML={
                                        { __html: dictionary["DP_Sell_Transaction_Charges_rate"]}
                                     }>
@@ -285,7 +285,7 @@ function PartnerProgram({dictionary}: any) {
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
                                     <li>
-                                    {dictionary["DP_Sell_Transaction_Charges_perday"]} <br />
+                                    {dictionary["DP_Sell_Transaction_Charges_perday"]}{dictionary["DP_Sell_Transaction_Charges_perday3"]} <br />
                                         <b>25</b>
                                     </li>
                                     <li>
@@ -306,7 +306,7 @@ function PartnerProgram({dictionary}: any) {
                                         <th><span className={styles["orngText"]}>Mirae Asset Partners</span></th>
                                     </tr>
                                         <tr>
-                                            <td >{dictionary["DP_Sell_Transaction_Charges_perday"]}</td>
+                                            <td >{dictionary["DP_Sell_Transaction_Charges_perday"]}{dictionary["DP_Sell_Transaction_Charges_perday1"]}</td>
                                             <td>25</td>
                                             <td>25</td>
                                         </tr>
