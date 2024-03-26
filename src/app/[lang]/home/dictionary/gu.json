@@ -111,8 +111,7 @@
     "DP_Sell_Transaction_Charges_Payout_rate": "ચુકવણી દર",
     "DP_Sell_Transaction_Charges_base": "(આધાર પર)",
     "DP_Sell_Transaction_Charges_abovebase": "(ઉપરના આધાર)",
-    
-    
+       
     
     "DP_Sell_Transaction_Charges_ann_payoutrate": "બેઝ રેટ ઉપર વાર્ષિક ચૂકવણી",
     "DP_Sell_Transaction_Charges_annpayout": "માસિક દલાલી ચુકવણી",
@@ -126,9 +125,7 @@
     "partner_offer_pledge_unpledge_charges":"<b>પ્લેજ, અનપ્લેજ શુલ્ક ચાર્જ <i>(MTF, માર્જિન પ્લેજ)</i></b>અમારી માનક યોજનાઓમાંથી પસંદ કરો – કમાવો 20% <br/>અથવા કસ્ટમાઇઝ કરો અને <u Name=\"orangeTxt\">કમાવો 100%</u>",
     "all_this_can_block": "આ બધું જ તમારું<br /> થઈ શકે.",
     "RetainQueryLink":"વિગતવાર આવક વહેંચણી યોજનાઓ જુઓ",
-    
-   
-
+     
     "heroPoint1": "<b>9 પ્રકાર</b> ની અIવક માં કમાઓ</span>",
     "heroPoint2": "<b>પારદર્શક ચૂકવણી.</b> કોઈ શરતો નથી</span>",
     "heroPoint3": "વૈશ્વિક બ્રાન્ડ <b>વેચવા માટે સરળ</b></span>",
@@ -179,162 +176,155 @@
     "month2": "<b>₹40 કરોડ+</b> સોદાની <br/> સુવિધા આપી",
     "month3": "MTF બુક બનાવી <br /> <b>₹1,100 કરોડ+ ની </b>",
     "faqTitle": "FAQ સવાલો",
-    "pricingLi1": "Unlimited",
-    "pricingLi2": "Unbelievable",
-    "pricingBannerRightBlock1": "Brokerage",
-    "pricingBannerRightBlock2": "Sharing!",
-    "tagline": "Also, get sharing across 8 more revenue streams including <b>Interest charges, DP charges, Account opening fee</b> and more.",
-    "pRegistration": "View AP registration & onboarding charges",
-    "viewDetailedTitle": "View detailed pricing and payout details",
-    "incomeSharingPdf": "Download complete partner income sharing details",
-    "payoutTCPdf": "Payout Terms and Conditions",
-    "otherCharges": "Other charges applicable to your client",
-    "otherCharges1": "These are standard charges and can't be modified.",
-    "quarterlyCharges": "<b>Quarterly operating charges:</b> <br /> <p>₹99 + 18% GST per quarter to be charged to clients who have been onboarded under the standard and customised quarterly AMC plan.</p> <p>No operating charge will be applicable for clients under the standard lifetime free AMC plan and the customised one-time AMC plans.</p>",
-    "offMarketCharges": "<b>Off-market transfer charges </b> <p>Transfer in: FREE</p> <p>Transfer out: ₹20 per transaction or 0.50% whichever is lower</p>",
-    "corporateAction": "<b>Corporate action order charges </b> <p>Corporate action order charges will be same as the client’s applicable brokerage for delivery trades. </p>",
-    "physicalCMR": "<b>Physical CMR request</b> <p>First CMR request is free. ₹20 + ₹100 (courier charge) + 18% GST for subsequent requests </p>",
-    "paymentGateway": "<b>Payment gateway charges - Margin Fund Transfer</b> <p>UPI Transactions are Free and in case of Net banking, charges will vary between ₹7 to ₹11 + GST depending on the bank selected</p>",
-    "physicalStatement": "<b>Physical statement courier charges</b> <p>₹100 per request + ₹100 per courier</p>",
-    "dematCert": "<b>Demat per certificate</b> <p>A charge of ₹150 per certificate + ₹100 courier charges will be levied </p>",
-    "rematCharges": "<b>Remat charges</b> <p>A charge of ₹150 per certificate + ₹100 courier charges + CDSL Charges will be levied </p>",
-    "failedInstruction": "<b>Failed instruction charges</b> <p>A charge of ₹50 per instruction will be applied </p>",
-    "reactivation": "<b>Reactivation Charges </b> <p>No charge will be applicable for account reactivation </p>",
-    "modCharges": "<b>Modification charges</b> <p>A charge of ₹20 will be applicable per request</p>",
-    "acClosure": "<b>Account closure charges</b> <p>No charge will be applicable for account closure</p>",
-    "gst": "<b>18% GST</b> <p>On Brokerage, DP charges, Exchange Transaction charges, SEBI charges and Auto Square-Off charges</p>",
-    "physicalDelivery": "<b>Physical delivery of derivatives</b> <p>Nominal brokerage 0.05% of the contract value will be charged when physical delivery happens.</p>",
-    "transactionCharges": "<b>Transaction/turnover charges</b> <p>BSE transaction charges on securities traded in X, XT and Z group is 0.10% per crore & for 'P', 'ZP', 'SS' and 'ST' group, it is 1% per crore on the gross turnover value </p>",
-    "otherCharge": "<b>Other Charges</b> <p>RMS square-off charges for open intraday positions by system: ₹60 per position</p> <p>Auction if unable to deliver a stock (not in demat): As per actual penalty by exchange</p>",
-    "apRegistration": "<span>Authorised Partner registration</span> and onboarding charges",
-    "captionWrap": "<p>There are certain charges applicable to get registered as an Authorised Partner.</p> <p>You can refer the following table for these charges.</p>",
-    "authorisedPartneUlBlock": "<ul><li>Security deposit: ₹50,000 (Refundable)</li> <li>Document handling charges: ₹1,500 (eFranking & eSign charges)</li><li>One-time Exchange Registration Charges: ₹ 22,420</li></ul>",
-    "apRegistrationTitle": "AP registration charges",
-    "apTableHeading": "<th>Exchange</th><th>Segment</th><th>Fee (₹)</th><th>GST Rate</th><th>GST Amount</th><th>Total Charges (₹)</th>",
-    "apTable1": "<td>NSE</td><td>Capital Market</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
+    "pricingLi1": "અમર્યાદિત",
+    "pricingLi2": "અવિશ્વસનીય",
+    "pricingBannerRightBlock1": "બ્રોકરેજ",
+    "pricingBannerRightBlock2": "શેરિંગ",
+    "tagline": "<b>8 વધુ રેવન્યુ સ્ટ્રીમ્સ:</b> એકાઉન્ટ ઓપનિંગ ફી, વ્યાજ ચાર્જ, ડીપી ટ્રાન્ઝેક્શન ચાર્જ, બ્રોકરેજ પ્લાન ફેરફાર ફી અને વગેરે.",
+    "pRegistration": "",
+    "viewDetailedTitle": "કિંમત અને પેમેન્ટની વિગતો વિગતવાર જુઓ",
+    "incomeSharingPdf": "અધિકૃત પાર્ટનર (AP) pdf માટે ઈન્કમ શેરિંગ ડાઉનલોડ કરો",
+    "payoutTCPdf": "પેમેન્ટના નિયમો અને શરતો જુઓ",
+    "otherCharges": "તમારા ગ્રાહકને લાગુ પડતા અન્ય ચાર્જીસ:",
+    "otherCharges1": "આ સ્ટાન્ડર્ડ ચાર્જીસ છે અને તેમાં ફેરફાર કરી શકાતા નથી",
+    "quarterlyCharges": "<b>ત્રિમાસિક ઓપરેટિંગ ચાર્જીસ:</b> <br /> <p>સ્ટાન્ડર્ડ અને કસ્ટમાઇઝ્ડ ત્રિમાસિક AMC પ્લાન હેઠળ ઓનબોર્ડ થયેલા ગ્રાહકો પાસેથી ત્રિમાસિક દીઠ ₹99 + 18% GST વસૂલવામાં આવશે.</p> <p>સ્ટાન્ડર્ડ લાઇફટાઇમ ફ્રી AMC પ્લાન અને કસ્ટમાઇઝ્ડ વન-ટાઇમ AMC પ્લાન હેઠળ ગ્રાહક માટે કોઈ ઓપરેટિંગ ચાર્જ લાગુ થશે નહીં</p>",
+    "offMarketCharges": "<b>ઑફ-માર્કેટ ટ્રાન્સફર ચાર્જીસ </b> <p>ટ્રાન્સફર ઇન: ફ્રી</p> <p>ટ્રાન્સફર આઉટ: ટ્રાન્ઝેકશન દીઠ ₹20 અથવા 0.50% બેમાંથી જે ઓછું હોય</p>",
+    "corporateAction": "<b>કોર્પોરેટ એક્શન ઓર્ડર ચાર્જીસ </b> <p>કોર્પોરેટ એક્શન ઓર્ડર ચાર્જીસ ડિલિવરી ટ્રેડ માટે ગ્રાહકના લાગુ બ્રોકરેજ જેટલો જ હશે. </p>",
+    "physicalCMR": "<b>ફિઝીકલ CMR વિનંતી</b> <p>પ્રથમ CMR વિનંતી ફ્રી છે. અનુગામી વિનંતીઓ માટે ₹20 + ₹100 (કુરિયર ચાર્જ) + 18% GST </p>",
+    "paymentGateway": "<b>પેમેન્ટ ગેટવે ચાર્જીસ - માર્જિન ફંડ ટ્રાન્સફર</b> <p>UPI ટ્રાન્ઝેકશન ફ્રી છે અને નેટ બેંકિંગના કિસ્સામાં, પસંદ કરેલ બેંકના આધારે ચાર્જીસ ₹7 થી ₹11 + GST વચ્ચે બદલાશે</p>",
+    "physicalStatement": "<b>ફિઝીકલ સ્ટેટમેન્ટ કુરિયર ચાર્જીસ</b> <p>વિનંતી દીઠ ₹100 + કુરિયર દીઠ ₹100</p>",
+    "dematCert": "<b>પ્રતિ સર્ટીફિકેટ ડિમેટ</b> <p>પ્રતિ સર્ટીફિકેટ ₹150 નો ચાર્જ + ₹100 કુરિયર ચાર્જ વસૂલવામાં આવશે</p>",
+    "rematCharges": "<b>રિમેટ ચાર્જીસ</b> <p>પ્રતિ સર્ટીફિકેટ ₹150 નો ચાર્જ + ₹100 કુરિયર ચાર્જ + CDSL ચાર્જ વસૂલવામાં આવશે </p>",
+    "failedInstruction": "<b>નિષ્ફળ ગયેલા સૂચનના ચાર્જીસ</b> <p>સૂચના દીઠ ₹50નો ચાર્જ લાગુ કરવામાં આવશે </p>",
+    "reactivation": "<b>ફરીથી એક્ટિવેટ કરાવવાના ચાર્જીસ </b> <p>એકાઉન્ટ ફરીથી એક્ટિવેટ માટે કોઈ ચાર્જ લાગુ થશે નહીં </p>",
+    "modCharges": "<b>ફેરફારના ચાર્જીસ</b> <p>વિનંતી દીઠ ₹20નો ચાર્જ લાગુ થશે</p>",
+    "acClosure": "<b>એકાઉન્ટ બંધ કરવાના ચાર્જીસ</b> <p>એકાઉન્ટ બંધ કરવા માટે કોઈ ચાર્જ લાગશે નહીં</p>",
+    "gst": "<b>18% GST</b> <p>બ્રોકરેજ, DP ચાર્જ, એક્સચેન્જ ટ્રાન્ઝેક્શન ચાર્જ, SEBI ચાર્જ અને ઓટો સ્ક્વેર-ઓફ ચાર્જિસ પર</p>",
+    "physicalDelivery": "<b>ડેરિવેટિવ્ઝની ફિઝીકલ ડિલિવરી</b> <p>જ્યારે ફિઝીકલ ડિલિવરી થાય ત્યારે કરાર મૂલ્યના 0.05% જેટલી નજીવી બ્રોકરેજ વસૂલવામાં આવશે</p>",
+    "transactionCharges": "<b>ટ્રાન્ઝેકશન/ટર્નઓવર ચાર્જીસ</b> <p>X, XT અને Z ગ્રૂપમાં ટ્રેડ થતી સિક્યોરિટીઝ પર BSE ટ્રાન્ઝેક્શન ચાર્જ 0.10% પ્રતિ કરોડ છે અને 'P', 'ZP', 'SS' અને 'ST' ગ્રૂપ માટે, તે કુલ ટર્નઓવર મૂલ્ય પર 1% પ્રતિ કરોડ છે </p>",
+    "otherCharge": "<b>અન્ય ચાર્જીસ</b> <p>સિસ્ટમ દ્વારા ઓપન ઇન્ટ્રા-ડે પોઝિશન માટે RMS સ્ક્વેર-ઓફ ચાર્જ: ₹60 પ્રતિ પોઝિશન</p> <p>જો સ્ટોક ડિલિવરી કરવામાં અસમર્થ હોય (ડિમેટમાં નહીં) ઓક્શન: એક્સચેન્જ દ્વારા વાસ્તવિક દંડ મુજબ</p>",
+    "apRegistration": "<span>Authorised Partner (AP) રજિસ્ટ્રેશન</span> અને ઓનબોર્ડિંગ ચાર્જીસ",
+    "captionWrap": "<p>Authorised Partner (AP) તરીકે રજિસ્ટર કરાવવા માટે અમુક ચાર્જીસ લાગુ થાય છે. આ ચાર્જીસ માટે તમે નીચેના ટેબલ સંદર્ભ લઈ શકો છો.</p>",
+    "authorisedPartneUlBlock": "<ul><li>સિક્યોરિટી ડિપોઝિટ: ₹50,000 (રિફંડપાત્ર)</li> <li>ડોક્યુમેન્ટ હેન્ડલિંગ ચાર્જિસ: ₹1,500 (eFranking અને eSign ચાર્જ)</li><li>એક-વખત એક્સચેન્જ રજિસ્ટ્રેશન ચાર્જીસ: ₹ 22,420</li></ul>",
+    "apRegistrationTitle": "AP રજિસ્ટ્રેશન ચાર્જીસ",
+    "apTableHeading": "<th>એક્સચેન્જ</th><th>સેગ્મેન્ટ</th><th>ફી (₹)</th><th>GST રેટ</th><th>GSTની રકમ</th><th>કુલ ચાર્જીસ (₹)</th>",
+    "apTable1": "<td>NSE</td><td>કેપિટલ માર્કેટ</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
     "apTable2": "<td>NSE</td><td>F&O</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
-    "apTable3": " <td>NSE</td><td>Currency Derivatives</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
-    "apTable4": " <td>BSE</td><td>Capital Market</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
-    "apTable5": "<td>MCX</td><td>Commodities</td><td>-</td><td>18%</td><td>NA</td><td>NA</td>",
-    "apTable6": "<td><b>Total Registration charges</b></td><td><b>All Segments</b></td><td><b>₹19,000</b></td><td><b>18%</b></td><td><b>₹3,420</b></td><td><b>₹22,420</b></td>",
-    "authorisedPartneUlBlock1": "AP Annual Maintenance Charges effective from April 2024: ₹10,620",
-    "apAnnual": "AP Annual Maintenance Charges effective from April 2024",
-    "pricingTableHeading": "<th>Exchange</th><th>Segment</th><th>Fee (₹)</th><th>GST Rate</th><th>GST Amount</th><th>Total Charges (₹)</th>",
-    "pricingT1": "<td>NSE-AMC</td><td>All Segments</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
-    "pricingT2": "<td>BSE-AMC</td><td>All Segments</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
-    "pricingT3": "<td><b>Total-AMC</b></td><td><b>NSE & BSE</b></td><td><b>₹9,000 </b></td><td><b>18%</b></td><td><b>₹1,620</b></td><td><b>₹10,620</b></td>",
-    "pricingNoteBlock": "Note: With regards to the security deposit",
-    "pricingNoteList": "<li>No stocks or collateral will be accepted</li> <li>It is refundable and interest-free</li>",
+    "apTable3": " <td>NSE</td><td>કરન્સી ડેરિવેટિવ્ઝ</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
+    "apTable4": " <td>BSE</td><td>કેપિટલ માર્કેટ</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
+    "apTable5": "<td>MCX</td><td>કોમોડિટીઝ</td><td>-</td><td>18%</td><td>NA</td><td>NA</td>",
+    "apTable6": "<td><b>કુલ રજિસ્ટ્રેશન ચાર્જીસ</b></td><td><b>બધા સેગમેન્ટ્સ</b></td><td><b>₹19,000</b></td><td><b>18%</b></td><td><b>₹3,420</b></td><td><b>₹22,420</b></td>",
+    "authorisedPartneUlBlock1": "એપ્રિલ 2024 થી AP વાર્ષિક મેન્ટેનન્સ ચાર્જીસ: ₹10,620",
+    "apAnnual": "AP વાર્ષિક મેન્ટેનન્સ ચાર્જીસ એપ્રિલ 2024 થી લાગુ",
+    "pricingTableHeading": "<th>એક્સચેન્જ</th><th>સેગ્મેન્ટ</th><th>ફી (₹)</th><th>GST રેટ</th><th>GSTની રકમ</th><th>કુલ ચાર્જીસ (₹)</th>",
+    "pricingT1": "<td>NSE-AMC</td><td>બધા સેગ્મેન્ટ</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
+    "pricingT2": "<td>BSE-AMC</td><td>બધા સેગ્મેન્ટ</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
+    "pricingT3": "<td><b>કુલ AMC</b></td><td><b>NSE & BSE</b></td><td><b>₹9,000 </b></td><td><b>18%</b></td><td><b>₹1,620</b></td><td><b>₹10,620</b></td>",
+    "pricingNoteBlock": "નોંધ: સિક્યોરિટી ડિપોઝિટના સંદર્ભમાં,",
+    "pricingNoteList": "<li>કોઈ સ્ટોક અથવા કોલેટરલ સ્વીકારવામાં આવશે નહીં</li> <li>તે રિફંડપાત્ર અને ઈન્ટરેસ્ટ-ફ્રી છે</li>",
+            
+    "pricePayoutStructure_title":"<span>કિંમત અને પેમેન્ટ </span> સ્ટ્રક્ચર",
     
+    "pricingTableHolder_revenu_src":"<th>ઈન્કમનો સ્ત્રોત</th><th>પાર્ટનરને પેમેન્ટ</th><th>નોંધ</th>",
     
+    "pricingTableHolder_acc_openfee":"<b>એકાઉન્ટ ઓપનિંગ ફી</b>",
     
+    "pricingTableHolder_acc_openfee_1":"",
+    "pricingTableHolder_acc_openfee_01":"₹500થી વધુ પર ",
     
-    "pricePayoutStructure_title":"<span>Pricing and payout </span> structure",
+    "pricingTableHolder_acc_openfee_2":"પસંદ કરેલ એકાઉન્ટ ઓપનિંગ ફીને ધ્યાનમાં લીધા વગર Mirae Asset ઑનબોર્ડ થયેલ દરેક નવા ગ્રાહક માટે ₹500 ની ફ્લેટ ફી ડેબિટ કરશે.",
     
+    "pricingTableHolder_acc_Brokerage_sec":"<td><b>બ્રોકરેજ</b></td><td>તમામ સેગ્મેન્ટમાં <a Name=\"orangeTxt\">100%</a></td><td>અમારા સ્ટાન્ડર્ડ પ્લાનમાંથી પસંદ કરો અથવા તમારા ગ્રાહકો માટે કસ્ટમાઇઝ્ડ પ્લાન બનાવો</td>",
     
-    "pricingTableHolder_revenu_src":"<th>Revenue source</th><th>Payout to Partner</th><th>Note</th>",
+    "pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) ઇન્ટરેસ્ટ</b></td><td>9.99% થી વધુ પર <a Name=\"orangeTxt\">80%</a> ઇન્ટરેસ્ટ શેરિંગ</td><td>24% સુધી MTF ઇન્ટરેસ્ટને કસ્ટમાઇઝ કરો</td>",
     
-    "pricingTableHolder_acc_openfee":"<b>Account opening fee</b>",
+    "pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>માર્જિન પ્લેજ ઈન્ટરેસ્ટ</b></td><td>11.99% થી વધુ પર <a Name=\"orangeTxt\">80%</a> ઇન્ટરેસ્ટ શેરિંગ</td><td>24% સુધી માર્જિન પ્લેજ ઇન્ટરેસ્ટને કસ્ટમાઇઝ કરો</td>",
+        
+    "pricingTableHolder_acc_dpamc":"એકાઉન્ટ મેન્ટેનન્સ ચાર્જીસ (AMC)",
+        
+    "pricingTableHolder_acc_dpamc_1":"₹480 થી વધુ પર <a Name=\"orangeTxt\">100%</a> ઈન્કમ",
     
-    "pricingTableHolder_acc_openfee_1":"above ₹500",
+    "pricingTableHolder_acc_dpamc_2":"અમારા સ્ટાન્ડર્ડ DP પ્લાનમાંથી પસંદ કરો અથવા તમારા ગ્રાહકો માટે કસ્ટમાઇઝ્ડ DP પ્લાન બનાવો",
+       
     
+    "pricingTableHolder_pledge_unp_char":"પ્લેજ/અનપ્લેજ ચાર્જીસ",
     
-    "pricingTableHolder_acc_openfee_2":"Mirae Asset will debit a flat fee of ₹500 for every new client onboarded, regardless of the account opening fee chosen",
+    "pricingTableHolder_pledge_unp_ rate":"કસ્ટમાઇઝ કરો અને <a Name=\"orangeTxt\">100%</a> કમાઓ",
+    "pricingTableHolder_dp_sell_rate":"DP વેચાણ ટ્રાન્ઝેકશન ચાર્જીસ",
+        
+    "pricingTableHolder_dp_sell_rate_1":"કસ્ટમાઇઝ કરો અને <a Name=\"orangeTxt\">100%</b> કમાઓ",
     
+    "pricingTableHolder_dp_payment_chr":"વિલંબિત પેમેન્ટ ચાર્જીસ (DPC)",
     
-    "pricingTableHolder_acc_Brokerage_sec":"<td><b>Brokerage</b></td><td><a Name=\"orangeTxt\">100%</a> across all segments</td><td>Select from our standard plans or create a customised plan for your clients</td>",
+    "pricingTableHolder_dp_payment_chr_1":"<a Name=\"orangeTxt\">ફ્લેટ 20%</a> ઓપરેટિંગ શુલ્ક",
     
+    "pricingTableHolder_dp_no_customisation":"કોઈ કસ્ટમાઇઝેશન શક્ય નથી",
     
-    "pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) interest</b></td><td><a Name=\"orangeTxt\">80%</a> interest sharing beyond 9.99%</td><td>Customise MTF interest up to 24%</td>",
+    "pricingTableHolder_dp_op_charges":"ઓપરેટિંગ શુલ્ક",
+    "pricingTable_Income_Acc_Op_Fee":"એકાઉન્ટ ખોલાવવાની ફીમાંથી ઈન્કમ:",
+    "pricingTable_Income_Acc_para":"તમારા ગ્રાહક માટે એકાઉન્ટ ખોલવાની ફીની શ્રેણીમાંથી પસંદ કરો અને ₹500 થી વધુની કોઈપણ વસ્તુ પર 100% ચૂકવણી મેળવો.",
+    "pricingTable_Income_Acc_heading":"<th>એકાઉન્ટનો પ્રકાર</th><th>પાર્ટનર ગ્રાહકો પાસેથી શું ચાર્જ લઈ શકે છે?</th><th>પાર્ટનરને પેમેન્ટ</th><th>વધારાની ઈન્કમ <br/>  <small>પાર્ટનર સર્વિસ ફી^ (વાર્ષિક રિકરિંગ)</small></th>",
+    "pricingTable_Income_Acc_std_plan_1":"<td>स्टैंસ્ટાન્ડર્ડ પ્લાન 1: <br/><a Name=\"orangeTxt\">  ઝીરો બ્રોકરેજ એકાઉન્ટ</a></td><td>₹999 to ₹9,999</td><td><a Name=\"orangeTxt\">₹500થી વધુ 100%</a></td><td>100% પેમેન્ટ<br /> (₹999 થી ₹9,999)</td>",
+    "pricingTable_Income_Acc_std_plan_2":"<td>स्टैंસ્ટાન્ડર્ડ પ્લાન 2: <br/><a Name=\"orangeTxt\">  ફ્રી ડિલીવરી એકાઉન્ટ</a></td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">₹500થી વધુ 100%</a><td>NA</td>",
+    "pricingTable_Income_Acc_std_plan_3":"<td><a Name=\"orangeTxt\">  કસ્ટમાઇઝ્ડ</a> <br/> બ્રોકરેજ પ્લાન</td><td>₹0 થી ₹9,999</td><td><a Name=\"orangeTxt\">₹500થી વધુ 100%</a></td><td>NA</td>",
     
-    "pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>Margin Pledge interest</b></td><td><a Name=\"orangeTxt\">80%</a> interest sharing beyond 11.99%</td><td>Customise Margin Pledge interest up to 24%</td>",
+    "pricingTable_Income_Acc_note":"^તે વાર્ષિક રિકરિંગ ફી છે (બીજા વર્ષથી તે મુજબ આગળ લાગુ), જે તમે એવા ગ્રાહકો પાસેથી વસૂલ ચાર્જ કરી શકો છો, જેમને તમે 'ઝીરો બ્રોકરેજ એકાઉન્ટ' ઑફર કરી રહ્યાં છો, કારણ કે તમે તેમની પાસેથી કોઈ બ્રોકરેજ ઇન્કમ મેળવશો નહીં. પાર્ટનર સર્વિસ ફી એ એકાઉન્ટ ઓપનિંગ ફીની બરાબર હશે જે તમે તમારા ગ્રાહક પાસેથી વસૂલ ચાર્જ કરી શકશો ,અને તેમાંથી 100% તમારા રહેશે. <br /><br /> <a Name=\"orangeTxt\"> નોંધ: </a>  Mirae Asset પસંદ કરેલ એકાઉન્ટ ઓપનિંગ ફીને ધ્યાનમાં લીધા વગર, ઑનબોર્ડ થયેલ દરેક નવા ગ્રાહક માટે ₹500 ની વન-ટાઇમ ફ્લેટ ફી ડેબિટ કરશે", 
+    "pricingTable_Income_Brokerage":"બ્રોકરેજમાંથી ઈન્કમ:",
     
+    "pricingTable_Income_Brokerage_disc":"તમે કાં તો અમારા <b> સ્ટાન્ડર્ડ પ્લાનમાંથી </b>  પસંદ કરી શકો છો અથવા તમારા ગાહક માટે તેમની વિભિન્ન જરૂરિયાતો અને ટ્રેડિંગ વર્તણૂક ના આધારે <b> કસ્ટમાઇઝ્ડ પ્લાન </b> બનાવી શકો છો.",
+    "pricingTable_Income_Brokerage_heading":"<th>બ્રોકરેજ પ્લાનનો પ્રકાર</th> <th>ગ્રાહકોને લાગુ બ્રોકરેજ</th><th>પાર્ટનરને પેમેન્ટ</th>", 
     
-    "pricingTableHolder_acc_dpamc":"Account Maintenance Charges (DP AMC)",
+    "pricingTable_Income_std_plan1":"<td>સ્ટાન્ડર્ડ પ્લાન 1: <br/><a Name=\"orangeTxt\">ઝીરો બ્રોકરેજ એકાઉન્ટ</a></td><td class=\"textLeft\">તમામ સેગમેન્ટમાં આજીવન ₹0 બ્રોકરેજ</td><td Name=\"textCenter\">NA</td>",
+    "pricingTable_Income_std_plan2":"<td>સ્ટાન્ડર્ડ પ્લાન 2: <br /><a Name=\"orangeTxt\">ફ્રી ડિલીવરી એકાઉન્ટ</a></td><td class=\"textLeft\">માત્ર ડિલિવરી પર ₹0 બ્રોકરેજ <br/> અન્ય તમામ સેગમેન્ટ્સ પર ઓર્ડર દીઠ ₹20 બ્રોકરેજ</td><td Name=\"textCenter\"><a Name=\"orangeTxt\">100%</a></td>",
+    "pricingTable_Income_std_plan3":"<td><a Name=\"orangeTxt\">કસ્ટમાઇઝ્ડ પ્લાન</a></td><td class=\"textLeft\">નીચેના મોડેલોમાંથી પસંદ કરો <br/><ul><li><b class=\"fontSemiBold\">ડિસ્કાઉન્ટ </b><small>(પ્રતિ-ઓર્ડર ફિક્સ)</small></li><li><b class=\"fontSemiBold\">ટ્રેડિશનલ </b><small>(વેરિએબલ)</small></li><li><b class=\"fontSemiBold\">હાઇબ્રિડ</b></li></ul></td><td class=\"textCenter\"><a class\"orangeTxt\">100%</a></td>",
+    "pricingTable_Income_Income_MTF_Int":"MTF (eMargin) ઈન્ટરેસ્ટમાંથી ઈન્કમ",
+    "pricingTable_Income_Income_MTF_Int_disc":"તમે કાં તો અમારા સ્ટાન્ડર્ડ ઈન્ટરેસ્ટ રેટ પસંદ કરી શકો છો, એટલે કે મૂળભૂત ઈન્ટરેસ્ટ રેટ અથવા ગ્રાહકને લાગુ પડતા ઈન્ટરેસ્ટ રેટને કસ્ટમાઇઝ કરવાનું પસંદ કરી શકો છો.",
+    "pricingTable_Income_Income_MTF_Int_heading":"<th>મૂળભૂત ઈન્સ્ટરેસ્ટ રેટ</th><th>  પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ સુધી)</th><th>  કસ્ટમાઇઝ્ડ ઈન્ટરેસ્ટ રેટ <br/>  (મહત્તમ લિમિટ)</th><th>  પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ કરતા વધુ)</th>",
+    "pricingTable_Income_Income_MTF_Int_note":"<a Name=\"orangeTxt\">નોંધ:</a> તમે અમારા સ્ટાન્ડર્ડ MTF વ્યાજ તમારા ક્લાયન્ટ પાસેથી વસૂલ કરી શકો છો અને 5% કમાઈ શકો છો. જો તમે તમારા ક્લાયન્ટ પાસેથીથી 9.99% થી નીચે અને 6.99% p.a સુધી વ્યાજ વસૂલવા માંગો છો, તો તમને કોઈ શેરિંગ મળશે નહીં.",
+    "pricingTable_Income_MP_intr":"માર્જિન પ્લેજના ઈન્ટરેસ્ટમાંથી ઈન્કમ",
+    "pricingTable_Income_MP_intr_ para":"તમે કાં તો અમારા સ્ટાન્ડર્ડ ઈન્ટરેસ્ટ રેટ પસંદ કરી શકો છો, એટલે કે મૂળભૂત ઈન્ટરેસ્ટ રેટ અથવા ગ્રાહકને લાગુ પડતા ઈન્ટરેસ્ટ રેટને કસ્ટમાઇઝ કરવાનું પસંદ કરી શકો છો.",
+    "pricingTable_Income_MP_intr_fund_value":"<th>માર્જિન પ્લેજ ફંડિંગનું મૂલ્ય</th> <th>મૂળભૂત ઈન્ટરેસ્ટ રેટ</th><th>પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ સુધી)</th><th>  કસ્ટમાઇઝ્ડ ઈન્ટરેસ્ટ રેટ <br/>  (મહત્તમ લિમિટ)</th><th>  પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ કરતા વધુ)</th>",
+    "pricingTable_Income_MP_intr_fund_value_1":"પ્લેજ સ્ટોકના મૂલ્યના 80% સુધી",
+    "pricingTable_Income_acc_main_charges":"એકાઉન્ટ મેન્ટેનન્સ ચાર્જીસમાંથી ઈન્કમ (AMC) ",
     
+    "pricingTable_Income_Income_dpamc_note":"<a Name=\"orangeTxt\">MTF અને માર્જિન પ્લેજ લેન્ડિંગ બુક પર મહત્વની નોંધ:</a></br></br> જો તમારી MTF અને માર્જિન પ્લેજ લેન્ડિંગ બુક ₹1 કરોડથી વધુ છે, તો Mirae Asset MTF અને માર્જિન પ્લેજ માટે ઉપરોક્ત ઈન્ટરેસ્ટ શેરિંગ ટેબલમાં ઉલ્લેખિત માપદંડોને ધ્યાનમાં લીધા વિના, જનરેટ થયેલી એકંદર ઈન્ટરેસ્ટની ઈન્કમ 25% જાળવી રાખશે",
+
+    "pricingTable_Income_acc_main_charges_dis":"તમે કાં તો અમારા સ્ટાન્ડર્ડ DP AMC પ્લાનમાંથી પસંદ કરી શકો છો અથવા ગ્રાહકના DP AMC ચાર્જીસને કસ્ટમાઇઝ કરી શકો છો.",
+    "pricingTable_Income_acc_main_charges_stdchar":"સ્ટાન્ડર્ડ AMC પ્લાન",
     
-    "pricingTableHolder_acc_dpamc_1":"<a Name=\"orangeTxt\">100%</a> revenue beyond ₹480",
+    "pricingTable_Income_acc_main_charges_AMCplan":"કસ્ટમાઇઝ્ડ AMC પ્લાન",
+    "pricingTable_Income_acc_main_charges_AMCplan_heading":"સ્ટાન્ડર્ડ પ્લાન 1 <br/>(એક વખતનું AMC)",
+    "pricingTable_Income_acc_main_charges_AMCplan_heading_2":"સ્ટાન્ડર્ડ પ્લાન 2 <br/>(ત્રિમાસિક AMC)",
+    "pricingTable_Income_acc_main_charges_ptp":"પાર્ટનરને પેમેન્ટ",
+    "pricingTable_Income_acc_main_charges_ota":"એક-વખતનું AMC",
+    "pricingTable_Income_acc_main_charges_qac":"ત્રિમાસિક AMC",
     
-    "pricingTableHolder_acc_dpamc_2":"Select from our standard DP plans or create a customised DP plan for your clients",
+    "pricingTable_Income_acc_main_onetime_fee":" (એક-વખતની ફી સાથે આજીવન ફ્રી AMC)",
     
+    "pricingTable_Income_acc_main_quater_fee":"(વાર્ષિક ફી, દર ત્રિમાસિક ₹120 વસૂલવામાં આવે છે)",
+    "to":"થી",
+    "pricingTable_Income_payout_above":"આનાથી વધુ માટે 100% પેમેન્ટ",
+    "pricingTable_Income_otf":"(એક-વખત AMC)",
+    "pricingTable_Income_qamc":"(ત્રિમાસિક AMC)",
     
-    "pricingTableHolder_pledge_unp_char":"Pledge/Unpledge charges",
+    "pricingTable_Income_PledgeUnpledge_charges":" પ્લેજ અને અનપ્લેજ ચાર્જીસમાંથી ઈન્કમ",
+    "pricingTable_Income_PledgeUnpledge_charges_disc":"તમે કાં તો ₹25 અથવા ₹32ના અમારા સ્ટાન્ડર્ડ પ્લેજ/અનપ્લેજ કરેલા રેટમાંથી પસંદ કરી શકો છો અથવા ગ્રાહકના પ્લેજ/અનપ્લેજ ચાર્જીસને રેટની રેન્જમાંથી કસ્ટમાઇઝ કરી શકો છો, એટલે કે, ₹25 થી ₹35",
+    "pricingTable_Income_qamc_heading":"<th>પ્લેજ/અનપ્લેજ ચાર્જીસ</th> <th>પાર્ટનરને પેમેન્ટ </th><th>પ્લેજ/અનપ્લેજ ચાર્જીસ</th> <th>પાર્ટનરને પેમેન્ટ </th>",
+    "pricingTable_Income_qamc_partnerfee":"આનાથી વધુ માટે 100% પેમેન્ટ",
+    "pricingTable_Income_dp_tranchar":" DP વેચાણ ટ્રાન્ઝેક્શન ચાર્જીસમાંથી ઈન્કમ",
+    "pricingTable_Income_dp_tranchar_disc":"તમે કાં તો અમારા સ્ટાન્ડર્ડ DP વેચાણ ટ્રાન્ઝેક્શન ચાર્જમાંથી ₹12 પ્રતિ ISIN પસંદ કરી શકો છો અથવા ગ્રાહકના DP વેચાણ ટ્રાન્ઝેક્શન ચાર્જને ₹12 થી ₹25 સુધી કસ્ટમાઇઝ કરી શકો છો અને 100% પેમેન્ટ મેળવી શકો છો.",
+    "pricingTable_Income_std_dpchar":"સ્ટાન્ડર્ડ DP પ્લાન",
+    "pricingTable_Income_cdp_dpchar":"કસ્ટમાઇઝ્ડ DP પ્લાન",
+    "pricingTable_DP_Sell_TraCharges":"DP વેચાણ ટ્રાન્ઝેકશન ચાર્જીસ",
     
-    "pricingTableHolder_pledge_unp_ rate":"Customise and earn  <a Name=\"orangeTxt\">100%</a>",
-    "pricingTableHolder_dp_sell_rate":"DP sell transaction charges",
+    "pricingTable_DP_ptop":"પાર્ટનરને પેમેન્ટ",
+    "pricingTable_DP_ptop_rates":"₹12 થી વધુ માટે100% પેમેન્ટ",
+    "pricingTable_DP_incone_delaychar":"વિલંબિત પેમેન્ટ ચાર્જીસ (DPC)માંથી ઈન્કમ",
+    "pricingTable_DP_incone_delaychar_disc":"ગ્રાહકના નેગેટિવ માર્જિન પર મેળવેલા DPC વ્યાજમાંથી ફ્લેટ 20% આવકની વહેંચણી મેળવો.",
+    "pricingTable_DP_incone_delaychar_heading":"<th>આના પર DPC</th> <th>ઈન્ટરેસ્ટ રેટ</th><th>પાર્ટનરને પેમેન્ટ </th>",
+    "pricingTable_DP_neg_leger":"ગ્રાહકના એકાઉન્ટમાં કોઈપણ નેગેટિવ માર્જિન",
     
-    
-    "pricingTableHolder_dp_sell_rate_1":"Customise and earn <a Name=\"orangeTxt\">100%</b>",
-    
-    "pricingTableHolder_dp_payment_chr":"Delayed Payment Charges (DPC)",
-    
-    "pricingTableHolder_dp_payment_chr_1":"<a Name=\"orangeTxt\">Flat 20%</a> sharing",
-    
-    "pricingTableHolder_dp_no_customisation":"No customisation possible",
-    
-    "pricingTableHolder_dp_op_charges":"Operating charges",
-    "pricingTable_Income_Acc_Op_Fee":"Income from Account Opening Fee",
-    "pricingTable_Income_Acc_para":" Select from a range of account opening fee for your client and get 100% payout on anything beyond ₹500.",
-    "pricingTable_Income_Acc_heading":"<th>Type of Account</th><th>What Partner can charge clients?</th><th>Payout to Partner</th><th>Additional Income <br/>  <small>Partner service fee* (annual recurring)</small></th>",
-    "pricingTable_Income_Acc_std_plan_1":"<td>Standard Plan 1: <br/><a Name=\"orangeTxt\">  Zero Brokerage account</a></td><td>₹999 to ₹9,999</td><td><a Name=\"orangeTxt\">100% above ₹500</a></td><td>100% payout<br /> (₹999 to ₹9,999)</td>",
-    "pricingTable_Income_Acc_std_plan_2":"<td>Standard Plan 2: <br/><a Name=\"orangeTxt\">  Zero Brokerage account</a></td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">100% above ₹500</a><td>NA</td>",
-    "pricingTable_Income_Acc_std_plan_3":"<td><a Name=\"orangeTxt\">  Customised</a> <br/> Brokerage Plan</td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">100% above ₹500</a></td><td>NA</td>",
-    
-    "pricingTable_Income_Acc_note":"*It’s an annual recurring fee (applicable from second year onwards),which you can charge to those clients whom you are offering the ‘Zero brokerage account’, since you won’t earn any brokerage income from them. The partner service fee will be equal to the account opening fee that you charge your client and 100% of that will be yours. <br /><br /> <a Name=\"orangeTxt\"> Note: </a> Mirae Asset will debit a flat fee of ₹500 for every new client onboarded, regardless of the account opening fee chosen", 
-    "pricingTable_Income_Brokerage":"Income from Brokerage",
-    
-    "pricingTable_Income_Brokerage_disc":"You can either select from our <b> standard plans </b> or <b> create a customised plan </b> for your clients based on their differentiated needs and trading behaviour.",
-    "pricingTable_Income_Brokerage_heading":"<th>Type of Account</th> <th>Applicable Brokerage</th><th>Payout to Partner</th>", 
-    
-    "pricingTable_Income_std_plan1":"<td>Standard Plan 1: <br/><a Name=\"orangeTxt\">  Zero Brokerage Account</a></td><td class=\"textLeft\">₹0 brokerage for life across all segments</td><td Name=\"textCenter\">NA</td>",
-    "pricingTable_Income_std_plan2":"<td>Standard Plan 2: <br /><a Name=\"orangeTxt\">Free Delivery Account</a></td><td class=\"textLeft\">₹0 brokerage only on delivery <br/> ₹20 brokerage per orderon all other segments</td><td Name=\"textCenter\"><a Name=\"orangeTxt\">100%</a></td>",
-    "pricingTable_Income_std_plan3":"<td><a Name=\"orangeTxt\">Customised Plan</a></td><td class=\"textLeft\">Choose from the below models <br/><ul><li><b class=\"fontSemiBold\">Discount </b><small>(fixed-per-order)</small></li><li><b class=\"fontSemiBold\">Traditional </b><small>(variable)</small></li><li><b class=\"fontSemiBold\">Hybrid</b></li></ul></td><td class=\"textCenter\"><a class\"orangeTxt\">100%</a></td>",
-    "pricingTable_Income_Income_MTF_Int":"Income from MTF (eMargin) Interests",
-    "pricingTable_Income_Income_MTF_Int_disc":" You can either select our standard interest rates, i.e. base interest rates or choose to customise the interest rates applicable to the client.",
-    "pricingTable_Income_Income_MTF_Int_heading":"<th>Base Interest Rate</th><th>  Payout to Partner <br/>  (up to base rate)</th><th>  Customised interest rate <br/>  (maximum limit)</th><th>  Payout to Partner <br/>  (above base rate)</th>",
-    "pricingTable_Income_Income_MTF_Int_note":"<a Name=\"orangeTxt\">Note:</a> You can earn 5% by charging our standard MTF interest rates to your clients. However, if you want to charge your clients below 9.99% and up to 6.99% p.a there will be no sharing.",
-    "pricingTable_Income_MP_intr":"Income from Margin Pledge Interests",
-    "pricingTable_Income_MP_intr_ para":"You can either select our standard interest rates, i.e. base interest rates or choose to customise the interest rates applicable to the client.",
-    "pricingTable_Income_MP_intr_fund_value":"<th>Margin Pledge Funding Value</th> <th>Base Interest Rate</th><th>Payout to Partner <br/>  (up to base rate)</th><th>  Customised interest rate <br/>  (maximum limit)</th><th>  Payout to Partner <br/>  (above base rate)</th>",
-    "pricingTable_Income_MP_intr_fund_value_1":"Up to 80% of pledged stocks value",
-    "pricingTable_Income_acc_main_charges":"Income from Account Maintenance Charges (DP AMC)",
-    
-    "pricingTable_Income_acc_main_charges_dis":"You can either select from our standard DP AMC plans or customise client’s DP AMC charges.",
-    "pricingTable_Income_acc_main_charges_stdchar":"Standard AMC Plans",
-    
-    "pricingTable_Income_acc_main_charges_AMCplan":"Customised AMC Plans",
-    "pricingTable_Income_acc_main_charges_AMCplan_heading":"Standard Plan 1 <br/>(one-time AMC)",
-    "pricingTable_Income_acc_main_charges_AMCplan_heading_2":"Standard Plan 2 <br/>(Quarterly AMC)",
-    "pricingTable_Income_acc_main_charges_ptp":"Payout to Partner",
-    "pricingTable_Income_acc_main_charges_ota":"One-time AMC",
-    "pricingTable_Income_acc_main_charges_qac":"Quarterly AMC",
-    
-    "pricingTable_Income_acc_main_onetime_fee":"(Lifetime free AMC with a one-time fee)",
-    
-    "pricingTable_Income_acc_main_quater_fee":"(Annual fee, charged every quarter @₹120)",
-    "to":"to",
-    "pricingTable_Income_payout_above":"100% payout above",
-    "pricingTable_Income_otf":"(one-time AMC)",
-    "pricingTable_Income_qamc":"(quarterly AMC)",
-    
-    "pricingTable_Income_PledgeUnpledge_charges":" Income from Pledge and Unpledge charges",
-    "pricingTable_Income_PledgeUnpledge_charges_disc":"You can either select from our standard pledge/unpledge rates of ₹25 or ₹32 or customise client’s pledge/unpledge charges from a range of rates, i.e., ₹25 to ₹35",
-    "pricingTable_Income_qamc_heading":"<th>Pledge / Unpledge Charges</th> <th>Payout to Partner </th><th>Pledge / Unpledge Charges</th> <th>Payout to Partner </th>",
-    "pricingTable_Income_qamc_partnerfee":"100% payout above",
-    "pricingTable_Income_dp_tranchar":"Income from DP Sell transaction charges",
-    "pricingTable_Income_dp_tranchar_disc":"You can either select from our standard DP sell transaction charge of ₹12 per ISIN or customise client’s DP Sell transaction charges from ₹12 to ₹25 and earn 100% payout.",
-    "pricingTable_Income_std_dpchar":"Standard DP Plan",
-    "pricingTable_Income_cdp_dpchar":"Customised DP Plan",
-    "pricingTable_DP_Sell_TraCharges":"DP Sell Transaction Charges",
-    
-    "pricingTable_DP_ptop":"Payout to Partner",
-    "pricingTable_DP_ptop_rates":"100% payout above ₹12",
-    "pricingTable_DP_incone_delaychar":"Income from Delayed Payment Charges & Operating Charges",
-    "pricingTable_DP_incone_delaychar_disc":"Earn flat 20% income sharing from DPC interest earned on client’s negative ledger balance and on Operating Charges.",
-    "pricingTable_DP_incone_delaychar_heading":"<th>DPC On</th> <th>Interest Rate</th><th>Payout to Partner </th>",
-    "pricingTable_DP_neg_leger":"Any negative ledger balance in client’s account",
-    
-    "pricingTable_DP_flat":"Flat 20%"
+    "pricingTable_DP_flat":"ફ્લેટ 20%"
     
     
     

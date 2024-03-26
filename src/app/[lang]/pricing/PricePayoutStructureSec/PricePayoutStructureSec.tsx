@@ -23,7 +23,7 @@ function PricePayoutStructureSec({ dictionary }: any) {
                                        { __html: dictionary["pricingTableHolder_acc_openfee"]}
                                     }>
                 </td>
-                <td>
+                <td>{dictionary["pricingTableHolder_acc_openfee_01"]}
                   <b className={`${styles.orangeTxt}`}>100%</b> {dictionary["pricingTableHolder_acc_openfee_1"]}
                 </td>
                 <td>
@@ -269,9 +269,15 @@ function PricePayoutStructureSec({ dictionary }: any) {
                   <td className={`${styles.textCenter}`}>
                     <b className={`${styles.orangeTxt}`}>80%</b>
                   </td>
-                </tr>
-              </tbody></table>
+                  </tr>
+                
+              </tbody>
+              </table>
           </div>
+          <p dangerouslySetInnerHTML={
+                                       { __html: dictionary["pricingTable_Income_Income_dpamc_note"]}
+                                    }>
+          </p>
         </div>
 
         <div className={`${styles.tableStructureWrap}`}>
