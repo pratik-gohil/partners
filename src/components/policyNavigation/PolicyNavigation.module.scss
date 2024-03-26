@@ -1,86 +1,86 @@
-@import "../../styles/common";
+@import "@/styles/common";
 
 .policyListBlock {
-    width: 100%;
-    overflow: auto;
+  width: 100%;
+  overflow: auto;
 }
 
 .font14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .textCenter {
-    text-align: center;
+  text-align: center;
 }
 
 .secTitle {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .policyList {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    margin: 6px 0 33px;
-    width: auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 6px 0 33px;
+  width: auto;
 }
 
 .policyList li {
-    padding: 0 20px;
-    position: relative;
-    cursor: pointer;
+  padding: 0 20px;
+  position: relative;
+  cursor: pointer;
 }
 
 .policyList li:after {
-    content: "";
-    position: absolute;
-    height: 21px;
-    width: 1px;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 1;
-    background-color: #e7e7e7;
+  content: "";
+  position: absolute;
+  height: 21px;
+  width: 1px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+  background-color: #e7e7e7;
 }
 
 .policyList li:last-child::after {
-    display: none;
+  display: none;
 }
 
 .policyList li:first-child {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .policyList li a {
-    font-size: 16px;
-    line-height: 27px;
-    color: #333;
-    font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  color: #333;
+  font-weight: 600;
 }
 
 .policyList li.active a {
-    color: #f58220;
+  color: #f58220;
 }
 
-@media all and (max-width:1024px) {
-    .policyList li {
-        padding: 0px 12px;
-    }
+@media all and (max-width: 1024px) {
+  .policyList li {
+    padding: 0px 12px;
+  }
 }
 
-@media all and (max-width:980px) {
-    .policyList {
-        margin-bottom: 15px;
-    }
+@media all and (max-width: 980px) {
+  .policyList {
+    margin-bottom: 15px;
+  }
 
-    .policyList li {
-        white-space: nowrap;
-        padding: 0 15px;
-    }
+  .policyList li {
+    white-space: nowrap;
+    padding: 0 15px;
+  }
 
-    .policyList li a {
-        font-size: 14px;
-        line-height: 24px;
-    }
+  .policyList li a {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }

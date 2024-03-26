@@ -1,6 +1,0 @@
-@import '../../../styles/common';
-
-.downloadsLinksSec { padding-top: 43px;margin-bottom:20px;
-    .secTitle{ margin-bottom: 25px;}
-}
-.downloadsLinksHolder{ border: 1px solid #F1ECE6; border-radius: 5px; width: 100%; margin: 0 auto 80px; display: block; padding: 30px;} .titleLbl{ font-size: 20px; line-height: 20px;font-weight: 600; color: #333; margin: 0 0 20px;} .downloadList { list-style: none; display: flex; flex-wrap: wrap; padding-left: 15px; margin-bottom: 0; } .downloadList li { position: relative; width: 100%; font-size: 14px; line-height: 26px; color: #666; } .downloadList li:before { content: ">"; position: absolute;font-weight: 700; font-size: 14px; line-height: 10px; width: 10px; height: 11px; left: -15px; top: 8px; } .downloadList li a { color: #666; }
