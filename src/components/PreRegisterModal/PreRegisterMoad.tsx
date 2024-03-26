@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./FormModal.module.scss";
-import SelectMenu from '../SelectMenu/SelectMenu';
+import SelectMenu from '@/components/SelectMenu/SelectMenu';
 import { useForm } from 'react-hook-form';
 import http from '@/lib/http/http';
 import { numericOnly, validateEmail, validateName, validatePhone } from '@/lib/constants/common';

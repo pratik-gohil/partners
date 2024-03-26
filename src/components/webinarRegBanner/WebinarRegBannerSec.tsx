@@ -4,12 +4,12 @@ import styles from "./WebinarRegBannerSec.module.scss";
 import useUserAgent from "@/lib/hooks/useUserAgent";
 import Image from "next/image";
 import http from "@/lib/http/http";
-import BannerBgImgDesk from "../../../public/horizonatlbanners/horibanner_desktop.webp";
-import BannerBgImgMob from "../../../public/horizonatlbanners/horibanner_mobile.webp";
-import BannerDateIcon from "../../../public/horizonatlbanners/calicon.webp";
-import BannerTimeIcon from "../../../public/horizonatlbanners/timeicon.webp";
 import dynamic from "next/dynamic";
 import Modal from "@/components/Modal";
+import BannerBgImgDesk from "@/public/horizonatlbanners/horibanner_desktop.webp";
+import BannerBgImgMob from "@/public/horizonatlbanners/horibanner_mobile.webp";
+import BannerDateIcon from "@/public/horizonatlbanners/calicon.webp";
+import BannerTimeIcon from "@/public/horizonatlbanners/timeicon.webp";
 
 
 const WebinarRegModal = dynamic(
@@ -23,7 +23,9 @@ const WebinarRegBannerSec = () => {
   const [webLink, setwebLink] = useState(false);
   const [webPop, setwebPop] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
-  const [webinarBanner,setwebinarBanner]=useState(false);
+  const [webinarBanner, setwebinarBanner] = useState(false);
+  const [bannerData, setBannerData] = useState({ titleVal: '', dateVal: '', timeVal: '', urlVal: '' })
+
 
   useEffect(() => {
     setIsDesktop(currentDevice.isDesktop());
@@ -34,46 +36,35 @@ const WebinarRegBannerSec = () => {
   }, []);
 
   const fetchData = async () => {
-     try {
-       const res = await http("/partners/getWebinarEvent", {
-          method: "GET",
-         headers: {
-           "Content-Type": "application/json",
-         },
-        });
-        // const data = {"message": "Success","status": 0,"data": {"id": 7,"title": "Join the webinar to discover <b>Mirae Asset Partners </b>Program","button": "Register for Webinar Now",
-        // "date": "Friday, 15th March, 2024",
-        // "time": "4:30 to 6:00 pm",
-        // "url": null,
-        // "isActive": false}}
 
-       const data = await res.json();
-      if(data.data.isActive==true)
-      {
-        setwebinarBanner(true);
-        if (data.data.url == "" || data.data.url == null) 
-        {
-            setwebPop(true);
-        } 
-        else 
-        {
-            setwebLink(true);
-        }
+    const res = await http("/partners/getWebinarEvent", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+
+    const data = await res.json();
+    setBannerData({ ...bannerData, titleVal: data.data.title, dateVal: data.data.date, timeVal: data.data.time, urlVal: data.data.url })
+    if (data.data.isActive == true) {
+      setwebinarBanner(true);
+      if (data.data.url == "" || data.data.url == null) {
+        setwebPop(true);
       }
-      else
-      {
-        setwebinarBanner(false);
-      }      
-
-    } catch (error) 
-    {
-      console.log("Error mssg is", error);
+      else {
+        setwebLink(true);
+      }
     }
+    else {
+      setwebinarBanner(false);
+    }
+
   };
 
   return (
     <>
-      {webinarBanner &&(<div className={`${styles.webinarRegBannerSec}`}>
+      {webinarBanner && (<div className={`${styles.webinarRegBannerSec}`}>
         {isDesktop ? (
           <Image
             priority={true}
@@ -95,25 +86,24 @@ const WebinarRegBannerSec = () => {
         )}
         <div className={`${styles.webinarInnerBox}`}>
           <div>
-            <p className={`${styles.bannerTitle}`}>
-              Join the webinar to discover{" "}
-              <span>Mirae Asset Partners Program</span>
+            <p className={`${styles.bannerTitle}`}
+              dangerouslySetInnerHTML={
+                { __html: bannerData.titleVal }
+              }>
             </p>
             <div className={`${styles.textCenter}`}>
               <div className={`${styles.timerWrap}`}>
                 <img
                   src={`${BannerDateIcon.src}`}
-                  alt="Friday, 15th March, 2024"
-                  title="Friday, 15th March, 2024"
+                  alt={bannerData.dateVal}
                 />
-                Friday, 15th March, 2024
+                {bannerData.dateVal}
                 <img
                   src={`${BannerTimeIcon.src}`}
-                  alt="4:30 to 6:00 pm"
-                  title="4:30 to 6:00 pm"
+                  alt={bannerData.timeVal}
                   className={`${styles.timeicon}`}
                 />
-                4:30 to 6:00 pm
+                {bannerData.timeVal}
               </div>
             </div>
           </div>
@@ -121,7 +111,7 @@ const WebinarRegBannerSec = () => {
             {webLink && (
               <a
                 id="link"
-                href="https://events.teams.microsoft.com/event/8c5f96c9-b625-41c1-89e7-230df7ee9093@8525e18d-2cce-43ce-8106-64d085abd87a"
+                href={bannerData.urlVal}
                 target="_blank"
                 className={`${styles.btnBanner}`}
               >

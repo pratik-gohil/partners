@@ -1,0 +1,28 @@
+@import "@/styles/_common.scss";
+
+.maPartnersPage {
+  position: relative;
+}
+
+.maPartnersPage body {
+  color: $gray1;
+  background-color: $white;
+  padding-top: 81px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.maPartnersPage body.scrollLock {
+  overflow: hidden;
+}
+.main {
+  position: relative;
+}
+
+@media all and (max-width: 980px) {
+  .maPartnersPage body {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 61px;
+  }
+}
