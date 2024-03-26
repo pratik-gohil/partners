@@ -1,87 +1,53 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import styles from "./PricingCTABannerSec.module.scss";
 import Image from "next/image";
 import RetainQueryLink from "../../../components/RetainQueryLink/RetainQueryLink";
 import { validatePhone, numericOnly } from "@/lib/constants/common";
 import { useForm } from "react-hook-form";
 import { registerPartnerAPI } from "@/lib/utils/registerPartnerAPI";
-import http from "@/lib/http/http";
+import { useSearchParams } from "next/navigation";
 
-
-
-
-
-function PricingCTABannerSec() 
-{ 
+function PricingCTABannerSec() {
   type FormData = { mobile: string; agree: boolean };
-  const {register,handleSubmit,watch,formState: { errors },} = useForm<FormData>({ mode: "all" });
+  const { register, handleSubmit, watch, formState: { errors }, } = useForm<FormData>({ mode: "all" });
   const watchAgree = watch("agree", true);
-  
-//   const[urlData,seturlData]=useState('');
-  
+  const searchParams = useSearchParams()
+  const {
+    utm_source,
+    utm_medium,
+    utm_campaign,
+    utm_adgroup,
+    utm_creative,
+    utm_device,
+    utm_content,
+    utm_term,
+    gclid,
+  } = Object.fromEntries(searchParams)
 
-  
-//   function decorateUrl(a: any) {
-//         var ga = window[window['GoogleAnalyticsObject']];
-//         var tracker;
-//         if (ga && typeof ga.getAll === 'function') {
-//             tracker = ga.getAll()[0]; // Uses the first tracker created on the page
-//             let urlString = (new window.gaplugins.Linker(tracker)).decorate(a);
-//             console.log(urlString);
-//             return urlString;
-//         } else {
-//             console.log('Google Analytics not available or properly initialized');
-//             return a; // Return the original URL as is if Google Analytics is not available
-//         }
-//     }
-    
-  const onSubmit = async (data: any) => 
-  {
+  const onSubmit = async ({ mobile }: any) => {
+    const res = await registerPartnerAPI({
+      mobile,
+      leadSquaredDetails: {
+        utmSource: utm_source || "",
+        utmMedium: utm_medium || "",
+        utmCampaign: utm_campaign || "",
+        utmAdgroup: utm_adgroup || "",
+        utmTerm: utm_term || "",
+        utmContent: utm_content || "",
+        utmCreative: utm_creative || "",
+        utmDevice: utm_device || "",
+        url: utm_medium || "",
+        gclid: gclid || "",
+        fromPage: "pricing-cta"
+      }
+    });
 
-    // console.log("Test" + window.location.href);
-    // const pageURL = new URL(window.location.href);
-    // console.log("UTM MEDIUM " + pageURL.searchParams.get("utm_medium"));
-    // const res = await http("/partners/registerPartner", {
-    //   method: "POST",
-    //   body: JSON.stringify({
-    //     mobile: data.mobile,
-    //     leadSquaredDetails: {
-    //       utmSource: pageURL.searchParams.get("utm_source"),
-    //       utmMedium: pageURL.searchParams.get("utm_medium"),
-    //       utmCampaign: pageURL.searchParams.get("utm_campaign"),
-    //       utmAdgroup: pageURL.searchParams.get("utm_adgroup"),
-    //       utmTerm: pageURL.searchParams.get("utm_term"),
-    //       utmContent: pageURL.searchParams.get("utm_content"),
-    //       utmCreative: pageURL.searchParams.get("utm_creative"),
-    //       utmDevice: pageURL.searchParams.get("utm_device"),
-    //       fromPage: pageURL.searchParams.get("utm_medium"),
-    //       url: pageURL.searchParams.get("utm_medium"),
-    //     },
-    //   }),
-     
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    // });
-    const res = registerPartnerAPI(data, window.location.href, "Pricing-cta");
-    console.log(res);
-    // res = 
-    // const datares = await res.json();
-    // const url = datares.data.url;
-    // console.log(datares);
-    // seturlData(url)
-      
-    // redirect(url);
-    
-   
-  };
-
-  function redirect(url: string) {
-        window.location.href = url;
+    const { data } = await res.json()
+    if (data.url) {
+      window.open(data.url)
     }
-
-   
+  };
 
   return (
     <>

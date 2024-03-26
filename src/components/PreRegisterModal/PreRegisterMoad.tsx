@@ -6,6 +6,7 @@ import http from '@/lib/http/http';
 import { numericOnly, validateEmail, validateName, validatePhone } from '@/lib/constants/common';
 import { verifyContact } from '@/lib/utils/verifyContact';
 import cities from "@/json/cities.json"
+import { usePathname, useSearchParams } from 'next/navigation';
 
 function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
 
@@ -22,6 +23,24 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
         existingAssociation: string
     }
 
+    const searchParams = useSearchParams()
+    const {
+        pref,
+        prefsrc,
+        utm_source,
+        utm_medium,
+        utm_campaign,
+        utm_adgroup,
+        utm_creative,
+        utm_device,
+        utm_content,
+        utm_term,
+        gclid,
+        url
+    } = Object.fromEntries(searchParams)
+
+    const pathname = usePathname()
+
     const {
         register,
         handleSubmit,
@@ -32,7 +51,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
     } = useForm<FormData>({
         mode: "all",
         defaultValues: {
-            subBroker: "1"
+            subBroker: "0"
         },
     })
 
@@ -42,18 +61,19 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
             body: JSON.stringify({
                 partnerDetails: { ...data, GSTYN: !!Number(GSTYN), GSTNumber: "", registrationAuthorized: false },
                 leadSquaredDetails: {
-                    pref: '', //check where it is comming
-                    prefsrc: '', //check where it is comming    
-                    utmSource: '',
-                    utmMedium: '',
-                    utmCampaign: '',
-                    utmAdgroup: '',
-                    utmTerm: '',
-                    utmContent: '',
-                    utmCreative: '',
-                    utmDevice: '',
-                    fromPage: '',
-                    url: 'fhfghg'
+                    pref: pref || "", //check where it is comming
+                    prefsrc: prefsrc || "", //check where it is comming    
+                    utmSource: utm_source || "",
+                    utmMedium: utm_medium || "",
+                    utmCampaign: utm_campaign || "",
+                    utmAdgroup: utm_adgroup || "",
+                    utmTerm: utm_term || "",
+                    utmContent: utm_content || "",
+                    utmCreative: utm_creative || "",
+                    utmDevice: utm_device || "",
+                    gclid: gclid || "",
+                    url: url || "",
+                    fromPage: pathname
                 }
             }),
             headers: {
