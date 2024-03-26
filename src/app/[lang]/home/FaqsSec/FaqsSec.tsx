@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from "./FaqsSec.module.scss";
 import accordionData from './accordionData.js';
 import accordionDataHi from './accordionDataHindi.js';
+import accordionDataGu from './accordionDataGujarati.js';
 import DownCaretSVG from '@/components/svgs/DownCaretSVG';;
 import Accordian from '@/components/Accordian/Accordian';
 
@@ -14,7 +15,7 @@ const FaqsSec = ({dictionary, lang}: any) => {
         
         <>
             {
-                lang=="en"?
+                lang === "en"?
                 <section className={`${styles.faqsSec}`}>
                 <div className={`${styles.maContainer}`}>
                     <h2 className={`${styles.secTitle} `}>{dictionary["faqTitle"]}</h2>
@@ -30,6 +31,7 @@ const FaqsSec = ({dictionary, lang}: any) => {
                 </div>
             </section>:
             // <>Hindi</>
+            lang === "hi" ?
             <section className={`${styles.faqsSec}`}>
                 <div className={`${styles.maContainer}`}>
                     <h2 className={`${styles.secTitle} `}>{dictionary["faqTitle"]}</h2>
@@ -43,7 +45,23 @@ const FaqsSec = ({dictionary, lang}: any) => {
                         }}><DownCaretSVG /></div> </button>
                     </div>
                 </div>
+            </section>:
+            lang === "gu" && 
+            <section className={`${styles.faqsSec}`}>
+                <div className={`${styles.maContainer}`}>
+                    <h2 className={`${styles.secTitle} `}>{dictionary["faqTitle"]}</h2>
+                    <Accordian items={accordionDataGu.slice(0, showMore ? accordionDataGu.length : 5)} active={expanded} setActive={setExpanded} />
+                    <div className={`${styles.viewAllBtnWrap}`}>
+                        <button className={`${styles.viewAllBtn}`} onClick={() => {
+                            setShowMore(!showMore)
+                        }} >View {showMore ? "Less" : "All"} <div style={{
+                            display: 'inline-block',
+                            ...(showMore && { transform: 'rotate(180deg)' })
+                        }}><DownCaretSVG /></div> </button>
+                    </div>
+                </div>
             </section>
+            
             }
             
         </>
