@@ -19,6 +19,7 @@ export default async function PricingPage({ params: { lang } }: { params: { lang
   const dictionaries = {
     en: () => import('../home/dictionary/en.json').then((module) => module.default),
     hi: () => import('../home/dictionary/hi.json').then((module) => module.default),
+    gu: () => import('../home/dictionary/gu.json').then((module) => module.default),
   }
 
   // @ts-ignore
