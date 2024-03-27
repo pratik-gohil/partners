@@ -21,7 +21,10 @@ const WebinarRegBannerSec = ({ isActive, webPop, webLink, bannerData, isDesktopS
   const [isDesktop, setIsDesktop] = useState(isDesktopSSR);
 
   useEffect(() => {
-    setIsDesktop(currentDevice.isDesktop());
+    const updatedIsDesktop = currentDevice.isDesktop();
+    if (updatedIsDesktop !== isDesktop) {
+      setIsDesktop(updatedIsDesktop);
+    }
   }, [currentDevice]);
 
   return (

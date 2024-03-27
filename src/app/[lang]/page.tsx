@@ -36,13 +36,13 @@ export default async function Home({ params: { lang } }: { params: { lang: strin
   const webLink = !webPop
 
   const cookieStore = cookies()
-  const userAgent = cookieStore.get('userAgent') || "desktop";
-  const isDesktop = userAgent === "desktop";
+  const userAgent = cookieStore.get('userAgent')?.value || "desktop";
+  const isDesktopSSR = !!(userAgent === "desktop");
 
   return (
     <>
       <HeroSection dictionary={dictionary} />
-      <WebinarRegBannerSec isDesktop={isDesktop} bannerData={bannerData} isActive={isActive} webPop={webPop} webLink={webLink} />
+      <WebinarRegBannerSec isDesktopSSR={isDesktopSSR} bannerData={bannerData} isActive={isActive} webPop={webPop} webLink={webLink} />
       <RevenueSharing dictionary={dictionary} />
       <PartnerProgram dictionary={dictionary} />
       <Advantage dictionary={dictionary} />
