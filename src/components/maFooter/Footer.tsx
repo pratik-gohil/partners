@@ -1,5 +1,5 @@
 "use client";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import styles from "./FooterSec.module.scss";
 import MiraeAssetsPartnersLogo from "@/public/maPartnersLogo.svg";
@@ -10,8 +10,20 @@ import TwitterLogo from '@/components/svgs/TwitterLogo';
 import YoutubeLogo from '@/components/svgs/YoutubeLogo';
 import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 import Image from 'next/image';
+import Modal from '@/components/Modal';
+import ScoreModal from '@/components/scoreModal/ScoreModal';
 
 const Footer = () => {
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    useEffect(() => {
+        // #BookYourSpot
+        if (window.location.hash && window.location.hash === "#BookYourSpot") {
+            setModalOpen(true)
+        }
+    }, [])
+
     const pathsToRemovePart = ['/terms-of-use', '/terms-and-conditions', '/privacy-policy', '/disclaimer', '/advisory-for-investors', '/referral-terms-and-conditions', '/emargin-terms-and-conditions'];
     const removePart = pathsToRemovePart.includes(usePathname());
     return (
@@ -101,7 +113,7 @@ const Footer = () => {
                                     <li> <a href="https://www.mcxindia.com/" target="_blank" rel="nofollow">MCX</a></li>
                                     <li> <a href="https://www.cdslindia.com/" target="_blank" rel="nofollow">CDSL</a></li>
                                     <li> <a href="https://fiuindia.gov.in/" target="_blank" rel="nofollow">FIU IND</a></li>
-                                    <li> <a href="" data-toggle="modal" data-target="#myModalComplaintOnSCORES">SCORES</a></li>
+                                    <li> <span className={`${styles.scoreTxt}`} onClick={() => setModalOpen(true)}>SCORES</span></li>
                                     <li> <a href="https://play.google.com/store/apps/details?id=com.ionicframework.sebi236330&hl=en_IN&gl=US" target="_blank" rel="nofollow"> SCORES - Android</a></li>
                                     <li><a href="https://apps.apple.com/in/app/sebiscores/id1493257302" target="_blank" rel="nofollow"> SCORES - iOS</a> </li>
                                     <li><a href="https://www.evotingindia.com/homepage.jsp" target="_blank" rel="nofollow">E-voting by CDSL Depository</a> </li>
@@ -123,6 +135,12 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
+
+
+            <Modal open={modalOpen} onClose={() => setModalOpen(false)}>
+                {(onClose) => (<ScoreModal onClose={onClose} />)}
+            </Modal>
+
         </>
     )
 }

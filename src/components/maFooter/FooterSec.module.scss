@@ -193,7 +193,9 @@
   flex-wrap: wrap;
 
   li {
-    a {
+    a,
+    span.scoreTxt {
+      cursor: pointer;
       font-size: 13px;
       line-height: 20px;
       color: $white;
@@ -300,7 +302,8 @@
     flex-wrap: wrap;
 
     li {
-      a {
+      a,
+      span.scoreTxt {
         display: inline-block;
         padding: 10px 7px 10px 0px;
         line-height: normal;
