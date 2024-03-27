@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { alphabetsOnly, numericOnly, validateName, validatePhone } from '@/lib/constants/common';
 import { verifyContact } from '@/lib/utils/verifyContact';
 
-const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
+const GrowthModal = ({ onClose, setIndex, growthModalState, setRefCode }: any) => {
     type FormData = {
         name: string,
         mobile: string,
@@ -34,13 +34,16 @@ const GrowthModal = ({ onClose, setIndex, growthModalState }: any) => {
     const onSubmit: SubmitHandler<FormData> = async (data) => {
         const res = await http("/partners/preRegisterPartnerReferrals", {
             method: "POST",
-            body: JSON.stringify({ ...growthModalState, referees: data.reference }),
+            body: JSON.stringify({
+                ...growthModalState, referees: data.reference
+            }),
             headers: { 'Content-Type': "application/json" }
         })
 
         const resdata = await res.json()
 
         if (resdata.status === 0) {
+            setRefCode(resdata.data.refCode)
             setIndex(2)
         }
     }
