@@ -7,6 +7,8 @@ import PreRegisterMoad from '@/components/PreRegisterModal/PreRegisterMoad';
 const FormModal = ({ onClose }: { onClose: () => void }) => {
     const [index, setIndex] = useState(0);
     const [growthModalState, setGrowthModalState] = useState();
+    const [refCode, setRefCode] = useState();
+
     return (
         <>
             {index === 0 && (
@@ -14,11 +16,11 @@ const FormModal = ({ onClose }: { onClose: () => void }) => {
             )}
 
             {index === 1 && (
-                <GrowthModal growthModalState={growthModalState} onClose={onClose} setIndex={setIndex} />
+                <GrowthModal growthModalState={growthModalState} setRefCode={setRefCode} onClose={onClose} setIndex={setIndex} />
             )}
 
             {index === 2 && (
-                <ThankYouModal onClose={onClose} />
+                <ThankYouModal onClose={onClose} refCode={refCode} />
             )}
         </>
     )
