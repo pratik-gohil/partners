@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import styles from './SelectMenu.module.scss';
+import Image from 'next/image';
 
 function SelectMenu({ options, onChange, contentEditable = false, register, name, required = true }: {
     options: string[],
@@ -78,6 +79,9 @@ function SelectMenu({ options, onChange, contentEditable = false, register, name
                     tabIndex={0}
                 >
                     {value}
+
+
+                    <Image alt='arrow' width={14} height={14} style={{ float: 'right', transform: showOptions ? 'rotate(180deg)' : "", marginTop: '.5rem' }} src="/down-arrow.png" />
                 </div>
             }
             {showOptions && <ul className={`${styles.selResults} ${styles.selCity}`}>
@@ -87,7 +91,7 @@ function SelectMenu({ options, onChange, contentEditable = false, register, name
                             key={option}
                             className={selectedOption === i ? styles.selected : ""}
                             tabIndex={0}
-                            onClick={() => setValue(option)}
+                            onClick={() => { setValue(option); setShowOptions(false) }}
                             onKeyDown={(e) => {
                                 e.stopPropagation();
                                 if (e.key === "Enter") { setValue(option); setShowOptions(false) }

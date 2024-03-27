@@ -40,3 +40,14 @@ export const numericOnly = (e: React.KeyboardEvent) => {
         e.preventDefault();
     }
 };
+
+export const alphabetsOnly = (e: React.KeyboardEvent) => {
+    if (
+        !/[a-zA-Z ]/.test(e.key) &&
+        e.key !== "Backspace" &&
+        e.key !== "Delete" &&
+        e.key !== "Enter"
+    ) {
+        e.preventDefault();
+    }
+};

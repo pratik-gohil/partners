@@ -3,7 +3,7 @@ import styles from "./FormModal.module.scss";
 import SelectMenu from '@/components/SelectMenu/SelectMenu';
 import { useForm } from 'react-hook-form';
 import http from '@/lib/http/http';
-import { numericOnly, validateEmail, validateName, validatePhone } from '@/lib/constants/common';
+import { alphabetsOnly, numericOnly, validateEmail, validateName, validatePhone } from '@/lib/constants/common';
 import { verifyContact } from '@/lib/utils/verifyContact';
 import cities from "@/json/cities.json"
 import { usePathname, useSearchParams } from 'next/navigation';
@@ -108,6 +108,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                 Name <sup>*</sup>
                             </label>
                             <input
+                                onKeyDown={alphabetsOnly}
                                 type="text"
                                 id="partnerName"
                                 className={`${styles.formControl}`}

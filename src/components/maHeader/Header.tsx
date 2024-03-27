@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 import styles from "./HeaderSec.module.scss";
 import MiraeAssetsPartnersLogo from "@/public/maPartnersLogo.svg";
@@ -14,6 +14,13 @@ const Header = () => {
     const [modalOpen, setModalOpen] = useState(false)
     const pathsToRemovePart = ['/terms-of-use', '/terms-and-conditions', '/privacy-policy', '/disclaimer', '/advisory-for-investors', '/referral-terms-and-conditions', '/emargin-terms-and-conditions'];
     const removePart = pathsToRemovePart.includes(usePathname());
+
+    useEffect(() => {
+        // #BookYourSpot
+        if (window.location.hash && window.location.hash === "#BookYourSpot") {
+            setModalOpen(true)
+        }
+    }, [])
 
     return (
         <>
