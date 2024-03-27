@@ -9,7 +9,6 @@
     li {
       font-size: 12px;
       line-height: 20px;
-      color: $orange;
       margin-right: 36px;
       position: relative;
       a {
@@ -30,6 +29,9 @@
       }
       &:first-of-type:before {
         display: none;
+      }
+      &:last-child {
+        color: $orange;
       }
     }
   }
