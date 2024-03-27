@@ -138,6 +138,7 @@ function StartPartnerReferringSecC() {
                                         <div key={i + 1} className={`${styles.flex} ${styles.formFieldWrap}`}>
                                             <div className={`${styles.formGroup}`}>
                                                 <input
+                                                    onKeyDown={alphabetsOnly}
                                                     type="text"
                                                     className={styles.formControl}
                                                     placeholder="Reference Name"
