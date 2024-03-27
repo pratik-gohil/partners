@@ -5,6 +5,7 @@ import styles from "./BreadcrumbSec.module.scss";
 import { usePathname } from 'next/navigation';
 import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 import Image from 'next/image';
+import { removeLocale } from '@/lib/utils/removeLocale';
 
 const data = {
     "/pricing": "Pricing",
@@ -25,8 +26,11 @@ const data = {
 
 const BreadcrumbSec = () => {
     const pathname = usePathname()
+    const path = removeLocale(pathname);
+
     // @ts-ignore
-    const innerPage = data[pathname]
+    const innerPage = data[path]
+
     return (
         innerPage && (
             <div className={`${styles.breadcrumbSec}`}>
