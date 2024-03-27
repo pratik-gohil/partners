@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse, userAgent } from "next/server";
 import { match } from '@formatjs/intl-localematcher'
 import Negotiator from 'negotiator'
 import hasLocale, { locales } from "./lib/utils/hasLocale";
@@ -26,6 +26,8 @@ const setLocale = (response: NextResponse<unknown>, locale: string, pathname: st
 }
 
 export function middleware(request: NextRequest) {
+  const { device } = userAgent(request)
+
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl
 
@@ -33,6 +35,7 @@ export function middleware(request: NextRequest) {
 
   if (pathnameHasLocale) {
     const response = NextResponse.next()
+    response.cookies.set('userAgent', (device.type || "desktop"))
     return setLocale(response, pathnameHasLocale, pathname)
   }
 
@@ -45,12 +48,14 @@ export function middleware(request: NextRequest) {
         request.url
       )
     )
+    response.cookies.set('userAgent', (device.type || "desktop"))
     return setLocale(response, locale, pathname)
   }
 
   request.nextUrl.pathname = `/${locale}${pathname}`
 
   let response = NextResponse.redirect(request.nextUrl)
+  response.cookies.set('userAgent', (device.type || "desktop"))
   return setLocale(response, locale, pathname)
 }
 
