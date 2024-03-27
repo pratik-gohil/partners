@@ -2,7 +2,7 @@ export const language_locale = {
     'en': "English",
     'hi': "Hindi",
     'gu': 'Gujarati',
-    'tm': "Tamil"
+    // 'tm': "Tamil"
 }
 
 export const locales = Object.keys(language_locale)
