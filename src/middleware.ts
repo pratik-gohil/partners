@@ -27,6 +27,7 @@ const setLocale = (response: NextResponse<unknown>, locale: string, pathname: st
 
 export function middleware(request: NextRequest) {
   const { device } = userAgent(request)
+  const agent = device.type || "desktop"
 
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl
@@ -35,7 +36,7 @@ export function middleware(request: NextRequest) {
 
   if (pathnameHasLocale) {
     const response = NextResponse.next()
-    response.cookies.set('userAgent', (device.type || "desktop"))
+    response.cookies.set('userAgent', agent)
     return setLocale(response, pathnameHasLocale, pathname)
   }
 
@@ -48,14 +49,14 @@ export function middleware(request: NextRequest) {
         request.url
       )
     )
-    response.cookies.set('userAgent', (device.type || "desktop"))
+    response.cookies.set('userAgent', agent)
     return setLocale(response, locale, pathname)
   }
 
   request.nextUrl.pathname = `/${locale}${pathname}`
 
   let response = NextResponse.redirect(request.nextUrl)
-  response.cookies.set('userAgent', (device.type || "desktop"))
+  response.cookies.set('userAgent', agent)
   return setLocale(response, locale, pathname)
 }
 

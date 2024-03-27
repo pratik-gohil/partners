@@ -36,7 +36,9 @@ export const numericOnly = (e: React.KeyboardEvent) => {
         e.key !== "Backspace" &&
         e.key !== "Delete" &&
         e.key !== "Enter" &&
-        e.key !== "Tab"
+        e.key !== "Tab" &&
+        e.key !== "ArrowLeft" &&
+        e.key !== "ArrowRight"
     ) {
         e.preventDefault();
     }
@@ -48,7 +50,9 @@ export const alphabetsOnly = (e: React.KeyboardEvent) => {
         e.key !== "Backspace" &&
         e.key !== "Delete" &&
         e.key !== "Enter" &&
-        e.key !== "Tab"
+        e.key !== "Tab" &&
+        e.key !== "ArrowLeft" &&
+        e.key !== "ArrowRight"
     ) {
         e.preventDefault();
     }

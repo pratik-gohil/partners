@@ -17,7 +17,7 @@ function ViewDetailedPricesSec({ dictionary }: any) {
                 <h2 className={`${styles.secTitle} `}>{dictionary["viewDetailedTitle"]}</h2>
                 <div className={`${styles.docsLinkBox}`}>
                     <a href="https://www.miraeassetpartners.com/asset/pdf/income-sharing-for-authorised-partners.pdf" target="_blank" className={`${styles.halfWrapAlink}`}><Image width={50} height={50} src="/pdf-icon.webp" alt="pdf" /> <span>{dictionary["incomeSharingPdf"]}</span></a>
-                    <RetainQueryLink href="/terms-and-conditions">
+                    <RetainQueryLink href="/partnership-terms-and-conditions">
                         <div className={`${styles.halfWrapAlink}`}>
                             <Image width={50} height={50} src="/terms-and-conditions-icon.webp" alt="terms&conditions" /> <span>{dictionary["payoutTCPdf"]}</span>
                         </div>
@@ -41,84 +41,84 @@ function ViewDetailedPricesSec({ dictionary }: any) {
                     <div className={`${styles.accBodyBox} ${isVisible ? styles["active"] : styles[""]}`}>
                         <ul>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["quarterlyCharges"]}
-                                    }>
-                                
+                                { __html: dictionary["quarterlyCharges"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["offMarketCharges"]}
-                                    }>
-                                
+                                { __html: dictionary["offMarketCharges"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["corporateAction"]}
-                                    }>
-                                
+                                { __html: dictionary["corporateAction"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["physicalCMR"]}
-                                    }>
-                                
+                                { __html: dictionary["physicalCMR"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["paymentGateway"]}
-                                    }>
-                                
+                                { __html: dictionary["paymentGateway"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["physicalStatement"]}
-                                    }>
-                                
+                                { __html: dictionary["physicalStatement"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["dematCert"]}
-                                    }>
-                               
+                                { __html: dictionary["dematCert"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["rematCharges"]}
-                                    }>
-                                
+                                { __html: dictionary["rematCharges"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["failedInstruction"]}
-                                    }>
-                                
+                                { __html: dictionary["failedInstruction"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["reactivation"]}
-                                    }>
-                               
+                                { __html: dictionary["reactivation"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["modCharges"]}
-                                    }>
-                                
+                                { __html: dictionary["modCharges"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["acClosure"]}
-                                    }>
-                                
+                                { __html: dictionary["acClosure"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["gst"]}
-                                    }>
-                               
+                                { __html: dictionary["gst"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["physicalDelivery"]}
-                                    }>
-                                
+                                { __html: dictionary["physicalDelivery"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["transactionCharges"]}
-                                    }>
-                                
+                                { __html: dictionary["transactionCharges"] }
+                            }>
+
                             </li>
                             <li dangerouslySetInnerHTML={
-                                       { __html: dictionary["otherCharge"]}
-                                    }>
-                                
+                                { __html: dictionary["otherCharge"] }
+                            }>
+
                             </li>
                         </ul>
                     </div>
