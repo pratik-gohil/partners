@@ -7,7 +7,7 @@ import Modal from '@/components/Modal'
 import OtpModal from '@/components/otpModal/OtpModal'
 import ThankYouOtpModal from '@/components/thankYouOtpModal/ThankYouOtpModal'
 import Image from 'next/image'
-import { numericOnly, validateName, validatePhone } from '@/lib/constants/common'
+import { alphabetsOnly, numericOnly, validateName, validatePhone } from '@/lib/constants/common'
 import { verifyContact } from '@/lib/utils/verifyContact'
 import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 
@@ -103,6 +103,7 @@ function StartPartnerReferringSecC() {
                             <div className={`${styles.flex} ${styles.formFieldWrap}`}>
                                 <div className={`${styles.formGroup}`}>
                                     <input
+                                        onKeyDown={alphabetsOnly}
                                         type="text"
                                         className={`${styles.formControl}`} placeholder="Your Name"
                                         {...register('name', validateName)}

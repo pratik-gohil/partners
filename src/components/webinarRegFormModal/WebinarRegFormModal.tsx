@@ -1,11 +1,10 @@
-import React  from "react";
+import React from "react";
 import styles from "./WebinarRegFormModal.module.scss";
 import { useForm } from "react-hook-form";
-import {validateEmail,validateName,validatePhone,numericOnly} from "@/lib/constants/common";
+import { validateEmail, validateName, validatePhone, numericOnly, alphabetsOnly } from "@/lib/constants/common";
 import http from "@/lib/http/http";
 
-function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any) 
-{
+function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any) {
   type FormData = {
     name: string;
     mobile: string;
@@ -20,24 +19,22 @@ function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any)
 
 
 
-  const onSubmit = async (data: any) => 
-  {
-    const res = await http("/partners/registerWebinar", 
-    {
-      method: "POST",
-      body: JSON.stringify(data), 
-      headers: { "Content-Type": "application/json" },
-    });
+  const onSubmit = async (data: any) => {
+    const res = await http("/partners/registerWebinar",
+      {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" },
+      });
     const datares = await res.json();
 
-    
-    if(datares.status === 0)
-    {
+
+    if (datares.status === 0) {
       setIndex(1)
-    
-    }   
+
+    }
   };
-  
+
   return (
     <div className={`${styles.formWrap}`}>
       <div className={`${styles.modalHeader}`}>
@@ -59,6 +56,7 @@ function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any)
                 Name <sup>*</sup>
               </label>
               <input
+                onKeyDown={alphabetsOnly}
                 type="text"
                 id="partnerName"
                 className={`${styles.formControl}`}
@@ -78,7 +76,7 @@ function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any)
                 Mobile Number <sup>*</sup>
               </label>
               <input
-              onKeyDown={numericOnly}
+                onKeyDown={numericOnly}
                 {...register("mobile", {
                   ...validatePhone
                 })}
