@@ -1,218 +1,215 @@
-@import "../styles/_variables.scss";
+@import "@/styles/_variables.scss";
 
 /* --- Page level style --- */
 .mobView {
-	display: none;
+  display: none;
 }
 
 .flex {
-	display: flex;
+  display: flex;
 }
 
 .maContainer {
-	width: 100%;
-	max-width: 1110px;
-	margin: 0 auto;
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto;
 }
 
 .secTitle {
-	display: block;
-	font-size: 36px;
-	line-height: 42px;
-	font-weight: 700;
-	color: $blue;
-	text-align: center;
+  display: block;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  color: $blue;
+  text-align: center;
 
-	span {
-		color: $orange;
-		padding-left: 7px;
-		padding-right: 7px;
-	}
+  span {
+    color: $orange;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 
-	font-family: Nunito,
-	sans-serif;
+  font-family: Nunito, sans-serif;
 }
 
 .maOrangeBtn {
-	font-size: 16px;
-	line-height: 40px;
-	font-weight: 600;
-	color: $white;
-	background: $orange;
-	border: 1px solid $orange;
-	padding: 0 15px;
-	border-radius: 6px;
-	cursor: pointer;
-	min-width: 170px;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 600;
+  color: $white;
+  background: $orange;
+  border: 1px solid $orange;
+  padding: 0 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 170px;
 }
 
 .orangeTxt {
-	color: $orange;
+  color: $orange;
 }
 
 .orangeBgBox {
-	background-color: $orange !important;
-	color: $white !important;
+  background-color: $orange !important;
+  color: $white !important;
 }
 
 .blueBgBox {
-	background-color: $blue !important;
-	color: $white !important;
+  background-color: $blue !important;
+  color: $white !important;
 }
 
 .viewAllBtnWrap {
-	display: block;
-	text-align: center;
+  display: block;
+  text-align: center;
 
-	.viewAllBtn {
-		font-size: 16px;
-		line-height: 36px;
-		cursor: pointer;
-		background: 0 0;
-		border: none;
-		color: #ff7518;
-		margin-top: 30px;
+  .viewAllBtn {
+    font-size: 16px;
+    line-height: 36px;
+    cursor: pointer;
+    background: 0 0;
+    border: none;
+    color: #ff7518;
+    margin-top: 30px;
 
-		svg {
-			display: inline-block;
-			margin-left: 5px;
-			vertical-align: middle;
-			border-style: none;
-		}
-	}
+    svg {
+      display: inline-block;
+      margin-left: 5px;
+      vertical-align: middle;
+      border-style: none;
+    }
+  }
 }
 
-
-
 .textDanger {
-	color: #dc3545;
-	font-size: 11px;
+  color: #dc3545;
+  font-size: 11px;
 }
 
 .dNone {
-	display: none !important;
+  display: none !important;
 }
 
-
-
 .dFlex {
-	display: flex;
+  display: flex;
 }
 
 .justifyCenter {
-	justify-content: center;
+  justify-content: center;
 }
 
-
 .btn {
-	display: inline-block;
-	font-weight: 400;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	border: 1px solid transparent;
-	padding: .375rem .75rem;
-	font-size: 1rem;
-	line-height: 1.5;
-	border-radius: .25rem;
-	transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
 }
 
 .btn:focus,
 .btn:hover {
-	text-decoration: none
+  text-decoration: none;
 }
 
 .btn.focus,
 .btn:focus {
-	outline: 0;
-	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
 .btn.disabled,
 .btn:disabled {
-	opacity: .65
+  opacity: 0.65;
 }
 
 .btn:not(:disabled):not(.disabled) {
-	cursor: pointer
+  cursor: pointer;
 }
 
 .btn:not(:disabled):not(.disabled).active,
 .btn:not(:disabled):not(.disabled):active {
-	background-image: none
+  background-image: none;
 }
 
 a.btn.disabled,
 fieldset:disabled a.btn {
-	pointer-events: none
+  pointer-events: none;
 }
 
 .sumbitbtnpop {
-	background: #FF7518;
-	font-size: 16px;
-	color: #FFF !important;
-	min-width: 200px;
-	height: 42px;
-	border: 1px solid #FF7518;
-	margin-bottom: 20px;
-	line-height: 30px;
+  background: #ff7518;
+  font-size: 16px;
+  color: #fff !important;
+  min-width: 200px;
+  height: 42px;
+  border: 1px solid #ff7518;
+  margin-bottom: 20px;
+  line-height: 30px;
 }
 
 .sumbitbtnpop:hover {
-	background: #FF7518 !important;
-	color: #FFF !important;
+  background: #ff7518 !important;
+  color: #fff !important;
 }
 
-
-
-
-@media all and (max-width:1316px) {
-	.maContainer {
-		width: 100%;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
+@media all and (max-width: 1316px) {
+  .maContainer {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-@media all and (max-width:980px) {
-	.deskView {
-		display: none;
-	}
+@media all and (max-width: 980px) {
+  .deskView {
+    display: none;
+  }
 
-	.mobView {
-		display: block;
-	}
+  .mobView {
+    display: block;
+  }
 
-	.secTitle {
-		font-size: 22px;
-		line-height: 28px;
-		margin-bottom: 15px;
-	}
+  .secTitle {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
 }
 
-@media all and (max-width:768px) {
-	.maOrangeBtn {
-		line-height: 32px;
-		font-size: 14px;
-		padding: 0 20px;
-		border-radius: 4px;
-	}
+@media all and (max-width: 768px) {
+  .maOrangeBtn {
+    line-height: 32px;
+    font-size: 14px;
+    padding: 0 20px;
+    border-radius: 4px;
+  }
 
-	.viewAllBtnWrap .viewAllBtn {
-		margin-top: 15px;
-	}
+  .viewAllBtnWrap .viewAllBtn {
+    margin-top: 15px;
+  }
 }
 
 @font-face {
-	font-family: 'Nunito';
-	font-style: normal;
-	font-stretch: 100%;
-	src: url(/Nunito.woff2) format('woff2');
-	font-display: swap;
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-family: "Nunito";
+  font-style: normal;
+  font-stretch: 100%;
+  src: url(/Nunito.woff2) format("woff2");
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
+    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }

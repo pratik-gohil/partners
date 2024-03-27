@@ -1,0 +1,338 @@
+{
+    "pageTitle": "ભારતના સૌથી મોટા બિઝનેસ પાર્ટનર પ્રોગ્રામની શરૂઆત",
+    
+    "secTitle": "અમર્યાદિત, અવિશ્વસનીય",
+    "secTitle1": "આવક વહેંચણી",
+    "brokerageTitle": "દલાલી",
+    
+    "caption" :"",
+    "caption1" : "તમામ સેગમેન્ટમાં 100% શેરિંગ",
+    
+    "keyPointsTitle": "સમગ્રમાં 100% શેરિંગ",
+    
+    "keyPoint1": "એકાઉન્ટ મેન્ટેનન્સ ચાર્જિસ (AMC)",
+    "keyPoint2": "ખાતું ખોલાવવાની ફી",
+    "keyPoint3": "DP વેચાણ વ્યવહાર શુલ્ક",
+    "keyPoint4": "પ્લેજ/અનપ્લેજ શુલ્ક",
+    "keyPoint5": "ભાગીદાર સેવા ફી (વાર્ષિક)",
+    "keyPoint6": "પ્લાન ફેરફાર ફી",
+    
+    "un2024MidText": "તે બધુ જ નથી! સર્વોચ્ચ વ્યાજની આવકની વહેંચણી સાથે રિકરિંગ આવક બનાવો,",
+    
+    "marginTitle1" : "(eMargin)",
+    "marginTitle2": "",
+    "marginTitle3": "80% શેરિંગ",
+    "marginTitle4": "80% શેરિંગ",
+
+    "marginTitle5": "માર્જિન પ્લેજ",
+    "marginTitle6": "",
+    "marginTitle7": "11.99% થી વધુ ",
+    "marginTitle8": "80% શેરિંગ",
+    
+    "captionTxt": "અમારો પાર્ટનર પ્રોગ્રામ",
+    "captionTxt1": "અવિશ્વસનીય કિંમતો",
+    "captionTxt2": "ઓફર કરે છે, તમારા અને તમારા ગ્રાહકો માટે ઉન્નત અનુભવ માટે",
+    "captionTxt3": "સીમલેસ ટેક પ્લેટફોર્મ",
+    "captionTxt4": "તે તમને ",
+    "captionTxt5": "સંપૂર્ણ નિયંત્રણ",
+    "captionTxt6": "અને માલિકી પણ આપે છે, જે અમારા પર નિર્ભરતા ઘટાડે છે. વિગતવાર ચૂકવણીની શરતો માટે, અહીં",
+    "captionTxt7": "ક્લિક કરો.",
+    
+    "midheading-pl":"હવે, કેટલાક થોડા ઉદાહરણો સાથે આને વિગતવાર સમજીએ. :",
+    
+    "x-amount-left":"દલાલી",
+    "margiright75":"કમાવો",
+    "margiright75_1":"1.5X",
+    "margiright75_2":"અથવા વધુ",
+    "margiright75_3":"",
+    
+    "x-amount-txt-ul":"એકટીવ ગ્રાહક",
+    "x-amount-txt-ul_1":"ગ્રાહક દીઠ દલાલી",
+    "x-amount-txt-ul_2":"કુલ દલાલી",
+    
+    "x-amount-industry-block-1":"માસિક ચૂકવણી",
+    "x-amount-industry-block-2":"ઉદ્યોગ",
+    
+    "Unique_Benefit":"અનોખો ફાયદો:",
+    "Unique_Benefit_1":"તમારા ગ્રાહકોની જરૂરિયાતોને આધારે ડિસ્કાઉન્ટ, પરંપરાગત અને હાઇબ્રિડ મોડલ પસંદ કરો, અને દર કસ્ટમાઇઝ કરો",
+    
+    "MTF-amount-TITLE":"વ્યાજ",
+    "x-amount-right":"કમાવો",
+    "x-amount-right_1":"2X",
+    "x-amount-right_2":"અથવા વધુ",
+    "x-amount-right_3":"",
+    
+    "MTF_active_clients":"MTF ગ્રાહક",
+    "MTF_active_book":"MTF બુક",
+    "MTF_active_book_line":"(ગ્રાહક દીઠ ₹3 લાખ ધારેલ)",
+    "MTF_active_interest":"વ્યાજ દર",
+    
+    "MTF_eMargin_details":"વિગત",
+    "MTF_eMargin_industry":"ઉદ્યોગ",
+    "know_how":"જાણો કેવીતે ?",
+
+    "MTF_eMargin_industry_clients":"MTF સક્રિય ગ્રાહકો",
+    "MTF_eMargin_MTF_Book":"કુલ MTF બુક, <small>₹3 લાખ સરેરાશ બુક સાઈઝ ધારીને</small>",
+    "MTF_eMargin_avg_intrest_rate1":"સરેરાશ વ્યાજ",
+    "MTF_eMargin_avg_intrest_rate_gu":"સરેરાશ વ્યાજ ઉપજ (ધારણા)",
+    "MTF_eMargin_retain_broker":"મૂળ દર <small>(દલાલ દ્વારા રાખવામાં આવેલ)</small>",
+    "MTF_eMargin_intrest_baserate":"મૂળ દર પર વ્યાજની વહેંચણી",
+    "MTF_eMargin_intrest_payout":"કુલ માસિક MTF વ્યાજ ચૂકવણી",
+    
+    "MTF_eMargin_ann_intrest_payout":"માસિક વ્યાજ",
+    "MTF_eMargin_unique_benefit":"<b Name=\"light-blue\">અનોખો ફાયદો : </b> MTF વ્યાજ દરને  <a Name=\"orangeTxt\">9.99%</a> થી <a Name=\"orangeTxt\">24%</a> સુધી કસ્ટમાઇઝ કરો",
+    
+    "Margin_Pledge_Interest": "માર્જિન પ્લેજ વ્યાજ",
+    "Margin_Pledge_Interest_rate": "કમાવો <b>1.5X</b> અને વધુ",
+    "Margin_Pledge_Interest_active_cli": "માર્જિન પ્લેજ ગ્રાહક",
+    "Margin_Pledge_Interest_book": "એકંદર માર્જિન પ્લેજ બુક",
+    "Margin_Pledge_Interest_per_cli": "(ગ્રાહક દીઠ ₹2 લાખ ધારેલ)",
+    "Margin_Pledge_Interest_avg_intrest": "સરેરાશ",
+    
+    "Margin_Pledge_Interest_Assumptions": "ધારણા",
+    "Margin_Pledge_active_cli": "ગ્રાહકની સંખ્યા",
+    "Margin_Pledge_total_book": "કુલ માર્જિન પ્લેજ બુક,",
+    "Margin_Pledge_per_cli": "₹2 લાખ સરેરાશ બુક સાઇઝ ધારીને",
+    
+    "Margin_Pledge_annual_payout": "કુલ માસિક માર્જિન પ્લેજ વ્યાજ ચૂકવણી",
+    "Margin_Pledge_annual_int_payout": "માસિક વ્યાજ",
+    "Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">અનોખો લાભ:</b> માર્જિન પ્લેજ વ્યાજ દરને <a Name=\"orangeTxt\"> 11.99 %</a> થી <a Name=\"orangeTxt\"> 24 %.</a>  સુધી કસ્ટમાઇઝ કરો.",
+    
+    "DP_Sell_Transaction_Charges": "DP વેચાણ અને વધુ",
+    "DP_Sell_Transaction_Charges_rate": "કમાવો <b>22X</b> અને વધુ",
+    "DP_Sell_Transaction_Charges_perday": "",
+    "DP_Sell_Transaction_Charges_perday3": "વેચાણ વ્યવહારોનું",
+    "DP_Sell_Transaction_Charges_title": "શુલ્ક",
+    "DP_Sell_Transaction_Charges_ann_charges": "માસિક શુલ્ક",
+    "DP_Sell_Transaction_Charges_perday1": "દરરોજ કેટલી સ્ક્રિપ્ટ વેચવી",
+    "DP_Sell_Transaction_Charges_tran_char": "DP વ્યવહાર શુલ્ક",
+    "DP_Sell_Transaction_Charges_dp_tran_char": "કસ્ટમાઇઝ કરેલ DP વ્યવહાર_શુલ્ક",
+    "DP_Sell_Transaction_Charges_ann_dp_char": "વાર્ષિક DP ટ્રાન્ઝેક્શન શુલ્ક",
+    "DP_Sell_Transaction_Charges_Payout_rate": "ચુકવણી દર",
+    "DP_Sell_Transaction_Charges_base": "(આધાર પર)",
+    "DP_Sell_Transaction_Charges_abovebase": "(ઉપરના આધાર)",
+       
+    
+    "DP_Sell_Transaction_Charges_ann_payoutrate": "બેઝ રેટ ઉપર વાર્ષિક ચૂકવણી",
+    "DP_Sell_Transaction_Charges_annpayout": "માસિક દલાલી ચુકવણી",
+    
+    "DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">અનોખો લાભ:</b><a Name=\"orangeTxt\">₹12</a> થી <a Name=\"orangeTxt\">₹25</a> સુધીના DP વેચાણ વ્યવહારોને કસ્ટમાઇઝ",
+    
+    "partner_offer_block": "એટલું જ નહિ, તમે અન્ય વિવિધ શુલ્કો ચાર્જર્સ નો પણ લાભ મેળવી શકો છો.",
+    "partner_offer_acc_openfee":"<b>એકાઉન્ટ ખોલવાની ફી</b>₹9,999 સુધી ચાર્જ કરવાની તક<br/> ₹500 થી ઉપરનું કઈ પણ <u Name=\"orangeTxt\">100% તમારું છે!</u>",
+    
+    "partner_offer_acc_maintenance_charges":"<b>એકાઉન્ટ જાળવણી શુલ્ક ચાર્જ <i>(DP AMC)</i></b>₹4,999 સુધી ચાર્જ કરો - <u Name=\"orangeTxt\">કમાવો 100% </u>",
+    "partner_offer_pledge_unpledge_charges":"<b>પ્લેજ, અનપ્લેજ શુલ્ક ચાર્જ <i>(MTF, માર્જિન પ્લેજ)</i></b>અમારી માનક યોજનાઓમાંથી પસંદ કરો – કમાવો 20% <br/>અથવા કસ્ટમાઇઝ કરો અને <u Name=\"orangeTxt\">કમાવો 100%</u>",
+    "all_this_can_block": "આ બધું જ તમારું<br /> થઈ શકે.",
+    "RetainQueryLink":"વિગતવાર આવક વહેંચણી યોજનાઓ જુઓ",
+     
+    "heroPoint1": "<b>9 પ્રકાર</b> ની અIવક માં કમાઓ</span>",
+    "heroPoint2": "<b>પારદર્શક ચૂકવણી.</b> કોઈ શરતો નથી</span>",
+    "heroPoint3": "વૈશ્વિક બ્રાન્ડ <b>વેચવા માટે સરળ</b></span>",
+    "heroPoint4": "<b>ન્યૂનતમ ક્લાયંટ દરો,</b> છતાં વધુ આવક</span>",
+    "heroRightHeading": "માત્ર આમંત્રણના આધારે 1,000 ભાગીદારો માટે ખુલે છે",
+    "advantageTitle": "<span>&apos;Mirae Asset&apos;</span> લાભ",
+    "advantageSubHeading": "અમારી સાથે ભાગીદારી કરવામાં, તમારા વ્યવસાય માટે ઘણા ફાયદા છે. જુઓ, તેમાં તમારા માટે શું છે.",
+    "advantageH1": "તમારા ગ્રાહકો માટે કિંમતો કસ્ટમાઇઝ કરો",
+    "advantageH1_1": "તમારા ગ્રાહકના ભાવિ ઓનબોર્ડિંગ માટે, એક સમયની પ્રવૃત્તિ તરીકે કસ્ટમાઇઝ કરેલ દલાલી યોજના બનાવો. <span>ડિસ્કાઉન્ટ, પરંપરાગત</span> અથવા <span>હાઇબ્રિડ</span> મોડલમાંથી પસંદ કરો. અને તમારા ગ્રાહકોની વિવિધ જરૂરિયાતો માટે <span>વ્યાજ દરો, DP શુલ્ક</span> અને વધુ કસ્ટમાઇઝ કરો અને તમારી કમાણી મહત્તમ કરો.",
+    "advantageH2": "ઇન્ટરેક્ટિવ ડેશબોર્ડ દ્વારા તમારો વ્યવસાય ચલાવો",
+    "advantageH2_1": "એક સંકલિત ડેશબોર્ડ",
+    "advantageH2_2": "થોડા ક્લિક્સમાં ગ્રાહક મેળવો",
+    "advantageH2_3": "ગ્રાહકોના ટ્રેડિંગ વર્તન મુજબ દલાલી યોજના કસ્ટમાઇઝ કરો",
+    "advantageH2_4": "ગ્રાહકનો પોર્ટફોલિયો, પોઝિશન વગેરે LIVE જુઓ અને મોનિટર કરો",
+    "advantageH2_5": "સ્માર્ટ અહેવાલો નો ઉપલબ્ધ",
+    "advantageH2_6": "સમર્પિત BA શ્રેષ્ઠતા ડેસ્ક - ઑનલાઇન અને ઑફલાઇન સહાય",
+    "advantageH3": "તમારા ગ્રાહકોને મિનિટોમાં ઓનબોર્ડ કરો",
+    "advantageH3_1": "DIY તે તમારા ક્લાયન્ટ માટે તેમના વતી કરો",
+    "advantageH3_2": "અને તેમની સાથે માત્ર દસ્તાવેજીકરણ માટે લિંક શેર કરો",
+    "advantageH3_3": "તમારા ગ્રાહકો સાથે જોડાવાની લિંક શેર કરો",
+    "advantageH3_4": "અને તેમને તે <br />જાતે કરવા દો",
+    "advantageH3_5": "બલ્ક ઑનબોર્ડિંગ માટે સૂચિ અપલોડ કરો",
+    "advantageH3_6": "અને એક જ વારમાં બહુવિધ ક્લાયન્ટ્સને <br />ઑનબોર્ડ મેળવો",
+    "advantageH4": "વૈશ્વિક વિશ્વસનીય બ્રાન્ડ",
+    "advantageH4_1": "17 દેશોમાં 25+ વર્ષનો અનુભવ ધરાવતી",
+    "advantageH5": "વિક્ષેપકારક વ્યવસાય મોડલ",
+    "advantageH5_1": "શ્રેષ્ઠ બ્રોકરેજ અને વ્યાજ દર યોજનાઓ સાથે",
+    "advantageH6": "પારદર્શક મોડલ",
+    "advantageH6_1": "તમારા વ્યવસાયના કદને ધ્યાનમાં લીધા વિના શૂન્ય અસમાનતા સાથે",
+    "advantageH7": "ઉચ્ચ ચૂકવણી",
+    "advantageH7_1": "આવક પેદા કરતા 9 પ્રવાહોમાં",
+    "advantageH8": "બ્રાન્ડ સ્થાપિત કરો",
+    "advantageH8_1": "ક્લાયન્ટ્સ એપ્લિકેશન અને વેબ ટ્રેડિંગ પ્લેટફોર્મ્સ પર દૃશ્યતા સાથે તમારી",
+    "advantageH9": "સમર્પિત સેવા ડેસ્ક",
+    "advantageH9_1": "તમારા માટે",
+    "advantageH10": "સ્થિર પ્લેટફોર્મ",
+    "advantageH10_1": "પ્રતિદિન 25 લાખ+ સોદાઓ",
+    "clientTitle": "તમારા ગ્રાહકો <span>માટે તેમાં શું છે?</span>",
+    "clientTitle1": " બ્રાન્ડ MIRAE ASSET ની ખાતરી",
+    "clientTitle2": " એક જ પ્લેટફોર્મ પર ઉત્પાદનો પ્રોડક્ટ ની શ્રેણી",
+    "clientTitle3": "1-ક્લિક ઓર્ડર પ્લેસમેન્ટ સમગ્ર ઉત્પાદનો પ્રોડક્ટ",
+    "clientTitle4": "સરળ પ્રક્રિયા માટે સ્થિર પ્લેટફોર્મ",
+    "clientTitle5": "મૂળભૂત ડેટા અને તકનીકી ચાર્ટ",
+    "clientTitle6": "સંપૂર્ણ પોર્ટફોલિયો માટે સિંગલ-વ્યૂ સ્ક્રીન  ",
+    "clientTitle7": "અદ્યતન ઓર્ડર પ્લેસમેન્ટ વિકલ્પો",
+    "monthTitle" : "<span>માત્ર 22</span>મહિનામાં...",
+    "month1": "વિશ્વાસ મેળવ્યો  <br /> <b>9 લાખ+</b>  ગ્રાહકોનો",
+    "month2": "<b>₹40 કરોડ+</b> સોદાની <br/> સુવિધા આપી",
+    "month3": "MTF બુક બનાવી <br /> <b>₹1,100 કરોડ+ ની </b>",
+    "faqTitle": "FAQ સવાલો",
+    "pricingLi1": "અમર્યાદિત",
+    "pricingLi2": "અવિશ્વસનીય",
+    "pricingBannerRightBlock1": "બ્રોકરેજ",
+    "pricingBannerRightBlock2": "શેરિંગ",
+    "tagline": "<b>8 વધુ રેવન્યુ સ્ટ્રીમ્સ:</b> એકાઉન્ટ ઓપનિંગ ફી, વ્યાજ ચાર્જ, ડીપી ટ્રાન્ઝેક્શન ચાર્જ, બ્રોકરેજ પ્લાન ફેરફાર ફી અને વગેરે.",
+    "pRegistration": "",
+    "viewDetailedTitle": "કિંમત અને પેમેન્ટની વિગતો વિગતવાર જુઓ",
+    "incomeSharingPdf": "અધિકૃત પાર્ટનર (AP) pdf માટે ઈન્કમ શેરિંગ ડાઉનલોડ કરો",
+    "payoutTCPdf": "પેમેન્ટના નિયમો અને શરતો જુઓ",
+    "otherCharges": "તમારા ગ્રાહકને લાગુ પડતા અન્ય ચાર્જીસ:",
+    "otherCharges1": "આ સ્ટાન્ડર્ડ ચાર્જીસ છે અને તેમાં ફેરફાર કરી શકાતા નથી",
+    "quarterlyCharges": "<b>ત્રિમાસિક ઓપરેટિંગ ચાર્જીસ:</b> <br /> <p>સ્ટાન્ડર્ડ અને કસ્ટમાઇઝ્ડ ત્રિમાસિક AMC પ્લાન હેઠળ ઓનબોર્ડ થયેલા ગ્રાહકો પાસેથી ત્રિમાસિક દીઠ ₹99 + 18% GST વસૂલવામાં આવશે.</p> <p>સ્ટાન્ડર્ડ લાઇફટાઇમ ફ્રી AMC પ્લાન અને કસ્ટમાઇઝ્ડ વન-ટાઇમ AMC પ્લાન હેઠળ ગ્રાહક માટે કોઈ ઓપરેટિંગ ચાર્જ લાગુ થશે નહીં</p>",
+    "offMarketCharges": "<b>ઑફ-માર્કેટ ટ્રાન્સફર ચાર્જીસ </b> <p>ટ્રાન્સફર ઇન: ફ્રી</p> <p>ટ્રાન્સફર આઉટ: ટ્રાન્ઝેકશન દીઠ ₹20 અથવા 0.50% બેમાંથી જે ઓછું હોય</p>",
+    "corporateAction": "<b>કોર્પોરેટ એક્શન ઓર્ડર ચાર્જીસ </b> <p>કોર્પોરેટ એક્શન ઓર્ડર ચાર્જીસ ડિલિવરી ટ્રેડ માટે ગ્રાહકના લાગુ બ્રોકરેજ જેટલો જ હશે. </p>",
+    "physicalCMR": "<b>ફિઝીકલ CMR વિનંતી</b> <p>પ્રથમ CMR વિનંતી ફ્રી છે. અનુગામી વિનંતીઓ માટે ₹20 + ₹100 (કુરિયર ચાર્જ) + 18% GST </p>",
+    "paymentGateway": "<b>પેમેન્ટ ગેટવે ચાર્જીસ - માર્જિન ફંડ ટ્રાન્સફર</b> <p>UPI ટ્રાન્ઝેકશન ફ્રી છે અને નેટ બેંકિંગના કિસ્સામાં, પસંદ કરેલ બેંકના આધારે ચાર્જીસ ₹7 થી ₹11 + GST વચ્ચે બદલાશે</p>",
+    "physicalStatement": "<b>ફિઝીકલ સ્ટેટમેન્ટ કુરિયર ચાર્જીસ</b> <p>વિનંતી દીઠ ₹100 + કુરિયર દીઠ ₹100</p>",
+    "dematCert": "<b>પ્રતિ સર્ટીફિકેટ ડિમેટ</b> <p>પ્રતિ સર્ટીફિકેટ ₹150 નો ચાર્જ + ₹100 કુરિયર ચાર્જ વસૂલવામાં આવશે</p>",
+    "rematCharges": "<b>રિમેટ ચાર્જીસ</b> <p>પ્રતિ સર્ટીફિકેટ ₹150 નો ચાર્જ + ₹100 કુરિયર ચાર્જ + CDSL ચાર્જ વસૂલવામાં આવશે </p>",
+    "failedInstruction": "<b>નિષ્ફળ ગયેલા સૂચનના ચાર્જીસ</b> <p>સૂચના દીઠ ₹50નો ચાર્જ લાગુ કરવામાં આવશે </p>",
+    "reactivation": "<b>ફરીથી એક્ટિવેટ કરાવવાના ચાર્જીસ </b> <p>એકાઉન્ટ ફરીથી એક્ટિવેટ માટે કોઈ ચાર્જ લાગુ થશે નહીં </p>",
+    "modCharges": "<b>ફેરફારના ચાર્જીસ</b> <p>વિનંતી દીઠ ₹20નો ચાર્જ લાગુ થશે</p>",
+    "acClosure": "<b>એકાઉન્ટ બંધ કરવાના ચાર્જીસ</b> <p>એકાઉન્ટ બંધ કરવા માટે કોઈ ચાર્જ લાગશે નહીં</p>",
+    "gst": "<b>18% GST</b> <p>બ્રોકરેજ, DP ચાર્જ, એક્સચેન્જ ટ્રાન્ઝેક્શન ચાર્જ, SEBI ચાર્જ અને ઓટો સ્ક્વેર-ઓફ ચાર્જિસ પર</p>",
+    "physicalDelivery": "<b>ડેરિવેટિવ્ઝની ફિઝીકલ ડિલિવરી</b> <p>જ્યારે ફિઝીકલ ડિલિવરી થાય ત્યારે કરાર મૂલ્યના 0.05% જેટલી નજીવી બ્રોકરેજ વસૂલવામાં આવશે</p>",
+    "transactionCharges": "<b>ટ્રાન્ઝેકશન/ટર્નઓવર ચાર્જીસ</b> <p>X, XT અને Z ગ્રૂપમાં ટ્રેડ થતી સિક્યોરિટીઝ પર BSE ટ્રાન્ઝેક્શન ચાર્જ 0.10% પ્રતિ કરોડ છે અને 'P', 'ZP', 'SS' અને 'ST' ગ્રૂપ માટે, તે કુલ ટર્નઓવર મૂલ્ય પર 1% પ્રતિ કરોડ છે </p>",
+    "otherCharge": "<b>અન્ય ચાર્જીસ</b> <p>સિસ્ટમ દ્વારા ઓપન ઇન્ટ્રા-ડે પોઝિશન માટે RMS સ્ક્વેર-ઓફ ચાર્જ: ₹60 પ્રતિ પોઝિશન</p> <p>જો સ્ટોક ડિલિવરી કરવામાં અસમર્થ હોય (ડિમેટમાં નહીં) ઓક્શન: એક્સચેન્જ દ્વારા વાસ્તવિક દંડ મુજબ</p>",
+    "apRegistration": "<span>Authorised Partner (AP) રજિસ્ટ્રેશન</span> અને ઓનબોર્ડિંગ ચાર્જીસ",
+    "captionWrap": "<p>Authorised Partner (AP) તરીકે રજિસ્ટર કરાવવા માટે અમુક ચાર્જીસ લાગુ થાય છે. આ ચાર્જીસ માટે તમે નીચેના ટેબલ સંદર્ભ લઈ શકો છો.</p>",
+    "authorisedPartneUlBlock": "<ul><li>સિક્યોરિટી ડિપોઝિટ: ₹50,000 (રિફંડપાત્ર)</li> <li>ડોક્યુમેન્ટ હેન્ડલિંગ ચાર્જિસ: ₹1,500 (eFranking અને eSign ચાર્જ)</li><li>એક-વખત એક્સચેન્જ રજિસ્ટ્રેશન ચાર્જીસ: ₹ 22,420</li></ul>",
+    "apRegistrationTitle": "AP રજિસ્ટ્રેશન ચાર્જીસ",
+    "apTableHeading": "<th>એક્સચેન્જ</th><th>સેગ્મેન્ટ</th><th>ફી (₹)</th><th>GST રેટ</th><th>GSTની રકમ</th><th>કુલ ચાર્જીસ (₹)</th>",
+    "apTable1": "<td>NSE</td><td>કેપિટલ માર્કેટ</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
+    "apTable2": "<td>NSE</td><td>F&O</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
+    "apTable3": " <td>NSE</td><td>કરન્સી ડેરિવેટિવ્ઝ</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
+    "apTable4": " <td>BSE</td><td>કેપિટલ માર્કેટ</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
+    "apTable5": "<td>MCX</td><td>કોમોડિટીઝ</td><td>-</td><td>18%</td><td>NA</td><td>NA</td>",
+    "apTable6": "<td><b>કુલ રજિસ્ટ્રેશન ચાર્જીસ</b></td><td><b>બધા સેગમેન્ટ્સ</b></td><td><b>₹19,000</b></td><td><b>18%</b></td><td><b>₹3,420</b></td><td><b>₹22,420</b></td>",
+    "authorisedPartneUlBlock1": "એપ્રિલ 2024 થી AP વાર્ષિક મેન્ટેનન્સ ચાર્જીસ: ₹10,620",
+    "apAnnual": "AP વાર્ષિક મેન્ટેનન્સ ચાર્જીસ એપ્રિલ 2024 થી લાગુ",
+    "pricingTableHeading": "<th>એક્સચેન્જ</th><th>સેગ્મેન્ટ</th><th>ફી (₹)</th><th>GST રેટ</th><th>GSTની રકમ</th><th>કુલ ચાર્જીસ (₹)</th>",
+    "pricingT1": "<td>NSE-AMC</td><td>બધા સેગ્મેન્ટ</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
+    "pricingT2": "<td>BSE-AMC</td><td>બધા સેગ્મેન્ટ</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
+    "pricingT3": "<td><b>કુલ AMC</b></td><td><b>NSE & BSE</b></td><td><b>₹9,000 </b></td><td><b>18%</b></td><td><b>₹1,620</b></td><td><b>₹10,620</b></td>",
+    "pricingNoteBlock": "નોંધ: સિક્યોરિટી ડિપોઝિટના સંદર્ભમાં,",
+    "pricingNoteList": "<li>કોઈ સ્ટોક અથવા કોલેટરલ સ્વીકારવામાં આવશે નહીં</li> <li>તે રિફંડપાત્ર અને ઈન્ટરેસ્ટ-ફ્રી છે</li>",
+            
+    "pricePayoutStructure_title":"<span>કિંમત અને પેમેન્ટ </span> સ્ટ્રક્ચર",
+    
+    "pricingTableHolder_revenu_src":"<th>ઈન્કમનો સ્ત્રોત</th><th>પાર્ટનરને પેમેન્ટ</th><th>નોંધ</th>",
+    
+    "pricingTableHolder_acc_openfee":"<b>એકાઉન્ટ ઓપનિંગ ફી</b>",
+    
+    "pricingTableHolder_acc_openfee_1":"",
+    "pricingTableHolder_acc_openfee_01":"₹500થી વધુ પર ",
+    
+    "pricingTableHolder_acc_openfee_2":"પસંદ કરેલ એકાઉન્ટ ઓપનિંગ ફીને ધ્યાનમાં લીધા વગર Mirae Asset ઑનબોર્ડ થયેલ દરેક નવા ગ્રાહક માટે ₹500 ની ફ્લેટ ફી ડેબિટ કરશે.",
+    
+    "pricingTableHolder_acc_Brokerage_sec":"<td><b>બ્રોકરેજ</b></td><td>તમામ સેગ્મેન્ટમાં <a Name=\"orangeTxt\">100%</a></td><td>અમારા સ્ટાન્ડર્ડ પ્લાનમાંથી પસંદ કરો અથવા તમારા ગ્રાહકો માટે કસ્ટમાઇઝ્ડ પ્લાન બનાવો</td>",
+    
+    "pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) ઇન્ટરેસ્ટ</b></td><td>9.99% થી વધુ પર <a Name=\"orangeTxt\">80%</a> ઇન્ટરેસ્ટ શેરિંગ</td><td>24% સુધી MTF ઇન્ટરેસ્ટને કસ્ટમાઇઝ કરો</td>",
+    
+    "pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>માર્જિન પ્લેજ ઈન્ટરેસ્ટ</b></td><td>11.99% થી વધુ પર <a Name=\"orangeTxt\">80%</a> ઇન્ટરેસ્ટ શેરિંગ</td><td>24% સુધી માર્જિન પ્લેજ ઇન્ટરેસ્ટને કસ્ટમાઇઝ કરો</td>",
+        
+    "pricingTableHolder_acc_dpamc":"એકાઉન્ટ મેન્ટેનન્સ ચાર્જીસ (AMC)",
+        
+    "pricingTableHolder_acc_dpamc_1":"₹480 થી વધુ પર <a Name=\"orangeTxt\">100%</a> ઈન્કમ",
+    
+    "pricingTableHolder_acc_dpamc_2":"અમારા સ્ટાન્ડર્ડ DP પ્લાનમાંથી પસંદ કરો અથવા તમારા ગ્રાહકો માટે કસ્ટમાઇઝ્ડ DP પ્લાન બનાવો",
+       
+    
+    "pricingTableHolder_pledge_unp_char":"પ્લેજ/અનપ્લેજ ચાર્જીસ",
+    
+    "pricingTableHolder_pledge_unp_ rate":"કસ્ટમાઇઝ કરો અને <a Name=\"orangeTxt\">100%</a> કમાઓ",
+    "pricingTableHolder_dp_sell_rate":"DP વેચાણ ટ્રાન્ઝેકશન ચાર્જીસ",
+        
+    "pricingTableHolder_dp_sell_rate_1":"કસ્ટમાઇઝ કરો અને <a Name=\"orangeTxt\">100%</b> કમાઓ",
+    
+    "pricingTableHolder_dp_payment_chr":"વિલંબિત પેમેન્ટ ચાર્જીસ (DPC)",
+    
+    "pricingTableHolder_dp_payment_chr_1":"<a Name=\"orangeTxt\">ફ્લેટ 20%</a> ઓપરેટિંગ શુલ્ક",
+    
+    "pricingTableHolder_dp_no_customisation":"કોઈ કસ્ટમાઇઝેશન શક્ય નથી",
+    
+    "pricingTableHolder_dp_op_charges":"ઓપરેટિંગ શુલ્ક",
+    "pricingTable_Income_Acc_Op_Fee":"એકાઉન્ટ ખોલાવવાની ફીમાંથી ઈન્કમ:",
+    "pricingTable_Income_Acc_para":"તમારા ગ્રાહક માટે એકાઉન્ટ ખોલવાની ફીની શ્રેણીમાંથી પસંદ કરો અને ₹500 થી વધુની કોઈપણ વસ્તુ પર 100% ચૂકવણી મેળવો.",
+    "pricingTable_Income_Acc_heading":"<th>એકાઉન્ટનો પ્રકાર</th><th>પાર્ટનર ગ્રાહકો પાસેથી શું ચાર્જ લઈ શકે છે?</th><th>પાર્ટનરને પેમેન્ટ</th><th>વધારાની ઈન્કમ <br/>  <small>પાર્ટનર સર્વિસ ફી^ (વાર્ષિક રિકરિંગ)</small></th>",
+    "pricingTable_Income_Acc_std_plan_1":"<td>स्टैंસ્ટાન્ડર્ડ પ્લાન 1: <br/><a Name=\"orangeTxt\">  ઝીરો બ્રોકરેજ એકાઉન્ટ</a></td><td>₹999 to ₹9,999</td><td><a Name=\"orangeTxt\">₹500થી વધુ 100%</a></td><td>100% પેમેન્ટ<br /> (₹999 થી ₹9,999)</td>",
+    "pricingTable_Income_Acc_std_plan_2":"<td>स्टैंસ્ટાન્ડર્ડ પ્લાન 2: <br/><a Name=\"orangeTxt\">  ફ્રી ડિલીવરી એકાઉન્ટ</a></td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">₹500થી વધુ 100%</a><td>NA</td>",
+    "pricingTable_Income_Acc_std_plan_3":"<td><a Name=\"orangeTxt\">  કસ્ટમાઇઝ્ડ</a> <br/> બ્રોકરેજ પ્લાન</td><td>₹0 થી ₹9,999</td><td><a Name=\"orangeTxt\">₹500થી વધુ 100%</a></td><td>NA</td>",
+    
+    "pricingTable_Income_Acc_note":"^તે વાર્ષિક રિકરિંગ ફી છે (બીજા વર્ષથી તે મુજબ આગળ લાગુ), જે તમે એવા ગ્રાહકો પાસેથી વસૂલ ચાર્જ કરી શકો છો, જેમને તમે 'ઝીરો બ્રોકરેજ એકાઉન્ટ' ઑફર કરી રહ્યાં છો, કારણ કે તમે તેમની પાસેથી કોઈ બ્રોકરેજ ઇન્કમ મેળવશો નહીં. પાર્ટનર સર્વિસ ફી એ એકાઉન્ટ ઓપનિંગ ફીની બરાબર હશે જે તમે તમારા ગ્રાહક પાસેથી વસૂલ ચાર્જ કરી શકશો ,અને તેમાંથી 100% તમારા રહેશે. <br /><br /> <a Name=\"orangeTxt\"> નોંધ: </a>  Mirae Asset પસંદ કરેલ એકાઉન્ટ ઓપનિંગ ફીને ધ્યાનમાં લીધા વગર, ઑનબોર્ડ થયેલ દરેક નવા ગ્રાહક માટે ₹500 ની વન-ટાઇમ ફ્લેટ ફી ડેબિટ કરશે", 
+    "pricingTable_Income_Brokerage":"બ્રોકરેજમાંથી ઈન્કમ:",
+    
+    "pricingTable_Income_Brokerage_disc":"તમે કાં તો અમારા <b> સ્ટાન્ડર્ડ પ્લાનમાંથી </b>  પસંદ કરી શકો છો અથવા તમારા ગાહક માટે તેમની વિભિન્ન જરૂરિયાતો અને ટ્રેડિંગ વર્તણૂક ના આધારે <b> કસ્ટમાઇઝ્ડ પ્લાન </b> બનાવી શકો છો.",
+    "pricingTable_Income_Brokerage_heading":"<th>બ્રોકરેજ પ્લાનનો પ્રકાર</th> <th>ગ્રાહકોને લાગુ બ્રોકરેજ</th><th>પાર્ટનરને પેમેન્ટ</th>", 
+    
+    "pricingTable_Income_std_plan1":"<td>સ્ટાન્ડર્ડ પ્લાન 1: <br/><a Name=\"orangeTxt\">ઝીરો બ્રોકરેજ એકાઉન્ટ</a></td><td class=\"textLeft\">તમામ સેગમેન્ટમાં આજીવન ₹0 બ્રોકરેજ</td><td Name=\"textCenter\">NA</td>",
+    "pricingTable_Income_std_plan2":"<td>સ્ટાન્ડર્ડ પ્લાન 2: <br /><a Name=\"orangeTxt\">ફ્રી ડિલીવરી એકાઉન્ટ</a></td><td class=\"textLeft\">માત્ર ડિલિવરી પર ₹0 બ્રોકરેજ <br/> અન્ય તમામ સેગમેન્ટ્સ પર ઓર્ડર દીઠ ₹20 બ્રોકરેજ</td><td Name=\"textCenter\"><a Name=\"orangeTxt\">100%</a></td>",
+    "pricingTable_Income_std_plan3":"<td><a Name=\"orangeTxt\">કસ્ટમાઇઝ્ડ પ્લાન</a></td><td class=\"textLeft\">નીચેના મોડેલોમાંથી પસંદ કરો <br/><ul><li><b class=\"fontSemiBold\">ડિસ્કાઉન્ટ </b><small>(પ્રતિ-ઓર્ડર ફિક્સ)</small></li><li><b class=\"fontSemiBold\">ટ્રેડિશનલ </b><small>(વેરિએબલ)</small></li><li><b class=\"fontSemiBold\">હાઇબ્રિડ</b></li></ul></td><td class=\"textCenter\"><a class\"orangeTxt\">100%</a></td>",
+    "pricingTable_Income_Income_MTF_Int":"MTF (eMargin) ઈન્ટરેસ્ટમાંથી ઈન્કમ",
+    "pricingTable_Income_Income_MTF_Int_disc":"તમે કાં તો અમારા સ્ટાન્ડર્ડ ઈન્ટરેસ્ટ રેટ પસંદ કરી શકો છો, એટલે કે મૂળભૂત ઈન્ટરેસ્ટ રેટ અથવા ગ્રાહકને લાગુ પડતા ઈન્ટરેસ્ટ રેટને કસ્ટમાઇઝ કરવાનું પસંદ કરી શકો છો.",
+    "pricingTable_Income_Income_MTF_Int_heading":"<th>મૂળભૂત ઈન્સ્ટરેસ્ટ રેટ</th><th>  પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ સુધી)</th><th>  કસ્ટમાઇઝ્ડ ઈન્ટરેસ્ટ રેટ <br/>  (મહત્તમ લિમિટ)</th><th>  પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ કરતા વધુ)</th>",
+    "pricingTable_Income_Income_MTF_Int_note":"<a Name=\"orangeTxt\">નોંધ:</a> તમે અમારા સ્ટાન્ડર્ડ MTF વ્યાજ તમારા ક્લાયન્ટ પાસેથી વસૂલ કરી શકો છો અને 5% કમાઈ શકો છો. જો તમે તમારા ક્લાયન્ટ પાસેથીથી 9.99% થી નીચે અને 6.99% p.a સુધી વ્યાજ વસૂલવા માંગો છો, તો તમને કોઈ શેરિંગ મળશે નહીં.",
+    "pricingTable_Income_MP_intr":"માર્જિન પ્લેજના ઈન્ટરેસ્ટમાંથી ઈન્કમ",
+    "pricingTable_Income_MP_intr_ para":"તમે કાં તો અમારા સ્ટાન્ડર્ડ ઈન્ટરેસ્ટ રેટ પસંદ કરી શકો છો, એટલે કે મૂળભૂત ઈન્ટરેસ્ટ રેટ અથવા ગ્રાહકને લાગુ પડતા ઈન્ટરેસ્ટ રેટને કસ્ટમાઇઝ કરવાનું પસંદ કરી શકો છો.",
+    "pricingTable_Income_MP_intr_fund_value":"<th>માર્જિન પ્લેજ ફંડિંગનું મૂલ્ય</th> <th>મૂળભૂત ઈન્ટરેસ્ટ રેટ</th><th>પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ સુધી)</th><th>  કસ્ટમાઇઝ્ડ ઈન્ટરેસ્ટ રેટ <br/>  (મહત્તમ લિમિટ)</th><th>  પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ કરતા વધુ)</th>",
+    "pricingTable_Income_MP_intr_fund_value_1":"પ્લેજ સ્ટોકના મૂલ્યના 80% સુધી",
+    "pricingTable_Income_acc_main_charges":"એકાઉન્ટ મેન્ટેનન્સ ચાર્જીસમાંથી ઈન્કમ (AMC) ",
+    
+    "pricingTable_Income_Income_dpamc_note":"<a Name=\"orangeTxt\">MTF અને માર્જિન પ્લેજ લેન્ડિંગ બુક પર મહત્વની નોંધ:</a></br></br> જો તમારી MTF અને માર્જિન પ્લેજ લેન્ડિંગ બુક ₹1 કરોડથી વધુ છે, તો Mirae Asset MTF અને માર્જિન પ્લેજ માટે ઉપરોક્ત ઈન્ટરેસ્ટ શેરિંગ ટેબલમાં ઉલ્લેખિત માપદંડોને ધ્યાનમાં લીધા વિના, જનરેટ થયેલી એકંદર ઈન્ટરેસ્ટની ઈન્કમ 25% જાળવી રાખશે",
+
+    "pricingTable_Income_acc_main_charges_dis":"તમે કાં તો અમારા સ્ટાન્ડર્ડ DP AMC પ્લાનમાંથી પસંદ કરી શકો છો અથવા ગ્રાહકના DP AMC ચાર્જીસને કસ્ટમાઇઝ કરી શકો છો.",
+    "pricingTable_Income_acc_main_charges_stdchar":"સ્ટાન્ડર્ડ AMC પ્લાન",
+    
+    "pricingTable_Income_acc_main_charges_AMCplan":"કસ્ટમાઇઝ્ડ AMC પ્લાન",
+    "pricingTable_Income_acc_main_charges_AMCplan_heading":"સ્ટાન્ડર્ડ પ્લાન 1 <br/>(એક વખતનું AMC)",
+    "pricingTable_Income_acc_main_charges_AMCplan_heading_2":"સ્ટાન્ડર્ડ પ્લાન 2 <br/>(ત્રિમાસિક AMC)",
+    "pricingTable_Income_acc_main_charges_ptp":"પાર્ટનરને પેમેન્ટ",
+    "pricingTable_Income_acc_main_charges_ota":"એક-વખતનું AMC",
+    "pricingTable_Income_acc_main_charges_qac":"ત્રિમાસિક AMC",
+    
+    "pricingTable_Income_acc_main_onetime_fee":" (એક-વખતની ફી સાથે આજીવન ફ્રી AMC)",
+    
+    "pricingTable_Income_acc_main_quater_fee":"(વાર્ષિક ફી, દર ત્રિમાસિક ₹120 વસૂલવામાં આવે છે)",
+    "to":"થી",
+    "pricingTable_Income_payout_above":"આનાથી વધુ માટે 100% પેમેન્ટ",
+    "pricingTable_Income_otf":"(એક-વખત AMC)",
+    "pricingTable_Income_qamc":"(ત્રિમાસિક AMC)",
+    
+    "pricingTable_Income_PledgeUnpledge_charges":" પ્લેજ અને અનપ્લેજ ચાર્જીસમાંથી ઈન્કમ",
+    "pricingTable_Income_PledgeUnpledge_charges_disc":"તમે કાં તો ₹25 અથવા ₹32ના અમારા સ્ટાન્ડર્ડ પ્લેજ/અનપ્લેજ કરેલા રેટમાંથી પસંદ કરી શકો છો અથવા ગ્રાહકના પ્લેજ/અનપ્લેજ ચાર્જીસને રેટની રેન્જમાંથી કસ્ટમાઇઝ કરી શકો છો, એટલે કે, ₹25 થી ₹35",
+    "pricingTable_Income_qamc_heading":"<th>પ્લેજ/અનપ્લેજ ચાર્જીસ</th> <th>પાર્ટનરને પેમેન્ટ </th><th>પ્લેજ/અનપ્લેજ ચાર્જીસ</th> <th>પાર્ટનરને પેમેન્ટ </th>",
+    "pricingTable_Income_qamc_partnerfee":"આનાથી વધુ માટે 100% પેમેન્ટ",
+    "pricingTable_Income_dp_tranchar":" DP વેચાણ ટ્રાન્ઝેક્શન ચાર્જીસમાંથી ઈન્કમ",
+    "pricingTable_Income_dp_tranchar_disc":"તમે કાં તો અમારા સ્ટાન્ડર્ડ DP વેચાણ ટ્રાન્ઝેક્શન ચાર્જમાંથી ₹12 પ્રતિ ISIN પસંદ કરી શકો છો અથવા ગ્રાહકના DP વેચાણ ટ્રાન્ઝેક્શન ચાર્જને ₹12 થી ₹25 સુધી કસ્ટમાઇઝ કરી શકો છો અને 100% પેમેન્ટ મેળવી શકો છો.",
+    "pricingTable_Income_std_dpchar":"સ્ટાન્ડર્ડ DP પ્લાન",
+    "pricingTable_Income_cdp_dpchar":"કસ્ટમાઇઝ્ડ DP પ્લાન",
+    "pricingTable_DP_Sell_TraCharges":"DP વેચાણ ટ્રાન્ઝેકશન ચાર્જીસ",
+    
+    "pricingTable_DP_ptop":"પાર્ટનરને પેમેન્ટ",
+    "pricingTable_DP_ptop_rates":"₹12 થી વધુ માટે100% પેમેન્ટ",
+    "pricingTable_DP_incone_delaychar":"વિલંબિત પેમેન્ટ ચાર્જીસ (DPC)માંથી ઈન્કમ",
+    "pricingTable_DP_incone_delaychar_disc":"ગ્રાહકના નેગેટિવ માર્જિન પર મેળવેલા DPC વ્યાજમાંથી ફ્લેટ 20% આવકની વહેંચણી મેળવો.",
+    "pricingTable_DP_incone_delaychar_heading":"<th>આના પર DPC</th> <th>ઈન્ટરેસ્ટ રેટ</th><th>પાર્ટનરને પેમેન્ટ </th>",
+    "pricingTable_DP_neg_leger":"ગ્રાહકના એકાઉન્ટમાં કોઈપણ નેગેટિવ માર્જિન",
+    
+    "pricingTable_DP_flat":"ફ્લેટ 20%"
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }

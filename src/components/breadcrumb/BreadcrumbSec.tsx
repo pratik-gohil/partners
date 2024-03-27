@@ -3,7 +3,7 @@
 import React from 'react'
 import styles from "./BreadcrumbSec.module.scss";
 import { usePathname } from 'next/navigation';
-import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
+import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 import Image from 'next/image';
 
 const data = {

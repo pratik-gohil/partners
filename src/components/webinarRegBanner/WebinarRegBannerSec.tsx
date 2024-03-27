@@ -4,12 +4,12 @@ import styles from "./WebinarRegBannerSec.module.scss";
 import useUserAgent from "@/lib/hooks/useUserAgent";
 import Image from "next/image";
 import http from "@/lib/http/http";
-import BannerBgImgDesk from "../../../public/horizonatlbanners/horibanner_desktop.webp";
-import BannerBgImgMob from "../../../public/horizonatlbanners/horibanner_mobile.webp";
-import BannerDateIcon from "../../../public/horizonatlbanners/calicon.webp";
-import BannerTimeIcon from "../../../public/horizonatlbanners/timeicon.webp";
 import dynamic from "next/dynamic";
 import Modal from "@/components/Modal";
+import BannerBgImgDesk from "@/public/horizonatlbanners/horibanner_desktop.webp";
+import BannerBgImgMob from "@/public/horizonatlbanners/horibanner_mobile.webp";
+import BannerDateIcon from "@/public/horizonatlbanners/calicon.webp";
+import BannerTimeIcon from "@/public/horizonatlbanners/timeicon.webp";
 
 
 const WebinarRegModal = dynamic(
@@ -23,8 +23,8 @@ const WebinarRegBannerSec = () => {
   const [webLink, setwebLink] = useState(false);
   const [webPop, setwebPop] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
-  const [webinarBanner,setwebinarBanner]=useState(false);
-  const [bannerData,setBannerData]=useState({titleVal:'',dateVal:'',timeVal:'',urlVal:''})
+  const [webinarBanner, setwebinarBanner] = useState(false);
+  const [bannerData, setBannerData] = useState({ titleVal: '', dateVal: '', timeVal: '', urlVal: '' })
 
 
   useEffect(() => {
@@ -36,39 +36,35 @@ const WebinarRegBannerSec = () => {
   }, []);
 
   const fetchData = async () => {
-    
-       const res = await http("/partners/getWebinarEvent", {
-          method: "GET",
-         headers: {
-           "Content-Type": "application/json",
-         },
-        });
-       
 
-       const data = await res.json();
-       setBannerData({...bannerData,titleVal:data.data.title,dateVal:data.data.date,timeVal:data.data.time,urlVal:data.data.url})
-      if(data.data.isActive==true)
-      {
-        setwebinarBanner(true);
-        if (data.data.url == "" || data.data.url == null) 
-        {
-            setwebPop(true);
-        } 
-        else 
-        {
-            setwebLink(true);
-        }
+    const res = await http("/partners/getWebinarEvent", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+
+    const data = await res.json();
+    setBannerData({ ...bannerData, titleVal: data.data.title, dateVal: data.data.date, timeVal: data.data.time, urlVal: data.data.url })
+    if (data.data.isActive == true) {
+      setwebinarBanner(true);
+      if (data.data.url == "" || data.data.url == null) {
+        setwebPop(true);
       }
-      else
-      {
-        setwebinarBanner(false);
-      }      
-    
+      else {
+        setwebLink(true);
+      }
+    }
+    else {
+      setwebinarBanner(false);
+    }
+
   };
 
   return (
     <>
-      {webinarBanner &&(<div className={`${styles.webinarRegBannerSec}`}>
+      {webinarBanner && (<div className={`${styles.webinarRegBannerSec}`}>
         {isDesktop ? (
           <Image
             priority={true}
@@ -91,9 +87,9 @@ const WebinarRegBannerSec = () => {
         <div className={`${styles.webinarInnerBox}`}>
           <div>
             <p className={`${styles.bannerTitle}`}
-            dangerouslySetInnerHTML={
-              { __html: bannerData.titleVal}
-           }>
+              dangerouslySetInnerHTML={
+                { __html: bannerData.titleVal }
+              }>
             </p>
             <div className={`${styles.textCenter}`}>
               <div className={`${styles.timerWrap}`}>
