@@ -32,10 +32,17 @@ export function middleware(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl
 
+  const requestHeaders = new Headers(request.headers)
+  requestHeaders.set('x-pathname', pathname)
+
   const pathnameHasLocale = hasLocale(pathname)
 
   if (pathnameHasLocale) {
-    const response = NextResponse.next()
+    const response = NextResponse.next({
+      request: {
+        headers: requestHeaders
+      }
+    })
     response.cookies.set('userAgent', agent)
     return setLocale(response, pathnameHasLocale, pathname)
   }
@@ -47,7 +54,12 @@ export function middleware(request: NextRequest) {
       new URL(
         `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
         request.url
-      )
+      ),
+      {
+        request: {
+          headers: requestHeaders
+        }
+      }
     )
     response.cookies.set('userAgent', agent)
     return setLocale(response, locale, pathname)
