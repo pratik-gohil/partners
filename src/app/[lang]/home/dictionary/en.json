@@ -272,6 +272,7 @@
 "pricingTable_Income_Acc_Op_Fee":"Income from Account Opening Fee",
 "pricingTable_Income_Acc_para":" Select from a range of account opening fee for your client and get 100% payout on anything beyond ₹500.",
 "pricingTable_Income_Acc_heading":"<th>Type of Account</th><th>What Partner can charge clients?</th><th>Payout to Partner</th><th>Additional Income <br/>  <small>Partner service fee* (annual recurring)</small></th>",
+
 "pricingTable_Income_Acc_std_plan_1":"<td>Standard Plan 1: <br/><i Name=\"orangeTxt\">  Zero Brokerage account</i></td><td>₹999 to ₹9,999</td><td><i Name=\"orangeTxt\">100% above ₹500</i></td><td>100% payout<br /> (₹999 to ₹9,999)</td>",
 "pricingTable_Income_Acc_std_plan_2":"<td>Standard Plan 2: <br/><i Name=\"orangeTxt\">  Free Delivery Account</i></td><td>₹0 to ₹9,999</td><td><i Name=\"orangeTxt\">100% above ₹500</i><td>NA</td>",
 "pricingTable_Income_Acc_std_plan_3":"<td><i Name=\"orangeTxt\">  Customised</i> <br/> Brokerage Plan</td><td>₹0 to ₹9,999</td><td><i Name=\"orangeTxt\">100% above ₹500</i></td><td>NA</td>",
@@ -331,14 +332,4 @@
 "pricingTable_DP_neg_leger":"Any negative ledger balance in client’s account",
 
 "pricingTable_DP_flat":"Flat 20%"
-
-
-
-
-
-
-
-
-
-
 }
