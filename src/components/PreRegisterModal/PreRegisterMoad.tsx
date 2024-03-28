@@ -51,7 +51,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
     } = useForm<FormData>({
         mode: "all",
         defaultValues: {
-            subBroker: "0"
+            subBroker: "0",
         },
     })
 
@@ -288,7 +288,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                         {...register("GSTYN", {
                                             required: true
                                         })}
-                                        defaultChecked={!!GSTYN}
+                                        defaultChecked={GSTYN !== undefined && !!GSTYN}
                                         tabIndex={-1}
                                     />
                                     <label tabIndex={0} htmlFor='GSTyes'>Yes</label>
@@ -299,15 +299,17 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                         {...register("GSTYN", {
                                             required: true
                                         })}
-                                        defaultChecked={!!!GSTYN}
+                                        defaultChecked={GSTYN !== undefined && !!!GSTYN}
                                         tabIndex={-1}
                                     />
                                     <label tabIndex={0} htmlFor='GSTno'>No</label>
                                 </div>
 
-                                <span id="existingGStalert-valid" className={`${styles.textDanger} ${styles.dNone}`}>
-                                    Please Select GST Registration Status
-                                </span>
+                                {
+                                    errors.GSTYN && <span className={`${styles.textDanger}`} id="partner-valid">
+                                        Please Select GST Registration Status
+                                    </span>
+                                }
                             </div>
                         </li>
                     </ul>
