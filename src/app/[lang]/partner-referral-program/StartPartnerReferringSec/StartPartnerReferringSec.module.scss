@@ -565,3 +565,41 @@
   color: red;
   padding-left: 4px;
 }
+
+@media all and (max-width: 567px) {
+  .referrbarInpupat {
+    width: calc(100% - 30px);
+    padding-right: 15px;
+  }
+  .deletB-ad {
+    border: 0;
+    height: 30px;
+    width: 30px;
+    right: -30px;
+    top: 8px;
+    img {
+      width: 14px;
+    }
+  }
+  .referrbarInpupat .formFieldWrap {
+    column-gap: 15px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  .formInputsContainer .formControl {
+    height: 42px;
+    font-size: 14px;
+  }
+  .referrbarInpupat .formControl {
+    font-size: 14px;
+    height: 42px;
+  }
+  .btnparAddsub {
+    margin-bottom: 30px;
+    & > * {
+      font-size: 14px;
+      height: 38px;
+      line-height: 38px;
+    }
+  }
+}
