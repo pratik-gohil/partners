@@ -79,7 +79,7 @@
 "MTF_eMargin_intrest_payout":"Annual MTF interest payout",
 
 "MTF_eMargin_ann_intrest_payout":"Annual Interest Payout",
-"MTF_eMargin_unique_benefit":"<b Name=\"light-blue\">Unique Benefit:</b> Customise the MTF interest rate from <a Name=\"orangeTxt\">9.99%</a> to <a Name=\"orangeTxt\">24%.</a>",
+"MTF_eMargin_unique_benefit":"<b Name=\"light-blue\">Unique Benefit:</b> Customise the MTF interest rate from <i Name=\"orangeTxt\">9.99%</i> to <i Name=\"orangeTxt\">24%.</i>",
 
 "Margin_Pledge_Interest": "Margin Pledge Interest",
 "Margin_Pledge_Interest_rate": " Earn <b>1.5X</b> or more",
@@ -95,7 +95,7 @@
 
 "Margin_Pledge_annual_payout": "Annual Margin Pledge interest payout",
 "Margin_Pledge_annual_int_payout": "Annual Interest Payout",
-"Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the Margin Pledge interest rate from <a Name=\"orangeTxt\"> 11.99 %</a> to <a Name=\"orangeTxt\"> 24 %.</a>",
+"Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the Margin Pledge interest rate from <i Name=\"orangeTxt\"> 11.99 %</i> to <i Name=\"orangeTxt\"> 24 %.</i>",
 
 "DP_Sell_Transaction_Charges": "DP Sell Transaction Charges",
 "DP_Sell_Transaction_Charges_rate": "Earn <b>22X</b> or more",
@@ -115,7 +115,7 @@
 "DP_Sell_Transaction_Charges_ann_payoutrate": "Annual Payout above base rate",
 "DP_Sell_Transaction_Charges_annpayout": "Annual Payout",
 
-"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the DP sell transactions from <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a>",
+"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the DP sell transactions from <i Name=\"orangeTxt\">₹12</i> to <i Name=\"orangeTxt\">₹25.</i>",
 
 "partner_offer_block": "That's not all, you can benefit from various other charges too",
 "partner_offer_acc_openfee":"<b>Account Opening Fee</b>Opportunity to charge up to ₹9,999<br/> Anything above ₹500 is <u Name=\"orangeTxt\">100% yours!</u>",
@@ -238,33 +238,33 @@
 "pricingTableHolder_acc_openfee_2":"Mirae Asset will debit a flat fee of ₹500 for every new client onboarded, regardless of the account opening fee chosen",
 
 
-"pricingTableHolder_acc_Brokerage_sec":"<td><b>Brokerage</b></td><td><a Name=\"orangeTxt\">100%</a> across all segments</td><td>Select from our standard plans or create a customised plan for your clients</td>",
+"pricingTableHolder_acc_Brokerage_sec":"<td><b>Brokerage</b></td><td><i Name=\"orangeTxt\">100%</i> across all segments</td><td>Select from our standard plans or create a customised plan for your clients</td>",
 
 
-"pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) interest</b></td><td><a Name=\"orangeTxt\">80%</a> interest sharing beyond 9.99%</td><td>Customise MTF interest up to 24%</td>",
+"pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) interest</b></td><td><i Name=\"orangeTxt\">80%</i> interest sharing beyond 9.99%</td><td>Customise MTF interest up to 24%</td>",
 
-"pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>Margin Pledge interest</b></td><td><a Name=\"orangeTxt\">80%</a> interest sharing beyond 11.99%</td><td>Customise Margin Pledge interest up to 24%</td>",
+"pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>Margin Pledge interest</b></td><td><i Name=\"orangeTxt\">80%</i> interest sharing beyond 11.99%</td><td>Customise Margin Pledge interest up to 24%</td>",
 
 
 "pricingTableHolder_acc_dpamc":"Account Maintenance Charges (DP AMC)",
 
 
-"pricingTableHolder_acc_dpamc_1":"<a Name=\"orangeTxt\">100%</a> revenue beyond ₹480",
+"pricingTableHolder_acc_dpamc_1":"<i Name=\"orangeTxt\">100%</i> revenue beyond ₹480",
 
 "pricingTableHolder_acc_dpamc_2":"Select from our standard DP plans or create a customised DP plan for your clients",
 
 
 "pricingTableHolder_pledge_unp_char":"Pledge/Unpledge charges",
 
-"pricingTableHolder_pledge_unp_ rate":"Customise and earn  <a Name=\"orangeTxt\">100%</a>",
+"pricingTableHolder_pledge_unp_ rate":"Customise and earn  <i Name=\"orangeTxt\">100%</i>",
 "pricingTableHolder_dp_sell_rate":"DP sell transaction charges",
 
 
-"pricingTableHolder_dp_sell_rate_1":"Customise and earn <a Name=\"orangeTxt\">100%</b>",
+"pricingTableHolder_dp_sell_rate_1":"Customise and earn <i Name=\"orangeTxt\">100%</i>",
 
 "pricingTableHolder_dp_payment_chr":"Delayed Payment Charges (DPC)",
 
-"pricingTableHolder_dp_payment_chr_1":"<a Name=\"orangeTxt\">Flat 20%</a> sharing",
+"pricingTableHolder_dp_payment_chr_1":"<i Name=\"orangeTxt\">Flat 20%</i> sharing",
 
 "pricingTableHolder_dp_no_customisation":"No customisation possible",
 
@@ -272,23 +272,23 @@
 "pricingTable_Income_Acc_Op_Fee":"Income from Account Opening Fee",
 "pricingTable_Income_Acc_para":" Select from a range of account opening fee for your client and get 100% payout on anything beyond ₹500.",
 "pricingTable_Income_Acc_heading":"<th>Type of Account</th><th>What Partner can charge clients?</th><th>Payout to Partner</th><th>Additional Income <br/>  <small>Partner service fee* (annual recurring)</small></th>",
-"pricingTable_Income_Acc_std_plan_1":"<td>Standard Plan 1: <br/><a Name=\"orangeTxt\">  Zero Brokerage account</a></td><td>₹999 to ₹9,999</td><td><a Name=\"orangeTxt\">100% above ₹500</a></td><td>100% payout<br /> (₹999 to ₹9,999)</td>",
-"pricingTable_Income_Acc_std_plan_2":"<td>Standard Plan 2: <br/><a Name=\"orangeTxt\">  Free Delivery Account</a></td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">100% above ₹500</a><td>NA</td>",
-"pricingTable_Income_Acc_std_plan_3":"<td><a Name=\"orangeTxt\">  Customised</a> <br/> Brokerage Plan</td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">100% above ₹500</a></td><td>NA</td>",
+"pricingTable_Income_Acc_std_plan_1":"<td>Standard Plan 1: <br/><i Name=\"orangeTxt\">  Zero Brokerage account</i></td><td>₹999 to ₹9,999</td><td><i Name=\"orangeTxt\">100% above ₹500</i></td><td>100% payout<br /> (₹999 to ₹9,999)</td>",
+"pricingTable_Income_Acc_std_plan_2":"<td>Standard Plan 2: <br/><i Name=\"orangeTxt\">  Free Delivery Account</i></td><td>₹0 to ₹9,999</td><td><i Name=\"orangeTxt\">100% above ₹500</i><td>NA</td>",
+"pricingTable_Income_Acc_std_plan_3":"<td><i Name=\"orangeTxt\">  Customised</i> <br/> Brokerage Plan</td><td>₹0 to ₹9,999</td><td><i Name=\"orangeTxt\">100% above ₹500</i></td><td>NA</td>",
 
-"pricingTable_Income_Acc_note":"*It’s an annual recurring fee (applicable from second year onwards),which you can charge to those clients whom you are offering the ‘Zero brokerage account’, since you won’t earn any brokerage income from them. The partner service fee will be equal to the account opening fee that you charge your client and 100% of that will be yours. <br /><br /> <a Name=\"orangeTxt\"> Note: </a> Mirae Asset will debit a flat fee of ₹500 for every new client onboarded, regardless of the account opening fee chosen", 
+"pricingTable_Income_Acc_note":"*It’s an annual recurring fee (applicable from second year onwards),which you can charge to those clients whom you are offering the ‘Zero brokerage account’, since you won’t earn any brokerage income from them. The partner service fee will be equal to the account opening fee that you charge your client and 100% of that will be yours. <br /><br /> <i Name=\"orangeTxt\"> Note: </i> Mirae Asset will debit a flat fee of ₹500 for every new client onboarded, regardless of the account opening fee chosen", 
 "pricingTable_Income_Brokerage":"Income from Brokerage",
 
 "pricingTable_Income_Brokerage_disc":"You can either select from our <b> standard plans </b> or <b> create a customised plan </b> for your clients based on their differentiated needs and trading behaviour.",
 "pricingTable_Income_Brokerage_heading":"<th>Type of Account</th> <th>Applicable Brokerage</th><th>Payout to Partner</th>", 
 
-"pricingTable_Income_std_plan1":"<td>Standard Plan 1: <br/><a Name=\"orangeTxt\">  Zero Brokerage Account</a></td><td class=\"textLeft\">₹0 brokerage for life across all segments</td><td Name=\"textCenter\">NA</td>",
-"pricingTable_Income_std_plan2":"<td>Standard Plan 2: <br /><a Name=\"orangeTxt\">Free Delivery Account</a></td><td class=\"textLeft\">₹0 brokerage only on delivery <br/> ₹20 brokerage per orderon all other segments</td><td Name=\"textCenter\"><a Name=\"orangeTxt\">100%</a></td>",
-"pricingTable_Income_std_plan3":"<td><a Name=\"orangeTxt\">Customised Plan</a></td><td class=\"textLeft\">Choose from the below models <br/><ul><li><b class=\"fontSemiBold\">Discount </b><small>(fixed-per-order)</small></li><li><b class=\"fontSemiBold\">Traditional </b><small>(variable)</small></li><li><b class=\"fontSemiBold\">Hybrid</b></li></ul></td><td class=\"textCenter\"><a class\"orangeTxt\">100%</a></td>",
+"pricingTable_Income_std_plan1":"<td>Standard Plan 1: <br/><i Name=\"orangeTxt\">  Zero Brokerage Account</i></td><td class=\"textLeft\">₹0 brokerage for life across all segments</td><td Name=\"textCenter\">NA</td>",
+"pricingTable_Income_std_plan2":"<td>Standard Plan 2: <br /><i Name=\"orangeTxt\">Free Delivery Account</i></td><td class=\"textLeft\">₹0 brokerage only on delivery <br/> ₹20 brokerage per orderon all other segments</td><td Name=\"textCenter\"><i Name=\"orangeTxt\">100%</i></td>",
+"pricingTable_Income_std_plan3":"<td><i Name=\"orangeTxt\">Customised Plan</i></td><td class=\"textLeft\">Choose from the below models <br/><ul><li><b class=\"fontSemiBold\">Discount </b><small>(fixed-per-order)</small></li><li><b class=\"fontSemiBold\">Traditional </b><small>(variable)</small></li><li><b class=\"fontSemiBold\">Hybrid</b></li></ul></td><td class=\"textCenter\"><i class\"orangeTxt\">100%</i></td>",
 "pricingTable_Income_Income_MTF_Int":"Income from MTF (eMargin) Interests",
 "pricingTable_Income_Income_MTF_Int_disc":" You can either select our standard interest rates, i.e. base interest rates or choose to customise the interest rates applicable to the client.",
 "pricingTable_Income_Income_MTF_Int_heading":"<th>Base Interest Rate</th><th>  Payout to Partner <br/>  (up to base rate)</th><th>  Customised interest rate <br/>  (maximum limit)</th><th>  Payout to Partner <br/>  (above base rate)</th>",
-"pricingTable_Income_Income_MTF_Int_note":"<a Name=\"orangeTxt\">Note:</a> You can earn 5% by charging our standard MTF interest rates to your clients. However, if you want to charge your clients below 9.99% and up to 6.99% p.a there will be no sharing.",
+"pricingTable_Income_Income_MTF_Int_note":"<i Name=\"orangeTxt\">Note:</i> You can earn 5% by charging our standard MTF interest rates to your clients. However, if you want to charge your clients below 9.99% and up to 6.99% p.a there will be no sharing.",
 "pricingTable_Income_MP_intr":"Income from Margin Pledge Interests",
 "pricingTable_Income_MP_intr_ para":"You can either select our standard interest rates, i.e. base interest rates or choose to customise the interest rates applicable to the client.",
 "pricingTable_Income_MP_intr_fund_value":"<th>Margin Pledge Funding Value</th> <th>Base Interest Rate</th><th>Payout to Partner <br/>  (up to base rate)</th><th>  Customised interest rate <br/>  (maximum limit)</th><th>  Payout to Partner <br/>  (above base rate)</th>",

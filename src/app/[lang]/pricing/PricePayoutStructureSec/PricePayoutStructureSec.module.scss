@@ -95,16 +95,9 @@
   text-align: left !important;
 }
 
-
-
-
-
-
 .pricingTableHolder > td {
   text-align: left !important;
 }
-
-
 
 .fontSemiBold {
   font-weight: 600;
@@ -163,14 +156,13 @@
   }
 }
 
-.pricingTableHolder tr >td> a {
+.pricingTableHolder tr > td > i {
+  font-style: normal;
   color: $orange;
   font-weight: bolder;
- 
 }
 
-.tableStructureWrap p> a {
+.tableStructureWrap p > b {
   color: $orange;
   font-weight: bolder;
- 
 }
