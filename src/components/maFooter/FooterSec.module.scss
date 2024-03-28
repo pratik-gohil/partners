@@ -114,7 +114,6 @@
 
       &:last-of-type a {
         border-right: 0;
-        padding: 0 0 0 0;
       }
     }
   }
@@ -319,6 +318,12 @@
     }
     ul {
       width: 100%;
+      li {
+        margin-bottom: 0;
+        a {
+          padding: 10px 7px 10px 0px;
+        }
+      }
     }
   }
   .getInTouchWrap {
@@ -333,8 +338,6 @@
         li {
           width: 100%;
           a {
-            /* 
-                        padding-left: 0; */
             padding: 7px 10px;
             display: inline-block;
             border: 0;
