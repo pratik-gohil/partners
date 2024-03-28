@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import styles from "./OtpModal.module.scss";
 import http from '@/lib/http/http';
 import Image from 'next/image';
+import { numericOnly } from '@/lib/constants/common';
 
 const OtpModal = ({ onClose, onOTPVerified, getValues, resendOTP, timer }: any) => {
     const [OTP, setOTP] = useState({})
@@ -94,6 +95,7 @@ const OtpModal = ({ onClose, onOTPVerified, getValues, resendOTP, timer }: any) 
                                     const target = e.target as HTMLInputElement;
                                     const previousSibling = target.previousSibling as HTMLInputElement
                                     const key = e.key;
+                                    numericOnly(e)
                                     if (key === "Backspace" && target.value === "") {
                                         if (previousSibling) {
                                             previousSibling.focus()
@@ -117,6 +119,7 @@ const OtpModal = ({ onClose, onOTPVerified, getValues, resendOTP, timer }: any) 
                                     const target = e.target as HTMLInputElement;
                                     const previousSibling = target.previousSibling as HTMLInputElement
                                     const key = e.key;
+                                    numericOnly(e)
                                     if (key === "Backspace" && target.value === "") {
                                         if (previousSibling !== null) {
                                             previousSibling.focus()
@@ -139,6 +142,7 @@ const OtpModal = ({ onClose, onOTPVerified, getValues, resendOTP, timer }: any) 
                                     const target = e.target as HTMLInputElement;
                                     const previousSibling = target.previousSibling as HTMLInputElement
                                     const key = e.key;
+                                    numericOnly(e)
                                     if (key === "Backspace" && target.value === "") {
                                         if (previousSibling) {
                                             previousSibling.focus()
@@ -161,6 +165,7 @@ const OtpModal = ({ onClose, onOTPVerified, getValues, resendOTP, timer }: any) 
                                     const target = e.target as HTMLInputElement;
                                     const previousSibling = target.previousSibling as HTMLInputElement
                                     const key = e.key;
+                                    numericOnly(e)
                                     if (key === "Backspace" && target.value === "") {
                                         if (previousSibling) {
                                             previousSibling.focus()
