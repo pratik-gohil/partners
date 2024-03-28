@@ -4,9 +4,10 @@
   position: relative;
   width: 100%;
   display: inline-block;
-  background: url("/referrals/banner-bg-24.webp") center top no-repeat;
+  // background: url("/referrals/banner-bg-24.webp") center top no-repeat;
   background-color: #fa8412;
   .maContainer {
+    position: relative;
     align-items: flex-end;
   }
   .lhsWrap {

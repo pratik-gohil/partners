@@ -5,6 +5,7 @@ import Image from 'next/image'
 function PartRefProBannerSec() {
     return (
         <section className={`${styles.partRefProBannerSec}`}>
+            <Image priority alt='bannar' src="/referrals/banner-bg-24.webp" fill />
             <div className={`${styles.maContainer} ${styles.flex}`}>
                 <div className={`${styles.lhsWrap}`}>
                     <h2 className={`${styles.bannerTitle}`}>
