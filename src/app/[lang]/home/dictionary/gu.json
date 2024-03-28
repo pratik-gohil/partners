@@ -80,7 +80,7 @@
     "MTF_eMargin_intrest_payout":"કુલ માસિક MTF વ્યાજ ચૂકવણી",
     
     "MTF_eMargin_ann_intrest_payout":"માસિક વ્યાજ",
-    "MTF_eMargin_unique_benefit":"<b Name=\"light-blue\">અનોખો ફાયદો : </b> MTF વ્યાજ દરને  <a Name=\"orangeTxt\">9.99%</a> થી <a Name=\"orangeTxt\">24%</a> સુધી કસ્ટમાઇઝ કરો",
+    "MTF_eMargin_unique_benefit":"<b Name=\"light-blue\">અનોખો ફાયદો : </b> MTF વ્યાજ દરને  <i Name=\"orangeTxt\">9.99%</i> થી <i Name=\"orangeTxt\">24%</i> સુધી કસ્ટમાઇઝ કરો",
     
     "Margin_Pledge_Interest": "માર્જિન પ્લેજ વ્યાજ",
     "Margin_Pledge_Interest_rate": "કમાવો <b>1.5X</b> અને વધુ",
@@ -96,7 +96,7 @@
     
     "Margin_Pledge_annual_payout": "કુલ માસિક માર્જિન પ્લેજ વ્યાજ ચૂકવણી",
     "Margin_Pledge_annual_int_payout": "માસિક વ્યાજ",
-    "Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">અનોખો લાભ:</b> માર્જિન પ્લેજ વ્યાજ દરને <a Name=\"orangeTxt\"> 11.99 %</a> થી <a Name=\"orangeTxt\"> 24 %.</a>  સુધી કસ્ટમાઇઝ કરો.",
+    "Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">અનોખો લાભ:</b> માર્જિન પ્લેજ વ્યાજ દરને <i Name=\"orangeTxt\"> 11.99 %</i> થી <i Name=\"orangeTxt\"> 24 %.</i>  સુધી કસ્ટમાઇઝ કરો.",
     
     "DP_Sell_Transaction_Charges": "DP વેચાણ અને વધુ",
     "DP_Sell_Transaction_Charges_rate": "કમાવો <b>22X</b> અને વધુ",
@@ -116,7 +116,7 @@
     "DP_Sell_Transaction_Charges_ann_payoutrate": "બેઝ રેટ ઉપર વાર્ષિક ચૂકવણી",
     "DP_Sell_Transaction_Charges_annpayout": "માસિક દલાલી ચુકવણી",
     
-    "DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">અનોખો લાભ:</b><a Name=\"orangeTxt\">₹12</a> થી <a Name=\"orangeTxt\">₹25</a> સુધીના DP વેચાણ વ્યવહારોને કસ્ટમાઇઝ",
+    "DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">અનોખો લાભ:</b><i Name=\"orangeTxt\">₹12</i> થી <i Name=\"orangeTxt\">₹25</i> સુધીના DP વેચાણ વ્યવહારોને કસ્ટમાઇઝ",
     
     "partner_offer_block": "એટલું જ નહિ, તમે અન્ય વિવિધ શુલ્કો ચાર્જર્સ નો પણ લાભ મેળવી શકો છો.",
     "partner_offer_acc_openfee":"<b>એકાઉન્ટ ખોલવાની ફી</b>₹9,999 સુધી ચાર્જ કરવાની તક<br/> ₹500 થી ઉપરનું કઈ પણ <u Name=\"orangeTxt\">100% તમારું છે!</u>",

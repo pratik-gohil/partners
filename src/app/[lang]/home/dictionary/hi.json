@@ -79,7 +79,7 @@
 "MTF_eMargin_intrest_payout":"सालाना MTF इंटरेस्ट पेआउट",
  
 "MTF_eMargin_ann_intrest_payout":"सालाना इंटरेस्ट पेआउट",
-"MTF_eMargin_unique_benefit":"<b class=\"light-blue\" >खास फायदे :</b> <a Name=\"orangeTxt\">9.99%</a> से <a Name=\"orangeTxt\">24% </a>के बीच MTF इंटरेस्ट रेट कस्टमाइज करें.",
+"MTF_eMargin_unique_benefit":"<b class=\"light-blue\" >खास फायदे :</b> <i Name=\"orangeTxt\">9.99%</i> से <i Name=\"orangeTxt\">24% </i>के बीच MTF इंटरेस्ट रेट कस्टमाइज करें.",
 
 "Margin_Pledge_Interest": "मार्जिन प्लेज इंटरेस्ट",
 "Margin_Pledge_Interest_rate": " <b>1.5X</b> और ज्यादा कमाएं",
@@ -97,7 +97,7 @@
 
 "Margin_Pledge_annual_int_payout": "सालाना इंटरेस्ट पेआउट",
 
-"Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <a Name=\"orangeTxt\">11.99%</a> से <a Name=\"orangeTxt\">24% </a>तक मार्जिन प्लेज इंटरेस्ट कस्टमाइज करें।",
+"Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <i Name=\"orangeTxt\">11.99%</i> से <i Name=\"orangeTxt\">24% </i>तक मार्जिन प्लेज इंटरेस्ट कस्टमाइज करें।",
 "DP_Sell_Transaction_Charges": "DP सेल ट्रांजेक्शन चार्ज",
 "DP_Sell_Transaction_Charges_rate": "<b>22X</b> या ज्यादा कमाएं",
 "DP_Sell_Transaction_Charges_perday": "दिन के कितने स्क्रिप्स बेचें",
@@ -113,7 +113,7 @@
 "DP_Sell_Transaction_Charges_ann_payoutrate": "बेस रेट के ऊपर का सालाना पेआउट",
 "DP_Sell_Transaction_Charges_annpayout": "सालाना पेआउट",
 
-"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a> तक DP सेल ट्रांजेक्शन कस्टमाइज करें",
+"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <i Name=\"orangeTxt\">₹12</i> to <i Name=\"orangeTxt\">₹25.</i> तक DP सेल ट्रांजेक्शन कस्टमाइज करें",
 
 "partner_offer_block": "इतना ही नहीं, आपको विभिन्न अन्य चार्जेज से भी फायदा मिल सकता है।",
 "partner_offer_acc_openfee":"<b>अकाउंट ओपनिंग फीस</b>₹9,999 तक चार्ज करने का मौका<br/> ₹500 से ऊपर कुछ भी <u Name=\"orangeTxt\">100% आपका!</u>",

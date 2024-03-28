@@ -57,29 +57,29 @@
     
     "pricingTableHolder_acc_openfee_2":"પસંદ કરેલ એકાઉન્ટ ઓપનિંગ ફીને ધ્યાનમાં લીધા વગર Mirae Asset ઑનબોર્ડ થયેલ દરેક નવા ગ્રાહક માટે ₹500 ની ફ્લેટ ફી ડેબિટ કરશે.",
     
-    "pricingTableHolder_acc_Brokerage_sec":"<td><b>બ્રોકરેજ</b></td><td>તમામ સેગ્મેન્ટમાં <a Name=\"orangeTxt\">100%</a></td><td>અમારા સ્ટાન્ડર્ડ પ્લાનમાંથી પસંદ કરો અથવા તમારા ગ્રાહકો માટે કસ્ટમાઇઝ્ડ પ્લાન બનાવો</td>",
+    "pricingTableHolder_acc_Brokerage_sec":"<td><b>બ્રોકરેજ</b></td><td>તમામ સેગ્મેન્ટમાં <i Name=\"orangeTxt\">100%</i></td><td>અમારા સ્ટાન્ડર્ડ પ્લાનમાંથી પસંદ કરો અથવા તમારા ગ્રાહકો માટે કસ્ટમાઇઝ્ડ પ્લાન બનાવો</td>",
     
-    "pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) ઇન્ટરેસ્ટ</b></td><td>9.99% થી વધુ પર <a Name=\"orangeTxt\">80%</a> ઇન્ટરેસ્ટ શેરિંગ</td><td>24% સુધી MTF ઇન્ટરેસ્ટને કસ્ટમાઇઝ કરો</td>",
+    "pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) ઇન્ટરેસ્ટ</b></td><td>9.99% થી વધુ પર <i Name=\"orangeTxt\">80%</i> ઇન્ટરેસ્ટ શેરિંગ</td><td>24% સુધી MTF ઇન્ટરેસ્ટને કસ્ટમાઇઝ કરો</td>",
     
-    "pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>માર્જિન પ્લેજ ઈન્ટરેસ્ટ</b></td><td>11.99% થી વધુ પર <a Name=\"orangeTxt\">80%</a> ઇન્ટરેસ્ટ શેરિંગ</td><td>24% સુધી માર્જિન પ્લેજ ઇન્ટરેસ્ટને કસ્ટમાઇઝ કરો</td>",
+    "pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>માર્જિન પ્લેજ ઈન્ટરેસ્ટ</b></td><td>11.99% થી વધુ પર <i Name=\"orangeTxt\">80%</i> ઇન્ટરેસ્ટ શેરિંગ</td><td>24% સુધી માર્જિન પ્લેજ ઇન્ટરેસ્ટને કસ્ટમાઇઝ કરો</td>",
         
     "pricingTableHolder_acc_dpamc":"એકાઉન્ટ મેન્ટેનન્સ ચાર્જીસ (AMC)",
         
-    "pricingTableHolder_acc_dpamc_1":"₹480 થી વધુ પર <a Name=\"orangeTxt\">100%</a> ઈન્કમ",
+    "pricingTableHolder_acc_dpamc_1":"₹480 થી વધુ પર <i Name=\"orangeTxt\">100%</i> ઈન્કમ",
     
     "pricingTableHolder_acc_dpamc_2":"અમારા સ્ટાન્ડર્ડ DP પ્લાનમાંથી પસંદ કરો અથવા તમારા ગ્રાહકો માટે કસ્ટમાઇઝ્ડ DP પ્લાન બનાવો",
        
     
     "pricingTableHolder_pledge_unp_char":"પ્લેજ/અનપ્લેજ ચાર્જીસ",
     
-    "pricingTableHolder_pledge_unp_ rate":"કસ્ટમાઇઝ કરો અને <a Name=\"orangeTxt\">100%</a> કમાઓ",
+    "pricingTableHolder_pledge_unp_ rate":"કસ્ટમાઇઝ કરો અને <i Name=\"orangeTxt\">100%</i> કમાઓ",
     "pricingTableHolder_dp_sell_rate":"DP વેચાણ ટ્રાન્ઝેકશન ચાર્જીસ",
         
-    "pricingTableHolder_dp_sell_rate_1":"કસ્ટમાઇઝ કરો અને <a Name=\"orangeTxt\">100%</b> કમાઓ",
+    "pricingTableHolder_dp_sell_rate_1":"કસ્ટમાઇઝ કરો અને <i Name=\"orangeTxt\">100%</b> કમાઓ",
     
     "pricingTableHolder_dp_payment_chr":"વિલંબિત પેમેન્ટ ચાર્જીસ (DPC)",
     
-    "pricingTableHolder_dp_payment_chr_1":"<a Name=\"orangeTxt\">ફ્લેટ 20%</a> ઓપરેટિંગ શુલ્ક",
+    "pricingTableHolder_dp_payment_chr_1":"<i Name=\"orangeTxt\">ફ્લેટ 20%</i> ઓપરેટિંગ શુલ્ક",
     
     "pricingTableHolder_dp_no_customisation":"કોઈ કસ્ટમાઇઝેશન શક્ય નથી",
     
@@ -87,30 +87,30 @@
     "pricingTable_Income_Acc_Op_Fee":"એકાઉન્ટ ખોલાવવાની ફીમાંથી ઈન્કમ:",
     "pricingTable_Income_Acc_para":"તમારા ગ્રાહક માટે એકાઉન્ટ ખોલવાની ફીની શ્રેણીમાંથી પસંદ કરો અને ₹500 થી વધુની કોઈપણ વસ્તુ પર 100% ચૂકવણી મેળવો.",
     "pricingTable_Income_Acc_heading":"<th>એકાઉન્ટનો પ્રકાર</th><th>પાર્ટનર ગ્રાહકો પાસેથી શું ચાર્જ લઈ શકે છે?</th><th>પાર્ટનરને પેમેન્ટ</th><th>વધારાની ઈન્કમ <br/>  <small>પાર્ટનર સર્વિસ ફી^ (વાર્ષિક રિકરિંગ)</small></th>",
-    "pricingTable_Income_Acc_std_plan_1":"<td>स्टैंસ્ટાન્ડર્ડ પ્લાન 1: <br/><a Name=\"orangeTxt\">  ઝીરો બ્રોકરેજ એકાઉન્ટ</a></td><td>₹999 to ₹9,999</td><td><a Name=\"orangeTxt\">₹500થી વધુ 100%</a></td><td>100% પેમેન્ટ<br /> (₹999 થી ₹9,999)</td>",
-    "pricingTable_Income_Acc_std_plan_2":"<td>स्टैंસ્ટાન્ડર્ડ પ્લાન 2: <br/><a Name=\"orangeTxt\">  ફ્રી ડિલીવરી એકાઉન્ટ</a></td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">₹500થી વધુ 100%</a><td>NA</td>",
-    "pricingTable_Income_Acc_std_plan_3":"<td><a Name=\"orangeTxt\">  કસ્ટમાઇઝ્ડ</a> <br/> બ્રોકરેજ પ્લાન</td><td>₹0 થી ₹9,999</td><td><a Name=\"orangeTxt\">₹500થી વધુ 100%</a></td><td>NA</td>",
+    "pricingTable_Income_Acc_std_plan_1":"<td>स्टैंસ્ટાન્ડર્ડ પ્લાન 1: <br/><i Name=\"orangeTxt\">  ઝીરો બ્રોકરેજ એકાઉન્ટ</i></td><td>₹999 to ₹9,999</td><td><i Name=\"orangeTxt\">₹500થી વધુ 100%</i></td><td>100% પેમેન્ટ<br /> (₹999 થી ₹9,999)</td>",
+    "pricingTable_Income_Acc_std_plan_2":"<td>स्टैंસ્ટાન્ડર્ડ પ્લાન 2: <br/><i Name=\"orangeTxt\">  ફ્રી ડિલીવરી એકાઉન્ટ</i></td><td>₹0 to ₹9,999</td><td><i Name=\"orangeTxt\">₹500થી વધુ 100%</i><td>NA</td>",
+    "pricingTable_Income_Acc_std_plan_3":"<td><i Name=\"orangeTxt\">  કસ્ટમાઇઝ્ડ</i> <br/> બ્રોકરેજ પ્લાન</td><td>₹0 થી ₹9,999</td><td><i Name=\"orangeTxt\">₹500થી વધુ 100%</i></td><td>NA</td>",
     
-    "pricingTable_Income_Acc_note":"^તે વાર્ષિક રિકરિંગ ફી છે (બીજા વર્ષથી તે મુજબ આગળ લાગુ), જે તમે એવા ગ્રાહકો પાસેથી વસૂલ ચાર્જ કરી શકો છો, જેમને તમે 'ઝીરો બ્રોકરેજ એકાઉન્ટ' ઑફર કરી રહ્યાં છો, કારણ કે તમે તેમની પાસેથી કોઈ બ્રોકરેજ ઇન્કમ મેળવશો નહીં. પાર્ટનર સર્વિસ ફી એ એકાઉન્ટ ઓપનિંગ ફીની બરાબર હશે જે તમે તમારા ગ્રાહક પાસેથી વસૂલ ચાર્જ કરી શકશો ,અને તેમાંથી 100% તમારા રહેશે. <br /><br /> <a Name=\"orangeTxt\"> નોંધ: </a>  Mirae Asset પસંદ કરેલ એકાઉન્ટ ઓપનિંગ ફીને ધ્યાનમાં લીધા વગર, ઑનબોર્ડ થયેલ દરેક નવા ગ્રાહક માટે ₹500 ની વન-ટાઇમ ફ્લેટ ફી ડેબિટ કરશે", 
+    "pricingTable_Income_Acc_note":"^તે વાર્ષિક રિકરિંગ ફી છે (બીજા વર્ષથી તે મુજબ આગળ લાગુ), જે તમે એવા ગ્રાહકો પાસેથી વસૂલ ચાર્જ કરી શકો છો, જેમને તમે 'ઝીરો બ્રોકરેજ એકાઉન્ટ' ઑફર કરી રહ્યાં છો, કારણ કે તમે તેમની પાસેથી કોઈ બ્રોકરેજ ઇન્કમ મેળવશો નહીં. પાર્ટનર સર્વિસ ફી એ એકાઉન્ટ ઓપનિંગ ફીની બરાબર હશે જે તમે તમારા ગ્રાહક પાસેથી વસૂલ ચાર્જ કરી શકશો ,અને તેમાંથી 100% તમારા રહેશે. <br /><br /> <i Name=\"orangeTxt\"> નોંધ: </i>  Mirae Asset પસંદ કરેલ એકાઉન્ટ ઓપનિંગ ફીને ધ્યાનમાં લીધા વગર, ઑનબોર્ડ થયેલ દરેક નવા ગ્રાહક માટે ₹500 ની વન-ટાઇમ ફ્લેટ ફી ડેબિટ કરશે", 
     "pricingTable_Income_Brokerage":"બ્રોકરેજમાંથી ઈન્કમ:",
     
     "pricingTable_Income_Brokerage_disc":"તમે કાં તો અમારા <b> સ્ટાન્ડર્ડ પ્લાનમાંથી </b>  પસંદ કરી શકો છો અથવા તમારા ગાહક માટે તેમની વિભિન્ન જરૂરિયાતો અને ટ્રેડિંગ વર્તણૂક ના આધારે <b> કસ્ટમાઇઝ્ડ પ્લાન </b> બનાવી શકો છો.",
     "pricingTable_Income_Brokerage_heading":"<th>બ્રોકરેજ પ્લાનનો પ્રકાર</th> <th>ગ્રાહકોને લાગુ બ્રોકરેજ</th><th>પાર્ટનરને પેમેન્ટ</th>", 
     
-    "pricingTable_Income_std_plan1":"<td>સ્ટાન્ડર્ડ પ્લાન 1: <br/><a Name=\"orangeTxt\">ઝીરો બ્રોકરેજ એકાઉન્ટ</a></td><td class=\"textLeft\">તમામ સેગમેન્ટમાં આજીવન ₹0 બ્રોકરેજ</td><td Name=\"textCenter\">NA</td>",
-    "pricingTable_Income_std_plan2":"<td>સ્ટાન્ડર્ડ પ્લાન 2: <br /><a Name=\"orangeTxt\">ફ્રી ડિલીવરી એકાઉન્ટ</a></td><td class=\"textLeft\">માત્ર ડિલિવરી પર ₹0 બ્રોકરેજ <br/> અન્ય તમામ સેગમેન્ટ્સ પર ઓર્ડર દીઠ ₹20 બ્રોકરેજ</td><td Name=\"textCenter\"><a Name=\"orangeTxt\">100%</a></td>",
-    "pricingTable_Income_std_plan3":"<td><a Name=\"orangeTxt\">કસ્ટમાઇઝ્ડ પ્લાન</a></td><td class=\"textLeft\">નીચેના મોડેલોમાંથી પસંદ કરો <br/><ul><li><b class=\"fontSemiBold\">ડિસ્કાઉન્ટ </b><small>(પ્રતિ-ઓર્ડર ફિક્સ)</small></li><li><b class=\"fontSemiBold\">ટ્રેડિશનલ </b><small>(વેરિએબલ)</small></li><li><b class=\"fontSemiBold\">હાઇબ્રિડ</b></li></ul></td><td class=\"textCenter\"><a class\"orangeTxt\">100%</a></td>",
+    "pricingTable_Income_std_plan1":"<td>સ્ટાન્ડર્ડ પ્લાન 1: <br/><i Name=\"orangeTxt\">ઝીરો બ્રોકરેજ એકાઉન્ટ</i></td><td class=\"textLeft\">તમામ સેગમેન્ટમાં આજીવન ₹0 બ્રોકરેજ</td><td Name=\"textCenter\">NA</td>",
+    "pricingTable_Income_std_plan2":"<td>સ્ટાન્ડર્ડ પ્લાન 2: <br /><i Name=\"orangeTxt\">ફ્રી ડિલીવરી એકાઉન્ટ</i></td><td class=\"textLeft\">માત્ર ડિલિવરી પર ₹0 બ્રોકરેજ <br/> અન્ય તમામ સેગમેન્ટ્સ પર ઓર્ડર દીઠ ₹20 બ્રોકરેજ</td><td Name=\"textCenter\"><i Name=\"orangeTxt\">100%</i></td>",
+    "pricingTable_Income_std_plan3":"<td><i Name=\"orangeTxt\">કસ્ટમાઇઝ્ડ પ્લાન</i></td><td class=\"textLeft\">નીચેના મોડેલોમાંથી પસંદ કરો <br/><ul><li><b class=\"fontSemiBold\">ડિસ્કાઉન્ટ </b><small>(પ્રતિ-ઓર્ડર ફિક્સ)</small></li><li><b class=\"fontSemiBold\">ટ્રેડિશનલ </b><small>(વેરિએબલ)</small></li><li><b class=\"fontSemiBold\">હાઇબ્રિડ</b></li></ul></td><td class=\"textCenter\"><i class=\"orangeTxt\">100%</i></td>",
     "pricingTable_Income_Income_MTF_Int":"MTF (eMargin) ઈન્ટરેસ્ટમાંથી ઈન્કમ",
     "pricingTable_Income_Income_MTF_Int_disc":"તમે કાં તો અમારા સ્ટાન્ડર્ડ ઈન્ટરેસ્ટ રેટ પસંદ કરી શકો છો, એટલે કે મૂળભૂત ઈન્ટરેસ્ટ રેટ અથવા ગ્રાહકને લાગુ પડતા ઈન્ટરેસ્ટ રેટને કસ્ટમાઇઝ કરવાનું પસંદ કરી શકો છો.",
     "pricingTable_Income_Income_MTF_Int_heading":"<th>મૂળભૂત ઈન્સ્ટરેસ્ટ રેટ</th><th>  પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ સુધી)</th><th>  કસ્ટમાઇઝ્ડ ઈન્ટરેસ્ટ રેટ <br/>  (મહત્તમ લિમિટ)</th><th>  પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ કરતા વધુ)</th>",
-    "pricingTable_Income_Income_MTF_Int_note":"<a Name=\"orangeTxt\">નોંધ:</a> તમે અમારા સ્ટાન્ડર્ડ MTF વ્યાજ તમારા ક્લાયન્ટ પાસેથી વસૂલ કરી શકો છો અને 5% કમાઈ શકો છો. જો તમે તમારા ક્લાયન્ટ પાસેથીથી 9.99% થી નીચે અને 6.99% p.a સુધી વ્યાજ વસૂલવા માંગો છો, તો તમને કોઈ શેરિંગ મળશે નહીં.",
+    "pricingTable_Income_Income_MTF_Int_note":"<i Name=\"orangeTxt\">નોંધ:</i> તમે અમારા સ્ટાન્ડર્ડ MTF વ્યાજ તમારા ક્લાયન્ટ પાસેથી વસૂલ કરી શકો છો અને 5% કમાઈ શકો છો. જો તમે તમારા ક્લાયન્ટ પાસેથીથી 9.99% થી નીચે અને 6.99% p.a સુધી વ્યાજ વસૂલવા માંગો છો, તો તમને કોઈ શેરિંગ મળશે નહીં.",
     "pricingTable_Income_MP_intr":"માર્જિન પ્લેજના ઈન્ટરેસ્ટમાંથી ઈન્કમ",
     "pricingTable_Income_MP_intr_ para":"તમે કાં તો અમારા સ્ટાન્ડર્ડ ઈન્ટરેસ્ટ રેટ પસંદ કરી શકો છો, એટલે કે મૂળભૂત ઈન્ટરેસ્ટ રેટ અથવા ગ્રાહકને લાગુ પડતા ઈન્ટરેસ્ટ રેટને કસ્ટમાઇઝ કરવાનું પસંદ કરી શકો છો.",
     "pricingTable_Income_MP_intr_fund_value":"<th>માર્જિન પ્લેજ ફંડિંગનું મૂલ્ય</th> <th>મૂળભૂત ઈન્ટરેસ્ટ રેટ</th><th>પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ સુધી)</th><th>  કસ્ટમાઇઝ્ડ ઈન્ટરેસ્ટ રેટ <br/>  (મહત્તમ લિમિટ)</th><th>  પાર્ટનરને પેમેન્ટ <br/>  (મૂળભૂત રેટ કરતા વધુ)</th>",
     "pricingTable_Income_MP_intr_fund_value_1":"પ્લેજ સ્ટોકના મૂલ્યના 80% સુધી",
     "pricingTable_Income_acc_main_charges":"એકાઉન્ટ મેન્ટેનન્સ ચાર્જીસમાંથી ઈન્કમ (AMC) ",
     
-    "pricingTable_Income_Income_dpamc_note":"<a Name=\"orangeTxt\">MTF અને માર્જિન પ્લેજ લેન્ડિંગ બુક પર મહત્વની નોંધ:</a></br></br> જો તમારી MTF અને માર્જિન પ્લેજ લેન્ડિંગ બુક ₹1 કરોડથી વધુ છે, તો Mirae Asset MTF અને માર્જિન પ્લેજ માટે ઉપરોક્ત ઈન્ટરેસ્ટ શેરિંગ ટેબલમાં ઉલ્લેખિત માપદંડોને ધ્યાનમાં લીધા વિના, જનરેટ થયેલી એકંદર ઈન્ટરેસ્ટની ઈન્કમ 25% જાળવી રાખશે",
+    "pricingTable_Income_Income_dpamc_note":"<i Name=\"orangeTxt\">MTF અને માર્જિન પ્લેજ લેન્ડિંગ બુક પર મહત્વની નોંધ:</i></br></br> જો તમારી MTF અને માર્જિન પ્લેજ લેન્ડિંગ બુક ₹1 કરોડથી વધુ છે, તો Mirae Asset MTF અને માર્જિન પ્લેજ માટે ઉપરોક્ત ઈન્ટરેસ્ટ શેરિંગ ટેબલમાં ઉલ્લેખિત માપદંડોને ધ્યાનમાં લીધા વિના, જનરેટ થયેલી એકંદર ઈન્ટરેસ્ટની ઈન્કમ 25% જાળવી રાખશે",
 
     "pricingTable_Income_acc_main_charges_dis":"તમે કાં તો અમારા સ્ટાન્ડર્ડ DP AMC પ્લાનમાંથી પસંદ કરી શકો છો અથવા ગ્રાહકના DP AMC ચાર્જીસને કસ્ટમાઇઝ કરી શકો છો.",
     "pricingTable_Income_acc_main_charges_stdchar":"સ્ટાન્ડર્ડ AMC પ્લાન",
