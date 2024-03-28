@@ -18,7 +18,7 @@ export async function generateMetadata() {
 export default async function PricingPage({ params: { lang } }: { params: { lang: string } }) {
   const dictionaries = {
     en: () => import('../home/dictionary/en.json').then((module) => module.default),
-    hi: () => import('../home/dictionary/hi.json').then((module) => module.default),
+    hi: () => import('../pricing/dictionary/hi.json').then((module) => module.default),
     gu: () => import('../home/dictionary/gu.json').then((module) => module.default),
   }
 

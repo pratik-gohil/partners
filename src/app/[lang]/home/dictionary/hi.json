@@ -26,7 +26,7 @@
 "marginTitle6": "",
 "marginTitle7": "11.99% से ज्यादा पर",
 "marginTitle8": "80% शेयरिंग",
-"pricingTable_Income_Income_dpamc_note":"",
+
 "know_how":"Know How ?",
 "captionTxt": "हमारा पार्टनर प्रोग्राम आप और आपके क्लाइंट के लिए",
 "captionTxt1": "अविश्वसनीय रूप से किफ़ायती कीमत",
@@ -172,149 +172,10 @@
 "month1": " भरोसा <br /> <b>9 लाख+</b> ग्राहकों",
 "month2": "<b>₹40 करोड़+</b> ट्रेड <br/> को सेवा",
 "month3": "MTF बुक बनाई <br/> <b>₹1,100 करोड़+ की</b>",
-"faqTitle": "अक्सर पूछे जाने वाले सवाल",
-"pricingLi1": "असीमित",
-"pricingLi2": "अविश्वसनीय",
-"pricingBannerRightBlock1": "ब्रोकरेज",
-"pricingBannerRightBlock2": "शेयरिंग!",
-"tagline": "<b>8 अधिक रेवेनुए स्ट्रीम्स: </b>अकाउंट ओपनिंग फीस, इंटरेस्ट चार्जेज, DP ट्रांजेक्शन चार्ज, ब्रोकरेज प्लान संशोधन फी और इत्यादि",
-"pRegistration": "AP रजिस्ट्रेशन और ऑनबोर्डिंग चार्जेज देखें",
-"viewDetailedTitle": "विस्तृत कीमत निर्धारण और भुगतान विवरण देखें",
-"incomeSharingPdf": "अधिकृत साझेदारों (AP) के लिए आय हिस्सेदारी पीडीएफ़ डाउनलोड करें",
-"payoutTCPdf": " भुगतान नियम और शर्तें देखें",
-"otherCharges": "आपके ग्राहक पर लागू अन्य चार्ज:",
-"otherCharges1": "ये स्टैंडर्ड चार्ज हैं और इन्हें संशोधित नहीं किया जा सकता।",
-"quarterlyCharges": "<b> क्वार्टर संचालन चार्ज </b> <br/> <p> स्टैंडर्ड और कस्टमाइज़्ड क्वार्टर AMC प्लान वाले ग्राहकों से प्रति क्वार्टर ₹99 + 18% GST लिया जाएगा </p> <p> स्टैंडर्ड लाइफ़टाइम फ़्री AMC प्लान और कस्टमाइज़्ड एकमुश्त AMC प्लान वाले ग्राहकों से कोई संचालन चार्ज नहीं लिया जाएगा</p>",
-"offMarketCharges": "<b>ऑफ़-मार्केट ट्रांसफर चार्ज </b> <p>ट्रांसफर इन: मुफ़्त</p> <p>ट्रांसफर आउट: प्रति लेनदेन ₹20 या 0.50% जो भी कम हो</p>",
-"corporateAction": "<b>कॉर्पोरेट एक्शन ऑर्डर चार्ज</b> <p>डिलीवरी ट्रेड के लिए कॉर्पोरेट एक्शन ऑर्डर चार्ज ग्राहक के लागू ब्रोकरेज के समान होगा </p>",
-"physicalCMR": "<b>भौतिक CMR अनुरोध</b> <p>पहला CMR अनुरोध मुफ़्त है। बाद के अनुरोधों के लिए ₹20 + ₹100 (कूरियर चार्ज) + 18% GST </p>",
-"paymentGateway": "<b>पेमेंट गेटवे चार्ज - मार्जिन फ़ंड ट्रांसफर</b> <p>यूपीआई लेनदेन मुफ़्त हैं और नेट बैंकिंग के मामले में, चुने गए बैंक के आधार पर चार्ज ₹7 से ₹11 + GST के बीच होगा</p>",
-"physicalStatement": "<b>भौतिक विवरण कूरियर चार्ज</b> <p>₹100 प्रति अनुरोध + ₹100 प्रति कूरियर</p>",
-"dematCert": "<b>प्रति सर्टिफ़िकेट डीमैट</b> <p>प्रति सर्टिफ़िकेट ₹150 का चार्ज + ₹100 कूरियर चार्ज लगाया जाएगा </p>",
-"rematCharges": "<b>रीमैट चार्ज</b> <p>प्रति सर्टिफ़िकेट ₹150 का चार्ज + ₹100 कूरियर चार्ज + CDSL चार्ज लगाया जाएगा </p>",
-"failedInstruction": "<b>असफल निर्देश चार्ज</b> <p>प्रति निर्देश ₹50 का चार्ज लगाया जाएगा </p>",
-"reactivation": "<b>फिर से सक्रिय करने का चार्ज </b> <p>खाता फिर से सक्रिय करने के लिए कोई चार्ज लागू नहीं होगा </p>",
-"modCharges": "<b>संशोधन चार्ज</b> <p>प्रति अनुरोध ₹20 का चार्ज लागू होगा</p>",
-"acClosure": "<b>खाता बंद करने का चार्ज</b> <p>खाता बंद करने पर कोई चार्ज लागू नहीं होगा</p>",
-"gst": "<b>18% GST</b> <p>ब्रोकरेज, DP चार्ज, एक्सचेंज लेनदेन चार्ज, SEBI चार्ज और ऑटो स्क्वायर-ऑफ चार्ज पर</p>",
-"physicalDelivery": "<b>डेरिवेटिव की फ़िजिकल डिलीवरी</b> <p>फ़िजिकल डिलीवरी होने पर कॉन्ट्रैक्ट वैल्यू का नाममात्र ब्रोकरेज 0.05% लिया जाएगा</p>",
-"transactionCharges": "<b>लेन-देन/व्यापार चार्ज</b> <p>X, XT और Z ग्रुप में ट्रेड की जाने वाली प्रतिभूतियों पर BSE लेनदेन चार्ज 0.10% प्रति करोड़ है और 'P', 'ZP', 'SS' और 'ST' समूह के लिए, यह कुल व्यापार मूल्य पर 1% प्रति करोड़ है",
-"otherCharge": "<b>अन्य चार्ज</b> <p>सिस्टम द्वारा ओपन इंट्राडे पोजीशन के लिए RMS स्क्वायर-ऑफ़ चार्ज: ₹60 प्रति पोजीशन</p> <p>स्टॉक डिलीवर नहीं कर पाने पर नीलामी (डीमैट में नहीं): एक्सचेंज द्वारा वास्तविक जुर्माने के अनुसार</p>",
-"apRegistration": "<span>Authorised Partner (AP) रजिस्ट्रेशन</span>  और ऑनबोर्डिंग चार्ज",
-"captionWrap": "<p>Authorised Partner के रूप में रजिस्टर होने के लिए कुछ चार्ज लागू होते हैं। आप इन चार्जों के लिए नीचे दी गई तालिका में देख सकते हैं। </p>",
-"authorisedPartneUlBlock": "<ul><li>सुरक्षा जमा: ₹50,000 (वापसी योग्य)</li><li>दस्तावेज़ प्रबंधन चार्ज: ₹1,500 (ईफ्रैंकिंग और ई-साइन चार्ज)</li><li>1-टाइम विनिमय रजिस्ट्रेशन चार्ज: ₹22,420</li></ul>",
-"apRegistrationTitle": "AP रजिस्ट्रेशन चार्ज",
-"apTableHeading": "<th>विनिमय</th><th>सेगमेंट</th><th>चार्ज (₹)</th><th>GST चार्ज</th><th>GST राशि</th><th>कुल राशि (₹)</th>",
-"apTable1": "<td>NSE</td><td>पूंजी बाजार</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
-"apTable2": "<td>NSE</td><td>F&O</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
-"apTable3": " <td>NSE</td><td>करेंसी डेरिवेटिव</td><td>₹5,000 </td><td>18%</td><td>₹900</td><td>₹5,900</td>",
-"apTable4": " <td>BSE</td><td>पूंजी बाजार</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
-"apTable5": "<td>MCX</td><td>कमोडिटी</td><td>-</td><td>18%</td><td>NA</td><td>NA</td>",
-"apTable6": "<td><b>कुल पंजीकरण चार्ज</b></td><td><b>सभी सेगमेंट</b></td><td><b>₹19,000</b></td><td><b>18%</b></td><td><b>₹3,420</b></td><td><b>₹22,420</b></td>",
-"authorisedPartneUlBlock1": "अप्रैल 2024 से प्रभावी AP सालाना रखरखाव चार्ज: ₹10,620",
-"apAnnual": "अप्रैल 2024 से लागू AP सालाना रख-रखाव चार्ज",
-"pricingTableHeading": "<th>विनिमय</th><th>सेगमेंट</th><th>चार्ज (₹)</th><th>GST दर</th><th>GST राशि (₹)</th><th>कुल राशि (₹)</th>",
-"pricingT1": "<td>NSE-AMC</td><td>सभी सेगमेंट</td><td>₹5,000 </td><td>18% </td><td>₹900</td><td>₹5,900</td>",
-"pricingT2": "<td>BSE-AMC</td><td>सभी सेगमेंट</td><td>₹4,000 </td><td>18%</td><td>₹720</td><td>₹4,720</td>",
-"pricingT3": "<td><b>कुल AMC</b></td><td><b>NSE और BSE</b></td><td><b>₹9,000 </b></td><td><b>18%</b></td><td><b>₹1,620</b></td><td><b>₹10,620</b></td>",
-"pricingNoteBlock": "नोट: सुरक्षा जमा के संबंध में,",
-"pricingNoteList": "<li>कोई स्टॉक या कॉलेट्रल स्वीकार नहीं किया जाएगा</li> <li>यह वापसी योग्य और चार्ज मुक्त है</li>",
+"faqTitle": "अक्सर पूछे जाने वाले सवाल"
 
 
 
-"pricePayoutStructure_title":"<span>कीमत निर्धारण और भुगतान की </span> संरचना",
-
-"pricingTableHolder_revenu_src":"<th>आमदनी का स्रोत</th><th>पार्टनर को किया गया भुगतान</th><th>नोट</th>",
-
-"pricingTableHolder_acc_openfee":"<b>खाता खोलने का चार्ज</b>",
-
-"pricingTableHolder_acc_openfee_1":"से ज़्यादा पर 100%",
-
-"pricingTableHolder_acc_openfee_2":"Mirae Asset हर नए ग्राहक से ₹500 का एक तयशुदा चार्ज लेगा, भले ही खाता खोलने का चार्ज कुछ भी चुना गया हो",
-
-"pricingTableHolder_acc_Brokerage_sec":"<td><b>ब्रोकरेज</b></td><td>सभी सेगमेंट में <a Name=\"orangeTxt\">100%</a> </td><td>अपने ग्राहकों के लिए हमारे स्टैंडर्ड प्लान में से चुनें या एक कस्टमाइज़्ड प्लान बनाएं</td>",
-
-
-"pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) इंटरेस्ट</b></td><td> 9.99% से ज़्यादा पर <a Name=\"orangeTxt\">80%</a> शेयरिंग</td><td>24% तक का कस्टमाइज़ MTF चार्ज</td>",
-
-"pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>मार्जिन प्लेज इंटरेस्ट</b></td><td> 11.99% से ज़्यादा पर <a Name=\"orangeTxt\">80%</a> शेयरिंग</td><td>24% तक कस्टमाइज़ मार्जिन प्लेज चार्ज</td>",
-
-"pricingTableHolder_acc_dpamc":"अकाउंट मेंटेनेंस चार्ज (DP AMC)",
-"pricingTableHolder_acc_dpamc_1":"₹480 से ज़्यादा पर <a Name=Name=\"orangeTxt\">100%</a> आमदनी",
-"pricingTableHolder_acc_dpamc_2":"अपने ग्राहकों के लिए हमारे स्टैंडर्ड DP प्लान में से चुनें या एक कस्टमाइज़्ड DP प्लान बनाएं",
-
-
-"pricingTableHolder_pledge_unp_char":"प्लेज/अनप्लेज चार्ज",
-"pricingTableHolder_pledge_unp_ rate":"कस्टमाइज़ करें और <a Name=\"orangeTxt\">100%</a> कमाएं",
-"pricingTableHolder_dp_sell_rate":"DP सेल ट्रांजेक्शन चार्ज",
-
-"pricingTableHolder_dp_sell_rate_1":"कस्टमाइज़ करें और <a Name=\"orangeTxt\">100%</a> कमाएं",
-"pricingTableHolder_dp_payment_chr":"विलंबित भुगतान चार्ज (DPC) और ऑपरेटिंग चार्जेज से इनकम",
-
-
-"pricingTableHolder_dp_payment_chr_1":" फ्लैट <a Name=\"orangeTxt\">Flat 20%</a> हिस्सेदारी",
-
-"pricingTableHolder_dp_no_customisation":"कोई कस्टमाइज़ेशन संभव नहीं",
-
-"pricingTableHolder_dp_op_charges":"ऑपरेटिंग चार्जेस",
-"pricingTable_Income_Acc_Op_Fee":"अकाउंट ओपनिंग फी इनकम:",
-"pricingTable_Income_Acc_para":"अपने ग्राहक के लिए अकाउंट ओपनिंग फी एक रेंज से चुनिए और ₹500 से अधिक किसी भी चीज़ पर 100% भुगतान प्राप्त करें।",
-"pricingTable_Income_Acc_heading":"<th>खाते का प्रकार</th><th>पार्टनर क्लाइंट्स को कितना चार्ज कर सकते है?</th><th>पार्टनर को भुगतान</th><th>अतिरिक्त आइनकम <br/>  <small>पार्टनर सेवा फी^ (सालाना आवर्ती)</small></th>",
-"pricingTable_Income_Acc_std_plan_1":"<td>स्टैंडर्ड प्लान 1: <br/><a Name=\"orangeTxt\">  ज़ीरो ब्रोकरेज अकाउंट</a></td><td>₹999 to ₹9,999</td><td><a Name=\"orangeTxt\">500 से ज़्यादा पर 100%</a></td><td>100% भुगतान<br /> (₹999 to ₹9,999)</td>",
-"pricingTable_Income_Acc_std_plan_2":"<td>स्टैंडर्ड प्लान 2: <br/><a Name=\"orangeTxt\">  फ्री डिलीवरी खाता</a></td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">500 से ज़्यादा पर 100%</a><td>लागू नहीं</td>",
-"pricingTable_Income_Acc_std_plan_3":"<td><a Name=\"orangeTxt\">  कस्टमाइज़्ड</a> <br/> ब्रोकरेज प्लान</td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">500 से ज़्यादा पर 100%</a></td><td>लागू नहीं</td>",
-"pricingTable_Income_Acc_note":"यह एक सालाना आवर्ती फी है (दूसरे साल से लागू), जिसे आप उन ग्राहकों से ले सकते हैं जि न्हें आप 'ज़ीरो ब्रोकरेज अकाउंट' की पेशकश कर रहे हैं। ऐसा इसलिए, क्योंकि आपको उनसे कोई ब्रोकरेज इनकम नहीं मिलेगी। पार्टनर सेवा फी उस खाता खोलने के चार्ज के बराबर होगा जो आप अपने ग्राहक से लेते हैं और उसका 100% आपका होगा। <br /><br /> <a Name=\"orangeTxt\"> नोट: </a> Mirae Asset आपसे हर नए ग्राहक का ₹500 का 1-टाइम चार्ज लेगा, भले ही खाता खोलने का चार्ज कुछ भी हो।", 
-"pricingTable_Income_Brokerage":"ब्रोकरेज से इनकम:",
-"pricingTable_Income_Brokerage_disc":"आप या तो हमारे <b> स्टैंडर्ड प्लान </b> में से चुन सकते हैं या अपने ग्राहकों के लिए उनकी खास जरूरतों और व्यापारिक व्यवहार के आधार पर <b> एक कस्टमाइज़्ड प्लान </b> बना सकते हैं।",
-"pricingTable_Income_Brokerage_heading":"<th>ब्रोकरेज प्लान का प्रकार</th> <th>ग्राहकों के लिए लागू ब्रोकरेज</th><th>पार्टनर को भुगतान</th>", 
-"pricingTable_Income_std_plan1":"<td>स्टैंडर्ड प्लान 1: <br/><a Name=\"orangeTxt\">  ज़ीरो ब्रोकरेज अकाउंट</a></td><td class=\"textLeft\">सभी सेगमेंट में ज़िंदगी भर के लिए ₹0 ब्रोकरेज</td><td Name=\"textCenter\">लागू नहीं</td>",
-"pricingTable_Income_std_plan2":"<td>स्टैंडर्ड प्लान 2: <br /><a Name=\"orangeTxt\">फ्री डिलीवरी खाता</a></td><td class=\"textLeft\">सिर्फ़ डिलीवरी पर ₹0 ब्रोकरेज <br/> दूसरे सभी सेगमेंट पर प्रति ऑर्डर ₹20 ब्रोकरेज</td><td Name=\"textCenter\"><a Name=\"orangeTxt\">100%</a></td>",
-"pricingTable_Income_std_plan3":"<td><a Name=\"orangeTxt\">कस्टमाइज़्ड प्लान</a></td><td class=\"textLeft\">नीचे दिए गए मॉडलों में से चुनें <br/><ul><li><b class=\"fontSemiBold\">डिस्कॉउंट </b><small>(ब्रोकरेज पर आर्डर)</small></li><li><b class=\"fontSemiBold\">ट्रेडिशनल </b><small>(% के अनुसार)</small></li><li><b class=\"fontSemiBold\">हाइब्रिड</b></li></ul></td><td class=\"textCenter\"><a class\"orangeTxt\">100%</a></td>",
-"pricingTable_Income_Income_MTF_Int":"MTF (eMargin) इंटरेस्ट से इनकम",
-"pricingTable_Income_Income_MTF_Int_disc":"आप या तो हमारी स्टैंडर्ड चार्ज दर, यानी आधार चार्ज दर चुन सकते हैं या ग्राहक के लिए लागू चार्ज दरों को कस्टमाइज़ कर सकते हैं।",
-"pricingTable_Income_Income_MTF_Int_heading":"<th>आधार चार्ज दर</th><th>  पार्टनर को भुगतान <br/>  (आधार दर तक)</th><th>  कस्टमाइज़्ड चार्ज दर <br/>  (अधिकतम सीमा)</th><th>  पार्टनर को भुगतान  <br/>  (आधार दर से ज़्यादा पर)</th>",
-"pricingTable_Income_Income_MTF_Int_note":"<a Name=\"orangeTxt\">नोट:</a> आप अपने क्लाइंट को हमारे स्टैंडर्ड MTF इंटरेस्ट रेट चार्ज करके 5% कमा सकते हैं। हालांकि, अगर आप अपने क्लाइंट को 9.99% से कम और 6.99% p.a तक चार्ज करना चाहते हैं तो कोई शेयरिंग नहीं मिलेगी।",
-"pricingTable_Income_MP_intr":"मार्जिन प्लेज इंटरेस्ट से इनकम",
-"pricingTable_Income_MP_intr_ para":"आप या तो हमारे स्टैंडर्ड इंटरेस्ट रेट्स, यानी बेस रेट चुन सकते हैं या ग्राहक के लिए लागू इंटरेस्ट रेट्स को कस्टमाइज़ कर सकते हैं।",
-"pricingTable_Income_MP_intr_fund_value":"<th>मार्जिन प्लेज फ़ंड की कीमत</th> <th>बेस इंटरेस्ट रेट</th><th>पार्टनर को भुगतान <br/>  (बेस रेट तक)</th><th>  कस्टमाइज़्ड इंटरेस्ट रेट <br/>  (अधिकतम सीमा)</th><th>  पार्टनर को भुगतान <br/>  (आधार दर से ज़्यादा पर)</th>",
-"pricingTable_Income_MP_intr_fund_value_1":"प्लेज स्टॉक वैल्यू का 80% तक",
-"pricingTable_Income_acc_main_charges":"अकाउंट मेंटेनेंस चार्ज (AMC) से इनकम",
-"pricingTable_Income_acc_main_charges_dis":"आप या तो हमारे स्टैंडर्ड DP AMC प्लान में से चुन सकते हैं या ग्राहक के DP AMC चार्ज को कस्टमाइज़ कर सकते हैं।",
-
-"pricingTable_Income_acc_main_charges_stdchar":"स्टैंडर्ड AMC प्लान",
-
-"pricingTable_Income_acc_main_charges_AMCplan":"कस्टमाइज़्ड AMC प्लान",
-"pricingTable_Income_acc_main_charges_AMCplan_heading":"स्टैंडर्ड प्लान 1 <br/>(1-टाइम AMC)",
-"pricingTable_Income_acc_main_charges_AMCplan_heading_2":"स्टैंडर्ड प्लान 2 <br/>(क्वार्टर AMC)",
-"pricingTable_Income_acc_main_charges_ptp":"पार्टनर को भुगतान",
-"pricingTable_Income_acc_main_charges_ota":"1-टाइम AMC",
-"pricingTable_Income_acc_main_charges_qac":"क्वार्टर AMC",
-
-"pricingTable_Income_acc_main_onetime_fee":"(एकमुश्त चार्ज के साथ ज़िंदगी भर मुफ़्त AMC)",
-"pricingTable_Income_acc_main_quater_fee":"(सालाना चार्ज, हर क्वार्टर में ₹120 लिया जाता है)",
-"to":"से",
-"pricingTable_Income_payout_above":"से ज़्यादा पर 100% भुगतान",
-"pricingTable_Income_otf":"(1-टाइम AMC)",
-"pricingTable_Income_qamc":"(क्वार्टर AMC)",
-
-"pricingTable_Income_PledgeUnpledge_charges":"प्लेज और अनप्लेज चार्ज से इनकम",
-"pricingTable_Income_PledgeUnpledge_charges_disc":"आप या तो ₹25 या ₹32 की हमारी स्टैंडर्ड प्लेज/अनप्लेज दरों में से चुन सकते हैं या ग्राहक के प्लेज/अनप्लेज चार्ज को ₹25 से ₹35 तक की दर सीमा के अनुसार कस्टमाइज़ कर सकते हैं।",
-"pricingTable_Income_qamc_heading":"<th>प्लेज/अनप्लेज चार्ज</th> <th>पार्टनर को भुगतान </th><th>प्लेज/अनप्लेज चार्ज</th> <th>पार्टनर को भुगतान </th>",
-"pricingTable_Income_qamc_partnerfee":"से ज़्यादा पर 100% भुगतान",
-"pricingTable_Income_dp_tranchar":"DP ट्रांजेक्शन चार्ज से इनकम",
-"pricingTable_Income_dp_tranchar_disc":"आप या तो हमारे स्टैंडर्ड DP ट्रांजेक्शन चार्ज में से ₹12 प्रति ISIN चुन सकते हैं या ग्राहक के DP ट्रांजेक्शन चार्ज को ₹12 से ₹25 तक कस्टमाइज़ कर सकते हैं और 100% भुगतान अर्जित कर सकते हैं।",
-"pricingTable_Income_std_dpchar":"स्टैंडर्ड DP प्लान",
-"pricingTable_Income_cdp_dpchar":"कस्टमाइज़्ड DP प्लान",
-"pricingTable_DP_Sell_TraCharges":"DP बिक्री लेनदेन चार्ज",
-"pricingTable_DP_ptop":"पार्टनर को भुगतान",
-"pricingTable_DP_ptop_rates":"₹12 से ज़्यादा पर 100% भुगतान",
-
-"pricingTable_DP_incone_delaychar":"विलंबित भुगतान चार्ज (DPC) से इनकम",
-"pricingTable_DP_incone_delaychar_disc":"ग्राहक के नेगेटिव लज़्ज़ेर बैलेंस और ऑपरेटिंग चार्जेस पर 20% इनकम शेयरिंग कमाए।",
-"pricingTable_DP_incone_delaychar_heading":"<th>DPC पर</th> <th>इंटरेस्ट रेट</th><th>पार्टनर को भुगतान </th>",
-"pricingTable_DP_neg_leger":"ग्राहक के खाते में कोई नेगेटिव लज़्ज़ेर बैलेंस",
-
-"pricingTable_DP_flat":"फ्लैट 20%"
 
 
 
