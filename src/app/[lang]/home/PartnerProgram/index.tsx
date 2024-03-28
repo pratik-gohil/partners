@@ -8,7 +8,7 @@ import UserSVG from '@/components/svgs/UserSVG';
 import PledgeSVG from '@/components/svgs/PledgeSVG'; import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 ;
 
-function PartnerProgram({dictionary}: any) {
+function PartnerProgram({ dictionary }: any) {
     const handleKnowMore = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
         const target = e.target as HTMLDivElement;
         const el = document.querySelector(`[data-section-table=${target.getAttribute("data-section-action")}]`) as HTMLDivElement;
@@ -21,42 +21,42 @@ function PartnerProgram({dictionary}: any) {
             <div className={styles["maContainer"]}>
                 <h2 className={styles["secTitle"]}>आपके बड़े सपनों को उड़ान दें,<span>Mirae Asset के साथ</span></h2>
                 <p className={styles["captionTxt"]}> {dictionary["captionTxt"]} <span className={styles["orangeTxt"]}> {dictionary["captionTxt1"]}
-                </span> {dictionary["captionTxt2"]} <span className={styles["orangeTxt"]}> {dictionary["captionTxt3"]}</span> {dictionary["captionTxt4"]} 
-                <span className={styles["orangeTxt"]}> {dictionary["captionTxt5"]}</span> {dictionary["captionTxt6"]} 
-                <a aria-label="Income Sharing for Authorised Partners" className={styles["orangeTxt"]} href="asset/pdf/income-sharing-for-authorised-partners.pdf" 
-                target="_blank"> {dictionary["captionTxt7"]}</a>
+                </span> {dictionary["captionTxt2"]} <span className={styles["orangeTxt"]}> {dictionary["captionTxt3"]}</span> {dictionary["captionTxt4"]}
+                    <span className={styles["orangeTxt"]}> {dictionary["captionTxt5"]}</span> {dictionary["captionTxt6"]}
+                    <a aria-label="Income Sharing for Authorised Partners" className={styles["orangeTxt"]} href="asset/pdf/income-sharing-for-authorised-partners.pdf"
+                        target="_blank"> {dictionary["captionTxt7"]}</a>
                 </p>
                 <div className={`${styles["midheading-pl"]} `}>{dictionary["midheading-pl"]}</div>
                 <div className={styles["opptUlist"]}>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={`${styles["x-amount-left"]} `}>
-                            {dictionary["x-amount-left"]}
+                                {dictionary["x-amount-left"]}
                             </div>
                             <div className={`${styles["x-amount-right"]} ${styles["margiright75"]}`}>
-                            {dictionary["margiright75"]} <b>{dictionary["margiright75_1"]}</b> {dictionary["margiright75_2"]}{dictionary["margiright75_3"]}
+                                {dictionary["margiright75"]} <b>{dictionary["margiright75_1"]}</b> {dictionary["margiright75_2"]}{dictionary["margiright75_3"]}
                             </div>
                         </div>
                         <div className={styles["x-amount-txt-containt"]}>
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
                                     <li>
-                                    {dictionary["x-amount-txt-ul"]} <br />
+                                        {dictionary["x-amount-txt-ul"]} <br />
                                         <b>300</b>
                                     </li>
                                     <li>
-                                    {dictionary["x-amount-txt-ul_1"]} <br />
+                                        {dictionary["x-amount-txt-ul_1"]} <br />
                                         <b>₹12,000</b>
                                     </li>
                                     <li>
-                                    {dictionary["x-amount-txt-ul_2"]}  <br />
+                                        {dictionary["x-amount-txt-ul_2"]}  <br />
                                         <b>₹36 lakh</b>
                                     </li>
                                 </ul>
                             </div>
                             <div className={styles["x-amount-industry-block"]}>
                                 <div className={styles["x-amount-industry-block-1"]}>
-                                {dictionary["x-amount-industry-block-1"]}
+                                    {dictionary["x-amount-industry-block-1"]}
                                 </div>
                                 <div className={styles["x-amount-industry-block-2"]}>
                                     <span>{dictionary["x-amount-industry-block-2"]}</span> <br />
@@ -84,23 +84,23 @@ function PartnerProgram({dictionary}: any) {
                             </div>
                             <div className={styles["knowmore-ribar"]} data-section-action="mtf" onClick={e => handleKnowMore(e)}>{dictionary["know_how"]}</div>
                             <div className={styles["x-amount-right"]}>
-                            {dictionary["x-amount-right"]} <b>{dictionary["x-amount-right_1"]}</b> {dictionary["x-amount-right_2"]}{dictionary["x-amount-right_3"]}
+                                {dictionary["x-amount-right"]} <b>{dictionary["x-amount-right_1"]}</b> {dictionary["x-amount-right_2"]}{dictionary["x-amount-right_3"]}
                             </div >
                         </div >
                         <div className={styles["x-amount-txt-containt"]}>
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
                                     <li>
-                                    {dictionary["MTF_active_clients"]} <br />
+                                        {dictionary["MTF_active_clients"]} <br />
                                         <b>100</b>
                                     </li>
                                     <li>
-                                    {dictionary["MTF_active_book"]} <br />
+                                        {dictionary["MTF_active_book"]} <br />
                                         <b>₹3 crore</b> <br />
                                         <small> {dictionary["MTF_active_book_line"]}</small>
                                     </li>
                                     <li>
-                                    {dictionary["MTF_active_interest"]} <br />
+                                        {dictionary["MTF_active_interest"]} <br />
                                         <b>18% p.a.</b>
                                     </li>
                                 </ul>
@@ -119,8 +119,8 @@ function PartnerProgram({dictionary}: any) {
                                         </tr>
                                         <tr>
                                             <td dangerouslySetInnerHTML={
-                                       { __html: dictionary["MTF_eMargin_MTF_Book"]}
-                                    }></td>
+                                                { __html: dictionary["MTF_eMargin_MTF_Book"] }
+                                            }></td>
                                             <td>₹3 crore</td>
                                             <td>₹3 crore</td>
                                         </tr>
@@ -131,8 +131,8 @@ function PartnerProgram({dictionary}: any) {
                                         </tr>
                                         <tr>
                                             <td dangerouslySetInnerHTML={
-                                       { __html: dictionary["MTF_eMargin_retain_broker"]}
-                                    }></td>
+                                                { __html: dictionary["MTF_eMargin_retain_broker"] }
+                                            }></td>
                                             <td>12%</td>
                                             <td>9.99%</td>
                                         </tr>
@@ -150,7 +150,7 @@ function PartnerProgram({dictionary}: any) {
                             </div>
                             <div className={styles["x-amount-industry-block"]}>
                                 <div className={styles["x-amount-industry-block-1"]}>
-                                {dictionary["MTF_eMargin_ann_intrest_payout"]}
+                                    {dictionary["MTF_eMargin_ann_intrest_payout"]}
                                 </div>
                                 <div className={styles["x-amount-industry-block-2"]}>
                                     <span> {dictionary["MTF_eMargin_industry"]}</span> <br />
@@ -167,38 +167,38 @@ function PartnerProgram({dictionary}: any) {
                             <div className={styles["x-amount-unnique-benefit-block"]} >
                                 <StarSVG />
                                 <span dangerouslySetInnerHTML={
-                                       { __html: dictionary["MTF_eMargin_unique_benefit"]}
-                                    }/>
-                                
+                                    { __html: dictionary["MTF_eMargin_unique_benefit"] }
+                                } />
+
                             </div>
                         </div >
                     </div>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={`${styles["x-amount-left"]} `}>
-                            {dictionary["Margin_Pledge_Interest"]}
+                                {dictionary["Margin_Pledge_Interest"]}
                             </div>
                             <div className={styles["knowmore-ribar"]} data-section-action="margin-pledge-intrest" onClick={e => handleKnowMore(e)}>{dictionary["know_how"]}</div>
-                            <div className={styles["x-amount-right"]}dangerouslySetInnerHTML={
-                                       { __html: dictionary["Margin_Pledge_Interest_rate"]}
-                                    }>
-                                
+                            <div className={styles["x-amount-right"]} dangerouslySetInnerHTML={
+                                { __html: dictionary["Margin_Pledge_Interest_rate"] }
+                            }>
+
                             </div >
                         </div >
                         <div className={styles["x-amount-txt-containt"]}>
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
                                     <li>
-                                    {dictionary["Margin_Pledge_Interest_active_cli"]} <br />
+                                        {dictionary["Margin_Pledge_Interest_active_cli"]} <br />
                                         <b>100</b>
                                     </li>
                                     <li>
-                                    {dictionary["Margin_Pledge_Interest_book"]} <br />
+                                        {dictionary["Margin_Pledge_Interest_book"]} <br />
                                         <b>₹2 crore</b> <br />
                                         <small>{dictionary["Margin_Pledge_Interest_per_cli"]}</small>
                                     </li>
                                     <li>
-                                    {dictionary["Margin_Pledge_Interest_avg_intrest"]} <br />
+                                        {dictionary["Margin_Pledge_Interest_avg_intrest"]} <br />
                                         <b>18% p.a.</b>
                                     </li>
                                 </ul>
@@ -227,8 +227,8 @@ function PartnerProgram({dictionary}: any) {
                                         </tr>
                                         <tr>
                                             <td dangerouslySetInnerHTML={
-                                       { __html: dictionary["MTF_eMargin_retain_broker"]}
-                                    }></td>
+                                                { __html: dictionary["MTF_eMargin_retain_broker"] }
+                                            }></td>
                                             <td>12%</td>
                                             <td>11.99%</td>
                                         </tr>
@@ -246,7 +246,7 @@ function PartnerProgram({dictionary}: any) {
                             </div>
                             <div className={styles["x-amount-industry-block"]}>
                                 <div className={styles["x-amount-industry-block-1"]}>
-                                {dictionary["Margin_Pledge_annual_int_payout"]}
+                                    {dictionary["Margin_Pledge_annual_int_payout"]}
                                 </div>
                                 <div className={styles["x-amount-industry-block-2"]}>
                                     <span>{dictionary["MTF_eMargin_industry"]}</span> <br />
@@ -263,37 +263,37 @@ function PartnerProgram({dictionary}: any) {
                                     <StarSVG />
 
                                     <span dangerouslySetInnerHTML={
-                                       { __html: dictionary["Margin_Pledge_annual_benifit"]}
-                                    }/>                                
-                                    </div >
+                                        { __html: dictionary["Margin_Pledge_annual_benifit"] }
+                                    } />
+                                </div >
                             </div >
                         </div >
                     </div>
                     <div className={styles["opptBox"]}>
                         <div className={styles["x-amount-block"]}>
                             <div className={`${styles["x-amount-left"]} `}>
-                            {dictionary["DP_Sell_Transaction_Charges"]}
+                                {dictionary["DP_Sell_Transaction_Charges"]}
                             </div>
                             <div className={styles["knowmore-ribar"]} data-section-action="dp-sell" onClick={e => handleKnowMore(e)}>{dictionary["know_how"]}</div>
                             <div className={styles["x-amount-right"]} dangerouslySetInnerHTML={
-                                       { __html: dictionary["DP_Sell_Transaction_Charges_rate"]}
-                                    }>
-                            
+                                { __html: dictionary["DP_Sell_Transaction_Charges_rate"] }
+                            }>
+
                             </div >
                         </div>
                         <div className={styles["x-amount-txt-containt"]}>
                             <div className={styles["x-amount-txt-ul"]}>
                                 <ul>
                                     <li>
-                                    {dictionary["DP_Sell_Transaction_Charges_perday"]}{dictionary["DP_Sell_Transaction_Charges_perday3"]} <br />
+                                        {dictionary["DP_Sell_Transaction_Charges_perday"]}{dictionary["DP_Sell_Transaction_Charges_perday3"]} <br />
                                         <b>25</b>
                                     </li>
                                     <li>
-                                    {dictionary["DP_Sell_Transaction_Charges_title"]} <br />
+                                        {dictionary["DP_Sell_Transaction_Charges_title"]} <br />
                                         <b>₹12 - ₹25</b>
                                     </li>
                                     <li>
-                                    {dictionary["DP_Sell_Transaction_Charges_ann_charges"]} <br />
+                                        {dictionary["DP_Sell_Transaction_Charges_ann_charges"]} <br />
                                         <b>₹72,000 - ₹1,50,000</b>
                                     </li>
                                 </ul>
@@ -339,7 +339,7 @@ function PartnerProgram({dictionary}: any) {
                             </div>
                             <div className={styles["x-amount-industry-block"]}>
                                 <div className={styles["x-amount-industry-block-1"]}>
-                                {dictionary["DP_Sell_Transaction_Charges_annpayout"]}
+                                    {dictionary["DP_Sell_Transaction_Charges_annpayout"]}
                                 </div>
                                 <div className={styles["x-amount-industry-block-2"]}>
                                     <span>{dictionary["MTF_eMargin_industry"]}</span> <br />
@@ -355,8 +355,8 @@ function PartnerProgram({dictionary}: any) {
                                 <div className={styles["x-amount-unnique-benefit-block"]}>
                                     <StarSVG />
                                     <span dangerouslySetInnerHTML={
-                                       { __html: dictionary["DP_Sell_Transaction_Charges_benifit"]}
-                                    }/>
+                                        { __html: dictionary["DP_Sell_Transaction_Charges_benifit"] }
+                                    } />
                                 </div>
                             </div>
                         </div>
@@ -372,32 +372,32 @@ function PartnerProgram({dictionary}: any) {
                                     <FeeSVG />
                                 </span>
                                 <p dangerouslySetInnerHTML={
-                                       { __html: dictionary["partner_offer_acc_openfee"]}
-                                    }>
-                                   </p>
+                                    { __html: dictionary["partner_offer_acc_openfee"] }
+                                }>
+                                </p>
                             </li>
                             <li>
                                 <span>
                                     <UserSVG />
                                 </span>
                                 <p dangerouslySetInnerHTML={
-                                       { __html: dictionary["partner_offer_acc_maintenance_charges"]}
-                                    }>
+                                    { __html: dictionary["partner_offer_acc_maintenance_charges"] }
+                                }>
                                 </p>
                             </li>
                             <li>
                                 <span>
                                     <PledgeSVG />
                                 </span>
-                                <p  dangerouslySetInnerHTML={
-                                       { __html: dictionary["partner_offer_pledge_unpledge_charges"]}
-                                    }>
-                                 </p>
+                                <p dangerouslySetInnerHTML={
+                                    { __html: dictionary["partner_offer_pledge_unpledge_charges"] }
+                                }>
+                                </p>
                             </ li>
                         </ul>
                         <div className={styles["all-this-can-block"]}> <b dangerouslySetInnerHTML={
-                                       { __html: dictionary["all_this_can_block"]}
-                                    }></b><br /> <RetainQueryLink href="/pricing">{dictionary["RetainQueryLink"]} <RightArrowSVG /> </RetainQueryLink>
+                            { __html: dictionary["all_this_can_block"] }
+                        }></b><br /> <RetainQueryLink href="/pricing">{dictionary["RetainQueryLink"]} <RightArrowSVG /> </RetainQueryLink>
                         </div>
                     </div >
                 </div>
