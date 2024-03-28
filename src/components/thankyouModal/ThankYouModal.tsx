@@ -3,7 +3,7 @@ import React from 'react'
 import styles from "./ThankYouModal.module.scss";
 import Image from 'next/image';
 
-const ThankYouModal = ({ onClose }: any) => {
+const ThankYouModal = ({ onClose, refCode }: any) => {
     return (
         <>
             <div className={`${styles.formWrap} ${styles.thankpopupMan}`}>
@@ -13,7 +13,6 @@ const ThankYouModal = ({ onClose }: any) => {
                     </button>
                 </div>
                 <div className={`${styles.modalBody}`}>
-
                     <div className={`${styles.thankinndiv}`}>
                         <Image
                             width={200}
@@ -24,7 +23,7 @@ const ThankYouModal = ({ onClose }: any) => {
                         <h3 >Thank you sharing this growth opportunity with your friends!</h3>
                         <h5>The more the merrier!</h5>
                         <a
-                            href="https://api.whatsapp.com/send?text=https://www.miraeassetpartners.com/"
+                            href={`https://api.whatsapp.com/send?text=https://www.miraeassetpartners.com/${refCode}`}
                             id="refCode"
                             data-action="share/whatsapp/share"
                             target="_blank"
@@ -39,8 +38,6 @@ const ThankYouModal = ({ onClose }: any) => {
                             />
                         </a>
                     </div>
-
-
                 </div>
             </div>
         </>
