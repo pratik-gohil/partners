@@ -79,7 +79,7 @@
 "MTF_eMargin_intrest_payout":"सालाना MTF इंटरेस्ट पेआउट",
  
 "MTF_eMargin_ann_intrest_payout":"सालाना इंटरेस्ट पेआउट",
-"MTF_eMargin_unique_benefit":"<b class=\"light-blue\" >खास फायदे :</b> <a Name=\"orangeTxt\">9.99%</a> से <a Name=\"orangeTxt\">24% </a>के बीच MTF इंटरेस्ट रेट कस्टमाइज करें.",
+"MTF_eMargin_unique_benefit":"<b class=\"light-blue\" >खास फायदे :</b> <i Name=\"orangeTxt\">9.99%</i> से <i Name=\"orangeTxt\">24% </i>के बीच MTF इंटरेस्ट रेट कस्टमाइज करें.",
 
 "Margin_Pledge_Interest": "मार्जिन प्लेज इंटरेस्ट",
 "Margin_Pledge_Interest_rate": " <b>1.5X</b> और ज्यादा कमाएं",
@@ -97,7 +97,7 @@
 
 "Margin_Pledge_annual_int_payout": "सालाना इंटरेस्ट पेआउट",
 
-"Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <a Name=\"orangeTxt\">11.99%</a> से <a Name=\"orangeTxt\">24% </a>तक मार्जिन प्लेज इंटरेस्ट कस्टमाइज करें।",
+"Margin_Pledge_annual_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <i Name=\"orangeTxt\">11.99%</i> से <i Name=\"orangeTxt\">24% </i>तक मार्जिन प्लेज इंटरेस्ट कस्टमाइज करें।",
 "DP_Sell_Transaction_Charges": "DP सेल ट्रांजेक्शन चार्ज",
 "DP_Sell_Transaction_Charges_rate": "<b>22X</b> या ज्यादा कमाएं",
 "DP_Sell_Transaction_Charges_perday": "दिन के कितने स्क्रिप्स बेचें",
@@ -113,7 +113,7 @@
 "DP_Sell_Transaction_Charges_ann_payoutrate": "बेस रेट के ऊपर का सालाना पेआउट",
 "DP_Sell_Transaction_Charges_annpayout": "सालाना पेआउट",
 
-"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <a Name=\"orangeTxt\">₹12</a> to <a Name=\"orangeTxt\">₹25.</a> तक DP सेल ट्रांजेक्शन कस्टमाइज करें",
+"DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">खास फायदे:</b> <i Name=\"orangeTxt\">₹12</i> to <i Name=\"orangeTxt\">₹25.</i> तक DP सेल ट्रांजेक्शन कस्टमाइज करें",
 
 "partner_offer_block": "इतना ही नहीं, आपको विभिन्न अन्य चार्जेज से भी फायदा मिल सकता है।",
 "partner_offer_acc_openfee":"<b>अकाउंट ओपनिंग फीस</b>₹9,999 तक चार्ज करने का मौका<br/> ₹500 से ऊपर कुछ भी <u Name=\"orangeTxt\">100% आपका!</u>",
@@ -232,27 +232,27 @@
 
 "pricingTableHolder_acc_openfee_2":"Mirae Asset हर नए ग्राहक से ₹500 का एक तयशुदा चार्ज लेगा, भले ही खाता खोलने का चार्ज कुछ भी चुना गया हो",
 
-"pricingTableHolder_acc_Brokerage_sec":"<td><b>ब्रोकरेज</b></td><td>सभी सेगमेंट में <a Name=\"orangeTxt\">100%</a> </td><td>अपने ग्राहकों के लिए हमारे स्टैंडर्ड प्लान में से चुनें या एक कस्टमाइज़्ड प्लान बनाएं</td>",
+"pricingTableHolder_acc_Brokerage_sec":"<td><b>ब्रोकरेज</b></td><td>सभी सेगमेंट में <i Name=\"orangeTxt\">100%</i> </td><td>अपने ग्राहकों के लिए हमारे स्टैंडर्ड प्लान में से चुनें या एक कस्टमाइज़्ड प्लान बनाएं</td>",
 
 
-"pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) इंटरेस्ट</b></td><td> 9.99% से ज़्यादा पर <a Name=\"orangeTxt\">80%</a> शेयरिंग</td><td>24% तक का कस्टमाइज़ MTF चार्ज</td>",
+"pricingTableHolder_acc_MTF_interestsec":"<td><b>MTF (eMargin) इंटरेस्ट</b></td><td> 9.99% से ज़्यादा पर <i Name=\"orangeTxt\">80%</i> शेयरिंग</td><td>24% तक का कस्टमाइज़ MTF चार्ज</td>",
 
-"pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>मार्जिन प्लेज इंटरेस्ट</b></td><td> 11.99% से ज़्यादा पर <a Name=\"orangeTxt\">80%</a> शेयरिंग</td><td>24% तक कस्टमाइज़ मार्जिन प्लेज चार्ज</td>",
+"pricingTableHolder_acc_Margin_Pledge_interest":"<td><b>मार्जिन प्लेज इंटरेस्ट</b></td><td> 11.99% से ज़्यादा पर <i Name=\"orangeTxt\">80%</i> शेयरिंग</td><td>24% तक कस्टमाइज़ मार्जिन प्लेज चार्ज</td>",
 
 "pricingTableHolder_acc_dpamc":"अकाउंट मेंटेनेंस चार्ज (DP AMC)",
-"pricingTableHolder_acc_dpamc_1":"₹480 से ज़्यादा पर <a Name=Name=\"orangeTxt\">100%</a> आमदनी",
+"pricingTableHolder_acc_dpamc_1":"₹480 से ज़्यादा पर <i Name=\"orangeTxt\">100%</i> आमदनी",
 "pricingTableHolder_acc_dpamc_2":"अपने ग्राहकों के लिए हमारे स्टैंडर्ड DP प्लान में से चुनें या एक कस्टमाइज़्ड DP प्लान बनाएं",
 
 
 "pricingTableHolder_pledge_unp_char":"प्लेज/अनप्लेज चार्ज",
-"pricingTableHolder_pledge_unp_ rate":"कस्टमाइज़ करें और <a Name=\"orangeTxt\">100%</a> कमाएं",
+"pricingTableHolder_pledge_unp_ rate":"कस्टमाइज़ करें और <i Name=\"orangeTxt\">100%</i> कमाएं",
 "pricingTableHolder_dp_sell_rate":"DP सेल ट्रांजेक्शन चार्ज",
 
-"pricingTableHolder_dp_sell_rate_1":"कस्टमाइज़ करें और <a Name=\"orangeTxt\">100%</a> कमाएं",
+"pricingTableHolder_dp_sell_rate_1":"कस्टमाइज़ करें और <i Name=\"orangeTxt\">100%</i> कमाएं",
 "pricingTableHolder_dp_payment_chr":"विलंबित भुगतान चार्ज (DPC) और ऑपरेटिंग चार्जेज से इनकम",
 
 
-"pricingTableHolder_dp_payment_chr_1":" फ्लैट <a Name=\"orangeTxt\">Flat 20%</a> हिस्सेदारी",
+"pricingTableHolder_dp_payment_chr_1":" फ्लैट <i Name=\"orangeTxt\">Flat 20%</i> हिस्सेदारी",
 
 "pricingTableHolder_dp_no_customisation":"कोई कस्टमाइज़ेशन संभव नहीं",
 
@@ -260,20 +260,20 @@
 "pricingTable_Income_Acc_Op_Fee":"अकाउंट ओपनिंग फी इनकम:",
 "pricingTable_Income_Acc_para":"अपने ग्राहक के लिए अकाउंट ओपनिंग फी एक रेंज से चुनिए और ₹500 से अधिक किसी भी चीज़ पर 100% भुगतान प्राप्त करें।",
 "pricingTable_Income_Acc_heading":"<th>खाते का प्रकार</th><th>पार्टनर क्लाइंट्स को कितना चार्ज कर सकते है?</th><th>पार्टनर को भुगतान</th><th>अतिरिक्त आइनकम <br/>  <small>पार्टनर सेवा फी^ (सालाना आवर्ती)</small></th>",
-"pricingTable_Income_Acc_std_plan_1":"<td>स्टैंडर्ड प्लान 1: <br/><a Name=\"orangeTxt\">  ज़ीरो ब्रोकरेज अकाउंट</a></td><td>₹999 to ₹9,999</td><td><a Name=\"orangeTxt\">500 से ज़्यादा पर 100%</a></td><td>100% भुगतान<br /> (₹999 to ₹9,999)</td>",
-"pricingTable_Income_Acc_std_plan_2":"<td>स्टैंडर्ड प्लान 2: <br/><a Name=\"orangeTxt\">  फ्री डिलीवरी खाता</a></td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">500 से ज़्यादा पर 100%</a><td>लागू नहीं</td>",
-"pricingTable_Income_Acc_std_plan_3":"<td><a Name=\"orangeTxt\">  कस्टमाइज़्ड</a> <br/> ब्रोकरेज प्लान</td><td>₹0 to ₹9,999</td><td><a Name=\"orangeTxt\">500 से ज़्यादा पर 100%</a></td><td>लागू नहीं</td>",
-"pricingTable_Income_Acc_note":"यह एक सालाना आवर्ती फी है (दूसरे साल से लागू), जिसे आप उन ग्राहकों से ले सकते हैं जि न्हें आप 'ज़ीरो ब्रोकरेज अकाउंट' की पेशकश कर रहे हैं। ऐसा इसलिए, क्योंकि आपको उनसे कोई ब्रोकरेज इनकम नहीं मिलेगी। पार्टनर सेवा फी उस खाता खोलने के चार्ज के बराबर होगा जो आप अपने ग्राहक से लेते हैं और उसका 100% आपका होगा। <br /><br /> <a Name=\"orangeTxt\"> नोट: </a> Mirae Asset आपसे हर नए ग्राहक का ₹500 का 1-टाइम चार्ज लेगा, भले ही खाता खोलने का चार्ज कुछ भी हो।", 
+"pricingTable_Income_Acc_std_plan_1":"<td>स्टैंडर्ड प्लान 1: <br/><i Name=\"orangeTxt\">  ज़ीरो ब्रोकरेज अकाउंट</i></td><td>₹999 to ₹9,999</td><td><i Name=\"orangeTxt\">500 से ज़्यादा पर 100%</i></td><td>100% भुगतान<br /> (₹999 to ₹9,999)</td>",
+"pricingTable_Income_Acc_std_plan_2":"<td>स्टैंडर्ड प्लान 2: <br/><i Name=\"orangeTxt\">  फ्री डिलीवरी खाता</i></td><td>₹0 to ₹9,999</td><td><i Name=\"orangeTxt\">500 से ज़्यादा पर 100%</i><td>लागू नहीं</td>",
+"pricingTable_Income_Acc_std_plan_3":"<td><i Name=\"orangeTxt\">  कस्टमाइज़्ड</i> <br/> ब्रोकरेज प्लान</td><td>₹0 to ₹9,999</td><td><i Name=\"orangeTxt\">500 से ज़्यादा पर 100%</i></td><td>लागू नहीं</td>",
+"pricingTable_Income_Acc_note":"यह एक सालाना आवर्ती फी है (दूसरे साल से लागू), जिसे आप उन ग्राहकों से ले सकते हैं जि न्हें आप 'ज़ीरो ब्रोकरेज अकाउंट' की पेशकश कर रहे हैं। ऐसा इसलिए, क्योंकि आपको उनसे कोई ब्रोकरेज इनकम नहीं मिलेगी। पार्टनर सेवा फी उस खाता खोलने के चार्ज के बराबर होगा जो आप अपने ग्राहक से लेते हैं और उसका 100% आपका होगा। <br /><br /> <i Name=\"orangeTxt\"> नोट: </i> Mirae Asset आपसे हर नए ग्राहक का ₹500 का 1-टाइम चार्ज लेगा, भले ही खाता खोलने का चार्ज कुछ भी हो।", 
 "pricingTable_Income_Brokerage":"ब्रोकरेज से इनकम:",
 "pricingTable_Income_Brokerage_disc":"आप या तो हमारे <b> स्टैंडर्ड प्लान </b> में से चुन सकते हैं या अपने ग्राहकों के लिए उनकी खास जरूरतों और व्यापारिक व्यवहार के आधार पर <b> एक कस्टमाइज़्ड प्लान </b> बना सकते हैं।",
 "pricingTable_Income_Brokerage_heading":"<th>ब्रोकरेज प्लान का प्रकार</th> <th>ग्राहकों के लिए लागू ब्रोकरेज</th><th>पार्टनर को भुगतान</th>", 
-"pricingTable_Income_std_plan1":"<td>स्टैंडर्ड प्लान 1: <br/><a Name=\"orangeTxt\">  ज़ीरो ब्रोकरेज अकाउंट</a></td><td class=\"textLeft\">सभी सेगमेंट में ज़िंदगी भर के लिए ₹0 ब्रोकरेज</td><td Name=\"textCenter\">लागू नहीं</td>",
-"pricingTable_Income_std_plan2":"<td>स्टैंडर्ड प्लान 2: <br /><a Name=\"orangeTxt\">फ्री डिलीवरी खाता</a></td><td class=\"textLeft\">सिर्फ़ डिलीवरी पर ₹0 ब्रोकरेज <br/> दूसरे सभी सेगमेंट पर प्रति ऑर्डर ₹20 ब्रोकरेज</td><td Name=\"textCenter\"><a Name=\"orangeTxt\">100%</a></td>",
-"pricingTable_Income_std_plan3":"<td><a Name=\"orangeTxt\">कस्टमाइज़्ड प्लान</a></td><td class=\"textLeft\">नीचे दिए गए मॉडलों में से चुनें <br/><ul><li><b class=\"fontSemiBold\">डिस्कॉउंट </b><small>(ब्रोकरेज पर आर्डर)</small></li><li><b class=\"fontSemiBold\">ट्रेडिशनल </b><small>(% के अनुसार)</small></li><li><b class=\"fontSemiBold\">हाइब्रिड</b></li></ul></td><td class=\"textCenter\"><a class\"orangeTxt\">100%</a></td>",
+"pricingTable_Income_std_plan1":"<td>स्टैंडर्ड प्लान 1: <br/><i Name=\"orangeTxt\">  ज़ीरो ब्रोकरेज अकाउंट</i></td><td class=\"textLeft\">सभी सेगमेंट में ज़िंदगी भर के लिए ₹0 ब्रोकरेज</td><td Name=\"textCenter\">लागू नहीं</td>",
+"pricingTable_Income_std_plan2":"<td>स्टैंडर्ड प्लान 2: <br /><i Name=\"orangeTxt\">फ्री डिलीवरी खाता</i></td><td class=\"textLeft\">सिर्फ़ डिलीवरी पर ₹0 ब्रोकरेज <br/> दूसरे सभी सेगमेंट पर प्रति ऑर्डर ₹20 ब्रोकरेज</td><td Name=\"textCenter\"><i Name=\"orangeTxt\">100%</i></td>",
+"pricingTable_Income_std_plan3":"<td><i Name=\"orangeTxt\">कस्टमाइज़्ड प्लान</i></td><td class=\"textLeft\">नीचे दिए गए मॉडलों में से चुनें <br/><ul><li><b class=\"fontSemiBold\">डिस्कॉउंट </b><small>(ब्रोकरेज पर आर्डर)</small></li><li><b class=\"fontSemiBold\">ट्रेडिशनल </b><small>(% के अनुसार)</small></li><li><b class=\"fontSemiBold\">हाइब्रिड</b></li></ul></td><td class=\"textCenter\"><i class=\"orangeTxt\">100%</i></td>",
 "pricingTable_Income_Income_MTF_Int":"MTF (eMargin) इंटरेस्ट से इनकम",
 "pricingTable_Income_Income_MTF_Int_disc":"आप या तो हमारी स्टैंडर्ड चार्ज दर, यानी आधार चार्ज दर चुन सकते हैं या ग्राहक के लिए लागू चार्ज दरों को कस्टमाइज़ कर सकते हैं।",
 "pricingTable_Income_Income_MTF_Int_heading":"<th>आधार चार्ज दर</th><th>  पार्टनर को भुगतान <br/>  (आधार दर तक)</th><th>  कस्टमाइज़्ड चार्ज दर <br/>  (अधिकतम सीमा)</th><th>  पार्टनर को भुगतान  <br/>  (आधार दर से ज़्यादा पर)</th>",
-"pricingTable_Income_Income_MTF_Int_note":"<a Name=\"orangeTxt\">नोट:</a> आप अपने क्लाइंट को हमारे स्टैंडर्ड MTF इंटरेस्ट रेट चार्ज करके 5% कमा सकते हैं। हालांकि, अगर आप अपने क्लाइंट को 9.99% से कम और 6.99% p.a तक चार्ज करना चाहते हैं तो कोई शेयरिंग नहीं मिलेगी।",
+"pricingTable_Income_Income_MTF_Int_note":"<i Name=\"orangeTxt\">नोट:</i> आप अपने क्लाइंट को हमारे स्टैंडर्ड MTF इंटरेस्ट रेट चार्ज करके 5% कमा सकते हैं। हालांकि, अगर आप अपने क्लाइंट को 9.99% से कम और 6.99% p.a तक चार्ज करना चाहते हैं तो कोई शेयरिंग नहीं मिलेगी।",
 "pricingTable_Income_MP_intr":"मार्जिन प्लेज इंटरेस्ट से इनकम",
 "pricingTable_Income_MP_intr_ para":"आप या तो हमारे स्टैंडर्ड इंटरेस्ट रेट्स, यानी बेस रेट चुन सकते हैं या ग्राहक के लिए लागू इंटरेस्ट रेट्स को कस्टमाइज़ कर सकते हैं।",
 "pricingTable_Income_MP_intr_fund_value":"<th>मार्जिन प्लेज फ़ंड की कीमत</th> <th>बेस इंटरेस्ट रेट</th><th>पार्टनर को भुगतान <br/>  (बेस रेट तक)</th><th>  कस्टमाइज़्ड इंटरेस्ट रेट <br/>  (अधिकतम सीमा)</th><th>  पार्टनर को भुगतान <br/>  (आधार दर से ज़्यादा पर)</th>",
