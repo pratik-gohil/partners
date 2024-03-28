@@ -6,53 +6,53 @@ function PricePayoutStructureSec({ dictionary }: any) {
   return (
     <section className={`${styles.pricePayoutStructureSec}`}>
       <div className={`${styles.maContainer}`}>
-        <h2 className={`${styles.secTitle} `}  dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricePayoutStructure_title"]}
-                                    }>
+        <h2 className={`${styles.secTitle} `} dangerouslySetInnerHTML={
+          { __html: dictionary["pricePayoutStructure_title"] }
+        }>
         </h2>
 
         <div className={`${styles.tableStructureWrap}`}>
           <div className={`${styles.pricingTableHolder}`}>
             <table width="100%"><tbody>
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_revenu_src"]}
-                                    }>
+                { __html: dictionary["pricingTableHolder_revenu_src"] }
+              }>
               </tr>
               <tr>
                 <td dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_acc_openfee"]}
-                                    }>
+                  { __html: dictionary["pricingTableHolder_acc_openfee"] }
+                }>
                 </td>
                 <td>{dictionary["pricingTableHolder_acc_openfee_01"]}
                   <b className={`${styles.orangeTxt}`}>100%</b> {dictionary["pricingTableHolder_acc_openfee_1"]}
                 </td>
                 <td>
-                {dictionary["pricingTableHolder_acc_openfee_2"]}
+                  {dictionary["pricingTableHolder_acc_openfee_2"]}
                 </td>
               </tr>
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_acc_Brokerage_sec"]}
-                                    }>
+                { __html: dictionary["pricingTableHolder_acc_Brokerage_sec"] }
+              }>
               </tr>
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_acc_MTF_interestsec"]}
-                                    }>
+                { __html: dictionary["pricingTableHolder_acc_MTF_interestsec"] }
+              }>
               </tr>
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_acc_Margin_Pledge_interest"]}
-                                    }>
+                { __html: dictionary["pricingTableHolder_acc_Margin_Pledge_interest"] }
+              }>
               </tr>
               <tr>
                 <td>
                   <b>{dictionary["pricingTableHolder_acc_dpamc"]}</b>
                 </td>
                 <td dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_acc_dpamc_1"]}
-                                    }>
+                  { __html: dictionary["pricingTableHolder_acc_dpamc_1"] }
+                }>
                 </td>
                 <td rowSpan={3}>
-                {dictionary["pricingTableHolder_acc_dpamc_2"]}
-                
+                  {dictionary["pricingTableHolder_acc_dpamc_2"]}
+
                 </td>
               </tr>
               <tr>
@@ -60,8 +60,8 @@ function PricePayoutStructureSec({ dictionary }: any) {
                   <b>{dictionary["pricingTableHolder_pledge_unp_char"]}</b>
                 </td>
                 <td dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_pledge_unp_ rate"]}
-                                    }>
+                  { __html: dictionary["pricingTableHolder_pledge_unp_ rate"] }
+                }>
                 </td>
               </tr>
               <tr>
@@ -69,8 +69,8 @@ function PricePayoutStructureSec({ dictionary }: any) {
                   <b>{dictionary["pricingTableHolder_dp_sell_rate"]}</b>
                 </td>
                 <td dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_dp_sell_rate_1"]}
-                                    }>
+                  { __html: dictionary["pricingTableHolder_dp_sell_rate_1"] }
+                }>
                 </td>
               </tr>
               <tr>
@@ -78,8 +78,8 @@ function PricePayoutStructureSec({ dictionary }: any) {
                   <b>{dictionary["pricingTableHolder_dp_payment_chr"]}</b>
                 </td>
                 <td dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_dp_payment_chr_1"]}
-                                    }>
+                  { __html: dictionary["pricingTableHolder_dp_payment_chr_1"] }
+                }>
                 </td>
                 <td>{dictionary["pricingTableHolder_dp_no_customisation"]}</td>
               </tr>
@@ -88,8 +88,8 @@ function PricePayoutStructureSec({ dictionary }: any) {
                   <b>{dictionary["pricingTableHolder_dp_op_charges"]}</b>
                 </td>
                 <td dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTableHolder_dp_payment_chr_1"]}
-                                    }>
+                  { __html: dictionary["pricingTableHolder_dp_payment_chr_1"] }
+                }>
                 </td>
                 <td>{dictionary["pricingTableHolder_dp_no_customisation"]}</td>
               </tr>
@@ -109,37 +109,37 @@ function PricePayoutStructureSec({ dictionary }: any) {
               title="icon"
             />
             <h3 className={`${styles.tableTitle}`}>
-            {dictionary["pricingTable_Income_Acc_Op_Fee"]}
+              {dictionary["pricingTable_Income_Acc_Op_Fee"]}
             </h3>
           </div>
           <p>
-          {dictionary["pricingTable_Income_Acc_para"]}
+            {dictionary["pricingTable_Income_Acc_para"]}
           </p>
           <div className={`${styles.pricingTableHolder}`}>
 
             <table width="100%"><tbody>
 
-              <tr  dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Acc_heading"]}
-                                    }>
-              </tr>
-              <tr   dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Acc_std_plan_1"]}
-                                    } >
+              <tr dangerouslySetInnerHTML={
+                { __html: dictionary["pricingTable_Income_Acc_heading"] }
+              }>
               </tr>
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Acc_std_plan_2"]}
-                                    }>
+                { __html: dictionary["pricingTable_Income_Acc_std_plan_1"] }
+              } >
               </tr>
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Acc_std_plan_3"]}
-                                    }>
+                { __html: dictionary["pricingTable_Income_Acc_std_plan_2"] }
+              }>
+              </tr>
+              <tr dangerouslySetInnerHTML={
+                { __html: dictionary["pricingTable_Income_Acc_std_plan_3"] }
+              }>
               </tr>
             </tbody></table>
           </div>
           <p dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Acc_note"]}
-                                    }>
+            { __html: dictionary["pricingTable_Income_Acc_note"] }
+          }>
           </p>
         </div>
 
@@ -157,30 +157,30 @@ function PricePayoutStructureSec({ dictionary }: any) {
             <h3 className={`${styles.tableTitle}`}>{dictionary["pricingTable_Income_Brokerage"]}</h3>
           </div>
           <p dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Brokerage_disc"]}
-                                    }>
+            { __html: dictionary["pricingTable_Income_Brokerage_disc"] }
+          }>
           </p>
           <div className={`${styles.pricingTableHolder}`}>
 
             <table width="100%"><tbody>
 
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Brokerage_heading"]}
-                                    }>
+                { __html: dictionary["pricingTable_Income_Brokerage_heading"] }
+              }>
               </tr>
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_std_plan1"]}
-                                    }>
-                                      </tr>
-              
-              <tr  dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_std_plan2"]}
-                                    }>
-                
+                { __html: dictionary["pricingTable_Income_std_plan1"] }
+              }>
+              </tr>
+
+              <tr dangerouslySetInnerHTML={
+                { __html: dictionary["pricingTable_Income_std_plan2"] }
+              }>
+
               </tr>
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_std_plan3"]}
-                                    }>
+                { __html: dictionary["pricingTable_Income_std_plan3"] }
+              }>
               </tr>
             </tbody></table>
           </div>
@@ -198,20 +198,20 @@ function PricePayoutStructureSec({ dictionary }: any) {
               title="icon"
             />
             <h3 className={`${styles.tableTitle}`}>
-            {dictionary["pricingTable_Income_Income_MTF_Int"]}
+              {dictionary["pricingTable_Income_Income_MTF_Int"]}
             </h3>
           </div>
           <p>
-          {dictionary["pricingTable_Income_Income_MTF_Int_disc"]}
-          
+            {dictionary["pricingTable_Income_Income_MTF_Int_disc"]}
+
           </p>
           <div className={`${styles.pricingTableHolder}`}>
 
             <table width="100%"><tbody>
 
               <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Income_MTF_Int_heading"]}
-                                    }>
+                { __html: dictionary["pricingTable_Income_Income_MTF_Int_heading"] }
+              }>
               </tr>
               <tr>
 
@@ -227,8 +227,8 @@ function PricePayoutStructureSec({ dictionary }: any) {
             </tbody></table>
           </div>
           <p dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Income_MTF_Int_note"]}
-                                    }>
+            { __html: dictionary["pricingTable_Income_Income_MTF_Int_note"] }
+          }>
           </p>
         </div>
 
@@ -244,21 +244,21 @@ function PricePayoutStructureSec({ dictionary }: any) {
               title="icon"
             />
             <h3 className={`${styles.tableTitle}`}>
-            {dictionary["pricingTable_Income_MP_intr"]}
-         
+              {dictionary["pricingTable_Income_MP_intr"]}
+
             </h3>
           </div>
           <p>
-          {dictionary["pricingTable_Income_MP_intr_ para"]}
-          
+            {dictionary["pricingTable_Income_MP_intr_ para"]}
+
           </p>
           <div className={`${styles.pricingTableHolder}`}>
 
             <table width="100%">
               <tbody>
                 <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_MP_intr_fund_value"]}
-                                    }>
+                  { __html: dictionary["pricingTable_Income_MP_intr_fund_value"] }
+                }>
                 </tr>
                 <tr>
                   <td>{dictionary["pricingTable_Income_MP_intr_fund_value_1"]}</td> <td>11.99%</td>
@@ -269,14 +269,14 @@ function PricePayoutStructureSec({ dictionary }: any) {
                   <td className={`${styles.textCenter}`}>
                     <b className={`${styles.orangeTxt}`}>80%</b>
                   </td>
-                  </tr>
-                
+                </tr>
+
               </tbody>
-              </table>
+            </table>
           </div>
           <p dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_Income_dpamc_note"]}
-                                    }>
+            { __html: dictionary["pricingTable_Income_Income_dpamc_note"] }
+          }>
           </p>
         </div>
 
@@ -292,13 +292,13 @@ function PricePayoutStructureSec({ dictionary }: any) {
               title="icon"
             />
             <h3 className={`${styles.tableTitle}`}>
-            {dictionary["pricingTable_Income_acc_main_charges"]}
-            
+              {dictionary["pricingTable_Income_acc_main_charges"]}
+
             </h3>
           </div>
           <p>
-          {dictionary["pricingTable_Income_acc_main_charges_dis"]}
-          
+            {dictionary["pricingTable_Income_acc_main_charges_dis"]}
+
           </p>
           <div className={`${styles.pricingTableHolder}`}>
 
@@ -318,12 +318,12 @@ function PricePayoutStructureSec({ dictionary }: any) {
                 <tr>
 
                   <th style={{ width: "20%" }} dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_acc_main_charges_AMCplan_heading"]}
-                                    }>
+                    { __html: dictionary["pricingTable_Income_acc_main_charges_AMCplan_heading"] }
+                  }>
                   </th>
                   <th style={{ width: "20%" }} dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_acc_main_charges_AMCplan_heading_2"]}
-                                    }>
+                    { __html: dictionary["pricingTable_Income_acc_main_charges_AMCplan_heading_2"] }
+                  }>
                   </th>
                   <th style={{ width: "13%" }}>{dictionary["pricingTable_Income_acc_main_charges_ptp"]}</th>
                   <th style={{ width: "13%" }}>{dictionary["pricingTable_Income_acc_main_charges_ota"]}</th>
@@ -338,7 +338,7 @@ function PricePayoutStructureSec({ dictionary }: any) {
                   <td className={`${styles.orangeTxt} ${styles.textLeft}`}>
 
                     <b className={`${styles.orangeTxt}`}>
-                    {dictionary["pricingTable_Income_payout_above"]}
+                      {dictionary["pricingTable_Income_payout_above"]}
                     </b>
                     <ul>
 
@@ -369,11 +369,11 @@ function PricePayoutStructureSec({ dictionary }: any) {
               title="icon"
             />
             <h3 className={`${styles.tableTitle}`}>
-            {dictionary["pricingTable_Income_PledgeUnpledge_charges"]}            
+              {dictionary["pricingTable_Income_PledgeUnpledge_charges"]}
             </h3>
           </div>
           <p>
-          {dictionary["pricingTable_Income_PledgeUnpledge_charges_disc"]}
+            {dictionary["pricingTable_Income_PledgeUnpledge_charges_disc"]}
           </p>
           <div className={`${styles.pricingTableHolder}`}>
 
@@ -392,9 +392,9 @@ function PricePayoutStructureSec({ dictionary }: any) {
               <tbody>
 
                 <tr dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_Income_qamc_heading"]}
-                                    }>
-                  </tr>
+                  { __html: dictionary["pricingTable_Income_qamc_heading"] }
+                }>
+                </tr>
                 <tr>
                   <td className={`${styles.textCenter}`}>₹25 / ₹32</td>
                   <td className={`${styles.textCenter}`}>
@@ -432,11 +432,11 @@ function PricePayoutStructureSec({ dictionary }: any) {
               title="icon"
             />
             <h3 className={`${styles.tableTitle}`}>
-            {dictionary["pricingTable_Income_dp_tranchar"]}
+              {dictionary["pricingTable_Income_dp_tranchar"]}
             </h3>
           </div>
           <p>
-          {dictionary["pricingTable_Income_dp_tranchar_disc"]}
+            {dictionary["pricingTable_Income_dp_tranchar_disc"]}
           </p>
           <div className={`${styles.pricingTableHolder}`}>
 
@@ -487,19 +487,19 @@ function PricePayoutStructureSec({ dictionary }: any) {
               title="icon"
             />
             <h3 className={`${styles.tableTitle}`}>
-            {dictionary["pricingTable_DP_incone_delaychar"]}
+              {dictionary["pricingTable_DP_incone_delaychar"]}
             </h3>
           </div>
           <p>
-          {dictionary["pricingTable_DP_incone_delaychar_disc"]}
+            {dictionary["pricingTable_DP_incone_delaychar_disc"]}
           </p>
           <div className={`${styles.pricingTableHolder}`}>
 
             <table width="100%"><tbody>
 
-              <tr  dangerouslySetInnerHTML={
-                                       { __html: dictionary["pricingTable_DP_incone_delaychar_heading"]}
-                                    }>
+              <tr dangerouslySetInnerHTML={
+                { __html: dictionary["pricingTable_DP_incone_delaychar_heading"] }
+              }>
               </tr>
               <tr>
                 <td>{dictionary["pricingTable_DP_neg_leger"]} </td>
