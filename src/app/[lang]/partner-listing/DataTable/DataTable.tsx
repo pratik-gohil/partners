@@ -12,7 +12,7 @@ const DataTable = withCustomScroll((props: Record<string, unknown>) => {
     const [visibleData, setVisibleData] = useState(data);
 
     useEffect(() => {
-        setVisibleData(data?.filter((k: (string | number)[]) => Object.values(k).filter(l => { return l.toString().includes(search) }).length > 0))
+        setVisibleData(data?.filter((k: (string | number)[]) => Object.values(k).filter(l => { return l.toString().toLowerCase().includes(search.toLowerCase()) }).length > 0))
     }, [data, search])
 
     return (

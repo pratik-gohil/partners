@@ -55,7 +55,7 @@
 "x-amount-industry-block-2":"Industry",
 
 "Unique_Benefit":"Unique Benefit:",
-"Unique_Benefit_1":"Choose either Discount, Traditional or Hybrid model, customise rates based on your client's needs",
+"Unique_Benefit_1":"Choose either Discount, Traditional or Hybrid model, customise rates based on your client’s needs",
 
 "MTF-amount-TITLE":"(eMargin) Interest",
 "x-amount-right":"Earn",
@@ -117,7 +117,7 @@
 
 "DP_Sell_Transaction_Charges_benifit": "<b Name=\"light-blue\">Unique Benefit:</b> Customise the DP sell transactions from <i Name=\"orangeTxt\">₹12</i> to <i Name=\"orangeTxt\">₹25.</i>",
 
-"partner_offer_block": "That's not all, you can benefit from various other charges too",
+"partner_offer_block": "That’s not all, you can benefit from various other charges too",
 "partner_offer_acc_openfee":"<b>Account Opening Fee</b>Opportunity to charge up to ₹9,999<br/> Anything above ₹500 is <u Name=\"orangeTxt\">100% yours!</u>",
 
 "partner_offer_acc_maintenance_charges":"<b>Account Maintenance Charges <i>(DP AMC)</i></b>Charge up to ₹4,999 - <u Name=\"orangeTxt\">Earn 100% </u>",
@@ -137,8 +137,8 @@
 "advantageH2": "Run your business through interactive dashboard",
 "advantageH2_1": "Single integrated dashboard",
 "advantageH2_2": "Onboard your clients in a few clicks",
-"advantageH2_3": "Customise brokerage plans as per clients’ trading behaviour",
-"advantageH2_4": "View & monitor client' portfolio and LIVE positions",
+"advantageH2_3": "Customise brokerage plans as per client’s trading behaviour",
+"advantageH2_4": "View & monitor client’s portfolio and LIVE positions",
 "advantageH2_5": "Access to smart reports",
 "advantageH2_6": "Dedicated BA excellence desk - online and offline support",
 "advantageH3": "Onboard your clients in minutes",
