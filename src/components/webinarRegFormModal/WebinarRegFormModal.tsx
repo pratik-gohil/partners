@@ -15,7 +15,7 @@ function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any) {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<FormData>({ mode: "all" });
+  } = useForm<FormData>({ mode: "onBlur" });
 
 
 

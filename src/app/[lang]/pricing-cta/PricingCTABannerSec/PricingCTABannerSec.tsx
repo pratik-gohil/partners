@@ -10,7 +10,7 @@ import { useSearchParams } from "next/navigation";
 
 function PricingCTABannerSec() {
   type FormData = { mobile: string; agree: boolean };
-  const { register, handleSubmit, watch, formState: { errors }, } = useForm<FormData>({ mode: "all" });
+  const { register, handleSubmit, watch, formState: { errors }, } = useForm<FormData>({ mode: "onBlur" });
   const watchAgree = watch("agree", true);
   const searchParams = useSearchParams()
   const {

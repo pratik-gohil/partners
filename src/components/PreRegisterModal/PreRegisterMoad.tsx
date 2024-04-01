@@ -49,7 +49,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
         setValue,
         formState: { errors },
     } = useForm<FormData>({
-        mode: "all",
+        mode: "onBlur",
         defaultValues: {
             subBroker: "0",
         },

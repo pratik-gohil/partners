@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from './StartPartnerReferringSec.module.scss'
 import { useForm, SubmitHandler, useFieldArray } from "react-hook-form"
 import http from '@/lib/http/http'
@@ -32,7 +32,7 @@ function StartPartnerReferringSecC() {
         getValues,
         formState: { errors, },
     } = useForm<FormData>({
-        mode: 'all',
+        mode: 'onBlur',
         defaultValues: {
             name: "",
             mobile: '',
@@ -48,6 +48,7 @@ function StartPartnerReferringSecC() {
     })
 
     const onSubmit: SubmitHandler<FormData> = async (data) => {
+        if (timer > 0) { setShowOTPModal(true); return }
         const res = await http('/partners/getOTP', {
             method: 'POST',
             body: JSON.stringify({
@@ -59,11 +60,23 @@ function StartPartnerReferringSecC() {
                 'Content-Type': 'application/json'
             },
         })
-        const redData = await res.json();
+        const resData = await res.json();
         // @ts-ignore
-        if (redData.status === 0) {
+        if (resData.status === 0) {
             setShowOTPModal(true);
+            startTimer();
         }
+    }
+
+
+    const timerInterval = useRef<string | number | NodeJS.Timeout | undefined>();
+    const startTimer = () => {
+        clearInterval(timerInterval.current)
+        setTimer(60);
+
+        timerInterval.current = setInterval(() => {
+            setTimer((t: number) => t - 1)
+        }, 1000)
     }
 
     const resendOTP = async ({ mobile, name }: { mobile: string, name: string }) => {
@@ -82,11 +95,7 @@ function StartPartnerReferringSecC() {
         const resData = await res.json()
 
         if (resData.status === 0) {
-            setTimer(60);
-
-            setInterval(() => {
-                setTimer(t => t - 1)
-            }, 1000)
+            startTimer()
         }
     }
 
