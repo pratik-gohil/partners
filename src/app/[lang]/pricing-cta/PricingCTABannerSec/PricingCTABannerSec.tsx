@@ -3,14 +3,14 @@ import React from "react";
 import styles from "./PricingCTABannerSec.module.scss";
 import Image from "next/image";
 import RetainQueryLink from "@/components/RetainQueryLink/RetainQueryLink";
-import { validatePhone, numericOnly } from "@/lib/constants/common";
+import { validatePhone } from "@/lib/constants/common";
 import { useForm } from "react-hook-form";
 import { registerPartnerAPI } from "@/lib/utils/registerPartnerAPI";
 import { useSearchParams } from "next/navigation";
 
 function PricingCTABannerSec() {
   type FormData = { mobile: string; agree: boolean };
-  const { register, handleSubmit, watch, formState: { errors }, } = useForm<FormData>({ mode: "onBlur" });
+  const { register, handleSubmit, watch, setValue, formState: { errors }, } = useForm<FormData>({ mode: "onBlur" });
   const watchAgree = watch("agree", true);
   const searchParams = useSearchParams()
   const {
@@ -88,7 +88,7 @@ function PricingCTABannerSec() {
                   type="text"
                   placeholder="Enter mobile number"
                   id="txtMobileNo"
-                  onKeyDown={numericOnly}
+                  onInput={(e: any) => setValue("mobile", e.target.value.replace(/([a-zA-Z]|\W)+/g, ""))}
                   {...register("mobile", {
                     ...validatePhone,
                   })}

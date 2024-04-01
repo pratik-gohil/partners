@@ -4,7 +4,7 @@ import styles from "./GrowthModal.module.scss";
 import { SubmitHandler, useFieldArray, useForm } from 'react-hook-form';
 import http from '@/lib/http/http';
 import Image from 'next/image';
-import { alphabetsOnly, numericOnly, validateName, validatePhone } from '@/lib/constants/common';
+import { alphabetsOnly, validateName, validatePhone } from '@/lib/constants/common';
 import { verifyContact } from '@/lib/utils/verifyContact';
 
 const GrowthModal = ({ onClose, setIndex, growthModalState, setRefCode }: any) => {
@@ -18,6 +18,7 @@ const GrowthModal = ({ onClose, setIndex, growthModalState, setRefCode }: any) =
         watch,
         register,
         handleSubmit,
+        setValue,
         control,
         formState: { errors, },
     } = useForm<FormData>({
@@ -101,7 +102,7 @@ const GrowthModal = ({ onClose, setIndex, growthModalState, setRefCode }: any) =
                                         <li>
                                             <div className={`${styles.formGroup}`}>
                                                 <input
-                                                    onKeyDown={numericOnly}
+                                                    onInput={(e: any) => setValue(`reference.${i}.mobile`, e.target.value.replace(/([a-zA-Z]|\W)+/g, ""))}
                                                     type="text"
                                                     className={`${styles.formControl}`}
                                                     id="referalMobile1"

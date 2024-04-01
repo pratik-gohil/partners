@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./WebinarRegFormModal.module.scss";
 import { useForm } from "react-hook-form";
-import { validateEmail, validateName, validatePhone, numericOnly, alphabetsOnly } from "@/lib/constants/common";
+import { validateEmail, validateName, validatePhone, alphabetsOnly } from "@/lib/constants/common";
 import http from "@/lib/http/http";
 
 function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any) {
@@ -14,6 +14,7 @@ function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any) {
   const {
     register,
     handleSubmit,
+    setValue,
     formState: { errors },
   } = useForm<FormData>({ mode: "onBlur" });
 
@@ -76,7 +77,7 @@ function WebinarRegFormModal({ setIndex, onClose, setGrowthModalState }: any) {
                 Mobile Number <sup>*</sup>
               </label>
               <input
-                onKeyDown={numericOnly}
+                onInput={(e: any) => setValue("mobile", e.target.value.replace(/([a-zA-Z]|\W)+/g, ""))}
                 {...register("mobile", {
                   ...validatePhone
                 })}

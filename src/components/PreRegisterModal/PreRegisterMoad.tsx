@@ -3,13 +3,12 @@ import styles from "./FormModal.module.scss";
 import SelectMenu from '@/components/SelectMenu/SelectMenu';
 import { useForm } from 'react-hook-form';
 import http from '@/lib/http/http';
-import { alphabetsOnly, numericOnly, validateEmail, validateName, validatePhone } from '@/lib/constants/common';
+import { alphabetsOnly, validateEmail, validateName, validatePhone } from '@/lib/constants/common';
 import { verifyContact } from '@/lib/utils/verifyContact';
 import cities from "@/json/cities.json"
 import { usePathname, useSearchParams } from 'next/navigation';
 
 function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
-
     type FormData = {
         name: string,
         registrationType: string,
@@ -161,8 +160,9 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                 Mobile no. <sup>*</sup>
                             </label>
                             <input
-                                onKeyDown={numericOnly}
-                                {...register("mobile", { ...validatePhone, validate: mobile => verifyContact({ mobile }, "Mobile number already exist's.", "preRegister") })} type="text" className={`${styles.formControl}`} maxLength={10} />
+                                {...register("mobile", { ...validatePhone, validate: mobile => verifyContact({ mobile }, "Mobile number already exist's.", "preRegister") })} type="text" className={`${styles.formControl}`} maxLength={10}
+                                onInput={(e: any) => setValue("mobile", e.target.value.replace(/([a-zA-Z]|\W)+/g, ""))}
+                            />
                             {errors.mobile && <span className={`${styles.textDanger}`} id="partner-valid">
                                 {errors.mobile.message}
                             </span>}
@@ -202,7 +202,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                                 Pincode <sup>*</sup>
                             </label>
                             <input
-                                onKeyDown={numericOnly}
+                                onInput={(e: any) => setValue("pincode", e.target.value.replace(/([a-zA-Z]|\W)+/g, ""))}
                                 {...register("pincode", {
                                     required: "Pincode cannot be blank",
                                     pattern: {

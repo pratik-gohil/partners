@@ -7,7 +7,7 @@ import Modal from '@/components/Modal'
 import OtpModal from '@/components/otpModal/OtpModal'
 import ThankYouOtpModal from '@/components/thankYouOtpModal/ThankYouOtpModal'
 import Image from 'next/image'
-import { alphabetsOnly, numericOnly, validateName, validatePhone } from '@/lib/constants/common'
+import { alphabetsOnly, validateName, validatePhone } from '@/lib/constants/common'
 import { verifyContact } from '@/lib/utils/verifyContact'
 import RetainQueryLink from '@/components/RetainQueryLink/RetainQueryLink';
 
@@ -30,6 +30,7 @@ function StartPartnerReferringSecC() {
         handleSubmit,
         watch, control,
         getValues,
+        setValue,
         formState: { errors, },
     } = useForm<FormData>({
         mode: 'onBlur',
@@ -126,7 +127,7 @@ function StartPartnerReferringSecC() {
                                 </div>
                                 <div className={`${styles.formGroup}`}>
                                     <input
-                                        onKeyDown={numericOnly}
+                                        onInput={(e: any) => setValue("mobile", e.target.value.replace(/([a-zA-Z]|\W)+/g, ""))}
                                         type="text"
                                         className={`${styles.formControl} ${styles.inputBox}`}
                                         placeholder="Your Mobile No."
@@ -164,7 +165,7 @@ function StartPartnerReferringSecC() {
 
                                             <div className={`${styles.formGroup}`}>
                                                 <input
-                                                    onKeyDown={numericOnly}
+                                                    onInput={(e: any) => setValue(`reference.${i}.mobile`, e.target.value.replace(/([a-zA-Z]|\W)+/g, ""))}
                                                     type="tel"
                                                     className={styles.formControl}
                                                     placeholder="Reference Mobile No."
