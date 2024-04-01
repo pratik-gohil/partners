@@ -22,9 +22,17 @@ function withCustomScroll<T>(BaseComponent: React.ComponentType<T>) {
                             };
                         }, 0)
 
-
-                        if (e.deltaY > 0) e.currentTarget.scrollLeft += 100;
-                        else e.currentTarget.scrollLeft -= 100;
+                        if (e.deltaY > 0) {
+                            e.currentTarget.scrollTo({
+                                left: e.currentTarget.scrollLeft += 100,
+                                behavior: 'smooth'
+                            })
+                        } else {
+                            e.currentTarget.scrollTo({
+                                left: e.currentTarget.scrollLeft -= 100,
+                                behavior: 'smooth'
+                            })
+                        }
 
                     }
                 }
