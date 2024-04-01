@@ -13,6 +13,10 @@ export function PreloadResources() {
     ReactDOM.preconnect('https://www.google-analytics.com')
     ReactDOM.prefetchDNS('https://www.google-analytics.com')
 
+    ReactDOM.preload("https://www.googletagmanager.com/gtm.js?id=GTM-NTX7SZZG", {
+        as: "script"
+    })
+
     ReactDOM.preload("/OpenSans.woff2", {
         as: "font"
     })

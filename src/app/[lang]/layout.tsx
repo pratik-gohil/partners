@@ -5,7 +5,7 @@ import styles from "./maCommanStyle.module.scss";
 import { PreloadResources } from "./preload-resources";
 import dynamic from "next/dynamic";
 import BreadcrumbSec from "@/components/breadcrumb/BreadcrumbSec";
-import { GoogleTagManager } from "@next/third-parties/google";
+import GTM from "./GTM";
 
 export let commonMetadata = {
   openGraph: {
@@ -98,7 +98,7 @@ export default function RootLayout({
         <Footer />
         <div id='modal-portal' />
       </body>
-      <GoogleTagManager gtmId="GTM-NTX7SZZG" />
+      <GTM />
     </html>
   );
 }
