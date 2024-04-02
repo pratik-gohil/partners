@@ -5,9 +5,9 @@ import Link, { LinkProps } from "next/link";
 import { useSearchParams } from "next/navigation";
 import { PropsWithChildren, Suspense } from "react";
 
-const RetainQueryLink = ({ href, ...props }: LinkProps & PropsWithChildren) => {
+const RetainQueryLink = ({ href, forceLocale, ...props }: LinkProps & PropsWithChildren & { forceLocale?: string }) => {
     // 1. use useRouter hook to get access to the current query params
-    const locale = getCookieClient("locale") || "en"
+    const locale = forceLocale || getCookieClient("locale") || "en"
     const searchParams = useSearchParams();
     const searchParamsQuery = Object.fromEntries(searchParams)
 
@@ -35,9 +35,9 @@ const RetainQueryLink = ({ href, ...props }: LinkProps & PropsWithChildren) => {
     );
 };
 
-const RetainQueryLinkWithSuspense = ({ href, ...props }: LinkProps & PropsWithChildren) => {
+const RetainQueryLinkWithSuspense = ({ href, forceLocale, ...props }: LinkProps & PropsWithChildren & { forceLocale?: string }) => {
     return <Suspense>
-        <RetainQueryLink href={href} {...props} />
+        <RetainQueryLink href={href} forceLocale={forceLocale} {...props} />
     </Suspense>
 }
 

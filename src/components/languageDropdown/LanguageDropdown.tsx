@@ -3,13 +3,9 @@ import styles from "./LanguageDropdown.module.scss";
 import { usePathname } from 'next/navigation';
 import { translatePages } from '@/lib/constants/common';
 import { removeLocale } from '@/lib/utils/removeLocale';
-import Link from 'next/link';
 import { language_locale } from '@/lib/utils/hasLocale';
 import { getCookieClient } from '@/lib/utils/getCookieClient';
-
-const switchLocale = (locale: string, path: string) => {
-    return translatePages.includes(path) ? ((locale === "en" ? "" : '/' + locale) + path) : (path)
-}
+import RetainQueryLink from '../RetainQueryLink/RetainQueryLink';
 
 function LangguageDropdown() {
     const pathname = usePathname()
@@ -47,10 +43,11 @@ function LangguageDropdown() {
                     <label className="language-select-labell">&nbsp;&nbsp;Select</label>
                 </li>
                 {Object.keys(language_locale).map(locale => (
-                    <Link
+                    <RetainQueryLink
                         onClick={() => { document.cookie = "locale=" + locale; }}
                         key={locale}
-                        href={switchLocale(locale, path)}
+                        href={path}
+                        forceLocale={locale}
                     >
                         <li
                             style={{ backgroundColor: "white", display: "list-item" }}
@@ -58,7 +55,7 @@ function LangguageDropdown() {
                             {/* @ts-ignore */}
                             &nbsp;&nbsp;{language_locale[locale]}
                         </li>
-                    </Link>
+                    </RetainQueryLink>
                 ))}
             </ul>}
         </div>
