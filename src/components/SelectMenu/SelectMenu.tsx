@@ -14,7 +14,7 @@ function SelectMenu({ options, onChange, contentEditable = false, register, name
     const [selectedOption, setSelectedOption] = useState<null | number>(null)
     const [value, setValue] = useState(contentEditable ? "" : options[0]);
     const filteredOptions = useMemo(() => {
-        return contentEditable ? options.filter((option: string) => option.toLowerCase().includes(value.toLowerCase())) : options
+        return contentEditable ? (value.length > 2 ? options.filter((option: string) => option.toLowerCase().includes(value.toLowerCase())) : []) : options
     }, [contentEditable, value])
     const [flag, setFlag] = useState(false)
 
@@ -79,7 +79,6 @@ function SelectMenu({ options, onChange, contentEditable = false, register, name
                     tabIndex={0}
                 >
                     {value}
-
 
                     <Image alt='arrow' width={14} height={14} style={{ float: 'right', transform: showOptions ? 'rotate(180deg)' : "", marginTop: '.5rem' }} src="/down-arrow.png" />
                 </div>
