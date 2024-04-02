@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
 import styles from './SelectMenu.module.scss';
 import Image from 'next/image';
+import { validateName } from '@/lib/constants/common';
 
 function SelectMenu({ options, onChange, contentEditable = false, register, name, required = true }: {
     options: string[],
@@ -53,8 +54,9 @@ function SelectMenu({ options, onChange, contentEditable = false, register, name
 
     useEffect(() => {
         register(name, {
-            required: typeof required === "string" ? required : "Required"
-        })
+            ...validateName,
+            required: typeof required === "string" ? required : "Required",
+        },)
     }, [register, name, options])
 
     return (

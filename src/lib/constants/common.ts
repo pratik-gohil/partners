@@ -28,6 +28,7 @@ export const validateName = {
     validate: (value: string) => {
         return (/^[a-zA-Z ]*$/).test(value) || "Add a vaild name";
     },
+    setValueAs: (val: string) => val.trim()
 }
 
 export const numericOnly = (e: React.KeyboardEvent) => {
