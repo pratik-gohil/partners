@@ -34,11 +34,10 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
         utm_device,
         utm_content,
         utm_term,
-        gclid,
-        url
+        gclid
     } = Object.fromEntries(searchParams)
 
-    const pathname = usePathname()
+    const pathname = (usePathname()).slice(1) || "Home"
 
     const {
         register,
@@ -71,7 +70,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
                     utmCreative: utm_creative || "",
                     utmDevice: utm_device || "",
                     gclid: gclid || "",
-                    url: url || "",
+                    url: window.location.href || "",
                     fromPage: pathname
                 }
             }),

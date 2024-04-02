@@ -37,7 +37,7 @@ function PricingCTABannerSec() {
         utmContent: utm_content || "",
         utmCreative: utm_creative || "",
         utmDevice: utm_device || "",
-        url: utm_medium || "",
+        url: window.location.href || "",
         gclid: gclid || "",
         fromPage: "pricing-cta"
       }
