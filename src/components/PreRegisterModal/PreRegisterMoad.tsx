@@ -83,7 +83,7 @@ function PreRegisterMoad({ setIndex, onClose, setGrowthModalState }: any) {
         const datares = await res.json()
 
         if (datares.status === 0) {
-            setGrowthModalState((s: any) => ({ ...s, name: data.name, mobile: data.mobile, partnerKey: datares.data.partnerID }))
+            setGrowthModalState((s: any) => ({ ...s, referrerName: data.name, referrerMobile: data.mobile }))
             setIndex(1)
         }
     }
