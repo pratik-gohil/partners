@@ -128,7 +128,7 @@ function StartPartnerReferringSecC() {
                                 <div className={`${styles.formGroup}`}>
                                     <input
                                         onInput={(e: any) => setValue("mobile", e.target.value.replace(/([a-zA-Z]|\W)+/g, ""))}
-                                        type="text"
+                                        type="tel"
                                         className={`${styles.formControl} ${styles.inputBox}`}
                                         placeholder="Your Mobile No."
                                         {...register('mobile', validatePhone)}
